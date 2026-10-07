@@ -1,0 +1,64 @@
+{
+  "recorded_at": "2026-09-22T16:28:46.595730+00:00",
+  "architecture": "arm64",
+  "inspection_python": "3.14.3",
+  "commands": [
+    {
+      "command": [
+        "sw_vers"
+      ],
+      "exit_code": 0,
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.5.2\nBuildVersion:\t\t25F84",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "sysctl",
+        "-n",
+        "machdep.cpu.brand_string"
+      ],
+      "exit_code": 0,
+      "stdout": "Apple M4",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "sysctl",
+        "-n",
+        "hw.memsize"
+      ],
+      "exit_code": 0,
+      "stdout": "34359738368",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "sysctl",
+        "-n",
+        "hw.physicalcpu"
+      ],
+      "exit_code": 0,
+      "stdout": "10",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "sysctl",
+        "-n",
+        "hw.logicalcpu"
+      ],
+      "exit_code": 0,
+      "stdout": "10",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "uv 0.9.26 (Homebrew 2026-01-15)",
+      "stderr": ""
+    }
+  ]
+}

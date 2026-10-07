@@ -1,0 +1,602 @@
+{
+  "arms": [
+    "control",
+    "diagnostic"
+  ],
+  "attempt": "reciprocal-1",
+  "case_input_sha256": {
+    "cold-cpu": "e6dbb9dd4c7cd22563d120b193c8d12f9d5cdb370698ea3e05d8aad40880ba74",
+    "cold-gpu": "2e1c3c9b06eef79b8032442817f0ac3087020d8cea6a2486163675cc7406e6d0",
+    "directed32": "29c5cbba02bb31c8e07b29e1790ae05922e0d255adbd07f75e72e28563f6ddc3",
+    "warm-common": "f86d3258daacba54187a8d355d1b425d49a2a29a36e5c610be1eabf0a39f2bef"
+  },
+  "case_names": [
+    "warm-common",
+    "cold-cpu",
+    "cold-gpu",
+    "directed32"
+  ],
+  "case_shapes": {
+    "cold-cpu": [
+      1,
+      32,
+      1
+    ],
+    "cold-gpu": [
+      1,
+      32,
+      1
+    ],
+    "directed32": [
+      1,
+      32,
+      1
+    ],
+    "warm-common": [
+      1,
+      12,
+      1
+    ]
+  },
+  "conversion": "FP32 EMPTY pipeline; assert real_div1/inverse0",
+  "decision_rule": "Require saved and diagnostic control reproduction plus all reference/CPU-preservation/finite/integrity gates; otherwise no promotion/correction claim; afterhostgate recordall16 numericalcalls.",
+  "design_sha256": "39e584475a579ac149642cb674258404f18818f23392a5c5dfbab6f344838b04",
+  "expected_guard": {
+    "gil_releases": 16,
+    "installed": true,
+    "plain_calls": 16,
+    "state_calls": 0
+  },
+  "expected_predictions": 16,
+  "helper_sha256": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+  "helper_source": "coreml_port/source_exp.py",
+  "input_domain": [
+    0.5,
+    8.0
+  ],
+  "native_execution_eligible": false,
+  "oracle": "Exact rational reciprocal; binary search neighboring positive FP32 bitpatterns; exact midpoint ties-to-even",
+  "policies": [
+    "CPU",
+    "GPU"
+  ],
+  "runtime_provenance_source_sha256": "cde93c59843cf828e3bd6d5b2e316d4974cd206e05afcbf097bbbc0dd64ae84e",
+  "schema_version": 1,
+  "script_sha256": "8eff2de8fd978fd850c8ab71ec1939b0c6c10b25800dd6c3b254052b11ddcaa3",
+  "source_archives": {
+    "chunk0/CPU-tapped/outputs": {
+      "dtypes": {
+        "denom_7": "float32",
+        "mean_7": "float32",
+        "step_47": "float32",
+        "tap23_out": "float32",
+        "value_17": "float32",
+        "var_5669": "float32",
+        "var_5672": "float32",
+        "var_5675": "float32",
+        "var_5690": "float32",
+        "var_5691": "float32",
+        "x_65": "float32",
+        "x_67": "float32",
+        "x_69": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06e-gpu-normalization/replay-1/chunk0/CPU-tapped/outputs.npz",
+      "sha256": "83b66f0c7f975d2bbc36648f4f9d7d7151b1ff33a919b2d0acac78765da7db70",
+      "shapes": {
+        "denom_7": [
+          1,
+          32,
+          1
+        ],
+        "mean_7": [
+          1,
+          32,
+          1
+        ],
+        "step_47": [
+          1,
+          32,
+          1280
+        ],
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "value_17": [
+          1,
+          32,
+          1280
+        ],
+        "var_5669": [
+          1,
+          32,
+          1
+        ],
+        "var_5672": [
+          1,
+          32,
+          1
+        ],
+        "var_5675": [
+          1,
+          32,
+          1
+        ],
+        "var_5690": [
+          1,
+          32,
+          1280
+        ],
+        "var_5691": [
+          1,
+          32,
+          1280
+        ],
+        "x_65": [
+          1,
+          32,
+          1280
+        ],
+        "x_67": [
+          1,
+          32,
+          1280
+        ],
+        "x_69": [
+          1,
+          32,
+          1280
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk0/GPU-tapped/outputs": {
+      "dtypes": {
+        "denom_7": "float32",
+        "mean_7": "float32",
+        "step_47": "float32",
+        "tap23_out": "float32",
+        "value_17": "float32",
+        "var_5669": "float32",
+        "var_5672": "float32",
+        "var_5675": "float32",
+        "var_5690": "float32",
+        "var_5691": "float32",
+        "x_65": "float32",
+        "x_67": "float32",
+        "x_69": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06e-gpu-normalization/replay-1/chunk0/GPU-tapped/outputs.npz",
+      "sha256": "cce527a752cf207800f61b0a89147f179b76a471f6dd5ac8a6d733a003d0b4a9",
+      "shapes": {
+        "denom_7": [
+          1,
+          32,
+          1
+        ],
+        "mean_7": [
+          1,
+          32,
+          1
+        ],
+        "step_47": [
+          1,
+          32,
+          1280
+        ],
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "value_17": [
+          1,
+          32,
+          1280
+        ],
+        "var_5669": [
+          1,
+          32,
+          1
+        ],
+        "var_5672": [
+          1,
+          32,
+          1
+        ],
+        "var_5675": [
+          1,
+          32,
+          1
+        ],
+        "var_5690": [
+          1,
+          32,
+          1280
+        ],
+        "var_5691": [
+          1,
+          32,
+          1280
+        ],
+        "x_65": [
+          1,
+          32,
+          1280
+        ],
+        "x_67": [
+          1,
+          32,
+          1280
+        ],
+        "x_69": [
+          1,
+          32,
+          1280
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk1/CPU-tapped/outputs": {
+      "dtypes": {
+        "denom_7": "float32",
+        "mean_7": "float32",
+        "step_47": "float32",
+        "tap23_out": "float32",
+        "value_17": "float32",
+        "var_5669": "float32",
+        "var_5672": "float32",
+        "var_5675": "float32",
+        "var_5690": "float32",
+        "var_5691": "float32",
+        "x_65": "float32",
+        "x_67": "float32",
+        "x_69": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06e-gpu-normalization/replay-1/chunk1/CPU-tapped/outputs.npz",
+      "sha256": "3082c77a4db8265c7e8223ee7f14d46ad6ff96ee5b62d7e315d0d66554443d44",
+      "shapes": {
+        "denom_7": [
+          1,
+          12,
+          1
+        ],
+        "mean_7": [
+          1,
+          12,
+          1
+        ],
+        "step_47": [
+          1,
+          12,
+          1280
+        ],
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "value_17": [
+          1,
+          12,
+          1280
+        ],
+        "var_5669": [
+          1,
+          12,
+          1
+        ],
+        "var_5672": [
+          1,
+          12,
+          1
+        ],
+        "var_5675": [
+          1,
+          12,
+          1
+        ],
+        "var_5690": [
+          1,
+          12,
+          1280
+        ],
+        "var_5691": [
+          1,
+          12,
+          1280
+        ],
+        "x_65": [
+          1,
+          12,
+          1280
+        ],
+        "x_67": [
+          1,
+          12,
+          1280
+        ],
+        "x_69": [
+          1,
+          12,
+          1280
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    "chunk1/GPU-tapped/outputs": {
+      "dtypes": {
+        "denom_7": "float32",
+        "mean_7": "float32",
+        "step_47": "float32",
+        "tap23_out": "float32",
+        "value_17": "float32",
+        "var_5669": "float32",
+        "var_5672": "float32",
+        "var_5675": "float32",
+        "var_5690": "float32",
+        "var_5691": "float32",
+        "x_65": "float32",
+        "x_67": "float32",
+        "x_69": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06e-gpu-normalization/replay-1/chunk1/GPU-tapped/outputs.npz",
+      "sha256": "9835733ae181117f44398ec080fc2ee1d765a3bb4f1ce05082890eb13dfb6cab",
+      "shapes": {
+        "denom_7": [
+          1,
+          12,
+          1
+        ],
+        "mean_7": [
+          1,
+          12,
+          1
+        ],
+        "step_47": [
+          1,
+          12,
+          1280
+        ],
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "value_17": [
+          1,
+          12,
+          1280
+        ],
+        "var_5669": [
+          1,
+          12,
+          1
+        ],
+        "var_5672": [
+          1,
+          12,
+          1
+        ],
+        "var_5675": [
+          1,
+          12,
+          1
+        ],
+        "var_5690": [
+          1,
+          12,
+          1280
+        ],
+        "var_5691": [
+          1,
+          12,
+          1280
+        ],
+        "x_65": [
+          1,
+          12,
+          1280
+        ],
+        "x_67": [
+          1,
+          12,
+          1280
+        ],
+        "x_69": [
+          1,
+          12,
+          1280
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    }
+  },
+  "source_result": "evidence/06e-gpu-normalization/replay-1/results.json",
+  "source_result_sha256": "d72fc475a76e5c3751499465253fad154ea396753ff68630aa4f8dec6a8a7c09",
+  "static_preflight": {
+    "attribution": "On all108 exercised values, exact rational Newton and two correctly rounded FMAs match oracle; three final compensated helper outputs differ despite exact first residual.",
+    "decision": "DO_NOT_LAUNCH: directed host refinement violates nearestFP32/CPUbytepreservation",
+    "host_cases": [
+      {
+        "case": "warm-common",
+        "control_vs_oracle": {
+          "bitwise_exact": true,
+          "different_elements": 0,
+          "examples": [],
+          "finite": true,
+          "max_abs": 0.0
+        },
+        "cpu_bytes_preserved": {
+          "bitwise_exact": true,
+          "different_elements": 0,
+          "examples": [],
+          "finite": true,
+          "max_abs": 0.0
+        },
+        "refined_vs_oracle": {
+          "bitwise_exact": true,
+          "different_elements": 0,
+          "examples": [],
+          "finite": true,
+          "max_abs": 0.0
+        }
+      },
+      {
+        "case": "cold-cpu",
+        "control_vs_oracle": {
+          "bitwise_exact": true,
+          "different_elements": 0,
+          "examples": [],
+          "finite": true,
+          "max_abs": 0.0
+        },
+        "cpu_bytes_preserved": {
+          "bitwise_exact": true,
+          "different_elements": 0,
+          "examples": [],
+          "finite": true,
+          "max_abs": 0.0
+        },
+        "refined_vs_oracle": {
+          "bitwise_exact": true,
+          "different_elements": 0,
+          "examples": [],
+          "finite": true,
+          "max_abs": 0.0
+        }
+      },
+      {
+        "case": "cold-gpu",
+        "control_vs_oracle": {
+          "bitwise_exact": true,
+          "different_elements": 0,
+          "examples": [],
+          "finite": true,
+          "max_abs": 0.0
+        },
+        "cpu_bytes_preserved": {
+          "bitwise_exact": true,
+          "different_elements": 0,
+          "examples": [],
+          "finite": true,
+          "max_abs": 0.0
+        },
+        "refined_vs_oracle": {
+          "bitwise_exact": true,
+          "different_elements": 0,
+          "examples": [],
+          "finite": true,
+          "max_abs": 0.0
+        }
+      },
+      {
+        "case": "directed32",
+        "control_vs_oracle": {
+          "bitwise_exact": true,
+          "different_elements": 0,
+          "examples": [],
+          "finite": true,
+          "max_abs": 0.0
+        },
+        "cpu_bytes_preserved": {
+          "bitwise_exact": false,
+          "different_elements": 3,
+          "examples": [
+            {
+              "actual_bits": "0x3f800000",
+              "expected_bits": "0x3f800001",
+              "index": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "actual_bits": "0x3f000000",
+              "expected_bits": "0x3f000001",
+              "index": [
+                0,
+                3,
+                0
+              ]
+            },
+            {
+              "actual_bits": "0x3e800000",
+              "expected_bits": "0x3e800001",
+              "index": [
+                0,
+                6,
+                0
+              ]
+            }
+          ],
+          "finite": true,
+          "max_abs": 1.1920928955078125e-07
+        },
+        "refined_vs_oracle": {
+          "bitwise_exact": false,
+          "different_elements": 3,
+          "examples": [
+            {
+              "actual_bits": "0x3f800000",
+              "expected_bits": "0x3f800001",
+              "index": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "actual_bits": "0x3f000000",
+              "expected_bits": "0x3f000001",
+              "index": [
+                0,
+                3,
+                0
+              ]
+            },
+            {
+              "actual_bits": "0x3e800000",
+              "expected_bits": "0x3e800001",
+              "index": [
+                0,
+                6,
+                0
+              ]
+            }
+          ],
+          "finite": true,
+          "max_abs": 1.1920928955078125e-07
+        }
+      }
+    ],
+    "host_evidence": "evidence/06e-gpu-normalization/reciprocal-host-1/host-preflight.json",
+    "model_building": false,
+    "native_compile_load_predict": false,
+    "oracle_midpoint_and_exact_controls_passed": 10,
+    "passed": false
+  },
+  "status": "held_host_failure"
+}

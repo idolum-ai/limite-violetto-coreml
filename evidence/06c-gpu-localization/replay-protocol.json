@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "script_sha256": "f4e7aff94b9fae6374ef9d7307c1bb55211940db88464e01daa2e08155539761",
+  "pinned_files": {
+    "evidence/01-reference/local-input-validation.json": "54ce299bdc107b3db80a2a389283ea787f7801a4f51a1ae2feed0a6dfaee7490",
+    "evidence/06b-full-gpu/short-1/results.json": "5515dd913ca29730b99173025e7a08bbca256eca35958a642e74adf6dc572dfc",
+    "scripts/validate_full_gpu.py": "19005d82159ce53668be6c31fb784f0130a478bbb364e6a5175507fa15263e64",
+    "scripts/probe_gpu_group0.py": "bd608693337d5dc092b544ff7828bd63fc4c62557e6cee1a3dc156768c585682",
+    "scripts/probe_full_model.py": "404241c79c0f3bd7f8ea816638904cffb6b13de5b00ce079a405b0b6cf196876",
+    "scripts/summarize_conditional_milestone.py": "aa74f766dc51b3ed123ba1dd4783c8cd4ad897dfa2719850acfb7fddd66ded3b",
+    "scripts/runtime_provenance.py": "cde93c59843cf828e3bd6d5b2e316d4974cd206e05afcbf097bbbc0dd64ae84e"
+  },
+  "chunks": [
+    32,
+    12
+  ],
+  "groups": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "prior_gpu_result": "evidence/06b-full-gpu/short-1/results.json",
+  "scope": "Prompt0 own CPU/GPU trajectories through group4, six prior hidden anchors, common-input/cache factorial replays. No head or generation claim.",
+  "controls": "60 fresh restored-state replays; 20 diagonal controls; 4 plain and 80 state predictions. Exact effective inputs archived. Diagnostic completion is not numerical qualification.",
+  "thresholds_changed": false
+}

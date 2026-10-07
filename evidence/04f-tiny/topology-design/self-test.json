@@ -1,0 +1,83 @@
+{
+  "width": 128,
+  "cases": [
+    {
+      "tree": "sequential",
+      "reconstruction_vectors": 378,
+      "held_out_triplets": {
+        "count": 1000,
+        "different": 0,
+        "first_failures": []
+      },
+      "random_vectors": 500,
+      "different_random_sums": 0
+    },
+    {
+      "tree": "reverse",
+      "reconstruction_vectors": 24003,
+      "held_out_triplets": {
+        "count": 1000,
+        "different": 0,
+        "first_failures": []
+      },
+      "random_vectors": 500,
+      "different_random_sums": 0
+    },
+    {
+      "tree": "cyclic2",
+      "reconstruction_vectors": 750,
+      "held_out_triplets": {
+        "count": 1000,
+        "different": 0,
+        "first_failures": []
+      },
+      "random_vectors": 500,
+      "different_random_sums": 0
+    },
+    {
+      "tree": "cyclic4",
+      "reconstruction_vectors": 1203,
+      "held_out_triplets": {
+        "count": 1000,
+        "different": 0,
+        "first_failures": []
+      },
+      "random_vectors": 500,
+      "different_random_sums": 0
+    },
+    {
+      "tree": "cyclic8",
+      "reconstruction_vectors": 1929,
+      "held_out_triplets": {
+        "count": 1000,
+        "different": 0,
+        "first_failures": []
+      },
+      "random_vectors": 500,
+      "different_random_sums": 0
+    },
+    {
+      "tree": "cyclic16",
+      "reconstruction_vectors": 3165,
+      "held_out_triplets": {
+        "count": 1000,
+        "different": 0,
+        "first_failures": []
+      },
+      "random_vectors": 500,
+      "different_random_sums": 0
+    },
+    {
+      "tree": "random",
+      "reconstruction_vectors": 2493,
+      "held_out_triplets": {
+        "count": 1000,
+        "different": 0,
+        "first_failures": []
+      },
+      "random_vectors": 500,
+      "different_random_sums": 0
+    }
+  ],
+  "fp64_rejected": true
+}

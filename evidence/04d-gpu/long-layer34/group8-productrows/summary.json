@@ -1,0 +1,87 @@
+{
+  "status": "complete",
+  "positions": [
+    1024,
+    1025
+  ],
+  "source_sha256": {
+    "scripts/gpu_long_layer34_group8_productrows.py": "520f74bca0af81fd310241f066f4b554fa3c92566d0bcb9b8baca8f1675bbd1d",
+    "coreml_port/dynamic_queries.py": "8b1d1635655366b6760c069151ff9f447e01aa6632c49c45de0c7af7de6354b0",
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b"
+  },
+  "input_sha256": {
+    "evidence/04d-cpu/long-group-locator/first-failure-inputs.npz": "c9b8010b00f7e295f2672117d51b453beabcab1b7e1d4b7ceaa8a107ff266b70",
+    "evidence/04d-cpu/long-group-locator/first-failure-state-before.npz": "17cef34b6621bb8fb70e94f4407ab57d0cee2ab751b424c4a6820a97bed31bce"
+  },
+  "torch_vs_reference": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_vs_reference": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_vs_candidate3": {
+    "different_elements": 543,
+    "max_abs": 32.0,
+    "first_differences": [
+      {
+        "index": [
+          0,
+          1,
+          6
+        ],
+        "actual": 1832.0,
+        "reference": 1824.0
+      },
+      {
+        "index": [
+          0,
+          1,
+          7
+        ],
+        "actual": 1352.0,
+        "reference": 1344.0
+      },
+      {
+        "index": [
+          0,
+          1,
+          12
+        ],
+        "actual": -4.0,
+        "reference": -2.0
+      },
+      {
+        "index": [
+          0,
+          1,
+          13
+        ],
+        "actual": 632.0,
+        "reference": 636.0
+      },
+      {
+        "index": [
+          0,
+          1,
+          14
+        ],
+        "actual": 1624.0,
+        "reference": 1632.0
+      },
+      {
+        "index": [
+          0,
+          1,
+          16
+        ],
+        "actual": -1512.0,
+        "reference": -1504.0
+      }
+    ]
+  }
+}

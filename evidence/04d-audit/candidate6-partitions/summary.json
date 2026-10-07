@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "cases": 13,
+  "comparisons": 97,
+  "passed": 97,
+  "hidden_exact": 97,
+  "max_score_error": 3.814697265625e-06,
+  "disposed": 13,
+  "partition_repeat": {
+    "input_length": 33,
+    "first_partitioning": [
+      33
+    ],
+    "second_partitioning": [
+      1,
+      32
+    ],
+    "scores_exact": true,
+    "hidden_exact": true,
+    "requests_disposed": true
+  },
+  "all_pass": true,
+  "seconds": 869.1521768569946,
+  "evidence": "results.json"
+}

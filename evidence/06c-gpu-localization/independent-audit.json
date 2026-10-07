@@ -1,0 +1,4263 @@
+{
+  "actual_device_placement": "unverified; compute policy only",
+  "additional_interpretation": [
+    "On warm chunk1/group0, CPU and GPU trajectory inputs are bitwise identical; selecting the GPU-generated cache changes outputs for a fixed compute policy, while the saved K/V values newly written for this chunk show different policy effects.",
+    "Input-source and cache-source contrasts are conditional comparisons on these saved factorial cells; interaction or upstream causation should not be inferred beyond this prompt and the tested five groups."
+  ],
+  "attempt": "prompt0-1",
+  "audit_status": "complete",
+  "cold_chunk0_group0_first_difference_coordinates": {
+    "outputs/tap23_out": {
+      "different_element_count": 0,
+      "exact": true,
+      "first_index": null
+    },
+    "outputs/y": {
+      "different_element_count": 28725,
+      "exact": false,
+      "first_index": [
+        0,
+        0,
+        19
+      ]
+    },
+    "state-after/inner_k_cache_0": {
+      "different_element_count": 343,
+      "exact": false,
+      "first_index": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    "state-after/inner_k_cache_1": {
+      "different_element_count": 5100,
+      "exact": false,
+      "first_index": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "state-after/inner_k_cache_2": {
+      "different_element_count": 5293,
+      "exact": false,
+      "first_index": [
+        0,
+        0,
+        0,
+        5
+      ]
+    },
+    "state-after/inner_k_cache_3": {
+      "different_element_count": 5710,
+      "exact": false,
+      "first_index": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "state-after/inner_v_cache_0": {
+      "different_element_count": 0,
+      "exact": true,
+      "first_index": null
+    },
+    "state-after/inner_v_cache_1": {
+      "different_element_count": 4361,
+      "exact": false,
+      "first_index": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "state-after/inner_v_cache_2": {
+      "different_element_count": 5780,
+      "exact": false,
+      "first_index": [
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "state-after/inner_v_cache_3": {
+      "different_element_count": 5877,
+      "exact": false,
+      "first_index": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "coverage": {
+    "all_archived_files_hash_shape_dtype_finite": true,
+    "all_own_policy_replay_controls_exact": true,
+    "all_replay_states_restored_exact": true,
+    "archive_file_count": 211,
+    "chunks": [
+      32,
+      12
+    ],
+    "factorial_replay_cells": 60,
+    "groups": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "own_policy_group_trajectories": 20,
+    "portable_reference_anchors": 6,
+    "prompt_tokens": 44,
+    "replay_groups": 10
+  },
+  "diagnostic_completed": true,
+  "embedding_cpu_gpu": [
+    {
+      "all_outputs_exact": true,
+      "chunk": 0,
+      "ve": {
+        "exact": true,
+        "max_abs": 0.0,
+        "relative_rmse": 0.0,
+        "rmse": 0.0
+      },
+      "x": {
+        "exact": true,
+        "max_abs": 0.0,
+        "relative_rmse": 0.0,
+        "rmse": 0.0
+      }
+    },
+    {
+      "all_outputs_exact": true,
+      "chunk": 1,
+      "ve": {
+        "exact": true,
+        "max_abs": 0.0,
+        "relative_rmse": 0.0,
+        "rmse": 0.0
+      },
+      "x": {
+        "exact": true,
+        "max_abs": 0.0,
+        "relative_rmse": 0.0,
+        "rmse": 0.0
+      }
+    }
+  ],
+  "fresh_replay_states": {
+    "python_references_deleted": 60,
+    "restored_exact": 60
+  },
+  "gpu_numerical_qualification": "not_qualified",
+  "group_trajectory_summary": [
+    {
+      "chunk": 0,
+      "count": 32,
+      "group": 0,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.015625,
+        "relative_rmse": 0.0014303319555110043,
+        "rmse": 0.001430145696228229
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": true,
+        "max_abs": 0.0,
+        "relative_rmse": 0.0,
+        "rmse": 0.0
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 8192.0,
+        "relative_rmse": 0.0013953404943953679,
+        "rmse": 95.99005502089534
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0014303319555110043,
+            "rmse": 0.001430145696228229
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 8192.0,
+            "relative_rmse": 0.0013953404943953679,
+            "rmse": 95.99005502089534
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0014303319555110043,
+            "rmse": 0.001430145696228229
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 8192.0,
+            "relative_rmse": 0.0013953404943953679,
+            "rmse": 95.99005502089534
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    },
+    {
+      "chunk": 0,
+      "count": 32,
+      "group": 1,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.03125,
+        "relative_rmse": 0.005579378962056301,
+        "rmse": 0.005578614189025942
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": false,
+        "max_abs": 0.25,
+        "relative_rmse": 0.004964544536664458,
+        "rmse": 0.03731206311092121
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 4096.0,
+        "relative_rmse": 0.0019656803260631873,
+        "rmse": 51.625643218145974
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0011696489270573822,
+            "rmse": 0.0011694886016949204
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.125,
+            "relative_rmse": 0.001963227611037007,
+            "rmse": 0.014755043888342667
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 2048.0,
+            "relative_rmse": 0.0013475020857941242,
+            "rmse": 35.390119641803224
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0012429940369844408,
+            "rmse": 0.0012429288989741147
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.25,
+            "relative_rmse": 0.0019869387328585388,
+            "rmse": 0.014932847688385395
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 2048.0,
+            "relative_rmse": 0.0014302686066427444,
+            "rmse": 37.57235927079324
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    },
+    {
+      "chunk": 0,
+      "count": 32,
+      "group": 2,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.03125,
+        "relative_rmse": 0.0061673072751511045,
+        "rmse": 0.0061671371537369395
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": false,
+        "max_abs": 2.0,
+        "relative_rmse": 0.007207432079824544,
+        "rmse": 0.290418480229947
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 256.0,
+        "relative_rmse": 0.005122010340585854,
+        "rmse": 4.990420243558614
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0011386298805838608,
+            "rmse": 0.001138598472172239
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 9.5367431640625e-07,
+            "relative_rmse": 2.6149381728428933e-10,
+            "rmse": 1.0536712127723509e-08
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 256.0,
+            "relative_rmse": 0.0035819952961927233,
+            "rmse": 3.4899698848337906
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0012282752499775146,
+            "rmse": 0.0012281755845445206
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 256.0,
+            "relative_rmse": 0.003718363066424177,
+            "rmse": 3.6261039729481137
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    },
+    {
+      "chunk": 0,
+      "count": 32,
+      "group": 3,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.03125,
+        "relative_rmse": 0.006177276222292412,
+        "rmse": 0.006177661668415518
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": false,
+        "max_abs": 1.0,
+        "relative_rmse": 0.007627812292460923,
+        "rmse": 0.21273939600954692
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 1024.0,
+        "relative_rmse": 0.0080417308796961,
+        "rmse": 22.313124411959244
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.000983849884050671,
+            "rmse": 0.0009839112737489587
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 256.0,
+            "relative_rmse": 0.004766570442847591,
+            "rmse": 13.22564518767448
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.001013305434564115,
+            "rmse": 0.0010133015133998694
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 384.0,
+            "relative_rmse": 0.004924202944070581,
+            "rmse": 13.689530992116396
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    },
+    {
+      "chunk": 0,
+      "count": 32,
+      "group": 4,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.0390625,
+        "relative_rmse": 0.0076241936629701185,
+        "rmse": 0.007623788594477992
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": false,
+        "max_abs": 0.34375,
+        "relative_rmse": 0.007962123328074385,
+        "rmse": 0.06101317142584588
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 384.0,
+        "relative_rmse": 0.010931391606623082,
+        "rmse": 16.060268136620298
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0010227260906392603,
+            "rmse": 0.0010226717538616668
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.25,
+            "relative_rmse": 0.0018761009506654488,
+            "rmse": 0.014376425006070196
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 160.0,
+            "relative_rmse": 0.007209546393879914,
+            "rmse": 10.592178232729534
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0009037006318004586,
+            "rmse": 0.0009037129734388197
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.25,
+            "relative_rmse": 0.0018642504085308066,
+            "rmse": 0.01428661727253338
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 192.0,
+            "relative_rmse": 0.006873198329919519,
+            "rmse": 10.124826445092827
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    },
+    {
+      "chunk": 1,
+      "count": 12,
+      "group": 0,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.015625,
+        "relative_rmse": 0.0016490692632154297,
+        "rmse": 0.001648773198738764
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": true,
+        "max_abs": 0.0,
+        "relative_rmse": 0.0,
+        "rmse": 0.0
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 1024.0,
+        "relative_rmse": 0.004963588480500468,
+        "rmse": 45.563129863388426
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0016490692632154297,
+            "rmse": 0.001648773198738764
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 1024.0,
+            "relative_rmse": 0.004136998672944531,
+            "rmse": 37.97547047273181
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0016490692632154297,
+            "rmse": 0.001648773198738764
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 1024.0,
+            "relative_rmse": 0.004573604647331936,
+            "rmse": 41.96332264051141
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0016490692632154297,
+            "rmse": 0.001648773198738764
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 1024.0,
+            "relative_rmse": 0.004136998672944531,
+            "rmse": 37.97547047273181
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0016490692632154297,
+            "rmse": 0.001648773198738764
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 1024.0,
+            "relative_rmse": 0.004573604647331936,
+            "rmse": 41.96332264051141
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    },
+    {
+      "chunk": 1,
+      "count": 12,
+      "group": 1,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.03125,
+        "relative_rmse": 0.0057254679438053045,
+        "rmse": 0.005724383571394309
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": false,
+        "max_abs": 0.25,
+        "relative_rmse": 0.004785111916948074,
+        "rmse": 0.034328364396740016
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 384.0,
+        "relative_rmse": 0.0064063419099133065,
+        "rmse": 25.84045929075404
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.001646743060786805,
+            "rmse": 0.0016464311766297996
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.125,
+            "relative_rmse": 0.0019159195671908807,
+            "rmse": 0.013744795565684715
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 384.0,
+            "relative_rmse": 0.004630231142459486,
+            "rmse": 18.67638365638294
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.001646743060786805,
+            "rmse": 0.0016464311766297996
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.125,
+            "relative_rmse": 0.0019159195671908807,
+            "rmse": 0.013744795565684715
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 384.0,
+            "relative_rmse": 0.0044813808318738555,
+            "rmse": 18.07576850340753
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0015851576842898585,
+            "rmse": 0.001584938237577489
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.25,
+            "relative_rmse": 0.002017133322778395,
+            "rmse": 0.014463872607901085
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 256.0,
+            "relative_rmse": 0.004367997437247548,
+            "rmse": 17.61477742944487
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0015851576842898585,
+            "rmse": 0.001584938237577489
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.25,
+            "relative_rmse": 0.002017133322778395,
+            "rmse": 0.014463872607901085
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 256.0,
+            "relative_rmse": 0.004599762624644419,
+            "rmse": 18.5472554382882
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    },
+    {
+      "chunk": 1,
+      "count": 12,
+      "group": 2,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.03125,
+        "relative_rmse": 0.006789604745785219,
+        "rmse": 0.0067874557351797656
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": false,
+        "max_abs": 1.5,
+        "relative_rmse": 0.008195576058957684,
+        "rmse": 0.3504440143823511
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 24.0,
+        "relative_rmse": 0.007215183158402346,
+        "rmse": 1.887503007032197
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0013065728008564543,
+            "rmse": 0.0013061592511858964
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 24.0,
+            "relative_rmse": 0.005811528189445015,
+            "rmse": 1.5203047091404351
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0013065728008564543,
+            "rmse": 0.0013061592511858964
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 24.0,
+            "relative_rmse": 0.005650517762066142,
+            "rmse": 1.4779831572927147
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.001222114442456764,
+            "rmse": 0.0012219507080752097
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 24.0,
+            "relative_rmse": 0.005683454295944882,
+            "rmse": 1.4876473813279563
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.001222114442456764,
+            "rmse": 0.0012219507080752097
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 24.0,
+            "relative_rmse": 0.0055058795989085104,
+            "rmse": 1.441887500029706
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    },
+    {
+      "chunk": 1,
+      "count": 12,
+      "group": 3,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.03125,
+        "relative_rmse": 0.006657447939254549,
+        "rmse": 0.0066561690410087285
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": false,
+        "max_abs": 1.0,
+        "relative_rmse": 0.007853220645849411,
+        "rmse": 0.23308667533585958
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 128.0,
+        "relative_rmse": 0.010362597663011532,
+        "rmse": 15.179445648491777
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0012768491735363392,
+            "rmse": 0.0012766038903312563
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 128.0,
+            "relative_rmse": 0.007683301631339559,
+            "rmse": 11.254731999311556
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0012768491735363392,
+            "rmse": 0.0012766038903312563
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 128.0,
+            "relative_rmse": 0.008103491062142767,
+            "rmse": 11.86542600475398
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.03125,
+            "relative_rmse": 0.0012990950749489651,
+            "rmse": 0.0012988880808097274
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 128.0,
+            "relative_rmse": 0.007953443597133831,
+            "rmse": 11.657580602957463
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.03125,
+            "relative_rmse": 0.0012990950749489651,
+            "rmse": 0.0012988880808097274
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 128.0,
+            "relative_rmse": 0.007776453331489582,
+            "rmse": 11.399749921543119
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    },
+    {
+      "chunk": 1,
+      "count": 12,
+      "group": 4,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.0390625,
+        "relative_rmse": 0.008163472508694824,
+        "rmse": 0.008161447947196044
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": false,
+        "max_abs": 0.25,
+        "relative_rmse": 0.008097183540746376,
+        "rmse": 0.06320767520780748
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 128.0,
+        "relative_rmse": 0.010495923062759906,
+        "rmse": 15.03416494971942
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0012937301327833458,
+            "rmse": 0.0012934092844906794
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.25,
+            "relative_rmse": 0.001919196692694987,
+            "rmse": 0.014981500740513192
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 128.0,
+            "relative_rmse": 0.00728782308475009,
+            "rmse": 10.438942218360296
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0012937301327833458,
+            "rmse": 0.0012934092844906794
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.25,
+            "relative_rmse": 0.001919196692694987,
+            "rmse": 0.014981500740513192
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 128.0,
+            "relative_rmse": 0.0075618946625787675,
+            "rmse": 10.828412246013384
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.001249338458801009,
+            "rmse": 0.0012491721229342418
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.25,
+            "relative_rmse": 0.0020414711376852135,
+            "rmse": 0.015937321255186442
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 128.0,
+            "relative_rmse": 0.0073461997465200345,
+            "rmse": 10.536390589019982
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.001249338458801009,
+            "rmse": 0.0012491721229342418
+          },
+          "inner_v_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.25,
+            "relative_rmse": 0.0020414711376852135,
+            "rmse": 0.015937321255186442
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 128.0,
+            "relative_rmse": 0.007163747021998581,
+            "rmse": 10.276328785683262
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    }
+  ],
+  "guard": {
+    "gil_releases": 84,
+    "installed": true,
+    "plain_calls": 4,
+    "state_calls": 80
+  },
+  "identities": {
+    "compiled": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+    "source": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6"
+  },
+  "independent_selected_contrasts": {
+    "0": {
+      "chunk": 0,
+      "count": 32,
+      "group": 0,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.015625,
+        "relative_rmse": 0.0014303319555110043,
+        "rmse": 0.001430145696228229
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": true,
+        "max_abs": 0.0,
+        "relative_rmse": 0.0,
+        "rmse": 0.0
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 8192.0,
+        "relative_rmse": 0.0013953404943953679,
+        "rmse": 95.99005502089534
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0014303319555110043,
+            "rmse": 0.001430145696228229
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 8192.0,
+            "relative_rmse": 0.0013953404943953679,
+            "rmse": 95.99005502089534
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0014303319555110043,
+            "rmse": 0.001430145696228229
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 8192.0,
+            "relative_rmse": 0.0013953404943953679,
+            "rmse": 95.99005502089534
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    },
+    "1": {
+      "chunk": 1,
+      "count": 12,
+      "group": 0,
+      "own_cpu_vs_gpu_active_k0": {
+        "exact": false,
+        "max_abs": 0.015625,
+        "relative_rmse": 0.0016490692632154297,
+        "rmse": 0.001648773198738764
+      },
+      "own_cpu_vs_gpu_active_v0": {
+        "exact": true,
+        "max_abs": 0.0,
+        "relative_rmse": 0.0,
+        "rmse": 0.0
+      },
+      "own_cpu_vs_gpu_y": {
+        "exact": false,
+        "max_abs": 1024.0,
+        "relative_rmse": 0.004963588480500468,
+        "rmse": 45.563129863388426
+      },
+      "policy_contrasts": [
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0016490692632154297,
+            "rmse": 0.001648773198738764
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 1024.0,
+            "relative_rmse": 0.004136998672944531,
+            "rmse": 37.97547047273181
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0016490692632154297,
+            "rmse": 0.001648773198738764
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "CPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 1024.0,
+            "relative_rmse": 0.004573604647331936,
+            "rmse": 41.96332264051141
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0016490692632154297,
+            "rmse": 0.001648773198738764
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "CPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 1024.0,
+            "relative_rmse": 0.004136998672944531,
+            "rmse": 37.97547047273181
+          }
+        },
+        {
+          "inner_k_cache_0_active": {
+            "exact": false,
+            "max_abs": 0.015625,
+            "relative_rmse": 0.0016490692632154297,
+            "rmse": 0.001648773198738764
+          },
+          "inner_v_cache_0_active": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "input_trajectory": "GPU",
+          "state_trajectory": "GPU",
+          "tap23_out": {
+            "exact": true,
+            "max_abs": 0.0,
+            "relative_rmse": 0.0,
+            "rmse": 0.0
+          },
+          "y": {
+            "exact": false,
+            "max_abs": 1024.0,
+            "relative_rmse": 0.004573604647331936,
+            "rmse": 41.96332264051141
+          }
+        }
+      ],
+      "relative_rmse_denominator": "CPU expected array RMS"
+    }
+  },
+  "key_taps_replay": {
+    "actual_device_placement": "unverified; compute policy only",
+    "all_controls_pass": true,
+    "calls": [
+      {
+        "chunk": 0,
+        "factorial_endpoint_checks": {
+          "tap23_out": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 40960
+          },
+          "y": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 40960
+          }
+        },
+        "model": "original",
+        "original_matches_factorial": true,
+        "output_arrays": [
+          "tap23_out",
+          "y"
+        ],
+        "policy": "CPU"
+      },
+      {
+        "chunk": 1,
+        "factorial_endpoint_checks": {
+          "tap23_out": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 15360
+          },
+          "y": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 15360
+          }
+        },
+        "model": "original",
+        "original_matches_factorial": true,
+        "output_arrays": [
+          "tap23_out",
+          "y"
+        ],
+        "policy": "CPU"
+      },
+      {
+        "chunk": 0,
+        "factorial_endpoint_checks": {
+          "tap23_out": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 40960
+          },
+          "y": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 40960
+          }
+        },
+        "model": "tapped",
+        "original_matches_factorial": null,
+        "output_arrays": [
+          "k_7",
+          "k_9",
+          "tap23_out",
+          "value_5",
+          "x_5",
+          "y"
+        ],
+        "policy": "CPU"
+      },
+      {
+        "chunk": 1,
+        "factorial_endpoint_checks": {
+          "tap23_out": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 15360
+          },
+          "y": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 15360
+          }
+        },
+        "model": "tapped",
+        "original_matches_factorial": null,
+        "output_arrays": [
+          "k_7",
+          "k_9",
+          "tap23_out",
+          "value_5",
+          "x_5",
+          "y"
+        ],
+        "policy": "CPU"
+      },
+      {
+        "chunk": 0,
+        "factorial_endpoint_checks": {
+          "tap23_out": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 40960
+          },
+          "y": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 40960
+          }
+        },
+        "model": "original",
+        "original_matches_factorial": true,
+        "output_arrays": [
+          "tap23_out",
+          "y"
+        ],
+        "policy": "GPU"
+      },
+      {
+        "chunk": 1,
+        "factorial_endpoint_checks": {
+          "tap23_out": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 15360
+          },
+          "y": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 15360
+          }
+        },
+        "model": "original",
+        "original_matches_factorial": true,
+        "output_arrays": [
+          "tap23_out",
+          "y"
+        ],
+        "policy": "GPU"
+      },
+      {
+        "chunk": 0,
+        "factorial_endpoint_checks": {
+          "tap23_out": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 40960
+          },
+          "y": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 40960
+          }
+        },
+        "model": "tapped",
+        "original_matches_factorial": null,
+        "output_arrays": [
+          "k_7",
+          "k_9",
+          "tap23_out",
+          "value_5",
+          "x_5",
+          "y"
+        ],
+        "policy": "GPU"
+      },
+      {
+        "chunk": 1,
+        "factorial_endpoint_checks": {
+          "tap23_out": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 15360
+          },
+          "y": {
+            "count_diff": 0,
+            "exact": true,
+            "first_difference": null,
+            "max_abs": 0.0,
+            "size": 15360
+          }
+        },
+        "model": "tapped",
+        "original_matches_factorial": null,
+        "output_arrays": [
+          "k_7",
+          "k_9",
+          "tap23_out",
+          "value_5",
+          "x_5",
+          "y"
+        ],
+        "policy": "GPU"
+      }
+    ],
+    "gpu_numerical_qualification": "not_qualified",
+    "guard": {
+      "gil_releases": 8,
+      "installed": true,
+      "plain_calls": 0,
+      "state_calls": 8
+    },
+    "instrumentation_valid": true,
+    "interpretation": "Compute-policy differences are directly present at some tapped internal values while all same-policy controls, original-versus-tapped endpoints, and final eight-cache states remain exact. This localizes an observed intermediate divergence but does not identify its causal operation, prove actual GPU placement, or qualify the GPU path.",
+    "npz_inventory": [
+      {
+        "bytes": 151722,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-original/outputs.npz",
+        "sha256": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e"
+      },
+      {
+        "bytes": 160833,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-original/state-after.npz",
+        "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e"
+      },
+      {
+        "bytes": 270392,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-tapped/outputs.npz",
+        "sha256": "8c51f640c70658298072d4c3d979c9260e8b0818d4ba96f4458f3379f3f85be8"
+      },
+      {
+        "bytes": 160833,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-tapped/state-after.npz",
+        "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e"
+      },
+      {
+        "bytes": 151865,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-original/outputs.npz",
+        "sha256": "c4f7ef5c921b64eb91a587b1d63fbdc309d1509637bee764d8ca2f18b74b60d9"
+      },
+      {
+        "bytes": 161057,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-original/state-after.npz",
+        "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc"
+      },
+      {
+        "bytes": 270559,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-tapped/outputs.npz",
+        "sha256": "6f6290f7ae375c31bc43561b9e33948897778f5f36212f178a31957332ba2814"
+      },
+      {
+        "bytes": 161057,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-tapped/state-after.npz",
+        "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc"
+      },
+      {
+        "bytes": 307665,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/effective-inputs.npz",
+        "sha256": "69ecfe41ff5a4643a329aad8b0f30bf71c7119a73f9cb703394e94c2d276c85e"
+      },
+      {
+        "bytes": 18214,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/effective-state-before.npz",
+        "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc"
+      },
+      {
+        "bytes": 57524,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-original/outputs.npz",
+        "sha256": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4"
+      },
+      {
+        "bytes": 204635,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-original/state-after.npz",
+        "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6"
+      },
+      {
+        "bytes": 103444,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-tapped/outputs.npz",
+        "sha256": "84dd71fb5cf8ad1a65723140b2092fccb1e26120ad2e2525c999b53396c7c8be"
+      },
+      {
+        "bytes": 204635,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-tapped/state-after.npz",
+        "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6"
+      },
+      {
+        "bytes": 57581,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-original/outputs.npz",
+        "sha256": "0d8ed9267430c38912ee848329a19064f7ed074234f6048dba4f8f697a9da8e5"
+      },
+      {
+        "bytes": 204646,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-original/state-after.npz",
+        "sha256": "55c200e0bde28606311272044e525547a72d623ae1adf0f6be6334e32eb98ade"
+      },
+      {
+        "bytes": 103503,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-tapped/outputs.npz",
+        "sha256": "a055aba9de7ce181202e277c1f79f7c9ea546aa0ea2581e79063a4eee3691b6b"
+      },
+      {
+        "bytes": 204646,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-tapped/state-after.npz",
+        "sha256": "55c200e0bde28606311272044e525547a72d623ae1adf0f6be6334e32eb98ade"
+      },
+      {
+        "bytes": 115838,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/effective-inputs.npz",
+        "sha256": "9eb45ae6546f129807c180157e0b72160c43a57e0585509e19acd89f0873c36d"
+      },
+      {
+        "bytes": 160833,
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/effective-state-before.npz",
+        "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e"
+      }
+    ],
+    "npz_inventory_count": 20,
+    "passed": true,
+    "same_policy_controls": [
+      {
+        "chunk": 0,
+        "endpoint": {
+          "tap23_out": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              32,
+              1280
+            ]
+          },
+          "y": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              32,
+              1280
+            ]
+          }
+        },
+        "original_matches_saved_factorial": true,
+        "passed": true,
+        "policy": "CPU",
+        "states": {
+          "inner_k_cache_0": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_1": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_2": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_3": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_0": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_1": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_2": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_3": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          }
+        }
+      },
+      {
+        "chunk": 0,
+        "endpoint": {
+          "tap23_out": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              32,
+              1280
+            ]
+          },
+          "y": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              32,
+              1280
+            ]
+          }
+        },
+        "original_matches_saved_factorial": true,
+        "passed": true,
+        "policy": "GPU",
+        "states": {
+          "inner_k_cache_0": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_1": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_2": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_3": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_0": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_1": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_2": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_3": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          }
+        }
+      },
+      {
+        "chunk": 1,
+        "endpoint": {
+          "tap23_out": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              12,
+              1280
+            ]
+          },
+          "y": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              12,
+              1280
+            ]
+          }
+        },
+        "original_matches_saved_factorial": true,
+        "passed": true,
+        "policy": "CPU",
+        "states": {
+          "inner_k_cache_0": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_1": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_2": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_3": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_0": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_1": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_2": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_3": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          }
+        }
+      },
+      {
+        "chunk": 1,
+        "endpoint": {
+          "tap23_out": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              12,
+              1280
+            ]
+          },
+          "y": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              12,
+              1280
+            ]
+          }
+        },
+        "original_matches_saved_factorial": true,
+        "passed": true,
+        "policy": "GPU",
+        "states": {
+          "inner_k_cache_0": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_1": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_2": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_k_cache_3": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_0": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_1": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_2": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          },
+          "inner_v_cache_3": {
+            "dtype": "float32",
+            "exact": true,
+            "first_difference": null,
+            "shape": [
+              1,
+              2048,
+              2,
+              128
+            ]
+          }
+        }
+      }
+    ],
+    "status": "completed",
+    "tap_policy_recomputed": [
+      {
+        "chunk": 0,
+        "count_diff": 0,
+        "exact": true,
+        "first_difference": null,
+        "max_abs": 0.0,
+        "size": 40960,
+        "tap": "x_5"
+      },
+      {
+        "chunk": 0,
+        "count_diff": 2,
+        "exact": false,
+        "first_difference": {
+          "absdiff": 0.00390625,
+          "index": [
+            0,
+            12,
+            1,
+            71
+          ],
+          "left": 0.7890625,
+          "right": 0.79296875
+        },
+        "max_abs": 0.00390625,
+        "size": 8192,
+        "tap": "value_5"
+      },
+      {
+        "chunk": 0,
+        "count_diff": 4,
+        "exact": false,
+        "first_difference": {
+          "absdiff": 0.00390625,
+          "index": [
+            0,
+            12,
+            1,
+            40
+          ],
+          "left": 0.73828125,
+          "right": 0.734375
+        },
+        "max_abs": 0.00390625,
+        "size": 8192,
+        "tap": "k_7"
+      },
+      {
+        "chunk": 0,
+        "count_diff": 343,
+        "exact": false,
+        "first_difference": {
+          "absdiff": 0.015625,
+          "index": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "left": -3.875,
+          "right": -3.890625
+        },
+        "max_abs": 0.015625,
+        "size": 8192,
+        "tap": "k_9"
+      },
+      {
+        "chunk": 1,
+        "count_diff": 0,
+        "exact": true,
+        "first_difference": null,
+        "max_abs": 0.0,
+        "size": 15360,
+        "tap": "x_5"
+      },
+      {
+        "chunk": 1,
+        "count_diff": 0,
+        "exact": true,
+        "first_difference": null,
+        "max_abs": 0.0,
+        "size": 3072,
+        "tap": "value_5"
+      },
+      {
+        "chunk": 1,
+        "count_diff": 0,
+        "exact": true,
+        "first_difference": null,
+        "max_abs": 0.0,
+        "size": 3072,
+        "tap": "k_7"
+      },
+      {
+        "chunk": 1,
+        "count_diff": 150,
+        "exact": false,
+        "first_difference": {
+          "absdiff": 0.015625,
+          "index": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "left": -3.5,
+          "right": -3.515625
+        },
+        "max_abs": 0.015625,
+        "size": 3072,
+        "tap": "k_9"
+      }
+    ]
+  },
+  "metric_convention": "Relative RMSE denominator is the expected/control CPU array for CPU-vs-GPU policy and source effects.",
+  "observations": [
+    "CPU and CPU_AND_GPU embedding outputs are exactly equal for both chunks.",
+    "For cold chunk0/group0 with identical embeddings and zero states, group outputs diverge under CPU_AND_GPU: tap23_out remains exact while y and active caches differ; active inner_v_cache_0 is exact while active inner_k_cache_0 differs.",
+    "For warm chunk1/group0, group0 inputs are equal across policies while first-chunk cache states differ; factorial cells compare both compute policies with the same saved input/state.",
+    "All six CPU hidden checkpoints exactly match the portable reference and all six GPU metric dictionaries reproduce the prior failed screen at the recorded tolerance.",
+    "The measured differences are prompt-specific and do not prove which arithmetic operation causes the drift or that execution actually used GPU."
+  ],
+  "protocol_sha256": "411f037a40528da206538644536f186b53227271d1abc505a305bf143b43dc64",
+  "protocol_snapshot_sha256": "411f037a40528da206538644536f186b53227271d1abc505a305bf143b43dc64",
+  "raw_result_sha256": "ed27ff2a0b99bef14822450d044c2ec9e02206c647c934188c3f61c4c9886bb8",
+  "reference_anchor_results": [
+    {
+      "cpu_reference_exact": true,
+      "gpu_metrics": {
+        "cosine": 1.0,
+        "max_abs": 0.0,
+        "relative_rmse": 0.0,
+        "rmse": 0.0
+      },
+      "name": "embedding_norm",
+      "prior_gpu_metrics": {
+        "cosine": 1.0,
+        "max_abs": 0.0,
+        "relative_rmse": 0.0,
+        "rmse": 0.0
+      },
+      "prior_metric_agreement": {
+        "cosine": true,
+        "max_abs": true,
+        "relative_rmse": true,
+        "rmse": true
+      }
+    },
+    {
+      "cpu_reference_exact": true,
+      "gpu_metrics": {
+        "cosine": 0.9999893934263202,
+        "max_abs": 256.0,
+        "relative_rmse": 0.005175639014401141,
+        "rmse": 4.368506677065493
+      },
+      "name": "layer_11",
+      "prior_gpu_metrics": {
+        "cosine": 0.9999893934263202,
+        "max_abs": 256.0,
+        "relative_rmse": 0.005175639014401141,
+        "rmse": 4.368506677065493
+      },
+      "prior_metric_agreement": {
+        "cosine": true,
+        "max_abs": true,
+        "relative_rmse": true,
+        "rmse": true
+      }
+    },
+    {
+      "cpu_reference_exact": true,
+      "gpu_metrics": {
+        "cosine": 0.9999725462851041,
+        "max_abs": 1024.0,
+        "relative_rmse": 0.008258769807738547,
+        "rmse": 20.613876347510807
+      },
+      "name": "layer_15",
+      "prior_gpu_metrics": {
+        "cosine": 0.9999725462851041,
+        "max_abs": 1024.0,
+        "relative_rmse": 0.008258769807738547,
+        "rmse": 20.613876347510807
+      },
+      "prior_metric_agreement": {
+        "cosine": true,
+        "max_abs": true,
+        "relative_rmse": true,
+        "rmse": true
+      }
+    },
+    {
+      "cpu_reference_exact": true,
+      "gpu_metrics": {
+        "cosine": 0.9999517453001184,
+        "max_abs": 384.0,
+        "relative_rmse": 0.010770369083196594,
+        "rmse": 15.787037398872087
+      },
+      "name": "layer_19",
+      "prior_gpu_metrics": {
+        "cosine": 0.9999517453001184,
+        "max_abs": 384.0,
+        "relative_rmse": 0.010770369083196594,
+        "rmse": 15.787037398872087
+      },
+      "prior_metric_agreement": {
+        "cosine": true,
+        "max_abs": true,
+        "relative_rmse": true,
+        "rmse": true
+      }
+    },
+    {
+      "cpu_reference_exact": true,
+      "gpu_metrics": {
+        "cosine": 0.9999989766772123,
+        "max_abs": 8192.0,
+        "relative_rmse": 0.0014479397488108476,
+        "rmse": 85.24868525361022
+      },
+      "name": "layer_3",
+      "prior_gpu_metrics": {
+        "cosine": 0.9999989766772123,
+        "max_abs": 8192.0,
+        "relative_rmse": 0.0014479397488108476,
+        "rmse": 85.24868525361022
+      },
+      "prior_metric_agreement": {
+        "cosine": true,
+        "max_abs": true,
+        "relative_rmse": true,
+        "rmse": true
+      }
+    },
+    {
+      "cpu_reference_exact": true,
+      "gpu_metrics": {
+        "cosine": 0.9999979942247128,
+        "max_abs": 4096.0,
+        "relative_rmse": 0.0020460538498868726,
+        "rmse": 46.048239834655774
+      },
+      "name": "layer_7",
+      "prior_gpu_metrics": {
+        "cosine": 0.9999979942247128,
+        "max_abs": 4096.0,
+        "relative_rmse": 0.0020460538498868726,
+        "rmse": 46.048239834655774
+      },
+      "prior_metric_agreement": {
+        "cosine": true,
+        "max_abs": true,
+        "relative_rmse": true,
+        "rmse": true
+      }
+    }
+  ],
+  "schema_version": 1,
+  "selected_file_inventory": [
+    {
+      "label": "chunk0/embedding-CPU",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/embedding-CPU.npz",
+      "sha256": "c7f464e4d874e8b58f641c3ee992dfe809aff23429d563fa6d75fffebf6a4308",
+      "size_bytes": 87675
+    },
+    {
+      "label": "chunk0/embedding-GPU",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/embedding-GPU.npz",
+      "sha256": "c7f464e4d874e8b58f641c3ee992dfe809aff23429d563fa6d75fffebf6a4308",
+      "size_bytes": 87675
+    },
+    {
+      "label": "chunk0/group0/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/own-CPU/inputs.npz",
+      "sha256": "69ecfe41ff5a4643a329aad8b0f30bf71c7119a73f9cb703394e94c2d276c85e",
+      "size_bytes": 307665
+    },
+    {
+      "label": "chunk0/group0/own-CPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/own-CPU/outputs.npz",
+      "sha256": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+      "size_bytes": 151722
+    },
+    {
+      "label": "chunk0/group0/own-CPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/own-CPU/state-after.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+      "size_bytes": 160833
+    },
+    {
+      "label": "chunk0/group0/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/own-CPU/state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "size_bytes": 18214
+    },
+    {
+      "label": "chunk0/group0/own-GPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/own-GPU/inputs.npz",
+      "sha256": "69ecfe41ff5a4643a329aad8b0f30bf71c7119a73f9cb703394e94c2d276c85e",
+      "size_bytes": 307665
+    },
+    {
+      "label": "chunk0/group0/own-GPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/own-GPU/outputs.npz",
+      "sha256": "c4f7ef5c921b64eb91a587b1d63fbdc309d1509637bee764d8ca2f18b74b60d9",
+      "size_bytes": 151865
+    },
+    {
+      "label": "chunk0/group0/own-GPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/own-GPU/state-after.npz",
+      "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc",
+      "size_bytes": 161057
+    },
+    {
+      "label": "chunk0/group0/own-GPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/own-GPU/state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "size_bytes": 18214
+    },
+    {
+      "label": "chunk0/group0/replay-ICPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/replay-ICPU-SCPU-PCPU/outputs.npz",
+      "sha256": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+      "size_bytes": 151722
+    },
+    {
+      "label": "chunk0/group0/replay-ICPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/replay-ICPU-SCPU-PCPU/state-after.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+      "size_bytes": 160833
+    },
+    {
+      "label": "chunk0/group0/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "c4f7ef5c921b64eb91a587b1d63fbdc309d1509637bee764d8ca2f18b74b60d9",
+      "size_bytes": 151865
+    },
+    {
+      "label": "chunk0/group0/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc",
+      "size_bytes": 161057
+    },
+    {
+      "label": "chunk0/group0/replay-IGPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/replay-IGPU-SCPU-PCPU/outputs.npz",
+      "sha256": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+      "size_bytes": 151722
+    },
+    {
+      "label": "chunk0/group0/replay-IGPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/replay-IGPU-SCPU-PCPU/state-after.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+      "size_bytes": 160833
+    },
+    {
+      "label": "chunk0/group0/replay-IGPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/replay-IGPU-SCPU-PGPU/outputs.npz",
+      "sha256": "c4f7ef5c921b64eb91a587b1d63fbdc309d1509637bee764d8ca2f18b74b60d9",
+      "size_bytes": 151865
+    },
+    {
+      "label": "chunk0/group0/replay-IGPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/replay-IGPU-SCPU-PGPU/state-after.npz",
+      "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc",
+      "size_bytes": 161057
+    },
+    {
+      "label": "chunk0/group1/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/own-CPU/inputs.npz",
+      "sha256": "91e045a2661aba6fc669859b812dd93f688c0e465cbe4a0bc0c11a6ebc19522c",
+      "size_bytes": 313009
+    },
+    {
+      "label": "chunk0/group1/own-CPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/own-CPU/outputs.npz",
+      "sha256": "5c7adb311a1accd75918946c8caf905d2e7c19cc178cab6a55ca9bf35b362555",
+      "size_bytes": 151961
+    },
+    {
+      "label": "chunk0/group1/own-CPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/own-CPU/state-after.npz",
+      "sha256": "0f47876356fc8435d9857ca9eb992eb85422bbf94683e50195d587086653ec63",
+      "size_bytes": 163585
+    },
+    {
+      "label": "chunk0/group1/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/own-CPU/state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "size_bytes": 18214
+    },
+    {
+      "label": "chunk0/group1/own-GPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/own-GPU/inputs.npz",
+      "sha256": "d1f5f04ad3e01834d10943f056c782c34d0eacf6f4d44bc0111918b218ef360c",
+      "size_bytes": 313152
+    },
+    {
+      "label": "chunk0/group1/own-GPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/own-GPU/outputs.npz",
+      "sha256": "d42db65d5d3d58c1e77bf9b64fe95c3b09aaf62a39f06d6f78db77a16efd734b",
+      "size_bytes": 152128
+    },
+    {
+      "label": "chunk0/group1/own-GPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/own-GPU/state-after.npz",
+      "sha256": "1f420d1daedcdb2be9f973307470f50c253bca7e988d6c9f09a951182408c466",
+      "size_bytes": 163873
+    },
+    {
+      "label": "chunk0/group1/own-GPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/own-GPU/state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "size_bytes": 18214
+    },
+    {
+      "label": "chunk0/group1/replay-ICPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/replay-ICPU-SCPU-PCPU/outputs.npz",
+      "sha256": "5c7adb311a1accd75918946c8caf905d2e7c19cc178cab6a55ca9bf35b362555",
+      "size_bytes": 151961
+    },
+    {
+      "label": "chunk0/group1/replay-ICPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/replay-ICPU-SCPU-PCPU/state-after.npz",
+      "sha256": "0f47876356fc8435d9857ca9eb992eb85422bbf94683e50195d587086653ec63",
+      "size_bytes": 163585
+    },
+    {
+      "label": "chunk0/group1/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "a3926c5420fd50b0d574a547df38edf5a585e02ae204bb638c06b3202620a86c",
+      "size_bytes": 152163
+    },
+    {
+      "label": "chunk0/group1/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "6600ff1d8c1b7ab553185a11601a882ee45ad39670b671fc1e8bfd8b43e4522d",
+      "size_bytes": 163828
+    },
+    {
+      "label": "chunk0/group1/replay-IGPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/replay-IGPU-SCPU-PCPU/outputs.npz",
+      "sha256": "240354e32a1d010b3e9b897373323d77abe50696eb9f9b66f19ba213c9da42f0",
+      "size_bytes": 152029
+    },
+    {
+      "label": "chunk0/group1/replay-IGPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/replay-IGPU-SCPU-PCPU/state-after.npz",
+      "sha256": "c7a3a934a5a833a13fb1729017e3b7d0c86152d2563817aceec74c736d822b8a",
+      "size_bytes": 163667
+    },
+    {
+      "label": "chunk0/group1/replay-IGPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/replay-IGPU-SCPU-PGPU/outputs.npz",
+      "sha256": "d42db65d5d3d58c1e77bf9b64fe95c3b09aaf62a39f06d6f78db77a16efd734b",
+      "size_bytes": 152128
+    },
+    {
+      "label": "chunk0/group1/replay-IGPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group1/replay-IGPU-SCPU-PGPU/state-after.npz",
+      "sha256": "1f420d1daedcdb2be9f973307470f50c253bca7e988d6c9f09a951182408c466",
+      "size_bytes": 163873
+    },
+    {
+      "label": "chunk0/group2/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/own-CPU/inputs.npz",
+      "sha256": "bcb111bb3095f4d04eadf22d83accfa4cbd833095f81597441a957f608e41fbe",
+      "size_bytes": 313248
+    },
+    {
+      "label": "chunk0/group2/own-CPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/own-CPU/outputs.npz",
+      "sha256": "8288daff82ae6fdf8951bd20bd2c3fb8cc51554a098f80c5542d9269b6a9c782",
+      "size_bytes": 151721
+    },
+    {
+      "label": "chunk0/group2/own-CPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/own-CPU/state-after.npz",
+      "sha256": "78707576c1c6b55573e68435a402490ff5b5ef1b0656feb24250a329b7d5f14f",
+      "size_bytes": 163846
+    },
+    {
+      "label": "chunk0/group2/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/own-CPU/state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "size_bytes": 18214
+    },
+    {
+      "label": "chunk0/group2/own-GPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/own-GPU/inputs.npz",
+      "sha256": "e6f83dcf74ba00f0cdc83ec543815a0a221a542f0d91dcaf487861b5a5a663f0",
+      "size_bytes": 313415
+    },
+    {
+      "label": "chunk0/group2/own-GPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/own-GPU/outputs.npz",
+      "sha256": "56326c8a1e59ed0c9bc62eb2eb6b945f462bd072f00844939afca3a0db220dd3",
+      "size_bytes": 151935
+    },
+    {
+      "label": "chunk0/group2/own-GPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/own-GPU/state-after.npz",
+      "sha256": "bafcd8b155fd5872788790a4bbb4cebbe2dd97cf71ef6ee50443ed1e7aed2d1e",
+      "size_bytes": 164007
+    },
+    {
+      "label": "chunk0/group2/own-GPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/own-GPU/state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "size_bytes": 18214
+    },
+    {
+      "label": "chunk0/group2/replay-ICPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/replay-ICPU-SCPU-PCPU/outputs.npz",
+      "sha256": "8288daff82ae6fdf8951bd20bd2c3fb8cc51554a098f80c5542d9269b6a9c782",
+      "size_bytes": 151721
+    },
+    {
+      "label": "chunk0/group2/replay-ICPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/replay-ICPU-SCPU-PCPU/state-after.npz",
+      "sha256": "78707576c1c6b55573e68435a402490ff5b5ef1b0656feb24250a329b7d5f14f",
+      "size_bytes": 163846
+    },
+    {
+      "label": "chunk0/group2/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "6908885a4914df1c9f3b5ea83636bad73962263c322009db0d51a482cff2730f",
+      "size_bytes": 151947
+    },
+    {
+      "label": "chunk0/group2/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "b35cfdca16aee89922aed60e188dc140f5407bbfe24589329860edb5aed6fa32",
+      "size_bytes": 164007
+    },
+    {
+      "label": "chunk0/group2/replay-IGPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/replay-IGPU-SCPU-PCPU/outputs.npz",
+      "sha256": "ac03afbc027cc63ed2e698e5455ce45c5c72f3dc345f8e05bcb41ce8a73f6582",
+      "size_bytes": 151754
+    },
+    {
+      "label": "chunk0/group2/replay-IGPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/replay-IGPU-SCPU-PCPU/state-after.npz",
+      "sha256": "2dd2cc53f8154a1967cf6ac0714415e4a087b61e6e0c07a6de20f5ec8da108f9",
+      "size_bytes": 163878
+    },
+    {
+      "label": "chunk0/group2/replay-IGPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/replay-IGPU-SCPU-PGPU/outputs.npz",
+      "sha256": "56326c8a1e59ed0c9bc62eb2eb6b945f462bd072f00844939afca3a0db220dd3",
+      "size_bytes": 151935
+    },
+    {
+      "label": "chunk0/group2/replay-IGPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group2/replay-IGPU-SCPU-PGPU/state-after.npz",
+      "sha256": "bafcd8b155fd5872788790a4bbb4cebbe2dd97cf71ef6ee50443ed1e7aed2d1e",
+      "size_bytes": 164007
+    },
+    {
+      "label": "chunk0/group3/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/own-CPU/inputs.npz",
+      "sha256": "98d7bfcb9c0ec5b98b28d895dae47c33696f1bd5a3edadb82dab4b4a3dc1d16c",
+      "size_bytes": 318351
+    },
+    {
+      "label": "chunk0/group3/own-CPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/own-CPU/outputs.npz",
+      "sha256": "adfa9c063d43e6da96009fa43333b190ed580ee22397f70a5644d9a1a177653a",
+      "size_bytes": 151432
+    },
+    {
+      "label": "chunk0/group3/own-CPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/own-CPU/state-after.npz",
+      "sha256": "de99fff3637e70d9851374a71e133dc7e7c5fd3c217056a4d9d2a5288e4bd355",
+      "size_bytes": 163691
+    },
+    {
+      "label": "chunk0/group3/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/own-CPU/state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "size_bytes": 18214
+    },
+    {
+      "label": "chunk0/group3/own-GPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/own-GPU/inputs.npz",
+      "sha256": "abb45ae150bb32fe433be867da23ada23ce2f566dc3398bb088fae04229c3314",
+      "size_bytes": 318779
+    },
+    {
+      "label": "chunk0/group3/own-GPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/own-GPU/outputs.npz",
+      "sha256": "f8c2ccdf8dd07d54f187beeacd0e2c80a096b39a32ef3602ac5f38310a8806fb",
+      "size_bytes": 151696
+    },
+    {
+      "label": "chunk0/group3/own-GPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/own-GPU/state-after.npz",
+      "sha256": "3fd5f4ffaf75a1b364fbf62d5c35dcc127154975cf06f4d6af0355167cd927ce",
+      "size_bytes": 163813
+    },
+    {
+      "label": "chunk0/group3/own-GPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/own-GPU/state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "size_bytes": 18214
+    },
+    {
+      "label": "chunk0/group3/replay-ICPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/replay-ICPU-SCPU-PCPU/outputs.npz",
+      "sha256": "adfa9c063d43e6da96009fa43333b190ed580ee22397f70a5644d9a1a177653a",
+      "size_bytes": 151432
+    },
+    {
+      "label": "chunk0/group3/replay-ICPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/replay-ICPU-SCPU-PCPU/state-after.npz",
+      "sha256": "de99fff3637e70d9851374a71e133dc7e7c5fd3c217056a4d9d2a5288e4bd355",
+      "size_bytes": 163691
+    },
+    {
+      "label": "chunk0/group3/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "ab78c32ab653e15bb31b095de0002d4c5320cb8e92277761c8d699a8ae445aae",
+      "size_bytes": 151669
+    },
+    {
+      "label": "chunk0/group3/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "bf757a1a44f206ec38e23820e14c5bfc6a124a5b3f2af475d1f7aa5b923db742",
+      "size_bytes": 163801
+    },
+    {
+      "label": "chunk0/group3/replay-IGPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/replay-IGPU-SCPU-PCPU/outputs.npz",
+      "sha256": "38ea34685ad718529701a0e3091cec8da583ef431954e00becd972f721722f3c",
+      "size_bytes": 151468
+    },
+    {
+      "label": "chunk0/group3/replay-IGPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/replay-IGPU-SCPU-PCPU/state-after.npz",
+      "sha256": "e7ec332987afdeab3f28b486573589a091127feba51558b6ece4288ba3ecfcfe",
+      "size_bytes": 163573
+    },
+    {
+      "label": "chunk0/group3/replay-IGPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/replay-IGPU-SCPU-PGPU/outputs.npz",
+      "sha256": "f8c2ccdf8dd07d54f187beeacd0e2c80a096b39a32ef3602ac5f38310a8806fb",
+      "size_bytes": 151696
+    },
+    {
+      "label": "chunk0/group3/replay-IGPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group3/replay-IGPU-SCPU-PGPU/state-after.npz",
+      "sha256": "3fd5f4ffaf75a1b364fbf62d5c35dcc127154975cf06f4d6af0355167cd927ce",
+      "size_bytes": 163813
+    },
+    {
+      "label": "chunk0/group4/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/own-CPU/inputs.npz",
+      "sha256": "c80ab1a311d296fcbce48b65f1d5c538acfe3235e56333a11ccfabba4a88f79e",
+      "size_bytes": 318062
+    },
+    {
+      "label": "chunk0/group4/own-CPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/own-CPU/outputs.npz",
+      "sha256": "d14ed1b7ed00a5c7f70f5418ab4c10dfc732f29fc8d32b3f7dd2cbe068dec74a",
+      "size_bytes": 151099
+    },
+    {
+      "label": "chunk0/group4/own-CPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/own-CPU/state-after.npz",
+      "sha256": "9d13e6790cd93fbe934521bd65acdf52617bc6ae364ea16720f9e18541a4ffeb",
+      "size_bytes": 164042
+    },
+    {
+      "label": "chunk0/group4/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/own-CPU/state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "size_bytes": 18214
+    },
+    {
+      "label": "chunk0/group4/own-GPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/own-GPU/inputs.npz",
+      "sha256": "373f511886f1be3339eccf627539be0f35ce4df91ea9a77da658101201657596",
+      "size_bytes": 318540
+    },
+    {
+      "label": "chunk0/group4/own-GPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/own-GPU/outputs.npz",
+      "sha256": "968c26a13f414b98d8c008a02fcbe8dee74b22d3fdeadf3131a6cfd49ee2b049",
+      "size_bytes": 151270
+    },
+    {
+      "label": "chunk0/group4/own-GPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/own-GPU/state-after.npz",
+      "sha256": "319ce4738d77bc532b39ae98ce23dd55dd60130658717d6005b75e5873126561",
+      "size_bytes": 164066
+    },
+    {
+      "label": "chunk0/group4/own-GPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/own-GPU/state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "size_bytes": 18214
+    },
+    {
+      "label": "chunk0/group4/replay-ICPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/replay-ICPU-SCPU-PCPU/outputs.npz",
+      "sha256": "d14ed1b7ed00a5c7f70f5418ab4c10dfc732f29fc8d32b3f7dd2cbe068dec74a",
+      "size_bytes": 151099
+    },
+    {
+      "label": "chunk0/group4/replay-ICPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/replay-ICPU-SCPU-PCPU/state-after.npz",
+      "sha256": "9d13e6790cd93fbe934521bd65acdf52617bc6ae364ea16720f9e18541a4ffeb",
+      "size_bytes": 164042
+    },
+    {
+      "label": "chunk0/group4/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "73e6781fdd2adbe3e3109e3eafda24374351aa2a1c9c984f0858ec6199370930",
+      "size_bytes": 151338
+    },
+    {
+      "label": "chunk0/group4/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "ec36724047b5a8ecbd89d9037dd7fdbd05dedfe01f3367f78d9cda18596b70fb",
+      "size_bytes": 164173
+    },
+    {
+      "label": "chunk0/group4/replay-IGPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/replay-IGPU-SCPU-PCPU/outputs.npz",
+      "sha256": "291cbbcb1cb7c5c11472ee98257806388ef85401b2e82185fe113194daa21161",
+      "size_bytes": 151114
+    },
+    {
+      "label": "chunk0/group4/replay-IGPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/replay-IGPU-SCPU-PCPU/state-after.npz",
+      "sha256": "6700f7aab22b32e4b8255931be642a0ade405d30d46448c49258dc842c1c3aae",
+      "size_bytes": 163926
+    },
+    {
+      "label": "chunk0/group4/replay-IGPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/replay-IGPU-SCPU-PGPU/outputs.npz",
+      "sha256": "968c26a13f414b98d8c008a02fcbe8dee74b22d3fdeadf3131a6cfd49ee2b049",
+      "size_bytes": 151270
+    },
+    {
+      "label": "chunk0/group4/replay-IGPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group4/replay-IGPU-SCPU-PGPU/state-after.npz",
+      "sha256": "319ce4738d77bc532b39ae98ce23dd55dd60130658717d6005b75e5873126561",
+      "size_bytes": 164066
+    },
+    {
+      "label": "chunk1/embedding-CPU",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/embedding-CPU.npz",
+      "sha256": "f6ff561e300f9fcc546c4e4a450941fda24e90fbad68a70239fc7ede10351ab2",
+      "size_bytes": 33331
+    },
+    {
+      "label": "chunk1/embedding-GPU",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/embedding-GPU.npz",
+      "sha256": "f6ff561e300f9fcc546c4e4a450941fda24e90fbad68a70239fc7ede10351ab2",
+      "size_bytes": 33331
+    },
+    {
+      "label": "chunk1/group0/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/own-CPU/inputs.npz",
+      "sha256": "9eb45ae6546f129807c180157e0b72160c43a57e0585509e19acd89f0873c36d",
+      "size_bytes": 115838
+    },
+    {
+      "label": "chunk1/group0/own-CPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/own-CPU/outputs.npz",
+      "sha256": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+      "size_bytes": 57524
+    },
+    {
+      "label": "chunk1/group0/own-CPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/own-CPU/state-after.npz",
+      "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+      "size_bytes": 204635
+    },
+    {
+      "label": "chunk1/group0/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/own-CPU/state-before.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+      "size_bytes": 160833
+    },
+    {
+      "label": "chunk1/group0/own-GPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/own-GPU/inputs.npz",
+      "sha256": "9eb45ae6546f129807c180157e0b72160c43a57e0585509e19acd89f0873c36d",
+      "size_bytes": 115838
+    },
+    {
+      "label": "chunk1/group0/own-GPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/own-GPU/outputs.npz",
+      "sha256": "65f1cd35f36d795f40ae1d9bcd06ae9ddbd7c9e861ec1729b9432c0a48b063b7",
+      "size_bytes": 57583
+    },
+    {
+      "label": "chunk1/group0/own-GPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/own-GPU/state-after.npz",
+      "sha256": "ff5860af70d671e34b782ecaaa1e34e839613eb4891efff69d9c9e7d2ce10ca6",
+      "size_bytes": 204812
+    },
+    {
+      "label": "chunk1/group0/own-GPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/own-GPU/state-before.npz",
+      "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc",
+      "size_bytes": 161057
+    },
+    {
+      "label": "chunk1/group0/replay-ICPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-ICPU-SCPU-PCPU/outputs.npz",
+      "sha256": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+      "size_bytes": 57524
+    },
+    {
+      "label": "chunk1/group0/replay-ICPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-ICPU-SCPU-PCPU/state-after.npz",
+      "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+      "size_bytes": 204635
+    },
+    {
+      "label": "chunk1/group0/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "0d8ed9267430c38912ee848329a19064f7ed074234f6048dba4f8f697a9da8e5",
+      "size_bytes": 57581
+    },
+    {
+      "label": "chunk1/group0/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "55c200e0bde28606311272044e525547a72d623ae1adf0f6be6334e32eb98ade",
+      "size_bytes": 204646
+    },
+    {
+      "label": "chunk1/group0/replay-ICPU-SGPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-ICPU-SGPU-PCPU/outputs.npz",
+      "sha256": "6087262d2ae5ceb8b05dd5644719298856ed291add63b6c2d7045589a388432d",
+      "size_bytes": 57473
+    },
+    {
+      "label": "chunk1/group0/replay-ICPU-SGPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-ICPU-SGPU-PCPU/state-after.npz",
+      "sha256": "82481187584898aad713f673cf50b787e9fde294f978e4d19d4a696a440744ef",
+      "size_bytes": 204818
+    },
+    {
+      "label": "chunk1/group0/replay-ICPU-SGPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-ICPU-SGPU-PGPU/outputs.npz",
+      "sha256": "65f1cd35f36d795f40ae1d9bcd06ae9ddbd7c9e861ec1729b9432c0a48b063b7",
+      "size_bytes": 57583
+    },
+    {
+      "label": "chunk1/group0/replay-ICPU-SGPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-ICPU-SGPU-PGPU/state-after.npz",
+      "sha256": "ff5860af70d671e34b782ecaaa1e34e839613eb4891efff69d9c9e7d2ce10ca6",
+      "size_bytes": 204812
+    },
+    {
+      "label": "chunk1/group0/replay-IGPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-IGPU-SCPU-PCPU/outputs.npz",
+      "sha256": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+      "size_bytes": 57524
+    },
+    {
+      "label": "chunk1/group0/replay-IGPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-IGPU-SCPU-PCPU/state-after.npz",
+      "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+      "size_bytes": 204635
+    },
+    {
+      "label": "chunk1/group0/replay-IGPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-IGPU-SCPU-PGPU/outputs.npz",
+      "sha256": "0d8ed9267430c38912ee848329a19064f7ed074234f6048dba4f8f697a9da8e5",
+      "size_bytes": 57581
+    },
+    {
+      "label": "chunk1/group0/replay-IGPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-IGPU-SCPU-PGPU/state-after.npz",
+      "sha256": "55c200e0bde28606311272044e525547a72d623ae1adf0f6be6334e32eb98ade",
+      "size_bytes": 204646
+    },
+    {
+      "label": "chunk1/group0/replay-IGPU-SGPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-IGPU-SGPU-PCPU/outputs.npz",
+      "sha256": "6087262d2ae5ceb8b05dd5644719298856ed291add63b6c2d7045589a388432d",
+      "size_bytes": 57473
+    },
+    {
+      "label": "chunk1/group0/replay-IGPU-SGPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-IGPU-SGPU-PCPU/state-after.npz",
+      "sha256": "82481187584898aad713f673cf50b787e9fde294f978e4d19d4a696a440744ef",
+      "size_bytes": 204818
+    },
+    {
+      "label": "chunk1/group0/replay-IGPU-SGPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-IGPU-SGPU-PGPU/outputs.npz",
+      "sha256": "65f1cd35f36d795f40ae1d9bcd06ae9ddbd7c9e861ec1729b9432c0a48b063b7",
+      "size_bytes": 57583
+    },
+    {
+      "label": "chunk1/group0/replay-IGPU-SGPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-IGPU-SGPU-PGPU/state-after.npz",
+      "sha256": "ff5860af70d671e34b782ecaaa1e34e839613eb4891efff69d9c9e7d2ce10ca6",
+      "size_bytes": 204812
+    },
+    {
+      "label": "chunk1/group1/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/own-CPU/inputs.npz",
+      "sha256": "222407a402e7095fe68a81db3834208126e09324299772aacaa7ea731e1ed5eb",
+      "size_bytes": 118616
+    },
+    {
+      "label": "chunk1/group1/own-CPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/own-CPU/outputs.npz",
+      "sha256": "8356604ea2860c20a6cab407108101daa532035ae2add88b195c03dbb921dc8d",
+      "size_bytes": 57387
+    },
+    {
+      "label": "chunk1/group1/own-CPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/own-CPU/state-after.npz",
+      "sha256": "515d8b5e050ef5bedc3a2c07029167dcba86aa56e16e6654884c2cca236b3f80",
+      "size_bytes": 209959
+    },
+    {
+      "label": "chunk1/group1/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/own-CPU/state-before.npz",
+      "sha256": "0f47876356fc8435d9857ca9eb992eb85422bbf94683e50195d587086653ec63",
+      "size_bytes": 163585
+    },
+    {
+      "label": "chunk1/group1/own-GPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/own-GPU/inputs.npz",
+      "sha256": "d37008d37b9d4c7ba3bbe80db11aa6bbbcd9d58aca87337834a35336ef0ecd40",
+      "size_bytes": 118675
+    },
+    {
+      "label": "chunk1/group1/own-GPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/own-GPU/outputs.npz",
+      "sha256": "773721b881a0e6848935bf3fe7ab14a2a38e10bd48e00ddf2c2dcda3696ea2df",
+      "size_bytes": 57436
+    },
+    {
+      "label": "chunk1/group1/own-GPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/own-GPU/state-after.npz",
+      "sha256": "79ee0b2e13e9f99f92f146dc9a9d2ae8d5aa7813be77dee296c7e8654cbcbfbf",
+      "size_bytes": 210230
+    },
+    {
+      "label": "chunk1/group1/own-GPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/own-GPU/state-before.npz",
+      "sha256": "1f420d1daedcdb2be9f973307470f50c253bca7e988d6c9f09a951182408c466",
+      "size_bytes": 163873
+    },
+    {
+      "label": "chunk1/group1/replay-ICPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-ICPU-SCPU-PCPU/outputs.npz",
+      "sha256": "8356604ea2860c20a6cab407108101daa532035ae2add88b195c03dbb921dc8d",
+      "size_bytes": 57387
+    },
+    {
+      "label": "chunk1/group1/replay-ICPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-ICPU-SCPU-PCPU/state-after.npz",
+      "sha256": "515d8b5e050ef5bedc3a2c07029167dcba86aa56e16e6654884c2cca236b3f80",
+      "size_bytes": 209959
+    },
+    {
+      "label": "chunk1/group1/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "0953d4740171defa9f132031a162c8ad0fc3ac17f4e0241d576b704ad7be83e2",
+      "size_bytes": 57485
+    },
+    {
+      "label": "chunk1/group1/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "910cb15c4544a5ce15c4a344692d1e7cab9ab39177bdcfffb8099a35a51c1b7e",
+      "size_bytes": 210056
+    },
+    {
+      "label": "chunk1/group1/replay-ICPU-SGPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-ICPU-SGPU-PCPU/outputs.npz",
+      "sha256": "f6cab4f5c7f0f116753e46d50c0be50811a9a10623b7697403c17ce6a04eb8b9",
+      "size_bytes": 57409
+    },
+    {
+      "label": "chunk1/group1/replay-ICPU-SGPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-ICPU-SGPU-PCPU/state-after.npz",
+      "sha256": "69d9e08b22cb0071fca985228eed7883e1a9e6153bf7ee5775636e5da1c88511",
+      "size_bytes": 210153
+    },
+    {
+      "label": "chunk1/group1/replay-ICPU-SGPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-ICPU-SGPU-PGPU/outputs.npz",
+      "sha256": "8dae68ac9bac3f23c7248f4f2b414d76434a1a3d9e8bf2b1011c2036ce455f3c",
+      "size_bytes": 57470
+    },
+    {
+      "label": "chunk1/group1/replay-ICPU-SGPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-ICPU-SGPU-PGPU/state-after.npz",
+      "sha256": "ce16c8ee7059ce2a0bf64d2990ef4636a6f0c8a72aa05c552a9f17bad7a27a9f",
+      "size_bytes": 210194
+    },
+    {
+      "label": "chunk1/group1/replay-IGPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-IGPU-SCPU-PCPU/outputs.npz",
+      "sha256": "dc23b0ffbd280e8e3677a85b609cb103eede6c3b543cca4dd85c07bc645b2fcb",
+      "size_bytes": 57376
+    },
+    {
+      "label": "chunk1/group1/replay-IGPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-IGPU-SCPU-PCPU/state-after.npz",
+      "sha256": "4acaa354f287a933dc92511dfd2be59dc401cbd228dcdf10463c390d0192a93a",
+      "size_bytes": 210029
+    },
+    {
+      "label": "chunk1/group1/replay-IGPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-IGPU-SCPU-PGPU/outputs.npz",
+      "sha256": "4bf434c30a2209e822aab2db99d79b7cf84f019435a709ce8bd48b4f4d494bf1",
+      "size_bytes": 57427
+    },
+    {
+      "label": "chunk1/group1/replay-IGPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-IGPU-SCPU-PGPU/state-after.npz",
+      "sha256": "9ddc554ea6ef100b2ae36da13adc8cab93c5272bbabfa2e96d0afd805b7cb77d",
+      "size_bytes": 210066
+    },
+    {
+      "label": "chunk1/group1/replay-IGPU-SGPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-IGPU-SGPU-PCPU/outputs.npz",
+      "sha256": "74fea6ea2d63e0c4336c295a3b0c1c576ec37c32a8d084a978e90bc796d2ea6b",
+      "size_bytes": 57390
+    },
+    {
+      "label": "chunk1/group1/replay-IGPU-SGPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-IGPU-SGPU-PCPU/state-after.npz",
+      "sha256": "7983535cc0db29218e695a3b44eb2fa6d64a799d613faaaab52cdff43ab7f769",
+      "size_bytes": 210213
+    },
+    {
+      "label": "chunk1/group1/replay-IGPU-SGPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-IGPU-SGPU-PGPU/outputs.npz",
+      "sha256": "773721b881a0e6848935bf3fe7ab14a2a38e10bd48e00ddf2c2dcda3696ea2df",
+      "size_bytes": 57436
+    },
+    {
+      "label": "chunk1/group1/replay-IGPU-SGPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group1/replay-IGPU-SGPU-PGPU/state-after.npz",
+      "sha256": "79ee0b2e13e9f99f92f146dc9a9d2ae8d5aa7813be77dee296c7e8654cbcbfbf",
+      "size_bytes": 210230
+    },
+    {
+      "label": "chunk1/group2/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/own-CPU/inputs.npz",
+      "sha256": "7891a53c614609a97dc80871ae55778eaeda9cf9787e92e0aa86bca670e6acd6",
+      "size_bytes": 118479
+    },
+    {
+      "label": "chunk1/group2/own-CPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/own-CPU/outputs.npz",
+      "sha256": "8ba6c25cd5f3f8f40fc25a462cf0043fb6dd97d770cef7a417674746905ebd74",
+      "size_bytes": 57365
+    },
+    {
+      "label": "chunk1/group2/own-CPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/own-CPU/state-after.npz",
+      "sha256": "a578d4cc8e75b152ec081168d2184783f0e3feaca87f572341d3b7078d17c31e",
+      "size_bytes": 210348
+    },
+    {
+      "label": "chunk1/group2/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/own-CPU/state-before.npz",
+      "sha256": "78707576c1c6b55573e68435a402490ff5b5ef1b0656feb24250a329b7d5f14f",
+      "size_bytes": 163846
+    },
+    {
+      "label": "chunk1/group2/own-GPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/own-GPU/inputs.npz",
+      "sha256": "703e7c642f9d5d124de5bc3cc5dfb29510a16258ad954b46d4a35e62085a7cc3",
+      "size_bytes": 118528
+    },
+    {
+      "label": "chunk1/group2/own-GPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/own-GPU/outputs.npz",
+      "sha256": "d282b2afa06e3f1a2032aa63601cef9a31e533be5be2793d9e96abedd045e7a8",
+      "size_bytes": 57457
+    },
+    {
+      "label": "chunk1/group2/own-GPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/own-GPU/state-after.npz",
+      "sha256": "3ab8699744aafc6c107dd4c57289fb4fb05cbfa4d56c393483d08fdadfdb0b4c",
+      "size_bytes": 210409
+    },
+    {
+      "label": "chunk1/group2/own-GPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/own-GPU/state-before.npz",
+      "sha256": "bafcd8b155fd5872788790a4bbb4cebbe2dd97cf71ef6ee50443ed1e7aed2d1e",
+      "size_bytes": 164007
+    },
+    {
+      "label": "chunk1/group2/replay-ICPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-ICPU-SCPU-PCPU/outputs.npz",
+      "sha256": "8ba6c25cd5f3f8f40fc25a462cf0043fb6dd97d770cef7a417674746905ebd74",
+      "size_bytes": 57365
+    },
+    {
+      "label": "chunk1/group2/replay-ICPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-ICPU-SCPU-PCPU/state-after.npz",
+      "sha256": "a578d4cc8e75b152ec081168d2184783f0e3feaca87f572341d3b7078d17c31e",
+      "size_bytes": 210348
+    },
+    {
+      "label": "chunk1/group2/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "8408195c78bd081bedee5f158a842b8d5cf2e21986ed83393bef0c7ef02f9ee9",
+      "size_bytes": 57449
+    },
+    {
+      "label": "chunk1/group2/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "f9bbf7aaec84d82ba175319b808a6c84bfa8e8cbe659238d271cabb97e8eda14",
+      "size_bytes": 210373
+    },
+    {
+      "label": "chunk1/group2/replay-ICPU-SGPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-ICPU-SGPU-PCPU/outputs.npz",
+      "sha256": "891856002081abb33e0a2998710d73566f0771aa8870ad0e5f6a854219f63ad3",
+      "size_bytes": 57339
+    },
+    {
+      "label": "chunk1/group2/replay-ICPU-SGPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-ICPU-SGPU-PCPU/state-after.npz",
+      "sha256": "ab28103f8031e2a331a4af24aee8ba10bd42ef9ee85043fadeab93077df259e1",
+      "size_bytes": 210440
+    },
+    {
+      "label": "chunk1/group2/replay-ICPU-SGPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-ICPU-SGPU-PGPU/outputs.npz",
+      "sha256": "a208d2de923e91c054cd804206ba3558dce7c67e2a88880b078b6f58e5bd826f",
+      "size_bytes": 57452
+    },
+    {
+      "label": "chunk1/group2/replay-ICPU-SGPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-ICPU-SGPU-PGPU/state-after.npz",
+      "sha256": "b192d674da15e326531bf3a1834f5df3d4880e3e06cf7e1ed5cd647d29808470",
+      "size_bytes": 210468
+    },
+    {
+      "label": "chunk1/group2/replay-IGPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-IGPU-SCPU-PCPU/outputs.npz",
+      "sha256": "2011841d79727015605b11deebf7fcd4fed8a44f5a986b6a3760c5e145ffec23",
+      "size_bytes": 57377
+    },
+    {
+      "label": "chunk1/group2/replay-IGPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-IGPU-SCPU-PCPU/state-after.npz",
+      "sha256": "91932ddd9d235b8bbbda7802206e5ccb8d0418e5f986bde8c1676a950806ca74",
+      "size_bytes": 210272
+    },
+    {
+      "label": "chunk1/group2/replay-IGPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-IGPU-SCPU-PGPU/outputs.npz",
+      "sha256": "18a7583a1eb9f6bd11878f038352a6d506070acddd075a051ddcdba02b418d97",
+      "size_bytes": 57386
+    },
+    {
+      "label": "chunk1/group2/replay-IGPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-IGPU-SCPU-PGPU/state-after.npz",
+      "sha256": "90a51eb3d505efbbb85d79afd82c87455882351e91602afc5f751259481a3acc",
+      "size_bytes": 210280
+    },
+    {
+      "label": "chunk1/group2/replay-IGPU-SGPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-IGPU-SGPU-PCPU/outputs.npz",
+      "sha256": "5ea1a650e990384c014559d014df8c3bdc14d42373e7448ee97cc736880839fa",
+      "size_bytes": 57342
+    },
+    {
+      "label": "chunk1/group2/replay-IGPU-SGPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-IGPU-SGPU-PCPU/state-after.npz",
+      "sha256": "da859d1f4d9288ab88db2c9019592ba91c6e36fb146e59c0a2cec9a55ae03e8d",
+      "size_bytes": 210393
+    },
+    {
+      "label": "chunk1/group2/replay-IGPU-SGPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-IGPU-SGPU-PGPU/outputs.npz",
+      "sha256": "d282b2afa06e3f1a2032aa63601cef9a31e533be5be2793d9e96abedd045e7a8",
+      "size_bytes": 57457
+    },
+    {
+      "label": "chunk1/group2/replay-IGPU-SGPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group2/replay-IGPU-SGPU-PGPU/state-after.npz",
+      "sha256": "3ab8699744aafc6c107dd4c57289fb4fb05cbfa4d56c393483d08fdadfdb0b4c",
+      "size_bytes": 210409
+    },
+    {
+      "label": "chunk1/group3/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/own-CPU/inputs.npz",
+      "sha256": "a7f8878643d0e8ab5c796b54458cafaac8073bb9e47ac4cc9111e0033ce27145",
+      "size_bytes": 121076
+    },
+    {
+      "label": "chunk1/group3/own-CPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/own-CPU/outputs.npz",
+      "sha256": "ec7248a19f0445d352b33b0042d72fa80f47d2ba3d05692d6021c0bb6336f2ba",
+      "size_bytes": 57138
+    },
+    {
+      "label": "chunk1/group3/own-CPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/own-CPU/state-after.npz",
+      "sha256": "2fe1d45021c2ca1a285b1a122cfdac70e1d67cb16075908138afaeaa4d93e9e2",
+      "size_bytes": 210060
+    },
+    {
+      "label": "chunk1/group3/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/own-CPU/state-before.npz",
+      "sha256": "de99fff3637e70d9851374a71e133dc7e7c5fd3c217056a4d9d2a5288e4bd355",
+      "size_bytes": 163691
+    },
+    {
+      "label": "chunk1/group3/own-GPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/own-GPU/inputs.npz",
+      "sha256": "1602a8f51ef109e6b43aca9be8ebe9b38bbec71bea4e2029d898ee9effed296b",
+      "size_bytes": 121260
+    },
+    {
+      "label": "chunk1/group3/own-GPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/own-GPU/outputs.npz",
+      "sha256": "2f2c229f266848e521dee2b440d4c0032fe6448b3516a6d884b15972178153e3",
+      "size_bytes": 57250
+    },
+    {
+      "label": "chunk1/group3/own-GPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/own-GPU/state-after.npz",
+      "sha256": "2e07f252c6a22411a5d89930920a8df5b3bf1ef945ef33f7c3f708b9d84e7bc8",
+      "size_bytes": 210170
+    },
+    {
+      "label": "chunk1/group3/own-GPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/own-GPU/state-before.npz",
+      "sha256": "3fd5f4ffaf75a1b364fbf62d5c35dcc127154975cf06f4d6af0355167cd927ce",
+      "size_bytes": 163813
+    },
+    {
+      "label": "chunk1/group3/replay-ICPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-ICPU-SCPU-PCPU/outputs.npz",
+      "sha256": "ec7248a19f0445d352b33b0042d72fa80f47d2ba3d05692d6021c0bb6336f2ba",
+      "size_bytes": 57138
+    },
+    {
+      "label": "chunk1/group3/replay-ICPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-ICPU-SCPU-PCPU/state-after.npz",
+      "sha256": "2fe1d45021c2ca1a285b1a122cfdac70e1d67cb16075908138afaeaa4d93e9e2",
+      "size_bytes": 210060
+    },
+    {
+      "label": "chunk1/group3/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "e0db2508d50e1001ef86ba605a1ca520380f6a37903123d71760e833c4aa3291",
+      "size_bytes": 57236
+    },
+    {
+      "label": "chunk1/group3/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "72b705abba63c32a407035b35dd8cb2bc0eee93445fac6907def2c8e0dd99d20",
+      "size_bytes": 210066
+    },
+    {
+      "label": "chunk1/group3/replay-ICPU-SGPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-ICPU-SGPU-PCPU/outputs.npz",
+      "sha256": "94ba75f3df4f3c4b426966d8e1012b74b5ea1e2e4fd97762337bfec89aceb44f",
+      "size_bytes": 57172
+    },
+    {
+      "label": "chunk1/group3/replay-ICPU-SGPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-ICPU-SGPU-PCPU/state-after.npz",
+      "sha256": "c3772fe795ef09c9730a0348f7198d4fa13eaa98af8effcfffe262eb59c13712",
+      "size_bytes": 210138
+    },
+    {
+      "label": "chunk1/group3/replay-ICPU-SGPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-ICPU-SGPU-PGPU/outputs.npz",
+      "sha256": "06011a09f7566376f36b6e74b470f652215d22ddcefc444918898a1f285fdaf4",
+      "size_bytes": 57244
+    },
+    {
+      "label": "chunk1/group3/replay-ICPU-SGPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-ICPU-SGPU-PGPU/state-after.npz",
+      "sha256": "0913a192c8db88e13da0f70bfc5d73664388827812e8c485941a50372be5ab97",
+      "size_bytes": 210196
+    },
+    {
+      "label": "chunk1/group3/replay-IGPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-IGPU-SCPU-PCPU/outputs.npz",
+      "sha256": "cd78a4540fb01306486889165b3dcaea26d9e2143ce30f3f1fda316a81388740",
+      "size_bytes": 57121
+    },
+    {
+      "label": "chunk1/group3/replay-IGPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-IGPU-SCPU-PCPU/state-after.npz",
+      "sha256": "53644573b6495d7bbb9290534b61ce6121550d25596872c1884a9c5c401ac038",
+      "size_bytes": 210017
+    },
+    {
+      "label": "chunk1/group3/replay-IGPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-IGPU-SCPU-PGPU/outputs.npz",
+      "sha256": "e0f7af9b92ae5672c1f3cfc7471a274a3e058053c945eb37bb67aceec77dc8f9",
+      "size_bytes": 57249
+    },
+    {
+      "label": "chunk1/group3/replay-IGPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-IGPU-SCPU-PGPU/state-after.npz",
+      "sha256": "b8ee4ea662566fc11780cd138aed67782a89f24a7e86a642ac31475d6d1c2b21",
+      "size_bytes": 210056
+    },
+    {
+      "label": "chunk1/group3/replay-IGPU-SGPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-IGPU-SGPU-PCPU/outputs.npz",
+      "sha256": "2836e56e8415de4104cf4e23c0cd93e3645fdfe337d3561bd4b84394a30e28d4",
+      "size_bytes": 57121
+    },
+    {
+      "label": "chunk1/group3/replay-IGPU-SGPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-IGPU-SGPU-PCPU/state-after.npz",
+      "sha256": "2ca2e6c97586c6b833822035364bf56ce5a64bfcdfa11a6a0f6300b49afaae74",
+      "size_bytes": 210142
+    },
+    {
+      "label": "chunk1/group3/replay-IGPU-SGPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-IGPU-SGPU-PGPU/outputs.npz",
+      "sha256": "2f2c229f266848e521dee2b440d4c0032fe6448b3516a6d884b15972178153e3",
+      "size_bytes": 57250
+    },
+    {
+      "label": "chunk1/group3/replay-IGPU-SGPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group3/replay-IGPU-SGPU-PGPU/state-after.npz",
+      "sha256": "2e07f252c6a22411a5d89930920a8df5b3bf1ef945ef33f7c3f708b9d84e7bc8",
+      "size_bytes": 210170
+    },
+    {
+      "label": "chunk1/group4/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/own-CPU/inputs.npz",
+      "sha256": "1945b32300ab54aa2d70fbe7dc755fe50d42aa7f265f6bdc1742c74d3dab5194",
+      "size_bytes": 120849
+    },
+    {
+      "label": "chunk1/group4/own-CPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/own-CPU/outputs.npz",
+      "sha256": "481391b4df8e0da7b71ac0d7c2bfeebfdca8e31375f7a3a77c6dceb788891f55",
+      "size_bytes": 57172
+    },
+    {
+      "label": "chunk1/group4/own-CPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/own-CPU/state-after.npz",
+      "sha256": "9f05774037309f76aa986a1f07d26ebdaf5d8e143d2235edcf520a4c05c7c965",
+      "size_bytes": 210363
+    },
+    {
+      "label": "chunk1/group4/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/own-CPU/state-before.npz",
+      "sha256": "9d13e6790cd93fbe934521bd65acdf52617bc6ae364ea16720f9e18541a4ffeb",
+      "size_bytes": 164042
+    },
+    {
+      "label": "chunk1/group4/own-GPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/own-GPU/inputs.npz",
+      "sha256": "32e228ed99996ecfa6c9eddfed7cbb1aab7e6814c2567b4cc5f830f466b0f05e",
+      "size_bytes": 121053
+    },
+    {
+      "label": "chunk1/group4/own-GPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/own-GPU/outputs.npz",
+      "sha256": "78ce0eceea3201550f1cb6bf40488dab8bf2fbaa53a6fbbbe455ef9a9931a046",
+      "size_bytes": 57291
+    },
+    {
+      "label": "chunk1/group4/own-GPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/own-GPU/state-after.npz",
+      "sha256": "12f9078a3c479560126ab6e21259857806746321b01289000c8b4f1920f41509",
+      "size_bytes": 210388
+    },
+    {
+      "label": "chunk1/group4/own-GPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/own-GPU/state-before.npz",
+      "sha256": "319ce4738d77bc532b39ae98ce23dd55dd60130658717d6005b75e5873126561",
+      "size_bytes": 164066
+    },
+    {
+      "label": "chunk1/group4/replay-ICPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-ICPU-SCPU-PCPU/outputs.npz",
+      "sha256": "481391b4df8e0da7b71ac0d7c2bfeebfdca8e31375f7a3a77c6dceb788891f55",
+      "size_bytes": 57172
+    },
+    {
+      "label": "chunk1/group4/replay-ICPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-ICPU-SCPU-PCPU/state-after.npz",
+      "sha256": "9f05774037309f76aa986a1f07d26ebdaf5d8e143d2235edcf520a4c05c7c965",
+      "size_bytes": 210363
+    },
+    {
+      "label": "chunk1/group4/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "2b5bb84aa0c744c858ea575fc505865aca23012fc2d80b9c27d23b2f5fe248a7",
+      "size_bytes": 57326
+    },
+    {
+      "label": "chunk1/group4/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "b32aabde6912e9efb2d40c597df8ea615b8e396e67f3c278c1b837fee1092e99",
+      "size_bytes": 210354
+    },
+    {
+      "label": "chunk1/group4/replay-ICPU-SGPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-ICPU-SGPU-PCPU/outputs.npz",
+      "sha256": "92620b326ccdab5eba97df73eacae8350207bb7e1ab4ab428369587b0b7c86c3",
+      "size_bytes": 57220
+    },
+    {
+      "label": "chunk1/group4/replay-ICPU-SGPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-ICPU-SGPU-PCPU/state-after.npz",
+      "sha256": "cb8372bdf53ed60a36d537408025ff512fca1389e4221e42af88c698e7e720d6",
+      "size_bytes": 210346
+    },
+    {
+      "label": "chunk1/group4/replay-ICPU-SGPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-ICPU-SGPU-PGPU/outputs.npz",
+      "sha256": "3ed47ba7c015947a52e2312db9b32541dcd6a72fe9c40d71376da2f00c8fe016",
+      "size_bytes": 57326
+    },
+    {
+      "label": "chunk1/group4/replay-ICPU-SGPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-ICPU-SGPU-PGPU/state-after.npz",
+      "sha256": "12b3ee54a28c486497489f30e005a697cdcde932c9c1c13efecbb128b0da2d64",
+      "size_bytes": 210347
+    },
+    {
+      "label": "chunk1/group4/replay-IGPU-SCPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-IGPU-SCPU-PCPU/outputs.npz",
+      "sha256": "0565cb440a5330a566749c7baf41e82f010cf8236543a61092567c4ffab6f101",
+      "size_bytes": 57240
+    },
+    {
+      "label": "chunk1/group4/replay-IGPU-SCPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-IGPU-SCPU-PCPU/state-after.npz",
+      "sha256": "533bba1e9e4fad7b607930817a624720b385cbdfcb71f5b5596945f087bfa401",
+      "size_bytes": 210422
+    },
+    {
+      "label": "chunk1/group4/replay-IGPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-IGPU-SCPU-PGPU/outputs.npz",
+      "sha256": "cfe1f2bf6aa417bcf5641ab2144276358b96578c356edbc9044e2ef444b47515",
+      "size_bytes": 57245
+    },
+    {
+      "label": "chunk1/group4/replay-IGPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-IGPU-SCPU-PGPU/state-after.npz",
+      "sha256": "3232e0e548ae3de57b9e390d7c9f916040533a7c87008c500d9b654d3c19c9f3",
+      "size_bytes": 210412
+    },
+    {
+      "label": "chunk1/group4/replay-IGPU-SGPU-PCPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-IGPU-SGPU-PCPU/outputs.npz",
+      "sha256": "efbc4b6ea98e7c26b75538e138f86d4c45b97b9a9bcfd79452b9c1afb297c5db",
+      "size_bytes": 57213
+    },
+    {
+      "label": "chunk1/group4/replay-IGPU-SGPU-PCPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-IGPU-SGPU-PCPU/state-after.npz",
+      "sha256": "45fc02bcbb946785a0d72c964ba975f90a9819ce6664d9768204ec53e74b45cd",
+      "size_bytes": 210329
+    },
+    {
+      "label": "chunk1/group4/replay-IGPU-SGPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-IGPU-SGPU-PGPU/outputs.npz",
+      "sha256": "78ce0eceea3201550f1cb6bf40488dab8bf2fbaa53a6fbbbe455ef9a9931a046",
+      "size_bytes": 57291
+    },
+    {
+      "label": "chunk1/group4/replay-IGPU-SGPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group4/replay-IGPU-SGPU-PGPU/state-after.npz",
+      "sha256": "12f9078a3c479560126ab6e21259857806746321b01289000c8b4f1920f41509",
+      "size_bytes": 210388
+    },
+    {
+      "label": "portable-reference",
+      "path": "evidence/06c-gpu-localization/prompt0-1/portable-reference.npz",
+      "sha256": "b0d356c862035b1c085c4b540c78a8aa2ae408ed1a084beb9606aae300708031",
+      "size_bytes": 633804
+    },
+    {
+      "label": "trajectory-embedding_norm",
+      "path": "evidence/06c-gpu-localization/prompt0-1/trajectory-embedding_norm.npz",
+      "sha256": "f5ee7b3a617beb9c67808720d39b4fb282d542fbcf6931a94c1cdf0b6ab9a2eb",
+      "size_bytes": 194664
+    },
+    {
+      "label": "trajectory-layer_11",
+      "path": "evidence/06c-gpu-localization/prompt0-1/trajectory-layer_11.npz",
+      "sha256": "975a5de6f41ccb25e665667ddc817de6f0513ff45e4f78485d3898ff58c71137",
+      "size_bytes": 215186
+    },
+    {
+      "label": "trajectory-layer_15",
+      "path": "evidence/06c-gpu-localization/prompt0-1/trajectory-layer_15.npz",
+      "sha256": "9b5596e94a65f4efa9f1ddb136b725ad69b1d3c31b96c325026d2b5cad7ede20",
+      "size_bytes": 214260
+    },
+    {
+      "label": "trajectory-layer_19",
+      "path": "evidence/06c-gpu-localization/prompt0-1/trajectory-layer_19.npz",
+      "sha256": "ff00aaeaf77bc683d0c1b4e64a3d59705b30333069d14d71c02fa95707bf1c03",
+      "size_bytes": 213538
+    },
+    {
+      "label": "trajectory-layer_3",
+      "path": "evidence/06c-gpu-localization/prompt0-1/trajectory-layer_3.npz",
+      "sha256": "9189102088a8665f4e178da6f654420fff48ea26878f26dbfba92710e79347c3",
+      "size_bytes": 215456
+    },
+    {
+      "label": "trajectory-layer_7",
+      "path": "evidence/06c-gpu-localization/prompt0-1/trajectory-layer_7.npz",
+      "sha256": "0e37a86dd7f8f017ee12a55f7265681430e547a2c417b8dc8f47224bf81469c8",
+      "size_bytes": 215670
+    }
+  ],
+  "source_snapshot_sha256": "f4e7aff94b9fae6374ef9d7307c1bb55211940db88464e01daa2e08155539761",
+  "status": "completed",
+  "status_semantics": {
+    "diagnostic_completed": true,
+    "gpu_numerical_qualification": "not_qualified",
+    "interpretation": "The run completed its diagnostic checks; `passed` is not a GPU fidelity qualification.",
+    "legacy_passed_field": true,
+    "status": "completed"
+  },
+  "warm_chunk_factor_effects_recomputed_from_npz": [
+    {
+      "cache_source_y": {
+        "compute_CPU_input_CPU": {
+          "exact": false,
+          "max_abs": 512.0,
+          "relative_rmse": 0.0034777032012706455,
+          "rmse": 31.923485036744907
+        },
+        "compute_CPU_input_GPU": {
+          "exact": false,
+          "max_abs": 512.0,
+          "relative_rmse": 0.0034777032012706455,
+          "rmse": 31.923485036744907
+        },
+        "compute_GPU_input_CPU": {
+          "exact": false,
+          "max_abs": 1024.0,
+          "relative_rmse": 0.004668387267366104,
+          "rmse": 42.88885834307947
+        },
+        "compute_GPU_input_GPU": {
+          "exact": false,
+          "max_abs": 1024.0,
+          "relative_rmse": 0.004668387267366104,
+          "rmse": 42.88885834307947
+        }
+      },
+      "compute_policy_y": {
+        "input_CPU_state_CPU": {
+          "exact": false,
+          "max_abs": 1024.0,
+          "relative_rmse": 0.004136998672944531,
+          "rmse": 37.97547047273181
+        },
+        "input_CPU_state_GPU": {
+          "exact": false,
+          "max_abs": 1024.0,
+          "relative_rmse": 0.004573604647331936,
+          "rmse": 41.96332264051141
+        },
+        "input_GPU_state_CPU": {
+          "exact": false,
+          "max_abs": 1024.0,
+          "relative_rmse": 0.004136998672944531,
+          "rmse": 37.97547047273181
+        },
+        "input_GPU_state_GPU": {
+          "exact": false,
+          "max_abs": 1024.0,
+          "relative_rmse": 0.004573604647331936,
+          "rmse": 41.96332264051141
+        }
+      },
+      "group": 0,
+      "input_source_y": {
+        "compute_CPU_state_CPU": {
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0
+        },
+        "compute_CPU_state_GPU": {
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0
+        },
+        "compute_GPU_state_CPU": {
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0
+        },
+        "compute_GPU_state_GPU": {
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0
+        }
+      },
+      "relative_rmse_denominator": "CPU source/control cell RMS"
+    },
+    {
+      "cache_source_y": {
+        "compute_CPU_input_CPU": {
+          "exact": false,
+          "max_abs": 256.0,
+          "relative_rmse": 0.003959741329085726,
+          "rmse": 15.971912841214662
+        },
+        "compute_CPU_input_GPU": {
+          "exact": false,
+          "max_abs": 256.0,
+          "relative_rmse": 0.00402289167207888,
+          "rmse": 16.223073031629344
+        },
+        "compute_GPU_input_CPU": {
+          "exact": false,
+          "max_abs": 256.0,
+          "relative_rmse": 0.0040595111362953205,
+          "rmse": 16.395645619262623
+        },
+        "compute_GPU_input_GPU": {
+          "exact": false,
+          "max_abs": 256.0,
+          "relative_rmse": 0.004067593117540497,
+          "rmse": 16.42310084961878
+        }
+      },
+      "compute_policy_y": {
+        "input_CPU_state_CPU": {
+          "exact": false,
+          "max_abs": 384.0,
+          "relative_rmse": 0.004630231142459486,
+          "rmse": 18.67638365638294
+        },
+        "input_CPU_state_GPU": {
+          "exact": false,
+          "max_abs": 384.0,
+          "relative_rmse": 0.0044813808318738555,
+          "rmse": 18.07576850340753
+        },
+        "input_GPU_state_CPU": {
+          "exact": false,
+          "max_abs": 256.0,
+          "relative_rmse": 0.004367997437247548,
+          "rmse": 17.61477742944487
+        },
+        "input_GPU_state_GPU": {
+          "exact": false,
+          "max_abs": 256.0,
+          "relative_rmse": 0.004599762624644419,
+          "rmse": 18.5472554382882
+        }
+      },
+      "group": 1,
+      "input_source_y": {
+        "compute_CPU_state_CPU": {
+          "exact": false,
+          "max_abs": 256.0,
+          "relative_rmse": 0.006118423434935255,
+          "rmse": 24.679118585504824
+        },
+        "compute_CPU_state_GPU": {
+          "exact": false,
+          "max_abs": 512.0,
+          "relative_rmse": 0.006142982706867193,
+          "rmse": 24.77788375850596
+        },
+        "compute_GPU_state_CPU": {
+          "exact": false,
+          "max_abs": 448.0,
+          "relative_rmse": 0.005998212198404197,
+          "rmse": 24.225715425410044
+        },
+        "compute_GPU_state_GPU": {
+          "exact": false,
+          "max_abs": 384.0,
+          "relative_rmse": 0.005878507203805091,
+          "rmse": 23.731856159944382
+        }
+      },
+      "relative_rmse_denominator": "CPU source/control cell RMS"
+    },
+    {
+      "cache_source_y": {
+        "compute_CPU_input_CPU": {
+          "exact": false,
+          "max_abs": 16.0,
+          "relative_rmse": 0.0044718131171096066,
+          "rmse": 1.1698331865076856
+        },
+        "compute_CPU_input_GPU": {
+          "exact": false,
+          "max_abs": 24.0,
+          "relative_rmse": 0.0046576998490198375,
+          "rmse": 1.2191555738118274
+        },
+        "compute_GPU_input_CPU": {
+          "exact": false,
+          "max_abs": 16.0,
+          "relative_rmse": 0.004194065766744476,
+          "rmse": 1.099757483238301
+        },
+        "compute_GPU_input_GPU": {
+          "exact": false,
+          "max_abs": 16.0,
+          "relative_rmse": 0.004513879985598964,
+          "rmse": 1.1841433584580157
+        }
+      },
+      "compute_policy_y": {
+        "input_CPU_state_CPU": {
+          "exact": false,
+          "max_abs": 24.0,
+          "relative_rmse": 0.005811528189445015,
+          "rmse": 1.5203047091404351
+        },
+        "input_CPU_state_GPU": {
+          "exact": false,
+          "max_abs": 24.0,
+          "relative_rmse": 0.005650517762066142,
+          "rmse": 1.4779831572927147
+        },
+        "input_GPU_state_CPU": {
+          "exact": false,
+          "max_abs": 24.0,
+          "relative_rmse": 0.005683454295944882,
+          "rmse": 1.4876473813279563
+        },
+        "input_GPU_state_GPU": {
+          "exact": false,
+          "max_abs": 24.0,
+          "relative_rmse": 0.0055058795989085104,
+          "rmse": 1.441887500029706
+        }
+      },
+      "group": 2,
+      "input_source_y": {
+        "compute_CPU_state_CPU": {
+          "exact": false,
+          "max_abs": 24.0,
+          "relative_rmse": 0.006229342454670669,
+          "rmse": 1.629605563281052
+        },
+        "compute_CPU_state_GPU": {
+          "exact": false,
+          "max_abs": 24.0,
+          "relative_rmse": 0.006582330142417089,
+          "rmse": 1.7217135660636007
+        },
+        "compute_GPU_state_CPU": {
+          "exact": false,
+          "max_abs": 24.0,
+          "relative_rmse": 0.005868438345345235,
+          "rmse": 1.5388072920529423
+        },
+        "compute_GPU_state_GPU": {
+          "exact": false,
+          "max_abs": 24.0,
+          "relative_rmse": 0.006000365397738169,
+          "rmse": 1.5731614246629984
+        }
+      },
+      "relative_rmse_denominator": "CPU source/control cell RMS"
+    },
+    {
+      "cache_source_y": {
+        "compute_CPU_input_CPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.006812991097834971,
+          "rmse": 9.979874876584715
+        },
+        "compute_CPU_input_GPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.00644279381820893,
+          "rmse": 9.443379754534627
+        },
+        "compute_GPU_input_CPU": {
+          "exact": false,
+          "max_abs": 96.0,
+          "relative_rmse": 0.006585983311949681,
+          "rmse": 9.674246854324632
+        },
+        "compute_GPU_input_GPU": {
+          "exact": false,
+          "max_abs": 96.0,
+          "relative_rmse": 0.006358581127743104,
+          "rmse": 9.353577939533075
+        }
+      },
+      "compute_policy_y": {
+        "input_CPU_state_CPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.007683301631339559,
+          "rmse": 11.254731999311556
+        },
+        "input_CPU_state_GPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.008103491062142767,
+          "rmse": 11.86542600475398
+        },
+        "input_GPU_state_CPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.007953443597133831,
+          "rmse": 11.657580602957463
+        },
+        "input_GPU_state_GPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.007776453331489582,
+          "rmse": 11.399749921543119
+        }
+      },
+      "group": 3,
+      "input_source_y": {
+        "compute_CPU_state_CPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.009017594785711118,
+          "rmse": 13.209244861297135
+        },
+        "compute_CPU_state_GPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.009130247058200786,
+          "rmse": 13.368839435180151
+        },
+        "compute_GPU_state_CPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.009204533054168995,
+          "rmse": 13.52067272676713
+        },
+        "compute_GPU_state_GPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.009150539549611217,
+          "rmse": 13.44551609083918
+        }
+      },
+      "relative_rmse_denominator": "CPU source/control cell RMS"
+    },
+    {
+      "cache_source_y": {
+        "compute_CPU_input_CPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.006847235141927941,
+          "rmse": 9.807852244887872
+        },
+        "compute_CPU_input_GPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.006398488303105313,
+          "rmse": 9.177122085841638
+        },
+        "compute_GPU_input_CPU": {
+          "exact": false,
+          "max_abs": 64.0,
+          "relative_rmse": 0.006264626570120481,
+          "rmse": 8.995862956585036
+        },
+        "compute_GPU_input_GPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.006328064804724452,
+          "rmse": 9.101053723261824
+        }
+      },
+      "compute_policy_y": {
+        "input_CPU_state_CPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.00728782308475009,
+          "rmse": 10.438942218360296
+        },
+        "input_CPU_state_GPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.0075618946625787675,
+          "rmse": 10.828412246013384
+        },
+        "input_GPU_state_CPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.0073461997465200345,
+          "rmse": 10.536390589019982
+        },
+        "input_GPU_state_GPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.007163747021998581,
+          "rmse": 10.276328785683262
+        }
+      },
+      "group": 4,
+      "input_source_y": {
+        "compute_CPU_state_CPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.009228591082067989,
+          "rmse": 13.218862195512033
+        },
+        "compute_CPU_state_GPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.009464951615023308,
+          "rmse": 13.553534206609953
+        },
+        "compute_GPU_state_CPU": {
+          "exact": false,
+          "max_abs": 128.0,
+          "relative_rmse": 0.008867234233948711,
+          "rmse": 12.733149067975141
+        },
+        "compute_GPU_state_GPU": {
+          "exact": false,
+          "max_abs": 96.0,
+          "relative_rmse": 0.008971277240080667,
+          "rmse": 12.881220224226697
+        }
+      },
+      "relative_rmse_denominator": "CPU source/control cell RMS"
+    }
+  ]
+}

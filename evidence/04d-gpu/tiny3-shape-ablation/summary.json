@@ -1,0 +1,361 @@
+{
+  "ids": [
+    87555,
+    130664,
+    114854
+  ],
+  "source_sha256": {
+    "scripts/gpu_tiny3_shape_ablation.py": "d7ee2f1b436b7a1800e17ae497d2da25a6eb02ef6c24e8478970dafcf940872e",
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+    "portable/model.py": "6e204b9b4d08247a4441d2422800ca7b253f3cc8f9e4a855473830daa5042797",
+    "sources/value-model/modeling_backbone.py": "291c97efd64a24d25cd37ae3a5e8882ace0a2f04f69ceaf58c1f970dd00a56cf"
+  },
+  "stages": {
+    "input": {
+      "shape": [
+        1,
+        3,
+        1280
+      ],
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "first_differences": []
+    },
+    "q": {
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "first_differences": []
+    },
+    "k": {
+      "shape": [
+        1,
+        3,
+        2,
+        128
+      ],
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "first_differences": []
+    },
+    "v": {
+      "shape": [
+        1,
+        3,
+        2,
+        128
+      ],
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "first_differences": []
+    },
+    "weighted": {
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "different_elements": 1,
+      "max_abs": 0.125,
+      "first_differences": [
+        {
+          "index": [
+            0,
+            2,
+            6,
+            80
+          ],
+          "got": 19.375,
+          "want": 19.5
+        }
+      ]
+    },
+    "recomputed_reference_weighted": {
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "first_differences": []
+    },
+    "scores": {
+      "shape": [
+        1,
+        10,
+        3,
+        3
+      ],
+      "different_elements": 21,
+      "max_abs": 2.384185791015625e-06,
+      "first_differences": [
+        {
+          "index": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "got": 6.4978461265563965,
+          "want": 6.497845649719238
+        },
+        {
+          "index": [
+            0,
+            0,
+            2,
+            1
+          ],
+          "got": 6.14021635055542,
+          "want": 6.140215873718262
+        },
+        {
+          "index": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "got": 7.899594783782959,
+          "want": 7.89959716796875
+        },
+        {
+          "index": [
+            0,
+            1,
+            2,
+            0
+          ],
+          "got": 6.698893070220947,
+          "want": 6.698894023895264
+        },
+        {
+          "index": [
+            0,
+            1,
+            2,
+            2
+          ],
+          "got": 6.5759453773498535,
+          "want": 6.575944423675537
+        },
+        {
+          "index": [
+            0,
+            2,
+            2,
+            0
+          ],
+          "got": 6.084432601928711,
+          "want": 6.084433078765869
+        },
+        {
+          "index": [
+            0,
+            2,
+            2,
+            2
+          ],
+          "got": 8.199715614318848,
+          "want": 8.199716567993164
+        },
+        {
+          "index": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "got": 5.405526638031006,
+          "want": 5.405527591705322
+        }
+      ]
+    },
+    "weights": {
+      "shape": [
+        1,
+        10,
+        3,
+        3
+      ],
+      "different_elements": 28,
+      "max_abs": 5.364418029785156e-07,
+      "first_differences": [
+        {
+          "index": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "got": 0.17356202006340027,
+          "want": 0.17356166243553162
+        },
+        {
+          "index": [
+            0,
+            0,
+            2,
+            1
+          ],
+          "got": 0.12137746810913086,
+          "want": 0.12137720733880997
+        },
+        {
+          "index": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "got": 0.7050605416297913,
+          "want": 0.7050610780715942
+        },
+        {
+          "index": [
+            0,
+            1,
+            2,
+            0
+          ],
+          "got": 0.4433048367500305,
+          "want": 0.44330528378486633
+        },
+        {
+          "index": [
+            0,
+            1,
+            2,
+            2
+          ],
+          "got": 0.3920188546180725,
+          "want": 0.39201849699020386
+        },
+        {
+          "index": [
+            0,
+            2,
+            2,
+            0
+          ],
+          "got": 0.0955267995595932,
+          "want": 0.09552677720785141
+        },
+        {
+          "index": [
+            0,
+            2,
+            2,
+            1
+          ],
+          "got": 0.11237140744924545,
+          "want": 0.11237131804227829
+        },
+        {
+          "index": [
+            0,
+            2,
+            2,
+            2
+          ],
+          "got": 0.7921017408370972,
+          "want": 0.7921019196510315
+        }
+      ]
+    },
+    "weighted_using_native_weights": {
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "first_differences": []
+    },
+    "native_weights_full_width_product": {
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "first_differences": []
+    }
+  },
+  "geometry": [
+    {
+      "query_rows": 3,
+      "key_columns": 3,
+      "real_query_position": "front",
+      "score_different_elements": 0,
+      "score_max_abs": 0.0,
+      "weight_different_elements": 0,
+      "weight_max_abs": 0.0,
+      "rounded_weighted_different_elements": 0,
+      "rounded_weighted_max_abs": 0.0,
+      "problem_element": 19.5
+    },
+    {
+      "query_rows": 3,
+      "key_columns": 2048,
+      "real_query_position": "front",
+      "score_different_elements": 21,
+      "score_max_abs": 2.384185791015625e-06,
+      "weight_different_elements": 28,
+      "weight_max_abs": 5.364418029785156e-07,
+      "rounded_weighted_different_elements": 1,
+      "rounded_weighted_max_abs": 0.125,
+      "problem_element": 19.375
+    },
+    {
+      "query_rows": 16,
+      "key_columns": 3,
+      "real_query_position": "back",
+      "score_different_elements": 21,
+      "score_max_abs": 2.384185791015625e-06,
+      "weight_different_elements": 28,
+      "weight_max_abs": 5.960464477539062e-07,
+      "rounded_weighted_different_elements": 1,
+      "rounded_weighted_max_abs": 0.125,
+      "problem_element": 19.375
+    },
+    {
+      "query_rows": 32,
+      "key_columns": 3,
+      "real_query_position": "front",
+      "score_different_elements": 21,
+      "score_max_abs": 2.384185791015625e-06,
+      "weight_different_elements": 28,
+      "weight_max_abs": 5.960464477539062e-07,
+      "rounded_weighted_different_elements": 1,
+      "rounded_weighted_max_abs": 0.125,
+      "problem_element": 19.375
+    },
+    {
+      "query_rows": 32,
+      "key_columns": 2048,
+      "real_query_position": "front",
+      "score_different_elements": 21,
+      "score_max_abs": 2.384185791015625e-06,
+      "weight_different_elements": 28,
+      "weight_max_abs": 5.364418029785156e-07,
+      "rounded_weighted_different_elements": 1,
+      "rounded_weighted_max_abs": 0.125,
+      "problem_element": 19.375
+    }
+  ]
+}

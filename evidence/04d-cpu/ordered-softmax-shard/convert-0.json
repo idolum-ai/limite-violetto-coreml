@@ -1,0 +1,18 @@
+{
+  "component": "0",
+  "arithmetic": "ordered",
+  "softmax": "ordered",
+  "seconds": 56.5984160900116,
+  "package": "artifacts/04d-cpu/ordered-softmax/0.mlpackage",
+  "state_names": [
+    "k_cache_0",
+    "v_cache_0",
+    "k_cache_1",
+    "v_cache_1",
+    "k_cache_2",
+    "v_cache_2",
+    "k_cache_3",
+    "v_cache_3"
+  ],
+  "status": "converted; runtime validation pending"
+}

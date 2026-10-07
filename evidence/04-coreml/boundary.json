@@ -1,0 +1,24 @@
+{
+  "compute": "CPU_ONLY",
+  "comparisons": [
+    {
+      "max_abs": 0.41047096252441406,
+      "rmse": 0.06446144407008121,
+      "relative_rmse": 0.007847218150482994,
+      "cosine": 0.9999797424725368,
+      "position": 1024,
+      "pass_score": false
+    },
+    {
+      "max_abs": 0.6455869674682617,
+      "rmse": 0.29747710668808214,
+      "relative_rmse": 0.057014640892118204,
+      "cosine": 0.9997335796667794,
+      "position": 1025,
+      "pass_score": false
+    }
+  ],
+  "capacity_finite": true,
+  "overflow_rejected": true,
+  "elapsed_seconds": 69.65848398208618
+}

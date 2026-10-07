@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "compute": "CPU_ONLY",
+  "model_dir": "artifacts/04d-cpu/full-candidate-3",
+  "identity_manifest": "evidence/04d-cpu/full-candidate-3/package-identity.json",
+  "script_sha256": "906d1833faae9b69f30d69528c2e13dc06d1f19874601cf3b06cf7d38512493e",
+  "source_hashes": {
+    "coreml_port/runtime.py": "f3702176b345241560144f21a800b2fdbc4e7869fdb92ec2b132ce9e4c2b9181",
+    "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+    "portable/model.py": "6e204b9b4d08247a4441d2422800ca7b253f3cc8f9e4a855473830daa5042797",
+    "evidence/03-portable/ACCEPTANCE.json": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+    "evidence/01-reference/local-input-validation.json": "54ce299bdc107b3db80a2a389283ea787f7801a4f51a1ae2feed0a6dfaee7490"
+  },
+  "numerical_pass": true,
+  "lifecycle_pass": true
+}

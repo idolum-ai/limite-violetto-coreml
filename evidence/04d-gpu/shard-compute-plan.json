@@ -1,0 +1,30 @@
+{
+  "shard0-even": {
+    "operations": 15628,
+    "preferred_counts": {
+      "unknown": 8145,
+      "MLGPUComputeDevice": 7483
+    },
+    "arithmetic_preferred_counts": {
+      "ios18.add MLGPUComputeDevice": 1849,
+      "ios18.mul MLGPUComputeDevice": 1744,
+      "ios18.floor MLGPUComputeDevice": 129,
+      "ios18.real_div MLGPUComputeDevice": 135,
+      "ios18.round MLGPUComputeDevice": 126
+    }
+  },
+  "shard0-keytap": {
+    "operations": 15405,
+    "preferred_counts": {
+      "unknown": 7959,
+      "MLGPUComputeDevice": 7446
+    },
+    "arithmetic_preferred_counts": {
+      "ios18.add MLGPUComputeDevice": 1848,
+      "ios18.mul MLGPUComputeDevice": 1744,
+      "ios18.floor MLGPUComputeDevice": 129,
+      "ios18.real_div MLGPUComputeDevice": 131,
+      "ios18.round MLGPUComputeDevice": 126
+    }
+  }
+}

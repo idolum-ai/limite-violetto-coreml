@@ -1,0 +1,25 @@
+{
+  "component": "7",
+  "arithmetic": "ordered",
+  "softmax": "ordered",
+  "exp": "source",
+  "norm": "ordered",
+  "xsa": "ordered",
+  "gelu": "lookup",
+  "queries": "dynamic-product",
+  "product": "paired",
+  "score_dot": "tiny-native",
+  "seconds": 88.49446702003479,
+  "package": "artifacts/04d-cpu/full-candidate-6/7.mlpackage",
+  "state_names": [
+    "inner_k_cache_0",
+    "inner_v_cache_0",
+    "inner_k_cache_1",
+    "inner_v_cache_1",
+    "inner_k_cache_2",
+    "inner_v_cache_2",
+    "inner_k_cache_3",
+    "inner_v_cache_3"
+  ],
+  "status": "converted; runtime validation pending"
+}

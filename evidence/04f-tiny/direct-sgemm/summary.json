@@ -1,0 +1,428 @@
+{
+  "status": "complete",
+  "source_sha256": "55a7eb7431855046a4c15630535127436939f35cee6bfc449f5fd2201b9ffc80",
+  "script_sha256": "a8defad40cfc406b7a2b1cd159a60d1fad757ec874b2ca69f150c595b41114fc",
+  "torch_version": "2.7.0",
+  "call": {
+    "transa": "T",
+    "transb": "N",
+    "m": "K",
+    "n": "Q",
+    "k": 128,
+    "lda": "1280 (128 if K=1)",
+    "ldb": "1280 (128 if Q=1)",
+    "ldc": "K",
+    "alpha": 1,
+    "beta": 0
+  },
+  "cases": [
+    {
+      "length": 1,
+      "seed": 113,
+      "raw_dot": {
+        "different": 9,
+        "different_by_query": [
+          9
+        ],
+        "max_abs": 5.7220458984375e-06
+      },
+      "scaled_score": {
+        "different": 9,
+        "different_by_query": [
+          9
+        ],
+        "max_abs": 7.152557373046875e-07
+      }
+    },
+    {
+      "length": 1,
+      "seed": 509,
+      "raw_dot": {
+        "different": 4,
+        "different_by_query": [
+          4
+        ],
+        "max_abs": 1.9073486328125e-06
+      },
+      "scaled_score": {
+        "different": 4,
+        "different_by_query": [
+          4
+        ],
+        "max_abs": 2.384185791015625e-07
+      }
+    },
+    {
+      "length": 1,
+      "seed": 2027,
+      "raw_dot": {
+        "different": 5,
+        "different_by_query": [
+          5
+        ],
+        "max_abs": 9.5367431640625e-07
+      },
+      "scaled_score": {
+        "different": 5,
+        "different_by_query": [
+          5
+        ],
+        "max_abs": 1.1920928955078125e-07
+      }
+    },
+    {
+      "length": 2,
+      "seed": 113,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    },
+    {
+      "length": 2,
+      "seed": 509,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    },
+    {
+      "length": 2,
+      "seed": 2027,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    },
+    {
+      "length": 3,
+      "seed": 113,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    },
+    {
+      "length": 3,
+      "seed": 509,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    },
+    {
+      "length": 3,
+      "seed": 2027,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    },
+    {
+      "length": 7,
+      "seed": 113,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    },
+    {
+      "length": 7,
+      "seed": 509,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    },
+    {
+      "length": 7,
+      "seed": 2027,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    },
+    {
+      "length": 15,
+      "seed": 113,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    },
+    {
+      "length": 15,
+      "seed": 509,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    },
+    {
+      "length": 15,
+      "seed": 2027,
+      "raw_dot": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      },
+      "scaled_score": {
+        "different": 0,
+        "different_by_query": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs": 0.0
+      }
+    }
+  ]
+}

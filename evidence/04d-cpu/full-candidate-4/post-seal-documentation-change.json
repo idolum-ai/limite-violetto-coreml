@@ -1,0 +1,7 @@
+{
+  "reason": "Correct misleading front-pad prose: implementation places real queries first and appends zeros. Edited after successful build seal. Executable AST unchanged.",
+  "file": "coreml_port/dynamic_queries.py",
+  "build_snapshot_sha256": "fca3f2dd4b4c040939830f9a51d96ba30b58c8c55e1cfe3836190434653a5e5d",
+  "after_doc_correction_sha256": "aa87c78fdfc84172860cb9ad765924a994430a22e7e36a77ede6314b30299cda",
+  "executable_ast_unchanged": true
+}

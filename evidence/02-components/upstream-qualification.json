@@ -1,0 +1,74 @@
+{
+  "kind": "upstream component probes on synthetic data; no checkpoint/model outputs",
+  "mixed_precision_mudd_comparisons": [
+    {
+      "layer": 24,
+      "r_way": false,
+      "equal": true,
+      "max_abs": 0.0,
+      "differing_elements": 0,
+      "elements": 224
+    },
+    {
+      "layer": 24,
+      "r_way": true,
+      "equal": true,
+      "max_abs": 0.0,
+      "differing_elements": 0,
+      "elements": 224
+    },
+    {
+      "layer": 47,
+      "r_way": false,
+      "equal": true,
+      "max_abs": 0.0,
+      "differing_elements": 0,
+      "elements": 224
+    },
+    {
+      "layer": 47,
+      "r_way": true,
+      "equal": true,
+      "max_abs": 0.0,
+      "differing_elements": 0,
+      "elements": 224
+    }
+  ],
+  "bf16_weight_scale_fold": {
+    "equal": true,
+    "max_abs": 0.0,
+    "differing_elements": 0,
+    "elements": 1024
+  },
+  "keeping_projection_weight_fp32_changes_fold": {
+    "equal": false,
+    "max_abs": 0.015625,
+    "differing_elements": 49,
+    "elements": 1024
+  },
+  "rotary": {
+    "q": {
+      "equal": true,
+      "max_abs": 0.0,
+      "differing_elements": 0,
+      "elements": 160
+    },
+    "k": {
+      "equal": true,
+      "max_abs": 0.0,
+      "differing_elements": 0,
+      "elements": 80
+    }
+  },
+  "rounding_xsa_alpha_before_fp32_tanh_changes_result": {
+    "equal": false,
+    "max_abs": 0.0001589953899383545,
+    "differing_elements": 10,
+    "elements": 10
+  },
+  "notes": [
+    "Value backbone _scaled docstring says FP32 multiply, but with BF16 weight and 0-dim FP32 scalar PyTorch uses BF16 promotion; observed equal to serving fold.",
+    "Do not promote checkpoint projection storage to FP32 before folding if trying to preserve the BF16 fold.",
+    "Mixer einsum and serving linear preserve identical BF16 output in these probes; this is not an all-input proof."
+  ]
+}

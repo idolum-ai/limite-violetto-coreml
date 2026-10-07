@@ -1,0 +1,9 @@
+{
+  "exit_code": 139,
+  "python_traceback": null,
+  "last_durable_progress": null,
+  "call_pattern": "one Core ML forward call for 1024 tokens, then positions 1024/1025 compared to Torch reference, then fill to 2048",
+  "overlapping_work": "Core ML sampled generation in a separate process",
+  "cause": "unknown; do not attribute to concurrency or memory without evidence",
+  "isolated_repetitions": "boundary.json and longprefill-isolation.json pass execution; numerical comparison fails"
+}

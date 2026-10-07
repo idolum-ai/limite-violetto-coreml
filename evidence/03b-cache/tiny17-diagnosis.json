@@ -1,0 +1,70 @@
+{
+  "source_16_vs_17_early": {
+    "max_abs": 0.0,
+    "rmse": 0.0,
+    "relative_rmse": 0.0,
+    "cosine": 1.0
+  },
+  "modes": [
+    {
+      "rows": 8,
+      "hidden": {
+        "max_abs": 0.1328125,
+        "rmse": 0.03267559599475185,
+        "relative_rmse": 0.03267774426310002,
+        "cosine": 0.9994661518254638
+      },
+      "scores": {
+        "max_abs": 0.7521076202392578,
+        "rmse": 0.39837683602947616,
+        "relative_rmse": 0.05152396995145211,
+        "cosine": 0.9997806120789147
+      }
+    },
+    {
+      "rows": 16,
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999999
+      },
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000001252
+      }
+    },
+    {
+      "rows": 32,
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999999
+      },
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000001252
+      }
+    },
+    {
+      "rows": 2048,
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999999
+      },
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000001252
+      }
+    }
+  ]
+}

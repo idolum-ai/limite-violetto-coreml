@@ -1,0 +1,11 @@
+{
+  "checked_files": 443,
+  "passed": true,
+  "failed": [],
+  "includes_real_checkpoint": true,
+  "excludes": [
+    "environments and caches",
+    "checksum lists",
+    "checksum verification records to avoid self-reference"
+  ]
+}

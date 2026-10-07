@@ -1,0 +1,181 @@
+{
+  "status": "complete",
+  "positions": [
+    1024,
+    1025
+  ],
+  "shape": {
+    "q": [
+      1,
+      10,
+      32,
+      128
+    ],
+    "k": [
+      1,
+      10,
+      128,
+      2048
+    ],
+    "val": [
+      1,
+      10,
+      2048,
+      128
+    ],
+    "scores": [
+      1,
+      10,
+      32,
+      2048
+    ],
+    "weights": [
+      1,
+      10,
+      32,
+      2048
+    ]
+  },
+  "script_sha256": "da0376e18e4048fe7b88cfcfdc540fd2cc39d467d0e67daa829b9debfef6af45",
+  "source_sha256": {
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+    "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2"
+  },
+  "input_sha256": {
+    "evidence/04d-cpu/long-group-locator/first-failure-inputs.npz": "c9b8010b00f7e295f2672117d51b453beabcab1b7e1d4b7ceaa8a107ff266b70",
+    "evidence/04d-cpu/long-group-locator/first-failure-state-before.npz": "17cef34b6621bb8fb70e94f4407ab57d0cee2ab751b424c4a6820a97bed31bce"
+  },
+  "product": {
+    "raw": {
+      "different_elements": 426,
+      "max_abs": 1.9073486328125e-06,
+      "target_actual": 8.84375,
+      "target_reference": 8.843749046325684,
+      "first_differences": [
+        {
+          "index": [
+            0,
+            0,
+            1,
+            14
+          ],
+          "actual": -5.844627857208252,
+          "reference": -5.844627380371094
+        },
+        {
+          "index": [
+            0,
+            0,
+            1,
+            20
+          ],
+          "actual": -9.941946029663086,
+          "reference": -9.941946983337402
+        },
+        {
+          "index": [
+            0,
+            0,
+            1,
+            21
+          ],
+          "actual": 7.723980903625488,
+          "reference": 7.72398042678833
+        },
+        {
+          "index": [
+            0,
+            0,
+            1,
+            22
+          ],
+          "actual": -0.2848573625087738,
+          "reference": -0.2848573923110962
+        },
+        {
+          "index": [
+            0,
+            0,
+            1,
+            25
+          ],
+          "actual": -2.2499232292175293,
+          "reference": -2.2499234676361084
+        },
+        {
+          "index": [
+            0,
+            0,
+            1,
+            28
+          ],
+          "actual": 0.031783878803253174,
+          "reference": 0.03178388252854347
+        },
+        {
+          "index": [
+            0,
+            0,
+            1,
+            29
+          ],
+          "actual": 3.16852068901062,
+          "reference": 3.168520927429199
+        },
+        {
+          "index": [
+            0,
+            0,
+            1,
+            30
+          ],
+          "actual": -2.432145357131958,
+          "reference": -2.432145118713379
+        }
+      ]
+    },
+    "rounded": {
+      "different_elements": 1,
+      "max_abs": 0.0625,
+      "target_actual": 8.875,
+      "target_reference": 8.8125,
+      "first_differences": [
+        {
+          "index": [
+            0,
+            9,
+            1,
+            26
+          ],
+          "actual": 8.875,
+          "reference": 8.8125
+        }
+      ]
+    }
+  },
+  "softmax": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "mixed_rounded": {
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "target_actual": 8.8125,
+      "target_reference": 8.8125,
+      "first_differences": []
+    }
+  },
+  "scores": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "mixed_rounded": {
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "target_actual": 8.8125,
+      "target_reference": 8.8125,
+      "first_differences": []
+    }
+  }
+}

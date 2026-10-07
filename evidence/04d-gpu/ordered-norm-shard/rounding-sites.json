@@ -1,0 +1,9819 @@
+{
+  "sources": {
+    "scripts/gpu_ordered_norm_stages.py": "7f8694b96c3b7cd304cbd5dc80ec924e237e5d3f6db7f2aa4c4af46e2fa08181",
+    "coreml_port/graphs.py": "9ae902e9794e8311b60af091ea59027f8169cc9750f9d48ff914e65226f5f414",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "3abc03e63175f431ff00d17f68eb0c976c1b92417ab29fa411c1b57317ae8b44",
+    "coreml_port/ordered_norm.py": "db694e9155f761e0cf54b4c6b8289a9f01caf3b6da22dfba7cbbfbee04ebad36"
+  },
+  "input_sha256": "6f7c995b48a07c765dbc2387f42b367d59cfcc3d914b94cbeb0324cf85539261",
+  "rounding_site_count": 127,
+  "results": {
+    "CPU_ONLY": [
+      {
+        "name": "y",
+        "output_key": "round_126",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 321,
+        "max_abs": 64.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              9
+            ],
+            "got": -2896.0,
+            "want": -2912.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": 500.0,
+            "want": 508.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              19
+            ],
+            "got": -494.0,
+            "want": -496.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              30
+            ],
+            "got": 1688.0,
+            "want": 1696.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              32
+            ],
+            "got": -7776.0,
+            "want": -7840.0
+          }
+        ]
+      },
+      {
+        "name": "round_0",
+        "output_key": "round_0",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_1",
+        "output_key": "round_1",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_2",
+        "output_key": "round_2",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_3",
+        "output_key": "round_3",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_4",
+        "output_key": "round_4",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_5",
+        "output_key": "round_5",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_6",
+        "output_key": "round_6",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_7",
+        "output_key": "round_7",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_8",
+        "output_key": "round_8",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_9",
+        "output_key": "round_9",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_10",
+        "output_key": "round_10",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_11",
+        "output_key": "round_11",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_12",
+        "output_key": "round_12",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_13",
+        "output_key": "round_13",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_14",
+        "output_key": "round_14",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_15",
+        "output_key": "round_15",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_16",
+        "output_key": "round_16",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_17",
+        "output_key": "round_17",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_18",
+        "output_key": "round_18",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_19",
+        "output_key": "round_19",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_20",
+        "output_key": "round_20",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_21",
+        "output_key": "round_21",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_22",
+        "output_key": "round_22",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_23",
+        "output_key": "round_23",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_24",
+        "output_key": "round_24",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_25",
+        "output_key": "round_25",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_26",
+        "output_key": "round_26",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_27",
+        "output_key": "round_27",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_28",
+        "output_key": "round_28",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_29",
+        "output_key": "round_29",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_30",
+        "output_key": "round_30",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_31",
+        "output_key": "round_31",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_32",
+        "output_key": "round_32",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_33",
+        "output_key": "round_33",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_34",
+        "output_key": "round_34",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_35",
+        "output_key": "round_35",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_36",
+        "output_key": "round_36",
+        "shape": [
+          1,
+          32,
+          2
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_37",
+        "output_key": "round_37",
+        "shape": [
+          1,
+          32,
+          2
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_38",
+        "output_key": "round_38",
+        "shape": [
+          1,
+          32,
+          2
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_39",
+        "output_key": "round_39",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_40",
+        "output_key": "round_40",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_41",
+        "output_key": "round_41",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_42",
+        "output_key": "round_42",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_43",
+        "output_key": "round_43",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_44",
+        "output_key": "round_44",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_45",
+        "output_key": "round_45",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_46",
+        "output_key": "round_46",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_47",
+        "output_key": "round_47",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_48",
+        "output_key": "round_48",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_49",
+        "output_key": "round_49",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_50",
+        "output_key": "round_50",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_51",
+        "output_key": "round_51",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_52",
+        "output_key": "round_52",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_53",
+        "output_key": "round_53",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_54",
+        "output_key": "round_54",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_55",
+        "output_key": "round_55",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_56",
+        "output_key": "round_56",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_57",
+        "output_key": "round_57",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_58",
+        "output_key": "round_58",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_59",
+        "output_key": "round_59",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_60",
+        "output_key": "round_60",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_61",
+        "output_key": "round_61",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_62",
+        "output_key": "round_62",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_63",
+        "output_key": "round_63",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_64",
+        "output_key": "round_64",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_65",
+        "output_key": "round_65",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_66",
+        "output_key": "round_66",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_67",
+        "output_key": "round_67",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_68",
+        "output_key": "round_68",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_69",
+        "output_key": "round_69",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_70",
+        "output_key": "round_70",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_71",
+        "output_key": "round_71",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_72",
+        "output_key": "round_72",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_73",
+        "output_key": "round_73",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_74",
+        "output_key": "round_74",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_75",
+        "output_key": "round_75",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_76",
+        "output_key": "round_76",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_77",
+        "output_key": "round_77",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_78",
+        "output_key": "round_78",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_79",
+        "output_key": "round_79",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_80",
+        "output_key": "round_80",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_81",
+        "output_key": "round_81",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_82",
+        "output_key": "round_82",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 2,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              3,
+              1,
+              8
+            ],
+            "got": 21.125,
+            "want": 21.25
+          },
+          {
+            "index": [
+              0,
+              3,
+              1,
+              81
+            ],
+            "got": 21.125,
+            "want": 21.25
+          }
+        ]
+      },
+      {
+        "name": "round_83",
+        "output_key": "round_83",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 2,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              3,
+              1,
+              8
+            ],
+            "got": 4.375,
+            "want": 4.25
+          },
+          {
+            "index": [
+              0,
+              3,
+              1,
+              81
+            ],
+            "got": 2.375,
+            "want": 2.25
+          }
+        ]
+      },
+      {
+        "name": "round_84",
+        "output_key": "round_84",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_85",
+        "output_key": "round_85",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_86",
+        "output_key": "round_86",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_87",
+        "output_key": "round_87",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 2,
+        "max_abs": 0.000244140625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              3,
+              1,
+              8
+            ],
+            "got": 0.00848388671875,
+            "want": 0.00823974609375
+          },
+          {
+            "index": [
+              0,
+              3,
+              1,
+              81
+            ],
+            "got": 0.004608154296875,
+            "want": 0.004364013671875
+          }
+        ]
+      },
+      {
+        "name": "round_88",
+        "output_key": "round_88",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 2,
+        "max_abs": 0.001953125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              3,
+              74
+            ],
+            "got": 0.392578125,
+            "want": 0.390625
+          },
+          {
+            "index": [
+              0,
+              3,
+              961
+            ],
+            "got": -0.1142578125,
+            "want": -0.11376953125
+          }
+        ]
+      },
+      {
+        "name": "round_89",
+        "output_key": "round_89",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_90",
+        "output_key": "round_90",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 2,
+        "max_abs": 0.001953125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              3,
+              74
+            ],
+            "got": 0.2197265625,
+            "want": 0.2177734375
+          },
+          {
+            "index": [
+              0,
+              3,
+              961
+            ],
+            "got": -0.06396484375,
+            "want": -0.0634765625
+          }
+        ]
+      },
+      {
+        "name": "round_91",
+        "output_key": "round_91",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_92",
+        "output_key": "round_92",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_93",
+        "output_key": "round_93",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_94",
+        "output_key": "round_94",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_95",
+        "output_key": "round_95",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_96",
+        "output_key": "round_96",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_97",
+        "output_key": "round_97",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_98",
+        "output_key": "round_98",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_99",
+        "output_key": "round_99",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_100",
+        "output_key": "round_100",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_101",
+        "output_key": "round_101",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_102",
+        "output_key": "round_102",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_103",
+        "output_key": "round_103",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_104",
+        "output_key": "round_104",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_105",
+        "output_key": "round_105",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 4,
+        "max_abs": 0.0078125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "got": 0.0732421875,
+            "want": 0.07275390625
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              44
+            ],
+            "got": 1.171875,
+            "want": 1.1640625
+          },
+          {
+            "index": [
+              0,
+              25,
+              2,
+              42
+            ],
+            "got": -0.478515625,
+            "want": -0.4765625
+          },
+          {
+            "index": [
+              0,
+              25,
+              2,
+              126
+            ],
+            "got": -0.478515625,
+            "want": -0.4765625
+          }
+        ]
+      },
+      {
+        "name": "round_106",
+        "output_key": "round_106",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_107",
+        "output_key": "round_107",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 23,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "got": 3.265625,
+            "want": 3.25
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "got": -0.6484375,
+            "want": -0.63671875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              7
+            ],
+            "got": -2.453125,
+            "want": -2.46875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              9
+            ],
+            "got": -10.125,
+            "want": -10.1875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              15
+            ],
+            "got": -4.6875,
+            "want": -4.71875
+          }
+        ]
+      },
+      {
+        "name": "round_108",
+        "output_key": "round_108",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 5,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1,
+              6
+            ],
+            "got": 10.3125,
+            "want": 10.25
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              26
+            ],
+            "got": 10.875,
+            "want": 10.8125
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              89
+            ],
+            "got": 21.75,
+            "want": 21.625
+          },
+          {
+            "index": [
+              0,
+              12,
+              6,
+              67
+            ],
+            "got": 26.125,
+            "want": 26.25
+          },
+          {
+            "index": [
+              0,
+              12,
+              6,
+              74
+            ],
+            "got": 26.125,
+            "want": 26.25
+          }
+        ]
+      },
+      {
+        "name": "round_109",
+        "output_key": "round_109",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 10,
+        "max_abs": 0.5,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1,
+              39
+            ],
+            "got": 17.25,
+            "want": 17.375
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              54
+            ],
+            "got": -35.5,
+            "want": -35.75
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              86
+            ],
+            "got": 12.375,
+            "want": 12.4375
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              89
+            ],
+            "got": -14.25,
+            "want": -14.125
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              97
+            ],
+            "got": -18.0,
+            "want": -18.125
+          }
+        ]
+      },
+      {
+        "name": "round_110",
+        "output_key": "round_110",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_111",
+        "output_key": "round_111",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_112",
+        "output_key": "round_112",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_113",
+        "output_key": "round_113",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 9,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1,
+              39
+            ],
+            "got": 3.6875,
+            "want": 3.71875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              54
+            ],
+            "got": -7.59375,
+            "want": -7.65625
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              86
+            ],
+            "got": 2.640625,
+            "want": 2.65625
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              89
+            ],
+            "got": -3.046875,
+            "want": -3.015625
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              97
+            ],
+            "got": -3.84375,
+            "want": -3.875
+          }
+        ]
+      },
+      {
+        "name": "round_114",
+        "output_key": "round_114",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 379,
+        "max_abs": 8.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": -716.0,
+            "want": -712.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              13
+            ],
+            "got": 184.0,
+            "want": 185.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              45
+            ],
+            "got": -15.75,
+            "want": -15.625
+          },
+          {
+            "index": [
+              0,
+              1,
+              98
+            ],
+            "got": 29.5,
+            "want": 29.375
+          },
+          {
+            "index": [
+              0,
+              1,
+              144
+            ],
+            "got": -47.75,
+            "want": -47.5
+          }
+        ]
+      },
+      {
+        "name": "round_115",
+        "output_key": "round_115",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_116",
+        "output_key": "round_116",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 331,
+        "max_abs": 8.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": -532.0,
+            "want": -528.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              45
+            ],
+            "got": -11.6875,
+            "want": -11.625
+          },
+          {
+            "index": [
+              0,
+              1,
+              98
+            ],
+            "got": 21.875,
+            "want": 21.75
+          },
+          {
+            "index": [
+              0,
+              1,
+              144
+            ],
+            "got": -35.5,
+            "want": -35.25
+          },
+          {
+            "index": [
+              0,
+              1,
+              156
+            ],
+            "got": -59.75,
+            "want": -59.5
+          }
+        ]
+      },
+      {
+        "name": "round_117",
+        "output_key": "round_117",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 55,
+        "max_abs": 16.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": -1744.0,
+            "want": -1736.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              163
+            ],
+            "got": 31.5,
+            "want": 31.375
+          },
+          {
+            "index": [
+              0,
+              1,
+              200
+            ],
+            "got": -4.0,
+            "want": -3.75
+          },
+          {
+            "index": [
+              0,
+              1,
+              315
+            ],
+            "got": 63.0,
+            "want": 63.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              341
+            ],
+            "got": -284.0,
+            "want": -286.0
+          }
+        ]
+      },
+      {
+        "name": "round_118",
+        "output_key": "round_118",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 53,
+        "max_abs": 0.0078125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": -1.3828125,
+            "want": -1.375
+          },
+          {
+            "index": [
+              0,
+              1,
+              163
+            ],
+            "got": 0.0250244140625,
+            "want": 0.02490234375
+          },
+          {
+            "index": [
+              0,
+              1,
+              200
+            ],
+            "got": -0.003173828125,
+            "want": -0.0029754638671875
+          },
+          {
+            "index": [
+              0,
+              1,
+              315
+            ],
+            "got": 0.050048828125,
+            "want": 0.05029296875
+          },
+          {
+            "index": [
+              0,
+              1,
+              341
+            ],
+            "got": -0.2255859375,
+            "want": -0.2265625
+          }
+        ]
+      },
+      {
+        "name": "round_119",
+        "output_key": "round_119",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 1372,
+        "max_abs": 0.0625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": -3.84375,
+            "want": -3.828125
+          },
+          {
+            "index": [
+              0,
+              1,
+              23
+            ],
+            "got": -0.96875,
+            "want": -0.96484375
+          },
+          {
+            "index": [
+              0,
+              1,
+              33
+            ],
+            "got": -3.609375,
+            "want": -3.625
+          },
+          {
+            "index": [
+              0,
+              1,
+              36
+            ],
+            "got": -0.21484375,
+            "want": -0.2158203125
+          },
+          {
+            "index": [
+              0,
+              1,
+              40
+            ],
+            "got": 0.0008544921875,
+            "want": 0.00152587890625
+          }
+        ]
+      },
+      {
+        "name": "round_120",
+        "output_key": "round_120",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 1109,
+        "max_abs": 0.0625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": -0.08056640625,
+            "want": -0.08154296875
+          },
+          {
+            "index": [
+              0,
+              1,
+              33
+            ],
+            "got": -0.09521484375,
+            "want": -0.09423828125
+          },
+          {
+            "index": [
+              0,
+              1,
+              36
+            ],
+            "got": -0.095703125,
+            "want": -0.09619140625
+          },
+          {
+            "index": [
+              0,
+              1,
+              40
+            ],
+            "got": 0.00042724609375,
+            "want": 0.000762939453125
+          },
+          {
+            "index": [
+              0,
+              1,
+              53
+            ],
+            "got": 0.24609375,
+            "want": 0.248046875
+          }
+        ]
+      },
+      {
+        "name": "round_121",
+        "output_key": "round_121",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 1665,
+        "max_abs": 0.0625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1
+            ],
+            "got": -2.0,
+            "want": -1.9921875
+          },
+          {
+            "index": [
+              0,
+              1,
+              14
+            ],
+            "got": -0.369140625,
+            "want": -0.373046875
+          },
+          {
+            "index": [
+              0,
+              1,
+              17
+            ],
+            "got": 1.1953125,
+            "want": 1.203125
+          },
+          {
+            "index": [
+              0,
+              1,
+              22
+            ],
+            "got": -0.88671875,
+            "want": -0.890625
+          },
+          {
+            "index": [
+              0,
+              1,
+              24
+            ],
+            "got": 0.251953125,
+            "want": 0.25
+          }
+        ]
+      },
+      {
+        "name": "round_122",
+        "output_key": "round_122",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 2374,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1
+            ],
+            "got": -2.59375,
+            "want": -2.578125
+          },
+          {
+            "index": [
+              0,
+              1,
+              14
+            ],
+            "got": -1.171875,
+            "want": -1.1796875
+          },
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": -0.0986328125,
+            "want": -0.10009765625
+          },
+          {
+            "index": [
+              0,
+              1,
+              17
+            ],
+            "got": -0.0111083984375,
+            "want": -0.01116943359375
+          },
+          {
+            "index": [
+              0,
+              1,
+              22
+            ],
+            "got": 0.228515625,
+            "want": 0.2294921875
+          }
+        ]
+      },
+      {
+        "name": "round_123",
+        "output_key": "round_123",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 817,
+        "max_abs": 8.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              8
+            ],
+            "got": -432.0,
+            "want": -430.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              9
+            ],
+            "got": -394.0,
+            "want": -396.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": -5.59375,
+            "want": -5.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              19
+            ],
+            "got": 36.5,
+            "want": 36.25
+          },
+          {
+            "index": [
+              0,
+              1,
+              21
+            ],
+            "got": 28.5,
+            "want": 28.625
+          }
+        ]
+      },
+      {
+        "name": "round_124",
+        "output_key": "round_124",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 53,
+        "max_abs": 16.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": -1864.0,
+            "want": -1856.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              163
+            ],
+            "got": 33.75,
+            "want": 33.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              200
+            ],
+            "got": -4.28125,
+            "want": -4.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              315
+            ],
+            "got": 67.5,
+            "want": 68.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              341
+            ],
+            "got": -304.0,
+            "want": -306.0
+          }
+        ]
+      },
+      {
+        "name": "round_125",
+        "output_key": "round_125",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 745,
+        "max_abs": 64.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              9
+            ],
+            "got": -3872.0,
+            "want": -3888.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": -55.0,
+            "want": -49.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              19
+            ],
+            "got": 358.0,
+            "want": 356.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              30
+            ],
+            "got": 1480.0,
+            "want": 1488.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              32
+            ],
+            "got": -8448.0,
+            "want": -8512.0
+          }
+        ]
+      },
+      {
+        "name": "round_126",
+        "output_key": "round_126",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 321,
+        "max_abs": 64.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              9
+            ],
+            "got": -2896.0,
+            "want": -2912.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": 500.0,
+            "want": 508.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              19
+            ],
+            "got": -494.0,
+            "want": -496.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              30
+            ],
+            "got": 1688.0,
+            "want": 1696.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              32
+            ],
+            "got": -7776.0,
+            "want": -7840.0
+          }
+        ]
+      }
+    ],
+    "CPU_AND_GPU": [
+      {
+        "name": "y",
+        "output_key": "round_126",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 28725,
+        "max_abs": 8192.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -76800.0,
+            "want": -75776.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              35
+            ],
+            "got": 815104.0,
+            "want": 811008.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              52
+            ],
+            "got": -1622016.0,
+            "want": -1613824.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              62
+            ],
+            "got": 98816.0,
+            "want": 98304.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -32256.0,
+            "want": -32128.0
+          }
+        ]
+      },
+      {
+        "name": "round_0",
+        "output_key": "round_0",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_1",
+        "output_key": "round_1",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_2",
+        "output_key": "round_2",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 2,
+        "max_abs": 0.00390625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              12,
+              199
+            ],
+            "got": 0.79296875,
+            "want": 0.7890625
+          },
+          {
+            "index": [
+              0,
+              14,
+              199
+            ],
+            "got": 0.79296875,
+            "want": 0.7890625
+          }
+        ]
+      },
+      {
+        "name": "round_3",
+        "output_key": "round_3",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_4",
+        "output_key": "round_4",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_5",
+        "output_key": "round_5",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 4,
+        "max_abs": 0.00390625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              12,
+              1,
+              40
+            ],
+            "got": 0.734375,
+            "want": 0.73828125
+          },
+          {
+            "index": [
+              0,
+              12,
+              1,
+              71
+            ],
+            "got": 0.2109375,
+            "want": 0.2099609375
+          },
+          {
+            "index": [
+              0,
+              14,
+              1,
+              40
+            ],
+            "got": 0.734375,
+            "want": 0.73828125
+          },
+          {
+            "index": [
+              0,
+              14,
+              1,
+              71
+            ],
+            "got": 0.2109375,
+            "want": 0.2099609375
+          }
+        ]
+      },
+      {
+        "name": "round_6",
+        "output_key": "round_6",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 86,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "got": 0.337890625,
+            "want": 0.3359375
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              3
+            ],
+            "got": 0.87109375,
+            "want": 0.8671875
+          },
+          {
+            "index": [
+              0,
+              3,
+              3,
+              19
+            ],
+            "got": -0.80859375,
+            "want": -0.8046875
+          },
+          {
+            "index": [
+              0,
+              3,
+              6,
+              17
+            ],
+            "got": 0.349609375,
+            "want": 0.34765625
+          },
+          {
+            "index": [
+              0,
+              4,
+              7,
+              14
+            ],
+            "got": 0.92578125,
+            "want": 0.921875
+          }
+        ]
+      },
+      {
+        "name": "round_7",
+        "output_key": "round_7",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 203,
+        "max_abs": 0.015625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              2,
+              31
+            ],
+            "got": 0.052490234375,
+            "want": 0.05224609375
+          },
+          {
+            "index": [
+              0,
+              1,
+              4,
+              18
+            ],
+            "got": -0.2412109375,
+            "want": -0.240234375
+          },
+          {
+            "index": [
+              0,
+              1,
+              7,
+              27
+            ],
+            "got": -0.050537109375,
+            "want": -0.05029296875
+          },
+          {
+            "index": [
+              0,
+              1,
+              7,
+              60
+            ],
+            "got": -0.0003299713134765625,
+            "want": -0.00032806396484375
+          },
+          {
+            "index": [
+              0,
+              1,
+              8,
+              16
+            ],
+            "got": 0.006500244140625,
+            "want": 0.0064697265625
+          }
+        ]
+      },
+      {
+        "name": "round_8",
+        "output_key": "round_8",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 1469,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              0,
+              13
+            ],
+            "got": -0.80859375,
+            "want": -0.8046875
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              56
+            ],
+            "got": -0.0245361328125,
+            "want": -0.0244140625
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "got": -0.046875,
+            "want": -0.048828125
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              3
+            ],
+            "got": 0.01171875,
+            "want": 0.0078125
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              16
+            ],
+            "got": -0.69921875,
+            "want": -0.6953125
+          }
+        ]
+      },
+      {
+        "name": "round_9",
+        "output_key": "round_9",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 20,
+        "max_abs": 0.0078125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              4,
+              0,
+              14
+            ],
+            "got": 0.92578125,
+            "want": 0.921875
+          },
+          {
+            "index": [
+              0,
+              5,
+              0,
+              2
+            ],
+            "got": -1.3984375,
+            "want": -1.390625
+          },
+          {
+            "index": [
+              0,
+              7,
+              0,
+              18
+            ],
+            "got": 0.70703125,
+            "want": 0.703125
+          },
+          {
+            "index": [
+              0,
+              7,
+              1,
+              16
+            ],
+            "got": 0.416015625,
+            "want": 0.4140625
+          },
+          {
+            "index": [
+              0,
+              8,
+              0,
+              14
+            ],
+            "got": -0.1337890625,
+            "want": -0.1328125
+          }
+        ]
+      },
+      {
+        "name": "round_10",
+        "output_key": "round_10",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 41,
+        "max_abs": 0.0078125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              2,
+              0,
+              18
+            ],
+            "got": -0.396484375,
+            "want": -0.39453125
+          },
+          {
+            "index": [
+              0,
+              3,
+              0,
+              46
+            ],
+            "got": 0.004547119140625,
+            "want": 0.0045166015625
+          },
+          {
+            "index": [
+              0,
+              3,
+              0,
+              63
+            ],
+            "got": -0.000545501708984375,
+            "want": -0.00054168701171875
+          },
+          {
+            "index": [
+              0,
+              3,
+              1,
+              60
+            ],
+            "got": 0.0021820068359375,
+            "want": 0.002166748046875
+          },
+          {
+            "index": [
+              0,
+              6,
+              1,
+              19
+            ],
+            "got": -0.427734375,
+            "want": -0.42578125
+          }
+        ]
+      },
+      {
+        "name": "round_11",
+        "output_key": "round_11",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 343,
+        "max_abs": 0.015625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "got": -3.890625,
+            "want": -3.875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              3
+            ],
+            "got": 1.1796875,
+            "want": 1.171875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              19
+            ],
+            "got": -1.1796875,
+            "want": -1.171875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              32
+            ],
+            "got": -0.1630859375,
+            "want": -0.162109375
+          },
+          {
+            "index": [
+              0,
+              2,
+              0,
+              7
+            ],
+            "got": 1.9609375,
+            "want": 1.953125
+          }
+        ]
+      },
+      {
+        "name": "round_12",
+        "output_key": "round_12",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 4367,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              0,
+              38
+            ],
+            "got": 0.0947265625,
+            "want": 0.09423828125
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              51
+            ],
+            "got": -1.75,
+            "want": -1.7578125
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              109
+            ],
+            "got": 0.109375,
+            "want": 0.10986328125
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              112
+            ],
+            "got": -1.1640625,
+            "want": -1.15625
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              127
+            ],
+            "got": 0.435546875,
+            "want": 0.43359375
+          }
+        ]
+      },
+      {
+        "name": "round_13",
+        "output_key": "round_13",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 821,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              2,
+              11
+            ],
+            "got": -3.09375,
+            "want": -3.078125
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              23
+            ],
+            "got": -0.35546875,
+            "want": -0.353515625
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              41
+            ],
+            "got": -3.15625,
+            "want": -3.140625
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              45
+            ],
+            "got": -3.03125,
+            "want": -3.015625
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              92
+            ],
+            "got": 2.90625,
+            "want": 2.890625
+          }
+        ]
+      },
+      {
+        "name": "round_14",
+        "output_key": "round_14",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 7124,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "got": 3.140625,
+            "want": 3.125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              7
+            ],
+            "got": -5.40625,
+            "want": -5.375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              12
+            ],
+            "got": -3.078125,
+            "want": -3.0625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              21
+            ],
+            "got": 4.84375,
+            "want": 4.8125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              23
+            ],
+            "got": -0.63671875,
+            "want": -0.6328125
+          }
+        ]
+      },
+      {
+        "name": "round_15",
+        "output_key": "round_15",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_16",
+        "output_key": "round_16",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_17",
+        "output_key": "round_17",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_18",
+        "output_key": "round_18",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 7003,
+        "max_abs": 0.1875,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "got": 5.75,
+            "want": 5.71875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              7
+            ],
+            "got": -9.875,
+            "want": -9.8125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              12
+            ],
+            "got": -5.625,
+            "want": -5.59375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              21
+            ],
+            "got": 8.875,
+            "want": 8.8125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              23
+            ],
+            "got": -1.1640625,
+            "want": -1.15625
+          }
+        ]
+      },
+      {
+        "name": "round_19",
+        "output_key": "round_19",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 17320,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              10
+            ],
+            "got": 6.625,
+            "want": 6.59375
+          },
+          {
+            "index": [
+              0,
+              0,
+              14
+            ],
+            "got": -5.71875,
+            "want": -5.6875
+          },
+          {
+            "index": [
+              0,
+              0,
+              15
+            ],
+            "got": 9.5625,
+            "want": 9.625
+          },
+          {
+            "index": [
+              0,
+              0,
+              16
+            ],
+            "got": 9.9375,
+            "want": 9.875
+          },
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": 0.46484375,
+            "want": 0.515625
+          }
+        ]
+      },
+      {
+        "name": "round_20",
+        "output_key": "round_20",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_21",
+        "output_key": "round_21",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 15922,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              10
+            ],
+            "got": 0.98828125,
+            "want": 0.984375
+          },
+          {
+            "index": [
+              0,
+              0,
+              14
+            ],
+            "got": -0.85546875,
+            "want": -0.8515625
+          },
+          {
+            "index": [
+              0,
+              0,
+              15
+            ],
+            "got": 1.4296875,
+            "want": 1.4375
+          },
+          {
+            "index": [
+              0,
+              0,
+              16
+            ],
+            "got": 1.484375,
+            "want": 1.4765625
+          },
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": 0.0693359375,
+            "want": 0.0771484375
+          }
+        ]
+      },
+      {
+        "name": "round_22",
+        "output_key": "round_22",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 13642,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              10
+            ],
+            "got": 0.05078125,
+            "want": 0.046875
+          },
+          {
+            "index": [
+              0,
+              0,
+              14
+            ],
+            "got": -0.9609375,
+            "want": -0.95703125
+          },
+          {
+            "index": [
+              0,
+              0,
+              15
+            ],
+            "got": -2.28125,
+            "want": -2.265625
+          },
+          {
+            "index": [
+              0,
+              0,
+              16
+            ],
+            "got": -2.609375,
+            "want": -2.625
+          },
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -1.4921875,
+            "want": -1.484375
+          }
+        ]
+      },
+      {
+        "name": "round_23",
+        "output_key": "round_23",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 15370,
+        "max_abs": 0.1005859375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              10
+            ],
+            "got": 0.0272216796875,
+            "want": 0.0250244140625
+          },
+          {
+            "index": [
+              0,
+              0,
+              11
+            ],
+            "got": -0.62890625,
+            "want": -0.625
+          },
+          {
+            "index": [
+              0,
+              0,
+              14
+            ],
+            "got": -0.515625,
+            "want": -0.51171875
+          },
+          {
+            "index": [
+              0,
+              0,
+              15
+            ],
+            "got": -1.21875,
+            "want": -1.2109375
+          },
+          {
+            "index": [
+              0,
+              0,
+              16
+            ],
+            "got": -1.3984375,
+            "want": -1.40625
+          }
+        ]
+      },
+      {
+        "name": "round_24",
+        "output_key": "round_24",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 45216,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -5.375,
+            "want": -5.34375
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -2.4375,
+            "want": -2.453125
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -9.0,
+            "want": -8.9375
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -1.65625,
+            "want": -1.6796875
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": -3.453125,
+            "want": -3.46875
+          }
+        ]
+      },
+      {
+        "name": "round_25",
+        "output_key": "round_25",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 42119,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -0.0247802734375,
+            "want": -0.025390625
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -0.1962890625,
+            "want": -0.1943359375
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -0.0011138916015625,
+            "want": -0.0011749267578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -0.265625,
+            "want": -0.263671875
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": -0.10595703125,
+            "want": -0.10498046875
+          }
+        ]
+      },
+      {
+        "name": "round_26",
+        "output_key": "round_26",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 87047,
+        "max_abs": 0.140625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": 1.5390625,
+            "want": 1.5234375
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -0.0986328125,
+            "want": -0.10302734375
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -0.007232666015625,
+            "want": -0.0126953125
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 4.0625,
+            "want": 4.09375
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": 0.8359375,
+            "want": 0.83203125
+          }
+        ]
+      },
+      {
+        "name": "round_27",
+        "output_key": "round_27",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 91074,
+        "max_abs": 8.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -0.1552734375,
+            "want": -0.1533203125
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": 0.00244140625,
+            "want": 0.0026092529296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": 0.0014190673828125,
+            "want": 0.002471923828125
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": 0.0025787353515625,
+            "want": 0.002716064453125
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": -0.08837890625,
+            "want": -0.08740234375
+          }
+        ]
+      },
+      {
+        "name": "round_28",
+        "output_key": "round_28",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 31857,
+        "max_abs": 4.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -752.0,
+            "want": -748.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -38.5,
+            "want": -37.75
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -242.0,
+            "want": -241.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -308.0,
+            "want": -306.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": 354.0,
+            "want": 352.0
+          }
+        ]
+      },
+      {
+        "name": "round_29",
+        "output_key": "round_29",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 12780,
+        "max_abs": 1.359375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              10
+            ],
+            "got": 0.27734375,
+            "want": 0.255859375
+          },
+          {
+            "index": [
+              0,
+              0,
+              14
+            ],
+            "got": -5.25,
+            "want": -5.21875
+          },
+          {
+            "index": [
+              0,
+              0,
+              15
+            ],
+            "got": -12.5,
+            "want": -12.375
+          },
+          {
+            "index": [
+              0,
+              0,
+              16
+            ],
+            "got": -14.25,
+            "want": -14.375
+          },
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -8.1875,
+            "want": -8.125
+          }
+        ]
+      },
+      {
+        "name": "round_30",
+        "output_key": "round_30",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 30358,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -38.5,
+            "want": -38.25
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -1.9765625,
+            "want": -1.9375
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -12.4375,
+            "want": -12.375
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -15.8125,
+            "want": -15.6875
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": 18.125,
+            "want": 18.0
+          }
+        ]
+      },
+      {
+        "name": "round_31",
+        "output_key": "round_31",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 20482,
+        "max_abs": 1.34375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -43.5,
+            "want": -43.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -21.125,
+            "want": -21.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -4.0,
+            "want": -3.9375
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -46.0,
+            "want": -45.75
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": -3.125,
+            "want": -3.25
+          }
+        ]
+      },
+      {
+        "name": "round_32",
+        "output_key": "round_32",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 22149,
+        "max_abs": 0.099609375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -3.078125,
+            "want": -3.046875
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": 1.9609375,
+            "want": 1.96875
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -0.283203125,
+            "want": -0.279296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": -2.21875,
+            "want": -2.234375
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "got": 0.291015625,
+            "want": 0.29296875
+          }
+        ]
+      },
+      {
+        "name": "round_33",
+        "output_key": "round_33",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 27883,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -1.1953125,
+            "want": -1.1796875
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -0.275390625,
+            "want": -0.333984375
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": 0.65625,
+            "want": 0.6171875
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "got": -0.7578125,
+            "want": -0.77734375
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": 0.53125,
+            "want": 0.546875
+          }
+        ]
+      },
+      {
+        "name": "round_34",
+        "output_key": "round_34",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 5116,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -1.140625,
+            "want": -1.171875
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": 1.4921875,
+            "want": 1.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -3.9375,
+            "want": -3.96875
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": 0.07080078125,
+            "want": 0.08349609375
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -1.828125,
+            "want": -1.859375
+          }
+        ]
+      },
+      {
+        "name": "round_35",
+        "output_key": "round_35",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 5501,
+        "max_abs": 0.078125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": 1.9140625,
+            "want": 1.9375
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -0.1826171875,
+            "want": -0.220703125
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": 5.875,
+            "want": 5.84375
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -2.203125,
+            "want": -2.1875
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 4.8125,
+            "want": 4.78125
+          }
+        ]
+      },
+      {
+        "name": "round_36",
+        "output_key": "round_36",
+        "shape": [
+          1,
+          32,
+          2
+        ],
+        "different_elements": 31,
+        "max_abs": 0.0078125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -1.109375,
+            "want": -1.1015625
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -0.244140625,
+            "want": -0.2470703125
+          },
+          {
+            "index": [
+              0,
+              1,
+              1
+            ],
+            "got": 0.1201171875,
+            "want": 0.11865234375
+          },
+          {
+            "index": [
+              0,
+              2,
+              0
+            ],
+            "got": 0.2021484375,
+            "want": 0.203125
+          },
+          {
+            "index": [
+              0,
+              3,
+              0
+            ],
+            "got": -0.48828125,
+            "want": -0.486328125
+          }
+        ]
+      },
+      {
+        "name": "round_37",
+        "output_key": "round_37",
+        "shape": [
+          1,
+          32,
+          2
+        ],
+        "different_elements": 9,
+        "max_abs": 0.001953125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": 0.248046875,
+            "want": 0.2490234375
+          },
+          {
+            "index": [
+              0,
+              9,
+              0
+            ],
+            "got": 0.28515625,
+            "want": 0.287109375
+          },
+          {
+            "index": [
+              0,
+              9,
+              1
+            ],
+            "got": 0.2294921875,
+            "want": 0.23046875
+          },
+          {
+            "index": [
+              0,
+              13,
+              0
+            ],
+            "got": 0.43359375,
+            "want": 0.431640625
+          },
+          {
+            "index": [
+              0,
+              20,
+              0
+            ],
+            "got": 0.44921875,
+            "want": 0.447265625
+          }
+        ]
+      },
+      {
+        "name": "round_38",
+        "output_key": "round_38",
+        "shape": [
+          1,
+          32,
+          2
+        ],
+        "different_elements": 9,
+        "max_abs": 0.00390625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": 0.49609375,
+            "want": 0.498046875
+          },
+          {
+            "index": [
+              0,
+              9,
+              0
+            ],
+            "got": 0.5703125,
+            "want": 0.57421875
+          },
+          {
+            "index": [
+              0,
+              9,
+              1
+            ],
+            "got": 0.458984375,
+            "want": 0.4609375
+          },
+          {
+            "index": [
+              0,
+              13,
+              0
+            ],
+            "got": 0.8671875,
+            "want": 0.86328125
+          },
+          {
+            "index": [
+              0,
+              20,
+              0
+            ],
+            "got": 0.8984375,
+            "want": 0.89453125
+          }
+        ]
+      },
+      {
+        "name": "round_39",
+        "output_key": "round_39",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 1020,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": 1.546875,
+            "want": 1.5546875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "got": 3.796875,
+            "want": 3.8125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": 3.40625,
+            "want": 3.421875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              13
+            ],
+            "got": 0.7890625,
+            "want": 0.79296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              14
+            ],
+            "got": 0.78125,
+            "want": 0.78515625
+          }
+        ]
+      },
+      {
+        "name": "round_40",
+        "output_key": "round_40",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 4361,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "got": -0.3515625,
+            "want": -0.328125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "got": -2.265625,
+            "want": -2.296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": 10.125,
+            "want": 10.0625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": -0.65625,
+            "want": -0.6328125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": 2.9375,
+            "want": 2.953125
+          }
+        ]
+      },
+      {
+        "name": "round_41",
+        "output_key": "round_41",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 27877,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "got": -0.51953125,
+            "want": -0.51171875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": -0.11962890625,
+            "want": -0.1455078125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": 0.28515625,
+            "want": 0.267578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              6
+            ],
+            "got": -0.330078125,
+            "want": -0.337890625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              7
+            ],
+            "got": 0.23046875,
+            "want": 0.2373046875
+          }
+        ]
+      },
+      {
+        "name": "round_42",
+        "output_key": "round_42",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 5047,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "got": -0.35546875,
+            "want": -0.36328125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": -1.2265625,
+            "want": -1.234375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": 0.02197265625,
+            "want": 0.02587890625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "got": -0.56640625,
+            "want": -0.578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": -0.059814453125,
+            "want": -0.060302734375
+          }
+        ]
+      },
+      {
+        "name": "round_43",
+        "output_key": "round_43",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 27626,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "got": -0.51953125,
+            "want": -0.51171875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": -0.11962890625,
+            "want": -0.1455078125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": 0.28515625,
+            "want": 0.267578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              6
+            ],
+            "got": -0.330078125,
+            "want": -0.337890625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              7
+            ],
+            "got": 0.23046875,
+            "want": 0.2373046875
+          }
+        ]
+      },
+      {
+        "name": "round_44",
+        "output_key": "round_44",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 11682,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "got": 1.484375,
+            "want": 1.4921875
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              3
+            ],
+            "got": 1.2890625,
+            "want": 1.296875
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              4
+            ],
+            "got": 0.8046875,
+            "want": 0.80859375
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              5
+            ],
+            "got": 0.7265625,
+            "want": 0.72265625
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              8
+            ],
+            "got": -0.65234375,
+            "want": -0.64453125
+          }
+        ]
+      },
+      {
+        "name": "round_45",
+        "output_key": "round_45",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 28028,
+        "max_abs": 0.046875,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "got": -0.51953125,
+            "want": -0.51171875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": -0.11962890625,
+            "want": -0.1455078125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": 0.28515625,
+            "want": 0.267578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              6
+            ],
+            "got": -0.330078125,
+            "want": -0.337890625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              7
+            ],
+            "got": 0.23046875,
+            "want": 0.2373046875
+          }
+        ]
+      },
+      {
+        "name": "round_46",
+        "output_key": "round_46",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 4991,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "got": -0.35546875,
+            "want": -0.36328125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": -1.2265625,
+            "want": -1.234375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": 0.02197265625,
+            "want": 0.02587890625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "got": -0.56640625,
+            "want": -0.578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": -0.059814453125,
+            "want": -0.060302734375
+          }
+        ]
+      },
+      {
+        "name": "round_47",
+        "output_key": "round_47",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 1947,
+        "max_abs": 0.015625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "got": 1.65625,
+            "want": 1.6484375
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              9
+            ],
+            "got": 0.146484375,
+            "want": 0.1494140625
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              11
+            ],
+            "got": 0.8515625,
+            "want": 0.84765625
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              13
+            ],
+            "got": 0.07861328125,
+            "want": 0.080078125
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              15
+            ],
+            "got": 0.3515625,
+            "want": 0.349609375
+          }
+        ]
+      },
+      {
+        "name": "round_48",
+        "output_key": "round_48",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 5100,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "got": -0.35546875,
+            "want": -0.36328125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": -1.2265625,
+            "want": -1.234375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": 0.02197265625,
+            "want": 0.02587890625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "got": -0.56640625,
+            "want": -0.578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": -0.059814453125,
+            "want": -0.060302734375
+          }
+        ]
+      },
+      {
+        "name": "round_49",
+        "output_key": "round_49",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 25332,
+        "max_abs": 0.375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "got": -0.3515625,
+            "want": -0.328125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "got": -2.265625,
+            "want": -2.296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": 10.125,
+            "want": 10.0625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": -0.65625,
+            "want": -0.6328125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": 2.9375,
+            "want": 2.953125
+          }
+        ]
+      },
+      {
+        "name": "round_50",
+        "output_key": "round_50",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 25040,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "got": -0.3515625,
+            "want": -0.328125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "got": -2.265625,
+            "want": -2.296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": 10.125,
+            "want": 10.0625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": -0.65625,
+            "want": -0.6328125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": 2.9375,
+            "want": 2.953125
+          }
+        ]
+      },
+      {
+        "name": "round_51",
+        "output_key": "round_51",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 21366,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "got": -0.16015625,
+            "want": -0.1494140625
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "got": -1.03125,
+            "want": -1.046875
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              2
+            ],
+            "got": 4.625,
+            "want": 4.59375
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              3
+            ],
+            "got": -0.298828125,
+            "want": -0.2890625
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              5
+            ],
+            "got": 1.34375,
+            "want": 1.3515625
+          }
+        ]
+      },
+      {
+        "name": "round_52",
+        "output_key": "round_52",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 225,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": 0.0712890625,
+            "want": 0.0400390625
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": 0.73828125,
+            "want": 0.7421875
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -1.3828125,
+            "want": -1.375
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -1.828125,
+            "want": -1.8359375
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": -1.765625,
+            "want": -1.7734375
+          }
+        ]
+      },
+      {
+        "name": "round_53",
+        "output_key": "round_53",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 120,
+        "max_abs": 0.01171875,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": 0.51953125,
+            "want": 0.51171875
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": 0.2001953125,
+            "want": 0.2021484375
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 0.138671875,
+            "want": 0.1376953125
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": 0.146484375,
+            "want": 0.1455078125
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": 0.515625,
+            "want": 0.52734375
+          }
+        ]
+      },
+      {
+        "name": "round_54",
+        "output_key": "round_54",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 120,
+        "max_abs": 0.0234375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": 1.0390625,
+            "want": 1.0234375
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": 0.400390625,
+            "want": 0.404296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 0.27734375,
+            "want": 0.275390625
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": 0.29296875,
+            "want": 0.291015625
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": 1.03125,
+            "want": 1.0546875
+          }
+        ]
+      },
+      {
+        "name": "round_55",
+        "output_key": "round_55",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 27464,
+        "max_abs": 0.5,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "got": -0.06396484375,
+            "want": -0.060302734375
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "got": -0.412109375,
+            "want": -0.423828125
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              2
+            ],
+            "got": 1.8515625,
+            "want": 1.859375
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              3
+            ],
+            "got": -0.11962890625,
+            "want": -0.11669921875
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              4
+            ],
+            "got": 1.578125,
+            "want": 1.59375
+          }
+        ]
+      },
+      {
+        "name": "round_56",
+        "output_key": "round_56",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 31905,
+        "max_abs": 3.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -16.625,
+            "want": -16.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -4.71875,
+            "want": -4.8125
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -13.5625,
+            "want": -13.4375
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": 9.8125,
+            "want": 9.75
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 9.8125,
+            "want": 9.75
+          }
+        ]
+      },
+      {
+        "name": "round_57",
+        "output_key": "round_57",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 19942,
+        "max_abs": 4.8125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -156.0,
+            "want": -155.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -76.0,
+            "want": -75.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -14.375,
+            "want": -14.125
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -165.0,
+            "want": -164.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": -11.25,
+            "want": -11.6875
+          }
+        ]
+      },
+      {
+        "name": "round_58",
+        "output_key": "round_58",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 30557,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -6.96875,
+            "want": -6.9375
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -1.984375,
+            "want": -2.015625
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -5.6875,
+            "want": -5.65625
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": 4.125,
+            "want": 4.09375
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 4.125,
+            "want": 4.09375
+          }
+        ]
+      },
+      {
+        "name": "round_59",
+        "output_key": "round_59",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 27911,
+        "max_abs": 4.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -163.0,
+            "want": -162.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -81.5,
+            "want": -81.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -10.25,
+            "want": -10.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -161.0,
+            "want": -160.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": -6.25,
+            "want": -6.6875
+          }
+        ]
+      },
+      {
+        "name": "round_60",
+        "output_key": "round_60",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 29539,
+        "max_abs": 0.09375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": 1.90625,
+            "want": 1.9140625
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -0.2001953125,
+            "want": -0.1962890625
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -3.15625,
+            "want": -3.140625
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "got": 0.11376953125,
+            "want": 0.1142578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": -0.1220703125,
+            "want": -0.130859375
+          }
+        ]
+      },
+      {
+        "name": "round_61",
+        "output_key": "round_61",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 64839,
+        "max_abs": 0.5,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -0.76953125,
+            "want": -0.796875
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -1.828125,
+            "want": -1.8515625
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -2.828125,
+            "want": -2.84375
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -2.3125,
+            "want": -2.296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -1.9375,
+            "want": -1.9609375
+          }
+        ]
+      },
+      {
+        "name": "round_62",
+        "output_key": "round_62",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 62614,
+        "max_abs": 0.1484375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -0.2431640625,
+            "want": -0.248046875
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -0.25390625,
+            "want": -0.251953125
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -0.158203125,
+            "want": -0.15625
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -0.2080078125,
+            "want": -0.2099609375
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -0.244140625,
+            "want": -0.2421875
+          }
+        ]
+      },
+      {
+        "name": "round_63",
+        "output_key": "round_63",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 87158,
+        "max_abs": 0.875,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": 0.6796875,
+            "want": 0.7265625
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -0.89453125,
+            "want": -0.90625
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -0.1259765625,
+            "want": -0.080078125
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": 1.8046875,
+            "want": 1.828125
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -2.75,
+            "want": -2.796875
+          }
+        ]
+      },
+      {
+        "name": "round_64",
+        "output_key": "round_64",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 94726,
+        "max_abs": 8.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -0.1650390625,
+            "want": -0.1806640625
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": 0.2275390625,
+            "want": 0.228515625
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": 0.0198974609375,
+            "want": 0.01251220703125
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -0.375,
+            "want": -0.384765625
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 0.671875,
+            "want": 0.67578125
+          }
+        ]
+      },
+      {
+        "name": "round_65",
+        "output_key": "round_65",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 32748,
+        "max_abs": 64.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -2688.0,
+            "want": -2672.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              90
+            ],
+            "got": -3264.0,
+            "want": -3280.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              232
+            ],
+            "got": 2208.0,
+            "want": 2224.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              270
+            ],
+            "got": 35.25,
+            "want": 35.75
+          },
+          {
+            "index": [
+              0,
+              0,
+              303
+            ],
+            "got": -248.0,
+            "want": -249.0
+          }
+        ]
+      },
+      {
+        "name": "round_66",
+        "output_key": "round_66",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 26325,
+        "max_abs": 12.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -33.75,
+            "want": -33.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -532.0,
+            "want": -528.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": -20.625,
+            "want": -22.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              8
+            ],
+            "got": -218.0,
+            "want": -216.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": 133.0,
+            "want": 131.0
+          }
+        ]
+      },
+      {
+        "name": "round_67",
+        "output_key": "round_67",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 32676,
+        "max_abs": 256.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -2752.0,
+            "want": -2736.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              90
+            ],
+            "got": -3344.0,
+            "want": -3360.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              232
+            ],
+            "got": 2256.0,
+            "want": 2272.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              270
+            ],
+            "got": 36.0,
+            "want": 36.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              303
+            ],
+            "got": -254.0,
+            "want": -255.0
+          }
+        ]
+      },
+      {
+        "name": "round_68",
+        "output_key": "round_68",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 27131,
+        "max_abs": 256.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -7072.0,
+            "want": -7040.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -2672.0,
+            "want": -2656.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              90
+            ],
+            "got": -3264.0,
+            "want": -3280.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              110
+            ],
+            "got": 2720.0,
+            "want": 2704.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              116
+            ],
+            "got": 61440.0,
+            "want": 61184.0
+          }
+        ]
+      },
+      {
+        "name": "round_69",
+        "output_key": "round_69",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 28948,
+        "max_abs": 0.09375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -0.19921875,
+            "want": -0.1982421875
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -0.0751953125,
+            "want": -0.07470703125
+          },
+          {
+            "index": [
+              0,
+              0,
+              90
+            ],
+            "got": -0.091796875,
+            "want": -0.09228515625
+          },
+          {
+            "index": [
+              0,
+              0,
+              110
+            ],
+            "got": 0.07666015625,
+            "want": 0.076171875
+          },
+          {
+            "index": [
+              0,
+              0,
+              116
+            ],
+            "got": 1.734375,
+            "want": 1.7265625
+          }
+        ]
+      },
+      {
+        "name": "round_70",
+        "output_key": "round_70",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 28708,
+        "max_abs": 1.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 10.9375,
+            "want": 11.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": -14.5625,
+            "want": -14.625
+          },
+          {
+            "index": [
+              0,
+              0,
+              12
+            ],
+            "got": 0.4453125,
+            "want": 0.455078125
+          },
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -9.875,
+            "want": -9.8125
+          },
+          {
+            "index": [
+              0,
+              0,
+              24
+            ],
+            "got": -5.1875,
+            "want": -5.15625
+          }
+        ]
+      },
+      {
+        "name": "round_71",
+        "output_key": "round_71",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 5303,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": 5.84375,
+            "want": 5.875
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": 10.4375,
+            "want": 10.375
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "got": -6.5625,
+            "want": -6.59375
+          },
+          {
+            "index": [
+              0,
+              0,
+              11
+            ],
+            "got": 7.53125,
+            "want": 7.5625
+          },
+          {
+            "index": [
+              0,
+              0,
+              15
+            ],
+            "got": -0.154296875,
+            "want": -0.18359375
+          }
+        ]
+      },
+      {
+        "name": "round_72",
+        "output_key": "round_72",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 5780,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -7.3125,
+            "want": -7.28125
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": -0.609375,
+            "want": -0.59765625
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": -2.8125,
+            "want": -2.828125
+          },
+          {
+            "index": [
+              0,
+              0,
+              13
+            ],
+            "got": -17.25,
+            "want": -17.125
+          },
+          {
+            "index": [
+              0,
+              0,
+              16
+            ],
+            "got": -24.125,
+            "want": -24.25
+          }
+        ]
+      },
+      {
+        "name": "round_73",
+        "output_key": "round_73",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 28530,
+        "max_abs": 0.03515625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "got": 0.55078125,
+            "want": 0.5546875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              9
+            ],
+            "got": -0.734375,
+            "want": -0.73828125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              12
+            ],
+            "got": 0.0224609375,
+            "want": 0.02294921875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              19
+            ],
+            "got": -0.498046875,
+            "want": -0.49609375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              24
+            ],
+            "got": -0.26171875,
+            "want": -0.259765625
+          }
+        ]
+      },
+      {
+        "name": "round_74",
+        "output_key": "round_74",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 5268,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": 0.244140625,
+            "want": 0.2421875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              6
+            ],
+            "got": -0.1533203125,
+            "want": -0.154296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              11
+            ],
+            "got": 0.17578125,
+            "want": 0.1767578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              15
+            ],
+            "got": -0.00360107421875,
+            "want": -0.0042724609375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              16
+            ],
+            "got": -0.267578125,
+            "want": -0.26953125
+          }
+        ]
+      },
+      {
+        "name": "round_75",
+        "output_key": "round_75",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 28257,
+        "max_abs": 0.03515625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "got": 0.55078125,
+            "want": 0.5546875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              9
+            ],
+            "got": -0.734375,
+            "want": -0.73828125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              12
+            ],
+            "got": 0.0224609375,
+            "want": 0.02294921875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              19
+            ],
+            "got": -0.498046875,
+            "want": -0.49609375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              24
+            ],
+            "got": -0.26171875,
+            "want": -0.259765625
+          }
+        ]
+      },
+      {
+        "name": "round_76",
+        "output_key": "round_76",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 12837,
+        "max_abs": 0.0234375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "got": -0.515625,
+            "want": -0.51171875
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              2
+            ],
+            "got": -0.70703125,
+            "want": -0.703125
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              3
+            ],
+            "got": -1.0,
+            "want": -0.98828125
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              4
+            ],
+            "got": -0.22265625,
+            "want": -0.21875
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              6
+            ],
+            "got": -0.1015625,
+            "want": -0.10302734375
+          }
+        ]
+      },
+      {
+        "name": "round_77",
+        "output_key": "round_77",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 28664,
+        "max_abs": 0.03515625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "got": 0.55078125,
+            "want": 0.5546875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              9
+            ],
+            "got": -0.734375,
+            "want": -0.73828125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              12
+            ],
+            "got": 0.0224609375,
+            "want": 0.02294921875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              19
+            ],
+            "got": -0.498046875,
+            "want": -0.49609375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              24
+            ],
+            "got": -0.26171875,
+            "want": -0.259765625
+          }
+        ]
+      },
+      {
+        "name": "round_78",
+        "output_key": "round_78",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 5198,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": 0.244140625,
+            "want": 0.2421875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              6
+            ],
+            "got": -0.1533203125,
+            "want": -0.154296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              11
+            ],
+            "got": 0.17578125,
+            "want": 0.1767578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              15
+            ],
+            "got": -0.00360107421875,
+            "want": -0.0042724609375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              16
+            ],
+            "got": -0.267578125,
+            "want": -0.26953125
+          }
+        ]
+      },
+      {
+        "name": "round_79",
+        "output_key": "round_79",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 2156,
+        "max_abs": 0.015625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "got": -2.515625,
+            "want": -2.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              2
+            ],
+            "got": -0.4921875,
+            "want": -0.48828125
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              3
+            ],
+            "got": 1.7734375,
+            "want": 1.765625
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              5
+            ],
+            "got": -0.408203125,
+            "want": -0.40625
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              6
+            ],
+            "got": -0.90625,
+            "want": -0.91015625
+          }
+        ]
+      },
+      {
+        "name": "round_80",
+        "output_key": "round_80",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 5293,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": 0.244140625,
+            "want": 0.2421875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              6
+            ],
+            "got": -0.1533203125,
+            "want": -0.154296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              11
+            ],
+            "got": 0.17578125,
+            "want": 0.1767578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              15
+            ],
+            "got": -0.00360107421875,
+            "want": -0.0042724609375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              16
+            ],
+            "got": -0.267578125,
+            "want": -0.26953125
+          }
+        ]
+      },
+      {
+        "name": "round_81",
+        "output_key": "round_81",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 27692,
+        "max_abs": 0.75,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": -7.3125,
+            "want": -7.28125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "got": -0.609375,
+            "want": -0.59765625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              7
+            ],
+            "got": -2.8125,
+            "want": -2.828125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              13
+            ],
+            "got": -17.25,
+            "want": -17.125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              16
+            ],
+            "got": -24.125,
+            "want": -24.25
+          }
+        ]
+      },
+      {
+        "name": "round_82",
+        "output_key": "round_82",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 31108,
+        "max_abs": 0.75,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": -7.09375,
+            "want": -7.0625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              4
+            ],
+            "got": -0.59375,
+            "want": -0.58203125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              7
+            ],
+            "got": -2.734375,
+            "want": -2.75
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              13
+            ],
+            "got": -16.75,
+            "want": -16.625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              16
+            ],
+            "got": -23.375,
+            "want": -23.5
+          }
+        ]
+      },
+      {
+        "name": "round_83",
+        "output_key": "round_83",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 26885,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              51
+            ],
+            "got": -0.15625,
+            "want": -0.1875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              100
+            ],
+            "got": -0.625,
+            "want": -0.75
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              13
+            ],
+            "got": -2.375,
+            "want": -2.3125
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              44
+            ],
+            "got": 2.625,
+            "want": 2.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              67
+            ],
+            "got": -0.12109375,
+            "want": -0.1171875
+          }
+        ]
+      },
+      {
+        "name": "round_84",
+        "output_key": "round_84",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 206,
+        "max_abs": 0.109375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -0.12451171875,
+            "want": -0.125
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "got": -0.35546875,
+            "want": -0.353515625
+          },
+          {
+            "index": [
+              0,
+              1,
+              0
+            ],
+            "got": -0.1865234375,
+            "want": -0.1884765625
+          },
+          {
+            "index": [
+              0,
+              1,
+              1
+            ],
+            "got": -2.984375,
+            "want": -2.875
+          },
+          {
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "got": -1.7109375,
+            "want": -1.703125
+          }
+        ]
+      },
+      {
+        "name": "round_85",
+        "output_key": "round_85",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 133,
+        "max_abs": 0.005859375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1
+            ],
+            "got": 0.048095703125,
+            "want": 0.053466796875
+          },
+          {
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "got": 0.1533203125,
+            "want": 0.154296875
+          },
+          {
+            "index": [
+              0,
+              1,
+              3
+            ],
+            "got": 0.08251953125,
+            "want": 0.083984375
+          },
+          {
+            "index": [
+              0,
+              1,
+              4
+            ],
+            "got": 0.158203125,
+            "want": 0.1572265625
+          },
+          {
+            "index": [
+              0,
+              1,
+              9
+            ],
+            "got": 0.44140625,
+            "want": 0.443359375
+          }
+        ]
+      },
+      {
+        "name": "round_86",
+        "output_key": "round_86",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 133,
+        "max_abs": 0.01171875,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1
+            ],
+            "got": 0.09619140625,
+            "want": 0.10693359375
+          },
+          {
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "got": 0.306640625,
+            "want": 0.30859375
+          },
+          {
+            "index": [
+              0,
+              1,
+              3
+            ],
+            "got": 0.1650390625,
+            "want": 0.16796875
+          },
+          {
+            "index": [
+              0,
+              1,
+              4
+            ],
+            "got": 0.31640625,
+            "want": 0.314453125
+          },
+          {
+            "index": [
+              0,
+              1,
+              9
+            ],
+            "got": 0.8828125,
+            "want": 0.88671875
+          }
+        ]
+      },
+      {
+        "name": "round_87",
+        "output_key": "round_87",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 30155,
+        "max_abs": 1.5,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              51
+            ],
+            "got": -0.146484375,
+            "want": -0.17578125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              100
+            ],
+            "got": -0.5859375,
+            "want": -0.703125
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              13
+            ],
+            "got": -4.625,
+            "want": -4.53125
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              44
+            ],
+            "got": 5.125,
+            "want": 4.875
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              67
+            ],
+            "got": -0.236328125,
+            "want": -0.228515625
+          }
+        ]
+      },
+      {
+        "name": "round_88",
+        "output_key": "round_88",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 31870,
+        "max_abs": 16.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 284.0,
+            "want": 282.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": 26.5,
+            "want": 27.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": 304.0,
+            "want": 302.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              8
+            ],
+            "got": 756.0,
+            "want": 752.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              10
+            ],
+            "got": -74.0,
+            "want": -73.5
+          }
+        ]
+      },
+      {
+        "name": "round_89",
+        "output_key": "round_89",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 25669,
+        "max_abs": 1024.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -21120.0,
+            "want": -20992.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -7968.0,
+            "want": -7936.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              90
+            ],
+            "got": -9728.0,
+            "want": -9792.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              110
+            ],
+            "got": 8128.0,
+            "want": 8064.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              116
+            ],
+            "got": 183296.0,
+            "want": 182272.0
+          }
+        ]
+      },
+      {
+        "name": "round_90",
+        "output_key": "round_90",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 31151,
+        "max_abs": 9.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 159.0,
+            "want": 158.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": 14.8125,
+            "want": 15.0625
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": 170.0,
+            "want": 169.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              8
+            ],
+            "got": 422.0,
+            "want": 420.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              10
+            ],
+            "got": -41.25,
+            "want": -41.0
+          }
+        ]
+      },
+      {
+        "name": "round_91",
+        "output_key": "round_91",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 28375,
+        "max_abs": 1024.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -20864.0,
+            "want": -20736.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              69
+            ],
+            "got": 1020.0,
+            "want": 1016.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -8256.0,
+            "want": -8192.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              90
+            ],
+            "got": -9920.0,
+            "want": -9984.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              110
+            ],
+            "got": 8512.0,
+            "want": 8448.0
+          }
+        ]
+      },
+      {
+        "name": "round_92",
+        "output_key": "round_92",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 30003,
+        "max_abs": 0.078125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -0.197265625,
+            "want": -0.1962890625
+          },
+          {
+            "index": [
+              0,
+              0,
+              42
+            ],
+            "got": -1.234375,
+            "want": -1.2421875
+          },
+          {
+            "index": [
+              0,
+              0,
+              51
+            ],
+            "got": -0.56640625,
+            "want": -0.5703125
+          },
+          {
+            "index": [
+              0,
+              0,
+              69
+            ],
+            "got": 0.0096435546875,
+            "want": 0.00958251953125
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -0.078125,
+            "want": -0.07763671875
+          }
+        ]
+      },
+      {
+        "name": "round_93",
+        "output_key": "round_93",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 66736,
+        "max_abs": 0.140625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": 0.000705718994140625,
+            "want": -0.0031585693359375
+          },
+          {
+            "index": [
+              0,
+              0,
+              11
+            ],
+            "got": -1.2421875,
+            "want": -1.234375
+          },
+          {
+            "index": [
+              0,
+              0,
+              12
+            ],
+            "got": 0.6328125,
+            "want": 0.640625
+          },
+          {
+            "index": [
+              0,
+              0,
+              13
+            ],
+            "got": -2.5625,
+            "want": -2.546875
+          },
+          {
+            "index": [
+              0,
+              0,
+              16
+            ],
+            "got": 5.25,
+            "want": 5.21875
+          }
+        ]
+      },
+      {
+        "name": "round_94",
+        "output_key": "round_94",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 63984,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": 0.0003528594970703125,
+            "want": -0.00157928466796875
+          },
+          {
+            "index": [
+              0,
+              0,
+              12
+            ],
+            "got": 0.4140625,
+            "want": 0.419921875
+          },
+          {
+            "index": [
+              0,
+              0,
+              13
+            ],
+            "got": -0.18359375,
+            "want": -0.1845703125
+          },
+          {
+            "index": [
+              0,
+              0,
+              16
+            ],
+            "got": 5.21875,
+            "want": 5.1875
+          },
+          {
+            "index": [
+              0,
+              0,
+              17
+            ],
+            "got": -0.016845703125,
+            "want": -0.0140380859375
+          }
+        ]
+      },
+      {
+        "name": "round_95",
+        "output_key": "round_95",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 84426,
+        "max_abs": 0.1708984375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 3.390625,
+            "want": 3.40625
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": 2.03125,
+            "want": 2.015625
+          },
+          {
+            "index": [
+              0,
+              0,
+              13
+            ],
+            "got": -0.39453125,
+            "want": -0.396484375
+          },
+          {
+            "index": [
+              0,
+              0,
+              17
+            ],
+            "got": -1.9453125,
+            "want": -1.953125
+          },
+          {
+            "index": [
+              0,
+              0,
+              31
+            ],
+            "got": -3.4375,
+            "want": -3.421875
+          }
+        ]
+      },
+      {
+        "name": "round_96",
+        "output_key": "round_96",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 92733,
+        "max_abs": 4.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": 13.8125,
+            "want": 13.75
+          },
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": 0.000782012939453125,
+            "want": -0.003509521484375
+          },
+          {
+            "index": [
+              0,
+              0,
+              12
+            ],
+            "got": -0.83984375,
+            "want": -0.8515625
+          },
+          {
+            "index": [
+              0,
+              0,
+              13
+            ],
+            "got": 0.072265625,
+            "want": 0.0732421875
+          },
+          {
+            "index": [
+              0,
+              0,
+              16
+            ],
+            "got": 44.75,
+            "want": 44.5
+          }
+        ]
+      },
+      {
+        "name": "round_97",
+        "output_key": "round_97",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 32878,
+        "max_abs": 4.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": 2.390625,
+            "want": 2.265625
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -38.0,
+            "want": -37.75
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": 6.5625,
+            "want": 6.6875
+          },
+          {
+            "index": [
+              0,
+              0,
+              6
+            ],
+            "got": -58.5,
+            "want": -58.75
+          },
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": 13.125,
+            "want": 13.3125
+          }
+        ]
+      },
+      {
+        "name": "round_98",
+        "output_key": "round_98",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 26908,
+        "max_abs": 4096.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -55808.0,
+            "want": -55296.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -22016.0,
+            "want": -21888.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              90
+            ],
+            "got": -26496.0,
+            "want": -26624.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              110
+            ],
+            "got": 22784.0,
+            "want": 22528.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              116
+            ],
+            "got": 491520.0,
+            "want": 489472.0
+          }
+        ]
+      },
+      {
+        "name": "round_99",
+        "output_key": "round_99",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 31375,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -0.1044921875,
+            "want": -0.09912109375
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": 1.6640625,
+            "want": 1.6484375
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -0.287109375,
+            "want": -0.29296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": -0.57421875,
+            "want": -0.58203125
+          },
+          {
+            "index": [
+              0,
+              0,
+              12
+            ],
+            "got": -0.478515625,
+            "want": -0.48046875
+          }
+        ]
+      },
+      {
+        "name": "round_100",
+        "output_key": "round_100",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 26913,
+        "max_abs": 4096.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -55808.0,
+            "want": -55296.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -22016.0,
+            "want": -21888.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              90
+            ],
+            "got": -26496.0,
+            "want": -26624.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              110
+            ],
+            "got": 22784.0,
+            "want": 22528.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              116
+            ],
+            "got": 491520.0,
+            "want": 489472.0
+          }
+        ]
+      },
+      {
+        "name": "round_101",
+        "output_key": "round_101",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 29550,
+        "max_abs": 0.078125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -0.197265625,
+            "want": -0.1953125
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -0.07763671875,
+            "want": -0.0771484375
+          },
+          {
+            "index": [
+              0,
+              0,
+              90
+            ],
+            "got": -0.09375,
+            "want": -0.09423828125
+          },
+          {
+            "index": [
+              0,
+              0,
+              110
+            ],
+            "got": 0.08056640625,
+            "want": 0.07958984375
+          },
+          {
+            "index": [
+              0,
+              0,
+              155
+            ],
+            "got": -0.01373291015625,
+            "want": -0.013671875
+          }
+        ]
+      },
+      {
+        "name": "round_102",
+        "output_key": "round_102",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 30513,
+        "max_abs": 2.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": 1.4921875,
+            "want": 1.3984375
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -7.09375,
+            "want": -7.21875
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": -6.03125,
+            "want": -5.9375
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": -24.75,
+            "want": -24.875
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": 13.75,
+            "want": 13.625
+          }
+        ]
+      },
+      {
+        "name": "round_103",
+        "output_key": "round_103",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 5788,
+        "max_abs": 2.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -4.625,
+            "want": -4.71875
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": -107.5,
+            "want": -108.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              8
+            ],
+            "got": 10.625,
+            "want": 10.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              10
+            ],
+            "got": 6.1875,
+            "want": 6.25
+          },
+          {
+            "index": [
+              0,
+              0,
+              15
+            ],
+            "got": 4.84375,
+            "want": 4.875
+          }
+        ]
+      },
+      {
+        "name": "round_104",
+        "output_key": "round_104",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 5877,
+        "max_abs": 2.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -30.125,
+            "want": -30.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              2
+            ],
+            "got": 22.25,
+            "want": 22.375
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -7.78125,
+            "want": -7.84375
+          },
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": -53.25,
+            "want": -53.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              10
+            ],
+            "got": 25.375,
+            "want": 25.5
+          }
+        ]
+      },
+      {
+        "name": "round_105",
+        "output_key": "round_105",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 30300,
+        "max_abs": 0.04296875,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "got": 0.0341796875,
+            "want": 0.031982421875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "got": -0.162109375,
+            "want": -0.1650390625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": -0.1376953125,
+            "want": -0.1357421875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": -0.56640625,
+            "want": -0.5703125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              7
+            ],
+            "got": 0.314453125,
+            "want": 0.3125
+          }
+        ]
+      },
+      {
+        "name": "round_106",
+        "output_key": "round_106",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 5710,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "got": -0.05078125,
+            "want": -0.052001953125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              5
+            ],
+            "got": -1.1796875,
+            "want": -1.1875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              8
+            ],
+            "got": 0.11669921875,
+            "want": 0.11572265625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              10
+            ],
+            "got": 0.06787109375,
+            "want": 0.06884765625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              14
+            ],
+            "got": 1.2890625,
+            "want": 1.296875
+          }
+        ]
+      },
+      {
+        "name": "round_107",
+        "output_key": "round_107",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 28024,
+        "max_abs": 2.8671875,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "got": -30.125,
+            "want": -30.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": 22.25,
+            "want": 22.375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": -7.78125,
+            "want": -7.84375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              9
+            ],
+            "got": -53.25,
+            "want": -53.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              10
+            ],
+            "got": 25.375,
+            "want": 25.5
+          }
+        ]
+      },
+      {
+        "name": "round_108",
+        "output_key": "round_108",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 30795,
+        "max_abs": 2.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "got": -28.75,
+            "want": -28.625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "got": 21.25,
+            "want": 21.375
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": -7.40625,
+            "want": -7.46875
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              9
+            ],
+            "got": -50.75,
+            "want": -51.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              10
+            ],
+            "got": 24.125,
+            "want": 24.25
+          }
+        ]
+      },
+      {
+        "name": "round_109",
+        "output_key": "round_109",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 26464,
+        "max_abs": 2.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              12
+            ],
+            "got": 0.109375,
+            "want": 0.09375
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              16
+            ],
+            "got": 0.0625,
+            "want": 0.03125
+          },
+          {
+            "index": [
+              0,
+              0,
+              3,
+              0
+            ],
+            "got": -0.5,
+            "want": -0.375
+          },
+          {
+            "index": [
+              0,
+              0,
+              4,
+              36
+            ],
+            "got": 0.03125,
+            "want": 0.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              5,
+              15
+            ],
+            "got": 1.625,
+            "want": 1.75
+          }
+        ]
+      },
+      {
+        "name": "round_110",
+        "output_key": "round_110",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 177,
+        "max_abs": 0.015625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              0
+            ],
+            "got": -2.015625,
+            "want": -2.03125
+          },
+          {
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "got": -1.7578125,
+            "want": -1.7421875
+          },
+          {
+            "index": [
+              0,
+              1,
+              4
+            ],
+            "got": -2.140625,
+            "want": -2.125
+          },
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": -2.359375,
+            "want": -2.34375
+          },
+          {
+            "index": [
+              0,
+              1,
+              7
+            ],
+            "got": -1.09375,
+            "want": -1.1015625
+          }
+        ]
+      },
+      {
+        "name": "round_111",
+        "output_key": "round_111",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 135,
+        "max_abs": 0.00390625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              0
+            ],
+            "got": 0.11767578125,
+            "want": 0.11572265625
+          },
+          {
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "got": 0.1474609375,
+            "want": 0.1494140625
+          },
+          {
+            "index": [
+              0,
+              1,
+              4
+            ],
+            "got": 0.10498046875,
+            "want": 0.10693359375
+          },
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": 0.08642578125,
+            "want": 0.08740234375
+          },
+          {
+            "index": [
+              0,
+              1,
+              7
+            ],
+            "got": 0.25,
+            "want": 0.2490234375
+          }
+        ]
+      },
+      {
+        "name": "round_112",
+        "output_key": "round_112",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 135,
+        "max_abs": 0.0078125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              0
+            ],
+            "got": 0.2353515625,
+            "want": 0.2314453125
+          },
+          {
+            "index": [
+              0,
+              1,
+              2
+            ],
+            "got": 0.294921875,
+            "want": 0.298828125
+          },
+          {
+            "index": [
+              0,
+              1,
+              4
+            ],
+            "got": 0.2099609375,
+            "want": 0.2138671875
+          },
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": 0.1728515625,
+            "want": 0.1748046875
+          },
+          {
+            "index": [
+              0,
+              1,
+              7
+            ],
+            "got": 0.5,
+            "want": 0.498046875
+          }
+        ]
+      },
+      {
+        "name": "round_113",
+        "output_key": "round_113",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 30151,
+        "max_abs": 2.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "got": 5.59375,
+            "want": 5.5625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              3
+            ],
+            "got": -0.69921875,
+            "want": -0.6953125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              11
+            ],
+            "got": -5.59375,
+            "want": -5.5625
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              12
+            ],
+            "got": 0.203125,
+            "want": 0.173828125
+          },
+          {
+            "index": [
+              0,
+              0,
+              0,
+              16
+            ],
+            "got": 0.69921875,
+            "want": 0.6953125
+          }
+        ]
+      },
+      {
+        "name": "round_114",
+        "output_key": "round_114",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 34008,
+        "max_abs": 40.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": -936.0,
+            "want": -940.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              13
+            ],
+            "got": 64.5,
+            "want": 63.75
+          },
+          {
+            "index": [
+              0,
+              0,
+              18
+            ],
+            "got": -60.25,
+            "want": -61.25
+          },
+          {
+            "index": [
+              0,
+              0,
+              25
+            ],
+            "got": 604.0,
+            "want": 608.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              27
+            ],
+            "got": -185.0,
+            "want": -184.0
+          }
+        ]
+      },
+      {
+        "name": "round_115",
+        "output_key": "round_115",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 26107,
+        "max_abs": 8192.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -71680.0,
+            "want": -70656.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              35
+            ],
+            "got": 757760.0,
+            "want": 753664.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              52
+            ],
+            "got": -1515520.0,
+            "want": -1507328.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -28160.0,
+            "want": -28032.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              110
+            ],
+            "got": 29184.0,
+            "want": 28928.0
+          }
+        ]
+      },
+      {
+        "name": "round_116",
+        "output_key": "round_116",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 32752,
+        "max_abs": 32.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              13
+            ],
+            "got": 47.75,
+            "want": 47.25
+          },
+          {
+            "index": [
+              0,
+              0,
+              18
+            ],
+            "got": -44.75,
+            "want": -45.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              25
+            ],
+            "got": 448.0,
+            "want": 452.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              28
+            ],
+            "got": 49.0,
+            "want": 50.75
+          },
+          {
+            "index": [
+              0,
+              0,
+              29
+            ],
+            "got": -10.1875,
+            "want": -10.375
+          }
+        ]
+      },
+      {
+        "name": "round_117",
+        "output_key": "round_117",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 29124,
+        "max_abs": 8192.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -72192.0,
+            "want": -71168.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              35
+            ],
+            "got": 757760.0,
+            "want": 753664.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              52
+            ],
+            "got": -1515520.0,
+            "want": -1507328.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              62
+            ],
+            "got": 91648.0,
+            "want": 91136.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -28416.0,
+            "want": -28288.0
+          }
+        ]
+      },
+      {
+        "name": "round_118",
+        "output_key": "round_118",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 31059,
+        "max_abs": 0.09375,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -0.19921875,
+            "want": -0.1962890625
+          },
+          {
+            "index": [
+              0,
+              0,
+              21
+            ],
+            "got": 0.08203125,
+            "want": 0.08251953125
+          },
+          {
+            "index": [
+              0,
+              0,
+              35
+            ],
+            "got": 2.09375,
+            "want": 2.078125
+          },
+          {
+            "index": [
+              0,
+              0,
+              36
+            ],
+            "got": -1.578125,
+            "want": -1.5859375
+          },
+          {
+            "index": [
+              0,
+              0,
+              46
+            ],
+            "got": -3.359375,
+            "want": -3.375
+          }
+        ]
+      },
+      {
+        "name": "round_119",
+        "output_key": "round_119",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 80963,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -0.98828125,
+            "want": -1.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": 0.384765625,
+            "want": 0.390625
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -3.671875,
+            "want": -3.65625
+          },
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": 1.0859375,
+            "want": 1.078125
+          },
+          {
+            "index": [
+              0,
+              0,
+              10
+            ],
+            "got": 0.6484375,
+            "want": 0.640625
+          }
+        ]
+      },
+      {
+        "name": "round_120",
+        "output_key": "round_120",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 76346,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -0.267578125,
+            "want": -0.26953125
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": 0.228515625,
+            "want": 0.2333984375
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -0.0908203125,
+            "want": -0.09228515625
+          },
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": 0.8125,
+            "want": 0.8046875
+          },
+          {
+            "index": [
+              0,
+              0,
+              10
+            ],
+            "got": 0.42578125,
+            "want": 0.419921875
+          }
+        ]
+      },
+      {
+        "name": "round_121",
+        "output_key": "round_121",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 86717,
+        "max_abs": 0.1875,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": -5.09375,
+            "want": -5.0625
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": 0.408203125,
+            "want": 0.416015625
+          },
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": 0.8125,
+            "want": 0.8046875
+          },
+          {
+            "index": [
+              0,
+              0,
+              11
+            ],
+            "got": -1.3046875,
+            "want": -1.296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              13
+            ],
+            "got": 0.31640625,
+            "want": 0.3203125
+          }
+        ]
+      },
+      {
+        "name": "round_122",
+        "output_key": "round_122",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 95273,
+        "max_abs": 8.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              0
+            ],
+            "got": 1.359375,
+            "want": 1.3671875
+          },
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": -0.97265625,
+            "want": -0.9921875
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": -0.265625,
+            "want": -0.26953125
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": 1.2734375,
+            "want": 1.296875
+          },
+          {
+            "index": [
+              0,
+              0,
+              9
+            ],
+            "got": 0.66015625,
+            "want": 0.6484375
+          }
+        ]
+      },
+      {
+        "name": "round_123",
+        "output_key": "round_123",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 30973,
+        "max_abs": 32.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": 92.0,
+            "want": 92.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": 17.625,
+            "want": 17.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 66.5,
+            "want": 67.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": -40.0,
+            "want": -39.5
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": 186.0,
+            "want": 185.0
+          }
+        ]
+      },
+      {
+        "name": "round_124",
+        "output_key": "round_124",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 28694,
+        "max_abs": 8192.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -77312.0,
+            "want": -76288.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              35
+            ],
+            "got": 811008.0,
+            "want": 806912.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              52
+            ],
+            "got": -1622016.0,
+            "want": -1613824.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              62
+            ],
+            "got": 98304.0,
+            "want": 97792.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -30464.0,
+            "want": -30336.0
+          }
+        ]
+      },
+      {
+        "name": "round_125",
+        "output_key": "round_125",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 29758,
+        "max_abs": 256.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              1
+            ],
+            "got": 904.0,
+            "want": 908.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              3
+            ],
+            "got": 173.0,
+            "want": 172.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              4
+            ],
+            "got": 652.0,
+            "want": 656.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              5
+            ],
+            "got": -392.0,
+            "want": -388.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              7
+            ],
+            "got": 1824.0,
+            "want": 1816.0
+          }
+        ]
+      },
+      {
+        "name": "round_126",
+        "output_key": "round_126",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 28725,
+        "max_abs": 8192.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              0,
+              19
+            ],
+            "got": -76800.0,
+            "want": -75776.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              35
+            ],
+            "got": 815104.0,
+            "want": 811008.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              52
+            ],
+            "got": -1622016.0,
+            "want": -1613824.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              62
+            ],
+            "got": 98816.0,
+            "want": 98304.0
+          },
+          {
+            "index": [
+              0,
+              0,
+              87
+            ],
+            "got": -32256.0,
+            "want": -32128.0
+          }
+        ]
+      }
+    ]
+  }
+}

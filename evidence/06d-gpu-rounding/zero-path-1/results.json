@@ -1,0 +1,891 @@
+{
+  "cases": [
+    {
+      "count": 1,
+      "name": "directed-q1",
+      "native": {},
+      "prior_archive_sha256": "51a2878320d515d96ccf2416dfe0290e6ab7f3ee6e03b69c5eee6d2a3dadf86a",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/directed-q1.npz",
+      "torch_archive_sha256": "94daf86339eb70bcbfc9265a291971deb9e04a8ebde0e98302dc9c6e28bc98d1",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            1,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            1,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            1,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 3,
+      "name": "directed-q3",
+      "native": {},
+      "prior_archive_sha256": "42e80c31b337c4baa30adabbdb681fce4b52ee01cb8a0203b6b98a462029b7b3",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/directed-q3.npz",
+      "torch_archive_sha256": "0b377b41d28768f058b56562a2a0500ca292dbf1de01caf5592cab4cde3d89d5",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            3,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            3,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            3,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 12,
+      "name": "directed-q12",
+      "native": {},
+      "prior_archive_sha256": "056926e69546ebc4ea5e43d45f71303c79d913b2542459a3096bc93944a10e8e",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/directed-q12.npz",
+      "torch_archive_sha256": "02123aa1ed63486b45c8280e8d3d16acd0c0877d200a8643553172c33b46f235",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 32,
+      "name": "directed-q32",
+      "native": {},
+      "prior_archive_sha256": "135ea4031dd9f144e5dd8ebcd9c0fe0842b0d462e0ba7253bf43a22c9fc354c6",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/directed-q32.npz",
+      "torch_archive_sha256": "3933e3fb6db52b737f841b7f4c61caaa454953068f952f60c17bf2199895f4f0",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 32,
+      "name": "captured-c0-cpu-x_9",
+      "native": {},
+      "prior_archive_sha256": "5604130d56d6a23ec23b42c3ca368120b53e5b4d4ac618b78f4aed70ecfef6a0",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c0-cpu-x_9.npz",
+      "torch_archive_sha256": "bf2cba12d5adcb1903d59bc97a8ced271122dedfe15c4434f2a40474a5432f48",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 32,
+      "name": "captured-c0-cpu-x_27",
+      "native": {},
+      "prior_archive_sha256": "b2572286cdadb66f6ba08d03de41a03919e3c2f53e4ec016badacb0dc906b856",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c0-cpu-x_27.npz",
+      "torch_archive_sha256": "c064dbc5eb30a530aec29986f44892b87c1278d6c05c8679daffde48558a3e17",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 32,
+      "name": "captured-c0-cpu-x_29",
+      "native": {},
+      "prior_archive_sha256": "7dd593126c69217577e8a26f7a72f6902bee5e50e37d253ae57617dae116567f",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c0-cpu-x_29.npz",
+      "torch_archive_sha256": "750b0ba732e4b49127640eb2634f7d46934ea38e23cb41c04bd696ccce76ff9e",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 32,
+      "name": "captured-c0-cpu-x_31",
+      "native": {},
+      "prior_archive_sha256": "3bc999c894237705ccd5d1b1144805a05652918b9425b31bc84a79c83b0410d0",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c0-cpu-x_31.npz",
+      "torch_archive_sha256": "46067abb7e3b4809d1fb503ba2415bd60fc5e403f03f9c76c5ad1e1336e430fc",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 32,
+      "name": "captured-c0-gpu-x_9",
+      "native": {},
+      "prior_archive_sha256": "5604130d56d6a23ec23b42c3ca368120b53e5b4d4ac618b78f4aed70ecfef6a0",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c0-gpu-x_9.npz",
+      "torch_archive_sha256": "bf2cba12d5adcb1903d59bc97a8ced271122dedfe15c4434f2a40474a5432f48",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 32,
+      "name": "captured-c0-gpu-x_27",
+      "native": {},
+      "prior_archive_sha256": "9832ee50fa8fe7919e033d1beab4740df8c168b5ff5bea6d1e7d287f4c002e6e",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c0-gpu-x_27.npz",
+      "torch_archive_sha256": "d771b45bd8defc5e580716a8dfa3bd1dbaf7c4cf3ee7c06c3ca7bb2bfe75fa1e",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 32,
+      "name": "captured-c0-gpu-x_29",
+      "native": {},
+      "prior_archive_sha256": "d0ae1c073ddec93233182dcf77ba9253981f31d17c8a1f286434f7d3d6a011b7",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c0-gpu-x_29.npz",
+      "torch_archive_sha256": "ddb66133145f81d251c31d64878702e70111a9a6280b4cd75df12bf0685b3379",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 32,
+      "name": "captured-c0-gpu-x_31",
+      "native": {},
+      "prior_archive_sha256": "b67d28f8832d54d14098a2c4c657c3ec6e7f7f9149f7207de57294302bed5744",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c0-gpu-x_31.npz",
+      "torch_archive_sha256": "09e39dadb45b5d6b311ba4eed2260f41e0026f5cda15f73abca6ddedd1f84d72",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 12,
+      "name": "captured-c1-cpu-x_9",
+      "native": {},
+      "prior_archive_sha256": "735d93c73f5bb1806408b5f1f48e63101a0665db345a6a553e46dbf338b0f074",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c1-cpu-x_9.npz",
+      "torch_archive_sha256": "a4d85314d8cec39e5b5e2b02a850daf3bd06d069f9f868476e281d020dfa423c",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 12,
+      "name": "captured-c1-cpu-x_27",
+      "native": {},
+      "prior_archive_sha256": "90e12cd3c9284b9ce26bb99beb1f9a4a534cc5d75fa20830d0387e436d706a11",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c1-cpu-x_27.npz",
+      "torch_archive_sha256": "97f0c7d13704960422049e5d16e1a686eb9eaeea4da55e949fb5ff13cb194cbc",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 12,
+      "name": "captured-c1-cpu-x_29",
+      "native": {},
+      "prior_archive_sha256": "7155f1afc452ed32133ba7376f82c728a9657839926269de75ac87b34fa160c3",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c1-cpu-x_29.npz",
+      "torch_archive_sha256": "b3065343e49acf31b00890cf21cfaa88868e400b6620860ddc7df1e5d3d0ac25",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 12,
+      "name": "captured-c1-cpu-x_31",
+      "native": {},
+      "prior_archive_sha256": "8a897b07e7c8a6bd4114f46b9765642bb453459422978aab27dc15dd9d72c86d",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c1-cpu-x_31.npz",
+      "torch_archive_sha256": "d2088ce8f3d9d747a7c951ec1ad34107d0a12c014d5cf264a73777111e516b73",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 12,
+      "name": "captured-c1-gpu-x_9",
+      "native": {},
+      "prior_archive_sha256": "735d93c73f5bb1806408b5f1f48e63101a0665db345a6a553e46dbf338b0f074",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c1-gpu-x_9.npz",
+      "torch_archive_sha256": "a4d85314d8cec39e5b5e2b02a850daf3bd06d069f9f868476e281d020dfa423c",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 12,
+      "name": "captured-c1-gpu-x_27",
+      "native": {},
+      "prior_archive_sha256": "90e12cd3c9284b9ce26bb99beb1f9a4a534cc5d75fa20830d0387e436d706a11",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c1-gpu-x_27.npz",
+      "torch_archive_sha256": "97f0c7d13704960422049e5d16e1a686eb9eaeea4da55e949fb5ff13cb194cbc",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 12,
+      "name": "captured-c1-gpu-x_29",
+      "native": {},
+      "prior_archive_sha256": "7155f1afc452ed32133ba7376f82c728a9657839926269de75ac87b34fa160c3",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c1-gpu-x_29.npz",
+      "torch_archive_sha256": "b3065343e49acf31b00890cf21cfaa88868e400b6620860ddc7df1e5d3d0ac25",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        }
+      }
+    },
+    {
+      "count": 12,
+      "name": "captured-c1-gpu-x_31",
+      "native": {},
+      "prior_archive_sha256": "ba94eb242f43bfd34030fbff557cb741cd6dcb087413ce5405e7bd1bc64ba481",
+      "torch_archive": "evidence/06d-gpu-rounding/zero-path-1/torch/captured-c1-gpu-x_31.npz",
+      "torch_archive_sha256": "7fc72770804ad7d8f34debb42726379cf6b9df5f734d0fc92b3fe9f7a9d8571a",
+      "torch_checks": {
+        "factor_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "input_identity": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "old_final": {
+          "different_values": 0,
+          "dtype": "float32",
+          "exact": true,
+          "examples": [],
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        }
+      }
+    }
+  ],
+  "device_placement": "unverified; compute policy only",
+  "error": {
+    "message": "Main block's input name, 'x', is different from its corresponding var's name, 'input_identity'.",
+    "type": "AssertionError"
+  },
+  "helper_sha256": "63312cd419fb52638ce93aa1fc4f4a4d37e510c53a9166f0272cbefd0b4f7c70",
+  "native_predictions": 0,
+  "passed": false,
+  "prior_result_sha256": "c19667215c7fe78e0eacc3f1d2c1006e4a4e8dd9d8fb59e52fef140ac8625c9e",
+  "prior_script_sha256": "45e85322612e5bbf10e0f55359215c11a76f8ef041b621f0ea10cc90773da93e",
+  "protocol_sha256": "d518fef6bcc652fbc738ee3910a6b17db12b3f2cf5fb41e60fa038c0622962a9",
+  "reference_sha256": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+  "script_sha256": "7404d9008d4d7d29661053f80f88b0418a39d467c389083c146e54eefa008165",
+  "stages": [
+    "input_identity",
+    "quotient",
+    "negative_branch",
+    "signed_select",
+    "zero_select",
+    "denominator",
+    "sign_factor",
+    "rounded_magnitude",
+    "old_final",
+    "factor_final"
+  ],
+  "status": "failed",
+  "torch_failures": []
+}

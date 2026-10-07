@@ -1,0 +1,23 @@
+{
+  "scope": "Post-run capture before further math edits; compare with candidate3 build snapshots. Does not retroactively assert immutable build provenance.",
+  "files": {
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227",
+    "coreml_port/bf16_gelu.py": "69761c7b2ebd7fe158109092abe058d204fd965958cc74652e7747ac4bb82624",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+    "scripts/audit_torch_candidate.py": "20b03d88e461b015dd00076b9685cd0fa0d53436f289c9bf6dd7aa9dcd33f906",
+    "scripts/probe_saved_group_stages.py": "3f4e3a977389707c1441945f409225ea0fdde834e221b2c7f974d7464b8e88ac"
+  },
+  "candidate3_shared_math_match": {
+    "coreml_port/graphs.py": true,
+    "coreml_port/ordered_linear.py": true,
+    "coreml_port/ordered_attention.py": true,
+    "coreml_port/ordered_norm.py": true,
+    "coreml_port/ordered_xsa.py": true,
+    "coreml_port/bf16_gelu.py": true,
+    "coreml_port/source_exp.py": true
+  }
+}

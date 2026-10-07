@@ -1,0 +1,15 @@
+{
+  "status": "FAIL frozen short numerical gate; not promoted",
+  "aggregate_sha256": "9221318ea33c0223c4e7fc491b5483b2eb6b3cc4e099af700fa18f9712b4cb81",
+  "comparisons": 54,
+  "numerical_comparisons_passed": 36,
+  "score_comparisons": 15,
+  "score_comparisons_passed": 0,
+  "maximum_score_error": 0.40564775466918945,
+  "limit": 0.04,
+  "top1_matches": 15,
+  "lifecycle_checks": 17,
+  "lifecycle_pass": true,
+  "thresholds_changed": false,
+  "selected_default_changed": false
+}

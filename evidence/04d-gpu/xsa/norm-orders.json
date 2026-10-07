@@ -1,0 +1,26 @@
+{
+  "vec4_pairwise": {
+    "norm_different": 60,
+    "norm_max_abs": 3.0517578125e-05,
+    "vn_different": 6790,
+    "vn_max_abs": 2.9802322387695312e-08
+  },
+  "vec4_linear": {
+    "norm_different": 0,
+    "norm_max_abs": 0.0,
+    "vn_different": 0,
+    "vn_max_abs": 0.0
+  },
+  "sqrt_ordered_sum": {
+    "norm_different": 40,
+    "norm_max_abs": 3.0517578125e-05,
+    "vn_different": 4710,
+    "vn_max_abs": 2.9802322387695312e-08
+  },
+  "sqrt_torch_sum": {
+    "norm_different": 40,
+    "norm_max_abs": 3.0517578125e-05,
+    "vn_different": 4710,
+    "vn_max_abs": 2.9802322387695312e-08
+  }
+}

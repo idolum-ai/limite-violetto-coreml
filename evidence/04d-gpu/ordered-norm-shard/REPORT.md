@@ -1,0 +1,9 @@
+# All-site ordered RMS shard probe
+
+The experimental four-layer shard uses ordered linear, ordered softmax, and source-ordered RMS normalization at all 16 normalization calls. A runtime scalar input supplies width 1280; width-128 sites multiply it by 0.1. Torch candidate output equals the original ordered Torch shard exactly for the 32-token prefill and the next one- and three-token decodes. The package is separate from selected runtime packages and requires this extra divisor input.
+
+CPU_ONLY Core ML is exact on both decode spans. The 32-token prefill has maximum absolute hidden-state difference 32 and relative RMSE `8.690096325e-06`. GPU-permitted execution remains different, with relative RMSE `0.001395020`, `0.008523712`, and `0.008401641` across those spans. [Uninstrumented shard results and package hashes](shard0.json).
+
+The 32-token CPU diagnostic matches BF16 rounding sites 0 through 81. Its first difference is `round_82`, the inner correction rounding on layer 2's XSA line: two values at `[0,3,1,8]` and `[0,3,1,81]` are `21.125` in Core ML versus `21.25` in Torch. The preceding weighted-value output `round_81` is exact. This points to the XSA value normalization, dot reduction, or following multiplication. The GPU diagnostic still first differs at `round_2`, the already identified layer-0 key midpoint. Extra diagnostic outputs may alter compiler fusion. [Rounding-site results](rounding-sites.json), [original source labels](../../04d-cpu/ordered-softmax-stages/rounding-site-labels.json).
+
+Sources and input/package hashes are pinned in the JSON evidence. The shard conversion used `scripts/gpu_ordered_norm_shard.py` SHA-256 `e007cee719d7e1f04ad137061617b3dfffde5655522518ef145100044c4e8a25`. A copied path in its report metadata was corrected afterward; `source_record_correction` retains both script hashes. No arithmetic changed in that metadata edit.

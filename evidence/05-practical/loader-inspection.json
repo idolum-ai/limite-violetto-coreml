@@ -1,0 +1,17 @@
+{
+  "scope": "Read-only API inspection; no compiled model created or loaded. No speedup inferred.",
+  "files": {
+    ".venv/lib/python3.12/site-packages/coremltools/models/model.py": "3395b8a3ae2bd8cf288fc4ced668a0cc1e78d5e8eb2edeadb75e89024f2b3721",
+    ".venv/lib/python3.12/site-packages/coremltools/models/utils.py": "bbcd76f44ca39a579d93fb41b3b8fb53c20e7bc276c905be4fb3851de736bfea",
+    ".venv/lib/python3.12/site-packages/coremltools/models/_compiled_model.py": "bcde74305c233df0b598e35546841b442185b7a681eef884dd804981e4815649",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf"
+  },
+  "findings": [
+    "Pipeline creates14 MLModel instances from sealed mlpackage paths and discovers norm_divisor through get_spec.",
+    "MLModel delegates package loading to native MLModelProxy; Python source alone does not prove recompilation per constructor or rule out framework caching.",
+    "MLModel.get_compiled_model_path documents a path whose lifetime is tied to the object; copying is required for persistence.",
+    "compile_model supports explicit mlmodelc destination; CompiledMLModel supports stateful predict and make_state.",
+    "CompiledMLModel lacks get_spec; a separate source-spec path or preserved metadata is needed."
+  ],
+  "next_experiment": "One isolated stateful group: separately time explicit compile, then fresh-process reopen and state construction with CompiledMLModel; compare fresh MLModel package load. Bind all artifacts to source package/runtime pins. Require prediction/lifecycle checks before expansion or adoption."
+}

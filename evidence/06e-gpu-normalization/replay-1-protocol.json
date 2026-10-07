@@ -1,0 +1,45 @@
+{
+  "worker": "scripts/probe_normalization_taps.py",
+  "worker_sha256": "ab1429a736e971b9f915f73d38230bb7c3c05b551955c4cbd36fd52d4f6bfb6c",
+  "planned_calls": 8,
+  "compute_policies": [
+    "CPU_ONLY",
+    "CPU_AND_GPU"
+  ],
+  "chunks": [
+    {
+      "start": 0,
+      "count": 32
+    },
+    {
+      "start": 32,
+      "count": 12
+    }
+  ],
+  "inputs_and_before_state": "same saved original CPU fixture for every arm",
+  "controls": [
+    "original candidate endpoints and eight states must match frozen prior candidate replay under same policy",
+    "tapped candidate endpoints and eight states must match uninstrumented candidate under same policy",
+    "all tap/output/state arrays finite",
+    "all native predictions guarded; normal process exit"
+  ],
+  "interpretation": "Do not interpret any tap if any control fails. Warm normalization input value_17 must remain byte-exact between policies to attribute divergence within this interval. Cold input already differs and cannot independently isolate an operation.",
+  "attempt": "replay-1",
+  "build": "evidence/06e-gpu-normalization/taps-1/results.json",
+  "build_sha256": "b2b08da42ff1e35c693211e3869af3ea7475e7e3c5e3218a3a18c3a2568e629d",
+  "builder_sha256": "b7fba3bb22ac907c8baae0cd83ad8d6d2b4f4a7a772ae5fe2af4ee2622c8b59b",
+  "taps": [
+    "value_17",
+    "x_65",
+    "var_5669",
+    "mean_7",
+    "var_5672",
+    "denom_7",
+    "var_5675",
+    "x_67",
+    "step_47",
+    "var_5690",
+    "var_5691",
+    "x_69"
+  ]
+}

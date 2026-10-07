@@ -1,0 +1,953 @@
+{
+  "compute_units": "CPU_ONLY",
+  "runtime_adapter": "tiny_prefix_replay",
+  "runtime_provenance": {
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e"
+  },
+  "actual_device_placement": "not profiled",
+  "load_seconds": {
+    "embedding": 2.051214249804616,
+    "0": 19.734826166182756,
+    "1": 19.181349916383624,
+    "2": 18.865656250156462,
+    "3": 18.961401499807835,
+    "4": 19.16776324994862,
+    "5": 19.054051833227277,
+    "6": 20.365266041830182,
+    "7": 18.96651641651988,
+    "8": 18.755614458583295,
+    "9": 18.845320540480316,
+    "10": 18.94815845787525,
+    "11": 20.330653292126954,
+    "head": 1.7744161253795028
+  },
+  "comparisons": [
+    {
+      "max_abs": 9.5367431640625e-07,
+      "rmse": 5.728942441997709e-08,
+      "relative_rmse": 1.8701389054482364e-07,
+      "cosine": 0.9999999999998941,
+      "name": "prompt0/scores",
+      "pass": true,
+      "top1_candidate": 151665,
+      "top1_reference": 151665,
+      "top1_match": true,
+      "reference_margin": 15.04189395904541,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt0/embedding_norm",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt0/layer_3",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "prompt0/layer_7",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "prompt0/layer_11",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "prompt0/layer_15",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "prompt0/layer_19",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt0/layer_23",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "prompt0/layer_27",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt0/layer_31",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt0/layer_35",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt0/layer_39",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt0/layer_43",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "prompt0/final_hidden",
+      "pass": true
+    },
+    {
+      "max_abs": 1.9073486328125e-06,
+      "rmse": 4.377963336657207e-08,
+      "relative_rmse": 1.8639915587610892e-07,
+      "cosine": 1.000000000000432,
+      "name": "prompt0/teacher0",
+      "pass": true,
+      "top1_candidate": 1654,
+      "top1_reference": 1654,
+      "top1_match": true,
+      "reference_margin": 2.049285888671875,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 1.9073486328125e-06,
+      "rmse": 4.7452099383794674e-08,
+      "relative_rmse": 1.681519872900387e-07,
+      "cosine": 1.0000000000010352,
+      "name": "prompt0/teacher1",
+      "pass": true,
+      "top1_candidate": 1184,
+      "top1_reference": 1184,
+      "top1_match": true,
+      "reference_margin": 2.147642135620117,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 9.5367431640625e-07,
+      "rmse": 5.868864013421359e-08,
+      "relative_rmse": 1.6237628904249923e-07,
+      "cosine": 1.0000000000004092,
+      "name": "prompt0/teacher2",
+      "pass": true,
+      "top1_candidate": 311,
+      "top1_reference": 311,
+      "top1_match": true,
+      "reference_margin": 7.910809516906738,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 1.9073486328125e-06,
+      "rmse": 6.661377509075304e-08,
+      "relative_rmse": 1.4307030589859734e-07,
+      "cosine": 0.999999999999546,
+      "name": "prompt0/teacher3",
+      "pass": true,
+      "top1_candidate": 12564,
+      "top1_reference": 12564,
+      "top1_match": true,
+      "reference_margin": 1.4177570343017578,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 9.5367431640625e-07,
+      "rmse": 5.525796519089567e-08,
+      "relative_rmse": 1.9179798436664245e-07,
+      "cosine": 0.9999999999996718,
+      "name": "prompt1/scores",
+      "pass": true,
+      "top1_candidate": 151665,
+      "top1_reference": 151665,
+      "top1_match": true,
+      "reference_margin": 15.293951034545898,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "name": "prompt1/embedding_norm",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "prompt1/layer_3",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt1/layer_7",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "prompt1/layer_11",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "prompt1/layer_15",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt1/layer_19",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "prompt1/layer_23",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "prompt1/layer_27",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt1/layer_31",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt1/layer_35",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "prompt1/layer_39",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt1/layer_43",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "prompt1/final_hidden",
+      "pass": true
+    },
+    {
+      "max_abs": 1.9073486328125e-06,
+      "rmse": 4.26745575109773e-08,
+      "relative_rmse": 1.884211440771277e-07,
+      "cosine": 1.000000000000111,
+      "name": "prompt1/teacher0",
+      "pass": true,
+      "top1_candidate": 1654,
+      "top1_reference": 1654,
+      "top1_match": true,
+      "reference_margin": 3.1231155395507812,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 9.5367431640625e-07,
+      "rmse": 4.0579117234661144e-08,
+      "relative_rmse": 1.6713902355240514e-07,
+      "cosine": 0.9999999999997476,
+      "name": "prompt1/teacher1",
+      "pass": true,
+      "top1_candidate": 1184,
+      "top1_reference": 1184,
+      "top1_match": true,
+      "reference_margin": 2.8599586486816406,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 1.9073486328125e-06,
+      "rmse": 5.256268282027809e-08,
+      "relative_rmse": 1.6608038209584564e-07,
+      "cosine": 1.000000000000014,
+      "name": "prompt1/teacher2",
+      "pass": true,
+      "top1_candidate": 311,
+      "top1_reference": 311,
+      "top1_match": true,
+      "reference_margin": 5.248144149780273,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 1.9073486328125e-06,
+      "rmse": 5.9097634966152455e-08,
+      "relative_rmse": 1.4772561010946487e-07,
+      "cosine": 1.000000000000491,
+      "name": "prompt1/teacher3",
+      "pass": true,
+      "top1_candidate": 11625,
+      "top1_reference": 11625,
+      "top1_match": true,
+      "reference_margin": 2.1188392639160156,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 7.152557373046875e-07,
+      "rmse": 5.41936881516989e-08,
+      "relative_rmse": 1.8871219696197286e-07,
+      "cosine": 0.9999999999996914,
+      "name": "prompt2/scores",
+      "pass": true,
+      "top1_candidate": 151665,
+      "top1_reference": 151665,
+      "top1_match": true,
+      "reference_margin": 16.142044067382812,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt2/embedding_norm",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt2/layer_3",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt2/layer_7",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "prompt2/layer_11",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt2/layer_15",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt2/layer_19",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "prompt2/layer_23",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt2/layer_27",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt2/layer_31",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "prompt2/layer_35",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt2/layer_39",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "prompt2/layer_43",
+      "pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt2/final_hidden",
+      "pass": true
+    },
+    {
+      "max_abs": 9.5367431640625e-07,
+      "rmse": 4.395730753645141e-08,
+      "relative_rmse": 1.8542343059442321e-07,
+      "cosine": 1.0000000000002782,
+      "name": "prompt2/teacher0",
+      "pass": true,
+      "top1_candidate": 1654,
+      "top1_reference": 1654,
+      "top1_match": true,
+      "reference_margin": 3.591249465942383,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 9.5367431640625e-07,
+      "rmse": 4.2860373443517924e-08,
+      "relative_rmse": 1.6514984284042067e-07,
+      "cosine": 1.000000000001272,
+      "name": "prompt2/teacher1",
+      "pass": true,
+      "top1_candidate": 1184,
+      "top1_reference": 1184,
+      "top1_match": true,
+      "reference_margin": 3.086580276489258,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 9.5367431640625e-07,
+      "rmse": 6.073036154614304e-08,
+      "relative_rmse": 1.620591668767719e-07,
+      "cosine": 1.0000000000012017,
+      "name": "prompt2/teacher2",
+      "pass": true,
+      "top1_candidate": 311,
+      "top1_reference": 311,
+      "top1_match": true,
+      "reference_margin": 6.393516540527344,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 1.9073486328125e-06,
+      "rmse": 6.140863357874358e-08,
+      "relative_rmse": 1.41803556869178e-07,
+      "cosine": 0.9999999999992943,
+      "name": "prompt2/teacher3",
+      "pass": true,
+      "top1_candidate": 11625,
+      "top1_reference": 11625,
+      "top1_match": true,
+      "reference_margin": 0.5505714416503906,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    }
+  ],
+  "checks": {
+    "request0_disposed": true,
+    "request0_repeat_exact": true,
+    "request1_disposed": true,
+    "request1_repeat_exact": true,
+    "request2_disposed": true,
+    "request2_repeat_exact": true,
+    "padded_id_rejected": true,
+    "empty_rejected": true,
+    "foreign_owner_rejected": true,
+    "overflow_rejected": true,
+    "interrupt_invalidates": true,
+    "invalid_request_rejected": true,
+    "closed_request_rejected": true,
+    "explicit_stop": true,
+    "stream_callback": true,
+    "generation_cancellation_disposes": true,
+    "generation_budget_rejected": true
+  },
+  "thresholds_changed": false,
+  "model_dir": "<PROJECT_ROOT>/artifacts/04d-cpu/full-candidate-6",
+  "package_identity": {
+    "schema_version": 1,
+    "packages": [
+      {
+        "name": "embedding",
+        "files": [
+          {
+            "path": "embedding.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 63736,
+            "sha256": "b316213a2ed802a17ea101f055bbcb91f3a63551d29b0228fa2e347307dbbe62"
+          },
+          {
+            "path": "embedding.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 931923200,
+            "sha256": "f4b84c85e7e2fa64952bba1e3af8e9a076ff6895168ae4b41f215a0a9b18edde"
+          },
+          {
+            "path": "embedding.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "8700f3e470a237dbdc30a5bdfdda7653ecafc2786fe21cc1f36c0608ca7761f6"
+          }
+        ],
+        "sha256": "5d986b468943ba8cf3edd0bc338567c77d516fcf2e65bae2ee745d3364852554"
+      },
+      {
+        "name": "0",
+        "files": [
+          {
+            "path": "0.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719950,
+            "sha256": "6cdf80c050b8076357009efe870618afc1210fa0ddd07d06df6749caefcf6950"
+          },
+          {
+            "path": "0.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b"
+          },
+          {
+            "path": "0.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "a0b8ecc7aebf27908cbce79298bec4435dd80f63e12f9dc0b2d6dea823e912e8"
+          }
+        ],
+        "sha256": "d5a316f7c6ded387a264780539c758ee9f1877d50cd6877552f6704ac2fe860b"
+      },
+      {
+        "name": "1",
+        "files": [
+          {
+            "path": "1.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5746315,
+            "sha256": "f30ee44ca1bfdd239cc46b822595819b4b6a758c389756f5b031dc43d4945458"
+          },
+          {
+            "path": "1.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "54548f864c3249ce5cec1373cca5a46cc238bf58c45124ff6c6f572bb5f8f755"
+          },
+          {
+            "path": "1.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "c46e1750646ccd7929901f0aacde8f7ae4b0e6bccc76e3f2139d5a5d15055227"
+          }
+        ],
+        "sha256": "c4da11997369eb6ea23577558e23f20920a4d5f5e6f3b4e98d9f7fd03235be88"
+      },
+      {
+        "name": "2",
+        "files": [
+          {
+            "path": "2.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719410,
+            "sha256": "0a4c4538f31bb3016473866224e41d8a0c169954d892a47f05ce69d0b152f1f2"
+          },
+          {
+            "path": "2.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "ec983c8fd8e98d3cbb3ed795c1d92e99ec3504f956fc05376499a238f15c5eaf"
+          },
+          {
+            "path": "2.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "7bed7b97236834b5540640cf26a361428e35ae48097b41c08a0094f421d17b9f"
+          }
+        ],
+        "sha256": "38596538d6456f5dcfa5c077b4ffa841eb331c0fff674353b5b8dbd3b75ceb5e"
+      },
+      {
+        "name": "3",
+        "files": [
+          {
+            "path": "3.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719950,
+            "sha256": "794644824a27cdd3871819b55b1d99296c82a3210532e3acc12d71d6cba22adb"
+          },
+          {
+            "path": "3.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "84b86ac803cb5a683a0b38ca035f51e4b975f0946980deeec0822238fc697492"
+          },
+          {
+            "path": "3.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "9399416bae20437a854ac1b67c1dc747bafd99b86d74c41e499346248ae8f854"
+          }
+        ],
+        "sha256": "addcde8ddab15e368bd46e57aece97d04fb7073d6b65f52f8b1fe8a1222e1dde"
+      },
+      {
+        "name": "4",
+        "files": [
+          {
+            "path": "4.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5746315,
+            "sha256": "d39953c363be15d860c926f472281d2c0c7d49df47964aadcba9a8ca8228b920"
+          },
+          {
+            "path": "4.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "7a09920047292f0084f289a87e347f974a7aacd6db7ea7c67e1719a8b6aebf57"
+          },
+          {
+            "path": "4.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "bc85b535a5e867e0c35594b47056cfb36f6d945fb372fd2be3c84763bc32fcc8"
+          }
+        ],
+        "sha256": "ae437105eaa69a7b0023310523b361ae1ba230dd6b5faced7ceaedcba0296f51"
+      },
+      {
+        "name": "5",
+        "files": [
+          {
+            "path": "5.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719512,
+            "sha256": "5221d52f25946d3bdc50ef26d5b3154c74fd15e2388688f43edb95d23541ff7f"
+          },
+          {
+            "path": "5.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "c43d90db869ade82615b3d849922f3de3f22367e6e5fdaeccd0e94ca75f3a284"
+          },
+          {
+            "path": "5.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "0252740328fc406b94381a9adb854aa4139fe39a9de16120de4d922ec592c74b"
+          }
+        ],
+        "sha256": "8bf369b8843303099b3d44cb8757eb636e20fdcc37440666b7f879c52da0fb18"
+      },
+      {
+        "name": "6",
+        "files": [
+          {
+            "path": "6.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5919791,
+            "sha256": "944b96689fea923c6f97dd9604d57edca69f352178543febed31c59e8f15cb59"
+          },
+          {
+            "path": "6.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272545472,
+            "sha256": "993c492d35e1dea10a676037105a7cceac9d0ba979dced22f405e0cdb6ab8786"
+          },
+          {
+            "path": "6.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "630d7f8e9627c70a7910b79c3143fd4baeed3b7fb9ebc467623b58b268a27a77"
+          }
+        ],
+        "sha256": "62213251b7079fdd07cdd2c8ee41bab6b0887846bf90db140ac021a9edfd4843"
+      },
+      {
+        "name": "7",
+        "files": [
+          {
+            "path": "7.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5746315,
+            "sha256": "b9465ce722ae4b0a85d70ff6a2152f2985fc7fb4402c953335cee3f0ac4757d9"
+          },
+          {
+            "path": "7.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "ac7fe384775035e155b3f84949047d3de44d3313bfbbd8aee49147de221d064b"
+          },
+          {
+            "path": "7.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "9621ef205844cdf4ee001011aa4064a9d157d4c8dc9d84e67a9b0d61e4101bcd"
+          }
+        ],
+        "sha256": "03006ae9a5e26e9696c034665081d2b7193d04037a69c6fd8711ff92d0ee7c7e"
+      },
+      {
+        "name": "8",
+        "files": [
+          {
+            "path": "8.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719410,
+            "sha256": "4373ca0f6b7ccd815e158480cbf1b2d6861da13a3fd316a03ae318b38740611b"
+          },
+          {
+            "path": "8.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "9b1cd8219b7d11b7c56415f60cc8c1afcca4f31b784ef312d9854ad507e4e9fd"
+          },
+          {
+            "path": "8.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "cb4c5015928669d5be85685d0bda10af6e7a7baca491ef7995eefd0442344f5e"
+          }
+        ],
+        "sha256": "51612ba20d3c582fa8d47c37270cadf260f82001323ce1b1116e83baf4b73742"
+      },
+      {
+        "name": "9",
+        "files": [
+          {
+            "path": "9.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719950,
+            "sha256": "16c54af292abe72397c176658315b1abd6fffa62da35f2f6970877563eecd226"
+          },
+          {
+            "path": "9.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "6a8988bad04a5e6ddb4be04ce1714dd1d70ef0c64209fcec8cf3f697d2862cb2"
+          },
+          {
+            "path": "9.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "bcb8714dd56b905f6a8fcdc432afeefcd589ca17fc8cf1ecd1fb1b4d381030f3"
+          }
+        ],
+        "sha256": "3b8adbb90f6620f511dc4b3bcadcddce68bf329e304aa0551cb9d6b92dac45a4"
+      },
+      {
+        "name": "10",
+        "files": [
+          {
+            "path": "10.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5746059,
+            "sha256": "41dc591ee663178bbb9cbfe8314b5f03f11380ef302081856a5aa4fe9d88c184"
+          },
+          {
+            "path": "10.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "ffb00256b99964abab281d7da111b970e79759d44fab0455d66d8b5c5aa76654"
+          },
+          {
+            "path": "10.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "9470d3f4f2e66435ceb7687fb204f0da0997373a92acbf957a93a05f1f201bcd"
+          }
+        ],
+        "sha256": "5b36a608a14d05d4aa83e2657b99368cc2d199213df0332a6ceb0c1c54a48786"
+      },
+      {
+        "name": "11",
+        "files": [
+          {
+            "path": "11.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5980495,
+            "sha256": "02b307579fef16e7dc6bc9bb64a06ae79c7168429273b9aee264b877877a69cf"
+          },
+          {
+            "path": "11.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272545472,
+            "sha256": "3b7a8a0d4299419075f0067a9d5c2a167e5b6b9c13a56420a4a9ccf5063ad243"
+          },
+          {
+            "path": "11.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "eb2ec55d38470202cd862e9f5134a04056fefa134c63ee327f81ec43f7332f7a"
+          }
+        ],
+        "sha256": "cc77c799b8534dd9aa402f0ef9fcfd36381521306dedb7a57e0d308dd82d8ac9"
+      },
+      {
+        "name": "head",
+        "files": [
+          {
+            "path": "head.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 58102,
+            "sha256": "a726313b2c173b04a462388655969eba18f8250716aa5246ce1528b2ac3db0d1"
+          },
+          {
+            "path": "head.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 776605312,
+            "sha256": "6d89c2ba45c4997054987cd79d17e087c92a406e8a4273f4f15118679cdfcc44"
+          },
+          {
+            "path": "head.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "19dc03942c5a3b60718cffbb8a75cf52c3cbbca0dab9046123279d3c440f1443"
+          }
+        ],
+        "sha256": "ec0f2ccc9e773334b267ad441148cd6e9d02d4ac0849f92a0eb18c8524bd305a"
+      }
+    ],
+    "aggregate_sha256": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6"
+  },
+  "stop_test": {
+    "backend": "Core ML",
+    "compute_units": "CPU_ONLY",
+    "runtime_adapter": "tiny_prefix_replay",
+    "fidelity": "UNQUALIFIED",
+    "prompt_ids": [
+      151643,
+      151644,
+      8948,
+      198,
+      2610,
+      525,
+      264,
+      10950,
+      17847,
+      624,
+      5501,
+      2874,
+      3019,
+      553,
+      3019,
+      11,
+      323,
+      2182,
+      697,
+      1590,
+      4226,
+      2878,
+      1124,
+      79075,
+      46391,
+      151645,
+      198,
+      151644,
+      872,
+      198,
+      46254,
+      220,
+      16,
+      22,
+      353,
+      220,
+      17,
+      18,
+      13,
+      151645,
+      198,
+      151644,
+      77091,
+      198
+    ],
+    "generated_ids": [
+      151665
+    ],
+    "generated_tokens": 1,
+    "finish_reason": "stop_token",
+    "complete": true,
+    "stop_token_ids": [
+      151645,
+      151665
+    ],
+    "completion_policy": "published_eos_plus_explicit_stops",
+    "greedy": true,
+    "seed": 0,
+    "temperature": null,
+    "top_p": null,
+    "step_seconds": [
+      10.46905779093504
+    ],
+    "elapsed_seconds": 10.469092540442944
+  },
+  "cleanup_guard": {
+    "calls": 2539,
+    "background_calls": 1870,
+    "shutdown_skips": 0
+  },
+  "elapsed_seconds": 381.9549210071564,
+  "numerical_pass": true,
+  "lifecycle_pass": true
+}

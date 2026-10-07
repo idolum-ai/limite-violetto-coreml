@@ -1,0 +1,1386 @@
+{
+  "actual_device_placement": "unverified; compute policy only",
+  "attempt_status": "completed",
+  "focused_notes": {
+    "cold_projection_midpoint": {
+      "raw_projection_is_exact_midpoint_between_rounded_values": true,
+      "value_5_cpu": 0.7890625,
+      "value_5_cpu_and_gpu": 0.79296875,
+      "value_5_index": [
+        0,
+        12,
+        1,
+        71
+      ],
+      "x_9_cpu": 0.791015625,
+      "x_9_cpu_and_gpu": 0.791015625,
+      "x_9_index": [
+        0,
+        12,
+        199
+      ]
+    },
+    "cold_step_23_differences": [
+      {
+        "cpu_and_gpu_k_9": -0.5,
+        "cpu_and_gpu_step_23": 0.00390625,
+        "cpu_and_gpu_x_31": -0.5,
+        "cpu_k_9": -0.49609375,
+        "cpu_step_23": 0.001953125,
+        "cpu_x_31": -0.49609375,
+        "index": [
+          0,
+          8,
+          0,
+          35
+        ],
+        "k9_differs": true,
+        "x31_differs": true
+      },
+      {
+        "cpu_and_gpu_k_9": -0.125,
+        "cpu_and_gpu_step_23": 0.00048828125,
+        "cpu_and_gpu_x_31": -0.124755859375,
+        "cpu_k_9": -0.125,
+        "cpu_step_23": 0.0009765625,
+        "cpu_x_31": -0.125,
+        "index": [
+          0,
+          22,
+          0,
+          47
+        ],
+        "k9_differs": false,
+        "x31_differs": true
+      }
+    ],
+    "scope": "Focused saved-array comparisons only; these midpoint/tap observations do not establish which backend/device executed or attribute the complete output drift to these stages.",
+    "warm_rounded_product_midpoints": [
+      {
+        "index": [
+          0,
+          2,
+          1,
+          5
+        ],
+        "raw": "x_27",
+        "raw_cpu": 0.908203125,
+        "raw_cpu_and_gpu": 0.908203125,
+        "raw_is_exact_midpoint_between_rounded_values": true,
+        "rounded": "var_2083",
+        "rounded_cpu": 0.90625,
+        "rounded_cpu_and_gpu": 0.91015625
+      },
+      {
+        "index": [
+          0,
+          0,
+          0,
+          61
+        ],
+        "raw": "x_29",
+        "raw_cpu": 0.0046539306640625,
+        "raw_cpu_and_gpu": 0.0046539306640625,
+        "raw_is_exact_midpoint_between_rounded_values": true,
+        "rounded": "var_2106",
+        "rounded_cpu": 0.004638671875,
+        "rounded_cpu_and_gpu": 0.004669189453125
+      }
+    ]
+  },
+  "gpu_numerical_qualification": "not_qualified",
+  "instrumentation_valid": true,
+  "interpretation": "On these captured tensors, stored var_2122 is fully reproduced by ties-to-even rounding of each policy\u2019s own FP32 var_2121 for CPU, and ties-away-from-zero for CPU_AND_GPU. For many identical var_2121 values that are exact half-integers, the rounded var_2122 differs exactly according to those policies. This is direct local evidence for a rounding-mode difference in this stage; it does not prove device placement or show that rounding alone explains all end-to-end drift. Cold chunk also has two step_23 differences, and the cold/warm upstream rounded products differ at selected elements. The raw key projection x_9 is exact in both chunks. Full same-policy endpoints and all eight states remain exact in controls.",
+  "passed": true,
+  "prediction_guard": {
+    "gil_releases": 8,
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 8
+  },
+  "previous_tap_compatible": true,
+  "raw_array_inventory": [
+    {
+      "bytes": 151722,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/CPU-original/outputs.npz",
+      "sha256": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e"
+    },
+    {
+      "bytes": 160833,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/CPU-original/state-after.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e"
+    },
+    {
+      "bytes": 408260,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/CPU-tapped/outputs.npz",
+      "sha256": "4ec05d8ebc643edbded4be06f955ba69adc8843e1822f69db5d7146623b43a01"
+    },
+    {
+      "bytes": 160833,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/CPU-tapped/state-after.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e"
+    },
+    {
+      "bytes": 151865,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/GPU-original/outputs.npz",
+      "sha256": "c4f7ef5c921b64eb91a587b1d63fbdc309d1509637bee764d8ca2f18b74b60d9"
+    },
+    {
+      "bytes": 161057,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/GPU-original/state-after.npz",
+      "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc"
+    },
+    {
+      "bytes": 408470,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/GPU-tapped/outputs.npz",
+      "sha256": "ca0fdbd45b2e6446f3717c00141c7e0c1de196fe8c884d5cc0d1400b1a12aad0"
+    },
+    {
+      "bytes": 161057,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/GPU-tapped/state-after.npz",
+      "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc"
+    },
+    {
+      "bytes": 307665,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/effective-inputs.npz",
+      "sha256": "69ecfe41ff5a4643a329aad8b0f30bf71c7119a73f9cb703394e94c2d276c85e"
+    },
+    {
+      "bytes": 18214,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/effective-state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc"
+    },
+    {
+      "bytes": 57524,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/CPU-original/outputs.npz",
+      "sha256": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4"
+    },
+    {
+      "bytes": 204635,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/CPU-original/state-after.npz",
+      "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6"
+    },
+    {
+      "bytes": 158370,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/CPU-tapped/outputs.npz",
+      "sha256": "d6856af0be3e7617ae0a98ce75b6487b967f8549d255d4bc328bf63d80a434c3"
+    },
+    {
+      "bytes": 204635,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/CPU-tapped/state-after.npz",
+      "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6"
+    },
+    {
+      "bytes": 57581,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/GPU-original/outputs.npz",
+      "sha256": "0d8ed9267430c38912ee848329a19064f7ed074234f6048dba4f8f697a9da8e5"
+    },
+    {
+      "bytes": 204646,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/GPU-original/state-after.npz",
+      "sha256": "55c200e0bde28606311272044e525547a72d623ae1adf0f6be6334e32eb98ade"
+    },
+    {
+      "bytes": 158440,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/GPU-tapped/outputs.npz",
+      "sha256": "2e0ac2d238c8cb2db0392c2600d8e9ffba1f5e6081ac83e031fa049b911be520"
+    },
+    {
+      "bytes": 204646,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/GPU-tapped/state-after.npz",
+      "sha256": "55c200e0bde28606311272044e525547a72d623ae1adf0f6be6334e32eb98ade"
+    },
+    {
+      "bytes": 115838,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/effective-inputs.npz",
+      "sha256": "9eb45ae6546f129807c180157e0b72160c43a57e0585509e19acd89f0873c36d"
+    },
+    {
+      "bytes": 160833,
+      "path": "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/effective-state-before.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e"
+    }
+  ],
+  "raw_array_inventory_count": 20,
+  "rounding_law": [
+    {
+      "all_crosspolicy_var2122_differences": 344,
+      "chunk": 0,
+      "cpu_half_quotients": 599,
+      "cpu_var2122_matches_roundTiesToEven_all": true,
+      "cross_policy_equal_var2121": 8131,
+      "cross_policy_equal_var2121_fraction": 0.9925537109375,
+      "elements": 8192,
+      "equal_quotient_and_final_var2122_different": 320,
+      "equal_quotient_final_differences_are_halfties": true,
+      "examples": [
+        {
+          "away": -249.0,
+          "cpu_round": -248.0,
+          "even": -248.0,
+          "gpu_round": -249.0,
+          "index": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "is_half": true,
+          "q": -248.5
+        },
+        {
+          "away": 151.0,
+          "cpu_round": 150.0,
+          "even": 150.0,
+          "gpu_round": 151.0,
+          "index": [
+            0,
+            1,
+            1,
+            3
+          ],
+          "is_half": true,
+          "q": 150.5
+        },
+        {
+          "away": -151.0,
+          "cpu_round": -150.0,
+          "even": -150.0,
+          "gpu_round": -151.0,
+          "index": [
+            0,
+            1,
+            1,
+            19
+          ],
+          "is_half": true,
+          "q": -150.5
+        },
+        {
+          "away": -167.0,
+          "cpu_round": -166.0,
+          "even": -166.0,
+          "gpu_round": -167.0,
+          "index": [
+            0,
+            1,
+            1,
+            32
+          ],
+          "is_half": true,
+          "q": -166.5
+        },
+        {
+          "away": 251.0,
+          "cpu_round": 250.0,
+          "even": 250.0,
+          "gpu_round": 251.0,
+          "index": [
+            0,
+            2,
+            0,
+            7
+          ],
+          "is_half": true,
+          "q": 250.5
+        }
+      ],
+      "gpu_half_quotients": 600,
+      "gpu_var2122_matches_roundTiesAway_all": true
+    },
+    {
+      "all_crosspolicy_var2122_differences": 150,
+      "chunk": 1,
+      "cpu_half_quotients": 278,
+      "cpu_var2122_matches_roundTiesToEven_all": true,
+      "cross_policy_equal_var2121": 3044,
+      "cross_policy_equal_var2121_fraction": 0.9908854166666666,
+      "elements": 3072,
+      "equal_quotient_and_final_var2122_different": 134,
+      "equal_quotient_final_differences_are_halfties": true,
+      "examples": [
+        {
+          "away": -225.0,
+          "cpu_round": -224.0,
+          "even": -224.0,
+          "gpu_round": -225.0,
+          "index": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "is_half": true,
+          "q": -224.5
+        },
+        {
+          "away": 139.0,
+          "cpu_round": 138.0,
+          "even": 138.0,
+          "gpu_round": 139.0,
+          "index": [
+            0,
+            0,
+            0,
+            14
+          ],
+          "is_half": true,
+          "q": 138.5
+        },
+        {
+          "away": -169.0,
+          "cpu_round": -168.0,
+          "even": -168.0,
+          "gpu_round": -169.0,
+          "index": [
+            0,
+            0,
+            0,
+            15
+          ],
+          "is_half": true,
+          "q": -168.5
+        },
+        {
+          "away": 245.0,
+          "cpu_round": 244.0,
+          "even": 244.0,
+          "gpu_round": 245.0,
+          "index": [
+            0,
+            0,
+            0,
+            22
+          ],
+          "is_half": true,
+          "q": 244.5
+        },
+        {
+          "away": -225.0,
+          "cpu_round": -224.0,
+          "even": -224.0,
+          "gpu_round": -225.0,
+          "index": [
+            0,
+            0,
+            0,
+            26
+          ],
+          "is_half": true,
+          "q": -224.5
+        }
+      ],
+      "gpu_half_quotients": 274,
+      "gpu_var2122_matches_roundTiesAway_all": true
+    }
+  ],
+  "same_policy_controls": [
+    {
+      "chunk": 0,
+      "endpoint": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "original_matches_saved_factorial": true,
+      "passed": true,
+      "policy": "CPU",
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "chunk": 0,
+      "endpoint": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "original_matches_saved_factorial": true,
+      "passed": true,
+      "policy": "GPU",
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "chunk": 1,
+      "endpoint": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "original_matches_saved_factorial": true,
+      "passed": true,
+      "policy": "CPU",
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "chunk": 1,
+      "endpoint": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "original_matches_saved_factorial": true,
+      "passed": true,
+      "policy": "GPU",
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    }
+  ],
+  "same_policy_controls_all_pass": true,
+  "tap_arrays_recomputed": [
+    {
+      "chunk": 0,
+      "different": 4,
+      "exact": false,
+      "first": {
+        "absdiff": 0.00390625,
+        "index": [
+          0,
+          12,
+          1,
+          40
+        ],
+        "left": 0.73828125,
+        "right": 0.734375
+      },
+      "max_abs": 0.00390625,
+      "tap": "k_7",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 343,
+      "exact": false,
+      "first": {
+        "absdiff": 0.015625,
+        "index": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "left": -3.875,
+        "right": -3.890625
+      },
+      "max_abs": 0.015625,
+      "tap": "k_9",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 2,
+      "exact": false,
+      "first": {
+        "absdiff": 0.001953125,
+        "index": [
+          0,
+          8,
+          0,
+          35
+        ],
+        "left": 0.001953125,
+        "right": 0.00390625
+      },
+      "max_abs": 0.001953125,
+      "tap": "step_23",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 0,
+      "exact": true,
+      "first": null,
+      "max_abs": 0.0,
+      "tap": "tap23_out",
+      "total": 40960
+    },
+    {
+      "chunk": 0,
+      "different": 2,
+      "exact": false,
+      "first": {
+        "absdiff": 0.00390625,
+        "index": [
+          0,
+          12,
+          1,
+          71
+        ],
+        "left": 0.7890625,
+        "right": 0.79296875
+      },
+      "max_abs": 0.00390625,
+      "tap": "value_5",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 20,
+      "exact": false,
+      "first": {
+        "absdiff": 0.00390625,
+        "index": [
+          0,
+          4,
+          0,
+          14
+        ],
+        "left": 0.921875,
+        "right": 0.92578125
+      },
+      "max_abs": 0.0078125,
+      "tap": "var_2083",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 41,
+      "exact": false,
+      "first": {
+        "absdiff": 0.001953125,
+        "index": [
+          0,
+          2,
+          0,
+          18
+        ],
+        "left": -0.39453125,
+        "right": -0.396484375
+      },
+      "max_abs": 0.0078125,
+      "tap": "var_2106",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 61,
+      "exact": false,
+      "first": {
+        "absdiff": 0.5,
+        "index": [
+          0,
+          2,
+          0,
+          18
+        ],
+        "left": 189.0,
+        "right": 188.5
+      },
+      "max_abs": 127.5,
+      "tap": "var_2121",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 344,
+      "exact": false,
+      "first": {
+        "absdiff": 1.0,
+        "index": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "left": -248.0,
+        "right": -249.0
+      },
+      "max_abs": 128.0,
+      "tap": "var_2122",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 4,
+      "exact": false,
+      "first": {
+        "absdiff": 0.003875732421875,
+        "index": [
+          0,
+          12,
+          1,
+          40
+        ],
+        "left": 0.732513427734375,
+        "right": 0.7286376953125
+      },
+      "max_abs": 0.003875732421875,
+      "tap": "x_27",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 2,
+      "exact": false,
+      "first": {
+        "absdiff": 0.0005340576171875,
+        "index": [
+          0,
+          12,
+          1,
+          41
+        ],
+        "left": -0.1009368896484375,
+        "right": -0.10040283203125
+      },
+      "max_abs": 0.000621795654296875,
+      "tap": "x_29",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 61,
+      "exact": false,
+      "first": {
+        "absdiff": 0.001953125,
+        "index": [
+          0,
+          2,
+          0,
+          18
+        ],
+        "left": 0.73828125,
+        "right": 0.736328125
+      },
+      "max_abs": 0.0078125,
+      "tap": "x_31",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 0,
+      "exact": true,
+      "first": null,
+      "max_abs": 0.0,
+      "tap": "x_5",
+      "total": 40960
+    },
+    {
+      "chunk": 0,
+      "different": 0,
+      "exact": true,
+      "first": null,
+      "max_abs": 0.0,
+      "tap": "x_9",
+      "total": 8192
+    },
+    {
+      "chunk": 0,
+      "different": 28725,
+      "exact": false,
+      "first": {
+        "absdiff": 1024.0,
+        "index": [
+          0,
+          0,
+          19
+        ],
+        "left": -75776.0,
+        "right": -76800.0
+      },
+      "max_abs": 8192.0,
+      "tap": "y",
+      "total": 40960
+    },
+    {
+      "chunk": 1,
+      "different": 0,
+      "exact": true,
+      "first": null,
+      "max_abs": 0.0,
+      "tap": "k_7",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 150,
+      "exact": false,
+      "first": {
+        "absdiff": 0.015625,
+        "index": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "left": -3.5,
+        "right": -3.515625
+      },
+      "max_abs": 0.015625,
+      "tap": "k_9",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 0,
+      "exact": true,
+      "first": null,
+      "max_abs": 0.0,
+      "tap": "step_23",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 0,
+      "exact": true,
+      "first": null,
+      "max_abs": 0.0,
+      "tap": "tap23_out",
+      "total": 15360
+    },
+    {
+      "chunk": 1,
+      "different": 0,
+      "exact": true,
+      "first": null,
+      "max_abs": 0.0,
+      "tap": "value_5",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 5,
+      "exact": false,
+      "first": {
+        "absdiff": 0.00390625,
+        "index": [
+          0,
+          2,
+          1,
+          5
+        ],
+        "left": 0.90625,
+        "right": 0.91015625
+      },
+      "max_abs": 0.0078125,
+      "tap": "var_2083",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 23,
+      "exact": false,
+      "first": {
+        "absdiff": 3.0517578125e-05,
+        "index": [
+          0,
+          0,
+          0,
+          61
+        ],
+        "left": 0.004638671875,
+        "right": 0.004669189453125
+      },
+      "max_abs": 0.0078125,
+      "tap": "var_2106",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 28,
+      "exact": false,
+      "first": {
+        "absdiff": 0.125,
+        "index": [
+          0,
+          0,
+          0,
+          61
+        ],
+        "left": 151.0,
+        "right": 151.125
+      },
+      "max_abs": 2.0,
+      "tap": "var_2121",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 150,
+      "exact": false,
+      "first": {
+        "absdiff": 1.0,
+        "index": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "left": -224.0,
+        "right": -225.0
+      },
+      "max_abs": 2.0,
+      "tap": "var_2122",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 0,
+      "exact": true,
+      "first": null,
+      "max_abs": 0.0,
+      "tap": "x_27",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 0,
+      "exact": true,
+      "first": null,
+      "max_abs": 0.0,
+      "tap": "x_29",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 28,
+      "exact": false,
+      "first": {
+        "absdiff": 3.0517578125e-05,
+        "index": [
+          0,
+          0,
+          0,
+          61
+        ],
+        "left": 0.036865234375,
+        "right": 0.036895751953125
+      },
+      "max_abs": 0.0078125,
+      "tap": "x_31",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 0,
+      "exact": true,
+      "first": null,
+      "max_abs": 0.0,
+      "tap": "x_5",
+      "total": 15360
+    },
+    {
+      "chunk": 1,
+      "different": 0,
+      "exact": true,
+      "first": null,
+      "max_abs": 0.0,
+      "tap": "x_9",
+      "total": 3072
+    },
+    {
+      "chunk": 1,
+      "different": 10731,
+      "exact": false,
+      "first": {
+        "absdiff": 4.0,
+        "index": [
+          0,
+          0,
+          0
+        ],
+        "left": 964.0,
+        "right": 960.0
+      },
+      "max_abs": 1024.0,
+      "tap": "y",
+      "total": 15360
+    }
+  ],
+  "tie_examples": [
+    {
+      "chunk": 0,
+      "cpu": -248.0,
+      "gpu": -249.0,
+      "index": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "quotient": -248.5
+    },
+    {
+      "chunk": 0,
+      "cpu": 150.0,
+      "gpu": 151.0,
+      "index": [
+        0,
+        1,
+        1,
+        3
+      ],
+      "quotient": 150.5
+    },
+    {
+      "chunk": 0,
+      "cpu": -150.0,
+      "gpu": -151.0,
+      "index": [
+        0,
+        1,
+        1,
+        19
+      ],
+      "quotient": -150.5
+    },
+    {
+      "chunk": 1,
+      "cpu": -224.0,
+      "gpu": -225.0,
+      "index": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "quotient": -224.5
+    },
+    {
+      "chunk": 1,
+      "cpu": 138.0,
+      "gpu": 139.0,
+      "index": [
+        0,
+        0,
+        0,
+        14
+      ],
+      "quotient": 138.5
+    },
+    {
+      "chunk": 1,
+      "cpu": -168.0,
+      "gpu": -169.0,
+      "index": [
+        0,
+        0,
+        0,
+        15
+      ],
+      "quotient": -168.5
+    }
+  ]
+}

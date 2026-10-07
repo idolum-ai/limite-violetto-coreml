@@ -1,0 +1,350 @@
+{
+  "script_sha256": "9ae0eeb9738af4427306174e0655abacc0c57660902d5c7972de4738da4738f0",
+  "capture_sha256": "43b474f48a9d5d2d042874f76e619273eb383cc6005f93998ddca0caeffe28f6",
+  "compute": "CPU_ONLY",
+  "diagnostic_only": true,
+  "experiments": {
+    "attention": [
+      {
+        "name": "dot",
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999902,
+        "different_elements": 0,
+        "first_differences": []
+      },
+      {
+        "name": "scores",
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.999999999999991,
+        "different_elements": 0,
+        "first_differences": []
+      },
+      {
+        "name": "weights",
+        "max_abs": 1.7881393432617188e-07,
+        "rmse": 8.249368164344995e-10,
+        "relative_rmse": 4.887399335246972e-08,
+        "cosine": 0.9999999999999974,
+        "different_elements": 3101,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "actual": 0.03245117887854576,
+            "expected": 0.03245117515325546
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              2
+            ],
+            "actual": 0.6680996417999268,
+            "expected": 0.668099582195282
+          },
+          {
+            "index": [
+              0,
+              0,
+              3,
+              0
+            ],
+            "actual": 0.028385210782289505,
+            "expected": 0.028385208919644356
+          },
+          {
+            "index": [
+              0,
+              0,
+              4,
+              0
+            ],
+            "actual": 0.03409168869256973,
+            "expected": 0.034091684967279434
+          },
+          {
+            "index": [
+              0,
+              0,
+              4,
+              2
+            ],
+            "actual": 0.038450948894023895,
+            "expected": 0.038450952619314194
+          },
+          {
+            "index": [
+              0,
+              0,
+              5,
+              0
+            ],
+            "actual": 0.006753390654921532,
+            "expected": 0.006753390189260244
+          },
+          {
+            "index": [
+              0,
+              0,
+              5,
+              1
+            ],
+            "actual": 0.02648727223277092,
+            "expected": 0.02648726850748062
+          },
+          {
+            "index": [
+              0,
+              0,
+              5,
+              2
+            ],
+            "actual": 0.09061349183320999,
+            "expected": 0.09061349928379059
+          }
+        ]
+      },
+      {
+        "name": "raw",
+        "max_abs": 5.7220458984375e-06,
+        "rmse": 3.462395204231285e-07,
+        "relative_rmse": 5.688158582340634e-08,
+        "cosine": 0.9999999999999769,
+        "different_elements": 14614,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "actual": -1.254135251045227,
+            "expected": -1.254135012626648
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "actual": -6.834324836730957,
+            "expected": -6.834324359893799
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              3
+            ],
+            "actual": -0.7976673245429993,
+            "expected": -0.7976670861244202
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              4
+            ],
+            "actual": 6.416013240814209,
+            "expected": 6.416012287139893
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              6
+            ],
+            "actual": -4.744973659515381,
+            "expected": -4.744973182678223
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              7
+            ],
+            "actual": 6.380450248718262,
+            "expected": 6.3804497718811035
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              8
+            ],
+            "actual": -6.441464424133301,
+            "expected": -6.441463947296143
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              9
+            ],
+            "actual": 3.9018070697784424,
+            "expected": 3.9018068313598633
+          }
+        ]
+      },
+      {
+        "name": "rounded",
+        "max_abs": 0.0625,
+        "rmse": 0.0003183204299415356,
+        "relative_rmse": 5.229422995418328e-05,
+        "cosine": 0.999999998632758,
+        "different_elements": 2,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              1,
+              22,
+              116
+            ],
+            "actual": -3.078125,
+            "expected": -3.0625
+          },
+          {
+            "index": [
+              0,
+              3,
+              11,
+              119
+            ],
+            "actual": -11.625,
+            "expected": -11.6875
+          }
+        ]
+      }
+    ],
+    "softmax": [
+      {
+        "name": "weights",
+        "max_abs": 2.384185791015625e-07,
+        "rmse": 1.1631866774710083e-09,
+        "relative_rmse": 6.891385717818106e-08,
+        "cosine": 0.9999999999999964,
+        "different_elements": 3062,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "actual": 0.032451171427965164,
+            "expected": 0.03245117515325546
+          },
+          {
+            "index": [
+              0,
+              0,
+              3,
+              0
+            ],
+            "actual": 0.028385214507579803,
+            "expected": 0.028385208919644356
+          },
+          {
+            "index": [
+              0,
+              0,
+              3,
+              1
+            ],
+            "actual": 0.02621786668896675,
+            "expected": 0.026217864826321602
+          },
+          {
+            "index": [
+              0,
+              0,
+              3,
+              2
+            ],
+            "actual": 0.016251392662525177,
+            "expected": 0.016251390799880028
+          },
+          {
+            "index": [
+              0,
+              0,
+              3,
+              3
+            ],
+            "actual": 0.9291455745697021,
+            "expected": 0.9291455149650574
+          },
+          {
+            "index": [
+              0,
+              0,
+              4,
+              1
+            ],
+            "actual": 0.025433603674173355,
+            "expected": 0.025433601811528206
+          },
+          {
+            "index": [
+              0,
+              0,
+              5,
+              0
+            ],
+            "actual": 0.006753389723598957,
+            "expected": 0.006753390189260244
+          },
+          {
+            "index": [
+              0,
+              0,
+              5,
+              2
+            ],
+            "actual": 0.09061349183320999,
+            "expected": 0.09061349928379059
+          }
+        ]
+      }
+    ],
+    "product": [
+      {
+        "name": "raw",
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999802,
+        "different_elements": 0,
+        "first_differences": []
+      },
+      {
+        "name": "rounded",
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000000004,
+        "different_elements": 0,
+        "first_differences": []
+      }
+    ]
+  }
+}

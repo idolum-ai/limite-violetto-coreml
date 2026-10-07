@@ -1,0 +1,77 @@
+[
+  {
+    "trial": 0,
+    "seconds": 73.85887002944946,
+    "scores": [
+      {
+        "max_abs": 0.41047096252441406,
+        "rmse": 0.06446144407008121,
+        "relative_rmse": 0.007847218150482994,
+        "cosine": 0.9999797424725368
+      },
+      {
+        "max_abs": 0.6455869674682617,
+        "rmse": 0.29747710668808214,
+        "relative_rmse": 0.057014640892118204,
+        "cosine": 0.9997335796667794
+      }
+    ],
+    "overflow_rejected": true,
+    "closed": true,
+    "guard": {
+      "calls": 4771,
+      "background_calls": 0,
+      "shutdown_skips": 0
+    }
+  },
+  {
+    "trial": 1,
+    "seconds": 70.38115692138672,
+    "scores": [
+      {
+        "max_abs": 0.41047096252441406,
+        "rmse": 0.06446144407008121,
+        "relative_rmse": 0.007847218150482994,
+        "cosine": 0.9999797424725368
+      },
+      {
+        "max_abs": 0.6455869674682617,
+        "rmse": 0.29747710668808214,
+        "relative_rmse": 0.057014640892118204,
+        "cosine": 0.9997335796667794
+      }
+    ],
+    "overflow_rejected": true,
+    "closed": true,
+    "guard": {
+      "calls": 9593,
+      "background_calls": 0,
+      "shutdown_skips": 0
+    }
+  },
+  {
+    "trial": 2,
+    "seconds": 79.19869685173035,
+    "scores": [
+      {
+        "max_abs": 0.41047096252441406,
+        "rmse": 0.06446144407008121,
+        "relative_rmse": 0.007847218150482994,
+        "cosine": 0.9999797424725368
+      },
+      {
+        "max_abs": 0.6455869674682617,
+        "rmse": 0.29747710668808214,
+        "relative_rmse": 0.057014640892118204,
+        "cosine": 0.9997335796667794
+      }
+    ],
+    "overflow_rejected": true,
+    "closed": true,
+    "guard": {
+      "calls": 14415,
+      "background_calls": 0,
+      "shutdown_skips": 0
+    }
+  }
+]

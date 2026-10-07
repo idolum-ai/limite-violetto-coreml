@@ -1,0 +1,56 @@
+{
+  "status": "promoted",
+  "utc": "2026-09-23T19:11:16.455436+00:00",
+  "scope": "Recommended explicit Core ML CPU compiled selection on the pinned local environment",
+  "selection": {
+    "model_dir": "artifacts/05g-integration/full-1/source",
+    "identity_manifest": "evidence/05g-integration/full-1/package-identity.json",
+    "compiled_dir": "artifacts/05g-integration/full-1/compiled",
+    "compiled_manifest": "evidence/05g-integration/full-1/compiled-identity.json"
+  },
+  "fallback": {
+    "model_dir": "artifacts/04d-cpu/full-candidate-6",
+    "identity_manifest": "evidence/04d-cpu/full-candidate-6/package-identity.json",
+    "compiled_dir": "artifacts/05c-compiled/full-cache-1",
+    "compiled_manifest": "evidence/05c-compiled/full-cache-1/compiled-identity.json"
+  },
+  "source_identity": "c7cc54a308bb7c379f6d55c777a62666e86921f27245115dc185597efc65a46b",
+  "compiled_identity": "149d74d2e339fabdafeec8cf5ad6766fdd2e2754c15f5256c7dc69d91b932557",
+  "compute": "CPU_ONLY",
+  "qualification_passed": true,
+  "full_benchmark_passed": true,
+  "prefix32_confirmation_passed": true,
+  "preservation_passed": true,
+  "qualified_runtime_sources_changed": false,
+  "frozen_acceptance_changed": false,
+  "evidence": {
+    "qualification": {
+      "path": "evidence/05g-integration/full-1/milestone.json",
+      "sha256": "342cd7dfb3d12672adcb713b739d54ee3d9407aa024410b3927597864383b96e"
+    },
+    "full_benchmark": {
+      "path": "evidence/05g-integration/pipeline-abba-1/results.json",
+      "sha256": "d6263cce6280058f955abc1e2365b08bdd1e977f6a0de1c401a6300fec979b78"
+    },
+    "prefix32_confirmation": {
+      "path": "evidence/05g-integration/prefix32-confirmation-1/results.json",
+      "sha256": "6b9bd1c2bf8a975b5a754c89095ddbab5cd934fcf18b554333ec3c5d47b54efc"
+    },
+    "preservation": {
+      "path": "evidence/05g-integration/final-preservation.json",
+      "sha256": "cfec08717f17fe93d21a8ee83628b815baaf9f9fc2bb53ee48fb8fd001b849bc"
+    },
+    "independent_benchmark_audit": {
+      "path": "evidence/05g-integration/pipeline-independent-audit.json",
+      "sha256": "3ca2c8bdbfa6ca72cfd0d5a70d651fdbed5f5752a2ba105281d0407508383fde"
+    },
+    "independent_confirmation_audit": {
+      "path": "evidence/05g-integration/prefix32-confirmation-independent-audit.json",
+      "sha256": "855529b0cdef7504cc1df6657fbbe1b79e8298db3f69ba01563b121260518d72"
+    }
+  },
+  "reason": "All original CPU gates pass, including 674 identical generated tokens. The full benchmark passes every prefix and pooled criterion. A separately frozen one-shot P32 confirmation passes performance, exactness and all eight recorded power/thermal boundaries. Both sealed cohorts and qualified sources remain intact. Independent audits agree.",
+  "performance_scope": "Local bounded measurements; original benchmark has power-source/round variation. Confirmation samples all report Battery. No universal latency, GPU, ANE or clean-machine claim.",
+  "practical_inference_recommendation": "portable CPU remains faster in retained baseline measurements",
+  "independent_audits_passed": true
+}

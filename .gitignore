@@ -1,0 +1,67 @@
+# Local environments and tooling
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+.cleanup/
+.codex/
+.agents/
+.idea/
+.vscode/
+
+# Credentials, transcripts, and private operator history
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+OPERATOR-TRAIL.md
+sessions/
+transcripts/
+*.bundle
+
+# Models, weights, caches, captures, and native build products
+artifacts/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.mlpackage/
+*.mlmodelc/
+*.mlmodel
+*.npz
+*.npy
+*.bin
+*.dylib
+*.so
+*.o
+*.a
+*.part
+
+# Raw machine diagnostics and duplicate archives
+*.log
+*.ips
+*.trace/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.jsonl
+evidence/**/source-snapshots/
+evidence/**/before/
+evidence/**/before-*
+evidence/**/compiled-identity.json
+evidence/**/crash-stack.json
+
+# Ancillary snapshots not cleared for redistribution
+sources/autoresearch/
+sources/xi-log-concavity-lean/
+sources/coremltools-main-bridge/

@@ -1,0 +1,60 @@
+{
+  "status": "planned_not_executed",
+  "objective": "Qualify a power-of-two-scaled reciprocal correction for the observed layer2 key normalization error, then test it at one additional site in the separate06f group0.",
+  "baseline": "evidence/06f-gpu-reciprocal/group0-1/results.json",
+  "localization": "evidence/06g-gpu-residual/key-analysis.json",
+  "target": {
+    "name": "var_14324",
+    "denominator": "denom_21",
+    "stage": "layer2 key normalization",
+    "source_operation_index": 25194,
+    "shape": "[1,Q,2,1]"
+  },
+  "proposal": {
+    "domain": "positive finite FP32 denominators [4,64], seed within one adjacent FP32 value of nearest-even 1/d",
+    "mapping": "d_scaled = d * 0.125; seed_scaled = seed * 8; corrected = existing_helper(d_scaled, seed_scaled) * 0.125",
+    "rationale": "Power-of-two scaling maps [4,64] to the already-tested [.5,8] domain. Exactness, neighbor mapping, boundary behavior and native execution still require their own gates. Do not expand the original helper contract by assertion.",
+    "fallback": "Outside the separately tested domain retain the original reciprocal; validate safe guarded evaluation before adoption."
+  },
+  "constraints": [
+    "Preserve original and promoted qualified CPU cohorts/runtime and unchanged full-model thresholds.",
+    "Preserve first06f correction in the separate baseline. Modify only the identified second reciprocal and its guarded wrapper.",
+    "Do not correct earlier sites merely because their intermediate reciprocal differs; their warm quantized outputs are exact.",
+    "No full-model expansion before local correction and CPU-preservation gates pass."
+  ],
+  "gates": [
+    {
+      "id": "S1",
+      "requirement": "Freeze scaled arithmetic/design and directed inputs. Verify exact power-of-two scaling and seed-neighbor mapping for both original boundary cases and captured cold/warm CPU/GPU key denominators/seeds.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "S2",
+      "requirement": "Host scaled helper must match exact rational nearest-even FP32 reference and preserve all correct CPU reciprocal bytes on captured, directed power-boundary and frozen random cases. Include [4,64] guard boundaries and out-of-domain fallback checks.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "S3",
+      "requirement": "Native supplied-seed component in actual rank4 [1,Q,2,1] shape must match oracle under both policies and preserve CPU controls. Keep standalone seed reproduction separate; failure to reproduce alone cannot establish or refute an in-model repair.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "S4",
+      "requirement": "Separate one-additional-site model candidate must preserve all unrelated operations, weights and interfaces; reproduce original erroneous seed and same-policy endpoints/states. Require all CPU endpoints and eight states exact; taps must preserve candidate endpoints/states. Verify corrected reciprocal and key-normalized output, then measure K2 cache and downstream output/state residuals on the same two fixtures.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "S5",
+      "requirement": "Independent raw-array audit, qualified CPU cohort preservation, reports/log/decision update and checksum seal. Keep cold attention discrepancy and any remaining drift open; full numerical/lifecycle/partition/boundary/generation gates precede GPU adoption.",
+      "status": "pending",
+      "evidence_links": []
+    }
+  ],
+  "evidence_directory": "evidence/06h-gpu-key-correction (create on execution)",
+  "full_model_gpu_qualified": false,
+  "actual_device_placement": "unverified"
+}

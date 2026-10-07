@@ -1,0 +1,327 @@
+{
+  "attempt": "interval-taps-1",
+  "changed_package_files": [
+    "Data/com.apple.CoreML/model.mlmodel"
+  ],
+  "compile_seconds": 2.1841979576274753,
+  "compiled": "artifacts/06g-gpu-residual/interval-taps-1/0.mlmodelc",
+  "compiled_files": {
+    "analytics/coremldata.bin": "c82cc3386d3b694386d957e9c622243454f2591bf8bcbe894781ee58e343fb12",
+    "coremldata.bin": "53e6ad89df844cd378f5d9a7518cef7c58b48cdd36af4db70324714625c81807",
+    "model.mil": "cb06917287c2bd06614b4034c23281d6b928a52d4d4e404c39b155394d2a5036",
+    "weights/weight.bin": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b"
+  },
+  "design_sha256": "5f28ae7ae3d23203d39c4d21b13439edf86ac06a7a15043d2d01bdc74cbcd6ac",
+  "graph_check": {
+    "added_taps": [
+      {
+        "direct_inputs": {
+          "x": [
+            "var_11684"
+          ],
+          "y": [
+            "step_113"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "out_3",
+        "operation_index": 20906,
+        "operation_sha256": "9120393d8179794a51faadefef43dfbe12e09a5293bd237b9690f8e2ffe99b4d",
+        "operation_type": "mul",
+        "original_operation_index": 20756,
+        "stage": "layer1_attention_output_quantized"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_11735"
+          ],
+          "y": [
+            "step_119"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "value_35",
+        "operation_index": 21068,
+        "operation_sha256": "af8dc466499bea1476174b4cb2b7033e968c1355bbe297fabca0e2307b2fe63d",
+        "operation_type": "mul",
+        "original_operation_index": 20918,
+        "stage": "layer1_attention_residual_quantized"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "value_35"
+          ],
+          "y": [
+            "var_11916"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "x_167",
+        "operation_index": 21514,
+        "operation_sha256": "c2b3b802b7017a3aaac0543260d8b2eb9558094e9a7251bc90b4a50424affa53",
+        "operation_type": "mul",
+        "original_operation_index": 21364,
+        "stage": "layer1_post_attention_norm_raw"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_11932"
+          ],
+          "y": [
+            "step_121"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "x_169",
+        "operation_index": 21567,
+        "operation_sha256": "a4efacb80e22345a7a8125520aafe68d364fac6ce867f32f734020b24830f656",
+        "operation_type": "mul",
+        "original_operation_index": 21417,
+        "stage": "layer1_post_attention_norm_quantized"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_13163"
+          ],
+          "y": [
+            "step_131"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "mlp_3",
+        "operation_index": 23397,
+        "operation_sha256": "a2a7f4640b536f4770a0aeac2b7a61a843797a11cbdb21024de4b72fff32a917",
+        "operation_type": "mul",
+        "original_operation_index": 23247,
+        "stage": "layer1_mlp_output_quantized"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_13181"
+          ],
+          "y": [
+            "var_13198"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "x_187",
+        "operation_index": 23506,
+        "operation_sha256": "f3ff7386286c345a016a28b83e0bd76b44d201e839d1b1f6c6bc3915d5ff6d4c",
+        "operation_type": "add",
+        "original_operation_index": 23356,
+        "stage": "layer1_final_residual_raw"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_13214"
+          ],
+          "y": [
+            "step_137"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "value_37",
+        "operation_index": 23559,
+        "operation_sha256": "2117d2cda27cf22689dc72ab708b4e3b0438876ca98379b36261eec452b4bb4b",
+        "operation_type": "mul",
+        "original_operation_index": 23409,
+        "stage": "layer2_input_quantized"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_13392"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1
+        ],
+        "name": "denom_17",
+        "operation_index": 24001,
+        "operation_sha256": "ee34bc178a5a4a89d283d47899f16418616c21641854488e1076e56eb1a4728b",
+        "operation_type": "sqrt",
+        "original_operation_index": 23851,
+        "stage": "layer2_pre_attention_norm_denominator"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "fill_like_10"
+          ],
+          "y": [
+            "denom_17"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1
+        ],
+        "name": "var_13395",
+        "operation_index": 24004,
+        "operation_sha256": "1166465a6f0d4c93a9dab7c0d3abc1c57ef43e7ac22c093a44baaa4e5c30906f",
+        "operation_type": "real_div",
+        "original_operation_index": 23854,
+        "stage": "layer2_pre_attention_norm_reciprocal_seed"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_13411"
+          ],
+          "y": [
+            "step_139"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "x_193",
+        "operation_index": 24058,
+        "operation_sha256": "24a5597158e613878d5d8cad9f6dc21236f0c5928316af02cc4cf25ef51e6132",
+        "operation_type": "mul",
+        "original_operation_index": 23908,
+        "stage": "layer2_pre_attention_norm_quantized"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_14415"
+          ],
+          "y": [
+            "var_14438"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          2,
+          128
+        ],
+        "name": "x_219",
+        "operation_index": 25531,
+        "operation_sha256": "cbb7ab6337435716e4920140360bda9dac30771538a96a674d98278f7e81d28f",
+        "operation_type": "add",
+        "original_operation_index": 25381,
+        "stage": "layer2_key_rope_sum_raw"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_14454"
+          ],
+          "y": [
+            "step_161"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          2,
+          128
+        ],
+        "name": "k_51",
+        "operation_index": 25584,
+        "operation_sha256": "b4baa3258c3a0093a46ab0b31628834b21813d8a1bf3ff73ed421c93b1ba7d17",
+        "operation_type": "mul",
+        "original_operation_index": 25434,
+        "stage": "layer2_key_rounded_before_cache"
+      }
+    ],
+    "all_operations_byte_identical": true,
+    "boundary_dependency_chain_valid": true,
+    "default_query_length": 3,
+    "non_output_spec_sha256": "dc0e08469999a5d2fc8b41d2a006861e886cf0d08ea28b31a4a3ba5fd2de2171",
+    "only_description_and_block_outputs_changed": true,
+    "operations_sha256": "cdd5e47a35b662e88f66bd55b1313b1bb99a0f7cb60b04f5173ac84e5cb411e5",
+    "original_endpoints_preserved": [
+      "y",
+      "tap23_out"
+    ],
+    "passed": true,
+    "query_length_range": [
+      1,
+      32
+    ],
+    "source_operation_count": 46185,
+    "state_names_preserved": [
+      "inner_k_cache_0",
+      "inner_v_cache_0",
+      "inner_k_cache_1",
+      "inner_v_cache_1",
+      "inner_k_cache_2",
+      "inner_v_cache_2",
+      "inner_k_cache_3",
+      "inner_v_cache_3"
+    ]
+  },
+  "guard_after_compile": {
+    "gil_releases": 0,
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 0
+  },
+  "guard_before_compile": {
+    "gil_releases": 0,
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 0
+  },
+  "native_endpoint_state_control": "pending: same-policy original-versus-tapped outputs and all 8 states",
+  "package": "artifacts/06g-gpu-residual/interval-taps-1/0.mlpackage",
+  "passed": true,
+  "scope": "Output-only diagnostic clone; native controls pending",
+  "script_sha256": "b5bb2f9e322442355c9ac622e59a5caadd607c3f5516937e6ad88f0c60c9f926",
+  "source_build_sha256": "48af7de89cde44bcaf7c7dda12457aec5eb9c2e99cfa1ae4c5294090529441d6",
+  "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "source_files": {
+    "Data/com.apple.CoreML/model.mlmodel": "dc0e08469999a5d2fc8b41d2a006861e886cf0d08ea28b31a4a3ba5fd2de2171",
+    "Data/com.apple.CoreML/weights/weight.bin": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b",
+    "Manifest.json": "a0b8ecc7aebf27908cbce79298bec4435dd80f63e12f9dc0b2d6dea823e912e8"
+  },
+  "source_package": "artifacts/06f-gpu-reciprocal/group0-1/plain/0.mlpackage",
+  "status": "completed",
+  "variant_files": {
+    "Data/com.apple.CoreML/model.mlmodel": "d2d007328c6ee2c64011d330d855632e5e5ee569993c8b0af929debf21232f2a",
+    "Data/com.apple.CoreML/weights/weight.bin": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b",
+    "Manifest.json": "a0b8ecc7aebf27908cbce79298bec4435dd80f63e12f9dc0b2d6dea823e912e8"
+  }
+}

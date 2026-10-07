@@ -1,0 +1,56 @@
+{
+  "status": "active",
+  "objective": "Construct a boundary-safe reciprocal correction without regressing correctly rounded CPU results, then validate native reproduction and group behavior.",
+  "source_candidate": "evidence/06d-gpu-rounding/group0-1/results.json",
+  "localization": "evidence/06e-gpu-normalization/replay-1/results.json",
+  "analysis": "evidence/06e-gpu-normalization/normalization-analysis.json",
+  "offline_counterfactual": "evidence/06e-gpu-normalization/normalization-counterfactual.json",
+  "rejected_candidate": "evidence/06e-gpu-normalization/reciprocal-host-1/host-preflight.json",
+  "constraints": [
+    "Do not reuse the rejected compensated helper candidate unchanged.",
+    "Preserve the three failing directed denominators immediately below 1, 2 and 4 in every successor gate.",
+    "Keep original and promoted CPU artifacts, runtime selection and full-model tolerances unchanged.",
+    "Positive captured-range reciprocal qualification does not imply general-range reciprocal semantics.",
+    "Compute policy is not measured device placement."
+  ],
+  "gates": [
+    {
+      "id": "C1",
+      "requirement": "Use the saved exact-formula/FMA analysis to design a new reciprocal implementation retaining midpoint boundary information. Freeze a new candidate and directed set including the three original failures, captured CPU/GPU initial reciprocals and correctly rounded controls.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "C2",
+      "requirement": "Pure host candidate matches exact rational nearest-FP32 reference and preserves original correct CPU bytes on all frozen cases, including original failures; no native conversion until PASS.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "C3",
+      "requirement": "In a fresh native standalone attempt, original reciprocal must reproduce saved same-policy values; diagnostic must preserve its original reciprocal output. Require candidate accuracy and CPU byte preservation independently. Nonreproduction prevents standalone qualification and requires a separately designed in-model diagnostic.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "C4",
+      "requirement": "Only after appropriate arithmetic controls, replace the identified reciprocal in a separate group candidate. Preserve all unrelated operations/interfaces/weights. Require original CPU endpoints/all states byte-exact and verify warm normalized-value correction under GPU policy. Measure downstream residuals without claiming full-model success.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "C5",
+      "requirement": "Return to the earlier cold attention-finish discrepancy and other residuals. Full-model expansion follows local diagnosis; rerun unchanged full-model numerical/lifecycle/partition/boundary/generation gates before adoption.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "C6",
+      "requirement": "Independent evidence audit, source/cohort preservation, updated report/decision trail and checksum seal.",
+      "status": "pending",
+      "evidence_links": []
+    }
+  ],
+  "evidence_directory": "evidence/06f-gpu-reciprocal",
+  "known_host_failure_attribution": "Ideal Newton and two correctly rounded FMAs pass all 108 tested values; existing compensated helper fails at final FMA on three directed values. Preserve this distinction; it is not a universal proof."
+}

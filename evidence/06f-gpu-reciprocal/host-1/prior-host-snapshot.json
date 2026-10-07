@@ -1,0 +1,335 @@
+{
+  "attribution": "Final compensated helper output differs from two correctly rounded FMA operations for these3inputs; exact Newton formula itself matches oracle on all108 exercised inputs. No universal formula correctness or native/compiler cause claimed.",
+  "case_results": [
+    {
+      "archive": {
+        "path": "evidence/06e-gpu-normalization/reciprocal-host-1/warm-common.npz",
+        "sha256": "79e45875961e10538ceb20d65099a2e81fb45fa653691b66916bf71772736436"
+      },
+      "case": "warm-common",
+      "control_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "cpu_bytes_preserved": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "elements": 12,
+      "exact_newton_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "helper_residual_vs_correct_fma": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "refined_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "two_correct_fmas_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "path": "evidence/06e-gpu-normalization/reciprocal-host-1/cold-cpu.npz",
+        "sha256": "1f7e244fe5f2ae0333c1c5231711923e496de1145e378dbbcc13952bfcf93cce"
+      },
+      "case": "cold-cpu",
+      "control_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "cpu_bytes_preserved": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "elements": 32,
+      "exact_newton_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "helper_residual_vs_correct_fma": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "refined_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "two_correct_fmas_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "path": "evidence/06e-gpu-normalization/reciprocal-host-1/cold-gpu.npz",
+        "sha256": "7ce7c029908fd83032440ad993ac63c055dfb144c5ca996e41f0c1b7e7612b9b"
+      },
+      "case": "cold-gpu",
+      "control_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "cpu_bytes_preserved": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "elements": 32,
+      "exact_newton_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "helper_residual_vs_correct_fma": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "refined_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "two_correct_fmas_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "path": "evidence/06e-gpu-normalization/reciprocal-host-1/directed32.npz",
+        "sha256": "f7d0ecc587086368e4163f69ab60e13e6ecb976bb07785882143eccd542da09e"
+      },
+      "case": "directed32",
+      "control_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "cpu_bytes_preserved": {
+        "bitwise_exact": false,
+        "different_elements": 3,
+        "examples": [
+          {
+            "actual_bits": "0x3f800000",
+            "expected_bits": "0x3f800001",
+            "index": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "actual_bits": "0x3f000000",
+            "expected_bits": "0x3f000001",
+            "index": [
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "actual_bits": "0x3e800000",
+            "expected_bits": "0x3e800001",
+            "index": [
+              0,
+              6,
+              0
+            ]
+          }
+        ],
+        "finite": true,
+        "max_abs": 1.1920928955078125e-07
+      },
+      "elements": 32,
+      "exact_newton_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "helper_residual_vs_correct_fma": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "refined_vs_oracle": {
+        "bitwise_exact": false,
+        "different_elements": 3,
+        "examples": [
+          {
+            "actual_bits": "0x3f800000",
+            "expected_bits": "0x3f800001",
+            "index": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "actual_bits": "0x3f000000",
+            "expected_bits": "0x3f000001",
+            "index": [
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "actual_bits": "0x3e800000",
+            "expected_bits": "0x3e800001",
+            "index": [
+              0,
+              6,
+              0
+            ]
+          }
+        ],
+        "finite": true,
+        "max_abs": 1.1920928955078125e-07
+      },
+      "two_correct_fmas_vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    }
+  ],
+  "decision": "N4 host NO-GO; preserve candidate, no redesign this turn, no native launch",
+  "failed_elements": [
+    {
+      "case": "directed32",
+      "control_bits": "0x3f800001",
+      "correct_fma_residual_bits": "0xb37ffffe",
+      "correct_second_fma_unrounded_fraction": "1180591691086155481089/1180591620717411303424",
+      "denominator_bits": "0x3f7fffff",
+      "exact_newton_fraction": "1180591691086155481089/1180591620717411303424",
+      "exact_newton_rounded_bits": "0x3f800001",
+      "helper_refined_bits": "0x3f800000",
+      "helper_residual_bits": "0xb37ffffe",
+      "index": [
+        0,
+        0,
+        0
+      ],
+      "oracle_bits": "0x3f800001",
+      "two_correct_fmas_bits": "0x3f800001"
+    },
+    {
+      "case": "directed32",
+      "control_bits": "0x3f000001",
+      "correct_fma_residual_bits": "0xb37ffffe",
+      "correct_second_fma_unrounded_fraction": "1180591691086155481089/2361183241434822606848",
+      "denominator_bits": "0x3fffffff",
+      "exact_newton_fraction": "1180591691086155481089/2361183241434822606848",
+      "exact_newton_rounded_bits": "0x3f000001",
+      "helper_refined_bits": "0x3f000000",
+      "helper_residual_bits": "0xb37ffffe",
+      "index": [
+        0,
+        3,
+        0
+      ],
+      "oracle_bits": "0x3f000001",
+      "two_correct_fmas_bits": "0x3f000001"
+    },
+    {
+      "case": "directed32",
+      "control_bits": "0x3e800001",
+      "correct_fma_residual_bits": "0xb37ffffe",
+      "correct_second_fma_unrounded_fraction": "1180591691086155481089/4722366482869645213696",
+      "denominator_bits": "0x407fffff",
+      "exact_newton_fraction": "1180591691086155481089/4722366482869645213696",
+      "exact_newton_rounded_bits": "0x3e800001",
+      "helper_refined_bits": "0x3e800000",
+      "helper_residual_bits": "0xb37ffffe",
+      "index": [
+        0,
+        6,
+        0
+      ],
+      "oracle_bits": "0x3e800001",
+      "two_correct_fmas_bits": "0x3e800001"
+    }
+  ],
+  "helper_sha256": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+  "model_building": false,
+  "native_compile_load_predict": false,
+  "native_predictions": 0,
+  "oracle_validation": "Exact rational binary search and midpoint parity checks passed before host gate.",
+  "passed": false,
+  "protocol_sha256": "933414e3d3c8bc8d2ebd660c223de56bfdd01d2786051fb89a565df3e5e6ecdb",
+  "script_sha256": "8eff2de8fd978fd850c8ab71ec1939b0c6c10b25800dd6c3b254052b11ddcaa3",
+  "snapshot_sha256": {
+    "design-snapshot.md": "39e584475a579ac149642cb674258404f18818f23392a5c5dfbab6f344838b04",
+    "helper-snapshot.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+    "protocol.json": "933414e3d3c8bc8d2ebd660c223de56bfdd01d2786051fb89a565df3e5e6ecdb",
+    "source-replay-snapshot.json": "d72fc475a76e5c3751499465253fad154ea396753ff68630aa4f8dec6a8a7c09",
+    "source-snapshot.py": "8eff2de8fd978fd850c8ab71ec1939b0c6c10b25800dd6c3b254052b11ddcaa3"
+  },
+  "source_result_sha256": "d72fc475a76e5c3751499465253fad154ea396753ff68630aa4f8dec6a8a7c09",
+  "status": "held_host_failure"
+}

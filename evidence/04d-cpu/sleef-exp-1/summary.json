@@ -1,0 +1,19 @@
+{
+  "elements": 30245,
+  "torch": {
+    "double": {
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    "naive": {
+      "different_elements": 248,
+      "max_abs": 5.960464477539063e-08
+    }
+  },
+  "coreml": {
+    "naive": {
+      "different_elements": 248,
+      "max_abs": 5.960464477539063e-08
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "passed": true,
+  "audits_pass": true,
+  "generation_pass": true,
+  "audit_count": 7,
+  "max_audited_score_error": 3.814697265625e-06,
+  "generation": {
+    "generated_tokens": 674,
+    "finish_reason": "stop_token",
+    "complete": true,
+    "stop_token_ids": [
+      151643,
+      151645
+    ],
+    "completion_policy": "published_eos_plus_explicit_tokenizer_eos",
+    "greedy": false,
+    "seed": 0,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "boxed_391_after_think": true,
+    "think_marker_present": true,
+    "qualified_reference_settings_match": true,
+    "common_prefix_with_qualified_cpu_tokens": 674,
+    "qualified_cpu_token_count": 674,
+    "common_prefix_with_existing_candidate_tokens": 160,
+    "existing_candidate_token_count": 447,
+    "request_disposed": true
+  },
+  "seconds": 1857.7607071399689,
+  "evidence": "results.json"
+}

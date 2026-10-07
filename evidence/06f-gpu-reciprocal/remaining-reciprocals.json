@@ -1,0 +1,585 @@
+{
+  "all_real_div_count": 433,
+  "already_corrected_site_count": 1,
+  "proof": "Each listed real_div x is a fill_like(ref_tensor=its denominator,value=FP32 scalar const 1.0) in the saved MIL; its sole consumer is the next mul. Other divisions are excluded.",
+  "provable_fp32_one_numerator_count": 20,
+  "remaining_site_count": 19,
+  "scope": "static original 06d group 0 MIL only; no native inference or transformed model",
+  "sites": [
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_1",
+      "denominator_producer_index": 504,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 508,
+        "output": "x_3",
+        "type": "mul"
+      },
+      "group_layer": 0,
+      "numerator": "fill_like_0",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 506,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_0_value_0",
+      "numerator_value_const_index": 505,
+      "operation_index": 507,
+      "output": "var_1063",
+      "result_shape": [
+        1,
+        "?",
+        1
+      ],
+      "stage": "pre_attention_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_3",
+      "denominator_producer_index": 1558,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 1562,
+        "output": "x_15",
+        "type": "mul"
+      },
+      "group_layer": 0,
+      "numerator": "fill_like_1",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 1560,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_1_value_0",
+      "numerator_value_const_index": 1559,
+      "operation_index": 1561,
+      "output": "var_1937",
+      "result_shape": [
+        1,
+        "?",
+        10,
+        1
+      ],
+      "stage": "query_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_5",
+      "denominator_producer_index": 1697,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 1701,
+        "output": "x_19",
+        "type": "mul"
+      },
+      "group_layer": 0,
+      "numerator": "fill_like_2",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 1699,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_2_value_0",
+      "numerator_value_const_index": 1698,
+      "operation_index": 1700,
+      "output": "var_1992",
+      "result_shape": [
+        1,
+        "?",
+        2,
+        1
+      ],
+      "stage": "key_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "total_1313",
+      "denominator_producer_index": 7563,
+      "denominator_producer_type": "add",
+      "direct_consumer": {
+        "index": 7567,
+        "output": "weights_1",
+        "type": "mul"
+      },
+      "group_layer": 0,
+      "numerator": "fill_like_3",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 7565,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_3_value_0",
+      "numerator_value_const_index": 7564,
+      "operation_index": 7566,
+      "output": "var_4796",
+      "result_shape": [
+        1,
+        10,
+        "?",
+        1
+      ],
+      "stage": "attention_softmax"
+    },
+    {
+      "already_corrected_in_group0_1": true,
+      "denominator": "denom_7",
+      "denominator_producer_index": 9540,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 9544,
+        "output": "x_67",
+        "type": "mul"
+      },
+      "group_layer": 0,
+      "numerator": "fill_like_4",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 9542,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_4_value_0",
+      "numerator_value_const_index": 9541,
+      "operation_index": 9543,
+      "output": "var_5675",
+      "result_shape": [
+        1,
+        "?",
+        1
+      ],
+      "stage": "post_attention_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_9",
+      "denominator_producer_index": 12031,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 12035,
+        "output": "x_91",
+        "type": "mul"
+      },
+      "group_layer": 1,
+      "numerator": "fill_like_5",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 12033,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_5_value_0",
+      "numerator_value_const_index": 12032,
+      "operation_index": 12034,
+      "output": "var_7154",
+      "result_shape": [
+        1,
+        "?",
+        1
+      ],
+      "stage": "pre_attention_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_11",
+      "denominator_producer_index": 13426,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 13430,
+        "output": "x_115",
+        "type": "mul"
+      },
+      "group_layer": 1,
+      "numerator": "fill_like_6",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 13428,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_6_value_0",
+      "numerator_value_const_index": 13427,
+      "operation_index": 13429,
+      "output": "var_8178",
+      "result_shape": [
+        1,
+        "?",
+        10,
+        1
+      ],
+      "stage": "query_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_13",
+      "denominator_producer_index": 13565,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 13569,
+        "output": "x_119",
+        "type": "mul"
+      },
+      "group_layer": 1,
+      "numerator": "fill_like_7",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 13567,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_7_value_0",
+      "numerator_value_const_index": 13566,
+      "operation_index": 13568,
+      "output": "var_8233",
+      "result_shape": [
+        1,
+        "?",
+        2,
+        1
+      ],
+      "stage": "key_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "total_3125",
+      "denominator_producer_index": 19384,
+      "denominator_producer_type": "add",
+      "direct_consumer": {
+        "index": 19388,
+        "output": "weights_3",
+        "type": "mul"
+      },
+      "group_layer": 1,
+      "numerator": "fill_like_8",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 19386,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_8_value_0",
+      "numerator_value_const_index": 19385,
+      "operation_index": 19387,
+      "output": "var_11037",
+      "result_shape": [
+        1,
+        10,
+        "?",
+        1
+      ],
+      "stage": "attention_softmax"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_15",
+      "denominator_producer_index": 21360,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 21364,
+        "output": "x_167",
+        "type": "mul"
+      },
+      "group_layer": 1,
+      "numerator": "fill_like_9",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 21362,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_9_value_0",
+      "numerator_value_const_index": 21361,
+      "operation_index": 21363,
+      "output": "var_11916",
+      "result_shape": [
+        1,
+        "?",
+        1
+      ],
+      "stage": "post_attention_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_17",
+      "denominator_producer_index": 23851,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 23855,
+        "output": "x_191",
+        "type": "mul"
+      },
+      "group_layer": 2,
+      "numerator": "fill_like_10",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 23853,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_10_value_0",
+      "numerator_value_const_index": 23852,
+      "operation_index": 23854,
+      "output": "var_13395",
+      "result_shape": [
+        1,
+        "?",
+        1
+      ],
+      "stage": "pre_attention_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_19",
+      "denominator_producer_index": 24902,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 24906,
+        "output": "x_203",
+        "type": "mul"
+      },
+      "group_layer": 2,
+      "numerator": "fill_like_11",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 24904,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_11_value_0",
+      "numerator_value_const_index": 24903,
+      "operation_index": 24905,
+      "output": "var_14269",
+      "result_shape": [
+        1,
+        "?",
+        10,
+        1
+      ],
+      "stage": "query_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_21",
+      "denominator_producer_index": 25041,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 25045,
+        "output": "x_207",
+        "type": "mul"
+      },
+      "group_layer": 2,
+      "numerator": "fill_like_12",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 25043,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_12_value_0",
+      "numerator_value_const_index": 25042,
+      "operation_index": 25044,
+      "output": "var_14324",
+      "result_shape": [
+        1,
+        "?",
+        2,
+        1
+      ],
+      "stage": "key_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "total_4937",
+      "denominator_producer_index": 30860,
+      "denominator_producer_type": "add",
+      "direct_consumer": {
+        "index": 30864,
+        "output": "weights_5",
+        "type": "mul"
+      },
+      "group_layer": 2,
+      "numerator": "fill_like_13",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 30862,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_13_value_0",
+      "numerator_value_const_index": 30861,
+      "operation_index": 30863,
+      "output": "var_17128",
+      "result_shape": [
+        1,
+        10,
+        "?",
+        1
+      ],
+      "stage": "attention_softmax"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_23",
+      "denominator_producer_index": 32836,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 32840,
+        "output": "x_255",
+        "type": "mul"
+      },
+      "group_layer": 2,
+      "numerator": "fill_like_14",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 32838,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_14_value_0",
+      "numerator_value_const_index": 32837,
+      "operation_index": 32839,
+      "output": "var_18007",
+      "result_shape": [
+        1,
+        "?",
+        1
+      ],
+      "stage": "post_attention_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_25",
+      "denominator_producer_index": 35327,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 35331,
+        "output": "x_279",
+        "type": "mul"
+      },
+      "group_layer": 3,
+      "numerator": "fill_like_15",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 35329,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_15_value_0",
+      "numerator_value_const_index": 35328,
+      "operation_index": 35330,
+      "output": "var_19486",
+      "result_shape": [
+        1,
+        "?",
+        1
+      ],
+      "stage": "pre_attention_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_27",
+      "denominator_producer_index": 36378,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 36382,
+        "output": "x_291",
+        "type": "mul"
+      },
+      "group_layer": 3,
+      "numerator": "fill_like_16",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 36380,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_16_value_0",
+      "numerator_value_const_index": 36379,
+      "operation_index": 36381,
+      "output": "var_20360",
+      "result_shape": [
+        1,
+        "?",
+        10,
+        1
+      ],
+      "stage": "query_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom_29",
+      "denominator_producer_index": 36517,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 36521,
+        "output": "x_295",
+        "type": "mul"
+      },
+      "group_layer": 3,
+      "numerator": "fill_like_17",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 36519,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_17_value_0",
+      "numerator_value_const_index": 36518,
+      "operation_index": 36520,
+      "output": "var_20415",
+      "result_shape": [
+        1,
+        "?",
+        2,
+        1
+      ],
+      "stage": "key_norm"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "total_6749",
+      "denominator_producer_index": 42005,
+      "denominator_producer_type": "add",
+      "direct_consumer": {
+        "index": 42009,
+        "output": "weights",
+        "type": "mul"
+      },
+      "group_layer": 3,
+      "numerator": "fill_like_18",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 42007,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_18_value_0",
+      "numerator_value_const_index": 42006,
+      "operation_index": 42008,
+      "output": "var_23097",
+      "result_shape": [
+        1,
+        10,
+        "?",
+        1
+      ],
+      "stage": "attention_softmax"
+    },
+    {
+      "already_corrected_in_group0_1": false,
+      "denominator": "denom",
+      "denominator_producer_index": 43981,
+      "denominator_producer_type": "sqrt",
+      "direct_consumer": {
+        "index": 43985,
+        "output": "x_331",
+        "type": "mul"
+      },
+      "group_layer": 3,
+      "numerator": "fill_like_19",
+      "numerator_dtype": "fp32",
+      "numerator_fill_like_index": 43983,
+      "numerator_value": 1.0,
+      "numerator_value_const": "fill_like_19_value_0",
+      "numerator_value_const_index": 43982,
+      "operation_index": 43984,
+      "output": "var_23976",
+      "result_shape": [
+        1,
+        "?",
+        1
+      ],
+      "stage": "post_attention_norm"
+    }
+  ],
+  "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "source_model_sha256": "642607a34eadea6dbf98435ce4d3bba371248f856674d4e235bd407baee2d2f8",
+  "source_operation_count": 46035,
+  "source_package": "artifacts/06d-gpu-rounding/group0-1/0.mlpackage",
+  "source_result_path": "evidence/06d-gpu-rounding/group0-1/results.json",
+  "source_result_sha256": "4e6ac1baa2f70c10bf812523f7e341d9dabf34b30299e4819631f2db31cf150f",
+  "stage_source": [
+    "coreml_port/graphs.py Layer.forward/project/finish order",
+    "coreml_port/ordered_norm.py raw_norm",
+    "coreml_port/ordered_attention.py softmax"
+  ],
+  "status": "completed",
+  "xsa_division_exclusions": [
+    {
+      "denominator": "var_4996",
+      "group_layer": 0,
+      "numerator": "value_15",
+      "operation_index": 7978,
+      "output": "vn_1"
+    },
+    {
+      "denominator": "var_11237",
+      "group_layer": 1,
+      "numerator": "value_33",
+      "operation_index": 19798,
+      "output": "vn_3"
+    },
+    {
+      "denominator": "var_17328",
+      "group_layer": 2,
+      "numerator": "value_51",
+      "operation_index": 31274,
+      "output": "vn_5"
+    },
+    {
+      "denominator": "var_23297",
+      "group_layer": 3,
+      "numerator": "value_69",
+      "operation_index": 42419,
+      "output": "vn"
+    }
+  ],
+  "xsa_exclusion_reason": "ordered_xsa_normalize divides the value vector by its clamped L2 norm; numerator is not one."
+}

@@ -1,0 +1,14 @@
+{
+  "only_model_dir": {
+    "rejected": true,
+    "reason": "An explicit candidate requires both model_dir and identity_manifest."
+  },
+  "only_manifest": {
+    "rejected": true,
+    "reason": "An explicit candidate requires both model_dir and identity_manifest."
+  },
+  "missing_manifest": {
+    "rejected": true,
+    "reason": "Cannot read identity manifest absent.json: [Errno 2] No such file or directory: 'absent.json'"
+  }
+}

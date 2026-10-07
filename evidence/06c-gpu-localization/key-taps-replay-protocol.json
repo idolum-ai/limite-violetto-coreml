@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "scope": "Eight controlled stateful group-0 calls; saved CPU effective inputs and CPU cache, original versus four-tap clone under two compute policies",
+  "script_sha256": "95ad9a76e9a80d68b4da209b68dab5e6730426a54ab260111ee6d9e15778e17b",
+  "source_result": "evidence/06c-gpu-localization/prompt0-1/results.json",
+  "source_result_sha256": "ed27ff2a0b99bef14822450d044c2ec9e02206c647c934188c3f61c4c9886bb8",
+  "localizer_script_sha256": "f4e7aff94b9fae6374ef9d7307c1bb55211940db88464e01daa2e08155539761",
+  "builder_result": "evidence/06c-gpu-localization/key-taps-1/results.json",
+  "builder_result_sha256": "a9c64b817e5046984e266c3824f2a274b0a169c7dec189307b4305b867fb51f7",
+  "builder_script_sha256": "4846d8d0e3d2b8e91b88422a024a6ac6df409ab61c3477c92e88a14376c3dea9",
+  "chunks": [0, 1],
+  "compute_policies": ["CPU", "GPU"],
+  "taps": ["x_5", "value_5", "k_7", "k_9"],
+  "call_count": 8,
+  "original_endpoints": ["y", "tap23_out"],
+  "state_count": 8,
+  "within_policy_control": "Original versus tapped y/tap23_out and all eight post-call states must be raw-byte exact for both policies and both chunks; original replay must equal pinned CPU-input/CPU-cache factorial outputs and states.",
+  "interpretation": "Only after all same-policy controls pass, compare tapped intermediate values across compute policies; CPU_AND_GPU does not establish actual GPU placement."
+}

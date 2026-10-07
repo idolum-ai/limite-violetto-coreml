@@ -1,0 +1,9 @@
+# Layer 1–2 interval tap probe
+
+The source is the sealed 06f group 0 package with the layer 0 post-attention reciprocal correction. The earlier 06g normalization replay found a warm difference at layer 1 `var_7154`, but its quantized output `x_93` was byte-exact. This probe brackets later fixed-shape graph boundaries to locate the first difference that survives rounding.
+
+The twelve existing values, in graph order, are layer 1 attention output `out_3`, attention residual `value_35`, post-attention normalization raw/quantized values `x_167` and `x_169`, MLP output `mlp_3`, final residual sum `x_187`, layer 2 input `value_37`, layer 2 pre-attention norm denominator/reciprocal `denom_17` and `var_13395`, layer 2 normalized output `x_193`, raw key RoPE sum `x_219`, and rounded key `k_51` before cache write. The first ten have fixed feature widths 1280 or 1; the last two are `[1,Q,2,128]`. All have dynamic query length 1–32. No score or attention-weight tensor is exposed.
+
+The builder pins the complete source inventory and target producer indices/types/shapes, validates graph dependencies and the reciprocal-one numerator, then adds only output descriptors and block outputs. All 46,185 MIL operations, weights, states, inputs, and original outputs remain byte-identical. `--preflight` executes that entire protobuf rewrite and comparison in memory without building a package. A fresh attempt copies the package; optional compilation runs only when root invokes `--compile`.
+
+Native interpretation again requires original-versus-tapped `y`, `tap23_out`, and all eight state arrays to match byte-for-byte within each compute policy and saved 06f outputs to reproduce. CPU/GPU differences at these taps are diagnostic observations; CPU_AND_GPU policy alone does not establish GPU placement. A different reciprocal seed only matters to this trajectory if downstream differences survive quantization.

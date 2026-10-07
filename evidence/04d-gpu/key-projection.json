@@ -1,0 +1,124 @@
+{
+  "created_at": "2026-09-22T21:00:59.552228+00:00",
+  "sources": {
+    "scripts/gpu_key_projection.py": "14b66b7fd74ed485461484ba296f31900a05d7bf0aa9dfe4de8cac7db53e877f",
+    "coreml_port/graphs.py": "8149e6e6132b0b816405735b740cf3bcab0e43734d963905129efc86628462ce",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "evidence/01-reference/local-input-validation.json": "54ce299bdc107b3db80a2a389283ea787f7801a4f51a1ae2feed0a6dfaee7490"
+  },
+  "input_shape": [
+    1,
+    32,
+    1280
+  ],
+  "input_sha256": "6f7c995b48a07c765dbc2387f42b367d59cfcc3d914b94cbeb0324cf85539261",
+  "results": {
+    "key": {
+      "package_sha256": "ae3309ccec888a4779c6dd4f6c2c2121bda185cf0c8ca0be6c8a38debc9a0e31",
+      "runs": {
+        "CPU_ONLY": {
+          "32": {
+            "kraw": {
+              "different_elements": 0,
+              "max_abs": 0.0,
+              "mismatches": []
+            },
+            "k": {
+              "different_elements": 0,
+              "max_abs": 0.0,
+              "mismatches": []
+            }
+          }
+        },
+        "CPU_AND_GPU": {
+          "32": {
+            "kraw": {
+              "different_elements": 0,
+              "max_abs": 0.0,
+              "mismatches": []
+            },
+            "k": {
+              "different_elements": 0,
+              "max_abs": 0.0,
+              "mismatches": []
+            }
+          }
+        }
+      }
+    },
+    "qkv": {
+      "package_sha256": "ccf6a26120df9edad94398e18142c5ad039ada8413210011d2dd755ccaf52606",
+      "runs": {
+        "CPU_ONLY": {
+          "32": {
+            "q": {
+              "different_elements": 0,
+              "max_abs": 0.0,
+              "mismatches": []
+            },
+            "kraw": {
+              "different_elements": 0,
+              "max_abs": 0.0,
+              "mismatches": []
+            },
+            "k": {
+              "different_elements": 0,
+              "max_abs": 0.0,
+              "mismatches": []
+            },
+            "v": {
+              "different_elements": 0,
+              "max_abs": 0.0,
+              "mismatches": []
+            }
+          }
+        },
+        "CPU_AND_GPU": {
+          "32": {
+            "q": {
+              "different_elements": 0,
+              "max_abs": 0.0,
+              "mismatches": []
+            },
+            "kraw": {
+              "different_elements": 0,
+              "max_abs": 0.0,
+              "mismatches": []
+            },
+            "k": {
+              "different_elements": 2,
+              "max_abs": 0.00390625,
+              "mismatches": [
+                {
+                  "index": [
+                    0,
+                    12,
+                    199
+                  ],
+                  "got": 0.79296875,
+                  "want": 0.7890625,
+                  "abs": 0.00390625
+                },
+                {
+                  "index": [
+                    0,
+                    14,
+                    199
+                  ],
+                  "got": 0.79296875,
+                  "want": 0.7890625,
+                  "abs": 0.00390625
+                }
+              ]
+            },
+            "v": {
+              "different_elements": 0,
+              "max_abs": 0.0,
+              "mismatches": []
+            }
+          }
+        }
+      }
+    }
+  }
+}

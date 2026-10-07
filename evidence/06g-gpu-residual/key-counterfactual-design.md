@@ -1,0 +1,9 @@
+# Saved key-normalization counterfactual
+
+This is an offline computation on the sealed 06g key-replay arrays. It does not load or execute a Core ML model. The replay's eight calls, all saved archive hashes and source pins, and the original-versus-tapped `y`, `tap23_out`, and eight state arrays are rechecked independently. All FP32 comparisons use raw `uint32` bit patterns, including signed zero.
+
+For cold and warm chunks under each policy, the script reconstructs `x_207 = value_41 * var_14324`, `var_14339 = x_207 / step_149`, `var_14340 = round_ties_even(var_14339)`, and `k_49 = var_14340 * step_149` with NumPy FP32 operations. Every reconstructed stage must match its saved native tap bit-for-bit before substitution. This diagonal gate is needed because an offline arithmetic path cannot otherwise stand in for the native compiled path.
+
+The counterfactual replaces only the saved GPU reciprocal `var_14324` with the saved CPU reciprocal, retaining the GPU key projection `value_41` and quantization step `step_149`. The warm controls require projection, denominator, and step to be CPU/GPU bit-exact, reciprocal seed to differ, observed `k_49` to differ, and all four substituted stages to match saved CPU arrays bit-for-bit. Cold results are recorded without imposing the same-input causal interpretation, because earlier cold trajectory differences may already exist.
+
+A successful result identifies the reciprocal seed as sufficient to explain the saved **warm local key-normalization** mismatch under the diagonal FP32 reconstruction. It does not prove that a compiled reciprocal replacement behaves the same way, fixes the layer 2 cache, or repairs the full model. A later `[4,64]` denominator experiment could divide by 8, apply the existing bounded `[0.5,8]` helper to the scaled denominator/seed, then scale the result back by 1/8. That needs separate host and native gates; the frozen helper remains unchanged here.

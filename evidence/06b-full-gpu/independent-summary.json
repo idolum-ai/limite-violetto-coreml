@@ -1,0 +1,145 @@
+{
+  "actual_device_placement": "unverified",
+  "attempt": "short-1",
+  "audit_status": "independent_audit_complete",
+  "compiled_aggregate_identity": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+  "compute_units": "CPU_AND_GPU",
+  "experiment_completed": true,
+  "hidden_summary": {
+    "first_threshold_crossing_by_prompt": {
+      "0": {
+        "all_top1_match": true,
+        "comparison_count": 18,
+        "first_hidden_threshold_crossing": {
+          "cosine": 0.9999517453001184,
+          "max_abs": 384.0,
+          "name": "prompt0/layer_19",
+          "relative_rmse": 0.010770369083196594
+        },
+        "hidden_count": 13,
+        "hidden_failures": 6,
+        "score_count": 5,
+        "score_failures": 5,
+        "score_max_abs": 0.23126888275146484,
+        "top5_overlap_min": 4
+      },
+      "1": {
+        "all_top1_match": true,
+        "comparison_count": 18,
+        "first_hidden_threshold_crossing": {
+          "cosine": 0.9999472519129234,
+          "max_abs": 384.0,
+          "name": "prompt1/layer_19",
+          "relative_rmse": 0.011179390695972069
+        },
+        "hidden_count": 13,
+        "hidden_failures": 6,
+        "score_count": 5,
+        "score_failures": 5,
+        "score_max_abs": 0.3155984878540039,
+        "top5_overlap_min": 5
+      },
+      "2": {
+        "all_top1_match": true,
+        "comparison_count": 18,
+        "first_hidden_threshold_crossing": {
+          "cosine": 0.9999504628487164,
+          "max_abs": 384.0,
+          "name": "prompt2/layer_19",
+          "relative_rmse": 0.010969264547577488
+        },
+        "hidden_count": 13,
+        "hidden_failures": 6,
+        "score_count": 5,
+        "score_failures": 5,
+        "score_max_abs": 0.2685537338256836,
+        "top5_overlap_min": 5
+      }
+    },
+    "interpretation": "First measured hidden threshold crossing only; not the earliest bitwise or causal numerical divergence.",
+    "max_relative_rmse": 0.02493177709060307,
+    "max_relative_rmse_case": "prompt2/final_hidden",
+    "min_cosine": 0.9996891695110579,
+    "minimum_cosine_case": "prompt2/final_hidden"
+  },
+  "operational_status": "completed",
+  "protocol_sha256": "4fcda5dd97b6f4f633586612c07cea819e1ee0289f445e5dad40ea8ab31b16cc",
+  "provenance_and_guards": {
+    "cleanup_guard_final": {
+      "background_calls": 0,
+      "calls": 2603,
+      "shutdown_skips": 0
+    },
+    "cleanup_guard_initial": {
+      "background_calls": 0,
+      "calls": 0,
+      "shutdown_skips": 0
+    },
+    "compiled_preserved": true,
+    "model_package_count": 14,
+    "prediction_guard_consistent": true,
+    "prediction_guard_delta": {
+      "gil_releases": 412,
+      "plain_calls": 52,
+      "state_calls": 360
+    },
+    "prediction_guard_final": {
+      "gil_releases": 412,
+      "installed": true,
+      "plain_calls": 52,
+      "state_calls": 360
+    },
+    "prediction_guard_initial": {
+      "gil_releases": 0,
+      "installed": true,
+      "plain_calls": 0,
+      "state_calls": 0
+    },
+    "protocol_preserved": true,
+    "runtime_preserved": true,
+    "script_preserved": true,
+    "source_hashes_preserved": true,
+    "source_preserved": true
+  },
+  "raw_results": "evidence/06b-full-gpu/short-1/results.json",
+  "raw_results_sha256": "5515dd913ca29730b99173025e7a08bbca256eca35958a642e74adf6dc572dfc",
+  "recommended_localization": "If a later approved diagnosis is warranted, replay prompt0 (44-token frozen input) on CPU and CPU_AND_GPU group-by-group through group4, saving each group input, all eight before/after states, outputs and captured hidden. Group0 already has separate same-graph captures, but its fixture inputs/states are not this prompt, so they cannot establish prompt0 causal origin.",
+  "schema_version": 1,
+  "scope_limitations": [
+    "No extended 674-token generation or partition/boundary qualification was run after the short numerical gate failed.",
+    "No runtime GPU placement trace was collected; CPU_AND_GPU is a compute policy, not proof of GPU execution.",
+    "Saved short-suite comparisons are metric records; they do not retain full per-layer arrays for group-by-group replay."
+  ],
+  "score_summary": {
+    "max_abs_case": "prompt1/teacher1",
+    "max_abs_error": 0.3155984878540039,
+    "max_relative_rmse": 0.03132307667626591,
+    "score_count": 15,
+    "top1_matches": 15,
+    "top5_overlap_min": 4
+  },
+  "short_gate": {
+    "comparison_count": 54,
+    "decision": "short numerical/lifecycle NO-GO; no extended GPU generation or qualification",
+    "hidden_comparison_count": 39,
+    "hidden_fail_count": 18,
+    "hidden_pass_count": 21,
+    "lifecycle_check_count": 17,
+    "lifecycle_pass": true,
+    "lifecycle_pass_count": 17,
+    "numerical_pass": false,
+    "score_comparison_count": 15,
+    "score_fail_count": 15,
+    "score_pass_count": 0,
+    "thresholds": {
+      "changed": false,
+      "hidden_cosine_min": 0.995,
+      "hidden_relative_rmse_max": 0.01,
+      "score_max_abs": 0.04,
+      "score_ranking": "top1 match or reference margin <= 0.08"
+    }
+  },
+  "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "source_snapshot_matches_recorded_runner": true,
+  "source_snapshot_sha256": "19005d82159ce53668be6c31fb784f0130a478bbb364e6a5175507fa15263e64"
+}

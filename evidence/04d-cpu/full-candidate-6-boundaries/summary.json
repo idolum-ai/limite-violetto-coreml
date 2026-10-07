@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "comparisons": 6,
+  "passed": 6,
+  "hidden_exact": 6,
+  "max_score_error": 1.9073486328125e-06,
+  "checks": {
+    "overflow_rejected_before_mutation": true,
+    "capacity_request_disposed": true,
+    "different_partition_boundary_repeat_exact": true,
+    "fresh_request_disposed": true
+  },
+  "numerical_pass": true,
+  "checks_pass": true,
+  "seconds": 1303.1146461963654,
+  "evidence": "results.json"
+}

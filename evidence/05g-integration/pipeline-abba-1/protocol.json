@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "scope": "Single-model conditional CPU_ONLY full pipeline versus qualified baseline; qualification must pass first",
+  "script_sha256": "8e1e1288205dfaeef2420dc02841139c09478902700b599608b9fe1d95db0485",
+  "qualification_helper_sha256": "aa74f766dc51b3ed123ba1dd4783c8cd4ad897dfa2719850acfb7fddd66ded3b",
+  "fixture": "evidence/04-coreml/generation-comparison.json",
+  "fixture_sha256": "1ee6553885123a57b8fb40b89c292eea201e148e6f3bd4d9b4cba1c057f9f3eb",
+  "arm_order": "ABBA",
+  "round_prefix_orders": [
+    [
+      32,
+      128,
+      512
+    ],
+    [
+      512,
+      128,
+      32
+    ]
+  ],
+  "decode_steps": 3,
+  "warmup_prefix": 32,
+  "warmup_decode_steps": 3,
+  "minimum_median_decode_reduction": 0.1,
+  "maximum_median_prefill_regression": 0.1,
+  "compute": "CPU_ONLY",
+  "runtime_adapter": "compiled_tiny_prefix_replay",
+  "arms": {
+    "A": {
+      "model_dir": "artifacts/04d-cpu/full-candidate-6",
+      "identity_manifest": "evidence/04d-cpu/full-candidate-6/package-identity.json",
+      "compiled_dir": "artifacts/05c-compiled/full-cache-1",
+      "compiled_manifest": "evidence/05c-compiled/full-cache-1/compiled-identity.json"
+    },
+    "B": {
+      "model_dir": "artifacts/05g-integration/full-1/source",
+      "identity_manifest": "evidence/05g-integration/full-1/package-identity.json",
+      "compiled_dir": "artifacts/05g-integration/full-1/compiled",
+      "compiled_manifest": "evidence/05g-integration/full-1/compiled-identity.json"
+    }
+  },
+  "decision_rule": "All96 scores exact; allrequests disposed; allqualified identities/guards unchanged; >=10% median decode reduction in eachprefix and pooled; no perprefix median prefill regression>10%. Report round variability and host telemetry.",
+  "isolation": "Fresh sequential subprocess per arm slot; exactly one loaded full pipeline; no concurrent native model/GPU/benchmark jobs.",
+  "timing": "Synchronous Pipeline.forward only; normal32token prefill chunking included. Load/verification, statecreation/disposal, IO, host telemetry and equality checks excluded.",
+  "sampling": "Teacher forced fixed qualified prompt+674reference token stream; no RNG or candidate-dependent token choices."
+}

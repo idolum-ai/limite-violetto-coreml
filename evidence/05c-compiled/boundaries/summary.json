@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "passed": true,
+  "comparison_count": 6,
+  "labels": [
+    "fresh1026",
+    "prefix1023",
+    "prefix1024",
+    "prefix1025",
+    "prefix1026",
+    "prefix2048"
+  ],
+  "check_count": 4,
+  "max_score_abs": 1.9073486328125e-06,
+  "max_hidden_relative_rmse": 0.0,
+  "errors": []
+}

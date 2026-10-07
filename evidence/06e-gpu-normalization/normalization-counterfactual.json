@@ -1,0 +1,215 @@
+{
+  "archives": {
+    "CPU_tapped_outputs_sha256": "3082c77a4db8265c7e8223ee7f14d46ad6ff96ee5b62d7e315d0d66554443d44",
+    "GPU_tapped_outputs_sha256": "9835733ae181117f44398ec080fc2ee1d765a3bb4f1ce05082890eb13dfb6cab"
+  },
+  "equal_saved_inputs": {
+    "denom_7": {
+      "bitwise_error_count": 0,
+      "first_difference": null,
+      "numeric_error_count": 0,
+      "query_rows_with_differences": []
+    },
+    "step_47": {
+      "bitwise_error_count": 0,
+      "first_difference": null,
+      "numeric_error_count": 0,
+      "query_rows_with_differences": []
+    },
+    "value_17": {
+      "bitwise_error_count": 0,
+      "first_difference": null,
+      "numeric_error_count": 0,
+      "query_rows_with_differences": []
+    }
+  },
+  "native_stage_reconstruction": {
+    "CPU": {
+      "var_5690": {
+        "bitwise_error_count": 0,
+        "first_difference": null,
+        "numeric_error_count": 0,
+        "query_rows_with_differences": []
+      },
+      "var_5691": {
+        "bitwise_error_count": 0,
+        "first_difference": null,
+        "numeric_error_count": 0,
+        "query_rows_with_differences": []
+      },
+      "x_67": {
+        "bitwise_error_count": 0,
+        "first_difference": null,
+        "numeric_error_count": 0,
+        "query_rows_with_differences": []
+      },
+      "x_69": {
+        "bitwise_error_count": 0,
+        "first_difference": null,
+        "numeric_error_count": 0,
+        "query_rows_with_differences": []
+      }
+    },
+    "GPU": {
+      "var_5690": {
+        "bitwise_error_count": 0,
+        "first_difference": null,
+        "numeric_error_count": 0,
+        "query_rows_with_differences": []
+      },
+      "var_5691": {
+        "bitwise_error_count": 0,
+        "first_difference": null,
+        "numeric_error_count": 0,
+        "query_rows_with_differences": []
+      },
+      "x_67": {
+        "bitwise_error_count": 0,
+        "first_difference": null,
+        "numeric_error_count": 0,
+        "query_rows_with_differences": []
+      },
+      "x_69": {
+        "bitwise_error_count": 0,
+        "first_difference": null,
+        "numeric_error_count": 0,
+        "query_rows_with_differences": []
+      }
+    }
+  },
+  "numpy_version": "2.2.6",
+  "offline_gpu_with_cpu_reciprocal_vs_cpu": {
+    "var_5690": {
+      "bitwise_error_count": 0,
+      "first_difference": null,
+      "numeric_error_count": 0,
+      "query_rows_with_differences": []
+    },
+    "var_5691": {
+      "bitwise_error_count": 0,
+      "first_difference": null,
+      "numeric_error_count": 0,
+      "query_rows_with_differences": []
+    },
+    "x_67": {
+      "bitwise_error_count": 0,
+      "first_difference": null,
+      "numeric_error_count": 0,
+      "query_rows_with_differences": []
+    },
+    "x_69": {
+      "bitwise_error_count": 0,
+      "first_difference": null,
+      "numeric_error_count": 0,
+      "query_rows_with_differences": []
+    }
+  },
+  "offline_local_path_exact": true,
+  "original_gpu_vs_cpu": {
+    "var_5690": {
+      "bitwise_error_count": 3375,
+      "first_difference": {
+        "actual": -157.43450927734375,
+        "index": [
+          0,
+          1,
+          0
+        ],
+        "reference": -157.4344940185547
+      },
+      "numeric_error_count": 3375,
+      "query_rows_with_differences": [
+        1,
+        2,
+        8
+      ]
+    },
+    "var_5691": {
+      "bitwise_error_count": 19,
+      "first_difference": {
+        "actual": -226.0,
+        "index": [
+          0,
+          8,
+          23
+        ],
+        "reference": -225.0
+      },
+      "numeric_error_count": 19,
+      "query_rows_with_differences": [
+        8
+      ]
+    },
+    "x_67": {
+      "bitwise_error_count": 3375,
+      "first_difference": {
+        "actual": -0.614978551864624,
+        "index": [
+          0,
+          1,
+          0
+        ],
+        "reference": -0.6149784922599792
+      },
+      "numeric_error_count": 3375,
+      "query_rows_with_differences": [
+        1,
+        2,
+        8
+      ]
+    },
+    "x_69": {
+      "bitwise_error_count": 19,
+      "first_difference": {
+        "actual": -0.8828125,
+        "index": [
+          0,
+          8,
+          23
+        ],
+        "reference": -0.87890625
+      },
+      "numeric_error_count": 19,
+      "query_rows_with_differences": [
+        8
+      ]
+    }
+  },
+  "python_version": "3.12.9",
+  "query_length": 12,
+  "saved_reciprocal_difference": {
+    "bitwise_error_count": 3,
+    "first_difference": {
+      "actual": 0.3713077902793884,
+      "index": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0.37130776047706604
+    },
+    "numeric_error_count": 3,
+    "query_rows_with_differences": [
+      1,
+      2,
+      8
+    ]
+  },
+  "schema_version": 1,
+  "scope": "Offline NumPy FP32 substitution on saved warm taps only. Native CPU/GPU stage values were independently reconstructed bitwise before substitution. This is not a native graph fix, state replay, full-model parity result, or speed claim.",
+  "script_sha256": "a445b9f2a2451aa6c618943ef5561c5bec555ad72b02b700355b352f8a34bac2",
+  "sources": {
+    "normalization_analysis": {
+      "path": "evidence/06e-gpu-normalization/normalization-analysis.json",
+      "sha256": "70a7e5763be1280075b677646f2f7ec69d1f1f5768df120eacb6a0b204df0dd0"
+    },
+    "replay": {
+      "path": "evidence/06e-gpu-normalization/replay-1/results.json",
+      "sha256": "d72fc475a76e5c3751499465253fad154ea396753ff68630aa4f8dec6a8a7c09"
+    },
+    "residual_summary": {
+      "path": "evidence/06e-gpu-normalization/residual-summary-1.json",
+      "sha256": "b06144cc768943f33adccb2c65755781794e1aaf2a3e7da18a8b1d00cd7e53f9"
+    }
+  }
+}

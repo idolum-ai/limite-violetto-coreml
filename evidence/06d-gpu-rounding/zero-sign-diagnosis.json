@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "scope": "read-only completed operator diagnosis plus in-memory symbolic conversion",
+  "native_compile_load_predict": false,
+  "files": {
+    "operator-1/results.json": "c19667215c7fe78e0eacc3f1d2c1006e4a4e8dd9d8fb59e52fef140ac8625c9e",
+    "zero-sign-design.md": "b8f89e7123f2834b539e74e743534a6138ee15061701b0663e366c4047191f73"
+  },
+  "compiled_model_mil_sha256": "9ddfce44a0516fc7f0f0b2a83f761ea428bd3eea233dbc1314599cd7afe83511",
+  "all_14_failure_pairs_are_negative_zero_to_positive_zero": true,
+  "different_elements_both_policies": 11374,
+  "weighted_add_lowering_observed": false,
+  "new_formula_native_verified": false
+}

@@ -1,0 +1,27 @@
+{
+  "status": "planned_not_executed",
+  "scope": "One independent decode-only group0 value-product ablation; no runtime adoption.",
+  "baseline_group": "artifacts/05c-compiled/full-cache-1/0.mlmodelc",
+  "fixture": "evidence/05d-decode/group0-warm-capture",
+  "change": "For one real query at warm absolute position >=32, retain the first existing two-row value matmul and omit the other 15 unused two-row products; preserve query padding, score policy, weights and all other arithmetic.",
+  "hypothesis": "The discarded source branches may cost CPU time. Component timings do not prove this and Core ML may already eliminate them.",
+  "gates": [
+    {
+      "id": "E1",
+      "requirement": "Separate artifact with source/config snapshots; inspect MIL/spec difference and enforce one-query warm-only contract."
+    },
+    {
+      "id": "E2",
+      "requirement": "Fresh restored state for every baseline/variant call; exact y, tap23_out and all 8 KV states versus sealed capture. Expand to independent warm positions/inputs before any general claim."
+    },
+    {
+      "id": "E3",
+      "requirement": "After warmup, interleave baseline/variant ABBA on identical restored inputs with restoration and checks outside timers. Require repeatable gain across blocks; a 10% median reduction is the predeclared go threshold, not a promised result."
+    },
+    {
+      "id": "E4",
+      "requirement": "Keep generic qualified model unchanged. Any runtime routing/state-sharing or broader adoption requires separate integration and full qualification."
+    }
+  ],
+  "review": "evidence/05d-decode/next-experiment-review.md"
+}

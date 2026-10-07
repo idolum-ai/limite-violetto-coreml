@@ -1,0 +1,303 @@
+{
+  "status": "complete",
+  "attempt": "dynamic-operator-1",
+  "prediction_guard": {
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 0,
+    "gil_releases": 0
+  },
+  "torch_version": "2.7.0",
+  "coremltools_version": "9.0",
+  "source_sha256": {
+    "scripts/tiny_kernel_coreml_operator.py": "e36a70397f59a9c018e07aa8e4c786f3a2b289c7eef351f44d3bac452d50a677",
+    "coreml_port/tiny_native_scores.py": "c1fd3339ce3ac7b23cf0117dfb466b25c2c43c036a87616eb8656787fa5858ff",
+    "coreml_port/dynamic_queries.py": "aa87c78fdfc84172860cb9ad765924a994430a22e7e36a77ede6314b30299cda",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f"
+  },
+  "cases": [
+    {
+      "length": 1,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        1,
+        2048
+      ]
+    },
+    {
+      "length": 2,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        2,
+        2048
+      ]
+    },
+    {
+      "length": 3,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        3,
+        2048
+      ]
+    },
+    {
+      "length": 4,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        4,
+        2048
+      ]
+    },
+    {
+      "length": 5,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        5,
+        2048
+      ]
+    },
+    {
+      "length": 6,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        6,
+        2048
+      ]
+    },
+    {
+      "length": 7,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        7,
+        2048
+      ]
+    },
+    {
+      "length": 8,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        8,
+        2048
+      ]
+    },
+    {
+      "length": 9,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        9,
+        2048
+      ]
+    },
+    {
+      "length": 11,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        11,
+        2048
+      ]
+    },
+    {
+      "length": 12,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        12,
+        2048
+      ]
+    },
+    {
+      "length": 13,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        13,
+        2048
+      ]
+    },
+    {
+      "length": 14,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        14,
+        2048
+      ]
+    },
+    {
+      "length": 15,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        15,
+        2048
+      ]
+    },
+    {
+      "length": 16,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        16,
+        2048
+      ]
+    },
+    {
+      "length": 32,
+      "coreml_vs_torch_module": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_active_vs_native": {
+        "different": 0,
+        "max_abs": 0.0
+      },
+      "coreml_shape": [
+        1,
+        10,
+        32,
+        2048
+      ]
+    }
+  ],
+  "trace_q8_vs_module": {
+    "different": 0,
+    "max_abs": 0.0
+  },
+  "trace_q32_vs_module": {
+    "different": 0,
+    "max_abs": 0.0
+  },
+  "package": "artifacts/04f-tiny/dynamic-operator-1/scores.mlpackage",
+  "all_active_exact": true,
+  "all_module_exact": true
+}

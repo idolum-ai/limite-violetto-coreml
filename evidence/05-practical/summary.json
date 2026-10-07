@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "scope": "Bounded CPU cost pilot and three-task portable-reference quality check, not a general performance or task-accuracy certification.",
+  "comparison": "comparison.json",
+  "coreml_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "matched_score_checks": 27,
+  "matched_scores_pass": true,
+  "task_backend": "portable CPU reference",
+  "tasks": [
+    {
+      "id": "arithmetic",
+      "prompt_tokens": 44,
+      "generated_tokens": 315,
+      "passed": true,
+      "parsed_final_answer": {
+        "status": "parsed",
+        "body": "476",
+        "normalized": "476"
+      },
+      "wall_seconds": 25.21834637504071
+    },
+    {
+      "id": "simple_algebra",
+      "prompt_tokens": 52,
+      "generated_tokens": 450,
+      "passed": true,
+      "parsed_final_answer": {
+        "status": "parsed",
+        "body": "\\frac{5}{2}",
+        "normalized": "5/2"
+      },
+      "wall_seconds": 38.895903958939016
+    },
+    {
+      "id": "short_word_problem",
+      "prompt_tokens": 67,
+      "generated_tokens": 491,
+      "passed": true,
+      "parsed_final_answer": {
+        "status": "parsed",
+        "body": "17",
+        "normalized": "17"
+      },
+      "wall_seconds": 48.82668270915747
+    }
+  ],
+  "all_tasks_correct_and_complete": true,
+  "gates": {
+    "G5.1": "PASS for documented pilot; cold-cache startup and between-process variance unmeasured",
+    "G5.2": "PASS for descriptive scope: three held-out portable-reference tasks and one prior Core ML reference-identical completed response",
+    "G5.3": "PASS for local reproduction/evidence; final checksum recorded separately; clean-machine install remains untested",
+    "G5.4": "PASS: use portable CPU now, preserve Core ML baseline, investigate compiled-load reuse before further optimization"
+  },
+  "recommendation": "Do not replace portable CPU with current Core ML CPU implementation for practical inference. Preserve candidate6 and test persisted compiled-model loading in isolation; no speedup assumed.",
+  "next_experiment": "One sealed stateful group: measure compilation, fresh-process compiled reopening and state creation vs package loading. If useful, validate prediction and lifecycle before expanding. GPU/ANE remain later."
+}

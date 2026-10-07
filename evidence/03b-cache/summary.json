@@ -1,0 +1,45 @@
+{
+  "updated_at": "2026-09-22T19:34:18.518972+00:00",
+  "status": "CPU cache qualified on recorded local environment; Metal remains unqualified",
+  "device": "Apple M4 CPU",
+  "torch_version": "2.7.0",
+  "minimum_query_rows": 16,
+  "warmup_below_tokens": 16,
+  "original_acceptance_sha256": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+  "numerical_comparisons": 467,
+  "numerical_passed": 467,
+  "numerical_max_abs": 0.0,
+  "behavioral_and_summary_checks": 35,
+  "all_gate_checks_passed": true,
+  "extra_partition_cases": 12,
+  "extra_matched_prefix_comparisons": 137,
+  "extra_hidden_max_abs": 0.0,
+  "extra_score_max_abs": 0.0,
+  "warmup_lifecycle_checks": 8,
+  "warmup_lifecycle_passed": true,
+  "generation": {
+    "generated_tokens": 632,
+    "complete": true,
+    "finish_reason": "stop_token",
+    "stop_token_ids": [
+      151643,
+      151645
+    ],
+    "boxed_391_after_think": true,
+    "audits": 6,
+    "audit_max_score_abs": 0.0
+  },
+  "limitations": [
+    "Metal cache still fails original thresholds",
+    "Original NVIDIA runtime not executed",
+    "Published actor EOS conflict retained; explicit stop option used",
+    "Qualification is empirical for recorded inputs, Mac and Torch version"
+  ],
+  "sources": {
+    "portable/model.py": "6e204b9b4d08247a4441d2422800ca7b253f3cc8f9e4a855473830daa5042797",
+    "portable/generate.py": "35db80e5d932f772d54df6be71f3b22b612b955e1aa929257fa5cdfb155e2f0e",
+    "scripts/validate_portable.py": "c605ce97eb00a9fe681e19c23007db5f53bc7ba0a7b408084ba25757e0965d66",
+    "scripts/stress_cpu_cache.py": "96beec430699c691e30872cec857872dad34f081375ded785646f5d7295e3a0d",
+    "scripts/audit_cpu_generation.py": "15b232fdf6127cf62f3aacf76d6de28d2ba3c2e335ac6b1a796300ce2d9c6d9d"
+  }
+}

@@ -1,0 +1,3422 @@
+{
+  "CPU_ONLY": [
+    {
+      "max_abs": 256.0,
+      "rmse": 8.491283143292046,
+      "relative_rmse": 0.0001234318530122705,
+      "cosine": 0.999999992382291,
+      "name": "y",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 10519
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "round_0",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_1",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_2",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_3",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "round_4",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_5",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_6",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_7",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_8",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "round_9",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_10",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "round_11",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_12",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_13",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_14",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_15",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_16",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_17",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "name": "round_18",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_19",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_20",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "round_21",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_22",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "round_23",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "round_24",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.00000000000002,
+      "name": "round_25",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "round_26",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000595,
+      "name": "round_27",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_28",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_29",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_30",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_31",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "name": "round_32",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "round_33",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_34",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_35",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "round_36",
+      "shape": [
+        1,
+        32,
+        2
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_37",
+      "shape": [
+        1,
+        32,
+        2
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_38",
+      "shape": [
+        1,
+        32,
+        2
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999997,
+      "name": "round_39",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "round_40",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "round_41",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "name": "round_42",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_43",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "round_44",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "round_45",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_46",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_47",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_48",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 7.720404443770458e-05,
+      "relative_rmse": 1.268320765956619e-05,
+      "cosine": 0.9999999999195686,
+      "name": "round_49",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 1
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_50",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 7.720404443770458e-05,
+      "relative_rmse": 2.4760804897661847e-05,
+      "cosine": 0.9999999996934571,
+      "name": "round_51",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 1
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_52",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "name": "round_53",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "name": "round_54",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0078125,
+      "rmse": 3.860202221885229e-05,
+      "relative_rmse": 8.91598547169661e-06,
+      "cosine": 0.9999999999602541,
+      "name": "round_55",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 1
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.003312075234008842,
+      "relative_rmse": 5.2211289244253324e-05,
+      "cosine": 0.9999999986369961,
+      "name": "round_56",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 81
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_57",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.0013760496871285414,
+      "relative_rmse": 5.166214850950321e-05,
+      "cosine": 0.9999999986655137,
+      "name": "round_58",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 72
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.0023315110129518207,
+      "relative_rmse": 4.288612125199839e-05,
+      "cosine": 0.9999999990804069,
+      "name": "round_59",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 9
+    },
+    {
+      "max_abs": 0.00390625,
+      "rmse": 4.038897989674812e-05,
+      "relative_rmse": 4.0387763243325486e-05,
+      "cosine": 0.999999999184422,
+      "name": "round_60",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 9
+    },
+    {
+      "max_abs": 0.0625,
+      "rmse": 0.0008317367682281516,
+      "relative_rmse": 0.00012924130838480748,
+      "cosine": 0.9999999916488447,
+      "name": "round_61",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 102
+    },
+    {
+      "max_abs": 0.0078125,
+      "rmse": 3.8209460083318624e-05,
+      "relative_rmse": 2.9806613914000516e-05,
+      "cosine": 0.9999999995558505,
+      "name": "round_62",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 95
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.000524604058109381,
+      "relative_rmse": 0.00013484740923253217,
+      "cosine": 0.9999999909082967,
+      "name": "round_63",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 510
+    },
+    {
+      "max_abs": 0.01171875,
+      "rmse": 8.998259493074342e-05,
+      "relative_rmse": 1.402491187521481e-07,
+      "cosine": 1.000000000000138,
+      "name": "round_64",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 548
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.0012728536899302405,
+      "relative_rmse": 2.07916238165634e-07,
+      "cosine": 1.000000000000028,
+      "name": "round_65",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 533
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.00852606736825756,
+      "relative_rmse": 4.7568480434131323e-05,
+      "cosine": 0.9999999988686439,
+      "name": "round_66",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 7
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.0012970636987051161,
+      "relative_rmse": 2.070615864354628e-07,
+      "cosine": 1.0000000000000286,
+      "name": "round_67",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 526
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.010759782469828534,
+      "relative_rmse": 1.71494514909788e-06,
+      "cosine": 0.9999999999985305,
+      "name": "round_68",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 22
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 0.00018561497349321333,
+      "relative_rmse": 0.00018562421158487132,
+      "cosine": 0.9999999827779507,
+      "name": "round_69",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 41
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.011413466674889608,
+      "relative_rmse": 0.00038692351744172647,
+      "cosine": 0.999999925193543,
+      "name": "round_70",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 491
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.009227871746227136,
+      "relative_rmse": 0.0002298203870773884,
+      "cosine": 0.9999999735959154,
+      "name": "round_71",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 96
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.011130115219927038,
+      "relative_rmse": 0.0003643629137339553,
+      "cosine": 0.9999999336902996,
+      "name": "round_72",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 109
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.0004016692073976458,
+      "relative_rmse": 0.00040167228852133,
+      "cosine": 0.9999999193347845,
+      "name": "round_73",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 486
+    },
+    {
+      "max_abs": 0.0078125,
+      "rmse": 0.0002486696064967547,
+      "relative_rmse": 0.00024868068888850444,
+      "cosine": 0.9999999690790962,
+      "name": "round_74",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 89
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.00037966738815889113,
+      "relative_rmse": 0.0004138077858053413,
+      "cosine": 0.9999999143846078,
+      "name": "round_75",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 475
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 0.00012811866340372137,
+      "relative_rmse": 0.0003223467117103863,
+      "cosine": 0.9999999480577564,
+      "name": "round_76",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 198
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.0004185663998544363,
+      "relative_rmse": 0.0004186139281396937,
+      "cosine": 0.9999999123826011,
+      "name": "round_77",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 452
+    },
+    {
+      "max_abs": 0.0078125,
+      "rmse": 0.00022557232720899642,
+      "relative_rmse": 0.00024585059343986554,
+      "cosine": 0.9999999697792856,
+      "name": "round_78",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 87
+    },
+    {
+      "max_abs": 0.00390625,
+      "rmse": 5.27757710037057e-05,
+      "relative_rmse": 0.0001328542851096625,
+      "cosine": 0.9999999911809937,
+      "name": "round_79",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 25
+    },
+    {
+      "max_abs": 0.0078125,
+      "rmse": 0.00023399760247708567,
+      "relative_rmse": 0.00023404563444413983,
+      "cosine": 0.9999999726117441,
+      "name": "round_80",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 79
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.014052474124078063,
+      "relative_rmse": 0.0005980513506257009,
+      "cosine": 0.9999998212882457,
+      "name": "round_81",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 2171
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.008921712076325493,
+      "relative_rmse": 0.0006448537915762395,
+      "cosine": 0.9999997922675962,
+      "name": "round_82",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 1844
+    },
+    {
+      "max_abs": 0.5,
+      "rmse": 0.01659915426755024,
+      "relative_rmse": 0.0008303047469295905,
+      "cosine": 0.999999655402008,
+      "name": "round_83",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 1838
+    },
+    {
+      "max_abs": 0.001953125,
+      "rmse": 0.00019683246455807007,
+      "relative_rmse": 8.62129991074803e-05,
+      "cosine": 0.9999999962838232,
+      "name": "round_84",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 4
+    },
+    {
+      "max_abs": 0.00390625,
+      "rmse": 0.00026744265503181937,
+      "relative_rmse": 0.0005814777111655606,
+      "cosine": 0.9999998315345454,
+      "name": "round_85",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 3
+    },
+    {
+      "max_abs": 0.0078125,
+      "rmse": 0.0005348853100636387,
+      "relative_rmse": 0.0005814777111655606,
+      "cosine": 0.9999998315345454,
+      "name": "round_86",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 3
+    },
+    {
+      "max_abs": 0.75,
+      "rmse": 0.019289486554788304,
+      "relative_rmse": 0.0010882152128010832,
+      "cosine": 0.9999994087273364,
+      "name": "round_87",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 1979
+    },
+    {
+      "max_abs": 8.0,
+      "rmse": 0.5354220574174998,
+      "relative_rmse": 0.0015996699685703179,
+      "cosine": 0.9999987211769255,
+      "name": "round_88",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 8022
+    },
+    {
+      "max_abs": 4.0,
+      "rmse": 0.034413319870884834,
+      "relative_rmse": 1.8383336690646156e-06,
+      "cosine": 0.9999999999983108,
+      "name": "round_89",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 17
+    },
+    {
+      "max_abs": 8.0,
+      "rmse": 0.3153771918692313,
+      "relative_rmse": 0.001686895752112011,
+      "cosine": 0.9999985780092613,
+      "name": "round_90",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 7529
+    },
+    {
+      "max_abs": 16.0,
+      "rmse": 0.5483325662240379,
+      "relative_rmse": 2.9289220375048766e-05,
+      "cosine": 0.9999999995710707,
+      "name": "round_91",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 2389
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 0.0009674163629921237,
+      "relative_rmse": 0.0009673771661650493,
+      "cosine": 0.9999995320986361,
+      "name": "round_92",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 2347
+    },
+    {
+      "max_abs": 0.0625,
+      "rmse": 0.007979793880583251,
+      "relative_rmse": 0.001384715026368628,
+      "cosine": 0.9999990413088559,
+      "name": "round_93",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 12506
+    },
+    {
+      "max_abs": 0.0625,
+      "rmse": 0.0010635849325274342,
+      "relative_rmse": 0.0019018557356430999,
+      "cosine": 0.9999981914812108,
+      "name": "round_94",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 10875
+    },
+    {
+      "max_abs": 0.0625,
+      "rmse": 0.005805569322495022,
+      "relative_rmse": 0.001800893327257207,
+      "cosine": 0.9999983784071733,
+      "name": "round_95",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 26130
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.007708247312571634,
+      "relative_rmse": 0.0015730047408620926,
+      "cosine": 0.9999987632619848,
+      "name": "round_96",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 30479
+    },
+    {
+      "max_abs": 2.0,
+      "rmse": 0.09785424163377959,
+      "relative_rmse": 0.0021422157025081903,
+      "cosine": 0.9999977083646786,
+      "name": "round_97",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 13244
+    },
+    {
+      "max_abs": 64.0,
+      "rmse": 1.6342918648942284,
+      "relative_rmse": 3.266759750102564e-05,
+      "cosine": 0.9999999994664157,
+      "name": "round_98",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 2150
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.004701983893221636,
+      "relative_rmse": 0.002355109729723643,
+      "cosine": 0.9999972297517501,
+      "name": "round_99",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 11964
+    },
+    {
+      "max_abs": 64.0,
+      "rmse": 1.6361975664062538,
+      "relative_rmse": 3.2705690587353835e-05,
+      "cosine": 0.9999999994651722,
+      "name": "round_100",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 2194
+    },
+    {
+      "max_abs": 0.046875,
+      "rmse": 0.0011176207096213636,
+      "relative_rmse": 0.0011176415356723536,
+      "cosine": 0.9999993757104727,
+      "name": "round_101",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 2272
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.09687814257761873,
+      "relative_rmse": 0.0017230978822433873,
+      "cosine": 0.9999985165275159,
+      "name": "round_102",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 8943
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.10068077688447077,
+      "relative_rmse": 0.001445176538920658,
+      "cosine": 0.9999989561891984,
+      "name": "round_103",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 1612
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.10269165724560175,
+      "relative_rmse": 0.0015038037614087522,
+      "cosine": 0.999998869654558,
+      "name": "round_104",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 1622
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.0020053360134864233,
+      "relative_rmse": 0.0020053642990100697,
+      "cosine": 0.9999979892940499,
+      "name": "round_105",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 9066
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 0.0017626213841691186,
+      "relative_rmse": 0.0017625848560869723,
+      "cosine": 0.9999984468510228,
+      "name": "round_106",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 1558
+    },
+    {
+      "max_abs": 1.5,
+      "rmse": 0.09533680181854437,
+      "relative_rmse": 0.001842766459358414,
+      "cosine": 0.9999983021543521,
+      "name": "round_107",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 10227
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.07399775284812248,
+      "relative_rmse": 0.0018989571454082407,
+      "cosine": 0.9999981969983562,
+      "name": "round_108",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 9883
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.10307521140280392,
+      "relative_rmse": 0.0033113133198049115,
+      "cosine": 0.9999945175897391,
+      "name": "round_109",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 9591
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 0.0016702485462145851,
+      "relative_rmse": 0.0010296592522701699,
+      "cosine": 0.9999994699462081,
+      "name": "round_110",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 23
+    },
+    {
+      "max_abs": 0.001953125,
+      "rmse": 0.0002632306964458963,
+      "relative_rmse": 0.0007536861524239056,
+      "cosine": 0.9999997160640561,
+      "name": "round_111",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 10
+    },
+    {
+      "max_abs": 0.00390625,
+      "rmse": 0.0005264613928917927,
+      "relative_rmse": 0.0007536861524239056,
+      "cosine": 0.9999997160640561,
+      "name": "round_112",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 10
+    },
+    {
+      "max_abs": 2.0,
+      "rmse": 0.06988531638686415,
+      "relative_rmse": 0.004424917735080225,
+      "cosine": 0.9999902121728164,
+      "name": "round_113",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 9873
+    },
+    {
+      "max_abs": 32.0,
+      "rmse": 3.036731075398433,
+      "relative_rmse": 0.004819649169274017,
+      "cosine": 0.9999883888754507,
+      "name": "round_114",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 20680
+    },
+    {
+      "max_abs": 64.0,
+      "rmse": 2.1437500067044364,
+      "relative_rmse": 3.344239772514737e-05,
+      "cosine": 0.9999999994408042,
+      "name": "round_115",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 2047
+    },
+    {
+      "max_abs": 20.0,
+      "rmse": 2.3850954073287314,
+      "relative_rmse": 0.005100699461180966,
+      "cosine": 0.9999869943692933,
+      "name": "round_116",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 19339
+    },
+    {
+      "max_abs": 64.0,
+      "rmse": 4.474410799866118,
+      "relative_rmse": 6.979411578646896e-05,
+      "cosine": 0.9999999975643907,
+      "name": "round_117",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 8970
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.002152841446707376,
+      "relative_rmse": 0.002152856649061117,
+      "cosine": 0.9999976827062337,
+      "name": "round_118",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 8856
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.011852356458925312,
+      "relative_rmse": 0.0026732795188768852,
+      "cosine": 0.9999964268476457,
+      "name": "round_119",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 35893
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.004105612736133791,
+      "relative_rmse": 0.002954788264160706,
+      "cosine": 0.9999956351343307,
+      "name": "round_120",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 31226
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.011018246118416597,
+      "relative_rmse": 0.0030175974477023634,
+      "cosine": 0.9999954473565655,
+      "name": "round_121",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 43666
+    },
+    {
+      "max_abs": 4.0,
+      "rmse": 0.03228387007259976,
+      "relative_rmse": 0.0006980985905332551,
+      "cosine": 0.9999997563316513,
+      "name": "round_122",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 52461
+    },
+    {
+      "max_abs": 16.0,
+      "rmse": 0.4974576391742128,
+      "relative_rmse": 0.0011039947469185997,
+      "cosine": 0.9999993906040583,
+      "name": "round_123",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 16815
+    },
+    {
+      "max_abs": 128.0,
+      "rmse": 4.960598367453373,
+      "relative_rmse": 7.231840305996458e-05,
+      "cosine": 0.9999999973850264,
+      "name": "round_124",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 8678
+    },
+    {
+      "max_abs": 128.0,
+      "rmse": 5.034512631545563,
+      "relative_rmse": 0.0011386823340243538,
+      "cosine": 0.9999993517221955,
+      "name": "round_125",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 15786
+    },
+    {
+      "max_abs": 256.0,
+      "rmse": 8.491283143292046,
+      "relative_rmse": 0.0001234318530122705,
+      "cosine": 0.999999992382291,
+      "name": "round_126",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 10519
+    }
+  ],
+  "CPU_AND_GPU": [
+    {
+      "max_abs": 8192.0,
+      "rmse": 95.9878467839193,
+      "relative_rmse": 0.0013949882564254458,
+      "cosine": 0.9999990531077892,
+      "name": "y",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 28709
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "name": "round_0",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_1",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.00390625,
+      "rmse": 6.103515625e-05,
+      "relative_rmse": 8.378326277693411e-06,
+      "cosine": 0.9999999999649019,
+      "name": "round_2",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 2
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_3",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "name": "round_4",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.00390625,
+      "rmse": 6.291359902370698e-05,
+      "relative_rmse": 6.291291035397613e-05,
+      "cosine": 0.9999999980211965,
+      "name": "round_5",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 4
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.00022953920045402663,
+      "relative_rmse": 0.0002548616429425556,
+      "cosine": 0.99999996757636,
+      "name": "round_6",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 86
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 0.000196472484084696,
+      "relative_rmse": 0.00045223978231756463,
+      "cosine": 0.9999998984906369,
+      "name": "round_7",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 203
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.0011801408513138507,
+      "relative_rmse": 0.0011799642479619118,
+      "cosine": 0.9999993323089207,
+      "name": "round_8",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 1469
+    },
+    {
+      "max_abs": 0.0078125,
+      "rmse": 0.0001957054952755838,
+      "relative_rmse": 0.00022665714259995472,
+      "cosine": 0.9999999743439784,
+      "name": "round_9",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 20
+    },
+    {
+      "max_abs": 0.0078125,
+      "rmse": 0.0001339648900579418,
+      "relative_rmse": 0.0002657573647762857,
+      "cosine": 0.9999999647580162,
+      "name": "round_10",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 41
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 0.001430145696228229,
+      "relative_rmse": 0.0014298217443600523,
+      "cosine": 0.9999990410832095,
+      "name": "round_11",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 343
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.005513488088812285,
+      "relative_rmse": 0.0010736926159705068,
+      "cosine": 0.9999994239879395,
+      "name": "round_12",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 4367
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.0017566764862536096,
+      "relative_rmse": 0.0008156072819016253,
+      "cosine": 0.9999996678451886,
+      "name": "round_13",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 821
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.008736631456701015,
+      "relative_rmse": 0.0024843326982596104,
+      "cosine": 0.9999970932064979,
+      "name": "round_14",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 7124
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_15",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_16",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_17",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.1875,
+      "rmse": 0.011720265026031695,
+      "relative_rmse": 0.00224755753910974,
+      "cosine": 0.999997608110064,
+      "name": "round_18",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 7003
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.06353667851971498,
+      "relative_rmse": 0.002442182531272041,
+      "cosine": 0.9999971322834778,
+      "name": "round_19",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 17320
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "round_20",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 0
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.010234794868482527,
+      "relative_rmse": 0.0026332460936043236,
+      "cosine": 0.9999966346952814,
+      "name": "round_21",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 15922
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.011215574848960347,
+      "relative_rmse": 0.00480460847947082,
+      "cosine": 0.9999885683338456,
+      "name": "round_22",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 13642
+    },
+    {
+      "max_abs": 0.1005859375,
+      "rmse": 0.00531668042925532,
+      "relative_rmse": 0.005316734107731338,
+      "cosine": 0.9999858674942714,
+      "name": "round_23",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 15370
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.021977188136286133,
+      "relative_rmse": 0.003183707353259331,
+      "cosine": 0.9999952718304075,
+      "name": "round_24",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 45216
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.005400926096998634,
+      "relative_rmse": 0.007844446601229575,
+      "cosine": 0.9999692450092149,
+      "name": "round_25",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 42119
+    },
+    {
+      "max_abs": 0.140625,
+      "rmse": 0.017539248546641083,
+      "relative_rmse": 0.008322404825747552,
+      "cosine": 0.9999654627729498,
+      "name": "round_26",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 87047
+    },
+    {
+      "max_abs": 8.0,
+      "rmse": 0.040333151197736665,
+      "relative_rmse": 0.006568966615417542,
+      "cosine": 0.9999828782869733,
+      "name": "round_27",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 91074
+    },
+    {
+      "max_abs": 4.0,
+      "rmse": 0.34717208132233496,
+      "relative_rmse": 0.00666811188570753,
+      "cosine": 0.999981558868922,
+      "name": "round_28",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 31857
+    },
+    {
+      "max_abs": 1.359375,
+      "rmse": 0.0639850854383224,
+      "relative_rmse": 0.005011988911406209,
+      "cosine": 0.99998755591598,
+      "name": "round_29",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 12780
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.018739531425477265,
+      "relative_rmse": 0.007020073446609731,
+      "cosine": 0.9999792871513002,
+      "name": "round_30",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 30358
+    },
+    {
+      "max_abs": 1.34375,
+      "rmse": 0.0705192791427793,
+      "relative_rmse": 0.005390487104601245,
+      "cosine": 0.9999858698817989,
+      "name": "round_31",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 20482
+    },
+    {
+      "max_abs": 0.099609375,
+      "rmse": 0.0058978839667818755,
+      "relative_rmse": 0.005897874463694117,
+      "cosine": 0.9999826083759151,
+      "name": "round_32",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 22149
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.019176500623961572,
+      "relative_rmse": 0.005029948515741643,
+      "cosine": 0.9999873670728807,
+      "name": "round_33",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 27883
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.020607632661625148,
+      "relative_rmse": 0.004009853086637972,
+      "cosine": 0.9999919605068834,
+      "name": "round_34",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 5116
+    },
+    {
+      "max_abs": 0.078125,
+      "rmse": 0.019288539466537937,
+      "relative_rmse": 0.0050300485739817585,
+      "cosine": 0.9999873523795343,
+      "name": "round_35",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 5501
+    },
+    {
+      "max_abs": 0.0078125,
+      "rmse": 0.0028488612771573464,
+      "relative_rmse": 0.0036325509063500306,
+      "cosine": 0.999993545723945,
+      "name": "round_36",
+      "shape": [
+        1,
+        32,
+        2
+      ],
+      "different_elements": 31
+    },
+    {
+      "max_abs": 0.001953125,
+      "rmse": 0.0006686066375795485,
+      "relative_rmse": 0.0013266267056843606,
+      "cosine": 0.9999991200590397,
+      "name": "round_37",
+      "shape": [
+        1,
+        32,
+        2
+      ],
+      "different_elements": 9
+    },
+    {
+      "max_abs": 0.00390625,
+      "rmse": 0.001337213275159097,
+      "relative_rmse": 0.0013266267056843606,
+      "cosine": 0.9999991200590397,
+      "name": "round_38",
+      "shape": [
+        1,
+        32,
+        2
+      ],
+      "different_elements": 9
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.009169201553642101,
+      "relative_rmse": 0.0015505949159365694,
+      "cosine": 0.9999987987854244,
+      "name": "round_39",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 1020
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.028094605039096516,
+      "relative_rmse": 0.003838401004330356,
+      "cosine": 0.9999929271137662,
+      "name": "round_40",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 4361
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.005684368055446105,
+      "relative_rmse": 0.005684337904228287,
+      "cosine": 0.999983844049495,
+      "name": "round_41",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 27877
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.004534464223169608,
+      "relative_rmse": 0.0045342400407503754,
+      "cosine": 0.9999897202811527,
+      "name": "round_42",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 5047
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.005283575368662347,
+      "relative_rmse": 0.0060165200274203,
+      "cosine": 0.9999819009538252,
+      "name": "round_43",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 27626
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.002264799978022409,
+      "relative_rmse": 0.004735793188795225,
+      "cosine": 0.9999887874067535,
+      "name": "round_44",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 11682
+    },
+    {
+      "max_abs": 0.046875,
+      "rmse": 0.005934592770077781,
+      "relative_rmse": 0.005933119544918621,
+      "cosine": 0.9999824525378893,
+      "name": "round_45",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 28028
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.0041795552214769485,
+      "relative_rmse": 0.004874733387155786,
+      "cosine": 0.9999881184256824,
+      "name": "round_46",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 4991
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 0.0019318018768361735,
+      "relative_rmse": 0.0037548952643203216,
+      "cosine": 0.9999929510412532,
+      "name": "round_47",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 1947
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.004838657133393985,
+      "relative_rmse": 0.004837864436992723,
+      "cosine": 0.9999883485112339,
+      "name": "round_48",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 5100
+    },
+    {
+      "max_abs": 0.375,
+      "rmse": 0.028031585621391908,
+      "relative_rmse": 0.004601059996296501,
+      "cosine": 0.9999897863358174,
+      "name": "round_49",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 25332
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.022763404601788967,
+      "relative_rmse": 0.004669130620179866,
+      "cosine": 0.9999895233353153,
+      "name": "round_50",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 25040
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.02255055913159238,
+      "relative_rmse": 0.007224076544226571,
+      "cosine": 0.9999745383334084,
+      "name": "round_51",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 21366
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.01601248101887101,
+      "relative_rmse": 0.006175396845675283,
+      "cosine": 0.9999809321139803,
+      "name": "round_52",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 225
+    },
+    {
+      "max_abs": 0.01171875,
+      "rmse": 0.002111368617238084,
+      "relative_rmse": 0.003571198395765498,
+      "cosine": 0.999993652766229,
+      "name": "round_53",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 120
+    },
+    {
+      "max_abs": 0.0234375,
+      "rmse": 0.004222737234476168,
+      "relative_rmse": 0.003571198395765498,
+      "cosine": 0.999993652766229,
+      "name": "round_54",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 120
+    },
+    {
+      "max_abs": 0.5,
+      "rmse": 0.029886695959698558,
+      "relative_rmse": 0.006896165099017408,
+      "cosine": 0.9999766870772495,
+      "name": "round_55",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 27464
+    },
+    {
+      "max_abs": 3.0,
+      "rmse": 0.4452554631375668,
+      "relative_rmse": 0.007012655322845406,
+      "cosine": 0.9999757943509733,
+      "name": "round_56",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 31905
+    },
+    {
+      "max_abs": 4.8125,
+      "rmse": 0.25934586459731473,
+      "relative_rmse": 0.005516490609868892,
+      "cosine": 0.9999852257975138,
+      "name": "round_57",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 19942
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.19273409861494434,
+      "relative_rmse": 0.007229373014634251,
+      "cosine": 0.9999742605728456,
+      "name": "round_58",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 30557
+    },
+    {
+      "max_abs": 4.0,
+      "rmse": 0.35522923954884533,
+      "relative_rmse": 0.0065227321062096685,
+      "cosine": 0.9999802151123653,
+      "name": "round_59",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 27911
+    },
+    {
+      "max_abs": 0.09375,
+      "rmse": 0.007012231015022559,
+      "relative_rmse": 0.007012115678132823,
+      "cosine": 0.9999754155417727,
+      "name": "round_60",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 29539
+    },
+    {
+      "max_abs": 0.5,
+      "rmse": 0.03165525123683325,
+      "relative_rmse": 0.004919280095386392,
+      "cosine": 0.9999879056740819,
+      "name": "round_61",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 64839
+    },
+    {
+      "max_abs": 0.1484375,
+      "rmse": 0.005325936485631319,
+      "relative_rmse": 0.0041534608061849585,
+      "cosine": 0.9999914150308274,
+      "name": "round_62",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 62614
+    },
+    {
+      "max_abs": 0.875,
+      "rmse": 0.03106734515485094,
+      "relative_rmse": 0.007984349415069491,
+      "cosine": 0.9999681347673682,
+      "name": "round_63",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 87158
+    },
+    {
+      "max_abs": 8.0,
+      "rmse": 0.042607522865887024,
+      "relative_rmse": 6.640915104032845e-05,
+      "cosine": 0.9999999977950641,
+      "name": "round_64",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 94726
+    },
+    {
+      "max_abs": 64.0,
+      "rmse": 0.6445413007088424,
+      "relative_rmse": 0.0001052835695711424,
+      "cosine": 0.9999999944577489,
+      "name": "round_65",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 32748
+    },
+    {
+      "max_abs": 12.0,
+      "rmse": 1.2116557648690423,
+      "relative_rmse": 0.0067481396870447425,
+      "cosine": 0.9999787457808228,
+      "name": "round_66",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 26325
+    },
+    {
+      "max_abs": 256.0,
+      "rmse": 2.9062560363600345,
+      "relative_rmse": 0.0004639323479761591,
+      "cosine": 0.9999998931862961,
+      "name": "round_67",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 32676
+    },
+    {
+      "max_abs": 256.0,
+      "rmse": 4.094382805795329,
+      "relative_rmse": 0.00065254058076684,
+      "cosine": 0.9999997891103714,
+      "name": "round_68",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 27131
+    },
+    {
+      "max_abs": 0.09375,
+      "rmse": 0.006996466394080913,
+      "relative_rmse": 0.006996472077512636,
+      "cosine": 0.9999755246101587,
+      "name": "round_69",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 28948
+    },
+    {
+      "max_abs": 1.125,
+      "rmse": 0.1724801886772649,
+      "relative_rmse": 0.0058468974176484455,
+      "cosine": 0.9999829069950521,
+      "name": "round_70",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 28708
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.18042813408444056,
+      "relative_rmse": 0.004493262112899311,
+      "cosine": 0.9999899067500826,
+      "name": "round_71",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 5303
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.1818713069357505,
+      "relative_rmse": 0.005953545804383074,
+      "cosine": 0.9999822777633538,
+      "name": "round_72",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 5780
+    },
+    {
+      "max_abs": 0.03515625,
+      "rmse": 0.006276402389863413,
+      "relative_rmse": 0.006276473887654396,
+      "cosine": 0.9999803030957346,
+      "name": "round_73",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 28530
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.00496243148002525,
+      "relative_rmse": 0.00496255007579071,
+      "cosine": 0.9999876865122753,
+      "name": "round_74",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 5268
+    },
+    {
+      "max_abs": 0.03515625,
+      "rmse": 0.005912105124570932,
+      "relative_rmse": 0.006443543712439629,
+      "cosine": 0.999979240175762,
+      "name": "round_75",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 28257
+    },
+    {
+      "max_abs": 0.0234375,
+      "rmse": 0.0022235192028336125,
+      "relative_rmse": 0.005594381094655318,
+      "cosine": 0.9999843515505937,
+      "name": "round_76",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 12837
+    },
+    {
+      "max_abs": 0.03515625,
+      "rmse": 0.006478352751536177,
+      "relative_rmse": 0.00647762561701518,
+      "cosine": 0.9999790406109567,
+      "name": "round_77",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 28664
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.0047129747564776,
+      "relative_rmse": 0.005136410272167252,
+      "cosine": 0.9999868091290308,
+      "name": "round_78",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 5198
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 0.0016919668671290563,
+      "relative_rmse": 0.004259555669274028,
+      "cosine": 0.9999909310945302,
+      "name": "round_79",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 2156
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.005216276472840474,
+      "relative_rmse": 0.005215783337447747,
+      "cosine": 0.9999864384048635,
+      "name": "round_80",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 5293
+    },
+    {
+      "max_abs": 0.75,
+      "rmse": 0.12866422889406937,
+      "relative_rmse": 0.005475914184597281,
+      "cosine": 0.9999850089058749,
+      "name": "round_81",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 27693
+    },
+    {
+      "max_abs": 0.75,
+      "rmse": 0.08827349564104173,
+      "relative_rmse": 0.006381824532633711,
+      "cosine": 0.9999796732416497,
+      "name": "round_82",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 31108
+    },
+    {
+      "max_abs": 1.0,
+      "rmse": 0.12433376936930245,
+      "relative_rmse": 0.006216641445732261,
+      "cosine": 0.999980753381915,
+      "name": "round_83",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 26886
+    },
+    {
+      "max_abs": 0.109375,
+      "rmse": 0.014449372445769543,
+      "relative_rmse": 0.006321702500654836,
+      "cosine": 0.9999806337805277,
+      "name": "round_84",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 206
+    },
+    {
+      "max_abs": 0.005859375,
+      "rmse": 0.0014625734119278777,
+      "relative_rmse": 0.0031802854774640025,
+      "cosine": 0.999994953437848,
+      "name": "round_85",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 133
+    },
+    {
+      "max_abs": 0.01171875,
+      "rmse": 0.0029251468238557553,
+      "relative_rmse": 0.0031802854774640025,
+      "cosine": 0.999994953437848,
+      "name": "round_86",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 133
+    },
+    {
+      "max_abs": 1.5,
+      "rmse": 0.13241060865974955,
+      "relative_rmse": 0.007465997003761703,
+      "cosine": 0.9999722345770286,
+      "name": "round_87",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 30156
+    },
+    {
+      "max_abs": 16.0,
+      "rmse": 2.4775721139816356,
+      "relative_rmse": 0.007398116970442388,
+      "cosine": 0.9999727529898512,
+      "name": "round_88",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 31868
+    },
+    {
+      "max_abs": 1024.0,
+      "rmse": 15.878044736630658,
+      "relative_rmse": 0.0008481222468757311,
+      "cosine": 0.9999996438143208,
+      "name": "round_89",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 25669
+    },
+    {
+      "max_abs": 9.0,
+      "rmse": 1.4200531122885318,
+      "relative_rmse": 0.007591212305006771,
+      "cosine": 0.9999713169093066,
+      "name": "round_90",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 31152
+    },
+    {
+      "max_abs": 1024.0,
+      "rmse": 16.460245437539776,
+      "relative_rmse": 0.0008791443497107118,
+      "cosine": 0.9999996177341669,
+      "name": "round_91",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 28377
+    },
+    {
+      "max_abs": 0.078125,
+      "rmse": 0.007508461608062095,
+      "relative_rmse": 0.007508993188879352,
+      "cosine": 0.9999718162294056,
+      "name": "round_92",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 30009
+    },
+    {
+      "max_abs": 0.140625,
+      "rmse": 0.030868898972803743,
+      "relative_rmse": 0.005357807918985801,
+      "cosine": 0.9999856732922466,
+      "name": "round_93",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 66769
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.006163449886656477,
+      "relative_rmse": 0.01101776575908344,
+      "cosine": 0.9999393335910004,
+      "name": "round_94",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 64015
+    },
+    {
+      "max_abs": 0.1708984375,
+      "rmse": 0.028549448611933186,
+      "relative_rmse": 0.008856884784140276,
+      "cosine": 0.9999607847290799,
+      "name": "round_95",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 84428
+    },
+    {
+      "max_abs": 4.0,
+      "rmse": 0.03410125192128322,
+      "relative_rmse": 0.006947779012061271,
+      "cosine": 0.9999771686901494,
+      "name": "round_96",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 92753
+    },
+    {
+      "max_abs": 4.0,
+      "rmse": 0.329967516277477,
+      "relative_rmse": 0.0072123252461396,
+      "cosine": 0.9999752982050107,
+      "name": "round_97",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 32873
+    },
+    {
+      "max_abs": 4096.0,
+      "rmse": 46.65777638123486,
+      "relative_rmse": 0.0009325572875397866,
+      "cosine": 0.9999995685848784,
+      "name": "round_98",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 26911
+    },
+    {
+      "max_abs": 0.125,
+      "rmse": 0.015110223264259573,
+      "relative_rmse": 0.007556104668873456,
+      "cosine": 0.9999728476007375,
+      "name": "round_99",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 31362
+    },
+    {
+      "max_abs": 4096.0,
+      "rmse": 46.65909789811864,
+      "relative_rmse": 0.0009325837078889137,
+      "cosine": 0.9999995685604318,
+      "name": "round_100",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 26916
+    },
+    {
+      "max_abs": 0.078125,
+      "rmse": 0.007748359450857979,
+      "relative_rmse": 0.007748608650837705,
+      "cosine": 0.9999699792734613,
+      "name": "round_101",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 29549
+    },
+    {
+      "max_abs": 2.125,
+      "rmse": 0.40690869644120636,
+      "relative_rmse": 0.007237963171610161,
+      "cosine": 0.9999738073894311,
+      "name": "round_102",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 30523
+    },
+    {
+      "max_abs": 2.0,
+      "rmse": 0.42320780361023325,
+      "relative_rmse": 0.006074887792894729,
+      "cosine": 0.9999815477568283,
+      "name": "round_103",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 5789
+    },
+    {
+      "max_abs": 2.0,
+      "rmse": 0.4296139909332629,
+      "relative_rmse": 0.00629168182157014,
+      "cosine": 0.9999802093503984,
+      "name": "round_104",
+      "shape": [
+        1,
+        32,
+        256
+      ],
+      "different_elements": 5870
+    },
+    {
+      "max_abs": 0.04296875,
+      "rmse": 0.0076476372925308,
+      "relative_rmse": 0.007647684383477991,
+      "cosine": 0.9999707564296607,
+      "name": "round_105",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 30315
+    },
+    {
+      "max_abs": 0.03125,
+      "rmse": 0.006712300306247891,
+      "relative_rmse": 0.006712041710593909,
+      "cosine": 0.999977474268448,
+      "name": "round_106",
+      "shape": [
+        1,
+        32,
+        2,
+        128
+      ],
+      "different_elements": 5710
+    },
+    {
+      "max_abs": 2.8671875,
+      "rmse": 0.3102557276674661,
+      "relative_rmse": 0.0059972599791772935,
+      "cosine": 0.999982019477579,
+      "name": "round_107",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 28025
+    },
+    {
+      "max_abs": 2.25,
+      "rmse": 0.26829631191081893,
+      "relative_rmse": 0.006886983247971024,
+      "cosine": 0.9999763291753527,
+      "name": "round_108",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 30785
+    },
+    {
+      "max_abs": 2.0,
+      "rmse": 0.26439985382049,
+      "relative_rmse": 0.008486295271616037,
+      "cosine": 0.9999643672489826,
+      "name": "round_109",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 26440
+    },
+    {
+      "max_abs": 0.015625,
+      "rmse": 0.006981395432580451,
+      "relative_rmse": 0.004305640326591043,
+      "cosine": 0.9999908274184108,
+      "name": "round_110",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 176
+    },
+    {
+      "max_abs": 0.00390625,
+      "rmse": 0.0011868160185338121,
+      "relative_rmse": 0.0033971703975420407,
+      "cosine": 0.999994262858964,
+      "name": "round_111",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 134
+    },
+    {
+      "max_abs": 0.0078125,
+      "rmse": 0.0023736320370676242,
+      "relative_rmse": 0.0033971703975420407,
+      "cosine": 0.999994262858964,
+      "name": "round_112",
+      "shape": [
+        1,
+        32,
+        10
+      ],
+      "different_elements": 134
+    },
+    {
+      "max_abs": 2.0,
+      "rmse": 0.16053810522847686,
+      "relative_rmse": 0.010157176687528769,
+      "cosine": 0.9999487117619047,
+      "name": "round_113",
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "different_elements": 30118
+    },
+    {
+      "max_abs": 40.0,
+      "rmse": 6.2715032284086245,
+      "relative_rmse": 0.009947295932052897,
+      "cosine": 0.9999507556579594,
+      "name": "round_114",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 34027
+    },
+    {
+      "max_abs": 8192.0,
+      "rmse": 87.24922920983559,
+      "relative_rmse": 0.0013607504456582447,
+      "cosine": 0.9999991039507099,
+      "name": "round_115",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 26109
+    },
+    {
+      "max_abs": 32.0,
+      "rmse": 4.765495530765159,
+      "relative_rmse": 0.010184449012361131,
+      "cosine": 0.9999483941917666,
+      "name": "round_116",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 32779
+    },
+    {
+      "max_abs": 8192.0,
+      "rmse": 87.6311188739481,
+      "relative_rmse": 0.0013665779304854176,
+      "cosine": 0.9999990962996301,
+      "name": "round_117",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 29114
+    },
+    {
+      "max_abs": 0.09375,
+      "rmse": 0.008207019645398664,
+      "relative_rmse": 0.008207161957545697,
+      "cosine": 0.9999663210480799,
+      "name": "round_118",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 31069
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.03466099382924583,
+      "relative_rmse": 0.007817549460320077,
+      "cosine": 0.9999694425222039,
+      "name": "round_119",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 81029
+    },
+    {
+      "max_abs": 0.25,
+      "rmse": 0.014430655475049485,
+      "relative_rmse": 0.010384085585178374,
+      "cosine": 0.999946093098415,
+      "name": "round_120",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 76400
+    },
+    {
+      "max_abs": 0.1875,
+      "rmse": 0.035050812036782536,
+      "relative_rmse": 0.009599245484363162,
+      "cosine": 0.9999539262006057,
+      "name": "round_121",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 86753
+    },
+    {
+      "max_abs": 8.0,
+      "rmse": 0.09905277217773907,
+      "relative_rmse": 0.002141528407501212,
+      "cosine": 0.9999977214536777,
+      "name": "round_122",
+      "shape": [
+        1,
+        32,
+        3328
+      ],
+      "different_elements": 95337
+    },
+    {
+      "max_abs": 32.0,
+      "rmse": 1.1845884338966737,
+      "relative_rmse": 0.0026282699045133673,
+      "cosine": 0.9999965774453989,
+      "name": "round_123",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 30964
+    },
+    {
+      "max_abs": 8192.0,
+      "rmse": 94.18782252547506,
+      "relative_rmse": 0.0013728147832301441,
+      "cosine": 0.9999990827109068,
+      "name": "round_124",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 28695
+    },
+    {
+      "max_abs": 256.0,
+      "rmse": 12.425958916804847,
+      "relative_rmse": 0.0028098117564841862,
+      "cosine": 0.9999960785722136,
+      "name": "round_125",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 29746
+    },
+    {
+      "max_abs": 8192.0,
+      "rmse": 95.9878467839193,
+      "relative_rmse": 0.0013949882564254458,
+      "cosine": 0.9999990531077892,
+      "name": "round_126",
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "different_elements": 28709
+    }
+  ]
+}

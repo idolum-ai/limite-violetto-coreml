@@ -1,0 +1,45 @@
+{
+  "status": "completed",
+  "passed": true,
+  "builder_sha256": "2b5fdc56e178f620f032d84785badd41ed13d31c738b109b348258125c37748d",
+  "helper_sha256": "63312cd419fb52638ce93aa1fc4f4a4d37e510c53a9166f0272cbefd0b4f7c70",
+  "native_compile_load_predict": false,
+  "package_artifact_created": false,
+  "unknown_site_rejected": true,
+  "cases": [
+    {
+      "selected_sites": "all",
+      "passed": true,
+      "original_round_count": 131,
+      "replaced_round_count": 131,
+      "remaining_round_count": 0,
+      "unchanged_operation_count": 42367,
+      "all_other_operations_byte_identical": true,
+      "all_non_operation_metadata_identical": true,
+      "original_output_names_and_types_preserved": true,
+      "weights_state_interfaces_and_state_operations_unchanged": true,
+      "only_allowlisted_pure_operations_inserted": true,
+      "topological_references_valid": true,
+      "numerical_qualification": "not performed by structural builder",
+      "domain": "Finite FP32 quotient inputs; full Q exponent/step computation unchanged; numerical/domain gates separate"
+    },
+    {
+      "selected_sites": [
+        "var_1623"
+      ],
+      "passed": true,
+      "original_round_count": 131,
+      "replaced_round_count": 1,
+      "remaining_round_count": 130,
+      "unchanged_operation_count": 42497,
+      "all_other_operations_byte_identical": true,
+      "all_non_operation_metadata_identical": true,
+      "original_output_names_and_types_preserved": true,
+      "weights_state_interfaces_and_state_operations_unchanged": true,
+      "only_allowlisted_pure_operations_inserted": true,
+      "topological_references_valid": true,
+      "numerical_qualification": "not performed by structural builder",
+      "domain": "Finite FP32 quotient inputs; full Q exponent/step computation unchanged; numerical/domain gates separate"
+    }
+  ]
+}

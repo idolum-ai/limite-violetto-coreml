@@ -1,0 +1,28 @@
+{
+  "build": "evidence/06g-gpu-residual/key-taps-1/results.json",
+  "diagonal_stages": [
+    "x_207",
+    "var_14339",
+    "var_14340",
+    "k_49"
+  ],
+  "pins": {
+    "evidence/06g-gpu-residual/key-counterfactual-design.md": "322852b7a8d8109400e4a69d1e79015136d1c2e9ed5a4c974ca54383b40cef37",
+    "evidence/06g-gpu-residual/key-replay-1/results.json": "48e5dadf50cfc54c17bb3a3cb50b29e22c2bae3ab9f13234b081756db191cba5",
+    "evidence/06g-gpu-residual/key-taps-1/results.json": "21999d43760669dae89a634adab6e3457d2bb577d5f20c2e8bafe3400c549e5b"
+  },
+  "replay": "evidence/06g-gpu-residual/key-replay-1/results.json",
+  "required_chunks": [
+    0,
+    1
+  ],
+  "required_native_calls": 8,
+  "required_policies": [
+    "CPU",
+    "GPU"
+  ],
+  "scope": "offline saved-key normalization counterfactual; no native inference",
+  "script_sha256": "db6a83f6a6a7b72b3758b5892b02383b6f5ca01ec49d308cf5d2090f24b428c4",
+  "status": "frozen_before_run",
+  "warm_substitution": "CPU var_14324 into GPU value_41 and step_149"
+}

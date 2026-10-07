@@ -1,0 +1,1476 @@
+{
+  "status": "complete",
+  "scope": "pure Torch composed empirical policy, not Core ML qualification",
+  "fixtures": {
+    "tiny_33": [
+      87555,
+      130664,
+      114854,
+      100469,
+      143356,
+      6761,
+      11215,
+      138112,
+      98678,
+      21650,
+      145612,
+      50488,
+      87005,
+      147667,
+      80852,
+      105058
+    ],
+    "tiny_15": [
+      87555,
+      130664,
+      114854,
+      100469,
+      143356,
+      6761,
+      11215,
+      138112,
+      98678,
+      21650,
+      145612,
+      50488,
+      87005,
+      147667,
+      80852
+    ],
+    "irregular_127": [
+      87555,
+      130664,
+      114854,
+      100469,
+      143356,
+      6761,
+      11215,
+      138112,
+      98678,
+      21650,
+      145612,
+      50488,
+      87005,
+      147667,
+      80852,
+      105058
+    ],
+    "fresh_seed_20260923": [
+      120812,
+      128259,
+      43013,
+      18773,
+      103730,
+      79891,
+      9433,
+      77049,
+      3299,
+      140051,
+      39456,
+      149908,
+      2953,
+      93584,
+      9464,
+      57677
+    ]
+  },
+  "comparisons": [
+    {
+      "fixture": "tiny_33",
+      "length": 1,
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000001723,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.14752578735351562,
+        "top5_overlap": 5,
+        "passed": true
+      },
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "pass": true
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 2,
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000007487,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.7046394348144531,
+        "top5_overlap": 5,
+        "passed": true
+      },
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "pass": true
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 3,
+      "scores": {
+        "max_abs": 0.6630039215087891,
+        "rmse": 0.23802857110109876,
+        "relative_rmse": 0.04393465044021282,
+        "cosine": 0.999822042668361,
+        "kind": "scores",
+        "top1_match": false,
+        "reference_top1_margin": 0.018934249877929688,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.541015625,
+        "rmse": 0.02354992533100437,
+        "relative_rmse": 0.023546457495167313,
+        "cosine": 0.9997227826096742
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 4,
+      "scores": {
+        "max_abs": 0.6441030502319336,
+        "rmse": 0.21083468660693505,
+        "relative_rmse": 0.0326539060126197,
+        "cosine": 0.9998961029533151,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.46906089782714844,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.541015625,
+        "rmse": 0.024669367911417214,
+        "relative_rmse": 0.024667169842473226,
+        "cosine": 0.9996957737283647
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 5,
+      "scores": {
+        "max_abs": 0.8620357513427734,
+        "rmse": 0.477037857905193,
+        "relative_rmse": 0.06254716777781055,
+        "cosine": 0.9996838467761662,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.6494388580322266,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.541015625,
+        "rmse": 0.030224031563260124,
+        "relative_rmse": 0.0302215983442962,
+        "cosine": 0.999543325395646
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 6,
+      "scores": {
+        "max_abs": 0.36123037338256836,
+        "rmse": 0.07466040229440628,
+        "relative_rmse": 0.024279658500858215,
+        "cosine": 0.9999285149963529,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.7817096710205078,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.375,
+        "rmse": 0.029163663694726876,
+        "relative_rmse": 0.029160931572599122,
+        "cosine": 0.9995748312318875
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 7,
+      "scores": {
+        "max_abs": 0.38188791275024414,
+        "rmse": 0.05960990507899823,
+        "relative_rmse": 0.010714225892581088,
+        "cosine": 0.9999724923970745,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.0536823272705078,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.375,
+        "rmse": 0.029570045981289768,
+        "relative_rmse": 0.029568131999144223,
+        "cosine": 0.9995628768826836
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 8,
+      "scores": {
+        "max_abs": 0.40816497802734375,
+        "rmse": 0.08954853244797267,
+        "relative_rmse": 0.013318129482789095,
+        "cosine": 0.9999726458424704,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.07550239562988281,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.03273775873683377,
+        "relative_rmse": 0.032735707775209226,
+        "cosine": 0.9994641728765071
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 9,
+      "scores": {
+        "max_abs": 0.5404157638549805,
+        "rmse": 0.29660925016932266,
+        "relative_rmse": 0.04234074161375842,
+        "cosine": 0.9998373705301575,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.6995353698730469,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.03254627398027009,
+        "relative_rmse": 0.03254504664749872,
+        "cosine": 0.999470411440132
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 10,
+      "scores": {
+        "max_abs": 0.6404180526733398,
+        "rmse": 0.12614679375523608,
+        "relative_rmse": 0.0296308677002293,
+        "cosine": 0.999876674654024,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.11372947692871094,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.41015625,
+        "rmse": 0.034136449423267635,
+        "relative_rmse": 0.034135326309526336,
+        "cosine": 0.9994174012897568
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 11,
+      "scores": {
+        "max_abs": 0.7292184829711914,
+        "rmse": 0.3380962170625689,
+        "relative_rmse": 0.05342424246183183,
+        "cosine": 0.9997385769855244,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.12614059448242188,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.41015625,
+        "rmse": 0.03476441834624712,
+        "relative_rmse": 0.034763441465187145,
+        "cosine": 0.9993957704051888
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 12,
+      "scores": {
+        "max_abs": 0.5482635498046875,
+        "rmse": 0.18587358342416635,
+        "relative_rmse": 0.022949355965027764,
+        "cosine": 0.9999374150089662,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.7470722198486328,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.0353622308955329,
+        "relative_rmse": 0.0353610513947006,
+        "cosine": 0.9993747632262331
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 13,
+      "scores": {
+        "max_abs": 0.8001327514648438,
+        "rmse": 0.23931651317469374,
+        "relative_rmse": 0.03856646802351741,
+        "cosine": 0.9998507907920786,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.2535896301269531,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.036296265607248766,
+        "relative_rmse": 0.03629554649427229,
+        "cosine": 0.9993412934777303
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 14,
+      "scores": {
+        "max_abs": 0.47104644775390625,
+        "rmse": 0.08913937746523132,
+        "relative_rmse": 0.014635701919488564,
+        "cosine": 0.9999576936345107,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.2127094268798828,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.035953678819003125,
+        "relative_rmse": 0.03595235131003805,
+        "cosine": 0.9993536742157159
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 15,
+      "scores": {
+        "max_abs": 1.5667943954467773,
+        "rmse": 0.622141690130284,
+        "relative_rmse": 0.0688132448791211,
+        "cosine": 0.9996251704491954,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.09207916259765625,
+        "top5_overlap": 4,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.65625,
+        "rmse": 0.03868827629219116,
+        "relative_rmse": 0.03868704110516052,
+        "cosine": 0.999251626588476
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_33",
+      "length": 16,
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999187,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.0,
+        "top5_overlap": 5,
+        "passed": true
+      },
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "pass": true
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 1,
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000001723,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.14752578735351562,
+        "top5_overlap": 5,
+        "passed": true
+      },
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "pass": true
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 2,
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000007487,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.7046394348144531,
+        "top5_overlap": 5,
+        "passed": true
+      },
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "pass": true
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 3,
+      "scores": {
+        "max_abs": 0.6630039215087891,
+        "rmse": 0.23802857110109876,
+        "relative_rmse": 0.04393465044021282,
+        "cosine": 0.999822042668361,
+        "kind": "scores",
+        "top1_match": false,
+        "reference_top1_margin": 0.018934249877929688,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.541015625,
+        "rmse": 0.02354992533100437,
+        "relative_rmse": 0.023546457495167313,
+        "cosine": 0.9997227826096742
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 4,
+      "scores": {
+        "max_abs": 0.6441030502319336,
+        "rmse": 0.21083468660693505,
+        "relative_rmse": 0.0326539060126197,
+        "cosine": 0.9998961029533151,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.46906089782714844,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.541015625,
+        "rmse": 0.024669367911417214,
+        "relative_rmse": 0.024667169842473226,
+        "cosine": 0.9996957737283647
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 5,
+      "scores": {
+        "max_abs": 0.8620357513427734,
+        "rmse": 0.477037857905193,
+        "relative_rmse": 0.06254716777781055,
+        "cosine": 0.9996838467761662,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.6494388580322266,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.541015625,
+        "rmse": 0.030224031563260124,
+        "relative_rmse": 0.0302215983442962,
+        "cosine": 0.999543325395646
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 6,
+      "scores": {
+        "max_abs": 0.36123037338256836,
+        "rmse": 0.07466040229440628,
+        "relative_rmse": 0.024279658500858215,
+        "cosine": 0.9999285149963529,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.7817096710205078,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.375,
+        "rmse": 0.029163663694726876,
+        "relative_rmse": 0.029160931572599122,
+        "cosine": 0.9995748312318875
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 7,
+      "scores": {
+        "max_abs": 0.38188791275024414,
+        "rmse": 0.05960990507899823,
+        "relative_rmse": 0.010714225892581088,
+        "cosine": 0.9999724923970745,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.0536823272705078,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.375,
+        "rmse": 0.029570045981289768,
+        "relative_rmse": 0.029568131999144223,
+        "cosine": 0.9995628768826836
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 8,
+      "scores": {
+        "max_abs": 0.40816497802734375,
+        "rmse": 0.08954853244797267,
+        "relative_rmse": 0.013318129482789095,
+        "cosine": 0.9999726458424704,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.07550239562988281,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.03273775873683377,
+        "relative_rmse": 0.032735707775209226,
+        "cosine": 0.9994641728765071
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 9,
+      "scores": {
+        "max_abs": 0.5404157638549805,
+        "rmse": 0.29660925016932266,
+        "relative_rmse": 0.04234074161375842,
+        "cosine": 0.9998373705301575,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.6995353698730469,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.03254627398027009,
+        "relative_rmse": 0.03254504664749872,
+        "cosine": 0.999470411440132
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 10,
+      "scores": {
+        "max_abs": 0.6404180526733398,
+        "rmse": 0.12614679375523608,
+        "relative_rmse": 0.0296308677002293,
+        "cosine": 0.999876674654024,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.11372947692871094,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.41015625,
+        "rmse": 0.034136449423267635,
+        "relative_rmse": 0.034135326309526336,
+        "cosine": 0.9994174012897568
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 11,
+      "scores": {
+        "max_abs": 0.7292184829711914,
+        "rmse": 0.3380962170625689,
+        "relative_rmse": 0.05342424246183183,
+        "cosine": 0.9997385769855244,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.12614059448242188,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.41015625,
+        "rmse": 0.03476441834624712,
+        "relative_rmse": 0.034763441465187145,
+        "cosine": 0.9993957704051888
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 12,
+      "scores": {
+        "max_abs": 0.5482635498046875,
+        "rmse": 0.18587358342416635,
+        "relative_rmse": 0.022949355965027764,
+        "cosine": 0.9999374150089662,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.7470722198486328,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.0353622308955329,
+        "relative_rmse": 0.0353610513947006,
+        "cosine": 0.9993747632262331
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 13,
+      "scores": {
+        "max_abs": 0.8001327514648438,
+        "rmse": 0.23931651317469374,
+        "relative_rmse": 0.03856646802351741,
+        "cosine": 0.9998507907920786,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.2535896301269531,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.036296265607248766,
+        "relative_rmse": 0.03629554649427229,
+        "cosine": 0.9993412934777303
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 14,
+      "scores": {
+        "max_abs": 0.47104644775390625,
+        "rmse": 0.08913937746523132,
+        "relative_rmse": 0.014635701919488564,
+        "cosine": 0.9999576936345107,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.2127094268798828,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.035953678819003125,
+        "relative_rmse": 0.03595235131003805,
+        "cosine": 0.9993536742157159
+      },
+      "pass": false
+    },
+    {
+      "fixture": "tiny_15",
+      "length": 15,
+      "scores": {
+        "max_abs": 1.5667943954467773,
+        "rmse": 0.622141690130284,
+        "relative_rmse": 0.0688132448791211,
+        "cosine": 0.9996251704491954,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.09207916259765625,
+        "top5_overlap": 4,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.65625,
+        "rmse": 0.03868827629219116,
+        "relative_rmse": 0.03868704110516052,
+        "cosine": 0.999251626588476
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 1,
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000001723,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.14752578735351562,
+        "top5_overlap": 5,
+        "passed": true
+      },
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "pass": true
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 2,
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000007487,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.7046394348144531,
+        "top5_overlap": 5,
+        "passed": true
+      },
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "pass": true
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 3,
+      "scores": {
+        "max_abs": 0.6630039215087891,
+        "rmse": 0.23802857110109876,
+        "relative_rmse": 0.04393465044021282,
+        "cosine": 0.999822042668361,
+        "kind": "scores",
+        "top1_match": false,
+        "reference_top1_margin": 0.018934249877929688,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.541015625,
+        "rmse": 0.02354992533100437,
+        "relative_rmse": 0.023546457495167313,
+        "cosine": 0.9997227826096742
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 4,
+      "scores": {
+        "max_abs": 0.6441030502319336,
+        "rmse": 0.21083468660693505,
+        "relative_rmse": 0.0326539060126197,
+        "cosine": 0.9998961029533151,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.46906089782714844,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.541015625,
+        "rmse": 0.024669367911417214,
+        "relative_rmse": 0.024667169842473226,
+        "cosine": 0.9996957737283647
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 5,
+      "scores": {
+        "max_abs": 0.8620357513427734,
+        "rmse": 0.477037857905193,
+        "relative_rmse": 0.06254716777781055,
+        "cosine": 0.9996838467761662,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.6494388580322266,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.541015625,
+        "rmse": 0.030224031563260124,
+        "relative_rmse": 0.0302215983442962,
+        "cosine": 0.999543325395646
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 6,
+      "scores": {
+        "max_abs": 0.36123037338256836,
+        "rmse": 0.07466040229440628,
+        "relative_rmse": 0.024279658500858215,
+        "cosine": 0.9999285149963529,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.7817096710205078,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.375,
+        "rmse": 0.029163663694726876,
+        "relative_rmse": 0.029160931572599122,
+        "cosine": 0.9995748312318875
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 7,
+      "scores": {
+        "max_abs": 0.38188791275024414,
+        "rmse": 0.05960990507899823,
+        "relative_rmse": 0.010714225892581088,
+        "cosine": 0.9999724923970745,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.0536823272705078,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.375,
+        "rmse": 0.029570045981289768,
+        "relative_rmse": 0.029568131999144223,
+        "cosine": 0.9995628768826836
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 8,
+      "scores": {
+        "max_abs": 0.40816497802734375,
+        "rmse": 0.08954853244797267,
+        "relative_rmse": 0.013318129482789095,
+        "cosine": 0.9999726458424704,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.07550239562988281,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.03273775873683377,
+        "relative_rmse": 0.032735707775209226,
+        "cosine": 0.9994641728765071
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 9,
+      "scores": {
+        "max_abs": 0.5404157638549805,
+        "rmse": 0.29660925016932266,
+        "relative_rmse": 0.04234074161375842,
+        "cosine": 0.9998373705301575,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.6995353698730469,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.03254627398027009,
+        "relative_rmse": 0.03254504664749872,
+        "cosine": 0.999470411440132
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 10,
+      "scores": {
+        "max_abs": 0.6404180526733398,
+        "rmse": 0.12614679375523608,
+        "relative_rmse": 0.0296308677002293,
+        "cosine": 0.999876674654024,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.11372947692871094,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.41015625,
+        "rmse": 0.034136449423267635,
+        "relative_rmse": 0.034135326309526336,
+        "cosine": 0.9994174012897568
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 11,
+      "scores": {
+        "max_abs": 0.7292184829711914,
+        "rmse": 0.3380962170625689,
+        "relative_rmse": 0.05342424246183183,
+        "cosine": 0.9997385769855244,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.12614059448242188,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.41015625,
+        "rmse": 0.03476441834624712,
+        "relative_rmse": 0.034763441465187145,
+        "cosine": 0.9993957704051888
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 12,
+      "scores": {
+        "max_abs": 0.5482635498046875,
+        "rmse": 0.18587358342416635,
+        "relative_rmse": 0.022949355965027764,
+        "cosine": 0.9999374150089662,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.7470722198486328,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.0353622308955329,
+        "relative_rmse": 0.0353610513947006,
+        "cosine": 0.9993747632262331
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 13,
+      "scores": {
+        "max_abs": 0.8001327514648438,
+        "rmse": 0.23931651317469374,
+        "relative_rmse": 0.03856646802351741,
+        "cosine": 0.9998507907920786,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.2535896301269531,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.036296265607248766,
+        "relative_rmse": 0.03629554649427229,
+        "cosine": 0.9993412934777303
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 14,
+      "scores": {
+        "max_abs": 0.47104644775390625,
+        "rmse": 0.08913937746523132,
+        "relative_rmse": 0.014635701919488564,
+        "cosine": 0.9999576936345107,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.2127094268798828,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.035953678819003125,
+        "relative_rmse": 0.03595235131003805,
+        "cosine": 0.9993536742157159
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 15,
+      "scores": {
+        "max_abs": 1.5667943954467773,
+        "rmse": 0.622141690130284,
+        "relative_rmse": 0.0688132448791211,
+        "cosine": 0.9996251704491954,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.09207916259765625,
+        "top5_overlap": 4,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.65625,
+        "rmse": 0.03868827629219116,
+        "relative_rmse": 0.03868704110516052,
+        "cosine": 0.999251626588476
+      },
+      "pass": false
+    },
+    {
+      "fixture": "irregular_127",
+      "length": 16,
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999187,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.0,
+        "top5_overlap": 5,
+        "passed": true
+      },
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "pass": true
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 1,
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000008944,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.1108074188232422,
+        "top5_overlap": 5,
+        "passed": true
+      },
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "pass": true
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 2,
+      "scores": {
+        "max_abs": 0.3220643997192383,
+        "rmse": 0.07431516629892962,
+        "relative_rmse": 0.015549196023651594,
+        "cosine": 0.9999647052979399,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.4548778533935547,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.177734375,
+        "rmse": 0.013914365618368955,
+        "relative_rmse": 0.013915751560660706,
+        "cosine": 0.999903175002384
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 3,
+      "scores": {
+        "max_abs": 0.3353691101074219,
+        "rmse": 0.04134113427344451,
+        "relative_rmse": 0.011451024884386434,
+        "cosine": 0.9999547758054477,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.15930557250976562,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.01993007319084852,
+        "relative_rmse": 0.019936734271617764,
+        "cosine": 0.9998012882694092
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 4,
+      "scores": {
+        "max_abs": 0.17185211181640625,
+        "rmse": 0.024250495729953723,
+        "relative_rmse": 0.0056760282694637895,
+        "cosine": 0.9999853073526868,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.2622089385986328,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.1875,
+        "rmse": 0.012288154894258947,
+        "relative_rmse": 0.01229208753560632,
+        "cosine": 0.9999245934544585
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 5,
+      "scores": {
+        "max_abs": 0.3916759490966797,
+        "rmse": 0.1347327327750196,
+        "relative_rmse": 0.019981783683504468,
+        "cosine": 0.9999618299895117,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.4132061004638672,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.375,
+        "rmse": 0.016360894012672888,
+        "relative_rmse": 0.016365837674340036,
+        "cosine": 0.9998661917172753
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 6,
+      "scores": {
+        "max_abs": 0.46961307525634766,
+        "rmse": 0.09835898860623045,
+        "relative_rmse": 0.013348782570793005,
+        "cosine": 0.9999736416669952,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.9253177642822266,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.375,
+        "rmse": 0.024539233440190766,
+        "relative_rmse": 0.024546144616460774,
+        "cosine": 0.9996987674430833
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 7,
+      "scores": {
+        "max_abs": 0.36176109313964844,
+        "rmse": 0.09684673592532549,
+        "relative_rmse": 0.02680107892172335,
+        "cosine": 0.9999201121572648,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.22991371154785156,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.375,
+        "rmse": 0.024546009036842925,
+        "relative_rmse": 0.02455117728886429,
+        "cosine": 0.9996986417452071
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 8,
+      "scores": {
+        "max_abs": 0.51287841796875,
+        "rmse": 0.13319440562890789,
+        "relative_rmse": 0.02792369155262259,
+        "cosine": 0.9998823970551101,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.395477294921875,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.25,
+        "rmse": 0.020441696043359756,
+        "relative_rmse": 0.020445043981517908,
+        "cosine": 0.9997910018555167
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 9,
+      "scores": {
+        "max_abs": 0.34992265701293945,
+        "rmse": 0.046222778465740355,
+        "relative_rmse": 0.008856948518378883,
+        "cosine": 0.9999719896211734,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.3376426696777344,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.25,
+        "rmse": 0.021660152046122542,
+        "relative_rmse": 0.021663516776618177,
+        "cosine": 0.9997653475092078
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 10,
+      "scores": {
+        "max_abs": 0.5733604431152344,
+        "rmse": 0.2542192991838948,
+        "relative_rmse": 0.03080948103673273,
+        "cosine": 0.999903847286256,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.04190254211425781,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.024547134777274014,
+        "relative_rmse": 0.024550813685890027,
+        "cosine": 0.9996986334566189
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 11,
+      "scores": {
+        "max_abs": 1.3159494400024414,
+        "rmse": 0.914307489217564,
+        "relative_rmse": 0.11064278567944924,
+        "cosine": 0.9990296465529833,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.3350410461425781,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.3125,
+        "rmse": 0.02620140630663633,
+        "relative_rmse": 0.026204608072155397,
+        "cosine": 0.9996566563938709
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 12,
+      "scores": {
+        "max_abs": 1.074066162109375,
+        "rmse": 0.5720511128419294,
+        "relative_rmse": 0.07055007856268164,
+        "cosine": 0.9996052058156173,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.3069305419921875,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.40625,
+        "rmse": 0.02800424391001742,
+        "relative_rmse": 0.028008031581617323,
+        "cosine": 0.9996077847279222
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 13,
+      "scores": {
+        "max_abs": 0.45460987091064453,
+        "rmse": 0.1489716428809146,
+        "relative_rmse": 0.022301585918613913,
+        "cosine": 0.9999494829472935,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.6422309875488281,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.40625,
+        "rmse": 0.027953172134916035,
+        "relative_rmse": 0.027957022838667533,
+        "cosine": 0.9996092176639471
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 14,
+      "scores": {
+        "max_abs": 0.6107659339904785,
+        "rmse": 0.3403746836892458,
+        "relative_rmse": 0.0517631732541926,
+        "cosine": 0.9997788674794247,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 1.0003738403320312,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.40625,
+        "rmse": 0.02853865977225456,
+        "relative_rmse": 0.02854156836550704,
+        "cosine": 0.9995926902509276
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 15,
+      "scores": {
+        "max_abs": 1.1685314178466797,
+        "rmse": 0.7346858827633318,
+        "relative_rmse": 0.11264984637632312,
+        "cosine": 0.9990534602412716,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.1516742706298828,
+        "top5_overlap": 5,
+        "passed": false
+      },
+      "hidden": {
+        "max_abs": 0.4375,
+        "rmse": 0.03323048007093641,
+        "relative_rmse": 0.033233601158004986,
+        "cosine": 0.9994478163751187
+      },
+      "pass": false
+    },
+    {
+      "fixture": "fresh_seed_20260923",
+      "length": 16,
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000002918,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 0.2206878662109375,
+        "top5_overlap": 5,
+        "passed": true
+      },
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "pass": true
+    }
+  ],
+  "thresholds_changed": false,
+  "sha256": {
+    "scripts/probe_two_lane_prefixes.py": "8131535c049b05fd40443a86446de7d3780da5fa1f7cc09bbec7d89a4d0aae6e",
+    "scripts/gpu_two_lane_scores.py": "99a42e73c322149d84a045f133e0245af193f6bf0beecbca8a73bbf568463aec",
+    "coreml_port/paired_product.py": "9145720c24d706940ddc7039521a3cd76b8706419e964070730bd0f81dbe59e3",
+    "coreml_port/dynamic_queries.py": "aa87c78fdfc84172860cb9ad765924a994430a22e7e36a77ede6314b30299cda",
+    "coreml_port/graphs.py": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+    "evidence/03-portable/ACCEPTANCE.json": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233"
+  },
+  "all_pass": false,
+  "seconds": 216.8724811077118
+}

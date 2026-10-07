@@ -1,0 +1,45 @@
+{
+  "status": "completed_bounded_single_site_milestone",
+  "decision": "Retain separately validated group0 correction; continue local residual diagnosis. No full-model GPU adoption.",
+  "host_corrections_passed": 31147,
+  "native_component_calls": 36,
+  "native_supplied_seed_correction_calls_passed": 28,
+  "standalone_seed_reproduction_passed": false,
+  "group_state_calls": 12,
+  "group_controls_passed": true,
+  "in_model_original_seed_reproduced": true,
+  "corrected_site_oracle_exact": true,
+  "warm_normalization_differences_before": 19,
+  "warm_normalization_differences_after": 0,
+  "cpu_group_outputs_and_states_byte_preserved": true,
+  "qualified_cpu_cohorts_preserved": true,
+  "warm_group_y_rmse": {
+    "before": 19.2935148844,
+    "after": 6.70569604563,
+    "reduction_percent": 65.2438,
+    "comparison": "Prior round-only group0 candidate against original CPU on the same saved warm12 fixture"
+  },
+  "warm_cache_element_differences": {
+    "before": 2217,
+    "after": 379
+  },
+  "cold_output_and_cache_errors_unchanged": true,
+  "full_model_gpu_qualified": false,
+  "integrated_into_qualified_runtime": false,
+  "thresholds_changed": false,
+  "actual_device_placement": "unverified",
+  "domain": "positive finite FP32 denominator [0.5,8], seed within one adjacent float of exact nearest-even reciprocal; out-of-domain model values retain original seed",
+  "evidence": {
+    "host-1/results.json": "b3bdac0b56edaf158c0d83fbc379b0144eb5f5d4379ec58759d7c5029752f076",
+    "native-1/results.json": "ebc588038c8b3bf6273e6b1596ac5fbb619174826a0651e10d2141d49d93b026",
+    "group0-1/results.json": "48af7de89cde44bcaf7c7dda12457aec5eb9c2e99cfa1ae4c5294090529441d6",
+    "group-replay-1/results.json": "584efa67f2c875cae0075adde513e452f5e7ae3794359c79c22cc21e02284bc0",
+    "group-summary.json": "6b5c0472071abd0b946ed3601f3bafffa28b35583f5eacf005c6f68265856fda",
+    "review.md": "35d7aa9c84c9f256e2631ffef0b4a360adbbb3c439039a4fa15444aab578b93e",
+    "math-review.md": "fba1f851099522154b2e3d3e51d7f3c6a955ce84b23e3eab0a23bedda889d189",
+    "cpu-preservation.json": "cfec08717f17fe93d21a8ee83628b815baaf9f9fc2bb53ee48fb8fd001b849bc",
+    "remaining-reciprocals.json": "75e4a3c738099c75c22ac54dbfbdc50f8e653b2cf32fe2300356f9abf42ece31",
+    "next-experiment.json": "0e8595e5c51890e1b3f7db3b8c4fdbd200f597c334033df18b089a96e7ea65e4"
+  },
+  "final_seal": "checksum-verification.json"
+}

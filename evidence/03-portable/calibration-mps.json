@@ -1,0 +1,54 @@
+{
+  "device": "mps",
+  "torch": "2.7.0",
+  "mps_available": true,
+  "calibration": [
+    {
+      "case": "short",
+      "prefix_length": 44,
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000004768371582
+      },
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0002089738845825
+      },
+      "seconds": 3.9945608330890536,
+      "repeat_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999927282333374
+      }
+    },
+    {
+      "case": "window",
+      "prefix_length": 1025,
+      "hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000005960464478
+      },
+      "scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000801086425781
+      },
+      "seconds": 2.425007125362754
+    }
+  ],
+  "frozen_limits": {
+    "score_max_abs": 0.04,
+    "hidden_relative_rmse": 0.01,
+    "hidden_min_cosine": 0.995,
+    "calibration_valid": true
+  },
+  "peak_process_rss_gib": 3.340240478515625
+}

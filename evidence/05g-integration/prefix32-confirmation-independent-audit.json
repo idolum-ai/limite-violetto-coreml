@@ -1,0 +1,125 @@
+{
+  "cohort_identities": {
+    "A": {
+      "compiled": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+      "source": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6"
+    },
+    "B": {
+      "compiled": "149d74d2e339fabdafeec8cf5ad6766fdd2e2754c15f5256c7dc69d91b932557",
+      "source": "c7cc54a308bb7c379f6d55c777a62666e86921f27245115dc185597efc65a46b"
+    }
+  },
+  "counts": {
+    "disposed_requests": 8,
+    "host_timing_boundary_samples": 8,
+    "requests": 8,
+    "score_vectors_byte_equal_to_first_baseline": 16,
+    "score_vectors_byte_equal_to_sealed_historical_pilot": 16,
+    "timed_forwards": 16,
+    "workers": 4
+  },
+  "host": {
+    "all_thermal_and_performance_status_clear": true,
+    "observed_power_source": "Battery",
+    "stable_across_eight_boundaries": true
+  },
+  "limitations": "One frozen ABBA confirmation; observed battery and thermal status was stable at eight boundaries, while OS cache and scheduling remained uncontrolled.",
+  "passed": true,
+  "performance": {
+    "decode": {
+      "A_median_seconds": 2.3364096045,
+      "B_median_seconds": 1.8181797915,
+      "B_over_A": 0.7781939382538606,
+      "median_reduction": 0.22180606174613937,
+      "samples_per_arm": 6
+    },
+    "prefill": {
+      "A_median_seconds": 6.6619049585,
+      "B_median_seconds": 6.044085396,
+      "B_over_A": 0.9072608260927354,
+      "median_reduction": 0.0927391739072646,
+      "samples_per_arm": 2
+    }
+  },
+  "performance_gate_passed": true,
+  "protocol_sha256": "78418cfd1504036043e60c278b871e048f7847075116b54d6c8b25985b0f774b",
+  "run": "evidence/05g-integration/prefix32-confirmation-1",
+  "scope": "independent read-only audit of frozen prefix-32 confirmation",
+  "script_sha256": "735cdb7fe63e91016dd9085ad220a83186b3832b2b94e353305f54d7f2eed7f7",
+  "snapshots_sha256": {
+    "benchmark-helper.py": "8e1e1288205dfaeef2420dc02841139c09478902700b599608b9fe1d95db0485",
+    "protocol.json": "78418cfd1504036043e60c278b871e048f7847075116b54d6c8b25985b0f774b",
+    "source-snapshot.py": "735cdb7fe63e91016dd9085ad220a83186b3832b2b94e353305f54d7f2eed7f7"
+  },
+  "status": "completed",
+  "workers": [
+    {
+      "arm": "A",
+      "guards": {
+        "gil_releases": 112,
+        "installed": true,
+        "plain_calls": 16,
+        "state_calls": 96
+      },
+      "power_after": "Now drawing from 'Battery Power'",
+      "power_before": "Now drawing from 'Battery Power'",
+      "requests_disposed": 2,
+      "result_sha256": "4f2125cc787ae78c81a130953be26d07dab86860e86a1fac424bf834ef27f066",
+      "scores_sha256": "2ce1d57ece0f4ce4153ad663ff8a93734d93f1e747eaef7e52a2ffb1b0650eee",
+      "slot": 0,
+      "utc_after": "2026-09-23T19:05:38Z",
+      "utc_before": "2026-09-23T19:05:24Z"
+    },
+    {
+      "arm": "B",
+      "guards": {
+        "gil_releases": 112,
+        "installed": true,
+        "plain_calls": 16,
+        "state_calls": 96
+      },
+      "power_after": "Now drawing from 'Battery Power'",
+      "power_before": "Now drawing from 'Battery Power'",
+      "requests_disposed": 2,
+      "result_sha256": "e875bbf011d4a385a2a5e5fbac09c7f5fa92c0560900edacf7761f461d5715b1",
+      "scores_sha256": "2ce1d57ece0f4ce4153ad663ff8a93734d93f1e747eaef7e52a2ffb1b0650eee",
+      "slot": 1,
+      "utc_after": "2026-09-23T19:06:24Z",
+      "utc_before": "2026-09-23T19:06:12Z"
+    },
+    {
+      "arm": "B",
+      "guards": {
+        "gil_releases": 112,
+        "installed": true,
+        "plain_calls": 16,
+        "state_calls": 96
+      },
+      "power_after": "Now drawing from 'Battery Power'",
+      "power_before": "Now drawing from 'Battery Power'",
+      "requests_disposed": 2,
+      "result_sha256": "2d856b9b3a4a3f09ebbf67bcc3d170ed2dc3811b8988165f5b04f78b0441ed05",
+      "scores_sha256": "2ce1d57ece0f4ce4153ad663ff8a93734d93f1e747eaef7e52a2ffb1b0650eee",
+      "slot": 2,
+      "utc_after": "2026-09-23T19:07:07Z",
+      "utc_before": "2026-09-23T19:06:55Z"
+    },
+    {
+      "arm": "A",
+      "guards": {
+        "gil_releases": 112,
+        "installed": true,
+        "plain_calls": 16,
+        "state_calls": 96
+      },
+      "power_after": "Now drawing from 'Battery Power'",
+      "power_before": "Now drawing from 'Battery Power'",
+      "requests_disposed": 2,
+      "result_sha256": "410478247d6a2a58ae5aeb56e74f50d0f90b8e63ccce14336e78372b71a91263",
+      "scores_sha256": "2ce1d57ece0f4ce4153ad663ff8a93734d93f1e747eaef7e52a2ffb1b0650eee",
+      "slot": 3,
+      "utc_after": "2026-09-23T19:07:57Z",
+      "utc_before": "2026-09-23T19:07:43Z"
+    }
+  ]
+}

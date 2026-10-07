@@ -1,0 +1,4326 @@
+{
+  "sources": {
+    "scripts/gpu_integrated_stages.py": "7ff78825ea3754f85a7ee4450dfb8776d67e8507c9f62aa32ab580045a9b3c96",
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "3abc03e63175f431ff00d17f68eb0c976c1b92417ab29fa411c1b57317ae8b44",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227"
+  },
+  "prompt_index": 2,
+  "input_sha256": "6269913f3041f6d2323c201631688d69604351f5d3a279ff86cf474858d1faf1",
+  "rounding_site_count": 127,
+  "results": {
+    "CPU_ONLY": [
+      {
+        "name": "y",
+        "output_key": "round_126",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 525,
+        "max_abs": 64.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              9
+            ],
+            "got": -2896.0,
+            "want": -2912.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": 500.0,
+            "want": 508.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              19
+            ],
+            "got": -494.0,
+            "want": -496.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              30
+            ],
+            "got": 1688.0,
+            "want": 1696.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              32
+            ],
+            "got": -7776.0,
+            "want": -7840.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              44
+            ],
+            "got": 1904.0,
+            "want": 1912.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              48
+            ],
+            "got": -84.0,
+            "want": -76.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              89
+            ],
+            "got": -2384.0,
+            "want": -2368.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              106
+            ],
+            "got": 2416.0,
+            "want": 2432.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              126
+            ],
+            "got": 1632.0,
+            "want": 1648.0
+          }
+        ]
+      },
+      {
+        "name": "round_0",
+        "output_key": "round_0",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_1",
+        "output_key": "round_1",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_2",
+        "output_key": "round_2",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_3",
+        "output_key": "round_3",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_4",
+        "output_key": "round_4",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_5",
+        "output_key": "round_5",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_6",
+        "output_key": "round_6",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_7",
+        "output_key": "round_7",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_8",
+        "output_key": "round_8",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_9",
+        "output_key": "round_9",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_10",
+        "output_key": "round_10",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_11",
+        "output_key": "round_11",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_12",
+        "output_key": "round_12",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_13",
+        "output_key": "round_13",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_14",
+        "output_key": "round_14",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_15",
+        "output_key": "round_15",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_16",
+        "output_key": "round_16",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_17",
+        "output_key": "round_17",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_18",
+        "output_key": "round_18",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_19",
+        "output_key": "round_19",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_20",
+        "output_key": "round_20",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_21",
+        "output_key": "round_21",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_22",
+        "output_key": "round_22",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_23",
+        "output_key": "round_23",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_24",
+        "output_key": "round_24",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_25",
+        "output_key": "round_25",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_26",
+        "output_key": "round_26",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_27",
+        "output_key": "round_27",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_28",
+        "output_key": "round_28",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_29",
+        "output_key": "round_29",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_30",
+        "output_key": "round_30",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_31",
+        "output_key": "round_31",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_32",
+        "output_key": "round_32",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_33",
+        "output_key": "round_33",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_34",
+        "output_key": "round_34",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_35",
+        "output_key": "round_35",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_36",
+        "output_key": "round_36",
+        "shape": [
+          1,
+          32,
+          2
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_37",
+        "output_key": "round_37",
+        "shape": [
+          1,
+          32,
+          2
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_38",
+        "output_key": "round_38",
+        "shape": [
+          1,
+          32,
+          2
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_39",
+        "output_key": "round_39",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_40",
+        "output_key": "round_40",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_41",
+        "output_key": "round_41",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_42",
+        "output_key": "round_42",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_43",
+        "output_key": "round_43",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_44",
+        "output_key": "round_44",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_45",
+        "output_key": "round_45",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_46",
+        "output_key": "round_46",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_47",
+        "output_key": "round_47",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_48",
+        "output_key": "round_48",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_49",
+        "output_key": "round_49",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_50",
+        "output_key": "round_50",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_51",
+        "output_key": "round_51",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_52",
+        "output_key": "round_52",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_53",
+        "output_key": "round_53",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_54",
+        "output_key": "round_54",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_55",
+        "output_key": "round_55",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_56",
+        "output_key": "round_56",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_57",
+        "output_key": "round_57",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_58",
+        "output_key": "round_58",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_59",
+        "output_key": "round_59",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_60",
+        "output_key": "round_60",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_61",
+        "output_key": "round_61",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_62",
+        "output_key": "round_62",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_63",
+        "output_key": "round_63",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_64",
+        "output_key": "round_64",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_65",
+        "output_key": "round_65",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_66",
+        "output_key": "round_66",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_67",
+        "output_key": "round_67",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_68",
+        "output_key": "round_68",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_69",
+        "output_key": "round_69",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_70",
+        "output_key": "round_70",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_71",
+        "output_key": "round_71",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_72",
+        "output_key": "round_72",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_73",
+        "output_key": "round_73",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_74",
+        "output_key": "round_74",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_75",
+        "output_key": "round_75",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_76",
+        "output_key": "round_76",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_77",
+        "output_key": "round_77",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_78",
+        "output_key": "round_78",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_79",
+        "output_key": "round_79",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_80",
+        "output_key": "round_80",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_81",
+        "output_key": "round_81",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 1,
+        "max_abs": 0.015625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              5,
+              20
+            ],
+            "got": 2.546875,
+            "want": 2.5625
+          }
+        ]
+      },
+      {
+        "name": "round_82",
+        "output_key": "round_82",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 2,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              3,
+              1,
+              8
+            ],
+            "got": 21.125,
+            "want": 21.25
+          },
+          {
+            "index": [
+              0,
+              3,
+              1,
+              81
+            ],
+            "got": 21.125,
+            "want": 21.25
+          }
+        ]
+      },
+      {
+        "name": "round_83",
+        "output_key": "round_83",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 3,
+        "max_abs": 0.125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              3,
+              1,
+              8
+            ],
+            "got": 4.375,
+            "want": 4.25
+          },
+          {
+            "index": [
+              0,
+              3,
+              1,
+              81
+            ],
+            "got": 2.375,
+            "want": 2.25
+          },
+          {
+            "index": [
+              0,
+              31,
+              5,
+              20
+            ],
+            "got": 2.671875,
+            "want": 2.6875
+          }
+        ]
+      },
+      {
+        "name": "round_84",
+        "output_key": "round_84",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_85",
+        "output_key": "round_85",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_86",
+        "output_key": "round_86",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_87",
+        "output_key": "round_87",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 3,
+        "max_abs": 0.015625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              3,
+              1,
+              8
+            ],
+            "got": 0.00848388671875,
+            "want": 0.00823974609375
+          },
+          {
+            "index": [
+              0,
+              3,
+              1,
+              81
+            ],
+            "got": 0.004608154296875,
+            "want": 0.004364013671875
+          },
+          {
+            "index": [
+              0,
+              31,
+              5,
+              20
+            ],
+            "got": 2.296875,
+            "want": 2.3125
+          }
+        ]
+      },
+      {
+        "name": "round_88",
+        "output_key": "round_88",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 33,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              3,
+              74
+            ],
+            "got": 0.392578125,
+            "want": 0.390625
+          },
+          {
+            "index": [
+              0,
+              3,
+              961
+            ],
+            "got": -0.1142578125,
+            "want": -0.11376953125
+          },
+          {
+            "index": [
+              0,
+              31,
+              30
+            ],
+            "got": 13.3125,
+            "want": 13.25
+          },
+          {
+            "index": [
+              0,
+              31,
+              78
+            ],
+            "got": 43.0,
+            "want": 43.25
+          },
+          {
+            "index": [
+              0,
+              31,
+              82
+            ],
+            "got": 188.0,
+            "want": 189.0
+          },
+          {
+            "index": [
+              0,
+              31,
+              97
+            ],
+            "got": 194.0,
+            "want": 195.0
+          },
+          {
+            "index": [
+              0,
+              31,
+              172
+            ],
+            "got": -1.40625,
+            "want": -1.3984375
+          },
+          {
+            "index": [
+              0,
+              31,
+              208
+            ],
+            "got": -89.0,
+            "want": -89.5
+          },
+          {
+            "index": [
+              0,
+              31,
+              299
+            ],
+            "got": 0.90234375,
+            "want": 0.91015625
+          },
+          {
+            "index": [
+              0,
+              31,
+              309
+            ],
+            "got": -14.125,
+            "want": -14.0625
+          }
+        ]
+      },
+      {
+        "name": "round_89",
+        "output_key": "round_89",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_90",
+        "output_key": "round_90",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 33,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              3,
+              74
+            ],
+            "got": 0.2197265625,
+            "want": 0.2177734375
+          },
+          {
+            "index": [
+              0,
+              3,
+              961
+            ],
+            "got": -0.06396484375,
+            "want": -0.0634765625
+          },
+          {
+            "index": [
+              0,
+              31,
+              30
+            ],
+            "got": 7.4375,
+            "want": 7.40625
+          },
+          {
+            "index": [
+              0,
+              31,
+              78
+            ],
+            "got": 24.0,
+            "want": 24.125
+          },
+          {
+            "index": [
+              0,
+              31,
+              82
+            ],
+            "got": 105.0,
+            "want": 105.5
+          },
+          {
+            "index": [
+              0,
+              31,
+              97
+            ],
+            "got": 108.5,
+            "want": 109.0
+          },
+          {
+            "index": [
+              0,
+              31,
+              172
+            ],
+            "got": -0.78515625,
+            "want": -0.78125
+          },
+          {
+            "index": [
+              0,
+              31,
+              208
+            ],
+            "got": -49.75,
+            "want": -50.0
+          },
+          {
+            "index": [
+              0,
+              31,
+              299
+            ],
+            "got": 0.50390625,
+            "want": 0.5078125
+          },
+          {
+            "index": [
+              0,
+              31,
+              309
+            ],
+            "got": -7.875,
+            "want": -7.84375
+          }
+        ]
+      },
+      {
+        "name": "round_91",
+        "output_key": "round_91",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 1,
+        "max_abs": 0.5,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              208
+            ],
+            "got": 76.0,
+            "want": 75.5
+          }
+        ]
+      },
+      {
+        "name": "round_92",
+        "output_key": "round_92",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 1,
+        "max_abs": 0.0009765625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              208
+            ],
+            "got": 0.1103515625,
+            "want": 0.109375
+          }
+        ]
+      },
+      {
+        "name": "round_93",
+        "output_key": "round_93",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 25,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              240
+            ],
+            "got": -0.18359375,
+            "want": -0.1845703125
+          },
+          {
+            "index": [
+              0,
+              31,
+              339
+            ],
+            "got": -1.890625,
+            "want": -1.8828125
+          },
+          {
+            "index": [
+              0,
+              31,
+              429
+            ],
+            "got": -0.68359375,
+            "want": -0.6875
+          },
+          {
+            "index": [
+              0,
+              31,
+              522
+            ],
+            "got": 0.5546875,
+            "want": 0.55859375
+          },
+          {
+            "index": [
+              0,
+              31,
+              708
+            ],
+            "got": -0.0225830078125,
+            "want": -0.022705078125
+          },
+          {
+            "index": [
+              0,
+              31,
+              1102
+            ],
+            "got": 0.029296875,
+            "want": 0.0291748046875
+          },
+          {
+            "index": [
+              0,
+              31,
+              1277
+            ],
+            "got": -0.041748046875,
+            "want": -0.04150390625
+          },
+          {
+            "index": [
+              0,
+              31,
+              1336
+            ],
+            "got": -1.8671875,
+            "want": -1.859375
+          },
+          {
+            "index": [
+              0,
+              31,
+              1348
+            ],
+            "got": 0.0224609375,
+            "want": 0.0223388671875
+          },
+          {
+            "index": [
+              0,
+              31,
+              1383
+            ],
+            "got": -0.0184326171875,
+            "want": -0.0185546875
+          }
+        ]
+      },
+      {
+        "name": "round_94",
+        "output_key": "round_94",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 20,
+        "max_abs": 0.00390625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              240
+            ],
+            "got": -0.08349609375,
+            "want": -0.083984375
+          },
+          {
+            "index": [
+              0,
+              31,
+              339
+            ],
+            "got": -0.248046875,
+            "want": -0.2490234375
+          },
+          {
+            "index": [
+              0,
+              31,
+              429
+            ],
+            "got": -0.2294921875,
+            "want": -0.23046875
+          },
+          {
+            "index": [
+              0,
+              31,
+              522
+            ],
+            "got": 0.3515625,
+            "want": 0.35546875
+          },
+          {
+            "index": [
+              0,
+              31,
+              708
+            ],
+            "got": -0.01116943359375,
+            "want": -0.01123046875
+          },
+          {
+            "index": [
+              0,
+              31,
+              1102
+            ],
+            "got": 0.014892578125,
+            "want": 0.0147705078125
+          },
+          {
+            "index": [
+              0,
+              31,
+              1277
+            ],
+            "got": -0.0203857421875,
+            "want": -0.020263671875
+          },
+          {
+            "index": [
+              0,
+              31,
+              1348
+            ],
+            "got": 0.0113525390625,
+            "want": 0.01129150390625
+          },
+          {
+            "index": [
+              0,
+              31,
+              1383
+            ],
+            "got": -0.0091552734375,
+            "want": -0.00921630859375
+          },
+          {
+            "index": [
+              0,
+              31,
+              1441
+            ],
+            "got": 0.11279296875,
+            "want": 0.11376953125
+          }
+        ]
+      },
+      {
+        "name": "round_95",
+        "output_key": "round_95",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 80,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              2
+            ],
+            "got": 0.11669921875,
+            "want": 0.1171875
+          },
+          {
+            "index": [
+              0,
+              31,
+              34
+            ],
+            "got": 0.349609375,
+            "want": 0.3515625
+          },
+          {
+            "index": [
+              0,
+              31,
+              49
+            ],
+            "got": 6.40625,
+            "want": 6.4375
+          },
+          {
+            "index": [
+              0,
+              31,
+              79
+            ],
+            "got": -0.05810546875,
+            "want": -0.057861328125
+          },
+          {
+            "index": [
+              0,
+              31,
+              170
+            ],
+            "got": -0.0224609375,
+            "want": -0.0223388671875
+          },
+          {
+            "index": [
+              0,
+              31,
+              211
+            ],
+            "got": 0.11865234375,
+            "want": 0.119140625
+          },
+          {
+            "index": [
+              0,
+              31,
+              239
+            ],
+            "got": 0.1318359375,
+            "want": 0.130859375
+          },
+          {
+            "index": [
+              0,
+              31,
+              307
+            ],
+            "got": 0.055419921875,
+            "want": 0.05517578125
+          },
+          {
+            "index": [
+              0,
+              31,
+              315
+            ],
+            "got": 1.8359375,
+            "want": 1.828125
+          },
+          {
+            "index": [
+              0,
+              31,
+              396
+            ],
+            "got": 0.052490234375,
+            "want": 0.052734375
+          }
+        ]
+      },
+      {
+        "name": "round_96",
+        "output_key": "round_96",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 94,
+        "max_abs": 0.03125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              2
+            ],
+            "got": -0.0020751953125,
+            "want": -0.0020904541015625
+          },
+          {
+            "index": [
+              0,
+              31,
+              34
+            ],
+            "got": -0.0208740234375,
+            "want": -0.02099609375
+          },
+          {
+            "index": [
+              0,
+              31,
+              49
+            ],
+            "got": -0.0029144287109375,
+            "want": -0.0029296875
+          },
+          {
+            "index": [
+              0,
+              31,
+              79
+            ],
+            "got": 0.014892578125,
+            "want": 0.01483154296875
+          },
+          {
+            "index": [
+              0,
+              31,
+              170
+            ],
+            "got": 0.000873565673828125,
+            "want": 0.000865936279296875
+          },
+          {
+            "index": [
+              0,
+              31,
+              211
+            ],
+            "got": -0.006591796875,
+            "want": -0.006622314453125
+          },
+          {
+            "index": [
+              0,
+              31,
+              239
+            ],
+            "got": -0.00022792816162109375,
+            "want": -0.0002269744873046875
+          },
+          {
+            "index": [
+              0,
+              31,
+              240
+            ],
+            "got": -0.23046875,
+            "want": -0.232421875
+          },
+          {
+            "index": [
+              0,
+              31,
+              307
+            ],
+            "got": -0.005126953125,
+            "want": -0.005096435546875
+          },
+          {
+            "index": [
+              0,
+              31,
+              315
+            ],
+            "got": -0.2294921875,
+            "want": -0.228515625
+          }
+        ]
+      },
+      {
+        "name": "round_97",
+        "output_key": "round_97",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 138,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              10
+            ],
+            "got": -4.46875,
+            "want": -4.4375
+          },
+          {
+            "index": [
+              0,
+              31,
+              15
+            ],
+            "got": 0.298828125,
+            "want": 0.306640625
+          },
+          {
+            "index": [
+              0,
+              31,
+              57
+            ],
+            "got": -3.046875,
+            "want": -3.03125
+          },
+          {
+            "index": [
+              0,
+              31,
+              78
+            ],
+            "got": -23.25,
+            "want": -23.125
+          },
+          {
+            "index": [
+              0,
+              31,
+              81
+            ],
+            "got": -4.3125,
+            "want": -4.28125
+          },
+          {
+            "index": [
+              0,
+              31,
+              82
+            ],
+            "got": 1.7421875,
+            "want": 1.75
+          },
+          {
+            "index": [
+              0,
+              31,
+              85
+            ],
+            "got": -9.6875,
+            "want": -9.625
+          },
+          {
+            "index": [
+              0,
+              31,
+              86
+            ],
+            "got": 25.0,
+            "want": 25.125
+          },
+          {
+            "index": [
+              0,
+              31,
+              97
+            ],
+            "got": -5.75,
+            "want": -5.78125
+          },
+          {
+            "index": [
+              0,
+              31,
+              99
+            ],
+            "got": 2.359375,
+            "want": 2.34375
+          }
+        ]
+      },
+      {
+        "name": "round_98",
+        "output_key": "round_98",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 1,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              208
+            ],
+            "got": 203.0,
+            "want": 202.0
+          }
+        ]
+      },
+      {
+        "name": "round_99",
+        "output_key": "round_99",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 116,
+        "max_abs": 0.015625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              10
+            ],
+            "got": 0.1953125,
+            "want": 0.1943359375
+          },
+          {
+            "index": [
+              0,
+              31,
+              15
+            ],
+            "got": -0.0130615234375,
+            "want": -0.013427734375
+          },
+          {
+            "index": [
+              0,
+              31,
+              78
+            ],
+            "got": 1.015625,
+            "want": 1.0078125
+          },
+          {
+            "index": [
+              0,
+              31,
+              81
+            ],
+            "got": 0.1884765625,
+            "want": 0.1875
+          },
+          {
+            "index": [
+              0,
+              31,
+              82
+            ],
+            "got": -0.076171875,
+            "want": -0.07666015625
+          },
+          {
+            "index": [
+              0,
+              31,
+              85
+            ],
+            "got": 0.423828125,
+            "want": 0.419921875
+          },
+          {
+            "index": [
+              0,
+              31,
+              86
+            ],
+            "got": -1.09375,
+            "want": -1.1015625
+          },
+          {
+            "index": [
+              0,
+              31,
+              99
+            ],
+            "got": -0.10302734375,
+            "want": -0.1025390625
+          },
+          {
+            "index": [
+              0,
+              31,
+              101
+            ],
+            "got": -0.578125,
+            "want": -0.58203125
+          },
+          {
+            "index": [
+              0,
+              31,
+              103
+            ],
+            "got": -0.003387451171875,
+            "want": -0.00384521484375
+          }
+        ]
+      },
+      {
+        "name": "round_100",
+        "output_key": "round_100",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 1,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              208
+            ],
+            "got": 202.0,
+            "want": 201.0
+          }
+        ]
+      },
+      {
+        "name": "round_101",
+        "output_key": "round_101",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 1,
+        "max_abs": 0.00048828125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              208
+            ],
+            "got": 0.109375,
+            "want": 0.10888671875
+          }
+        ]
+      },
+      {
+        "name": "round_102",
+        "output_key": "round_102",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 13,
+        "max_abs": 0.5,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              436
+            ],
+            "got": -5.84375,
+            "want": -5.875
+          },
+          {
+            "index": [
+              0,
+              31,
+              440
+            ],
+            "got": 0.01055908203125,
+            "want": 0.0091552734375
+          },
+          {
+            "index": [
+              0,
+              31,
+              606
+            ],
+            "got": -99.0,
+            "want": -99.5
+          },
+          {
+            "index": [
+              0,
+              31,
+              624
+            ],
+            "got": 7.40625,
+            "want": 7.375
+          },
+          {
+            "index": [
+              0,
+              31,
+              697
+            ],
+            "got": 0.67578125,
+            "want": 0.671875
+          },
+          {
+            "index": [
+              0,
+              31,
+              758
+            ],
+            "got": 43.0,
+            "want": 43.25
+          },
+          {
+            "index": [
+              0,
+              31,
+              912
+            ],
+            "got": -40.0,
+            "want": -40.25
+          },
+          {
+            "index": [
+              0,
+              31,
+              1022
+            ],
+            "got": 0.6328125,
+            "want": 0.62890625
+          },
+          {
+            "index": [
+              0,
+              31,
+              1028
+            ],
+            "got": 55.25,
+            "want": 55.5
+          },
+          {
+            "index": [
+              0,
+              31,
+              1050
+            ],
+            "got": -3.0,
+            "want": -2.984375
+          }
+        ]
+      },
+      {
+        "name": "round_103",
+        "output_key": "round_103",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 3,
+        "max_abs": 0.0078125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              97
+            ],
+            "got": -0.05029296875,
+            "want": -0.050048828125
+          },
+          {
+            "index": [
+              0,
+              31,
+              161
+            ],
+            "got": -1.8046875,
+            "want": -1.796875
+          },
+          {
+            "index": [
+              0,
+              31,
+              201
+            ],
+            "got": 0.0205078125,
+            "want": 0.0223388671875
+          }
+        ]
+      },
+      {
+        "name": "round_104",
+        "output_key": "round_104",
+        "shape": [
+          1,
+          32,
+          256
+        ],
+        "different_elements": 2,
+        "max_abs": 0.25,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              43
+            ],
+            "got": 10.125,
+            "want": 10.0625
+          },
+          {
+            "index": [
+              0,
+              31,
+              139
+            ],
+            "got": -44.75,
+            "want": -44.5
+          }
+        ]
+      },
+      {
+        "name": "round_105",
+        "output_key": "round_105",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 25,
+        "max_abs": 0.0078125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "got": 0.0732421875,
+            "want": 0.07275390625
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              44
+            ],
+            "got": 1.171875,
+            "want": 1.1640625
+          },
+          {
+            "index": [
+              0,
+              25,
+              2,
+              42
+            ],
+            "got": -0.478515625,
+            "want": -0.4765625
+          },
+          {
+            "index": [
+              0,
+              25,
+              2,
+              126
+            ],
+            "got": -0.478515625,
+            "want": -0.4765625
+          },
+          {
+            "index": [
+              0,
+              31,
+              3,
+              52
+            ],
+            "got": -0.10888671875,
+            "want": -0.109375
+          },
+          {
+            "index": [
+              0,
+              31,
+              3,
+              56
+            ],
+            "got": 0.0001964569091796875,
+            "want": 0.00017070770263671875
+          },
+          {
+            "index": [
+              0,
+              31,
+              4,
+              4
+            ],
+            "got": -0.68359375,
+            "want": -0.6796875
+          },
+          {
+            "index": [
+              0,
+              31,
+              4,
+              9
+            ],
+            "got": -1.0703125,
+            "want": -1.0625
+          },
+          {
+            "index": [
+              0,
+              31,
+              4,
+              23
+            ],
+            "got": -0.68359375,
+            "want": -0.6796875
+          },
+          {
+            "index": [
+              0,
+              31,
+              4,
+              26
+            ],
+            "got": -1.9609375,
+            "want": -1.953125
+          }
+        ]
+      },
+      {
+        "name": "round_106",
+        "output_key": "round_106",
+        "shape": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "different_elements": 3,
+        "max_abs": 0.0001220703125,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              31,
+              0,
+              97
+            ],
+            "got": -0.0009613037109375,
+            "want": -0.000957489013671875
+          },
+          {
+            "index": [
+              0,
+              31,
+              1,
+              33
+            ],
+            "got": -0.029052734375,
+            "want": -0.0289306640625
+          },
+          {
+            "index": [
+              0,
+              31,
+              1,
+              73
+            ],
+            "got": 0.0003299713134765625,
+            "want": 0.0003604888916015625
+          }
+        ]
+      },
+      {
+        "name": "round_107",
+        "output_key": "round_107",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 84,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "got": 3.265625,
+            "want": 3.25
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "got": -0.6484375,
+            "want": -0.63671875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              7
+            ],
+            "got": -2.453125,
+            "want": -2.46875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              9
+            ],
+            "got": -10.125,
+            "want": -10.1875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              15
+            ],
+            "got": -4.6875,
+            "want": -4.71875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              39
+            ],
+            "got": 5.625,
+            "want": 5.65625
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              52
+            ],
+            "got": -4.0,
+            "want": -3.984375
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              54
+            ],
+            "got": -22.875,
+            "want": -23.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              65
+            ],
+            "got": 5.34375,
+            "want": 5.375
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              86
+            ],
+            "got": 7.34375,
+            "want": 7.375
+          }
+        ]
+      },
+      {
+        "name": "round_108",
+        "output_key": "round_108",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 41,
+        "max_abs": 0.5,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1,
+              6
+            ],
+            "got": 10.3125,
+            "want": 10.25
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              26
+            ],
+            "got": 10.875,
+            "want": 10.8125
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              89
+            ],
+            "got": 21.75,
+            "want": 21.625
+          },
+          {
+            "index": [
+              0,
+              31,
+              0,
+              43
+            ],
+            "got": 7.53125,
+            "want": 7.5
+          },
+          {
+            "index": [
+              0,
+              31,
+              2,
+              43
+            ],
+            "got": 7.875,
+            "want": 7.84375
+          },
+          {
+            "index": [
+              0,
+              31,
+              3,
+              43
+            ],
+            "got": 7.625,
+            "want": 7.59375
+          },
+          {
+            "index": [
+              0,
+              31,
+              4,
+              1
+            ],
+            "got": 19.5,
+            "want": 19.375
+          },
+          {
+            "index": [
+              0,
+              31,
+              4,
+              17
+            ],
+            "got": -58.0,
+            "want": -57.75
+          },
+          {
+            "index": [
+              0,
+              31,
+              4,
+              23
+            ],
+            "got": -39.0,
+            "want": -38.75
+          },
+          {
+            "index": [
+              0,
+              31,
+              4,
+              28
+            ],
+            "got": 11.1875,
+            "want": 11.125
+          }
+        ]
+      },
+      {
+        "name": "round_109",
+        "output_key": "round_109",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 60,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1,
+              39
+            ],
+            "got": 17.25,
+            "want": 17.375
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              54
+            ],
+            "got": -35.5,
+            "want": -35.75
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              86
+            ],
+            "got": 12.375,
+            "want": 12.4375
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              89
+            ],
+            "got": -14.25,
+            "want": -14.125
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              97
+            ],
+            "got": -18.0,
+            "want": -18.125
+          },
+          {
+            "index": [
+              0,
+              25,
+              2,
+              7
+            ],
+            "got": -27.125,
+            "want": -27.0
+          },
+          {
+            "index": [
+              0,
+              25,
+              2,
+              17
+            ],
+            "got": -1.109375,
+            "want": -1.1015625
+          },
+          {
+            "index": [
+              0,
+              25,
+              2,
+              48
+            ],
+            "got": -50.0,
+            "want": -49.75
+          },
+          {
+            "index": [
+              0,
+              31,
+              2,
+              43
+            ],
+            "got": 7.5625,
+            "want": 7.53125
+          },
+          {
+            "index": [
+              0,
+              31,
+              3,
+              119
+            ],
+            "got": 2.625,
+            "want": 2.6875
+          }
+        ]
+      },
+      {
+        "name": "round_110",
+        "output_key": "round_110",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_111",
+        "output_key": "round_111",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_112",
+        "output_key": "round_112",
+        "shape": [
+          1,
+          32,
+          10
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_113",
+        "output_key": "round_113",
+        "shape": [
+          1,
+          32,
+          10,
+          128
+        ],
+        "different_elements": 58,
+        "max_abs": 0.625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1,
+              39
+            ],
+            "got": 3.6875,
+            "want": 3.71875
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              54
+            ],
+            "got": -7.59375,
+            "want": -7.65625
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              86
+            ],
+            "got": 2.640625,
+            "want": 2.65625
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              89
+            ],
+            "got": -3.046875,
+            "want": -3.015625
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              97
+            ],
+            "got": -3.84375,
+            "want": -3.875
+          },
+          {
+            "index": [
+              0,
+              25,
+              2,
+              7
+            ],
+            "got": -6.28125,
+            "want": -6.25
+          },
+          {
+            "index": [
+              0,
+              25,
+              2,
+              48
+            ],
+            "got": -11.5625,
+            "want": -11.5
+          },
+          {
+            "index": [
+              0,
+              31,
+              3,
+              119
+            ],
+            "got": 1.703125,
+            "want": 1.7421875
+          },
+          {
+            "index": [
+              0,
+              31,
+              4,
+              1
+            ],
+            "got": -5.46875,
+            "want": -5.3125
+          },
+          {
+            "index": [
+              0,
+              31,
+              4,
+              17
+            ],
+            "got": 16.75,
+            "want": 16.5
+          }
+        ]
+      },
+      {
+        "name": "round_114",
+        "output_key": "round_114",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 1035,
+        "max_abs": 8.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": -716.0,
+            "want": -712.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              13
+            ],
+            "got": 184.0,
+            "want": 185.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              45
+            ],
+            "got": -15.75,
+            "want": -15.625
+          },
+          {
+            "index": [
+              0,
+              1,
+              98
+            ],
+            "got": 29.5,
+            "want": 29.375
+          },
+          {
+            "index": [
+              0,
+              1,
+              144
+            ],
+            "got": -47.75,
+            "want": -47.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              156
+            ],
+            "got": -80.5,
+            "want": -80.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              163
+            ],
+            "got": 8.5625,
+            "want": 8.4375
+          },
+          {
+            "index": [
+              0,
+              1,
+              165
+            ],
+            "got": -30.375,
+            "want": -30.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              190
+            ],
+            "got": 41.25,
+            "want": 41.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              200
+            ],
+            "got": 50.25,
+            "want": 50.5
+          }
+        ]
+      },
+      {
+        "name": "round_115",
+        "output_key": "round_115",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      {
+        "name": "round_116",
+        "output_key": "round_116",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 926,
+        "max_abs": 8.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": -532.0,
+            "want": -528.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              45
+            ],
+            "got": -11.6875,
+            "want": -11.625
+          },
+          {
+            "index": [
+              0,
+              1,
+              98
+            ],
+            "got": 21.875,
+            "want": 21.75
+          },
+          {
+            "index": [
+              0,
+              1,
+              144
+            ],
+            "got": -35.5,
+            "want": -35.25
+          },
+          {
+            "index": [
+              0,
+              1,
+              156
+            ],
+            "got": -59.75,
+            "want": -59.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              163
+            ],
+            "got": 6.34375,
+            "want": 6.25
+          },
+          {
+            "index": [
+              0,
+              1,
+              165
+            ],
+            "got": -22.5,
+            "want": -22.625
+          },
+          {
+            "index": [
+              0,
+              1,
+              190
+            ],
+            "got": 30.625,
+            "want": 30.75
+          },
+          {
+            "index": [
+              0,
+              1,
+              200
+            ],
+            "got": 37.25,
+            "want": 37.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              210
+            ],
+            "got": -2.859375,
+            "want": -2.890625
+          }
+        ]
+      },
+      {
+        "name": "round_117",
+        "output_key": "round_117",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 253,
+        "max_abs": 32.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": -1744.0,
+            "want": -1736.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              163
+            ],
+            "got": 31.5,
+            "want": 31.375
+          },
+          {
+            "index": [
+              0,
+              1,
+              200
+            ],
+            "got": -4.0,
+            "want": -3.75
+          },
+          {
+            "index": [
+              0,
+              1,
+              315
+            ],
+            "got": 63.0,
+            "want": 63.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              341
+            ],
+            "got": -284.0,
+            "want": -286.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              449
+            ],
+            "got": 280.0,
+            "want": 284.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              506
+            ],
+            "got": -241.0,
+            "want": -240.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              507
+            ],
+            "got": -876.0,
+            "want": -880.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              579
+            ],
+            "got": -32.0,
+            "want": -34.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              623
+            ],
+            "got": -272.0,
+            "want": -270.0
+          }
+        ]
+      },
+      {
+        "name": "round_118",
+        "output_key": "round_118",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 248,
+        "max_abs": 0.015625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": -1.3828125,
+            "want": -1.375
+          },
+          {
+            "index": [
+              0,
+              1,
+              163
+            ],
+            "got": 0.0250244140625,
+            "want": 0.02490234375
+          },
+          {
+            "index": [
+              0,
+              1,
+              200
+            ],
+            "got": -0.003173828125,
+            "want": -0.0029754638671875
+          },
+          {
+            "index": [
+              0,
+              1,
+              315
+            ],
+            "got": 0.050048828125,
+            "want": 0.05029296875
+          },
+          {
+            "index": [
+              0,
+              1,
+              341
+            ],
+            "got": -0.2255859375,
+            "want": -0.2265625
+          },
+          {
+            "index": [
+              0,
+              1,
+              449
+            ],
+            "got": 0.2216796875,
+            "want": 0.2255859375
+          },
+          {
+            "index": [
+              0,
+              1,
+              506
+            ],
+            "got": -0.19140625,
+            "want": -0.1904296875
+          },
+          {
+            "index": [
+              0,
+              1,
+              507
+            ],
+            "got": -0.6953125,
+            "want": -0.69921875
+          },
+          {
+            "index": [
+              0,
+              1,
+              579
+            ],
+            "got": -0.025390625,
+            "want": -0.0269775390625
+          },
+          {
+            "index": [
+              0,
+              1,
+              623
+            ],
+            "got": -0.2158203125,
+            "want": -0.2138671875
+          }
+        ]
+      },
+      {
+        "name": "round_119",
+        "output_key": "round_119",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 2223,
+        "max_abs": 0.0625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": -3.84375,
+            "want": -3.828125
+          },
+          {
+            "index": [
+              0,
+              1,
+              23
+            ],
+            "got": -0.96875,
+            "want": -0.96484375
+          },
+          {
+            "index": [
+              0,
+              1,
+              33
+            ],
+            "got": -3.609375,
+            "want": -3.625
+          },
+          {
+            "index": [
+              0,
+              1,
+              36
+            ],
+            "got": -0.21484375,
+            "want": -0.2158203125
+          },
+          {
+            "index": [
+              0,
+              1,
+              40
+            ],
+            "got": 0.0008544921875,
+            "want": 0.00152587890625
+          },
+          {
+            "index": [
+              0,
+              1,
+              44
+            ],
+            "got": 0.443359375,
+            "want": 0.44140625
+          },
+          {
+            "index": [
+              0,
+              1,
+              53
+            ],
+            "got": 0.41015625,
+            "want": 0.412109375
+          },
+          {
+            "index": [
+              0,
+              1,
+              54
+            ],
+            "got": -4.40625,
+            "want": -4.4375
+          },
+          {
+            "index": [
+              0,
+              1,
+              58
+            ],
+            "got": -0.57421875,
+            "want": -0.578125
+          },
+          {
+            "index": [
+              0,
+              1,
+              71
+            ],
+            "got": -0.7265625,
+            "want": -0.72265625
+          }
+        ]
+      },
+      {
+        "name": "round_120",
+        "output_key": "round_120",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 1847,
+        "max_abs": 0.0625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": -0.08056640625,
+            "want": -0.08154296875
+          },
+          {
+            "index": [
+              0,
+              1,
+              33
+            ],
+            "got": -0.09521484375,
+            "want": -0.09423828125
+          },
+          {
+            "index": [
+              0,
+              1,
+              36
+            ],
+            "got": -0.095703125,
+            "want": -0.09619140625
+          },
+          {
+            "index": [
+              0,
+              1,
+              40
+            ],
+            "got": 0.00042724609375,
+            "want": 0.000762939453125
+          },
+          {
+            "index": [
+              0,
+              1,
+              53
+            ],
+            "got": 0.24609375,
+            "want": 0.248046875
+          },
+          {
+            "index": [
+              0,
+              1,
+              54
+            ],
+            "got": -0.05322265625,
+            "want": -0.0517578125
+          },
+          {
+            "index": [
+              0,
+              1,
+              58
+            ],
+            "got": -0.20703125,
+            "want": -0.2080078125
+          },
+          {
+            "index": [
+              0,
+              1,
+              71
+            ],
+            "got": -0.2373046875,
+            "want": -0.236328125
+          },
+          {
+            "index": [
+              0,
+              1,
+              73
+            ],
+            "got": 0.373046875,
+            "want": 0.37890625
+          },
+          {
+            "index": [
+              0,
+              1,
+              98
+            ],
+            "got": -0.0218505859375,
+            "want": -0.021240234375
+          }
+        ]
+      },
+      {
+        "name": "round_121",
+        "output_key": "round_121",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 2665,
+        "max_abs": 0.0625,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1
+            ],
+            "got": -2.0,
+            "want": -1.9921875
+          },
+          {
+            "index": [
+              0,
+              1,
+              14
+            ],
+            "got": -0.369140625,
+            "want": -0.373046875
+          },
+          {
+            "index": [
+              0,
+              1,
+              17
+            ],
+            "got": 1.1953125,
+            "want": 1.203125
+          },
+          {
+            "index": [
+              0,
+              1,
+              22
+            ],
+            "got": -0.88671875,
+            "want": -0.890625
+          },
+          {
+            "index": [
+              0,
+              1,
+              24
+            ],
+            "got": 0.251953125,
+            "want": 0.25
+          },
+          {
+            "index": [
+              0,
+              1,
+              29
+            ],
+            "got": -1.8515625,
+            "want": -1.84375
+          },
+          {
+            "index": [
+              0,
+              1,
+              32
+            ],
+            "got": 0.1240234375,
+            "want": 0.12353515625
+          },
+          {
+            "index": [
+              0,
+              1,
+              35
+            ],
+            "got": 3.46875,
+            "want": 3.484375
+          },
+          {
+            "index": [
+              0,
+              1,
+              39
+            ],
+            "got": 1.3203125,
+            "want": 1.328125
+          },
+          {
+            "index": [
+              0,
+              1,
+              53
+            ],
+            "got": 2.21875,
+            "want": 2.234375
+          }
+        ]
+      },
+      {
+        "name": "round_122",
+        "output_key": "round_122",
+        "shape": [
+          1,
+          32,
+          3328
+        ],
+        "different_elements": 3570,
+        "max_abs": 1.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              1
+            ],
+            "got": -2.59375,
+            "want": -2.578125
+          },
+          {
+            "index": [
+              0,
+              1,
+              14
+            ],
+            "got": -1.171875,
+            "want": -1.1796875
+          },
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": -0.0986328125,
+            "want": -0.10009765625
+          },
+          {
+            "index": [
+              0,
+              1,
+              17
+            ],
+            "got": -0.0111083984375,
+            "want": -0.01116943359375
+          },
+          {
+            "index": [
+              0,
+              1,
+              22
+            ],
+            "got": 0.228515625,
+            "want": 0.2294921875
+          },
+          {
+            "index": [
+              0,
+              1,
+              24
+            ],
+            "got": -0.029052734375,
+            "want": -0.02880859375
+          },
+          {
+            "index": [
+              0,
+              1,
+              29
+            ],
+            "got": 0.2197265625,
+            "want": 0.21875
+          },
+          {
+            "index": [
+              0,
+              1,
+              32
+            ],
+            "got": -0.033203125,
+            "want": -0.032958984375
+          },
+          {
+            "index": [
+              0,
+              1,
+              33
+            ],
+            "got": -0.1298828125,
+            "want": -0.12890625
+          },
+          {
+            "index": [
+              0,
+              1,
+              35
+            ],
+            "got": 19.75,
+            "want": 19.875
+          }
+        ]
+      },
+      {
+        "name": "round_123",
+        "output_key": "round_123",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 985,
+        "max_abs": 8.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              8
+            ],
+            "got": -432.0,
+            "want": -430.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              9
+            ],
+            "got": -394.0,
+            "want": -396.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": -5.59375,
+            "want": -5.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              19
+            ],
+            "got": 36.5,
+            "want": 36.25
+          },
+          {
+            "index": [
+              0,
+              1,
+              21
+            ],
+            "got": 28.5,
+            "want": 28.625
+          },
+          {
+            "index": [
+              0,
+              1,
+              25
+            ],
+            "got": 52.75,
+            "want": 52.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              30
+            ],
+            "got": 151.0,
+            "want": 152.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              32
+            ],
+            "got": -864.0,
+            "want": -868.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              33
+            ],
+            "got": 23.625,
+            "want": 23.375
+          },
+          {
+            "index": [
+              0,
+              1,
+              36
+            ],
+            "got": -96.5,
+            "want": -96.0
+          }
+        ]
+      },
+      {
+        "name": "round_124",
+        "output_key": "round_124",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 242,
+        "max_abs": 64.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              5
+            ],
+            "got": -1864.0,
+            "want": -1856.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              163
+            ],
+            "got": 33.75,
+            "want": 33.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              200
+            ],
+            "got": -4.28125,
+            "want": -4.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              315
+            ],
+            "got": 67.5,
+            "want": 68.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              341
+            ],
+            "got": -304.0,
+            "want": -306.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              449
+            ],
+            "got": 300.0,
+            "want": 304.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              506
+            ],
+            "got": -258.0,
+            "want": -256.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              507
+            ],
+            "got": -936.0,
+            "want": -940.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              579
+            ],
+            "got": -34.25,
+            "want": -36.5
+          },
+          {
+            "index": [
+              0,
+              1,
+              623
+            ],
+            "got": -292.0,
+            "want": -288.0
+          }
+        ]
+      },
+      {
+        "name": "round_125",
+        "output_key": "round_125",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 904,
+        "max_abs": 64.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              9
+            ],
+            "got": -3872.0,
+            "want": -3888.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": -55.0,
+            "want": -49.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              19
+            ],
+            "got": 358.0,
+            "want": 356.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              30
+            ],
+            "got": 1480.0,
+            "want": 1488.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              32
+            ],
+            "got": -8448.0,
+            "want": -8512.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              33
+            ],
+            "got": 232.0,
+            "want": 229.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              36
+            ],
+            "got": -948.0,
+            "want": -944.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              44
+            ],
+            "got": 1200.0,
+            "want": 1208.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              48
+            ],
+            "got": 648.0,
+            "want": 656.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              59
+            ],
+            "got": 952.0,
+            "want": 948.0
+          }
+        ]
+      },
+      {
+        "name": "round_126",
+        "output_key": "round_126",
+        "shape": [
+          1,
+          32,
+          1280
+        ],
+        "different_elements": 525,
+        "max_abs": 64.0,
+        "mismatches": [
+          {
+            "index": [
+              0,
+              1,
+              9
+            ],
+            "got": -2896.0,
+            "want": -2912.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              15
+            ],
+            "got": 500.0,
+            "want": 508.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              19
+            ],
+            "got": -494.0,
+            "want": -496.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              30
+            ],
+            "got": 1688.0,
+            "want": 1696.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              32
+            ],
+            "got": -7776.0,
+            "want": -7840.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              44
+            ],
+            "got": 1904.0,
+            "want": 1912.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              48
+            ],
+            "got": -84.0,
+            "want": -76.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              89
+            ],
+            "got": -2384.0,
+            "want": -2368.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              106
+            ],
+            "got": 2416.0,
+            "want": 2432.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              126
+            ],
+            "got": 1632.0,
+            "want": 1648.0
+          }
+        ]
+      }
+    ]
+  }
+}

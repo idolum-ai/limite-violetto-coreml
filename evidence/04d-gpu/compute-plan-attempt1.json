@@ -1,0 +1,5 @@
+{
+  "script_sha256": "95200c2ba88dcdd4f850f59c76f7fc81b1df56a2f0503e23a841d45ae7370bae",
+  "failure": "TypeError: MLModelStructureProgram object is not subscriptable; API uses program.functions",
+  "report_created": false
+}

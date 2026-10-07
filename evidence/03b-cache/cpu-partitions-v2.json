@@ -1,0 +1,1722 @@
+{
+  "seed": 913,
+  "attention_min_query_rows": 8,
+  "source_sha256": "0f38f573afc86ecf3bd7ea7f0e0e55c1df1168ca0df267a930f451b176cb99c6",
+  "cases": [
+    {
+      "name": "tiny_1",
+      "input_ids": [
+        [
+          87555
+        ]
+      ],
+      "partitions": [
+        1
+      ],
+      "full_prefix_exact": true,
+      "cached_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "cached_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000001719
+      },
+      "cached_length": 1,
+      "seconds": 0.2334161251783371,
+      "matched_prefix_comparisons": [
+        {
+          "prefix_length": 1,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001719
+          },
+          "passed": true
+        }
+      ],
+      "warmup_ids_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "tiny_2",
+      "input_ids": [
+        [
+          87555,
+          130664
+        ]
+      ],
+      "partitions": [
+        1,
+        1
+      ],
+      "full_prefix_exact": true,
+      "cached_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "cached_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000007487
+      },
+      "cached_length": 2,
+      "seconds": 0.4184772502630949,
+      "matched_prefix_comparisons": [
+        {
+          "prefix_length": 1,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001719
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 2,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000007487
+          },
+          "passed": true
+        }
+      ],
+      "warmup_ids_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "tiny_3",
+      "input_ids": [
+        [
+          87555,
+          130664,
+          114854
+        ]
+      ],
+      "partitions": [
+        1,
+        1,
+        1
+      ],
+      "full_prefix_exact": true,
+      "cached_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "cached_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999997704
+      },
+      "cached_length": 3,
+      "seconds": 0.6461247503757477,
+      "matched_prefix_comparisons": [
+        {
+          "prefix_length": 1,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001719
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 2,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000007487
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 3,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999997704
+          },
+          "passed": true
+        }
+      ],
+      "warmup_ids_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "tiny_4",
+      "input_ids": [
+        [
+          87555,
+          130664,
+          114854,
+          100469
+        ]
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "full_prefix_exact": true,
+      "cached_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "cached_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.000000000000162
+      },
+      "cached_length": 4,
+      "seconds": 0.9199102083221078,
+      "matched_prefix_comparisons": [
+        {
+          "prefix_length": 1,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001719
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 2,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000007487
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 3,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999997704
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 4,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000162
+          },
+          "passed": true
+        }
+      ],
+      "warmup_ids_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "tiny_7",
+      "input_ids": [
+        [
+          87555,
+          130664,
+          114854,
+          100469,
+          143356,
+          6761,
+          11215
+        ]
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "full_prefix_exact": true,
+      "cached_hidden": {
+        "max_abs": 0.28125,
+        "rmse": 0.021817735403091197,
+        "relative_rmse": 0.02181564382975705,
+        "cosine": 0.999762033598321
+      },
+      "cached_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999995263
+      },
+      "cached_length": 7,
+      "seconds": 1.8025058330968022,
+      "matched_prefix_comparisons": [
+        {
+          "prefix_length": 1,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001719
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 2,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000007487
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 3,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999997704
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 4,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000162
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 5,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999032
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 6,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000076
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 7,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999995263
+          },
+          "passed": true
+        }
+      ],
+      "warmup_ids_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "tiny_8",
+      "input_ids": [
+        [
+          87555,
+          130664,
+          114854,
+          100469,
+          143356,
+          6761,
+          11215,
+          138112
+        ]
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "full_prefix_exact": true,
+      "cached_hidden": {
+        "max_abs": 0.375,
+        "rmse": 0.031656283156517806,
+        "relative_rmse": 0.031655138400050145,
+        "cosine": 0.9994989939179477
+      },
+      "cached_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.000000000000096
+      },
+      "cached_length": 8,
+      "seconds": 2.1217233324423432,
+      "matched_prefix_comparisons": [
+        {
+          "prefix_length": 1,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001719
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 2,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000007487
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 3,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999997704
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 4,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000162
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 5,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999032
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 6,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000076
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 7,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999995263
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 8,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000096
+          },
+          "passed": true
+        }
+      ],
+      "warmup_ids_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "tiny_9",
+      "input_ids": [
+        [
+          87555,
+          130664,
+          114854,
+          100469,
+          143356,
+          6761,
+          11215,
+          138112,
+          98678
+        ]
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "full_prefix_exact": true,
+      "cached_hidden": {
+        "max_abs": 0.375,
+        "rmse": 0.029845829982846968,
+        "relative_rmse": 0.029844621816443092,
+        "cosine": 0.9995546633474477
+      },
+      "cached_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999303
+      },
+      "cached_length": 9,
+      "seconds": 2.590607041493058,
+      "matched_prefix_comparisons": [
+        {
+          "prefix_length": 1,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001719
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 2,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000007487
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 3,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999997704
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 4,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000162
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 5,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999032
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 6,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000076
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 7,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999995263
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 8,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000096
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 9,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999303
+          },
+          "passed": true
+        }
+      ],
+      "warmup_ids_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "tiny_15",
+      "input_ids": [
+        [
+          87555,
+          130664,
+          114854,
+          100469,
+          143356,
+          6761,
+          11215,
+          138112,
+          98678,
+          21650,
+          145612,
+          50488,
+          87005,
+          147667,
+          80852
+        ]
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "full_prefix_exact": true,
+      "cached_hidden": {
+        "max_abs": 0.875,
+        "rmse": 0.03596313324639542,
+        "relative_rmse": 0.03596345925971672,
+        "cosine": 0.9993533618667054
+      },
+      "cached_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999994791
+      },
+      "cached_length": 15,
+      "seconds": 5.804100249893963,
+      "matched_prefix_comparisons": [
+        {
+          "prefix_length": 1,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001719
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 2,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000007487
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 3,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999997704
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 4,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000162
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 5,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999032
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 6,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000076
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 7,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999995263
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 8,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000096
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 9,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999303
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 10,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000658
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 11,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000005915
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 12,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000003377
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 13,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000002942
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 14,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000654
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 15,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999994791
+          },
+          "passed": true
+        }
+      ],
+      "warmup_ids_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "tiny_17",
+      "input_ids": [
+        [
+          87555,
+          130664,
+          114854,
+          100469,
+          143356,
+          6761,
+          11215,
+          138112,
+          98678,
+          21650,
+          145612,
+          50488,
+          87005,
+          147667,
+          80852,
+          105058,
+          22928
+        ]
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "full_prefix_exact": true,
+      "cached_hidden": {
+        "max_abs": 0.875,
+        "rmse": 0.034698617422093785,
+        "relative_rmse": 0.03469911315856682,
+        "cosine": 0.999398028918957
+      },
+      "cached_scores": {
+        "max_abs": 0.7521076202392578,
+        "rmse": 0.39837683602947616,
+        "relative_rmse": 0.05152396995145211,
+        "cosine": 0.9997806120789147
+      },
+      "cached_length": 17,
+      "seconds": 7.068799541331828,
+      "matched_prefix_comparisons": [
+        {
+          "prefix_length": 1,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001719
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 2,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000007487
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 3,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999997704
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 4,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000162
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 5,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999032
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 6,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000076
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 7,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999995263
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 8,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000096
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 9,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999303
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 10,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000658
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 11,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000005915
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 12,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000003377
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 13,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000002942
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 14,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000654
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 15,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999994791
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 16,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999187
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 17,
+          "hidden": {
+            "max_abs": 0.1328125,
+            "rmse": 0.03267559599475185,
+            "relative_rmse": 0.03267774426310002,
+            "cosine": 0.9994661518254638
+          },
+          "scores": {
+            "max_abs": 0.7521076202392578,
+            "rmse": 0.39837683602947616,
+            "relative_rmse": 0.05152396995145211,
+            "cosine": 0.9997806120789147
+          },
+          "passed": false
+        }
+      ],
+      "warmup_ids_disposed": true,
+      "passed": false
+    },
+    {
+      "name": "irregular_127",
+      "input_ids": [
+        [
+          87555,
+          130664,
+          114854,
+          100469,
+          143356,
+          6761,
+          11215,
+          138112,
+          98678,
+          21650,
+          145612,
+          50488,
+          87005,
+          147667,
+          80852,
+          105058,
+          22928,
+          35926,
+          128124,
+          150006,
+          26666,
+          138757,
+          25584,
+          61659,
+          80339,
+          62875,
+          99378,
+          25793,
+          134611,
+          64207,
+          7881,
+          117843,
+          91063,
+          147592,
+          63296,
+          61953,
+          7508,
+          120978,
+          38042,
+          149727,
+          65150,
+          92676,
+          88770,
+          117999,
+          102821,
+          19262,
+          136616,
+          86561,
+          74737,
+          107672,
+          23082,
+          150179,
+          119124,
+          145064,
+          135205,
+          22112,
+          70541,
+          98441,
+          32907,
+          96869,
+          930,
+          38102,
+          46498,
+          78452,
+          141035,
+          4224,
+          103540,
+          74377,
+          50810,
+          28750,
+          44631,
+          6223,
+          150661,
+          65326,
+          133255,
+          3866,
+          103526,
+          47056,
+          144561,
+          144338,
+          23489,
+          142057,
+          56647,
+          39668,
+          786,
+          101494,
+          6902,
+          59031,
+          91821,
+          37251,
+          109521,
+          22152,
+          77064,
+          37428,
+          9748,
+          3040,
+          47876,
+          92950,
+          89327,
+          104306,
+          99687,
+          36905,
+          31639,
+          53664,
+          36401,
+          56026,
+          86832,
+          70200,
+          125696,
+          118386,
+          60956,
+          81228,
+          74261,
+          7943,
+          78809,
+          115368,
+          126660,
+          82562,
+          118024,
+          1487,
+          21860,
+          135142,
+          37121,
+          41834,
+          44597,
+          72503,
+          98615
+        ]
+      ],
+      "partitions": [
+        1,
+        2,
+        4,
+        7,
+        16,
+        32,
+        65
+      ],
+      "full_prefix_exact": true,
+      "cached_hidden": {
+        "max_abs": 0.75,
+        "rmse": 0.011357923516579115,
+        "relative_rmse": 0.011358290527600082,
+        "cosine": 0.9999354946728135
+      },
+      "cached_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000001976
+      },
+      "cached_length": 127,
+      "seconds": 13.435405625030398,
+      "matched_prefix_comparisons": [
+        {
+          "prefix_length": 1,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001719
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 3,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999997704
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 7,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999995263
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 14,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.000000000000654
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 30,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001792
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 62,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000007367
+          },
+          "passed": true
+        },
+        {
+          "prefix_length": 127,
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0
+          },
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000001976
+          },
+          "passed": true
+        }
+      ],
+      "warmup_ids_disposed": true,
+      "passed": true
+    }
+  ],
+  "passed": false
+}

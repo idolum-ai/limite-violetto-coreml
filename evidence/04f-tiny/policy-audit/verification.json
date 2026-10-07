@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "scope": "arithmetic-policy provenance checks only; no candidate conversion or Core ML inference",
+  "py_compile_pass": true,
+  "unit_tests": {
+    "suite": "scripts.test_summarize_cpu_milestone",
+    "passed": 11,
+    "failed": 0
+  },
+  "source_sha256": {
+    "scripts/summarize_cpu_milestone.py": "9ac5006663598d7f4078244f13ca7504c261575bc5b00fac4aef97da022206a5",
+    "scripts/test_summarize_cpu_milestone.py": "e362868c334b0c59715d584c682d6197a67c8c411525ead0ca617bd5bc1f36c4",
+    "coreml_port/paired_product.py": "9145720c24d706940ddc7039521a3cd76b8706419e964070730bd0f81dbe59e3",
+    "coreml_port/tiny_native_scores.py": "c1fd3339ce3ac7b23cf0117dfb466b25c2c43c036a87616eb8656787fa5858ff"
+  },
+  "paired_native_tiny_policy": {
+    "policy": "paired-native-tiny",
+    "positive_synthetic_policy_check_pass": true,
+    "requirements": [
+      "paired_product=true",
+      "tiny_native=true",
+      "tiny_sequential=false",
+      "enhanced=true",
+      "source_exp=true",
+      "dynamic_product=true",
+      "paired_product.py source identity and sealed snapshot",
+      "tiny_native_scores.py source identity and sealed snapshot",
+      "all 12 group commands include --product paired and --score-dot tiny-native"
+    ],
+    "negative_cases_passed": [
+      "missing or false required build flags",
+      "tiny_sequential=true",
+      "missing paired_product.py or tiny_native_scores.py identity",
+      "malformed/missing required command options",
+      "missing group conversion record",
+      "wrong --score-dot tiny-sequential"
+    ]
+  },
+  "existing_policy_compatibility": {
+    "legacy_historical_build_without_tiny_native_flag_accepted": true,
+    "paired_product_policy_without_tiny_native_flag_accepted": true,
+    "paired_tiny_policy_without_tiny_native_flag_accepted": true,
+    "wrong_tiny_native_build_flag_or_command_rejected_by_existing_exact_policies": true
+  },
+  "qualification_note": "This records policy enforcement only. It does not qualify paired-native-tiny numerically; composed prefix and full-model gates remain pending."
+}

@@ -1,0 +1,334 @@
+{
+  "device": "mps",
+  "cases": [
+    {
+      "case": "prompt_0",
+      "mode": "native",
+      "seconds": 1.0741779999807477,
+      "full_vs_source_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999998
+      },
+      "full_vs_source_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999993179
+      },
+      "cache_vs_source_hidden_last": {
+        "max_abs": 0.125,
+        "rmse": 0.018844498318400106,
+        "relative_rmse": 0.018846253539153052,
+        "cosine": 0.9998224748954766
+      },
+      "cache_vs_source_scores": {
+        "max_abs": 0.14904379844665527,
+        "rmse": 0.004100180713400659,
+        "relative_rmse": 0.0135994064855845,
+        "cosine": 0.9999135289476738
+      },
+      "cache_vs_same_mode_hidden": {
+        "max_abs": 0.25,
+        "rmse": 0.0063563186024086175,
+        "relative_rmse": 0.00635599885913989,
+        "cosine": 0.999979800453282
+      },
+      "cache_vs_same_mode_scores": {
+        "max_abs": 0.14904379844665527,
+        "rmse": 0.004100180713400659,
+        "relative_rmse": 0.0135994064855845,
+        "cosine": 0.9999135289476738
+      }
+    },
+    {
+      "case": "prompt_0",
+      "mode": "query_pad",
+      "seconds": 1.0559177501127124,
+      "full_vs_source_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999998
+      },
+      "full_vs_source_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999993179
+      },
+      "cache_vs_source_hidden_last": {
+        "max_abs": 0.15625,
+        "rmse": 0.01798220714488943,
+        "relative_rmse": 0.017983882049820894,
+        "cosine": 0.9998383667662296
+      },
+      "cache_vs_source_scores": {
+        "max_abs": 0.26599860191345215,
+        "rmse": 0.008550495213694784,
+        "relative_rmse": 0.028360130489867342,
+        "cosine": 0.999894450345712
+      },
+      "cache_vs_same_mode_hidden": {
+        "max_abs": 0.353515625,
+        "rmse": 0.006928079752668386,
+        "relative_rmse": 0.006927731247974918,
+        "cosine": 0.9999760034558631
+      },
+      "cache_vs_same_mode_scores": {
+        "max_abs": 0.26599860191345215,
+        "rmse": 0.008550495213694784,
+        "relative_rmse": 0.028360130489867342,
+        "cosine": 0.999894450345712
+      }
+    },
+    {
+      "case": "prompt_1",
+      "mode": "native",
+      "seconds": 1.1441429583355784,
+      "full_vs_source_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "full_vs_source_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999993734
+      },
+      "cache_vs_source_hidden_last": {
+        "max_abs": 0.078125,
+        "rmse": 0.019746918494087457,
+        "relative_rmse": 0.019744968701299694,
+        "cosine": 0.9998050491840245
+      },
+      "cache_vs_source_scores": {
+        "max_abs": 0.21726655960083008,
+        "rmse": 0.006557363477711414,
+        "relative_rmse": 0.02315444003777386,
+        "cosine": 0.9999064155690107
+      },
+      "cache_vs_same_mode_hidden": {
+        "max_abs": 0.34375,
+        "rmse": 0.006237641768567196,
+        "relative_rmse": 0.006237652194114512,
+        "cosine": 0.9999805458716209
+      },
+      "cache_vs_same_mode_scores": {
+        "max_abs": 0.21726655960083008,
+        "rmse": 0.006557363477711414,
+        "relative_rmse": 0.02315444003777386,
+        "cosine": 0.9999064155690107
+      }
+    },
+    {
+      "case": "prompt_1",
+      "mode": "query_pad",
+      "seconds": 1.4228615825995803,
+      "full_vs_source_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "full_vs_source_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999993734
+      },
+      "cache_vs_source_hidden_last": {
+        "max_abs": 0.109375,
+        "rmse": 0.020210912416484983,
+        "relative_rmse": 0.02020891680935896,
+        "cosine": 0.9997958332937458
+      },
+      "cache_vs_source_scores": {
+        "max_abs": 0.36507558822631836,
+        "rmse": 0.007223447254063449,
+        "relative_rmse": 0.02550642142665058,
+        "cosine": 0.9998429519350971
+      },
+      "cache_vs_same_mode_hidden": {
+        "max_abs": 0.359375,
+        "rmse": 0.00612298136546845,
+        "relative_rmse": 0.006122991599373235,
+        "cosine": 0.9999812547908031
+      },
+      "cache_vs_same_mode_scores": {
+        "max_abs": 0.36507558822631836,
+        "rmse": 0.007223447254063449,
+        "relative_rmse": 0.02550642142665058,
+        "cosine": 0.9998429519350971
+      }
+    },
+    {
+      "case": "prompt_2",
+      "mode": "native",
+      "seconds": 1.2047893330454826,
+      "full_vs_source_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "full_vs_source_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999993058
+      },
+      "cache_vs_source_hidden_last": {
+        "max_abs": 0.0859375,
+        "rmse": 0.01662399044436239,
+        "relative_rmse": 0.016622814527532486,
+        "cosine": 0.9998618712120007
+      },
+      "cache_vs_source_scores": {
+        "max_abs": 0.12151503562927246,
+        "rmse": 0.005412384060349373,
+        "relative_rmse": 0.01922400065368205,
+        "cosine": 0.9999095439524706
+      },
+      "cache_vs_same_mode_hidden": {
+        "max_abs": 0.15625,
+        "rmse": 0.006056372752691409,
+        "relative_rmse": 0.006056340641672673,
+        "cosine": 0.9999816604984857
+      },
+      "cache_vs_same_mode_scores": {
+        "max_abs": 0.12151503562927246,
+        "rmse": 0.005412384060349373,
+        "relative_rmse": 0.01922400065368205,
+        "cosine": 0.9999095439524706
+      }
+    },
+    {
+      "case": "prompt_2",
+      "mode": "query_pad",
+      "seconds": 1.3993125827983022,
+      "full_vs_source_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0
+      },
+      "full_vs_source_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999993058
+      },
+      "cache_vs_source_hidden_last": {
+        "max_abs": 0.078125,
+        "rmse": 0.017426500694962772,
+        "relative_rmse": 0.01742526801165956,
+        "cosine": 0.9998482007841918
+      },
+      "cache_vs_source_scores": {
+        "max_abs": 0.11677312850952148,
+        "rmse": 0.005550842305228414,
+        "relative_rmse": 0.019715784193132233,
+        "cosine": 0.9999084069890907
+      },
+      "cache_vs_same_mode_hidden": {
+        "max_abs": 0.203125,
+        "rmse": 0.006015331339712671,
+        "relative_rmse": 0.00601529944629639,
+        "cosine": 0.9999819079811384
+      },
+      "cache_vs_same_mode_scores": {
+        "max_abs": 0.11677312850952148,
+        "rmse": 0.005550842305228414,
+        "relative_rmse": 0.019715784193132233,
+        "cosine": 0.9999084069890907
+      }
+    },
+    {
+      "case": "window",
+      "mode": "native",
+      "seconds": 2.942144292406738,
+      "full_vs_source_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000000053
+      },
+      "full_vs_source_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000001146
+      },
+      "cache_vs_source_hidden_last": {
+        "max_abs": 0.30078125,
+        "rmse": 0.029342787817492944,
+        "relative_rmse": 0.02934365301026179,
+        "cosine": 0.9995695151727364
+      },
+      "cache_vs_source_scores": {
+        "max_abs": 0.22609996795654297,
+        "rmse": 0.007184497961792218,
+        "relative_rmse": 0.015180517657382145,
+        "cosine": 0.9999013694666812
+      },
+      "cache_vs_same_mode_hidden": {
+        "max_abs": 0.8125,
+        "rmse": 0.023097196213329813,
+        "relative_rmse": 0.023097074312561652,
+        "cosine": 0.9997332624480095
+      },
+      "cache_vs_same_mode_scores": {
+        "max_abs": 0.22609996795654297,
+        "rmse": 0.007184497961792218,
+        "relative_rmse": 0.015180517657382145,
+        "cosine": 0.9999013694666812
+      }
+    },
+    {
+      "case": "window",
+      "mode": "query_pad",
+      "seconds": 3.939441374503076,
+      "full_vs_source_hidden": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000000053
+      },
+      "full_vs_source_scores": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000001146
+      },
+      "cache_vs_source_hidden_last": {
+        "max_abs": 0.1171875,
+        "rmse": 0.02339757713605286,
+        "relative_rmse": 0.023398267030096755,
+        "cosine": 0.9997263609623419
+      },
+      "cache_vs_source_scores": {
+        "max_abs": 0.2604851722717285,
+        "rmse": 0.01661947750227732,
+        "relative_rmse": 0.03511620060601288,
+        "cosine": 0.9998727415645996
+      },
+      "cache_vs_same_mode_hidden": {
+        "max_abs": 0.8125,
+        "rmse": 0.023090561455709327,
+        "relative_rmse": 0.02309043958995763,
+        "cosine": 0.999733415724202
+      },
+      "cache_vs_same_mode_scores": {
+        "max_abs": 0.2604851722717285,
+        "rmse": 0.01661947750227732,
+        "relative_rmse": 0.03511620060601288,
+        "cosine": 0.9998727415645996
+      }
+    }
+  ],
+  "source_sha256": "e1a813504f71f24ce6adddba11c1f07f51977b72de5c2504bfc1af75be81ebe9"
+}

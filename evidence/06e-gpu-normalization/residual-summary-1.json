@@ -1,0 +1,753 @@
+{
+  "archive_sha256": {
+    "chunk0/CPU-original/outputs": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+    "chunk0/CPU-original/state-after": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+    "chunk0/CPU-tapped/outputs": "83b66f0c7f975d2bbc36648f4f9d7d7151b1ff33a919b2d0acac78765da7db70",
+    "chunk0/CPU-tapped/state-after": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+    "chunk0/GPU-original/outputs": "5758cef1a9c264af56c9e3f59e5148a6753bf7848ac7572b00ccf35b3e74d70c",
+    "chunk0/GPU-original/state-after": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97",
+    "chunk0/GPU-tapped/outputs": "cce527a752cf207800f61b0a89147f179b76a471f6dd5ac8a6d733a003d0b4a9",
+    "chunk0/GPU-tapped/state-after": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97",
+    "chunk1/CPU-original/outputs": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+    "chunk1/CPU-original/state-after": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+    "chunk1/CPU-tapped/outputs": "3082c77a4db8265c7e8223ee7f14d46ad6ff96ee5b62d7e315d0d66554443d44",
+    "chunk1/CPU-tapped/state-after": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+    "chunk1/GPU-original/outputs": "6087af4a85b05207a44761dcdbaf3ccb0d31a09fb0969e2806909cf451e21da3",
+    "chunk1/GPU-original/state-after": "ac1c002e2b2ac96523bac7dbdf1a5fa31677d15cb8b1c07f8b8924cb67dd0113",
+    "chunk1/GPU-tapped/outputs": "9835733ae181117f44398ec080fc2ee1d765a3bb4f1ce05082890eb13dfb6cab",
+    "chunk1/GPU-tapped/state-after": "ac1c002e2b2ac96523bac7dbdf1a5fa31677d15cb8b1c07f8b8924cb67dd0113"
+  },
+  "chunks": [
+    {
+      "chunk": 0,
+      "first_changed_tap": "value_17",
+      "query_length": 32,
+      "tap_comparisons": {
+        "denom_7": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 2.556647539138794,
+            "actual_bits": "0x4023a01d",
+            "expected": 2.556434154510498,
+            "expected_bits": "0x40239c9e",
+            "index": [
+              0,
+              19,
+              0
+            ]
+          },
+          "max_abs": 0.00021338462829589844,
+          "mean_abs": 6.668269634246826e-06,
+          "numeric_error_count": 1,
+          "query_rows_with_differences": [
+            19
+          ],
+          "relative_rmse": 1.616716310899181e-05,
+          "rmse": 3.772142941725016e-05,
+          "shape": [
+            1,
+            32,
+            1
+          ]
+        },
+        "mean_7": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 6.536446571350098,
+            "actual_bits": "0x40d12a92",
+            "expected": 6.535355567932129,
+            "expected_bits": "0x40d121a2",
+            "index": [
+              0,
+              19,
+              0
+            ]
+          },
+          "max_abs": 0.00109100341796875,
+          "mean_abs": 3.409385681152344e-05,
+          "numeric_error_count": 1,
+          "query_rows_with_differences": [
+            19
+          ],
+          "relative_rmse": 3.385325325318201e-05,
+          "rmse": 0.0001928639787858511,
+          "shape": [
+            1,
+            32,
+            1
+          ]
+        },
+        "step_47": {
+          "bitwise_error_count": 2,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 3.0517578125e-05,
+            "actual_bits": "0x38000000",
+            "expected": 6.103515625e-05,
+            "expected_bits": "0x38800000",
+            "index": [
+              0,
+              19,
+              415
+            ]
+          },
+          "max_abs": 0.0009765625,
+          "mean_abs": 2.458691596984863e-08,
+          "numeric_error_count": 2,
+          "query_rows_with_differences": [
+            19
+          ],
+          "relative_rmse": 0.0008373015905064133,
+          "rmse": 4.827608282879969e-06,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "value_17": {
+          "bitwise_error_count": 146,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 4.5,
+            "actual_bits": "0x40900000",
+            "expected": 4.46875,
+            "expected_bits": "0x408f0000",
+            "index": [
+              0,
+              19,
+              3
+            ]
+          },
+          "max_abs": 0.0625,
+          "mean_abs": 4.7826766967773436e-05,
+          "numeric_error_count": 146,
+          "query_rows_with_differences": [
+            19
+          ],
+          "relative_rmse": 0.00046671359194732623,
+          "rmse": 0.001088942067603679,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "var_5669": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 8366.6513671875,
+            "actual_bits": "0x4602ba9b",
+            "expected": 8365.2548828125,
+            "expected_bits": "0x4602b505",
+            "index": [
+              0,
+              19,
+              0
+            ]
+          },
+          "max_abs": 1.396484375,
+          "mean_abs": 0.04364013671875,
+          "numeric_error_count": 1,
+          "query_rows_with_differences": [
+            19
+          ],
+          "relative_rmse": 3.385325337908195e-05,
+          "rmse": 0.2468658928458894,
+          "shape": [
+            1,
+            32,
+            1
+          ]
+        },
+        "var_5672": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 6.536446571350098,
+            "actual_bits": "0x40d12a92",
+            "expected": 6.535355567932129,
+            "expected_bits": "0x40d121a2",
+            "index": [
+              0,
+              19,
+              0
+            ]
+          },
+          "max_abs": 0.00109100341796875,
+          "mean_abs": 3.409385681152344e-05,
+          "numeric_error_count": 1,
+          "query_rows_with_differences": [
+            19
+          ],
+          "relative_rmse": 3.3853253119872734e-05,
+          "rmse": 0.0001928639787858511,
+          "shape": [
+            1,
+            32,
+            1
+          ]
+        },
+        "var_5675": {
+          "bitwise_error_count": 12,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.5349245071411133,
+            "actual_bits": "0x3f08f0d0",
+            "expected": 0.5349244475364685,
+            "expected_bits": "0x3f08f0cf",
+            "index": [
+              0,
+              0,
+              0
+            ]
+          },
+          "max_abs": 3.266334533691406e-05,
+          "mean_abs": 1.0319054126739502e-06,
+          "numeric_error_count": 12,
+          "query_rows_with_differences": [
+            0,
+            7,
+            15,
+            16,
+            17,
+            18,
+            19,
+            21,
+            23,
+            26,
+            30,
+            31
+          ],
+          "relative_rmse": 1.2687202687952762e-05,
+          "rmse": 5.7741518941539736e-06,
+          "shape": [
+            1,
+            32,
+            1
+          ]
+        },
+        "var_5690": {
+          "bitwise_error_count": 13652,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -243.92556762695312,
+            "actual_bits": "0xc373ecf2",
+            "expected": -243.92555236816406,
+            "expected_bits": "0xc373ecf1",
+            "index": [
+              0,
+              0,
+              0
+            ]
+          },
+          "max_abs": 125.15318298339844,
+          "mean_abs": 0.018527557700872423,
+          "numeric_error_count": 13652,
+          "query_rows_with_differences": [
+            0,
+            7,
+            15,
+            16,
+            17,
+            18,
+            19,
+            21,
+            23,
+            26,
+            30,
+            31
+          ],
+          "relative_rmse": 0.005148996074790273,
+          "rmse": 0.9677949134014555,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "var_5691": {
+          "bitwise_error_count": 154,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 225.0,
+            "actual_bits": "0x43610000",
+            "expected": 224.0,
+            "expected_bits": "0x43600000",
+            "index": [
+              0,
+              19,
+              3
+            ]
+          },
+          "max_abs": 125.0,
+          "mean_abs": 0.01845703125,
+          "numeric_error_count": 154,
+          "query_rows_with_differences": [
+            19
+          ],
+          "relative_rmse": 0.005133410173935809,
+          "rmse": 0.9648864489539689,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "x_65": {
+          "bitwise_error_count": 146,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 20.25,
+            "actual_bits": "0x41a20000",
+            "expected": 19.9697265625,
+            "expected_bits": "0x419fc200",
+            "index": [
+              0,
+              19,
+              3
+            ]
+          },
+          "max_abs": 0.94921875,
+          "mean_abs": 0.00021437896648421884,
+          "numeric_error_count": 146,
+          "query_rows_with_differences": [
+            19
+          ],
+          "relative_rmse": 0.000644397182538059,
+          "rmse": 0.007434003741024156,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "x_67": {
+          "bitwise_error_count": 13652,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.4764171242713928,
+            "actual_bits": "0xbef3ecf2",
+            "expected": -0.47641709446907043,
+            "expected_bits": "0xbef3ecf1",
+            "index": [
+              0,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.024538516998291016,
+          "mean_abs": 2.055803918494803e-05,
+          "numeric_error_count": 13652,
+          "query_rows_with_differences": [
+            0,
+            7,
+            15,
+            16,
+            17,
+            18,
+            19,
+            21,
+            23,
+            26,
+            30,
+            31
+          ],
+          "relative_rmse": 0.0004256878609405318,
+          "rmse": 0.0004256878643115248,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "x_69": {
+          "bitwise_error_count": 154,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 1.7578125,
+            "actual_bits": "0x3fe10000",
+            "expected": 1.75,
+            "expected_bits": "0x3fe00000",
+            "index": [
+              0,
+              19,
+              3
+            ]
+          },
+          "max_abs": 0.03125,
+          "mean_abs": 2.1123141050338744e-05,
+          "numeric_error_count": 154,
+          "query_rows_with_differences": [
+            19
+          ],
+          "relative_rmse": 0.0004787836667568253,
+          "rmse": 0.0004787976256382039,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      }
+    },
+    {
+      "chunk": 1,
+      "first_changed_tap": "var_5675",
+      "query_length": 12,
+      "tap_comparisons": {
+        "denom_7": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "numeric_error_count": 0,
+          "query_rows_with_differences": [],
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1
+          ]
+        },
+        "mean_7": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "numeric_error_count": 0,
+          "query_rows_with_differences": [],
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1
+          ]
+        },
+        "step_47": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "numeric_error_count": 0,
+          "query_rows_with_differences": [],
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "value_17": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "numeric_error_count": 0,
+          "query_rows_with_differences": [],
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "var_5669": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "numeric_error_count": 0,
+          "query_rows_with_differences": [],
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1
+          ]
+        },
+        "var_5672": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "numeric_error_count": 0,
+          "query_rows_with_differences": [],
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1
+          ]
+        },
+        "var_5675": {
+          "bitwise_error_count": 3,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.3713077902793884,
+            "actual_bits": "0x3ebe1c0e",
+            "expected": 0.37130776047706604,
+            "expected_bits": "0x3ebe1c0d",
+            "index": [
+              0,
+              1,
+              0
+            ]
+          },
+          "max_abs": 2.9802322387695312e-08,
+          "mean_abs": 7.450580596923828e-09,
+          "numeric_error_count": 3,
+          "query_rows_with_differences": [
+            1,
+            2,
+            8
+          ],
+          "relative_rmse": 3.399876845362569e-08,
+          "rmse": 1.4901161193847656e-08,
+          "shape": [
+            1,
+            12,
+            1
+          ]
+        },
+        "var_5690": {
+          "bitwise_error_count": 3375,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -157.43450927734375,
+            "actual_bits": "0xc31d6f3c",
+            "expected": -157.4344940185547,
+            "expected_bits": "0xc31d6f3b",
+            "index": [
+              0,
+              1,
+              0
+            ]
+          },
+          "max_abs": 3.0517578125e-05,
+          "mean_abs": 3.5951534907023114e-06,
+          "numeric_error_count": 3375,
+          "query_rows_with_differences": [
+            1,
+            2,
+            8
+          ],
+          "relative_rmse": 4.183031524573645e-08,
+          "rmse": 7.890178219556067e-06,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "var_5691": {
+          "bitwise_error_count": 19,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -226.0,
+            "actual_bits": "0xc3620000",
+            "expected": -225.0,
+            "expected_bits": "0xc3610000",
+            "index": [
+              0,
+              8,
+              23
+            ]
+          },
+          "max_abs": 1.0,
+          "mean_abs": 0.0012369791666666666,
+          "numeric_error_count": 19,
+          "query_rows_with_differences": [
+            8
+          ],
+          "relative_rmse": 0.00018644814568116895,
+          "rmse": 0.03517071461694611,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "x_65": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "numeric_error_count": 0,
+          "query_rows_with_differences": [],
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "x_67": {
+          "bitwise_error_count": 3375,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.614978551864624,
+            "actual_bits": "0xbf1d6f3c",
+            "expected": -0.6149784922599792,
+            "expected_bits": "0xbf1d6f3b",
+            "index": [
+              0,
+              1,
+              0
+            ]
+          },
+          "max_abs": 4.76837158203125e-07,
+          "mean_abs": 1.524974019654716e-08,
+          "numeric_error_count": 3375,
+          "query_rows_with_differences": [
+            1,
+            2,
+            8
+          ],
+          "relative_rmse": 4.215633690668926e-08,
+          "rmse": 4.215633657931114e-08,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "x_69": {
+          "bitwise_error_count": 19,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.8828125,
+            "actual_bits": "0xbf620000",
+            "expected": -0.87890625,
+            "expected_bits": "0xbf610000",
+            "index": [
+              0,
+              8,
+              23
+            ]
+          },
+          "max_abs": 0.0078125,
+          "mean_abs": 5.276997884114583e-06,
+          "numeric_error_count": 19,
+          "query_rows_with_differences": [
+            8
+          ],
+          "relative_rmse": 0.0001717254621946278,
+          "rmse": 0.00017173200496555717,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      }
+    }
+  ],
+  "controls": [
+    {
+      "chunk": 0,
+      "original_output_sha256": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+      "original_state_sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+      "passed": true,
+      "policy": "CPU",
+      "tapped_output_sha256": "83b66f0c7f975d2bbc36648f4f9d7d7151b1ff33a919b2d0acac78765da7db70",
+      "tapped_state_sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e"
+    },
+    {
+      "chunk": 0,
+      "original_output_sha256": "5758cef1a9c264af56c9e3f59e5148a6753bf7848ac7572b00ccf35b3e74d70c",
+      "original_state_sha256": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97",
+      "passed": true,
+      "policy": "GPU",
+      "tapped_output_sha256": "cce527a752cf207800f61b0a89147f179b76a471f6dd5ac8a6d733a003d0b4a9",
+      "tapped_state_sha256": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97"
+    },
+    {
+      "chunk": 1,
+      "original_output_sha256": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+      "original_state_sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+      "passed": true,
+      "policy": "CPU",
+      "tapped_output_sha256": "3082c77a4db8265c7e8223ee7f14d46ad6ff96ee5b62d7e315d0d66554443d44",
+      "tapped_state_sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6"
+    },
+    {
+      "chunk": 1,
+      "original_output_sha256": "6087af4a85b05207a44761dcdbaf3ccb0d31a09fb0969e2806909cf451e21da3",
+      "original_state_sha256": "ac1c002e2b2ac96523bac7dbdf1a5fa31677d15cb8b1c07f8b8924cb67dd0113",
+      "passed": true,
+      "policy": "GPU",
+      "tapped_output_sha256": "9835733ae181117f44398ec080fc2ee1d765a3bb4f1ce05082890eb13dfb6cab",
+      "tapped_state_sha256": "ac1c002e2b2ac96523bac7dbdf1a5fa31677d15cb8b1c07f8b8924cb67dd0113"
+    }
+  ],
+  "controls_passed": true,
+  "pinned_sources": {
+    "evidence/06d-gpu-rounding/group0-1/results.json": "4e6ac1baa2f70c10bf812523f7e341d9dabf34b30299e4819631f2db31cf150f",
+    "evidence/06d-gpu-rounding/group0-replay-1/results.json": "76e6030af0fd108d412ba89652bb4ed6d55f1760936da8f805f8fc358077e693",
+    "evidence/06e-gpu-normalization/taps-1/results.json": "b2b08da42ff1e35c693211e3869af3ea7475e7e3c5e3218a3a18c3a2568e629d",
+    "scripts/probe_normalization_taps.py": "ab1429a736e971b9f915f73d38230bb7c3c05b551955c4cbd36fd52d4f6bfb6c"
+  },
+  "replay": {
+    "path": "evidence/06e-gpu-normalization/replay-1/results.json",
+    "sha256": "d72fc475a76e5c3751499465253fad154ea396753ff68630aa4f8dec6a8a7c09"
+  },
+  "schema_version": 1,
+  "scope": "Saved same-input/same-state group-0 taps and endpoints only; no native execution, full-model conclusion, or speed measurement.",
+  "script_sha256": "bcc3c1253c888a89b30db95725c8ac6f5f6875ce06757c9153f4a40d20609922",
+  "taps": [
+    "value_17",
+    "x_65",
+    "var_5669",
+    "mean_7",
+    "var_5672",
+    "denom_7",
+    "var_5675",
+    "x_67",
+    "step_47",
+    "var_5690",
+    "var_5691",
+    "x_69"
+  ]
+}

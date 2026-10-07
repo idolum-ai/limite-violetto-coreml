@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "compute": "CPU_ONLY",
+  "package": "<PROJECT_ROOT>/artifacts/04f-tiny/integrated-group8/8.mlpackage",
+  "script_sha256": "ee4db218d83ff1261d56bc742e0b9f57fd33263da667b098cf80cdf9e0b7b8d2",
+  "package_files": {
+    "Data/com.apple.CoreML/model.mlmodel": "aab100c7897182c2734b5749f815e44fb2d29be9460be1bedf8b68c7b3299208",
+    "Data/com.apple.CoreML/weights/weight.bin": "9b1cd8219b7d11b7c56415f60cc8c1afcca4f31b784ef312d9854ad507e4e9fd",
+    "Manifest.json": "67ae19a4115f9950e665526342090afe6ad583f80282339992cb569a91cd469b"
+  },
+  "input_file": "<PROJECT_ROOT>/evidence/04f-tiny/integrated-group8/native-fixture.npz",
+  "input_sha256": "90469de5b4c2a86e9a53ae2d930817b52e612a262a032a8b8aa5fcecfc56fbf6",
+  "positions": [
+    0,
+    1,
+    2
+  ],
+  "runtime_provenance": {
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e"
+  },
+  "y": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "exact": true
+  },
+  "tap23": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "exact": true
+  },
+  "pass": true
+}

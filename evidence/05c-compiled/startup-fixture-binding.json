@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": {
+    "input_fixture_matches_qualified_pilot": true,
+    "milestone_unchanged": true,
+    "runtime_provenance_matches_pilot": true,
+    "score_artifact_matches_pilot": true
+  },
+  "pilot_sha256": "afff9529de181adf72be924ba09017eb3b7bf558362b153d0fad2c6f9b27d2e8"
+}

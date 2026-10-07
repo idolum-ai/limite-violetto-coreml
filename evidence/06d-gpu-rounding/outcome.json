@@ -1,0 +1,77 @@
+{
+  "status": "completed_bounded_experiment",
+  "gates": {
+    "R1_strict_full_q_torch": "FAIL; pre-existing native zero-sign canonicalization",
+    "R1b_direct_round_and_native_cpu_full_q": "PASS",
+    "R2_structure": "PASS; 131 replacements and 42,367 unchanged operations",
+    "R2_cpu_bytes": "PASS; two chunks, endpoints and eight states",
+    "R2_gpu_exact": "FAIL; first Q/K/V exact but later states and output differ",
+    "R2_residual_controls": "PASS; four- and six-tap clones",
+    "R3_full_model": "NOT_RUN",
+    "R4_device_and_performance": "UNVERIFIED"
+  },
+  "thresholds_changed": false,
+  "adopted": false,
+  "cpu_preserved": true,
+  "rmse_reduction_percent": [
+    88.98826621728881,
+    49.19479694603357
+  ],
+  "scope": "Separate group0 diagnostic on common CPU inputs/cache, 32+12 tokens from one prompt. Not GPU qualification or performance.",
+  "residual_boundaries": {
+    "cold": {
+      "last_verified_exact": "query/key/value",
+      "first_sampled_difference": "value_17 attention residual",
+      "changed_elements": 146,
+      "query_rows": [
+        19
+      ]
+    },
+    "warm": {
+      "last_verified_exact": "value_17 attention residual",
+      "first_sampled_difference": "x_69 normalized/quantized MLP input",
+      "changed_elements": 19,
+      "query_rows": [
+        8
+      ]
+    }
+  },
+  "evidence": {
+    "round-replacement-1/results.json": {
+      "path": "evidence/06d-gpu-rounding/round-replacement-1/results.json",
+      "sha256": "c3eb47f7f402f417bfbddffe82946c5c18e505a444e848d3607ecacd0423473e"
+    },
+    "group0-1/results.json": {
+      "path": "evidence/06d-gpu-rounding/group0-1/results.json",
+      "sha256": "4e6ac1baa2f70c10bf812523f7e341d9dabf34b30299e4819631f2db31cf150f"
+    },
+    "group0-replay-1/results.json": {
+      "path": "evidence/06d-gpu-rounding/group0-replay-1/results.json",
+      "sha256": "76e6030af0fd108d412ba89652bb4ed6d55f1760936da8f805f8fc358077e693"
+    },
+    "group-summary.json": {
+      "path": "evidence/06d-gpu-rounding/group-summary.json",
+      "sha256": "7e2c657268071e4e81c122ff9a90c21a75334bf6ea78af1c14ddcd6a64696c11"
+    },
+    "residual-replay-2/results.json": {
+      "path": "evidence/06d-gpu-rounding/residual-replay-2/results.json",
+      "sha256": "fbf368ffc1225f0f07f1cc573e2366526e6bf30e70625ef8d3041c209b70ce7b"
+    },
+    "residual-replay-3/results.json": {
+      "path": "evidence/06d-gpu-rounding/residual-replay-3/results.json",
+      "sha256": "eeaf6c77b33845f9797a9fc07a4ca3423bf6c273d2c29e8f9db8f06a88669039"
+    },
+    "residual-summary-2.json": {
+      "path": "evidence/06d-gpu-rounding/residual-summary-2.json",
+      "sha256": "1496944e04c831e46e5886c0cfac9bf7cdc26e4831882b5e80b3ebefc12ce5e8"
+    },
+    "residual-summary-3.json": {
+      "path": "evidence/06d-gpu-rounding/residual-summary-3.json",
+      "sha256": "b024a77d858530ba1435b0663dc9e76e8670f0d9e79a8d003b70a38f6292db39"
+    },
+    "cpu-preservation.json": {
+      "path": "evidence/06d-gpu-rounding/cpu-preservation.json",
+      "sha256": "cfec08717f17fe93d21a8ee83628b815baaf9f9fc2bb53ee48fb8fd001b849bc"
+    }
+  }
+}

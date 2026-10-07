@@ -1,0 +1,79 @@
+[
+  {
+    "name": "attention-small-local-attempt6",
+    "command": [
+      "<PROJECT_ROOT>/.venv/bin/python",
+      "<PROJECT_ROOT>/experiments/run_components.py",
+      "attention",
+      "--attempt",
+      "6"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 2.8920977916568518
+  },
+  {
+    "name": "attention-small-global-attempt2",
+    "command": [
+      "<PROJECT_ROOT>/.venv/bin/python",
+      "<PROJECT_ROOT>/experiments/run_components.py",
+      "attention",
+      "--global-attention",
+      "--attempt",
+      "2"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 2.156687374226749
+  },
+  {
+    "name": "mixer-small-attempt2",
+    "command": [
+      "<PROJECT_ROOT>/.venv/bin/python",
+      "<PROJECT_ROOT>/experiments/run_components.py",
+      "mixer",
+      "--attempt",
+      "2"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 2.061025875620544
+  },
+  {
+    "name": "attention-production-local-attempt2",
+    "command": [
+      "<PROJECT_ROOT>/.venv/bin/python",
+      "<PROJECT_ROOT>/experiments/run_components.py",
+      "attention",
+      "--production",
+      "--attempt",
+      "2"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 3.0021464163437486
+  },
+  {
+    "name": "attention-production-global-attempt2",
+    "command": [
+      "<PROJECT_ROOT>/.venv/bin/python",
+      "<PROJECT_ROOT>/experiments/run_components.py",
+      "attention",
+      "--production",
+      "--global-attention",
+      "--attempt",
+      "2"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 2.7573994174599648
+  },
+  {
+    "name": "mixer-production-attempt2",
+    "command": [
+      "<PROJECT_ROOT>/.venv/bin/python",
+      "<PROJECT_ROOT>/experiments/run_components.py",
+      "mixer",
+      "--production",
+      "--attempt",
+      "2"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 2.185878749936819
+  }
+]

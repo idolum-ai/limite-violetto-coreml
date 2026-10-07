@@ -1,0 +1,22 @@
+{
+  "status": "qualified_cpu_milestone_pass",
+  "package_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "numerical_pass": true,
+  "lifecycle_pass": true,
+  "comparison_count": 54,
+  "lifecycle_count": 17,
+  "hidden_exact": 39,
+  "score_max_abs": 1.9073486328125e-06,
+  "top1_matches": 15,
+  "thresholds_changed": false,
+  "short_result": "validation-CPU_ONLY.json",
+  "partitions_result": "../../04d-audit/candidate6-partitions/results.json",
+  "boundaries_result": "../full-candidate-6-boundaries/results.json",
+  "generation": "../../04d-audit/candidate6-generation/results.json",
+  "partition_summary": "../../04d-audit/candidate6-partitions/summary.json",
+  "boundary_summary": "../full-candidate-6-boundaries/summary.json",
+  "milestone_pass": true,
+  "milestone": "../candidate6-milestone.json",
+  "generation_summary": "../../04d-audit/candidate6-generation/summary.json",
+  "scope": "Pinned local CPU reference; original CUDA/vLLM, GPU and Neural Engine fidelity remain unqualified."
+}

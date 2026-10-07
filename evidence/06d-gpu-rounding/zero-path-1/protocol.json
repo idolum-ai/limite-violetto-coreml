@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "attempt": "zero-path-1",
+  "script_sha256": "7404d9008d4d7d29661053f80f88b0418a39d467c389083c146e54eefa008165",
+  "prior_result_sha256": "c19667215c7fe78e0eacc3f1d2c1006e4a4e8dd9d8fb59e52fef140ac8625c9e",
+  "prior_script_sha256": "45e85322612e5bbf10e0f55359215c11a76f8ef041b621f0ea10cc90773da93e",
+  "helper_sha256": "63312cd419fb52638ce93aa1fc4f4a4d37e510c53a9166f0272cbefd0b4f7c70",
+  "reference_sha256": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+  "stages": [
+    "input_identity",
+    "quotient",
+    "negative_branch",
+    "signed_select",
+    "zero_select",
+    "denominator",
+    "sign_factor",
+    "rounded_magnitude",
+    "old_final",
+    "factor_final"
+  ],
+  "policies": ["CPU_ONLY", "CPU_AND_GPU"],
+  "expected_cases": 20,
+  "expected_native_predictions": 40,
+  "scope": "Isolated staged diagnostic. Exact old-final agreement with operator-1 is required to interpret stage localization. The factor candidate requires exact finite FP32 output under both policies; GPU placement remains unverified."
+}

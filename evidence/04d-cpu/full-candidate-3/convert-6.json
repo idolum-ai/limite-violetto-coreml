@@ -1,0 +1,22 @@
+{
+  "component": "6",
+  "arithmetic": "ordered",
+  "softmax": "ordered",
+  "exp": "source",
+  "norm": "ordered",
+  "xsa": "ordered",
+  "gelu": "lookup",
+  "seconds": 67.3632550239563,
+  "package": "artifacts/04d-cpu/full-candidate-3/6.mlpackage",
+  "state_names": [
+    "inner_k_cache_0",
+    "inner_v_cache_0",
+    "inner_k_cache_1",
+    "inner_v_cache_1",
+    "inner_k_cache_2",
+    "inner_v_cache_2",
+    "inner_k_cache_3",
+    "inner_v_cache_3"
+  ],
+  "status": "converted; runtime validation pending"
+}

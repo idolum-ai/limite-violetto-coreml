@@ -1,0 +1,6 @@
+{
+  "coreml_port/graphs.py": "9ae902e9794e8311b60af091ea59027f8169cc9750f9d48ff914e65226f5f414",
+  "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+  "coreml_port/ordered_attention.py": "3abc03e63175f431ff00d17f68eb0c976c1b92417ab29fa411c1b57317ae8b44",
+  "scripts/convert_coreml.py": "7a94d25220a456000bd9cdeffb8117e80bc72e99f9131f2ad7206b295d39549a"
+}

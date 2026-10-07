@@ -1,0 +1,1773 @@
+{
+  "status": "completed",
+  "script_sha256": "bc7cf26f148b61d5d4ae5035514264aff435c4a3be659e66e0b969483a3df84f",
+  "build_sha256": "b56e7b4ce8072ff58b160cb96b0f8d739d43123c832a2348031cc3262789421d",
+  "build": "evidence/05g-integration/conditional-group0-3/results.json",
+  "comparisons": [
+    {
+      "label": "cold-1",
+      "positions": [
+        0
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-2",
+      "positions": [
+        0,
+        1
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-3",
+      "positions": [
+        0,
+        1,
+        2
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-4",
+      "positions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-5",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-6",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-7",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-8",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-9",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-10",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-11",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-12",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-13",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-14",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-15",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-16",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-17",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-18",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-19",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-20",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-21",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-22",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-23",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-24",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-25",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-26",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-27",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-28",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-29",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-30",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-31",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "cold-32",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-0-step-0",
+      "positions": [
+        0,
+        1,
+        2
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-0-step-1",
+      "positions": [
+        3
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-0-step-2",
+      "positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-0-step-3",
+      "positions": [
+        15
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-0-step-4",
+      "positions": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-0-step-5",
+      "positions": [
+        32
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-1-step-0",
+      "positions": [
+        0
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-1-step-1",
+      "positions": [
+        1
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-1-step-2",
+      "positions": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-1-step-3",
+      "positions": [
+        15
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-1-step-4",
+      "positions": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-1-step-5",
+      "positions": [
+        32
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-2-step-0",
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-2-step-1",
+      "positions": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "sequence-2-step-2",
+      "positions": [
+        64
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "warm-32",
+      "positions": [
+        32
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "warm-128",
+      "positions": [
+        128
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    },
+    {
+      "label": "warm-512",
+      "positions": [
+        512
+      ],
+      "outputs_exact": {
+        "y": true,
+        "tap23_out": true
+      },
+      "states_exact": {
+        "inner_k_cache_0": true,
+        "inner_v_cache_0": true,
+        "inner_k_cache_1": true,
+        "inner_v_cache_1": true,
+        "inner_k_cache_2": true,
+        "inner_v_cache_2": true,
+        "inner_k_cache_3": true,
+        "inner_v_cache_3": true
+      },
+      "sealed_fixture_exact": true,
+      "passed": true
+    }
+  ],
+  "state_sequences": [
+    {
+      "chunks": [
+        3,
+        1,
+        11,
+        1,
+        16,
+        1
+      ],
+      "final_position": 33,
+      "states_disposed": true
+    },
+    {
+      "chunks": [
+        1,
+        1,
+        13,
+        1,
+        16,
+        1
+      ],
+      "final_position": 33,
+      "states_disposed": true
+    },
+    {
+      "chunks": [
+        32,
+        32,
+        1
+      ],
+      "final_position": 65,
+      "states_disposed": true
+    }
+  ],
+  "baseline_identity": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+  "runtime_provenance": {
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e"
+  },
+  "prediction_guard": {
+    "installed": true,
+    "plain_calls": 47,
+    "state_calls": 100,
+    "gil_releases": 147
+  },
+  "passed": true,
+  "comparison_count": 50,
+  "scope": "Original interface all cold counts1..32, persistent short/full transitions, sealed warm positions32/128/512"
+}

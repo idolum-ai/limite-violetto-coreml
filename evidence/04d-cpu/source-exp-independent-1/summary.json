@@ -1,0 +1,222 @@
+{
+  "trace_input": "all zeros; every test input is supplied after conversion",
+  "compute": "CPU_ONLY",
+  "cases": {
+    "uniform": {
+      "batches": [
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        }
+      ],
+      "different": 0,
+      "torch_different": 0
+    },
+    "log_uniform": {
+      "batches": [
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        },
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        }
+      ],
+      "different": 0,
+      "torch_different": 0
+    },
+    "boundaries": {
+      "batches": [
+        {
+          "elements": 16384,
+          "coreml_different": 0,
+          "torch_different": 0,
+          "max_abs": 0.0
+        }
+      ],
+      "different": 0,
+      "torch_different": 0
+    }
+  }
+}

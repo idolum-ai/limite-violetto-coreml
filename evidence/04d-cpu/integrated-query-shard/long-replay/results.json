@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "compute": "CPU_ONLY",
+  "package": "<PROJECT_ROOT>/artifacts/04d-cpu/integrated-query-shard/8.mlpackage",
+  "script_sha256": "e137e1600e2849762f10ac9c2cbe4d8f6bb245e843dbc00742908a734524b543",
+  "package_files": {
+    "Data/com.apple.CoreML/model.mlmodel": "44281ee96b87c5ae48035cda3db8fe31a982fe5958dd39fb5cd158c0545b4148",
+    "Data/com.apple.CoreML/weights/weight.bin": "84ce7be4b7dddc570abe48dc5b87b809f7f7ffec0d132c649fb52d3beb884ac2",
+    "Manifest.json": "4d25c4e2734371826dcf682bcb863ee454f5e63331dc13aa85992b2b6ce44e04"
+  },
+  "input_file": "<PROJECT_ROOT>/evidence/04d-cpu/long-group-locator/first-failure-inputs.npz",
+  "input_sha256": "c9b8010b00f7e295f2672117d51b453beabcab1b7e1d4b7ceaa8a107ff266b70",
+  "positions": [
+    1024,
+    1025
+  ],
+  "state_file": "<PROJECT_ROOT>/evidence/04d-cpu/long-group-locator/first-failure-state-before.npz",
+  "state_sha256": "17cef34b6621bb8fb70e94f4407ab57d0cee2ab751b424c4a6820a97bed31bce",
+  "y": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "exact": true
+  },
+  "pass": true
+}

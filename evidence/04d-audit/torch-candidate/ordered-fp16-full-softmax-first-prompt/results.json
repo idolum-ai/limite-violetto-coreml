@@ -1,0 +1,407 @@
+{
+  "status": "complete",
+  "scope": "pure Torch ordered graph versus qualified local CPU reference",
+  "device": "cpu",
+  "cache_dtype": "fp16",
+  "cache_cropped_to_current_position": false,
+  "softmax": "ordered",
+  "chunk_size": 32,
+  "thresholds_changed": false,
+  "acceptance_sha256": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+  "limits": {
+    "score_max_abs": 0.04,
+    "hidden_relative_rmse": 0.01,
+    "hidden_min_cosine": 0.995,
+    "calibration_valid": true
+  },
+  "source_sha256": {
+    "portable/model.py": "6e204b9b4d08247a4441d2422800ca7b253f3cc8f9e4a855473830daa5042797",
+    "portable/generate.py": "35db80e5d932f772d54df6be71f3b22b612b955e1aa929257fa5cdfb155e2f0e",
+    "coreml_port/graphs.py": "9ae902e9794e8311b60af091ea59027f8169cc9750f9d48ff914e65226f5f414",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "3abc03e63175f431ff00d17f68eb0c976c1b92417ab29fa411c1b57317ae8b44",
+    "scripts/audit_torch_candidate.py": "cd3a939ccaaa5f3af3621b4ff839b834d19b3d1667695b904f428d3abdb0c7ae",
+    "scripts/probe_full_model.py": "404241c79c0f3bd7f8ea816638904cffb6b13de5b00ce079a405b0b6cf196876",
+    "evidence/03-portable/ACCEPTANCE.json": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+    "evidence/03-portable/calibration-cpu.json": "6c33c8976abdc5e2ef603519cdaa3f5193c443515de876dbea920b9840ab9d95",
+    "evidence/01-reference/local-input-validation.json": "54ce299bdc107b3db80a2a389283ea787f7801a4f51a1ae2feed0a6dfaee7490"
+  },
+  "cases": [
+    {
+      "index": 0,
+      "prompt_length": 44,
+      "prompt_ids": [
+        151643,
+        151644,
+        8948,
+        198,
+        2610,
+        525,
+        264,
+        10950,
+        17847,
+        624,
+        5501,
+        2874,
+        3019,
+        553,
+        3019,
+        11,
+        323,
+        2182,
+        697,
+        1590,
+        4226,
+        2878,
+        1124,
+        79075,
+        46391,
+        151645,
+        198,
+        151644,
+        872,
+        198,
+        46254,
+        220,
+        16,
+        22,
+        353,
+        220,
+        17,
+        18,
+        13,
+        151645,
+        198,
+        151644,
+        77091,
+        198
+      ],
+      "prefill_chunks": [
+        {
+          "start": 0,
+          "end": 32,
+          "final_hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "kind": "hidden",
+            "passed": true
+          },
+          "group_boundaries": {
+            "layer_3": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_7": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 0.9999999999999999,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_11": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0000000000000002,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_15": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0000000000000002,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_19": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 0.9999999999999999,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_23": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 0.9999999999999998,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_27": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0000000000000002,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_31": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_35": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_39": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_43": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0,
+              "kind": "group_hidden",
+              "passed": true
+            }
+          }
+        },
+        {
+          "start": 32,
+          "end": 44,
+          "final_hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "kind": "hidden",
+            "passed": true
+          },
+          "group_boundaries": {
+            "layer_3": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0000000000000002,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_7": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_11": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_15": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 0.9999999999999999,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_19": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_23": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 0.9999999999999999,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_27": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_31": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0000000000000002,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_35": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0000000000000002,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_39": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 0.9999999999999999,
+              "kind": "group_hidden",
+              "passed": true
+            },
+            "layer_43": {
+              "max_abs": 0.0,
+              "rmse": 0.0,
+              "relative_rmse": 0.0,
+              "cosine": 1.0,
+              "kind": "group_hidden",
+              "passed": true
+            }
+          }
+        }
+      ],
+      "decode": [
+        {
+          "step": 0,
+          "input_token": 151665,
+          "prefix_length": 45,
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000008988,
+            "kind": "scores",
+            "top1_match": true,
+            "reference_top1_margin": 2.049285888671875,
+            "top5_overlap": 5,
+            "passed": true
+          },
+          "final_hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "kind": "hidden",
+            "passed": true
+          }
+        },
+        {
+          "step": 1,
+          "input_token": 1654,
+          "prefix_length": 46,
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000009965,
+            "kind": "scores",
+            "top1_match": true,
+            "reference_top1_margin": 2.147642135620117,
+            "top5_overlap": 5,
+            "passed": true
+          },
+          "final_hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "kind": "hidden",
+            "passed": true
+          }
+        },
+        {
+          "step": 2,
+          "input_token": 1184,
+          "prefix_length": 47,
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000003966,
+            "kind": "scores",
+            "top1_match": true,
+            "reference_top1_margin": 7.910809516906738,
+            "top5_overlap": 5,
+            "passed": true
+          },
+          "final_hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "kind": "hidden",
+            "passed": true
+          }
+        },
+        {
+          "step": 3,
+          "input_token": 311,
+          "prefix_length": 48,
+          "scores": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999991989,
+            "kind": "scores",
+            "top1_match": true,
+            "reference_top1_margin": 1.4177570343017578,
+            "top5_overlap": 5,
+            "passed": true
+          },
+          "final_hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "kind": "hidden",
+            "passed": true
+          }
+        }
+      ],
+      "prompt_scores": {
+        "prefix_length": 44,
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999996229,
+        "kind": "scores",
+        "top1_match": true,
+        "reference_top1_margin": 15.04189395904541,
+        "top5_overlap": 5,
+        "passed": true
+      },
+      "prefix_scores_passed": true,
+      "teacher_forced_tokens": [
+        151665,
+        1654,
+        1184,
+        311
+      ],
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 24.69178295135498,
+  "passed": true
+}

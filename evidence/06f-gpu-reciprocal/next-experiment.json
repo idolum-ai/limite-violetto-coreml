@@ -1,0 +1,55 @@
+{
+  "status": "planned_not_executed",
+  "objective": "Localize remaining warm group0 drift at the next normalization reciprocal before considering a broader correction cohort.",
+  "baseline": "evidence/06f-gpu-reciprocal/group0-1/results.json",
+  "inventory": "evidence/06f-gpu-reciprocal/remaining-reciprocals.json",
+  "target": {
+    "name": "var_7154",
+    "original_operation_index": 12034,
+    "stage": "layer 1 pre-attention normalization",
+    "causality": "hypothesis, not established"
+  },
+  "rationale": "The one-site correction moves the first differing warm cache from layer 1 K to layer 2 K. Graph order nominates a narrow probe but does not prove this reciprocal causes the remaining drift. Nineteen remaining reciprocal-one sites include softmax and norm denominators; their domains must be characterized before a cohort rewrite.",
+  "constraints": [
+    "Keep both qualified CPU cohorts and runtime selection unchanged.",
+    "Preserve prior failures and unchanged full-model thresholds.",
+    "Use the corrected 06f group as the separate diagnostic baseline.",
+    "Freeze exact source pins, tap names, call matrix and implementation before native work.",
+    "No inference of hardware placement from CPU_AND_GPU policy."
+  ],
+  "gates": [
+    {
+      "id": "N1",
+      "requirement": "Inspect target producer/consumer chain and freeze a denominator, original reciprocal seed and normalized output probe; preserve all original operations, weights and interfaces except diagnostic outputs.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "N2",
+      "requirement": "Original versus tapped endpoints and all eight cache states must match byte-for-byte under CPU and CPU_AND_GPU for the same cold32/warm12 restored fixtures; reproduce saved 06f baseline.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "N3",
+      "requirement": "Compare inputs, exact rational reciprocal oracle and seeds. Establish denominator range and one-neighbor seed contract; identify first differing stage. Do not correct this site solely because it appears in the inventory.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "N4",
+      "requirement": "Only if the observed target error fits the frozen helper contract, build a separate second-site correction. Preserve CPU endpoint/state bytes and all unrelated graph operations. Verify corrected site against oracle, warm normalization and downstream errors with independent controls. Otherwise record the result and target the actual first divergence.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "N5",
+      "requirement": "Independent raw-array audit, qualified CPU preservation, report, operator trail and checksum seal; decide whether evidence justifies a separate norm cohort.",
+      "status": "pending",
+      "evidence_links": []
+    }
+  ],
+  "parallel_open_question": "Cold attention-finish discrepancy remains unchanged. Revisit with controlled fixed-shape diagnostics if needed; earlier data-dependent attention tap exports failed model loading and provide no numerical evidence.",
+  "later_adoption_gate": "After local causes are addressed, run unchanged full-model numerical, lifecycle, partition, boundary and generation gates before GPU adoption. Performance and actual device placement require separate evidence.",
+  "evidence_directory": "evidence/06g-gpu-residual (create when experiment starts)"
+}

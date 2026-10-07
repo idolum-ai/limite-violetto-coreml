@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "packages": [
+    {
+      "name": "embedding",
+      "files": [
+        {
+          "path": "embedding.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 6828,
+          "sha256": "fa23fa20899713e94344ecf175545ebaf44b46c65507dd0af7db827f65e1af55"
+        },
+        {
+          "path": "embedding.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 931923200,
+          "sha256": "f4b84c85e7e2fa64952bba1e3af8e9a076ff6895168ae4b41f215a0a9b18edde"
+        },
+        {
+          "path": "embedding.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "f36c9ea18858fbfdb49c42764403eca8b3c00c4f06e298cf8601cf792132afc8"
+        }
+      ],
+      "sha256": "da5842ca26f129b201b9e46c6740ee3f59d2628ce412499ed18c41ea2792748a"
+    },
+    {
+      "name": "0",
+      "files": [
+        {
+          "path": "0.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3479003,
+          "sha256": "d87b498607d9507b199e89d6686ecee1c889569445f015d919659315df1fa135"
+        },
+        {
+          "path": "0.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269762624,
+          "sha256": "2dd284164281453bbb4631b75982d6e3218e3908d9f8bafcd26832b48cb74f13"
+        },
+        {
+          "path": "0.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "be04b77be1abd927f611f9a619b3102df7cfe600878b3d538427b5900964693b"
+        }
+      ],
+      "sha256": "872be61f05df7209c7355e38c13a678d3c54f4f9ff941effc1ccc3b8329b4e3a"
+    },
+    {
+      "name": "1",
+      "files": [
+        {
+          "path": "1.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3505447,
+          "sha256": "4a872aeddc7a25941b38eec098e56be737dc54c6a4efb1ee0d058beff045a2b4"
+        },
+        {
+          "path": "1.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269762624,
+          "sha256": "64fca8254b6024f2ab6013fcca419a6f0f1408c3e9fefdc58d1ada3735a77113"
+        },
+        {
+          "path": "1.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "b2bd215f9ddbf559db6c5b6498e2221e1a6cab3722ffdcce12f06ea277b8b2e3"
+        }
+      ],
+      "sha256": "71f386f1ce953c521ba1d4aba6f78869144fc2e48485c11e8fd9c3da14f16c83"
+    },
+    {
+      "name": "2",
+      "files": [
+        {
+          "path": "2.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3479016,
+          "sha256": "bed4b079589b29a81a6ea97e70b8bd767901d256c20532e0e17a34b3fa5e1a65"
+        },
+        {
+          "path": "2.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269762624,
+          "sha256": "bf098b77cc6f410be25269c17589cec137ef4012c3bcac4f29e6a04d2db5331c"
+        },
+        {
+          "path": "2.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "f9fc118e0d3df28e14aabb6fe14d94925a92a24a1386dcc0a88600da315b62cf"
+        }
+      ],
+      "sha256": "fe600abd1f353fbaa463bcc34976f8f8371a8ec69b42f28ac198c3cb60c47e98"
+    },
+    {
+      "name": "3",
+      "files": [
+        {
+          "path": "3.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3479003,
+          "sha256": "8062ad028312c9ff30af87b7809a7587645943d217e6e2b58afce1a5af559c35"
+        },
+        {
+          "path": "3.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269762624,
+          "sha256": "c179c6a9cac30cef22efbafa65fa69e9d02d4c055d596eb5f0f0172219cb27fc"
+        },
+        {
+          "path": "3.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "8fae71acc41d7f4ab0f42e541c016d7eb810379710306a0883b2f2668fc94fb8"
+        }
+      ],
+      "sha256": "49da4d5c1b07a8d9db9b113e85eb8c55d2d0c00f051d8eba21f0c48d9a468830"
+    },
+    {
+      "name": "4",
+      "files": [
+        {
+          "path": "4.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3505447,
+          "sha256": "5816699b25cd84f259f92d6044683e2fc3e82e10b9671db9cb05f0a2005094b1"
+        },
+        {
+          "path": "4.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269762624,
+          "sha256": "665776b46e135c97ef41a9aa37afe65efc37e90d9bba85e15305bd4e02022fe2"
+        },
+        {
+          "path": "4.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "97a992fe4a7efcc5a87c100c739d85f8794395e3c576be63a83990edda940683"
+        }
+      ],
+      "sha256": "ee6946165e9504637ed3feaf2ca43e1bfac0cc8da465b74b4e5d9d3d54b9df1e"
+    },
+    {
+      "name": "5",
+      "files": [
+        {
+          "path": "5.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3479115,
+          "sha256": "c1e8f299b41bd8acbe30aa82f6cdbca4b9157a959d664bd99f727b34a541651c"
+        },
+        {
+          "path": "5.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269762624,
+          "sha256": "70e8af0860461d2d8b39a954d172dddd3752dcd17076c3906f4da16411a8e999"
+        },
+        {
+          "path": "5.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "c3cbd3180e65d2f136989cd5e37f46aaec5a29447808a1e6f3a6f057351b6469"
+        }
+      ],
+      "sha256": "83fc27677814a540bd37d8ad2ac011faa58953995103005b77cc6288d82c13b8"
+    },
+    {
+      "name": "6",
+      "files": [
+        {
+          "path": "6.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3611749,
+          "sha256": "5a86a6ac593bea7423c7ebc771e00c0aacf602c09938a575dbfabcb317001c60"
+        },
+        {
+          "path": "6.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269929920,
+          "sha256": "2997466c3ed71b5e9fdd063dbdd8335d3eaf30ded6078151067bd2d124aa0429"
+        },
+        {
+          "path": "6.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "e0ef857b7834657498c51a100b6a0b6e4f1f2ec5f91cca3e9555e324d40589e5"
+        }
+      ],
+      "sha256": "96f19eb368a14f0e55e4ac170bcf1c73c4c499dacd9ba30538f47debb2b07284"
+    },
+    {
+      "name": "7",
+      "files": [
+        {
+          "path": "7.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3505447,
+          "sha256": "93fae0a3fbf9d1b32ae279a39d5a25c23fce560f4fb1e74e031e099bfdcdfde8"
+        },
+        {
+          "path": "7.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269762624,
+          "sha256": "e2bcc964f0fb103426bd0e9b72406758496d8274db63f79b786b5c23c30b509b"
+        },
+        {
+          "path": "7.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "476e42c20807072f25162dec8c662ed2926154f69537a40d9e47e53c10eed94a"
+        }
+      ],
+      "sha256": "cdaa7a57b926f7a7b29e779485917f0454f9e54e7dfdc80341ee8167ef56e33c"
+    },
+    {
+      "name": "8",
+      "files": [
+        {
+          "path": "8.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3479016,
+          "sha256": "6addd457632408770544d04037fde223092012a0d10b6320bd4e563ed6592fcb"
+        },
+        {
+          "path": "8.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269762624,
+          "sha256": "b03c1f804e653df5e8246c2da9fa986322b22f15c2876c248b41f6c063152f16"
+        },
+        {
+          "path": "8.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "dc87e51f5299aa50f617889385ad8b492ba08b418523c2f1c67cabb986ba5feb"
+        }
+      ],
+      "sha256": "238d1982c4a7a09ce0bc817f64dcb5be717475300cedd16a9b44f80466a3dd77"
+    },
+    {
+      "name": "9",
+      "files": [
+        {
+          "path": "9.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3479003,
+          "sha256": "1906aa86d50a46358a4467a732fef15947771ea4b3c6353d72a92de4ebade929"
+        },
+        {
+          "path": "9.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269762624,
+          "sha256": "fe40a03b2f8cee378c209d474f3bf95990cdb108fda1ba19e6d14a0d3317236e"
+        },
+        {
+          "path": "9.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "799e130a97f4629776d6827e14c6165d09859d2a068feb7c2d67844d6635379e"
+        }
+      ],
+      "sha256": "eaec30b40a48f9484334f72294afa289b763115571c2f08b0282f23d50163ce4"
+    },
+    {
+      "name": "10",
+      "files": [
+        {
+          "path": "10.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3505207,
+          "sha256": "9dc558328de5d8ad1ad3846bf17b09fc849ef95e4c4c579959181b0da192dddd"
+        },
+        {
+          "path": "10.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269762624,
+          "sha256": "b4068e731c4a441200edf840e497a43a93cf531940bb10494b0df99f9c5532e2"
+        },
+        {
+          "path": "10.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "1aa4009914089a4aff6f7c0bf6eaec87bb959a6b20ebd1b57248f37a77ea2d12"
+        }
+      ],
+      "sha256": "d75fc63797cf9da883822c2788d4e224651e1d47601e41450e132c5aab998d1d"
+    },
+    {
+      "name": "11",
+      "files": [
+        {
+          "path": "11.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 3615080,
+          "sha256": "2a6312b2f9122e6f2a81b32cdd6ff16ab3af7a0c73379319b91e34cb17ad9664"
+        },
+        {
+          "path": "11.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 269929920,
+          "sha256": "6cc77dbe4a52b862adcd4e921e4ec024bf7cb730eb46b70720d1ec9fcd65b9e3"
+        },
+        {
+          "path": "11.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "ffede0d0586702ba3a12d4fcc9e9f8311b113bd14263ea464029bd90d96bc066"
+        }
+      ],
+      "sha256": "6fe10443dea6421d82adf74ee4654f574c5cee23ca41fbd522172aff9df45053"
+    },
+    {
+      "name": "head",
+      "files": [
+        {
+          "path": "head.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size": 58102,
+          "sha256": "a726313b2c173b04a462388655969eba18f8250716aa5246ce1528b2ac3db0d1"
+        },
+        {
+          "path": "head.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size": 776605312,
+          "sha256": "6d89c2ba45c4997054987cd79d17e087c92a406e8a4273f4f15118679cdfcc44"
+        },
+        {
+          "path": "head.mlpackage/Manifest.json",
+          "size": 617,
+          "sha256": "19dc03942c5a3b60718cffbb8a75cf52c3cbbca0dab9046123279d3c440f1443"
+        }
+      ],
+      "sha256": "ec0f2ccc9e773334b267ad441148cd6e9d02d4ac0849f92a0eb18c8524bd305a"
+    }
+  ],
+  "aggregate_sha256": "b99594500b475e5423db85a2efaceba57c6c7d15738cef476b14de4f69a017c1"
+}

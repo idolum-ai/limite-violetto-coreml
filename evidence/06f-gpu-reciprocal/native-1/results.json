@@ -1,0 +1,1758 @@
+{
+  "actual_device_placement": "unverified; compute policy only",
+  "baseline_reproduced": false,
+  "calls": [
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/control/warm-common.npz",
+        "sha256": "40c285075d6df2462bfd604037f23c79b5fa097e7ecf791fadd95514093442db",
+        "shapes": {
+          "value": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "arm": "control",
+      "case": "warm-common",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/control/cold-cpu.npz",
+        "sha256": "dc15ddc61f4a9e14c93ffadd7731588ec0ad8c0d7e05ca5910e796dd338b5652",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "control",
+      "case": "cold-cpu",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/control/cold-gpu.npz",
+        "sha256": "10cbac02de90004e0ae7ef2153f2acce0c4d907ce67f1cb95270883537fb933c",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "control",
+      "case": "cold-gpu",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/control/directed32.npz",
+        "sha256": "5327f2b22fba7c58b49d1b5e6df03838dda9cb1cb8b5897499336679d0985862",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "control",
+      "case": "directed32",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/warm-common/nearest.npz",
+        "sha256": "40c285075d6df2462bfd604037f23c79b5fa097e7ecf791fadd95514093442db",
+        "shapes": {
+          "value": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "warm-common/nearest",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/warm-common/lower.npz",
+        "sha256": "40c285075d6df2462bfd604037f23c79b5fa097e7ecf791fadd95514093442db",
+        "shapes": {
+          "value": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "warm-common/lower",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/warm-common/upper.npz",
+        "sha256": "40c285075d6df2462bfd604037f23c79b5fa097e7ecf791fadd95514093442db",
+        "shapes": {
+          "value": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "warm-common/upper",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/warm-common/captured-gpu.npz",
+        "sha256": "40c285075d6df2462bfd604037f23c79b5fa097e7ecf791fadd95514093442db",
+        "shapes": {
+          "value": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "warm-common/captured-gpu",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/cold-cpu/nearest.npz",
+        "sha256": "dc15ddc61f4a9e14c93ffadd7731588ec0ad8c0d7e05ca5910e796dd338b5652",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-cpu/nearest",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/cold-cpu/lower.npz",
+        "sha256": "dc15ddc61f4a9e14c93ffadd7731588ec0ad8c0d7e05ca5910e796dd338b5652",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-cpu/lower",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/cold-cpu/upper.npz",
+        "sha256": "dc15ddc61f4a9e14c93ffadd7731588ec0ad8c0d7e05ca5910e796dd338b5652",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-cpu/upper",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/cold-gpu/nearest.npz",
+        "sha256": "10cbac02de90004e0ae7ef2153f2acce0c4d907ce67f1cb95270883537fb933c",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-gpu/nearest",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/cold-gpu/lower.npz",
+        "sha256": "10cbac02de90004e0ae7ef2153f2acce0c4d907ce67f1cb95270883537fb933c",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-gpu/lower",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/cold-gpu/upper.npz",
+        "sha256": "10cbac02de90004e0ae7ef2153f2acce0c4d907ce67f1cb95270883537fb933c",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-gpu/upper",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/cold-gpu/captured-gpu.npz",
+        "sha256": "10cbac02de90004e0ae7ef2153f2acce0c4d907ce67f1cb95270883537fb933c",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-gpu/captured-gpu",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/directed32/nearest.npz",
+        "sha256": "5327f2b22fba7c58b49d1b5e6df03838dda9cb1cb8b5897499336679d0985862",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "directed32/nearest",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/directed32/lower.npz",
+        "sha256": "5327f2b22fba7c58b49d1b5e6df03838dda9cb1cb8b5897499336679d0985862",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "directed32/lower",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/CPU/correction/directed32/upper.npz",
+        "sha256": "5327f2b22fba7c58b49d1b5e6df03838dda9cb1cb8b5897499336679d0985862",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "directed32/upper",
+      "input_preserved": true,
+      "policy": "CPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/control/warm-common.npz",
+        "sha256": "40c285075d6df2462bfd604037f23c79b5fa097e7ecf791fadd95514093442db",
+        "shapes": {
+          "value": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "arm": "control",
+      "case": "warm-common",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/control/cold-cpu.npz",
+        "sha256": "dc15ddc61f4a9e14c93ffadd7731588ec0ad8c0d7e05ca5910e796dd338b5652",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "control",
+      "case": "cold-cpu",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/control/cold-gpu.npz",
+        "sha256": "10cbac02de90004e0ae7ef2153f2acce0c4d907ce67f1cb95270883537fb933c",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "control",
+      "case": "cold-gpu",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/control/directed32.npz",
+        "sha256": "5327f2b22fba7c58b49d1b5e6df03838dda9cb1cb8b5897499336679d0985862",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "control",
+      "case": "directed32",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/warm-common/nearest.npz",
+        "sha256": "40c285075d6df2462bfd604037f23c79b5fa097e7ecf791fadd95514093442db",
+        "shapes": {
+          "value": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "warm-common/nearest",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/warm-common/lower.npz",
+        "sha256": "40c285075d6df2462bfd604037f23c79b5fa097e7ecf791fadd95514093442db",
+        "shapes": {
+          "value": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "warm-common/lower",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/warm-common/upper.npz",
+        "sha256": "40c285075d6df2462bfd604037f23c79b5fa097e7ecf791fadd95514093442db",
+        "shapes": {
+          "value": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "warm-common/upper",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/warm-common/captured-gpu.npz",
+        "sha256": "40c285075d6df2462bfd604037f23c79b5fa097e7ecf791fadd95514093442db",
+        "shapes": {
+          "value": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "warm-common/captured-gpu",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/cold-cpu/nearest.npz",
+        "sha256": "dc15ddc61f4a9e14c93ffadd7731588ec0ad8c0d7e05ca5910e796dd338b5652",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-cpu/nearest",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/cold-cpu/lower.npz",
+        "sha256": "dc15ddc61f4a9e14c93ffadd7731588ec0ad8c0d7e05ca5910e796dd338b5652",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-cpu/lower",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/cold-cpu/upper.npz",
+        "sha256": "dc15ddc61f4a9e14c93ffadd7731588ec0ad8c0d7e05ca5910e796dd338b5652",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-cpu/upper",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/cold-gpu/nearest.npz",
+        "sha256": "10cbac02de90004e0ae7ef2153f2acce0c4d907ce67f1cb95270883537fb933c",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-gpu/nearest",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/cold-gpu/lower.npz",
+        "sha256": "10cbac02de90004e0ae7ef2153f2acce0c4d907ce67f1cb95270883537fb933c",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-gpu/lower",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/cold-gpu/upper.npz",
+        "sha256": "10cbac02de90004e0ae7ef2153f2acce0c4d907ce67f1cb95270883537fb933c",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-gpu/upper",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/cold-gpu/captured-gpu.npz",
+        "sha256": "10cbac02de90004e0ae7ef2153f2acce0c4d907ce67f1cb95270883537fb933c",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "cold-gpu/captured-gpu",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/directed32/nearest.npz",
+        "sha256": "5327f2b22fba7c58b49d1b5e6df03838dda9cb1cb8b5897499336679d0985862",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "directed32/nearest",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/directed32/lower.npz",
+        "sha256": "5327f2b22fba7c58b49d1b5e6df03838dda9cb1cb8b5897499336679d0985862",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "directed32/lower",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "value": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/native/GPU/correction/directed32/upper.npz",
+        "sha256": "5327f2b22fba7c58b49d1b5e6df03838dda9cb1cb8b5897499336679d0985862",
+        "shapes": {
+          "value": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "arm": "correction",
+      "case": "directed32/upper",
+      "input_preserved": true,
+      "policy": "GPU",
+      "vs_oracle": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      }
+    }
+  ],
+  "cases": [
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/warm-common/nearest.npz",
+        "sha256": "5af0491e7a8c6e8768ff79c69c27dad1b61fdc0a54ba4b2061ff9235b1c048c4",
+        "shapes": {
+          "d": [
+            1,
+            12,
+            1
+          ],
+          "reference": [
+            1,
+            12,
+            1
+          ],
+          "seed": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "name": "warm-common/nearest"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/warm-common/lower.npz",
+        "sha256": "bbbba202cd17e3fadda568a9adf04325cb81bd13cd0e5e1484956d9881b91f1b",
+        "shapes": {
+          "d": [
+            1,
+            12,
+            1
+          ],
+          "reference": [
+            1,
+            12,
+            1
+          ],
+          "seed": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "name": "warm-common/lower"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/warm-common/upper.npz",
+        "sha256": "c9e7d3f6e7909864e81eb3e328a1c1ca942335c40eebac7d718d4dd41439ce91",
+        "shapes": {
+          "d": [
+            1,
+            12,
+            1
+          ],
+          "reference": [
+            1,
+            12,
+            1
+          ],
+          "seed": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "name": "warm-common/upper"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/warm-common/captured-gpu.npz",
+        "sha256": "13db391671d29c796ed5f7c864b246207797f51de8ad860ba2e20ebebec0038c",
+        "shapes": {
+          "d": [
+            1,
+            12,
+            1
+          ],
+          "reference": [
+            1,
+            12,
+            1
+          ],
+          "seed": [
+            1,
+            12,
+            1
+          ]
+        }
+      },
+      "name": "warm-common/captured-gpu"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/cold-cpu/nearest.npz",
+        "sha256": "598d10039733af4490927d8073e6ee747a30ec09d7c41996681cfd92c04db5ce",
+        "shapes": {
+          "d": [
+            1,
+            32,
+            1
+          ],
+          "reference": [
+            1,
+            32,
+            1
+          ],
+          "seed": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "name": "cold-cpu/nearest"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/cold-cpu/lower.npz",
+        "sha256": "bd1805f5b87a6a62331aec03f2fb23638a1ba81bd13242da9b04349f83c87076",
+        "shapes": {
+          "d": [
+            1,
+            32,
+            1
+          ],
+          "reference": [
+            1,
+            32,
+            1
+          ],
+          "seed": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "name": "cold-cpu/lower"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/cold-cpu/upper.npz",
+        "sha256": "a2d179787a04c526802fd0ca467fe6f04d62251e5cd350f5f504a09cbef37d7d",
+        "shapes": {
+          "d": [
+            1,
+            32,
+            1
+          ],
+          "reference": [
+            1,
+            32,
+            1
+          ],
+          "seed": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "name": "cold-cpu/upper"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/cold-gpu/nearest.npz",
+        "sha256": "fc791d70dc2411e2328668ffa46506d1cb1fa189f730ad04921ccc59ea7f5de6",
+        "shapes": {
+          "d": [
+            1,
+            32,
+            1
+          ],
+          "reference": [
+            1,
+            32,
+            1
+          ],
+          "seed": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "name": "cold-gpu/nearest"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/cold-gpu/lower.npz",
+        "sha256": "b1da0724842def2ac7d9e20129f556494ab602d1e51e88d3b083de2d3d52f136",
+        "shapes": {
+          "d": [
+            1,
+            32,
+            1
+          ],
+          "reference": [
+            1,
+            32,
+            1
+          ],
+          "seed": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "name": "cold-gpu/lower"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/cold-gpu/upper.npz",
+        "sha256": "a761202934c2f8af24e48d450c2b75c47c186c61fce19e373a00901051e491c1",
+        "shapes": {
+          "d": [
+            1,
+            32,
+            1
+          ],
+          "reference": [
+            1,
+            32,
+            1
+          ],
+          "seed": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "name": "cold-gpu/upper"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/cold-gpu/captured-gpu.npz",
+        "sha256": "d765e7c95fd569dba413f43b494f60775a94f45454bbe81360f5b1d638a99ad3",
+        "shapes": {
+          "d": [
+            1,
+            32,
+            1
+          ],
+          "reference": [
+            1,
+            32,
+            1
+          ],
+          "seed": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "name": "cold-gpu/captured-gpu"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/directed32/nearest.npz",
+        "sha256": "1291a71a23bfbec99e3535d27c8410d66a7abe588da245d54ac551a03ac5f540",
+        "shapes": {
+          "d": [
+            1,
+            32,
+            1
+          ],
+          "reference": [
+            1,
+            32,
+            1
+          ],
+          "seed": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "name": "directed32/nearest"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/directed32/lower.npz",
+        "sha256": "1f7872dcd784107a6ad747f538f888ad2f4f5e7a4186a5e80af2b0864ba53344",
+        "shapes": {
+          "d": [
+            1,
+            32,
+            1
+          ],
+          "reference": [
+            1,
+            32,
+            1
+          ],
+          "seed": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "name": "directed32/lower"
+    },
+    {
+      "archive": {
+        "dtypes": {
+          "d": "float32",
+          "reference": "float32",
+          "seed": "float32"
+        },
+        "path": "evidence/06f-gpu-reciprocal/native-1/cases/directed32/upper.npz",
+        "sha256": "f4e0edc4542f88923e491478d6c5e1032197a121179ebf7ec248ea65d8178fd2",
+        "shapes": {
+          "d": [
+            1,
+            32,
+            1
+          ],
+          "reference": [
+            1,
+            32,
+            1
+          ],
+          "seed": [
+            1,
+            32,
+            1
+          ]
+        }
+      },
+      "name": "directed32/upper"
+    }
+  ],
+  "cpu_preservation_checks": [
+    {
+      "bitwise_exact": true,
+      "case": "warm-common",
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0
+    },
+    {
+      "bitwise_exact": true,
+      "case": "cold-cpu",
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0
+    },
+    {
+      "bitwise_exact": true,
+      "case": "cold-gpu",
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0
+    },
+    {
+      "bitwise_exact": true,
+      "case": "directed32",
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0
+    }
+  ],
+  "decision": "separate in-model diagnostic required; no repair claim",
+  "gates": {
+    "C3_saved_baseline_reproduced": false,
+    "C3b_external_seed_arithmetic": true,
+    "cpu_control_oracle": true,
+    "cpu_preservation": true
+  },
+  "host_checks": [
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "warm-common/nearest"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "warm-common/lower"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "warm-common/upper"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "warm-common/captured-gpu"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "cold-cpu/nearest"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "cold-cpu/lower"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "cold-cpu/upper"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "cold-gpu/nearest"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "cold-gpu/lower"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "cold-gpu/upper"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "cold-gpu/captured-gpu"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "directed32/nearest"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "directed32/lower"
+    },
+    {
+      "bitwise_exact": true,
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "name": "directed32/upper"
+    }
+  ],
+  "models": {
+    "control": {
+      "compiled": "artifacts/06f-gpu-reciprocal/native-1/control.mlmodelc",
+      "compiled_files": {
+        "analytics/coremldata.bin": "57638008d5116afaa9b26e609c4aedf138933da2205b600ab14ebc16ee2bdd02",
+        "coremldata.bin": "8f48601fc7fd36f9b053dde569ac3606f15096b05d6e5555b00a4ced190f0931",
+        "model.mil": "f7b398c6e84a6e8b2b478634af73bcaa57f73d39e6ccc59bb9d65e0aaaa41d80"
+      },
+      "operation_counts": {
+        "const": 1,
+        "fill_like": 1,
+        "real_div": 1
+      },
+      "operations_sha256": "8ee9808b89618064e2f6206dd045558f04f4f92aadd335155097332fdc60e0d9",
+      "package": "artifacts/06f-gpu-reciprocal/native-1/control.mlpackage",
+      "package_files": {
+        "Data/com.apple.CoreML/model.mlmodel": "a26402d310386f11cbba2f21dc05ba58d3c581a9c79e525a0d7f22bc79b13665",
+        "Manifest.json": "f3e98ee2fa2edab27b6417c2374a79b6a1f13fa0287d9ce8f6ad24c5d2671cc0"
+      }
+    },
+    "correction": {
+      "compiled": "artifacts/06f-gpu-reciprocal/native-1/correction.mlmodelc",
+      "compiled_files": {
+        "analytics/coremldata.bin": "1c89e5e808d56f4185bd8fea9ae4205ce2be55f452297b84886ecf71c0ccb846",
+        "coremldata.bin": "789735f6c94233af21f0c24edbb822a107c2b3e8616a9d1f725b8d7d599f6256",
+        "model.mil": "a6fde30ad3c08e360b4d44d9989de7d1d585018efb10f0437ded68fae597cf5d"
+      },
+      "operation_counts": {
+        "add": 5,
+        "const": 37,
+        "equal": 13,
+        "fill_like": 12,
+        "floor": 1,
+        "greater": 2,
+        "greater_equal": 5,
+        "identity": 1,
+        "less": 2,
+        "logical_and": 6,
+        "logical_not": 1,
+        "logical_or": 9,
+        "mul": 16,
+        "select": 13,
+        "sub": 21
+      },
+      "operations_sha256": "0ee331620e9d20528089e399a356a5c9544b7a4423511919be162448e02fce91",
+      "package": "artifacts/06f-gpu-reciprocal/native-1/correction.mlpackage",
+      "package_files": {
+        "Data/com.apple.CoreML/model.mlmodel": "b6510581768f1fd3c9118c92eb02e4edc7dcf1555f9e3205533c943b900e1c4f",
+        "Manifest.json": "51259a6386857d68ccb2444541dd2ef6ad066c48f6e2f960306068004c1d44fe"
+      }
+    }
+  },
+  "passed": false,
+  "pins": {
+    "evidence/06e-gpu-normalization/replay-1/results.json": "d72fc475a76e5c3751499465253fad154ea396753ff68630aa4f8dec6a8a7c09",
+    "evidence/06f-gpu-reciprocal/host-1/results.json": "b3bdac0b56edaf158c0d83fbc379b0144eb5f5d4379ec58759d7c5029752f076",
+    "evidence/06f-gpu-reciprocal/native-design.md": "abb5e23826ea8a375e99190b5dec31cccabdf1288a5f32f43f8ef73a11411d5d",
+    "scripts/boundary_reciprocal.py": "4edabf62871e35c834185e586e2f7253f6feeb48a1db9f8daae4596d9471e263",
+    "scripts/probe_boundary_reciprocal.py": "3c152bbce08c9e8b0c86a2f134160faa0fa22ef20b11f2c0460ee77ec5841a4c",
+    "scripts/probe_reciprocal_refinement.py": "8eff2de8fd978fd850c8ab71ec1939b0c6c10b25800dd6c3b254052b11ddcaa3"
+  },
+  "prediction_guard": {
+    "gil_releases": 36,
+    "installed": true,
+    "plain_calls": 36,
+    "state_calls": 0
+  },
+  "protocol_sha256": "f5bffb344ea97dcd484ffac9140151b0976c173f222ace778804aba77a8ac6d9",
+  "reproduction_checks": [
+    {
+      "bitwise_exact": true,
+      "case": "warm-common",
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "policy": "CPU"
+    },
+    {
+      "bitwise_exact": false,
+      "case": "warm-common",
+      "different_elements": 3,
+      "examples": [
+        {
+          "actual_bits": "0x3ebe1c0d",
+          "expected_bits": "0x3ebe1c0e",
+          "index": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "actual_bits": "0x3ec2ec13",
+          "expected_bits": "0x3ec2ec14",
+          "index": [
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "actual_bits": "0x3ed128cf",
+          "expected_bits": "0x3ed128d0",
+          "index": [
+            0,
+            8,
+            0
+          ]
+        }
+      ],
+      "finite": true,
+      "max_abs": 2.9802322387695312e-08,
+      "policy": "GPU"
+    },
+    {
+      "bitwise_exact": true,
+      "case": "cold-cpu",
+      "different_elements": 0,
+      "examples": [],
+      "finite": true,
+      "max_abs": 0.0,
+      "policy": "CPU"
+    },
+    {
+      "bitwise_exact": false,
+      "case": "cold-gpu",
+      "different_elements": 11,
+      "examples": [
+        {
+          "actual_bits": "0x3f08f0cf",
+          "expected_bits": "0x3f08f0d0",
+          "index": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "actual_bits": "0x3edbeb77",
+          "expected_bits": "0x3edbeb76",
+          "index": [
+            0,
+            7,
+            0
+          ]
+        },
+        {
+          "actual_bits": "0x3ec5f148",
+          "expected_bits": "0x3ec5f149",
+          "index": [
+            0,
+            15,
+            0
+          ]
+        },
+        {
+          "actual_bits": "0x3eb3613c",
+          "expected_bits": "0x3eb3613d",
+          "index": [
+            0,
+            16,
+            0
+          ]
+        },
+        {
+          "actual_bits": "0x3edb7491",
+          "expected_bits": "0x3edb7490",
+          "index": [
+            0,
+            17,
+            0
+          ]
+        },
+        {
+          "actual_bits": "0x3ec34721",
+          "expected_bits": "0x3ec34722",
+          "index": [
+            0,
+            18,
+            0
+          ]
+        },
+        {
+          "actual_bits": "0x3eb8d94f",
+          "expected_bits": "0x3eb8d94e",
+          "index": [
+            0,
+            21,
+            0
+          ]
+        },
+        {
+          "actual_bits": "0x3ef544bc",
+          "expected_bits": "0x3ef544bd",
+          "index": [
+            0,
+            23,
+            0
+          ]
+        }
+      ],
+      "finite": true,
+      "max_abs": 5.960464477539063e-08,
+      "policy": "GPU"
+    }
+  ],
+  "runtime_provenance": {
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf"
+  },
+  "seeded_component_passed": true,
+  "status": "completed"
+}

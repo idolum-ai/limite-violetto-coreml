@@ -1,0 +1,277 @@
+{
+  "name": "mixer-production-attempt2",
+  "python": "3.12.9",
+  "torch": "2.7.0",
+  "coremltools": "9.0",
+  "acceptance_sha256": "1455bec54846574c00ab7579d296c869d394cec70db18bd603355062a98958c3",
+  "sources_sha256": {
+    "run_components.py": "9a30705dbef0fe82bc26270867e1d7c2536ffd2a0e07e471d9479a57ea85b581",
+    "components.py": "e678df3f7707412332a3570e7dd5aeb7f7b1cab798a4525e90d945171a12bac6"
+  },
+  "artifact_path": "artifacts/02-components/mixer-production-attempt2",
+  "checks": {
+    "rewrite_vs_upstream_0": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative_floor_1e-6": 0.0,
+      "passed": true
+    },
+    "bf16_diagnostic_0": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 0.0035727620124816895,
+      "mean_abs": 0.0003892509997545598,
+      "max_relative_floor_1e-6": 1182.3251843452454
+    },
+    "rewrite_vs_upstream_1": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative_floor_1e-6": 0.0,
+      "passed": true
+    },
+    "bf16_diagnostic_1": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 0.003425300121307373,
+      "mean_abs": 0.0003297251675836118,
+      "max_relative_floor_1e-6": 837.8550410270691
+    },
+    "rewrite_vs_upstream_2": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative_floor_1e-6": 0.0,
+      "passed": true
+    },
+    "bf16_diagnostic_2": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 0.004285573959350586,
+      "mean_abs": 0.0004470079910138988,
+      "max_relative_floor_1e-6": 627.0483136177063
+    },
+    "rewrite_vs_upstream_3": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "max_relative_floor_1e-6": 0.0,
+      "passed": true
+    },
+    "bf16_diagnostic_3": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 0.0033957958221435547,
+      "mean_abs": 0.00027571931991587917,
+      "max_relative_floor_1e-6": 306.26729130744934
+    },
+    "coreml_n1_path0": {
+      "shape": [
+        1,
+        1,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 2.9802322387695312e-08,
+      "mean_abs": 2.9947841539978983e-09,
+      "max_relative_floor_1e-6": 1.0110098977868993e-05,
+      "passed": true
+    },
+    "coreml_n1_path1": {
+      "shape": [
+        1,
+        1,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 5.960464477539063e-08,
+      "mean_abs": 1.3829503586748616e-08,
+      "max_relative_floor_1e-6": 0.00012230587339983148,
+      "passed": true
+    },
+    "coreml_n1_path2": {
+      "shape": [
+        1,
+        1,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 5.960464477539063e-08,
+      "mean_abs": 1.2898271961603313e-08,
+      "max_relative_floor_1e-6": 0.00031318509238960227,
+      "passed": true
+    },
+    "coreml_n1_path3": {
+      "shape": [
+        1,
+        1,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 5.960464477539063e-08,
+      "mean_abs": 1.2780583347193896e-08,
+      "max_relative_floor_1e-6": 0.0005218480378513776,
+      "passed": true
+    },
+    "coreml_n7_path0": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 3.8370490074157715e-07,
+      "mean_abs": 4.54862077146702e-08,
+      "max_relative_floor_1e-6": 0.011691348402182385,
+      "passed": true
+    },
+    "coreml_n7_path1": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 4.172325134277344e-07,
+      "mean_abs": 3.667259664195756e-08,
+      "max_relative_floor_1e-6": 0.0010311640696608615,
+      "passed": true
+    },
+    "coreml_n7_path2": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 2.384185791015625e-07,
+      "mean_abs": 2.826053072827303e-08,
+      "max_relative_floor_1e-6": 0.0011153924153315758,
+      "passed": true
+    },
+    "coreml_n7_path3": {
+      "shape": [
+        1,
+        7,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 2.3096799850463867e-07,
+      "mean_abs": 3.394039984933832e-08,
+      "max_relative_floor_1e-6": 0.003847024213622992,
+      "passed": true
+    },
+    "coreml_n17_path0": {
+      "shape": [
+        1,
+        17,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 1.341104507446289e-07,
+      "mean_abs": 8.842872536179665e-09,
+      "max_relative_floor_1e-6": 0.0026830203142966655,
+      "passed": true
+    },
+    "coreml_n17_path1": {
+      "shape": [
+        1,
+        17,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 1.1920928955078125e-07,
+      "mean_abs": 1.1145630196551792e-08,
+      "max_relative_floor_1e-6": 0.0018468532461997443,
+      "passed": true
+    },
+    "coreml_n17_path2": {
+      "shape": [
+        1,
+        17,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 1.4901161193847656e-07,
+      "mean_abs": 1.1693602760608294e-08,
+      "max_relative_floor_1e-6": 0.00866738894907909,
+      "passed": true
+    },
+    "coreml_n17_path3": {
+      "shape": [
+        1,
+        17,
+        1280
+      ],
+      "finite": true,
+      "max_abs": 2.253800630569458e-07,
+      "mean_abs": 1.2605381564700271e-08,
+      "max_relative_floor_1e-6": 0.0013812154696132596,
+      "passed": true
+    }
+  },
+  "timing": {
+    "convert_seconds": 0.2267647087574005,
+    "compile_load_seconds": 0.07661591749638319,
+    "compute_units_allowed": "CPU_AND_GPU",
+    "actual_placement": "not profiled",
+    "compute_precision": "FLOAT32; FP16 states",
+    "package": "artifacts/02-components/mixer-production-attempt2/model.mlpackage"
+  },
+  "call_seconds": [
+    0.07881191745400429,
+    0.026433625258505344,
+    0.0023397495970129967
+  ],
+  "hidden": 1280,
+  "sites": [
+    24,
+    47
+  ],
+  "paths": [
+    "H",
+    "R"
+  ],
+  "failed_checks": [],
+  "status": "PASS",
+  "elapsed_seconds": 0.4202240416780114,
+  "process_peak_rss_gib": 0.3300933837890625,
+  "resource_pass": true
+}

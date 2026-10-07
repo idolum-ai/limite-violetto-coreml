@@ -1,0 +1,9 @@
+{
+  "component": "head",
+  "arithmetic": "ordered",
+  "softmax": "ordered",
+  "seconds": 6.98070502281189,
+  "package": "artifacts/04d-cpu/full-candidate-1/head.mlpackage",
+  "state_names": [],
+  "status": "converted; runtime validation pending"
+}

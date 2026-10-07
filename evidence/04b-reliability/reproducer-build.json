@@ -1,0 +1,22 @@
+{
+  "command": [
+    "xcrun",
+    "clang++",
+    "-shared",
+    "-fPIC",
+    "-std=c++17",
+    "-fobjc-arc",
+    "-O2",
+    "-I/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12",
+    "-I<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/torch/include",
+    "<PROJECT_ROOT>/coreml_port/native/cleanup_reproducer.mm",
+    "-framework",
+    "Foundation",
+    "-undefined",
+    "dynamic_lookup",
+    "-o",
+    "<PROJECT_ROOT>/artifacts/04b-reliability/cleanup_reproducer.dylib"
+  ],
+  "source_sha256": "81adfafcf7d5b5901e350d9eca0504aa9ec931799eea9c90d1a3c9ba7799c2a7",
+  "binary_sha256": "652a4403843b223727bf0bf03f67ab038c074d90c31035e839e749b258e1f842"
+}

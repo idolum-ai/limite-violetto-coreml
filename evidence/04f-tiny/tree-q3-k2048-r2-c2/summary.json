@@ -1,0 +1,440 @@
+{
+  "status": "complete",
+  "geometry": {
+    "q": 3,
+    "k": 2048,
+    "query_row": 2,
+    "key_col": 2,
+    "heads": 10
+  },
+  "script_sha256": "165047bcebb277b4f730d7c660d5cd617baaed26da5247f229a394b96e194fcc",
+  "helper_sha256": "652172db3c993c1d3851fb861553f9a2e91bc8712f4d4581d8cae3735a25ed64",
+  "direct_script_sha256": "a8defad40cfc406b7a2b1cd159a60d1fad757ec874b2ca69f150c595b41114fc",
+  "capture_sha256": "55a7eb7431855046a4c15630535127436939f35cee6bfc449f5fd2201b9ffc80",
+  "operand_range": "BF16-rounded torch.randn, standard normal; finite normal-range values verified",
+  "reconstruction_vectors": 378,
+  "reconstruction_calls": 126,
+  "held_out_triplets": {
+    "count": 1000,
+    "different": 0,
+    "first_failures": []
+  },
+  "reverse_signs_triplets": {
+    "count": 1000,
+    "different": 0,
+    "first_failures": []
+  },
+  "larger_exponent_triplets": {
+    "count": 1000,
+    "different": 0,
+    "first_failures": []
+  },
+  "fresh_bf16": [
+    {
+      "seed": 381,
+      "products_all_finite": true,
+      "products_min_abs_nonzero": 0.0003024190664291382,
+      "products_max_abs": 7.822021484375,
+      "different": 0,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 727,
+      "products_all_finite": true,
+      "products_min_abs_nonzero": 0.0002195611596107483,
+      "products_max_abs": 5.827880859375,
+      "different": 0,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1447,
+      "products_all_finite": true,
+      "products_min_abs_nonzero": 1.7900019884109497e-05,
+      "products_max_abs": 6.653076171875,
+      "different": 0,
+      "max_abs": 0.0
+    }
+  ],
+  "tree": [
+    [
+      [
+        [
+          [
+            [
+              [
+                [
+                  [
+                    [
+                      [
+                        [
+                          [
+                            [
+                              [
+                                [
+                                  [
+                                    [
+                                      [
+                                        [
+                                          [
+                                            [
+                                              [
+                                                [
+                                                  [
+                                                    [
+                                                      [
+                                                        [
+                                                          [
+                                                            [
+                                                              [
+                                                                [
+                                                                  [
+                                                                    [
+                                                                      [
+                                                                        [
+                                                                          [
+                                                                            [
+                                                                              [
+                                                                                [
+                                                                                  [
+                                                                                    [
+                                                                                      [
+                                                                                        [
+                                                                                          [
+                                                                                            [
+                                                                                              [
+                                                                                                [
+                                                                                                  [
+                                                                                                    [
+                                                                                                      [
+                                                                                                        [
+                                                                                                          [
+                                                                                                            [
+                                                                                                              [
+                                                                                                                [
+                                                                                                                  [
+                                                                                                                    [
+                                                                                                                      [
+                                                                                                                        [
+                                                                                                                          [
+                                                                                                                            [
+                                                                                                                              [
+                                                                                                                                [
+                                                                                                                                  [
+                                                                                                                                    [
+                                                                                                                                      [
+                                                                                                                                        [
+                                                                                                                                          [
+                                                                                                                                            [
+                                                                                                                                              [
+                                                                                                                                                [
+                                                                                                                                                  [
+                                                                                                                                                    [
+                                                                                                                                                      [
+                                                                                                                                                        [
+                                                                                                                                                          [
+                                                                                                                                                            [
+                                                                                                                                                              [
+                                                                                                                                                                [
+                                                                                                                                                                  [
+                                                                                                                                                                    [
+                                                                                                                                                                      [
+                                                                                                                                                                        [
+                                                                                                                                                                          [
+                                                                                                                                                                            [
+                                                                                                                                                                              [
+                                                                                                                                                                                [
+                                                                                                                                                                                  [
+                                                                                                                                                                                    [
+                                                                                                                                                                                      [
+                                                                                                                                                                                        [
+                                                                                                                                                                                          [
+                                                                                                                                                                                            [
+                                                                                                                                                                                              [
+                                                                                                                                                                                                [
+                                                                                                                                                                                                  [
+                                                                                                                                                                                                    [
+                                                                                                                                                                                                      [
+                                                                                                                                                                                                        [
+                                                                                                                                                                                                          [
+                                                                                                                                                                                                            [
+                                                                                                                                                                                                              [
+                                                                                                                                                                                                                [
+                                                                                                                                                                                                                  [
+                                                                                                                                                                                                                    [
+                                                                                                                                                                                                                      [
+                                                                                                                                                                                                                        [
+                                                                                                                                                                                                                          [
+                                                                                                                                                                                                                            [
+                                                                                                                                                                                                                              [
+                                                                                                                                                                                                                                [
+                                                                                                                                                                                                                                  [
+                                                                                                                                                                                                                                    [
+                                                                                                                                                                                                                                      [
+                                                                                                                                                                                                                                        [
+                                                                                                                                                                                                                                          [
+                                                                                                                                                                                                                                            [
+                                                                                                                                                                                                                                              [
+                                                                                                                                                                                                                                                [
+                                                                                                                                                                                                                                                  [
+                                                                                                                                                                                                                                                    [
+                                                                                                                                                                                                                                                      [
+                                                                                                                                                                                                                                                        [
+                                                                                                                                                                                                                                                          [
+                                                                                                                                                                                                                                                            [
+                                                                                                                                                                                                                                                              [
+                                                                                                                                                                                                                                                                0,
+                                                                                                                                                                                                                                                                1
+                                                                                                                                                                                                                                                              ],
+                                                                                                                                                                                                                                                              2
+                                                                                                                                                                                                                                                            ],
+                                                                                                                                                                                                                                                            3
+                                                                                                                                                                                                                                                          ],
+                                                                                                                                                                                                                                                          4
+                                                                                                                                                                                                                                                        ],
+                                                                                                                                                                                                                                                        5
+                                                                                                                                                                                                                                                      ],
+                                                                                                                                                                                                                                                      6
+                                                                                                                                                                                                                                                    ],
+                                                                                                                                                                                                                                                    7
+                                                                                                                                                                                                                                                  ],
+                                                                                                                                                                                                                                                  8
+                                                                                                                                                                                                                                                ],
+                                                                                                                                                                                                                                                9
+                                                                                                                                                                                                                                              ],
+                                                                                                                                                                                                                                              10
+                                                                                                                                                                                                                                            ],
+                                                                                                                                                                                                                                            11
+                                                                                                                                                                                                                                          ],
+                                                                                                                                                                                                                                          12
+                                                                                                                                                                                                                                        ],
+                                                                                                                                                                                                                                        13
+                                                                                                                                                                                                                                      ],
+                                                                                                                                                                                                                                      14
+                                                                                                                                                                                                                                    ],
+                                                                                                                                                                                                                                    15
+                                                                                                                                                                                                                                  ],
+                                                                                                                                                                                                                                  16
+                                                                                                                                                                                                                                ],
+                                                                                                                                                                                                                                17
+                                                                                                                                                                                                                              ],
+                                                                                                                                                                                                                              18
+                                                                                                                                                                                                                            ],
+                                                                                                                                                                                                                            19
+                                                                                                                                                                                                                          ],
+                                                                                                                                                                                                                          20
+                                                                                                                                                                                                                        ],
+                                                                                                                                                                                                                        21
+                                                                                                                                                                                                                      ],
+                                                                                                                                                                                                                      22
+                                                                                                                                                                                                                    ],
+                                                                                                                                                                                                                    23
+                                                                                                                                                                                                                  ],
+                                                                                                                                                                                                                  24
+                                                                                                                                                                                                                ],
+                                                                                                                                                                                                                25
+                                                                                                                                                                                                              ],
+                                                                                                                                                                                                              26
+                                                                                                                                                                                                            ],
+                                                                                                                                                                                                            27
+                                                                                                                                                                                                          ],
+                                                                                                                                                                                                          28
+                                                                                                                                                                                                        ],
+                                                                                                                                                                                                        29
+                                                                                                                                                                                                      ],
+                                                                                                                                                                                                      30
+                                                                                                                                                                                                    ],
+                                                                                                                                                                                                    31
+                                                                                                                                                                                                  ],
+                                                                                                                                                                                                  32
+                                                                                                                                                                                                ],
+                                                                                                                                                                                                33
+                                                                                                                                                                                              ],
+                                                                                                                                                                                              34
+                                                                                                                                                                                            ],
+                                                                                                                                                                                            35
+                                                                                                                                                                                          ],
+                                                                                                                                                                                          36
+                                                                                                                                                                                        ],
+                                                                                                                                                                                        37
+                                                                                                                                                                                      ],
+                                                                                                                                                                                      38
+                                                                                                                                                                                    ],
+                                                                                                                                                                                    39
+                                                                                                                                                                                  ],
+                                                                                                                                                                                  40
+                                                                                                                                                                                ],
+                                                                                                                                                                                41
+                                                                                                                                                                              ],
+                                                                                                                                                                              42
+                                                                                                                                                                            ],
+                                                                                                                                                                            43
+                                                                                                                                                                          ],
+                                                                                                                                                                          44
+                                                                                                                                                                        ],
+                                                                                                                                                                        45
+                                                                                                                                                                      ],
+                                                                                                                                                                      46
+                                                                                                                                                                    ],
+                                                                                                                                                                    47
+                                                                                                                                                                  ],
+                                                                                                                                                                  48
+                                                                                                                                                                ],
+                                                                                                                                                                49
+                                                                                                                                                              ],
+                                                                                                                                                              50
+                                                                                                                                                            ],
+                                                                                                                                                            51
+                                                                                                                                                          ],
+                                                                                                                                                          52
+                                                                                                                                                        ],
+                                                                                                                                                        53
+                                                                                                                                                      ],
+                                                                                                                                                      54
+                                                                                                                                                    ],
+                                                                                                                                                    55
+                                                                                                                                                  ],
+                                                                                                                                                  56
+                                                                                                                                                ],
+                                                                                                                                                57
+                                                                                                                                              ],
+                                                                                                                                              58
+                                                                                                                                            ],
+                                                                                                                                            59
+                                                                                                                                          ],
+                                                                                                                                          60
+                                                                                                                                        ],
+                                                                                                                                        61
+                                                                                                                                      ],
+                                                                                                                                      62
+                                                                                                                                    ],
+                                                                                                                                    63
+                                                                                                                                  ],
+                                                                                                                                  64
+                                                                                                                                ],
+                                                                                                                                65
+                                                                                                                              ],
+                                                                                                                              66
+                                                                                                                            ],
+                                                                                                                            67
+                                                                                                                          ],
+                                                                                                                          68
+                                                                                                                        ],
+                                                                                                                        69
+                                                                                                                      ],
+                                                                                                                      70
+                                                                                                                    ],
+                                                                                                                    71
+                                                                                                                  ],
+                                                                                                                  72
+                                                                                                                ],
+                                                                                                                73
+                                                                                                              ],
+                                                                                                              74
+                                                                                                            ],
+                                                                                                            75
+                                                                                                          ],
+                                                                                                          76
+                                                                                                        ],
+                                                                                                        77
+                                                                                                      ],
+                                                                                                      78
+                                                                                                    ],
+                                                                                                    79
+                                                                                                  ],
+                                                                                                  80
+                                                                                                ],
+                                                                                                81
+                                                                                              ],
+                                                                                              82
+                                                                                            ],
+                                                                                            83
+                                                                                          ],
+                                                                                          84
+                                                                                        ],
+                                                                                        85
+                                                                                      ],
+                                                                                      86
+                                                                                    ],
+                                                                                    87
+                                                                                  ],
+                                                                                  88
+                                                                                ],
+                                                                                89
+                                                                              ],
+                                                                              90
+                                                                            ],
+                                                                            91
+                                                                          ],
+                                                                          92
+                                                                        ],
+                                                                        93
+                                                                      ],
+                                                                      94
+                                                                    ],
+                                                                    95
+                                                                  ],
+                                                                  96
+                                                                ],
+                                                                97
+                                                              ],
+                                                              98
+                                                            ],
+                                                            99
+                                                          ],
+                                                          100
+                                                        ],
+                                                        101
+                                                      ],
+                                                      102
+                                                    ],
+                                                    103
+                                                  ],
+                                                  104
+                                                ],
+                                                105
+                                              ],
+                                              106
+                                            ],
+                                            107
+                                          ],
+                                          108
+                                        ],
+                                        109
+                                      ],
+                                      110
+                                    ],
+                                    111
+                                  ],
+                                  112
+                                ],
+                                113
+                              ],
+                              114
+                            ],
+                            115
+                          ],
+                          116
+                        ],
+                        117
+                      ],
+                      118
+                    ],
+                    119
+                  ],
+                  120
+                ],
+                121
+              ],
+              122
+            ],
+            123
+          ],
+          124
+        ],
+        125
+      ],
+      126
+    ],
+    127
+  ]
+}

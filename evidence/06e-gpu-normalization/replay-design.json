@@ -1,0 +1,27 @@
+{
+  "worker": "scripts/probe_normalization_taps.py",
+  "worker_sha256": "ab1429a736e971b9f915f73d38230bb7c3c05b551955c4cbd36fd52d4f6bfb6c",
+  "planned_calls": 8,
+  "compute_policies": [
+    "CPU_ONLY",
+    "CPU_AND_GPU"
+  ],
+  "chunks": [
+    {
+      "start": 0,
+      "count": 32
+    },
+    {
+      "start": 32,
+      "count": 12
+    }
+  ],
+  "inputs_and_before_state": "same saved original CPU fixture for every arm",
+  "controls": [
+    "original candidate endpoints and eight states must match frozen prior candidate replay under same policy",
+    "tapped candidate endpoints and eight states must match uninstrumented candidate under same policy",
+    "all tap/output/state arrays finite",
+    "all native predictions guarded; normal process exit"
+  ],
+  "interpretation": "Do not interpret any tap if any control fails. Warm normalization input value_17 must remain byte-exact between policies to attribute divergence within this interval. Cold input already differs and cannot independently isolate an operation."
+}

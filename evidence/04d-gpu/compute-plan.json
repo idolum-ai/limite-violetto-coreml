@@ -1,0 +1,350 @@
+{
+  "key": {
+    "operation_count": 437,
+    "preferred_counts": {
+      "unknown": 247,
+      "MLCPUComputeDevice": 190
+    },
+    "by_op": {
+      "const": {
+        "unknown": 247
+      },
+      "ios18.abs": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.add": {
+        "MLCPUComputeDevice": 47
+      },
+      "ios18.cast": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.clip": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.expand_dims": {
+        "MLCPUComputeDevice": 40
+      },
+      "ios18.floor": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.gather": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.greater_equal": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.log": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.mul": {
+        "MLCPUComputeDevice": 42
+      },
+      "ios18.real_div": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.round": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.slice_by_index": {
+        "MLCPUComputeDevice": 50
+      },
+      "ios18.sub": {
+        "MLCPUComputeDevice": 1
+      },
+      "select": {
+        "MLCPUComputeDevice": 1
+      }
+    },
+    "rounding_ops": []
+  },
+  "qk": {
+    "operation_count": 633,
+    "preferred_counts": {
+      "unknown": 333,
+      "MLCPUComputeDevice": 300
+    },
+    "by_op": {
+      "const": {
+        "unknown": 333
+      },
+      "ios18.abs": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.add": {
+        "MLCPUComputeDevice": 94
+      },
+      "ios18.cast": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.clip": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.expand_dims": {
+        "MLCPUComputeDevice": 40
+      },
+      "ios18.floor": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.gather": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.greater_equal": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.log": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.mul": {
+        "MLCPUComputeDevice": 84
+      },
+      "ios18.real_div": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.round": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.slice_by_index": {
+        "MLCPUComputeDevice": 60
+      },
+      "ios18.sub": {
+        "MLCPUComputeDevice": 2
+      },
+      "select": {
+        "MLCPUComputeDevice": 2
+      }
+    },
+    "rounding_ops": []
+  },
+  "kv": {
+    "operation_count": 633,
+    "preferred_counts": {
+      "unknown": 333,
+      "MLCPUComputeDevice": 300
+    },
+    "by_op": {
+      "const": {
+        "unknown": 333
+      },
+      "ios18.abs": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.add": {
+        "MLCPUComputeDevice": 94
+      },
+      "ios18.cast": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.clip": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.expand_dims": {
+        "MLCPUComputeDevice": 40
+      },
+      "ios18.floor": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.gather": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.greater_equal": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.log": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.mul": {
+        "MLCPUComputeDevice": 84
+      },
+      "ios18.real_div": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.round": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.slice_by_index": {
+        "MLCPUComputeDevice": 60
+      },
+      "ios18.sub": {
+        "MLCPUComputeDevice": 2
+      },
+      "select": {
+        "MLCPUComputeDevice": 2
+      }
+    },
+    "rounding_ops": []
+  },
+  "qkv": {
+    "operation_count": 829,
+    "preferred_counts": {
+      "unknown": 419,
+      "MLGPUComputeDevice": 410
+    },
+    "by_op": {
+      "const": {
+        "unknown": 419
+      },
+      "ios18.abs": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.add": {
+        "MLGPUComputeDevice": 141
+      },
+      "ios18.cast": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.clip": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.expand_dims": {
+        "MLGPUComputeDevice": 40
+      },
+      "ios18.floor": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.gather": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.greater_equal": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.log": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.mul": {
+        "MLGPUComputeDevice": 126
+      },
+      "ios18.real_div": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.round": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.slice_by_index": {
+        "MLGPUComputeDevice": 70
+      },
+      "ios18.sub": {
+        "MLGPUComputeDevice": 3
+      },
+      "select": {
+        "MLGPUComputeDevice": 3
+      }
+    },
+    "rounding_ops": []
+  },
+  "qkv-even": {
+    "operation_count": 844,
+    "preferred_counts": {
+      "unknown": 424,
+      "MLGPUComputeDevice": 420
+    },
+    "by_op": {
+      "const": {
+        "unknown": 424
+      },
+      "ios18.abs": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.add": {
+        "MLGPUComputeDevice": 142
+      },
+      "ios18.cast": {
+        "MLGPUComputeDevice": 4
+      },
+      "ios18.clip": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.equal": {
+        "MLGPUComputeDevice": 1
+      },
+      "ios18.expand_dims": {
+        "MLGPUComputeDevice": 40
+      },
+      "ios18.floor": {
+        "MLGPUComputeDevice": 5
+      },
+      "ios18.gather": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.greater": {
+        "MLGPUComputeDevice": 1
+      },
+      "ios18.greater_equal": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.log": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.mul": {
+        "MLGPUComputeDevice": 128
+      },
+      "ios18.real_div": {
+        "MLGPUComputeDevice": 3
+      },
+      "ios18.round": {
+        "MLGPUComputeDevice": 2
+      },
+      "ios18.slice_by_index": {
+        "MLGPUComputeDevice": 70
+      },
+      "ios18.sub": {
+        "MLGPUComputeDevice": 5
+      },
+      "select": {
+        "MLGPUComputeDevice": 4
+      }
+    },
+    "rounding_ops": []
+  },
+  "round-ties": {
+    "operation_count": 33,
+    "preferred_counts": {
+      "MLCPUComputeDevice": 18,
+      "unknown": 15
+    },
+    "by_op": {
+      "const": {
+        "unknown": 15
+      },
+      "ios18.abs": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.add": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.cast": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.clip": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.floor": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.gather": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.greater_equal": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.log": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.mul": {
+        "MLCPUComputeDevice": 4
+      },
+      "ios18.real_div": {
+        "MLCPUComputeDevice": 1
+      },
+      "ios18.round": {
+        "MLCPUComputeDevice": 2
+      },
+      "ios18.sub": {
+        "MLCPUComputeDevice": 1
+      },
+      "select": {
+        "MLCPUComputeDevice": 1
+      }
+    },
+    "rounding_ops": []
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "arm": "B",
+  "cleanup_guard": {
+    "background_calls": 2123,
+    "calls": 2875,
+    "shutdown_skips": 0
+  },
+  "cohort": {
+    "candidate_milestone": "<PROJECT_ROOT>/evidence/05g-integration/full-1/milestone.json",
+    "candidate_milestone_sha256": "342cd7dfb3d12672adcb713b739d54ee3d9407aa024410b3927597864383b96e",
+    "identities": {
+      "A": {
+        "compiled": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+        "compiled_manifest_sha256": "6d823571b146339d557aab33d7d284eee8cf701eb7e20e0a8fbf5ccb8be01b29",
+        "selection": {
+          "compiled_dir": "<PROJECT_ROOT>/artifacts/05c-compiled/full-cache-1",
+          "compiled_manifest": "<PROJECT_ROOT>/evidence/05c-compiled/full-cache-1/compiled-identity.json",
+          "identity_manifest": "<PROJECT_ROOT>/evidence/04d-cpu/full-candidate-6/package-identity.json",
+          "model_dir": "<PROJECT_ROOT>/artifacts/04d-cpu/full-candidate-6"
+        },
+        "source": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+        "source_manifest_sha256": "eaf5695cdbe1fe79185ad10942cc67567e3e760e0a8dc23e716b2bfd554b3d37"
+      },
+      "B": {
+        "compiled": "149d74d2e339fabdafeec8cf5ad6766fdd2e2754c15f5256c7dc69d91b932557",
+        "compiled_manifest_sha256": "faac4ae499364aea917784b7eb9bdcd13f6bb5cf66c7fec774236fafd3614dfc",
+        "selection": {
+          "compiled_dir": "<PROJECT_ROOT>/artifacts/05g-integration/full-1/compiled",
+          "compiled_manifest": "<PROJECT_ROOT>/evidence/05g-integration/full-1/compiled-identity.json",
+          "identity_manifest": "<PROJECT_ROOT>/evidence/05g-integration/full-1/package-identity.json",
+          "model_dir": "<PROJECT_ROOT>/artifacts/05g-integration/full-1/source"
+        },
+        "source": "c7cc54a308bb7c379f6d55c777a62666e86921f27245115dc185597efc65a46b",
+        "source_manifest_sha256": "c1f53c4646fd40ada7ef0a5eed93166b0d19a1b4f08d8e277cce52f75d54f9c7"
+      }
+    },
+    "qualified_sources": {
+      "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+      "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+      "coreml_port/bf16_gelu.py": "69761c7b2ebd7fe158109092abe058d204fd965958cc74652e7747ac4bb82624",
+      "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+      "coreml_port/compiled_generate.py": "6fb70e2e3e4a59abb284984f9a447e699eaa3d56d40bf7c1090a687f2c568395",
+      "coreml_port/compiled_identity.py": "10eb6ef0a793453109f0378275e2a3259631d68c5e85e9f92873ba1f85373c53",
+      "coreml_port/compiled_runtime.py": "37d16dfd0ab096b9ec5b26f8d44f3e64874b94c60181af80748cab9c302eedb5",
+      "coreml_port/dynamic_queries.py": "aa87c78fdfc84172860cb9ad765924a994430a22e7e36a77ede6314b30299cda",
+      "coreml_port/generate.py": "d8659b17181f2dded9c769f6d695bb8fa0e0a06ae90089a6adfc20ff6f7ff5c9",
+      "coreml_port/graphs.py": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+      "coreml_port/loader_selection.py": "4d8b5380934b6712b7c3abc35f2f0bfb68943624252b32c3315d3e148f196099",
+      "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+      "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+      "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+      "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+      "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227",
+      "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+      "coreml_port/paired_product.py": "9145720c24d706940ddc7039521a3cd76b8706419e964070730bd0f81dbe59e3",
+      "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+      "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+      "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+      "coreml_port/tiny_native_scores.py": "c1fd3339ce3ac7b23cf0117dfb466b25c2c43c036a87616eb8656787fa5858ff",
+      "coreml_port/tiny_prefix_runtime.py": "03f50bffc68b5264ef8f0f663c869d237e103f1a8863b0e34569325f26cddb2f",
+      "evidence/01-reference/local-input-validation.json": "54ce299bdc107b3db80a2a389283ea787f7801a4f51a1ae2feed0a6dfaee7490",
+      "evidence/03-portable/ACCEPTANCE.json": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+      "evidence/03-portable/calibration-cpu.json": "6c33c8976abdc5e2ef603519cdaa3f5193c443515de876dbea920b9840ab9d95",
+      "evidence/04-coreml/generation-comparison.json": "1ee6553885123a57b8fb40b89c292eea201e148e6f3bd4d9b4cba1c057f9f3eb",
+      "evidence/04-coreml/generation-cpu.json": "1c243d32bb9a3916f74e9939187d043f805ce14bde4a811a8490c032ab75cd67",
+      "portable/generate.py": "35db80e5d932f772d54df6be71f3b22b612b955e1aa929257fa5cdfb155e2f0e",
+      "portable/model.py": "6e204b9b4d08247a4441d2422800ca7b253f3cc8f9e4a855473830daa5042797",
+      "scripts/audit_coreml_generation.py": "efb43aecd709045b19ea3c2801ce9c8c906a8861755d95a41401cf93ad0c0aac",
+      "scripts/audit_coreml_partitions.py": "d5c0b2658206fe4051c19b06f4f72d93eed63973dd01b1139012cd84b72c6557",
+      "scripts/build_compiled_cache.py": "c560097015307ea51ab379e452cc36c934c2876f721afe6f216e333a48ebb7e7",
+      "scripts/build_cpu_candidate.py": "d058d7840b7d3bf93089fa4f1af0ca5c8de5bfbafff36d09782605200fb6ad84",
+      "scripts/convert_coreml.py": "0afd570572d6e265d1d103ae8f97ef90b1bdb84982d67c4bf7e0db6b5576c62a",
+      "scripts/probe_compiled_pipeline.py": "01af072f39fecf32108d9d6d941339c1eb12b1a98f199abc491ff9b2e5075168",
+      "scripts/validate_coreml.py": "464941d52468e22ccc3f072b4a194dae1da45780f9c842be649cb1ad44a1f0f0",
+      "scripts/validate_coreml_boundaries.py": "2141348aef3aac041f43d7fd36c927a476408baf5da54af73fd92bb6d8ede4af"
+    },
+    "runtime_provenance": {
+      "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+      "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+      "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+      "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+      "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+      "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf"
+    }
+  },
+  "component_load_seconds": {
+    "0": 0.34001350030303,
+    "1": 0.3284546658396721,
+    "10": 0.3298661671578884,
+    "11": 0.35080637503415346,
+    "2": 0.33495670929551125,
+    "3": 0.33121545892208815,
+    "4": 0.33098266646265984,
+    "5": 0.3373410841450095,
+    "6": 0.3275298746302724,
+    "7": 0.3089531250298023,
+    "8": 0.3176340004429221,
+    "9": 0.32950825057923794,
+    "embedding": 0.05122287571430206,
+    "head": 0.011734750121831894
+  },
+  "forced_stream_sha256": "b2da9806c60ca5ad0b25d507a1c1550cd5b57a2fd9ab9ececaa7046f4b338834",
+  "host_after_timing": {
+    "load_average": [
+      5.11279296875,
+      4.9736328125,
+      5.31005859375
+    ],
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "power": "Now drawing from 'Battery Power'\n -InternalBattery-0 (id=<REDACTED_HOST_ID>)\t97%; discharging; 2:25 remaining present: true\n",
+    "thermal": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n",
+    "utc": "2026-09-23T18:49:14Z"
+  },
+  "host_before_timing": {
+    "load_average": [
+      4.3974609375,
+      4.9287109375,
+      5.36279296875
+    ],
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "power": "Now drawing from 'Battery Power'\n -InternalBattery-0 (id=<REDACTED_HOST_ID>)\t99%; discharging; 2:35 remaining present: true\n",
+    "thermal": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n",
+    "utc": "2026-09-23T18:46:46Z"
+  },
+  "identity_verification_seconds": 7.852440499700606,
+  "initialization_seconds": 12.064893749542534,
+  "loader_provenance": {
+    "compiled_aggregate_sha256": "149d74d2e339fabdafeec8cf5ad6766fdd2e2754c15f5256c7dc69d91b932557",
+    "compiled_dir": "<PROJECT_ROOT>/artifacts/05g-integration/full-1/compiled",
+    "compiled_manifest": "<PROJECT_ROOT>/evidence/05g-integration/full-1/compiled-identity.json",
+    "compiled_manifest_sha256": "faac4ae499364aea917784b7eb9bdcd13f6bb5cf66c7fec774236fafd3614dfc",
+    "mode": "persistent_compiled",
+    "source_candidate_identity": "c7cc54a308bb7c379f6d55c777a62666e86921f27245115dc185597efc65a46b",
+    "sources": {
+      "coreml_port/compiled_identity.py": "10eb6ef0a793453109f0378275e2a3259631d68c5e85e9f92873ba1f85373c53",
+      "coreml_port/compiled_runtime.py": "37d16dfd0ab096b9ec5b26f8d44f3e64874b94c60181af80748cab9c302eedb5",
+      "coreml_port/loader_selection.py": "4d8b5380934b6712b7c3abc35f2f0bfb68943624252b32c3315d3e148f196099",
+      "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81"
+    }
+  },
+  "passed": true,
+  "prediction_guard": {
+    "gil_releases": 458,
+    "installed": true,
+    "plain_calls": 50,
+    "state_calls": 408
+  },
+  "protocol_sha256": "29191d62acfe096568c979c44426fd6e4ae11f1a607036dacb03d4a934a92d1b",
+  "requests": [
+    {
+      "creation_seconds": 0.005807916633784771,
+      "disposal_seconds": 5.304161459207535e-05,
+      "disposed": true,
+      "prefix": 32,
+      "warmup": true
+    },
+    {
+      "creation_seconds": 0.0032066674903035164,
+      "disposal_seconds": 4.1457824409008026e-05,
+      "disposed": true,
+      "prefix": 512,
+      "warmup": false
+    },
+    {
+      "creation_seconds": 0.002682291902601719,
+      "disposal_seconds": 3.091711550951004e-05,
+      "disposed": true,
+      "prefix": 128,
+      "warmup": false
+    },
+    {
+      "creation_seconds": 0.0027481243014335632,
+      "disposal_seconds": 4.758313298225403e-05,
+      "disposed": true,
+      "prefix": 32,
+      "warmup": false
+    }
+  ],
+  "round": 1,
+  "runtime_provenance": {
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf"
+  },
+  "scores_sha256": "cd4ccbac0405b4137f55785bd4bb04b7440d6324a7c6f61ae36551d9bd3f9542",
+  "script_sha256": "8e1e1288205dfaeef2420dc02841139c09478902700b599608b9fe1d95db0485",
+  "slot": 1,
+  "source_spec_seconds": 0.17512533348053694,
+  "status": "completed",
+  "timings": [
+    {
+      "arm": "B",
+      "phase": "prefill",
+      "prefix": 512,
+      "round": 1,
+      "seconds": 98.958308417,
+      "slot": 1,
+      "step": 0
+    },
+    {
+      "arm": "B",
+      "phase": "decode",
+      "prefix": 512,
+      "round": 1,
+      "seconds": 1.924918459,
+      "slot": 1,
+      "step": 1
+    },
+    {
+      "arm": "B",
+      "phase": "decode",
+      "prefix": 512,
+      "round": 1,
+      "seconds": 1.929936833,
+      "slot": 1,
+      "step": 2
+    },
+    {
+      "arm": "B",
+      "phase": "decode",
+      "prefix": 512,
+      "round": 1,
+      "seconds": 1.902968417,
+      "slot": 1,
+      "step": 3
+    },
+    {
+      "arm": "B",
+      "phase": "prefill",
+      "prefix": 128,
+      "round": 1,
+      "seconds": 25.07563425,
+      "slot": 1,
+      "step": 0
+    },
+    {
+      "arm": "B",
+      "phase": "decode",
+      "prefix": 128,
+      "round": 1,
+      "seconds": 1.910987917,
+      "slot": 1,
+      "step": 1
+    },
+    {
+      "arm": "B",
+      "phase": "decode",
+      "prefix": 128,
+      "round": 1,
+      "seconds": 1.852351208,
+      "slot": 1,
+      "step": 2
+    },
+    {
+      "arm": "B",
+      "phase": "decode",
+      "prefix": 128,
+      "round": 1,
+      "seconds": 1.883875417,
+      "slot": 1,
+      "step": 3
+    },
+    {
+      "arm": "B",
+      "phase": "prefill",
+      "prefix": 32,
+      "round": 1,
+      "seconds": 6.484083792,
+      "slot": 1,
+      "step": 0
+    },
+    {
+      "arm": "B",
+      "phase": "decode",
+      "prefix": 32,
+      "round": 1,
+      "seconds": 1.914566459,
+      "slot": 1,
+      "step": 1
+    },
+    {
+      "arm": "B",
+      "phase": "decode",
+      "prefix": 32,
+      "round": 1,
+      "seconds": 1.870084917,
+      "slot": 1,
+      "step": 2
+    },
+    {
+      "arm": "B",
+      "phase": "decode",
+      "prefix": 32,
+      "round": 1,
+      "seconds": 1.812599125,
+      "slot": 1,
+      "step": 3
+    }
+  ]
+}

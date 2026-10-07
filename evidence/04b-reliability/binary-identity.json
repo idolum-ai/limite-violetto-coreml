@@ -1,0 +1,5 @@
+{
+  "installed_binary_uuid_record": "UUID: 284A8C1E-8591-3376-8FC6-C462FD9416C3 (arm64) .venv/lib/python3.12/site-packages/coremltools/libcoremlpython.so",
+  "crash_binary_uuid": "284a8c1e-8591-3376-8fc6-c462fd9416c3",
+  "uuid_match": true
+}

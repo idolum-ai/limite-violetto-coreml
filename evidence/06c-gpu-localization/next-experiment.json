@@ -1,0 +1,38 @@
+{
+  "status": "planned_not_executed",
+  "objective": "Test an explicit ties-to-even replacement while preserving signed zero and qualified CPU behavior.",
+  "evidence": "evidence/06c-gpu-localization/rounding-summary.json",
+  "design": "evidence/06c-gpu-localization/rounding-fix-design.md",
+  "gates": [
+    {
+      "gate": "R1",
+      "requirement": "Fresh isolated operator candidate matches original finite-range Torch quantizer bytes, including signed zero, positive/negative ties, nextafter neighbors, exponent boundaries and captured raw tensors under both policies.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "gate": "R2",
+      "requirement": "Composed projection/round graph and separate uninstrumented group0 candidate demonstrate intended correction on exact saved common inputs/cache; CPU remains exact; residual GPU output/cache drift is localized before any full build.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "gate": "R3",
+      "requirement": "Only after local controls pass, build separate full candidate and repeat unchanged CPU/GPU numerical, partition, boundary and generation prerequisites; no retroactive tolerance change.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "gate": "R4",
+      "requirement": "Actual device placement and performance are separately measured; policy labels and empty traces are not execution proof.",
+      "status": "pending",
+      "evidence_links": []
+    }
+  ],
+  "constraints": [
+    "Original and promoted CPU artifacts/runtime stay frozen.",
+    "Do not reuse old even-round helper unchanged; its signed-zero behavior differs.",
+    "Local rounding correction does not imply all full-model GPU drift is solved."
+  ],
+  "thresholds_changed": false
+}

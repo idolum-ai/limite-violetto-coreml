@@ -1,0 +1,22 @@
+{
+  "CPU_ONLY": {
+    "comparisons": 54,
+    "changed_metrics": [],
+    "lifecycle_pass": true,
+    "guard": {
+      "calls": 2161,
+      "background_calls": 0,
+      "shutdown_skips": 0
+    }
+  },
+  "CPU_AND_GPU": {
+    "comparisons": 54,
+    "changed_metrics": [],
+    "lifecycle_pass": true,
+    "guard": {
+      "calls": 2212,
+      "background_calls": 0,
+      "shutdown_skips": 0
+    }
+  }
+}

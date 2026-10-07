@@ -1,0 +1,66 @@
+{
+  "status": "completed_localization_and_rejected_host_candidate",
+  "controlled_replay_passed": true,
+  "all_native_controls": 4,
+  "native_state_calls": 8,
+  "warm_first_differing_operation": "var_5675 = 1 / denom_7",
+  "warm_equal_inputs_through_sqrt": true,
+  "warm_changed_reciprocal_rows": [
+    1,
+    2,
+    8
+  ],
+  "warm_reciprocal_difference_ulp": 1,
+  "warm_rounded_values_changed": 19,
+  "warm_normalized_output_changed_rows": [
+    8
+  ],
+  "offline_cpu_reciprocal_substitution_removes_all_19": true,
+  "cold_attention_residual_unresolved": true,
+  "qualified_cpu_preserved": true,
+  "native_fix_integrated": false,
+  "gpu_qualified": false,
+  "acceptance_thresholds_changed": false,
+  "actual_device_placement": "unverified",
+  "evidence": {
+    "taps-1/results.json": {
+      "path": "evidence/06e-gpu-normalization/taps-1/results.json",
+      "sha256": "b2b08da42ff1e35c693211e3869af3ea7475e7e3c5e3218a3a18c3a2568e629d"
+    },
+    "replay-1/results.json": {
+      "path": "evidence/06e-gpu-normalization/replay-1/results.json",
+      "sha256": "d72fc475a76e5c3751499465253fad154ea396753ff68630aa4f8dec6a8a7c09"
+    },
+    "residual-summary-1.json": {
+      "path": "evidence/06e-gpu-normalization/residual-summary-1.json",
+      "sha256": "b06144cc768943f33adccb2c65755781794e1aaf2a3e7da18a8b1d00cd7e53f9"
+    },
+    "normalization-analysis.json": {
+      "path": "evidence/06e-gpu-normalization/normalization-analysis.json",
+      "sha256": "70a7e5763be1280075b677646f2f7ec69d1f1f5768df120eacb6a0b204df0dd0"
+    },
+    "normalization-counterfactual.json": {
+      "path": "evidence/06e-gpu-normalization/normalization-counterfactual.json",
+      "sha256": "7ab05b094e40c5e45366a9c2637bcf5af59faa65629079039bd1ff8649375195"
+    },
+    "cpu-preservation.json": {
+      "path": "evidence/06e-gpu-normalization/cpu-preservation.json",
+      "sha256": "cfec08717f17fe93d21a8ee83628b815baaf9f9fc2bb53ee48fb8fd001b849bc"
+    },
+    "reciprocal-host-1/host-preflight.json": {
+      "path": "evidence/06e-gpu-normalization/reciprocal-host-1/host-preflight.json",
+      "sha256": "ea705cefe8bb118632088c63afa3c4f8b850a15b4180995c34079c47be64dd5b"
+    },
+    "reciprocal-protocol.json": {
+      "path": "evidence/06e-gpu-normalization/reciprocal-protocol.json",
+      "sha256": "933414e3d3c8bc8d2ebd660c223de56bfdd01d2786051fb89a565df3e5e6ecdb"
+    }
+  },
+  "candidate_host_gate_passed": false,
+  "candidate_host_cases": 4,
+  "candidate_host_elements": 108,
+  "candidate_host_wrong_values": 3,
+  "candidate_native_predictions": 0,
+  "candidate_model_builds": 0,
+  "candidate_failure_boundary": "Final compensated helper output differs from correctly rounded second FMA on three directed cases; exact Newton formula passes these 108 inputs. No general correctness claim."
+}

@@ -1,0 +1,6 @@
+{
+  "files_checked": 582,
+  "failed": [],
+  "passed": true,
+  "excluded": "virtualenv, caches, pyc, DS_Store, checksum lists, and this verification output"
+}

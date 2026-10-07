@@ -1,0 +1,15 @@
+"""Record progress without promoting an experimental shard to a full gate pass."""
+import json,hashlib
+from pathlib import Path
+from datetime import datetime,timezone
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'evidence/04c-precision'
+def read(n):return json.loads((OUT/n).read_text())
+labels=read('rounding-site-labels.json');stages=read('rounding-sites.json');first={}
+for name,rows in stages.items():
+    row=next(x for x in rows if x['name'].startswith('round_') and x['different_elements']);site=labels[int(row['name'].split('_')[1])];first[name]={**row,'source_site':site,'interpretation':'layer 1 attention weighted-value result after BF16 rounding' if name=='CPU_ONLY' else 'layer 0 key projection after BF16 rounding'}
+ablations={}
+for name in ['native_bf16','fp64','kahan32','ordered']:
+    r=read('graph-'+name+'.json');ablations[name]={'score_max_abs':r['comparisons']['scores']['max_abs'],'all_comparison_max_abs':max(v['max_abs'] for v in r['comparisons'].values()),'score_pass':r['score_pass'],'hidden_pass':r['hidden_pass']}
+r={'updated_at':datetime.now(timezone.utc).isoformat(),'status':'Numerical correction in progress; experimental ordered shard not promoted','original_gate':'FAIL remains in active full-model packages','thresholds_changed':False,'probe_scope':'32-token real-model full Torch graph; layer-0 query operator at 1/3/32 tokens; first four Core ML layers with prefill/decode','whole_graph_ablations':ablations,'coreml_operators':read('operators.json'),'ordered_shard':read('shard-runtime.json'),'first_diagnostic_divergences':first,'diagnostic_caveat':'Extra outputs can change compiler fusion; uninstrumented full-model gates still required','selected_runtime_packages':'artifacts/04-coreml/model (unchanged arithmetic, cleanup guard enabled)','experimental_packages':'artifacts/04c-precision/ordered (one shard only)','next_steps':['Isolate attention score, softmax and weighted-value reduction on identical inputs at the CPU first mismatch','Compare fused and isolated key projection behavior on GPU-permitted execution','Only after a corrected shard passes, export all components and rerun full gates and generation'],'investment_estimates':{'working_demo_done_percent':[90,95],'dependable_runner_done_percent':[60,70],'release_quality_done_percent':[35,50],'meaning':'Rough effort estimates, not pass rates; fidelity redesign is the largest uncertainty'},'sources':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [ROOT/'coreml_port/graphs.py',ROOT/'coreml_port/ordered_linear.py',ROOT/'scripts/probe_ordered_operators.py',ROOT/'scripts/probe_coreml_layer_stages.py',ROOT/'scripts/ablate_graph_precision.py']}}
+(OUT/'summary.json').write_text(json.dumps(r,indent=2)+'\n')
+m=json.loads((ROOT/'manifest.json').read_text());m['precision_followup']={'summary':'evidence/04c-precision/summary.json','report':'evidence/04c-precision/REPORT.md','status':r['status'],'thresholds_changed':False};(ROOT/'manifest.json').write_text(json.dumps(m,indent=2)+'\n');print(json.dumps(first,indent=2))

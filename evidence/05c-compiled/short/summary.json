@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "passed": true,
+  "attempt_status": "completed",
+  "comparison_count": 54,
+  "expected_comparisons": 54,
+  "numerical_pass": true,
+  "check_count": 17,
+  "expected_checks": 17,
+  "lifecycle_pass": true,
+  "max_score_abs": 1.9073486328125e-06,
+  "max_hidden_relative_rmse": 0.0,
+  "errors": []
+}

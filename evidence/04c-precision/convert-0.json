@@ -1,0 +1,17 @@
+{
+  "component": "0",
+  "arithmetic": "ordered",
+  "seconds": 27.97873306274414,
+  "package": "artifacts/04c-precision/ordered/0.mlpackage",
+  "state_names": [
+    "k_cache_0",
+    "v_cache_0",
+    "k_cache_1",
+    "v_cache_1",
+    "k_cache_2",
+    "v_cache_2",
+    "k_cache_3",
+    "v_cache_3"
+  ],
+  "status": "converted; runtime validation pending"
+}

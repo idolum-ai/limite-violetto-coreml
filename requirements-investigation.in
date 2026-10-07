@@ -1,0 +1,8 @@
+# Local macOS inspection/component-conversion candidate, not the CUDA runtime.
+# Interpreter: existing CPython 3.12.9 (arm64).
+# coremltools 9.0 release notes and _deps declare support through Torch 2.7.0.
+coremltools==9.0
+torch==2.7.0
+transformers==5.6.2
+pytest==9.1.1
+numpy==2.2.6

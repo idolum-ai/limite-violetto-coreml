@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "comparisons": 63,
+  "passed": 10,
+  "score_max_abs": 1.5667943954467773,
+  "all_pass": false,
+  "scope": "pure Torch composed empirical policy, not Core ML qualification"
+}

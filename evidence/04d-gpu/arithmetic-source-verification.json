@@ -1,0 +1,428 @@
+{
+  "script_sha256": "b9d205c9ee34aaf10fb358dd182b8d9cf468d3d1ab4165b0ba7e98e256558779",
+  "pinned_revisions": {
+    "torch": "134179474539648ba7dee1317959529fbd0e7f89",
+    "sleef": "56e1f79cb140fb9326d612d0be06b5250565cade",
+    "coremltools": "9.0",
+    "installed_bridge_sha256": "915f478a3f2a392077012f8dacd9ae433579cbb299019ef2df23217ce536ee67"
+  },
+  "checks": [
+    {
+      "label": "torch_initial_snapshot",
+      "actual": {
+        "path": "sources/torch-2.7-linear/BlasKernel.cpp",
+        "sha256": "f419272b78f560eb090d6fb258eb1104e07ec7190b99c7f8b1f2a342979e5e2e"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/BlasKernel.cpp",
+        "sha256": "f419272b78f560eb090d6fb258eb1104e07ec7190b99c7f8b1f2a342979e5e2e"
+      },
+      "pass": true
+    },
+    {
+      "label": "torch_initial_snapshot",
+      "actual": {
+        "path": "sources/torch-2.7-linear/CPUBlas.cpp",
+        "sha256": "03a6cb1a2e8778fd29bb331571d1d6a426dff78f3b26e39314c7905bff167a8b"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/CPUBlas.cpp",
+        "sha256": "03a6cb1a2e8778fd29bb331571d1d6a426dff78f3b26e39314c7905bff167a8b"
+      },
+      "pass": true
+    },
+    {
+      "label": "torch_initial_snapshot",
+      "actual": {
+        "path": "sources/torch-2.7-linear/LICENSE",
+        "sha256": "a8a2c6b67cf8a597ffaa5c82380a6bd1b82629c0417e00673d8013d662eb500a"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/LICENSE",
+        "sha256": "a8a2c6b67cf8a597ffaa5c82380a6bd1b82629c0417e00673d8013d662eb500a"
+      },
+      "pass": true
+    },
+    {
+      "label": "torch_initial_snapshot",
+      "actual": {
+        "path": "sources/torch-2.7-linear/LinearAlgebra.cpp",
+        "sha256": "e197cd299b67c7eef75a21d26fc5b3ac35d35c0b4d457aa448ab81d3e211f009"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/LinearAlgebra.cpp",
+        "sha256": "e197cd299b67c7eef75a21d26fc5b3ac35d35c0b4d457aa448ab81d3e211f009"
+      },
+      "pass": true
+    },
+    {
+      "label": "torch_initial_snapshot",
+      "actual": {
+        "path": "sources/torch-2.7-linear/ReducedPrecisionFloatGemvFastPathKernel.cpp",
+        "sha256": "38585788c43ffffe6050bfa144d4abcdf42bdf74e4210a74eb1a4df4de914f18"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/ReducedPrecisionFloatGemvFastPathKernel.cpp",
+        "sha256": "38585788c43ffffe6050bfa144d4abcdf42bdf74e4210a74eb1a4df4de914f18"
+      },
+      "pass": true
+    },
+    {
+      "label": "arithmetic-source-identity_torch_commit",
+      "actual": "134179474539648ba7dee1317959529fbd0e7f89",
+      "expected": "134179474539648ba7dee1317959529fbd0e7f89",
+      "pass": true
+    },
+    {
+      "label": "arithmetic-source-identity",
+      "actual": {
+        "path": "sources/torch-2.7-linear/SoftMaxKernel.cpp",
+        "sha256": "22275d1f2a806c3a529f17f046f347cf6b763951e5142a48085481d5e5c8ff0c"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/SoftMaxKernel.cpp",
+        "sha256": "22275d1f2a806c3a529f17f046f347cf6b763951e5142a48085481d5e5c8ff0c"
+      },
+      "pass": true
+    },
+    {
+      "label": "arithmetic-source-identity",
+      "actual": {
+        "path": "sources/torch-2.7-linear/SumKernel.cpp",
+        "sha256": "ed0af1f8d99378801ec0ff5b66c4ebff8c9ca37dd33187b6f15a9c909de5637c"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/SumKernel.cpp",
+        "sha256": "ed0af1f8d99378801ec0ff5b66c4ebff8c9ca37dd33187b6f15a9c909de5637c"
+      },
+      "pass": true
+    },
+    {
+      "label": "arithmetic-source-identity",
+      "actual": {
+        "path": "sources/torch-2.7-linear/ReduceOpsKernel.cpp",
+        "sha256": "d70f10d684f2b5c991f5c620564d3713d53dcee027fcc34dac52c36261101d25"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/ReduceOpsKernel.cpp",
+        "sha256": "d70f10d684f2b5c991f5c620564d3713d53dcee027fcc34dac52c36261101d25"
+      },
+      "pass": true
+    },
+    {
+      "label": "arithmetic-source-identity",
+      "actual": {
+        "path": "sources/torch-2.7-linear/functional_base.h",
+        "sha256": "9b42c162a15bd2b2af15f1613eca5bd1dafc05f0a3e025114969583dec85c2e2"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/functional_base.h",
+        "sha256": "9b42c162a15bd2b2af15f1613eca5bd1dafc05f0a3e025114969583dec85c2e2"
+      },
+      "pass": true
+    },
+    {
+      "label": "arithmetic-source-identity",
+      "actual": {
+        "path": "sources/torch-2.7-linear/vec128_float_neon.h",
+        "sha256": "1e6d2a6a7ada3d2e4b355b6339e3353258a702b613d59f2505fd53a0a8644af1"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/vec128_float_neon.h",
+        "sha256": "1e6d2a6a7ada3d2e4b355b6339e3353258a702b613d59f2505fd53a0a8644af1"
+      },
+      "pass": true
+    },
+    {
+      "label": "softmax-source-identity_torch_commit",
+      "actual": "134179474539648ba7dee1317959529fbd0e7f89",
+      "expected": "134179474539648ba7dee1317959529fbd0e7f89",
+      "pass": true
+    },
+    {
+      "label": "softmax-source-identity",
+      "actual": {
+        "path": "sources/torch-2.7-linear/SoftMaxKernel.cpp",
+        "sha256": "22275d1f2a806c3a529f17f046f347cf6b763951e5142a48085481d5e5c8ff0c"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/SoftMaxKernel.cpp",
+        "sha256": "22275d1f2a806c3a529f17f046f347cf6b763951e5142a48085481d5e5c8ff0c"
+      },
+      "pass": true
+    },
+    {
+      "label": "softmax-source-identity",
+      "actual": {
+        "path": "sources/torch-2.7-linear/functional_base.h",
+        "sha256": "9b42c162a15bd2b2af15f1613eca5bd1dafc05f0a3e025114969583dec85c2e2"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/functional_base.h",
+        "sha256": "9b42c162a15bd2b2af15f1613eca5bd1dafc05f0a3e025114969583dec85c2e2"
+      },
+      "pass": true
+    },
+    {
+      "label": "softmax-source-identity",
+      "actual": {
+        "path": "sources/torch-2.7-linear/vec128_float_neon.h",
+        "sha256": "1e6d2a6a7ada3d2e4b355b6339e3353258a702b613d59f2505fd53a0a8644af1"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/vec128_float_neon.h",
+        "sha256": "1e6d2a6a7ada3d2e4b355b6339e3353258a702b613d59f2505fd53a0a8644af1"
+      },
+      "pass": true
+    },
+    {
+      "label": "bmm-source-identity_torch_commit",
+      "actual": "134179474539648ba7dee1317959529fbd0e7f89",
+      "expected": "134179474539648ba7dee1317959529fbd0e7f89",
+      "pass": true
+    },
+    {
+      "label": "bmm-source-identity",
+      "actual": {
+        "path": "sources/torch-2.7-linear/LinearAlgebra.cpp",
+        "sha256": "e197cd299b67c7eef75a21d26fc5b3ac35d35c0b4d457aa448ab81d3e211f009"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/LinearAlgebra.cpp",
+        "sha256": "e197cd299b67c7eef75a21d26fc5b3ac35d35c0b4d457aa448ab81d3e211f009"
+      },
+      "pass": true
+    },
+    {
+      "label": "bmm-source-identity_origin_revision:sources/torch-2.7-linear/LinearAlgebra.cpp",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "label": "bmm-source-identity",
+      "actual": {
+        "path": "sources/torch-2.7-linear/CPUBlas.cpp",
+        "sha256": "03a6cb1a2e8778fd29bb331571d1d6a426dff78f3b26e39314c7905bff167a8b"
+      },
+      "expected": {
+        "path": "sources/torch-2.7-linear/CPUBlas.cpp",
+        "sha256": "03a6cb1a2e8778fd29bb331571d1d6a426dff78f3b26e39314c7905bff167a8b"
+      },
+      "pass": true
+    },
+    {
+      "label": "bmm-source-identity_origin_revision:sources/torch-2.7-linear/CPUBlas.cpp",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "label": "sleef_source_commit",
+      "actual": "56e1f79cb140fb9326d612d0be06b5250565cade",
+      "expected": "56e1f79cb140fb9326d612d0be06b5250565cade",
+      "pass": true
+    },
+    {
+      "label": "sleef_snapshot",
+      "actual": {
+        "path": "sources/sleef-pinned/LICENSE.txt",
+        "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+      },
+      "expected": {
+        "path": "sources/sleef-pinned/LICENSE.txt",
+        "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+      },
+      "pass": true
+    },
+    {
+      "label": "sleef_snapshot",
+      "actual": {
+        "path": "sources/sleef-pinned/helperadvsimd.h",
+        "sha256": "8db49cb2881771dde2ac6b7fcf5031b3fecf302b92220ff4cf0ed04f169bb610"
+      },
+      "expected": {
+        "path": "sources/sleef-pinned/helperadvsimd.h",
+        "sha256": "8db49cb2881771dde2ac6b7fcf5031b3fecf302b92220ff4cf0ed04f169bb610"
+      },
+      "pass": true
+    },
+    {
+      "label": "sleef_snapshot",
+      "actual": {
+        "path": "sources/sleef-pinned/misc.h",
+        "sha256": "516ddeb5cc9501039b104967f1830b92e94cc6053c401fbb6773873dfb1b6178"
+      },
+      "expected": {
+        "path": "sources/sleef-pinned/misc.h",
+        "sha256": "516ddeb5cc9501039b104967f1830b92e94cc6053c401fbb6773873dfb1b6178"
+      },
+      "pass": true
+    },
+    {
+      "label": "sleef_snapshot",
+      "actual": {
+        "path": "sources/sleef-pinned/sleefsimdsp.c",
+        "sha256": "726d962aaa9cfb0b1696122f4d26765495491c0cbc26c084c899704de46b2f5c"
+      },
+      "expected": {
+        "path": "sources/sleef-pinned/sleefsimdsp.c",
+        "sha256": "726d962aaa9cfb0b1696122f4d26765495491c0cbc26c084c899704de46b2f5c"
+      },
+      "pass": true
+    },
+    {
+      "label": "sleef_submodule_revision",
+      "actual": "56e1f79cb140fb9326d612d0be06b5250565cade",
+      "expected": "56e1f79cb140fb9326d612d0be06b5250565cade",
+      "pass": true
+    },
+    {
+      "label": "sleef_submodule_parent_revision",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "label": "sleef_submodule_upstream_revision",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "label": "coremltools_9_bridge_snapshot",
+      "actual": {
+        "path": "sources/coremltools-9.0-bridge/CoreMLPython.mm",
+        "sha256": "b242c766aa556d21a74e2b0152c5e50abddc5cf7d44b6a051a1d922246782c45"
+      },
+      "expected": {
+        "path": "sources/coremltools-9.0-bridge/CoreMLPython.mm",
+        "sha256": "b242c766aa556d21a74e2b0152c5e50abddc5cf7d44b6a051a1d922246782c45"
+      },
+      "pass": true
+    },
+    {
+      "label": "coremltools_9_bridge_snapshot",
+      "actual": {
+        "path": "sources/coremltools-9.0-bridge/CoreMLPythonArray.h",
+        "sha256": "e89e8f570aec6418978f1167f92ac015f3172c287a288ecbb03c9492f1919fcd"
+      },
+      "expected": {
+        "path": "sources/coremltools-9.0-bridge/CoreMLPythonArray.h",
+        "sha256": "e89e8f570aec6418978f1167f92ac015f3172c287a288ecbb03c9492f1919fcd"
+      },
+      "pass": true
+    },
+    {
+      "label": "coremltools_9_bridge_snapshot",
+      "actual": {
+        "path": "sources/coremltools-9.0-bridge/CoreMLPythonArray.mm",
+        "sha256": "7a99d1b91c3c50c9be2d27a744824644c750aa83da242284057c06634433c9c3"
+      },
+      "expected": {
+        "path": "sources/coremltools-9.0-bridge/CoreMLPythonArray.mm",
+        "sha256": "7a99d1b91c3c50c9be2d27a744824644c750aa83da242284057c06634433c9c3"
+      },
+      "pass": true
+    },
+    {
+      "label": "coremltools_9_bridge_snapshot",
+      "actual": {
+        "path": "sources/coremltools-9.0-bridge/CoreMLPythonUtils.mm",
+        "sha256": "00ed9dda356be2a75d05b6315d823a720181348653acbd39afb62af9a02b8781"
+      },
+      "expected": {
+        "path": "sources/coremltools-9.0-bridge/CoreMLPythonUtils.mm",
+        "sha256": "00ed9dda356be2a75d05b6315d823a720181348653acbd39afb62af9a02b8781"
+      },
+      "pass": true
+    },
+    {
+      "label": "coremltools_9_bridge_snapshot",
+      "actual": {
+        "path": "sources/coremltools-9.0-bridge/LICENSE.txt",
+        "sha256": "d467a35319f25bd5310100d06ac8be62f880d1cb425181f1ec2b8333a1000afa"
+      },
+      "expected": {
+        "path": "sources/coremltools-9.0-bridge/LICENSE.txt",
+        "sha256": "d467a35319f25bd5310100d06ac8be62f880d1cb425181f1ec2b8333a1000afa"
+      },
+      "pass": true
+    },
+    {
+      "label": "installed_coremltools_9_bridge",
+      "actual": {
+        "path": ".venv/lib/python3.12/site-packages/coremltools/libcoremlpython.so",
+        "sha256": "915f478a3f2a392077012f8dacd9ae433579cbb299019ef2df23217ce536ee67"
+      },
+      "expected": {
+        "path": ".venv/lib/python3.12/site-packages/coremltools/libcoremlpython.so",
+        "sha256": "915f478a3f2a392077012f8dacd9ae433579cbb299019ef2df23217ce536ee67"
+      },
+      "pass": true
+    },
+    {
+      "label": "cleanup_guard_bridge_pin",
+      "actual": "915f478a3f2a392077012f8dacd9ae433579cbb299019ef2df23217ce536ee67",
+      "expected": "915f478a3f2a392077012f8dacd9ae433579cbb299019ef2df23217ce536ee67",
+      "pass": true
+    },
+    {
+      "label": "cleanup_guard_c_source",
+      "actual": {
+        "path": "coreml_port/native/cleanup_guard.c",
+        "sha256": "973bc7d1852eb4c80f17f59412d57cc41a3058a78ce78c66a1081e308c9b464d"
+      },
+      "expected": {
+        "path": "coreml_port/native/cleanup_guard.c",
+        "sha256": "973bc7d1852eb4c80f17f59412d57cc41a3058a78ce78c66a1081e308c9b464d"
+      },
+      "pass": true
+    },
+    {
+      "label": "cleanup_guard_binary",
+      "actual": {
+        "path": "artifacts/04b-reliability/cleanup_guard.dylib",
+        "sha256": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa"
+      },
+      "expected": {
+        "path": "artifacts/04b-reliability/cleanup_guard.dylib",
+        "sha256": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa"
+      },
+      "pass": true
+    },
+    {
+      "label": "locked_torch_version",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "label": "locked_coremltools_version",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "label": "source_exp_revision_notice",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "label": "torch_revision_notice",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "label": "sleef_revision_notice",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    }
+  ],
+  "check_count": 42,
+  "failed": [],
+  "passed": true
+}

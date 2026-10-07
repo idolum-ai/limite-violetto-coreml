@@ -1,0 +1,16 @@
+{
+  "name": "attention-small-local-attempt4",
+  "python": "3.12.9",
+  "torch": "2.7.0",
+  "coremltools": "9.0",
+  "acceptance_sha256": "6552c53e6dc09bfa1c50bda8db9a350392ff96466e9fb602bca13916c1b5c806",
+  "sources_sha256": {
+    "run_components.py": "d1a6655aae929600848024559a8ad631d42dd48fc9bb014dbd11a0f86d356147",
+    "components.py": "f1f7ed6da3fc0031172ec6c72ffa0cb06bfeed99e07eb3dac93c264c9149b53b"
+  },
+  "artifact_path": "artifacts/02-components/attention-small-local-attempt4",
+  "status": "ERROR",
+  "traceback": "Traceback (most recent call last):\n  File \"<PROJECT_ROOT>/experiments/run_components.py\", line 221, in main\n    result.update(attention(args,directory) if args.kind==\"attention\" else mixer(args,directory))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>/experiments/run_components.py\", line 126, in attention\n    poisoned.write_state(name, np.full(tuple(module.k_cache.shape), 32.0, dtype=np.float16))\n  File \"<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/models/model.py\", line 247, in write_state\n    return self.__proxy__.write_state(name, value)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: value type not convertible\n",
+  "elapsed_seconds": 0.5877697905525565,
+  "process_peak_rss_gib": 0.3255157470703125
+}

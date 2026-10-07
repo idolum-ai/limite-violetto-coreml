@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "scope": "One-query group0, absolute positions32/128/512; no runtime integration",
+  "build": "evidence/05e-product/repeat-first-2/results.json",
+  "build_sha256": "7ba8265416bea061c426ed30bc12f1fbd9a6a468ab8d2f7304a9363ef8e44c1c",
+  "fixtures": [
+    {
+      "results": "evidence/05d-decode/group0-warm-capture/results.json",
+      "sha256": "a61f254104bc8164cfee246db38c6d8fde9b4268f7c562100213105fba103b90"
+    },
+    {
+      "results": "evidence/05e-product/capture-p128/results.json",
+      "sha256": "018c94b4f92bd093b570ef2f29cad9e793bb2fa78f318a2f8ff77ea473232422"
+    },
+    {
+      "results": "evidence/05e-product/capture-p512/results.json",
+      "sha256": "65e10b69c568a6567f312303dea9ca12ad5b8bb8829f74731ee3e3b6295b224c"
+    }
+  ],
+  "script_sha256": "7c6635489b2017a80a93bd2246e31b750a4b0edfb8aebbc051ef546c140d692e",
+  "go_median_reduction": 0.1,
+  "cycles_per_block": 4,
+  "blocks": 3,
+  "order": "ABBA per cycle; prefix orders [32,128,512], [512,32,128], [128,512,32]",
+  "warmup": "8 calls per prefix excluded; 12 exactness calls precede warmup",
+  "state_policy": "New native state per call; restore and exact checks outside prediction timer",
+  "decision_rule": "At least10% median reduction in all9 block/prefix cells. Negative result is a completed no-go experiment."
+}

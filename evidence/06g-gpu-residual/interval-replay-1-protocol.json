@@ -1,0 +1,29 @@
+{
+  "pins": {
+    "scripts/probe_residual_interval_taps.py": "b423ebc44dc5d72db77b55d7671585ed33288a678f6220fcc463279347609fcf",
+    "evidence/06g-gpu-residual/interval-taps-1/results.json": "ee7737cf4ac6ecda76df4d03715cc1ba63cd5fe6a9d4be96770fb69951a8f5d2",
+    "evidence/06f-gpu-reciprocal/group0-1/results.json": "48af7de89cde44bcaf7c7dda12457aec5eb9c2e99cfa1ae4c5294090529441d6",
+    "evidence/06f-gpu-reciprocal/group-replay-1/results.json": "584efa67f2c875cae0075adde513e452f5e7ae3794359c79c22cc21e02284bc0",
+    "evidence/06d-gpu-rounding/group0-replay-1/results.json": "76e6030af0fd108d412ba89652bb4ed6d55f1760936da8f805f8fc358077e693",
+    "evidence/06g-gpu-residual/interval-design.md": "5f28ae7ae3d23203d39c4d21b13439edf86ac06a7a15043d2d01bdc74cbcd6ac",
+    "scripts/runtime_provenance.py": "cde93c59843cf828e3bd6d5b2e316d4974cd206e05afcbf097bbbc0dd64ae84e",
+    "scripts/probe_gpu_group0.py": "bd608693337d5dc092b544ff7828bd63fc4c62557e6cee1a3dc156768c585682",
+    "evidence/06g-gpu-residual/interval-replay-design.md": "92827201a55e8dbd5cd17e677e0654a364267ecdf1297cf3e0075befe29d3b98"
+  },
+  "input_archives": {
+    "evidence/06d-gpu-rounding/group0-replay-1/chunk0/inputs.npz": "69ecfe41ff5a4643a329aad8b0f30bf71c7119a73f9cb703394e94c2d276c85e",
+    "evidence/06d-gpu-rounding/group0-replay-1/chunk0/before.npz": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk0/CPU-candidate/outputs.npz": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk0/CPU-candidate/state-after.npz": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk0/GPU-candidate/outputs.npz": "5758cef1a9c264af56c9e3f59e5148a6753bf7848ac7572b00ccf35b3e74d70c",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk0/GPU-candidate/state-after.npz": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97",
+    "evidence/06d-gpu-rounding/group0-replay-1/chunk1/inputs.npz": "9eb45ae6546f129807c180157e0b72160c43a57e0585509e19acd89f0873c36d",
+    "evidence/06d-gpu-rounding/group0-replay-1/chunk1/before.npz": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk1/CPU-candidate/outputs.npz": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk1/CPU-candidate/state-after.npz": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk1/GPU-candidate/outputs.npz": "d887c919fdf4558cf3ab6f1e6c71b8745b03dcccb11df6a0c2ab6612b875246e",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk1/GPU-candidate/state-after.npz": "7344a081b63e42bc2ee9f925d8803b797d6252d274d8c1d77b488818d9a49e0a"
+  },
+  "expected_state_calls": 8,
+  "scope": "Separate12tap downstream interval diagnostic; exactsame06fbaseline/cold32/warm12/restoredstates; nocorrection."
+}

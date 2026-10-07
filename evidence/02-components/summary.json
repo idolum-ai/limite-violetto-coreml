@@ -1,0 +1,138 @@
+{
+  "recorded_at": "2026-09-22T18:20:30.168314+00:00",
+  "scope": "Step 2 synthetic component feasibility; no real checkpoint or complete-model inference",
+  "acceptance_sha256": "1455bec54846574c00ab7579d296c869d394cec70db18bd603355062a98958c3",
+  "final_runs": [
+    {
+      "name": "attention-small-local-attempt6",
+      "result": "attention-small-local-attempt6.json",
+      "status": "PASS",
+      "resource_pass": true,
+      "artifact_path": "artifacts/02-components/attention-small-local-attempt6",
+      "process_peak_rss_gib": 0.3253021240234375,
+      "timing": {
+        "convert_seconds": 0.3919004164636135,
+        "compile_load_seconds": 0.10333912540227175,
+        "compute_units_allowed": "CPU_AND_GPU",
+        "actual_placement": "not profiled",
+        "compute_precision": "FLOAT32; FP16 states",
+        "package": "artifacts/02-components/attention-small-local-attempt6/model.mlpackage"
+      },
+      "max_output_error": 2.9802322387695312e-08,
+      "max_k_cache_error": 0.0,
+      "max_v_cache_error": 0.0,
+      "warm_decode_median_seconds": 0.0002101459540426731,
+      "bf16_diagnostic_max": 0.0017931461334228516
+    },
+    {
+      "name": "attention-small-global-attempt2",
+      "result": "attention-small-global-attempt2.json",
+      "status": "PASS",
+      "resource_pass": true,
+      "artifact_path": "artifacts/02-components/attention-small-global-attempt2",
+      "process_peak_rss_gib": 0.32391357421875,
+      "timing": {
+        "convert_seconds": 0.3056279579177499,
+        "compile_load_seconds": 0.0687095420435071,
+        "compute_units_allowed": "CPU_AND_GPU",
+        "actual_placement": "not profiled",
+        "compute_precision": "FLOAT32; FP16 states",
+        "package": "artifacts/02-components/attention-small-global-attempt2/model.mlpackage"
+      },
+      "max_output_error": 2.9802322387695312e-08,
+      "max_k_cache_error": 0.0,
+      "max_v_cache_error": 0.0,
+      "warm_decode_median_seconds": 0.0002024378627538681,
+      "bf16_diagnostic_max": 0.0017931461334228516
+    },
+    {
+      "name": "mixer-small-attempt2",
+      "result": "mixer-small-attempt2.json",
+      "status": "PASS",
+      "resource_pass": true,
+      "artifact_path": "artifacts/02-components/mixer-small-attempt2",
+      "process_peak_rss_gib": 0.3174896240234375,
+      "timing": {
+        "convert_seconds": 0.21750104147940874,
+        "compile_load_seconds": 0.05885570775717497,
+        "compute_units_allowed": "CPU_AND_GPU",
+        "actual_placement": "not profiled",
+        "compute_precision": "FLOAT32; FP16 states",
+        "package": "artifacts/02-components/mixer-small-attempt2/model.mlpackage"
+      },
+      "max_output_error": 8.940696716308594e-08,
+      "bf16_diagnostic_max": 0.0027197450399398804
+    },
+    {
+      "name": "attention-production-local-attempt2",
+      "result": "attention-production-local-attempt2.json",
+      "status": "PASS",
+      "resource_pass": true,
+      "artifact_path": "artifacts/02-components/attention-production-local-attempt2",
+      "process_peak_rss_gib": 0.6554412841796875,
+      "timing": {
+        "convert_seconds": 0.4418382914736867,
+        "compile_load_seconds": 0.16130762454122305,
+        "compute_units_allowed": "CPU_AND_GPU",
+        "actual_placement": "not profiled",
+        "compute_precision": "FLOAT32; FP16 states",
+        "package": "artifacts/02-components/attention-production-local-attempt2/model.mlpackage"
+      },
+      "max_output_error": 3.980472683906555e-06,
+      "max_k_cache_error": 0.0009765625,
+      "max_v_cache_error": 0.000244140625,
+      "warm_decode_median_seconds": 0.0038047917187213898,
+      "bf16_diagnostic_max": 0.0022754669189453125
+    },
+    {
+      "name": "attention-production-global-attempt2",
+      "result": "attention-production-global-attempt2.json",
+      "status": "PASS",
+      "resource_pass": true,
+      "artifact_path": "artifacts/02-components/attention-production-global-attempt2",
+      "process_peak_rss_gib": 0.648193359375,
+      "timing": {
+        "convert_seconds": 0.3797314167022705,
+        "compile_load_seconds": 0.13894699979573488,
+        "compute_units_allowed": "CPU_AND_GPU",
+        "actual_placement": "not profiled",
+        "compute_precision": "FLOAT32; FP16 states",
+        "package": "artifacts/02-components/attention-production-global-attempt2/model.mlpackage"
+      },
+      "max_output_error": 2.473592758178711e-06,
+      "max_k_cache_error": 0.0009765625,
+      "max_v_cache_error": 0.000244140625,
+      "warm_decode_median_seconds": 0.004393000155687332,
+      "bf16_diagnostic_max": 0.0022754669189453125
+    },
+    {
+      "name": "mixer-production-attempt2",
+      "result": "mixer-production-attempt2.json",
+      "status": "PASS",
+      "resource_pass": true,
+      "artifact_path": "artifacts/02-components/mixer-production-attempt2",
+      "process_peak_rss_gib": 0.3300933837890625,
+      "timing": {
+        "convert_seconds": 0.2267647087574005,
+        "compile_load_seconds": 0.07661591749638319,
+        "compute_units_allowed": "CPU_AND_GPU",
+        "actual_placement": "not profiled",
+        "compute_precision": "FLOAT32; FP16 states",
+        "package": "artifacts/02-components/mixer-production-attempt2/model.mlpackage"
+      },
+      "max_output_error": 4.172325134277344e-07,
+      "bf16_diagnostic_max": 0.004285573959350586
+    }
+  ],
+  "passed_comparisons": 236,
+  "failed_comparisons": 0,
+  "nonfinite_records": 0,
+  "max_output_error": 3.980472683906555e-06,
+  "gates": {
+    "G2.1": "PASS",
+    "G2.2": "PASS",
+    "G2.3": "PASS for tested component arithmetic; BF16 and original-model fidelity unresolved",
+    "G2.4": "PASS bounded process/resource screen"
+  },
+  "next_step": "Strict portable full-model checkpoint loading and validation; not executed"
+}

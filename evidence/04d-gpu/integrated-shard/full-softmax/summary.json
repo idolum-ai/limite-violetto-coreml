@@ -1,0 +1,119 @@
+{
+  "script_sha256": "7efd5b4d9a9a3d594e33d1b88b543c5709a2606e77fa277f6d9dd675389a0b3c",
+  "source_sha256": {
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_attention.py": "3abc03e63175f431ff00d17f68eb0c976c1b92417ab29fa411c1b57317ae8b44",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227"
+  },
+  "compute_units": "CPU_ONLY",
+  "prompt_index": 2,
+  "layer": 2,
+  "score_shape": [
+    1,
+    10,
+    32,
+    2048
+  ],
+  "weights": {
+    "different_elements": 964,
+    "max_abs": 5.960464477539063e-08,
+    "problem_row_max_abs": 2.9802322387695312e-08,
+    "problem_row_different_elements": 32,
+    "first_differences": [
+      {
+        "index": [
+          0,
+          0,
+          6,
+          1
+        ],
+        "actual": 0.027756981551647186,
+        "expected": 0.027756983414292336
+      },
+      {
+        "index": [
+          0,
+          0,
+          6,
+          4
+        ],
+        "actual": 0.08873866498470306,
+        "expected": 0.08873867243528366
+      },
+      {
+        "index": [
+          0,
+          0,
+          7,
+          0
+        ],
+        "actual": 0.10301785171031952,
+        "expected": 0.10301785916090012
+      },
+      {
+        "index": [
+          0,
+          0,
+          8,
+          5
+        ],
+        "actual": 0.021052274852991104,
+        "expected": 0.021052272990345955
+      },
+      {
+        "index": [
+          0,
+          0,
+          8,
+          7
+        ],
+        "actual": 0.022586176171898842,
+        "expected": 0.022586174309253693
+      },
+      {
+        "index": [
+          0,
+          0,
+          10,
+          3
+        ],
+        "actual": 0.03410639241337776,
+        "expected": 0.03410638868808746
+      },
+      {
+        "index": [
+          0,
+          0,
+          11,
+          0
+        ],
+        "actual": 0.02851165644824505,
+        "expected": 0.02851165272295475
+      },
+      {
+        "index": [
+          0,
+          0,
+          12,
+          8
+        ],
+        "actual": 0.11503675580024719,
+        "expected": 0.1150367483496666
+      }
+    ]
+  },
+  "product_using_coreml_weights_in_torch": {
+    "raw_different_elements": 6739,
+    "raw_max_abs": 1.9073486328125e-05,
+    "rounded_different_elements": 1,
+    "rounded_max_abs": 0.015625,
+    "problem_element": {
+      "actual_raw": 2.554687023162842,
+      "expected_raw": 2.5546884536743164,
+      "actual_rounded": 2.546875,
+      "expected_rounded": 2.5625
+    }
+  }
+}

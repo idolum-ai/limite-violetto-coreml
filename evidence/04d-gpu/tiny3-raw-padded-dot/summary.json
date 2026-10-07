@@ -1,0 +1,825 @@
+{
+  "compute_units": "CPU_ONLY",
+  "input_capture_sha256": "98ecfe3084fe3efa66cfc884d7b9ffc3e1db99c36adda897fc357573692ad263",
+  "script_sha256": "d0588f85097370439eb3862686a529d9a9cb573990549dece64e1902c36cfa7c",
+  "q_variants": [
+    [
+      1,
+      3,
+      10,
+      128
+    ],
+    [
+      1,
+      32,
+      10,
+      128
+    ]
+  ],
+  "k_shape": [
+    1,
+    2048,
+    10,
+    128
+  ],
+  "experiments": [
+    {
+      "name": "q3_raw_einsum",
+      "q_shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "torch_dot_vs_native": {
+        "different_elements": 21,
+        "max_abs": 2.384185791015625e-06,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "actual": 6.4978461265563965,
+            "expected": 6.497845649719238
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "actual": 6.14021635055542,
+            "expected": 6.140215873718262
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              2
+            ],
+            "actual": 7.899594783782959,
+            "expected": 7.89959716796875
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              0
+            ],
+            "actual": 6.698893070220947,
+            "expected": 6.698894023895264
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              2
+            ],
+            "actual": 6.5759453773498535,
+            "expected": 6.575944423675537
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              0
+            ],
+            "actual": 6.084432601928711,
+            "expected": 6.084433078765869
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              2
+            ],
+            "actual": 8.199715614318848,
+            "expected": 8.199716567993164
+          },
+          {
+            "index": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "actual": 5.405526638031006,
+            "expected": 5.405527591705322
+          }
+        ]
+      },
+      "coreml_scores_vs_native": {
+        "different_elements": 38,
+        "max_abs": 1.430511474609375e-06,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "actual": 5.278889179229736,
+            "expected": 5.2788896560668945
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "actual": 6.249028205871582,
+            "expected": 6.24902868270874
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              2
+            ],
+            "actual": 7.016433238983154,
+            "expected": 7.016432285308838
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "actual": 6.769387722015381,
+            "expected": 6.769388675689697
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              2
+            ],
+            "actual": 4.820745944976807,
+            "expected": 4.820746421813965
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "actual": 5.4178314208984375,
+            "expected": 5.417830944061279
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "actual": 5.747376441955566,
+            "expected": 5.747375965118408
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              2
+            ],
+            "actual": 5.3246026039123535,
+            "expected": 5.32460355758667
+          }
+        ]
+      },
+      "rounded_attention_vs_native": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "problem_element": {
+        "raw": 19.437524795532227,
+        "rounded": 19.5
+      },
+      "package_files_sha256": {
+        "Data/com.apple.CoreML/model.mlmodel": "e26b208c550c3d3153e2f2d1a7f4e320271e5c8cfeeb66ce9a15198c4824e401",
+        "Manifest.json": "06f6810f739a1f527c407f090b24439bfb9f4e232cbdcea5e4f33a6ea29437f8"
+      }
+    },
+    {
+      "name": "q3_raw_matmul",
+      "q_shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "torch_dot_vs_native": {
+        "different_elements": 21,
+        "max_abs": 2.384185791015625e-06,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "actual": 6.4978461265563965,
+            "expected": 6.497845649719238
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "actual": 6.14021635055542,
+            "expected": 6.140215873718262
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              2
+            ],
+            "actual": 7.899594783782959,
+            "expected": 7.89959716796875
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              0
+            ],
+            "actual": 6.698893070220947,
+            "expected": 6.698894023895264
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              2
+            ],
+            "actual": 6.5759453773498535,
+            "expected": 6.575944423675537
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              0
+            ],
+            "actual": 6.084432601928711,
+            "expected": 6.084433078765869
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              2
+            ],
+            "actual": 8.199715614318848,
+            "expected": 8.199716567993164
+          },
+          {
+            "index": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "actual": 5.405526638031006,
+            "expected": 5.405527591705322
+          }
+        ]
+      },
+      "coreml_scores_vs_native": {
+        "different_elements": 38,
+        "max_abs": 1.430511474609375e-06,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "actual": 5.278889179229736,
+            "expected": 5.2788896560668945
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "actual": 6.249028205871582,
+            "expected": 6.24902868270874
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              2
+            ],
+            "actual": 7.016433238983154,
+            "expected": 7.016432285308838
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "actual": 6.769387722015381,
+            "expected": 6.769388675689697
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              2
+            ],
+            "actual": 4.820745944976807,
+            "expected": 4.820746421813965
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "actual": 5.4178314208984375,
+            "expected": 5.417830944061279
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "actual": 5.747376441955566,
+            "expected": 5.747375965118408
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              2
+            ],
+            "actual": 5.3246026039123535,
+            "expected": 5.32460355758667
+          }
+        ]
+      },
+      "rounded_attention_vs_native": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "problem_element": {
+        "raw": 19.437524795532227,
+        "rounded": 19.5
+      },
+      "package_files_sha256": {
+        "Data/com.apple.CoreML/model.mlmodel": "db53c0c719bb8fa031594802a0cd0e937588520e64691f4a42abf7a8c45bdac4",
+        "Manifest.json": "811df6d5514e18f3ecd3a8e98f7e8222478a286fbb3291d35a41e3df65ed214c"
+      }
+    },
+    {
+      "name": "q32_raw_einsum",
+      "q_shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "torch_dot_vs_native": {
+        "different_elements": 21,
+        "max_abs": 2.384185791015625e-06,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "actual": 6.4978461265563965,
+            "expected": 6.497845649719238
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "actual": 6.14021635055542,
+            "expected": 6.140215873718262
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              2
+            ],
+            "actual": 7.899594783782959,
+            "expected": 7.89959716796875
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              0
+            ],
+            "actual": 6.698893070220947,
+            "expected": 6.698894023895264
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              2
+            ],
+            "actual": 6.5759453773498535,
+            "expected": 6.575944423675537
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              0
+            ],
+            "actual": 6.084432601928711,
+            "expected": 6.084433078765869
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              2
+            ],
+            "actual": 8.199715614318848,
+            "expected": 8.199716567993164
+          },
+          {
+            "index": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "actual": 5.405526638031006,
+            "expected": 5.405527591705322
+          }
+        ]
+      },
+      "coreml_scores_vs_native": {
+        "different_elements": 21,
+        "max_abs": 2.384185791015625e-06,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "actual": 6.4978461265563965,
+            "expected": 6.497845649719238
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "actual": 6.14021635055542,
+            "expected": 6.140215873718262
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              2
+            ],
+            "actual": 7.899594783782959,
+            "expected": 7.89959716796875
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              0
+            ],
+            "actual": 6.698893070220947,
+            "expected": 6.698894023895264
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              2
+            ],
+            "actual": 6.5759453773498535,
+            "expected": 6.575944423675537
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              0
+            ],
+            "actual": 6.084432601928711,
+            "expected": 6.084433078765869
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              2
+            ],
+            "actual": 8.199715614318848,
+            "expected": 8.199716567993164
+          },
+          {
+            "index": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "actual": 5.405526638031006,
+            "expected": 5.405527591705322
+          }
+        ]
+      },
+      "rounded_attention_vs_native": {
+        "different_elements": 1,
+        "max_abs": 0.125,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              2,
+              6,
+              80
+            ],
+            "actual": 19.375,
+            "expected": 19.5
+          }
+        ]
+      },
+      "problem_element": {
+        "raw": 19.437496185302734,
+        "rounded": 19.375
+      },
+      "package_files_sha256": {
+        "Data/com.apple.CoreML/model.mlmodel": "3cb159d6e4d87c17fd272d607a26404cf9724f8b6f00b963db24b17c78d1c843",
+        "Manifest.json": "42292e86f34e122c5ec6033cc0c4f1bed2776b8f22f23d55532face697dd71bc"
+      }
+    },
+    {
+      "name": "q32_raw_matmul",
+      "q_shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "torch_dot_vs_native": {
+        "different_elements": 21,
+        "max_abs": 2.384185791015625e-06,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "actual": 6.4978461265563965,
+            "expected": 6.497845649719238
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "actual": 6.14021635055542,
+            "expected": 6.140215873718262
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              2
+            ],
+            "actual": 7.899594783782959,
+            "expected": 7.89959716796875
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              0
+            ],
+            "actual": 6.698893070220947,
+            "expected": 6.698894023895264
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              2
+            ],
+            "actual": 6.5759453773498535,
+            "expected": 6.575944423675537
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              0
+            ],
+            "actual": 6.084432601928711,
+            "expected": 6.084433078765869
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              2
+            ],
+            "actual": 8.199715614318848,
+            "expected": 8.199716567993164
+          },
+          {
+            "index": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "actual": 5.405526638031006,
+            "expected": 5.405527591705322
+          }
+        ]
+      },
+      "coreml_scores_vs_native": {
+        "different_elements": 21,
+        "max_abs": 2.384185791015625e-06,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "actual": 6.4978461265563965,
+            "expected": 6.497845649719238
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "actual": 6.14021635055542,
+            "expected": 6.140215873718262
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              2
+            ],
+            "actual": 7.899594783782959,
+            "expected": 7.89959716796875
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              0
+            ],
+            "actual": 6.698893070220947,
+            "expected": 6.698894023895264
+          },
+          {
+            "index": [
+              0,
+              1,
+              2,
+              2
+            ],
+            "actual": 6.5759453773498535,
+            "expected": 6.575944423675537
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              0
+            ],
+            "actual": 6.084432601928711,
+            "expected": 6.084433078765869
+          },
+          {
+            "index": [
+              0,
+              2,
+              2,
+              2
+            ],
+            "actual": 8.199715614318848,
+            "expected": 8.199716567993164
+          },
+          {
+            "index": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "actual": 5.405526638031006,
+            "expected": 5.405527591705322
+          }
+        ]
+      },
+      "rounded_attention_vs_native": {
+        "different_elements": 1,
+        "max_abs": 0.125,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              2,
+              6,
+              80
+            ],
+            "actual": 19.375,
+            "expected": 19.5
+          }
+        ]
+      },
+      "problem_element": {
+        "raw": 19.437496185302734,
+        "rounded": 19.375
+      },
+      "package_files_sha256": {
+        "Data/com.apple.CoreML/model.mlmodel": "0a27600e362ec55d6330282d6489b5075b5983de9289f4a32d37601d23ab1f30",
+        "Manifest.json": "cc05f6101042b8932a95d66790489e80fc845282aa0b60cd735a319e263f8395"
+      }
+    }
+  ]
+}

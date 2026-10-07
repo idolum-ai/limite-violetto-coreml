@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "compute": "CPU_ONLY",
+  "runtime_adapter": "compiled_tiny_prefix_replay",
+  "model_dir": "artifacts/05g-integration/full-1/source",
+  "identity_manifest": "evidence/05g-integration/full-1/package-identity.json",
+  "script_sha256": "464941d52468e22ccc3f072b4a194dae1da45780f9c842be649cb1ad44a1f0f0",
+  "runtime_provenance": {
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e"
+  },
+  "loader_provenance": {
+    "mode": "persistent_compiled",
+    "source_candidate_identity": "c7cc54a308bb7c379f6d55c777a62666e86921f27245115dc185597efc65a46b",
+    "compiled_aggregate_sha256": "149d74d2e339fabdafeec8cf5ad6766fdd2e2754c15f5256c7dc69d91b932557",
+    "compiled_manifest_sha256": "faac4ae499364aea917784b7eb9bdcd13f6bb5cf66c7fec774236fafd3614dfc",
+    "compiled_dir": "<PROJECT_ROOT>/artifacts/05g-integration/full-1/compiled",
+    "compiled_manifest": "<PROJECT_ROOT>/evidence/05g-integration/full-1/compiled-identity.json",
+    "sources": {
+      "coreml_port/compiled_runtime.py": "37d16dfd0ab096b9ec5b26f8d44f3e64874b94c60181af80748cab9c302eedb5",
+      "coreml_port/compiled_identity.py": "10eb6ef0a793453109f0378275e2a3259631d68c5e85e9f92873ba1f85373c53",
+      "coreml_port/loader_selection.py": "4d8b5380934b6712b7c3abc35f2f0bfb68943624252b32c3315d3e148f196099",
+      "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81"
+    }
+  },
+  "source_hashes": {
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+    "coreml_port/tiny_prefix_runtime.py": "03f50bffc68b5264ef8f0f663c869d237e103f1a8863b0e34569325f26cddb2f",
+    "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+    "portable/model.py": "6e204b9b4d08247a4441d2422800ca7b253f3cc8f9e4a855473830daa5042797",
+    "evidence/03-portable/ACCEPTANCE.json": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+    "evidence/01-reference/local-input-validation.json": "54ce299bdc107b3db80a2a389283ea787f7801a4f51a1ae2feed0a6dfaee7490"
+  },
+  "numerical_pass": true,
+  "lifecycle_pass": true
+}

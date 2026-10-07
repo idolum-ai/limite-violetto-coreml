@@ -1,0 +1,16 @@
+{
+  "script_sha256": "c2a85d345c87d40927ef90c203c423a338ac643554eb9652088e096deb26ac6b",
+  "build": "evidence/06d-gpu-rounding/residual-taps-3/results.json",
+  "build_sha256": "cd7d79acd61e0d67b135bc28e4d777fdc70e50f8d5b2c0b4df0ab511cc02f704",
+  "attempt": "residual-replay-3",
+  "calls": 8,
+  "taps": [
+    "q_3",
+    "value_17",
+    "x_69",
+    "x_79",
+    "mlp_1",
+    "value_19"
+  ],
+  "interpretation_gate": "Both endpoints and all8 poststates exact within each policy/chunk; originals match saved candidate replay. No tap interpretation on control failure."
+}

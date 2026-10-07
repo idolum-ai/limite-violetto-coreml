@@ -1,0 +1,98 @@
+{
+  "actual_placement_verified": false,
+  "columns": [
+    "start",
+    "duration",
+    "full-layout-id",
+    "event-label",
+    "model-name",
+    "model-specific-track-model-name",
+    "fully-qualified-model",
+    "parent-model-name",
+    "model-level",
+    "event-type",
+    "color",
+    "graph-event-label"
+  ],
+  "events_sha256": "fcc302b9ebd337af19de2c406178ed7f16f8c09a40ac04f4527f4b52dfb23c10",
+  "export_scope_verified": true,
+  "exports": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/xctrace",
+        "export",
+        "--input",
+        "<PROJECT_ROOT>/evidence/06c-gpu-localization/placement-gpu-1.trace",
+        "--toc",
+        "--output",
+        "<PROJECT_ROOT>/evidence/06c-gpu-localization/placement-gpu-summary-1/toc.xml"
+      ],
+      "exit_code": 0,
+      "stderr": "(kernel) Failed to query kext info (MAC policy error 0x1).\nFailed to read loaded kext info from kernel - (libkern/kext) internal error.\n",
+      "stdout": "Finished export to the file: <PROJECT_ROOT>/evidence/06c-gpu-localization/placement-gpu-summary-1/toc.xml\n"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/xctrace",
+        "export",
+        "--input",
+        "<PROJECT_ROOT>/evidence/06c-gpu-localization/placement-gpu-1.trace",
+        "--xpath",
+        "/trace-toc/run[@number=\"1\"]/data/table[@schema=\"coreml-os-signpost\" and @target-pid=\"SINGLE\"]",
+        "--output",
+        "<PROJECT_ROOT>/evidence/06c-gpu-localization/placement-gpu-summary-1/coreml-own-pid.xml"
+      ],
+      "exit_code": 0,
+      "stderr": "(kernel) Failed to query kext info (MAC policy error 0x1).\nFailed to read loaded kext info from kernel - (libkern/kext) internal error.\n",
+      "stdout": "Finished export to the file: <PROJECT_ROOT>/evidence/06c-gpu-localization/placement-gpu-summary-1/coreml-own-pid.xml\n"
+    }
+  ],
+  "interpretation": "Positive runtime dispatch observations only; do not equate no rows with no device use.",
+  "observations": {
+    "actual_cpu_dispatch_observed": false,
+    "actual_gpu_request_execution_observed": false,
+    "cpu_dispatch_interval_count": 0,
+    "dispatch_intervals": [],
+    "event_inventory": [],
+    "event_row_count": 0,
+    "expected_worker_prediction_count": 2,
+    "gpu_request_interval_count": 0,
+    "limits": [
+      "No placement claim follows from compute policy alone.",
+      "Missing dispatch rows do not prove device absence.",
+      "GPU Request intervals are workload spans, not exclusive GPU busy time.",
+      "The installed schema does not expose a public operation-ID column."
+    ],
+    "placement_scope": "Own-PID model/run only; no per-call or per-operation placement attribution",
+    "placement_verification": "unverified_no_dispatch_events",
+    "prediction_interval_count": 0,
+    "two_prediction_intervals_present": false,
+    "unrecognized_dispatch_labels": []
+  },
+  "own_pid": 12316,
+  "policy": "GPU",
+  "script_sha256": "6e0a06e8df20e75988e5467073bdccc2e9fd0f6663a9231fea170075c188ca85",
+  "status": "completed",
+  "toc_sha256": "c47fd6ae0de187b90d6fc3e9b6141e14974576a45e56ccd192d36837ad4f01c9",
+  "trace": "<PROJECT_ROOT>/evidence/06c-gpu-localization/placement-gpu-1.trace",
+  "verified_scope": {
+    "pid": 12316,
+    "run_number": "1",
+    "table_attributes": {
+      "documentation": "Denotes CoreML Model Activity Intervals",
+      "schema": "coreml-os-signpost",
+      "target-pid": "SINGLE"
+    },
+    "target": {
+      "arguments": "<PROJECT_ROOT>/scripts/trace_gpu_replay.py --policy GPU --attempt placement-gpu-1",
+      "name": "python",
+      "pid": "12316",
+      "return-exit-status": "0",
+      "termination-reason": "exit(0)",
+      "type": "launched"
+    }
+  },
+  "worker_predictions_verified": 2,
+  "worker_result": "<PROJECT_ROOT>/evidence/06c-gpu-localization/placement-gpu-1/results.json",
+  "worker_result_sha256": "a63735232ba1db01c0333f690e35e77f8180835455718b593ba7ba7b3b56824b"
+}

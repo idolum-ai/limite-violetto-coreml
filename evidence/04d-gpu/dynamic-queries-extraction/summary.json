@@ -1,0 +1,72 @@
+{
+  "tested_helper_sha256": "b004cfb48ff6cb316b8d3447b71811ae31683b3657dd36ebd6104aa914fe501a",
+  "new_module_sha256": "8b1d1635655366b6760c069151ff9f447e01aa6632c49c45de0c7af7de6354b0",
+  "script_sha256": "9abe7b3e3743675f07545605ff668fc7a59a5abb70af8cb96577a009ea1b3e4e",
+  "cases": [
+    {
+      "start": 0,
+      "count": 1,
+      "rows": 1,
+      "query_exact": true,
+      "positions_exact": true,
+      "scores_exact": true
+    },
+    {
+      "start": 0,
+      "count": 2,
+      "rows": 2,
+      "query_exact": true,
+      "positions_exact": true,
+      "scores_exact": true
+    },
+    {
+      "start": 0,
+      "count": 3,
+      "rows": 3,
+      "query_exact": true,
+      "positions_exact": true,
+      "scores_exact": true
+    },
+    {
+      "start": 0,
+      "count": 15,
+      "rows": 15,
+      "query_exact": true,
+      "positions_exact": true,
+      "scores_exact": true
+    },
+    {
+      "start": 0,
+      "count": 16,
+      "rows": 16,
+      "query_exact": true,
+      "positions_exact": true,
+      "scores_exact": true
+    },
+    {
+      "start": 0,
+      "count": 32,
+      "rows": 32,
+      "query_exact": true,
+      "positions_exact": true,
+      "scores_exact": true
+    },
+    {
+      "start": 1024,
+      "count": 2,
+      "rows": 32,
+      "query_exact": true,
+      "positions_exact": true,
+      "scores_exact": true
+    },
+    {
+      "start": 33,
+      "count": 1,
+      "rows": 32,
+      "query_exact": true,
+      "positions_exact": true,
+      "scores_exact": true
+    }
+  ],
+  "all_exact": true
+}

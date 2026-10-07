@@ -1,0 +1,378 @@
+{
+  "status": "complete",
+  "seeds": [
+    4803,
+    7207,
+    9871
+  ],
+  "torch_version": "2.7.0",
+  "source_sha256": {
+    "scripts/tiny_kernel_module_torch.py": "5e54f02318847748d817d6b29fc39b3ceddf2d7f6a3cdfbeef1a55831b113af7",
+    "coreml_port/tiny_native_scores.py": "c1fd3339ce3ac7b23cf0117dfb466b25c2c43c036a87616eb8656787fa5858ff",
+    "evidence/04f-tiny/square-candidate-matrix/summary.json": "76c38e7918d5a2d6ce7f89d2a1db5d01e426e404aef4fcc25582c501d09214f4"
+  },
+  "mode_table_matches_frozen_map": true,
+  "cases": [
+    {
+      "length": 1,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 1,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 1,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 2,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 2,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 2,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 3,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 3,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 3,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 4,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 4,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 4,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 5,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 5,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 5,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 6,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 6,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 6,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 7,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 7,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 7,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 8,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 8,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 8,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 9,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 9,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 9,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 10,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 10,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 10,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 11,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 11,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 11,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 12,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 12,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 12,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 13,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 13,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 13,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 14,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 14,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 14,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 15,
+      "seed": 4803,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 15,
+      "seed": 7207,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    },
+    {
+      "length": 15,
+      "seed": 9871,
+      "raw_different": 0,
+      "scaled_different": 0,
+      "inactive_nonzero": 0,
+      "raw_max_abs": 0.0
+    }
+  ],
+  "all_exact": true
+}

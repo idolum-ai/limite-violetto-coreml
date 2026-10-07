@@ -1,0 +1,4622 @@
+{
+  "aggregate_sizes_and_counts": {
+    "group_matmul_operation_count_total": 816,
+    "group_operation_count_total": 514294,
+    "package_bytes_total": 5046321724,
+    "weight_bytes_total": 4976987776
+  },
+  "build_sha256": "469bcfec43a95d2a467f9ab6776fc515a625d62195eceeeda8f0bbc47caeae61",
+  "candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "candidate_root": "<PROJECT_ROOT>/artifacts/04d-cpu/full-candidate-6",
+  "coremltools_version": "9.0",
+  "decode_attention_shape_estimate": {
+    "caveat": "Multiply/add products inferred from tensor geometry; excludes projections, MUDD, normalization, softmax, masks, memory movement and call overhead. Not a runtime cost model.",
+    "decode_query_rows_after_padding_at_positions_32_plus": 32,
+    "expanded_attention_heads": 10,
+    "full_key_capacity": 2048,
+    "head_dimension": 128,
+    "prefill_32_tokens_products_per_token_across_12_groups": 251658240,
+    "prefill_32_tokens_same_products_per_group_call": 671088640,
+    "score_plus_value_products_per_decode_across_12_groups": 8053063680,
+    "score_plus_value_products_per_group_of_four_layers": 671088640,
+    "score_plus_value_products_per_layer": 167772160,
+    "score_products_per_layer": 83886080,
+    "value_products_per_layer": 83886080
+  },
+  "group_graph_policy": {
+    "all_12_group_commands_match": true,
+    "build_flags": {
+      "--arithmetic": "ordered",
+      "--exp": "source",
+      "--gelu": "lookup",
+      "--norm": "ordered",
+      "--product": "paired",
+      "--queries": "dynamic-product",
+      "--score-dot": "tiny-native",
+      "--softmax": "ordered",
+      "--xsa": "ordered"
+    },
+    "conversion_record_sha256": {
+      "0": "05e4cfe5e6b396d5a915f82abe2a13042dda72f77528485150e0c139ef02bc38",
+      "1": "77e3b47ceef70273b0c318689cb2a95db816f3e0f830f494a0ebe624a2cb598a",
+      "10": "e37c97a0d427274afb559d57535c05987457aa45341dea73820ebb130ca87a9a",
+      "11": "20a2f8d66a3d526c9e3485da727cd5da8e87e984855a70daf61e93c65aa7b7f4",
+      "2": "1618d96401a053a67018a08bcc532985b4725d24d089ffbf02dacd36516d819d",
+      "3": "1eea360270b70ecb69d2e0de6de27bb6cde81ab65f8b3e9442aed232ad32e6b1",
+      "4": "5da793f5dc47a092cac43b85f6cd672ec3ea4c64b1de36206803a55539ea879a",
+      "5": "0d3bf1f56edf8cbc3a146ef29582694d2098f420fb875301c564ace282e13a5c",
+      "6": "4233d55756c89b393c77d00a19053bb221360fd96a0b219775f9961f57346844",
+      "7": "8e820981a963cef4a209056811e3cfcfb9c5f846a1829329f40777ff651ed4de",
+      "8": "61a7518d9c782b940b366bd745cca09ea980305599e2726ea4602c5b090af34e",
+      "9": "193c94ee02cb630c99020c14e08fc555034b484804aec0b33bc7dfb44948427d"
+    }
+  },
+  "identity_manifest_sha256": "eaf5695cdbe1fe79185ad10942cc67567e3e760e0a8dc23e716b2bfd554b3d37",
+  "interpretation": [
+    "Each qualified decode still enters 12 four-layer group models plus embedding and head; component timing will show which calls dominate.",
+    "For a one-token decode at absolute position 32 or later, dynamic query preparation expands query rows to 32. The paired value-product source pads to 32 rows and computes all 16 two-row products before returning only the requested row.",
+    "That shape implies a large attention arithmetic workload per decode, but this static fact alone does not establish the observed bottleneck; component timings are required.",
+    "MIL op counts are graph-shape statistics. They do not predict Core ML CPU kernels, fusion, acceleration, memory traffic, or elapsed time."
+  ],
+  "packages": {
+    "0": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          23067
+        ],
+        [
+          "add",
+          7072
+        ],
+        [
+          "slice_by_index",
+          5478
+        ],
+        [
+          "mul",
+          2603
+        ],
+        [
+          "expand_dims",
+          1958
+        ],
+        [
+          "sub",
+          500
+        ],
+        [
+          "select",
+          172
+        ],
+        [
+          "real_div",
+          171
+        ],
+        [
+          "cast",
+          159
+        ],
+        [
+          "gather",
+          145
+        ],
+        [
+          "greater_equal",
+          141
+        ],
+        [
+          "clip",
+          131
+        ],
+        [
+          "floor",
+          131
+        ],
+        [
+          "round",
+          131
+        ],
+        [
+          "abs",
+          127
+        ],
+        [
+          "log",
+          127
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 42498,
+      "operation_histogram": {
+        "abs": 127,
+        "add": 7072,
+        "cast": 159,
+        "clip": 131,
+        "concat": 29,
+        "const": 23067,
+        "equal": 16,
+        "expand_dims": 1958,
+        "fill_like": 20,
+        "floor": 131,
+        "gather": 145,
+        "greater_equal": 141,
+        "identity": 2,
+        "less": 8,
+        "less_equal": 1,
+        "log": 127,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2603,
+        "read_state": 16,
+        "real_div": 171,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 131,
+        "select": 172,
+        "shape": 12,
+        "sigmoid": 5,
+        "silu": 4,
+        "slice_by_index": 5478,
+        "slice_update": 8,
+        "sqrt": 20,
+        "sub": 500,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278057399,
+      "package_sha256": "d5a316f7c6ded387a264780539c758ee9f1877d50cd6877552f6704ac2fe860b",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 145,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272336832
+    },
+    "1": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          23169
+        ],
+        [
+          "add",
+          7091
+        ],
+        [
+          "slice_by_index",
+          5489
+        ],
+        [
+          "mul",
+          2621
+        ],
+        [
+          "expand_dims",
+          1961
+        ],
+        [
+          "sub",
+          505
+        ],
+        [
+          "select",
+          177
+        ],
+        [
+          "real_div",
+          176
+        ],
+        [
+          "cast",
+          164
+        ],
+        [
+          "gather",
+          150
+        ],
+        [
+          "greater_equal",
+          146
+        ],
+        [
+          "clip",
+          136
+        ],
+        [
+          "floor",
+          136
+        ],
+        [
+          "round",
+          136
+        ],
+        [
+          "abs",
+          132
+        ],
+        [
+          "log",
+          132
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 42707,
+      "operation_histogram": {
+        "abs": 132,
+        "add": 7091,
+        "cast": 164,
+        "clip": 136,
+        "concat": 29,
+        "const": 23169,
+        "equal": 16,
+        "expand_dims": 1961,
+        "fill_like": 20,
+        "floor": 136,
+        "gather": 150,
+        "greater_equal": 146,
+        "identity": 2,
+        "less": 8,
+        "less_equal": 1,
+        "log": 132,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2621,
+        "read_state": 16,
+        "real_div": 176,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 136,
+        "select": 177,
+        "shape": 12,
+        "sigmoid": 6,
+        "silu": 4,
+        "slice_by_index": 5489,
+        "slice_update": 8,
+        "sqrt": 20,
+        "sub": 505,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278083764,
+      "package_sha256": "c4da11997369eb6ea23577558e23f20920a4d5f5e6f3b4e98d9f7fd03235be88",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 150,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272336832
+    },
+    "10": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          23168
+        ],
+        [
+          "add",
+          7091
+        ],
+        [
+          "slice_by_index",
+          5489
+        ],
+        [
+          "mul",
+          2620
+        ],
+        [
+          "expand_dims",
+          1961
+        ],
+        [
+          "sub",
+          505
+        ],
+        [
+          "select",
+          177
+        ],
+        [
+          "real_div",
+          176
+        ],
+        [
+          "cast",
+          164
+        ],
+        [
+          "gather",
+          150
+        ],
+        [
+          "greater_equal",
+          146
+        ],
+        [
+          "clip",
+          136
+        ],
+        [
+          "floor",
+          136
+        ],
+        [
+          "round",
+          136
+        ],
+        [
+          "abs",
+          132
+        ],
+        [
+          "log",
+          132
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 42705,
+      "operation_histogram": {
+        "abs": 132,
+        "add": 7091,
+        "cast": 164,
+        "clip": 136,
+        "concat": 29,
+        "const": 23168,
+        "equal": 16,
+        "expand_dims": 1961,
+        "fill_like": 20,
+        "floor": 136,
+        "gather": 150,
+        "greater_equal": 146,
+        "identity": 2,
+        "less": 8,
+        "less_equal": 1,
+        "log": 132,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2620,
+        "read_state": 16,
+        "real_div": 176,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 136,
+        "select": 177,
+        "shape": 12,
+        "sigmoid": 6,
+        "silu": 4,
+        "slice_by_index": 5489,
+        "slice_update": 8,
+        "sqrt": 20,
+        "sub": 505,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278083508,
+      "package_sha256": "5b36a608a14d05d4aa83e2657b99368cc2d199213df0332a6ceb0c1c54a48786",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 150,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272336832
+    },
+    "11": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          24153
+        ],
+        [
+          "add",
+          7348
+        ],
+        [
+          "slice_by_index",
+          5731
+        ],
+        [
+          "mul",
+          2696
+        ],
+        [
+          "expand_dims",
+          1999
+        ],
+        [
+          "sub",
+          520
+        ],
+        [
+          "select",
+          195
+        ],
+        [
+          "real_div",
+          194
+        ],
+        [
+          "cast",
+          180
+        ],
+        [
+          "gather",
+          165
+        ],
+        [
+          "greater_equal",
+          161
+        ],
+        [
+          "clip",
+          150
+        ],
+        [
+          "floor",
+          150
+        ],
+        [
+          "round",
+          150
+        ],
+        [
+          "abs",
+          146
+        ],
+        [
+          "log",
+          146
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 44476,
+      "operation_histogram": {
+        "abs": 146,
+        "add": 7348,
+        "cast": 180,
+        "clip": 150,
+        "concat": 29,
+        "const": 24153,
+        "equal": 16,
+        "expand_dims": 1999,
+        "fill_like": 22,
+        "floor": 150,
+        "gather": 165,
+        "greater": 2,
+        "greater_equal": 161,
+        "identity": 1,
+        "less": 10,
+        "less_equal": 1,
+        "log": 146,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2696,
+        "read_state": 16,
+        "real_div": 194,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 150,
+        "select": 195,
+        "shape": 12,
+        "sigmoid": 5,
+        "silu": 4,
+        "slice_by_index": 5731,
+        "slice_update": 8,
+        "sqrt": 22,
+        "sub": 520,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278526584,
+      "package_sha256": "cc77c799b8534dd9aa402f0ef9fcfd36381521306dedb7a57e0d308dd82d8ac9",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 165,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272545472
+    },
+    "2": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          23067
+        ],
+        [
+          "add",
+          7072
+        ],
+        [
+          "slice_by_index",
+          5478
+        ],
+        [
+          "mul",
+          2603
+        ],
+        [
+          "expand_dims",
+          1958
+        ],
+        [
+          "sub",
+          500
+        ],
+        [
+          "select",
+          172
+        ],
+        [
+          "real_div",
+          171
+        ],
+        [
+          "cast",
+          159
+        ],
+        [
+          "gather",
+          145
+        ],
+        [
+          "greater_equal",
+          141
+        ],
+        [
+          "clip",
+          131
+        ],
+        [
+          "floor",
+          131
+        ],
+        [
+          "round",
+          131
+        ],
+        [
+          "abs",
+          127
+        ],
+        [
+          "log",
+          127
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 42498,
+      "operation_histogram": {
+        "abs": 127,
+        "add": 7072,
+        "cast": 159,
+        "clip": 131,
+        "concat": 29,
+        "const": 23067,
+        "equal": 16,
+        "expand_dims": 1958,
+        "fill_like": 20,
+        "floor": 131,
+        "gather": 145,
+        "greater_equal": 141,
+        "identity": 2,
+        "less": 8,
+        "less_equal": 1,
+        "log": 127,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2603,
+        "read_state": 16,
+        "real_div": 171,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 131,
+        "select": 172,
+        "shape": 12,
+        "sigmoid": 5,
+        "silu": 4,
+        "slice_by_index": 5478,
+        "slice_update": 8,
+        "sqrt": 20,
+        "sub": 500,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278056859,
+      "package_sha256": "38596538d6456f5dcfa5c077b4ffa841eb331c0fff674353b5b8dbd3b75ceb5e",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 145,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272336832
+    },
+    "3": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          23067
+        ],
+        [
+          "add",
+          7072
+        ],
+        [
+          "slice_by_index",
+          5478
+        ],
+        [
+          "mul",
+          2603
+        ],
+        [
+          "expand_dims",
+          1958
+        ],
+        [
+          "sub",
+          500
+        ],
+        [
+          "select",
+          172
+        ],
+        [
+          "real_div",
+          171
+        ],
+        [
+          "cast",
+          159
+        ],
+        [
+          "gather",
+          145
+        ],
+        [
+          "greater_equal",
+          141
+        ],
+        [
+          "clip",
+          131
+        ],
+        [
+          "floor",
+          131
+        ],
+        [
+          "round",
+          131
+        ],
+        [
+          "abs",
+          127
+        ],
+        [
+          "log",
+          127
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 42498,
+      "operation_histogram": {
+        "abs": 127,
+        "add": 7072,
+        "cast": 159,
+        "clip": 131,
+        "concat": 29,
+        "const": 23067,
+        "equal": 16,
+        "expand_dims": 1958,
+        "fill_like": 20,
+        "floor": 131,
+        "gather": 145,
+        "greater_equal": 141,
+        "identity": 2,
+        "less": 8,
+        "less_equal": 1,
+        "log": 127,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2603,
+        "read_state": 16,
+        "real_div": 171,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 131,
+        "select": 172,
+        "shape": 12,
+        "sigmoid": 5,
+        "silu": 4,
+        "slice_by_index": 5478,
+        "slice_update": 8,
+        "sqrt": 20,
+        "sub": 500,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278057399,
+      "package_sha256": "addcde8ddab15e368bd46e57aece97d04fb7073d6b65f52f8b1fe8a1222e1dde",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 145,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272336832
+    },
+    "4": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          23169
+        ],
+        [
+          "add",
+          7091
+        ],
+        [
+          "slice_by_index",
+          5489
+        ],
+        [
+          "mul",
+          2621
+        ],
+        [
+          "expand_dims",
+          1961
+        ],
+        [
+          "sub",
+          505
+        ],
+        [
+          "select",
+          177
+        ],
+        [
+          "real_div",
+          176
+        ],
+        [
+          "cast",
+          164
+        ],
+        [
+          "gather",
+          150
+        ],
+        [
+          "greater_equal",
+          146
+        ],
+        [
+          "clip",
+          136
+        ],
+        [
+          "floor",
+          136
+        ],
+        [
+          "round",
+          136
+        ],
+        [
+          "abs",
+          132
+        ],
+        [
+          "log",
+          132
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 42707,
+      "operation_histogram": {
+        "abs": 132,
+        "add": 7091,
+        "cast": 164,
+        "clip": 136,
+        "concat": 29,
+        "const": 23169,
+        "equal": 16,
+        "expand_dims": 1961,
+        "fill_like": 20,
+        "floor": 136,
+        "gather": 150,
+        "greater_equal": 146,
+        "identity": 2,
+        "less": 8,
+        "less_equal": 1,
+        "log": 132,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2621,
+        "read_state": 16,
+        "real_div": 176,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 136,
+        "select": 177,
+        "shape": 12,
+        "sigmoid": 6,
+        "silu": 4,
+        "slice_by_index": 5489,
+        "slice_update": 8,
+        "sqrt": 20,
+        "sub": 505,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278083764,
+      "package_sha256": "ae437105eaa69a7b0023310523b361ae1ba230dd6b5faced7ceaedcba0296f51",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 150,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272336832
+    },
+    "5": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          23067
+        ],
+        [
+          "add",
+          7072
+        ],
+        [
+          "slice_by_index",
+          5478
+        ],
+        [
+          "mul",
+          2603
+        ],
+        [
+          "expand_dims",
+          1958
+        ],
+        [
+          "sub",
+          500
+        ],
+        [
+          "select",
+          172
+        ],
+        [
+          "real_div",
+          171
+        ],
+        [
+          "cast",
+          159
+        ],
+        [
+          "gather",
+          145
+        ],
+        [
+          "greater_equal",
+          141
+        ],
+        [
+          "clip",
+          131
+        ],
+        [
+          "floor",
+          131
+        ],
+        [
+          "round",
+          131
+        ],
+        [
+          "abs",
+          127
+        ],
+        [
+          "log",
+          127
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 42499,
+      "operation_histogram": {
+        "abs": 127,
+        "add": 7072,
+        "cast": 159,
+        "clip": 131,
+        "concat": 29,
+        "const": 23067,
+        "equal": 16,
+        "expand_dims": 1958,
+        "fill_like": 20,
+        "floor": 131,
+        "gather": 145,
+        "greater_equal": 141,
+        "identity": 3,
+        "less": 8,
+        "less_equal": 1,
+        "log": 127,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2603,
+        "read_state": 16,
+        "real_div": 171,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 131,
+        "select": 172,
+        "shape": 12,
+        "sigmoid": 5,
+        "silu": 4,
+        "slice_by_index": 5478,
+        "slice_update": 8,
+        "sqrt": 20,
+        "sub": 500,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278056961,
+      "package_sha256": "8bf369b8843303099b3d44cb8757eb636e20fdcc37440666b7f879c52da0fb18",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 145,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272336832
+    },
+    "6": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          23876
+        ],
+        [
+          "add",
+          7260
+        ],
+        [
+          "slice_by_index",
+          5643
+        ],
+        [
+          "mul",
+          2692
+        ],
+        [
+          "expand_dims",
+          1999
+        ],
+        [
+          "sub",
+          519
+        ],
+        [
+          "select",
+          194
+        ],
+        [
+          "real_div",
+          191
+        ],
+        [
+          "cast",
+          179
+        ],
+        [
+          "gather",
+          164
+        ],
+        [
+          "greater_equal",
+          160
+        ],
+        [
+          "clip",
+          149
+        ],
+        [
+          "floor",
+          149
+        ],
+        [
+          "round",
+          149
+        ],
+        [
+          "abs",
+          145
+        ],
+        [
+          "log",
+          145
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 44003,
+      "operation_histogram": {
+        "abs": 145,
+        "add": 7260,
+        "cast": 179,
+        "clip": 149,
+        "concat": 29,
+        "const": 23876,
+        "equal": 16,
+        "expand_dims": 1999,
+        "fill_like": 21,
+        "floor": 149,
+        "gather": 164,
+        "greater": 2,
+        "greater_equal": 160,
+        "less": 10,
+        "less_equal": 1,
+        "log": 145,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2692,
+        "read_state": 16,
+        "real_div": 191,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 149,
+        "select": 194,
+        "shape": 12,
+        "sigmoid": 5,
+        "silu": 4,
+        "slice_by_index": 5643,
+        "slice_update": 8,
+        "sqrt": 21,
+        "sub": 519,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278465880,
+      "package_sha256": "62213251b7079fdd07cdd2c8ee41bab6b0887846bf90db140ac021a9edfd4843",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 164,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272545472
+    },
+    "7": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          23169
+        ],
+        [
+          "add",
+          7091
+        ],
+        [
+          "slice_by_index",
+          5489
+        ],
+        [
+          "mul",
+          2621
+        ],
+        [
+          "expand_dims",
+          1961
+        ],
+        [
+          "sub",
+          505
+        ],
+        [
+          "select",
+          177
+        ],
+        [
+          "real_div",
+          176
+        ],
+        [
+          "cast",
+          164
+        ],
+        [
+          "gather",
+          150
+        ],
+        [
+          "greater_equal",
+          146
+        ],
+        [
+          "clip",
+          136
+        ],
+        [
+          "floor",
+          136
+        ],
+        [
+          "round",
+          136
+        ],
+        [
+          "abs",
+          132
+        ],
+        [
+          "log",
+          132
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 42707,
+      "operation_histogram": {
+        "abs": 132,
+        "add": 7091,
+        "cast": 164,
+        "clip": 136,
+        "concat": 29,
+        "const": 23169,
+        "equal": 16,
+        "expand_dims": 1961,
+        "fill_like": 20,
+        "floor": 136,
+        "gather": 150,
+        "greater_equal": 146,
+        "identity": 2,
+        "less": 8,
+        "less_equal": 1,
+        "log": 132,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2621,
+        "read_state": 16,
+        "real_div": 176,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 136,
+        "select": 177,
+        "shape": 12,
+        "sigmoid": 6,
+        "silu": 4,
+        "slice_by_index": 5489,
+        "slice_update": 8,
+        "sqrt": 20,
+        "sub": 505,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278083764,
+      "package_sha256": "03006ae9a5e26e9696c034665081d2b7193d04037a69c6fd8711ff92d0ee7c7e",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 150,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272336832
+    },
+    "8": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          23067
+        ],
+        [
+          "add",
+          7072
+        ],
+        [
+          "slice_by_index",
+          5478
+        ],
+        [
+          "mul",
+          2603
+        ],
+        [
+          "expand_dims",
+          1958
+        ],
+        [
+          "sub",
+          500
+        ],
+        [
+          "select",
+          172
+        ],
+        [
+          "real_div",
+          171
+        ],
+        [
+          "cast",
+          159
+        ],
+        [
+          "gather",
+          145
+        ],
+        [
+          "greater_equal",
+          141
+        ],
+        [
+          "clip",
+          131
+        ],
+        [
+          "floor",
+          131
+        ],
+        [
+          "round",
+          131
+        ],
+        [
+          "abs",
+          127
+        ],
+        [
+          "log",
+          127
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 42498,
+      "operation_histogram": {
+        "abs": 127,
+        "add": 7072,
+        "cast": 159,
+        "clip": 131,
+        "concat": 29,
+        "const": 23067,
+        "equal": 16,
+        "expand_dims": 1958,
+        "fill_like": 20,
+        "floor": 131,
+        "gather": 145,
+        "greater_equal": 141,
+        "identity": 2,
+        "less": 8,
+        "less_equal": 1,
+        "log": 127,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2603,
+        "read_state": 16,
+        "real_div": 171,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 131,
+        "select": 172,
+        "shape": 12,
+        "sigmoid": 5,
+        "silu": 4,
+        "slice_by_index": 5478,
+        "slice_update": 8,
+        "sqrt": 20,
+        "sub": 500,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278056859,
+      "package_sha256": "51612ba20d3c582fa8d47c37270cadf260f82001323ce1b1116e83baf4b73742",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 145,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272336832
+    },
+    "9": {
+      "input_count": 7,
+      "inputs": {
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        },
+        "positions": {
+          "dtype": "131104",
+          "shape": [
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "tap0": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap12": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "tap23": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        },
+        "ve": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            2,
+            128
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 2,
+              "upper": 2
+            },
+            {
+              "lower": 128,
+              "upper": 128
+            }
+          ]
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            3,
+            1280
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            },
+            {
+              "lower": 1280,
+              "upper": 1280
+            }
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          23067
+        ],
+        [
+          "add",
+          7072
+        ],
+        [
+          "slice_by_index",
+          5478
+        ],
+        [
+          "mul",
+          2603
+        ],
+        [
+          "expand_dims",
+          1958
+        ],
+        [
+          "sub",
+          500
+        ],
+        [
+          "select",
+          172
+        ],
+        [
+          "real_div",
+          171
+        ],
+        [
+          "cast",
+          159
+        ],
+        [
+          "gather",
+          145
+        ],
+        [
+          "greater_equal",
+          141
+        ],
+        [
+          "clip",
+          131
+        ],
+        [
+          "floor",
+          131
+        ],
+        [
+          "round",
+          131
+        ],
+        [
+          "abs",
+          127
+        ],
+        [
+          "log",
+          127
+        ],
+        [
+          "transpose",
+          68
+        ],
+        [
+          "matmul",
+          68
+        ]
+      ],
+      "operation_count": 42498,
+      "operation_histogram": {
+        "abs": 127,
+        "add": 7072,
+        "cast": 159,
+        "clip": 131,
+        "concat": 29,
+        "const": 23067,
+        "equal": 16,
+        "expand_dims": 1958,
+        "fill_like": 20,
+        "floor": 131,
+        "gather": 145,
+        "greater_equal": 141,
+        "identity": 2,
+        "less": 8,
+        "less_equal": 1,
+        "log": 127,
+        "logical_and": 1,
+        "logical_not": 2,
+        "matmul": 68,
+        "maximum": 8,
+        "minimum": 5,
+        "mul": 2603,
+        "read_state": 16,
+        "real_div": 171,
+        "reduce_max": 4,
+        "reshape": 58,
+        "reverse": 6,
+        "round": 131,
+        "select": 172,
+        "shape": 12,
+        "sigmoid": 5,
+        "silu": 4,
+        "slice_by_index": 5478,
+        "slice_update": 8,
+        "sqrt": 20,
+        "sub": 500,
+        "tile": 16,
+        "transpose": 68,
+        "write_state": 8
+      },
+      "output_count": 2,
+      "outputs": {
+        "tap23_out": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "y": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 278057399,
+      "package_sha256": "3b8adbb90f6620f511dc4b3bcadcddce68bf329e304aa0551cb9d6b92dac45a4",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 145,
+        "linear": 0,
+        "matmul": 68,
+        "read_state": 16,
+        "slice_update": 8,
+        "while_loop": 0,
+        "write_state": 8
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 8,
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "65552",
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "weight_bytes": 272336832
+    },
+    "embedding": {
+      "input_count": 2,
+      "inputs": {
+        "ids": {
+          "dtype": "131104",
+          "shape": [
+            1,
+            3
+          ],
+          "shape_ranges": [
+            {
+              "lower": 1,
+              "upper": 1
+            },
+            {
+              "lower": 1,
+              "upper": 32
+            }
+          ]
+        },
+        "norm_divisor": {
+          "dtype": "65568",
+          "shape": [
+            1
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          290
+        ],
+        [
+          "add",
+          89
+        ],
+        [
+          "slice_by_index",
+          88
+        ],
+        [
+          "mul",
+          4
+        ],
+        [
+          "gather",
+          3
+        ],
+        [
+          "real_div",
+          3
+        ],
+        [
+          "greater_equal",
+          2
+        ],
+        [
+          "select",
+          2
+        ],
+        [
+          "sqrt",
+          1
+        ],
+        [
+          "fill_like",
+          1
+        ],
+        [
+          "abs",
+          1
+        ],
+        [
+          "clip",
+          1
+        ],
+        [
+          "log",
+          1
+        ],
+        [
+          "floor",
+          1
+        ],
+        [
+          "sub",
+          1
+        ],
+        [
+          "cast",
+          1
+        ],
+        [
+          "round",
+          1
+        ],
+        [
+          "reshape",
+          1
+        ]
+      ],
+      "operation_count": 491,
+      "operation_histogram": {
+        "abs": 1,
+        "add": 89,
+        "cast": 1,
+        "clip": 1,
+        "const": 290,
+        "fill_like": 1,
+        "floor": 1,
+        "gather": 3,
+        "greater_equal": 2,
+        "log": 1,
+        "mul": 4,
+        "real_div": 3,
+        "reshape": 1,
+        "round": 1,
+        "select": 2,
+        "slice_by_index": 88,
+        "sqrt": 1,
+        "sub": 1
+      },
+      "output_count": 2,
+      "outputs": {
+        "ve": {
+          "dtype": "65568",
+          "shape": []
+        },
+        "x": {
+          "dtype": "65568",
+          "shape": []
+        }
+      },
+      "package_bytes": 931987553,
+      "package_sha256": "5d986b468943ba8cf3edd0bc338567c77d516fcf2e65bae2ee745d3364852554",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 3,
+        "linear": 0,
+        "matmul": 0,
+        "read_state": 0,
+        "slice_update": 0,
+        "while_loop": 0,
+        "write_state": 0
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 0,
+      "states": {},
+      "weight_bytes": 931923200
+    },
+    "head": {
+      "input_count": 1,
+      "inputs": {
+        "x": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            1,
+            1280
+          ]
+        }
+      },
+      "largest_operation_families": [
+        [
+          "const",
+          250
+        ],
+        [
+          "slice_by_index",
+          50
+        ],
+        [
+          "add",
+          48
+        ],
+        [
+          "mul",
+          44
+        ],
+        [
+          "expand_dims",
+          40
+        ],
+        [
+          "abs",
+          1
+        ],
+        [
+          "clip",
+          1
+        ],
+        [
+          "log",
+          1
+        ],
+        [
+          "floor",
+          1
+        ],
+        [
+          "sub",
+          1
+        ],
+        [
+          "cast",
+          1
+        ],
+        [
+          "greater_equal",
+          1
+        ],
+        [
+          "select",
+          1
+        ],
+        [
+          "gather",
+          1
+        ],
+        [
+          "real_div",
+          1
+        ],
+        [
+          "round",
+          1
+        ],
+        [
+          "sigmoid",
+          1
+        ]
+      ],
+      "operation_count": 444,
+      "operation_histogram": {
+        "abs": 1,
+        "add": 48,
+        "cast": 1,
+        "clip": 1,
+        "const": 250,
+        "expand_dims": 40,
+        "floor": 1,
+        "gather": 1,
+        "greater_equal": 1,
+        "log": 1,
+        "mul": 44,
+        "real_div": 1,
+        "round": 1,
+        "select": 1,
+        "sigmoid": 1,
+        "slice_by_index": 50,
+        "sub": 1
+      },
+      "output_count": 1,
+      "outputs": {
+        "scores": {
+          "dtype": "65568",
+          "shape": [
+            1,
+            1,
+            151680
+          ]
+        }
+      },
+      "package_bytes": 776664031,
+      "package_sha256": "ec0f2ccc9e773334b267ad441148cd6e9d02d4ac0849f92a0eb18c8524bd305a",
+      "selected_static_counts": {
+        "cond": 0,
+        "gather": 1,
+        "linear": 0,
+        "matmul": 0,
+        "read_state": 0,
+        "slice_update": 0,
+        "while_loop": 0,
+        "write_state": 0
+      },
+      "spec_type": "mlProgram",
+      "specialization": "CoreML8",
+      "state_count": 0,
+      "states": {},
+      "weight_bytes": 776605312
+    }
+  },
+  "schema_version": 1,
+  "scope": "Read-only static source-package specs and source-code graph policy; no MLModel construction, native loading, compile, or inference.",
+  "source_policy_paths": {
+    "coreml_port/bf16_gelu.py": "69761c7b2ebd7fe158109092abe058d204fd965958cc74652e7747ac4bb82624",
+    "coreml_port/compiled_runtime.py": "37d16dfd0ab096b9ec5b26f8d44f3e64874b94c60181af80748cab9c302eedb5",
+    "coreml_port/dynamic_queries.py": "aa87c78fdfc84172860cb9ad765924a994430a22e7e36a77ede6314b30299cda",
+    "coreml_port/graphs.py": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+    "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227",
+    "coreml_port/paired_product.py": "9145720c24d706940ddc7039521a3cd76b8706419e964070730bd0f81dbe59e3",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+    "coreml_port/tiny_native_scores.py": "c1fd3339ce3ac7b23cf0117dfb466b25c2c43c036a87616eb8656787fa5858ff"
+  }
+}

@@ -1,0 +1,6220 @@
+{
+  "actual_device_placement": "unverified; compute policy only",
+  "calls": [
+    {
+      "arm": "original",
+      "chunk": 0,
+      "outputs": {
+        "dtypes": {
+          "tap23_out": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-original/outputs.npz",
+        "sha256": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+        "shapes": {
+          "tap23_out": [
+            1,
+            32,
+            1280
+          ],
+          "y": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "policy": "CPU",
+      "restoration_exact": true,
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-original/state-after.npz",
+        "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "arm": "original",
+      "chunk": 1,
+      "outputs": {
+        "dtypes": {
+          "tap23_out": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-original/outputs.npz",
+        "sha256": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+        "shapes": {
+          "tap23_out": [
+            1,
+            12,
+            1280
+          ],
+          "y": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "policy": "CPU",
+      "restoration_exact": true,
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-original/state-after.npz",
+        "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "arm": "tapped",
+      "chunk": 0,
+      "outputs": {
+        "dtypes": {
+          "denom_21": "float32",
+          "k_49": "float32",
+          "k_51": "float32",
+          "step_149": "float32",
+          "step_161": "float32",
+          "tap23_out": "float32",
+          "value_41": "float32",
+          "var_14324": "float32",
+          "var_14339": "float32",
+          "var_14340": "float32",
+          "var_14415": "float32",
+          "var_14438": "float32",
+          "var_14453": "float32",
+          "var_14454": "float32",
+          "x_197": "float32",
+          "x_207": "float32",
+          "x_215": "float32",
+          "x_217": "float32",
+          "x_219": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-tapped/outputs.npz",
+        "sha256": "03d83a5b8b3659c2a832aecbd7be1d076b386ec6c14cac240577ed63572c551f",
+        "shapes": {
+          "denom_21": [
+            1,
+            32,
+            2,
+            1
+          ],
+          "k_49": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "k_51": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "step_149": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "step_161": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "tap23_out": [
+            1,
+            32,
+            1280
+          ],
+          "value_41": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14324": [
+            1,
+            32,
+            2,
+            1
+          ],
+          "var_14339": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14340": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14415": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14438": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14453": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14454": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "x_197": [
+            1,
+            32,
+            256
+          ],
+          "x_207": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "x_215": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "x_217": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "x_219": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "y": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "policy": "CPU",
+      "restoration_exact": true,
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-tapped/state-after.npz",
+        "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "arm": "tapped",
+      "chunk": 1,
+      "outputs": {
+        "dtypes": {
+          "denom_21": "float32",
+          "k_49": "float32",
+          "k_51": "float32",
+          "step_149": "float32",
+          "step_161": "float32",
+          "tap23_out": "float32",
+          "value_41": "float32",
+          "var_14324": "float32",
+          "var_14339": "float32",
+          "var_14340": "float32",
+          "var_14415": "float32",
+          "var_14438": "float32",
+          "var_14453": "float32",
+          "var_14454": "float32",
+          "x_197": "float32",
+          "x_207": "float32",
+          "x_215": "float32",
+          "x_217": "float32",
+          "x_219": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-tapped/outputs.npz",
+        "sha256": "f010d5e4772d915a30764d3dc66f348cc2646789504717a5fd973966af365800",
+        "shapes": {
+          "denom_21": [
+            1,
+            12,
+            2,
+            1
+          ],
+          "k_49": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "k_51": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "step_149": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "step_161": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "tap23_out": [
+            1,
+            12,
+            1280
+          ],
+          "value_41": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14324": [
+            1,
+            12,
+            2,
+            1
+          ],
+          "var_14339": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14340": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14415": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14438": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14453": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14454": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "x_197": [
+            1,
+            12,
+            256
+          ],
+          "x_207": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "x_215": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "x_217": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "x_219": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "y": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "policy": "CPU",
+      "restoration_exact": true,
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-tapped/state-after.npz",
+        "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "arm": "original",
+      "chunk": 0,
+      "outputs": {
+        "dtypes": {
+          "tap23_out": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-original/outputs.npz",
+        "sha256": "5758cef1a9c264af56c9e3f59e5148a6753bf7848ac7572b00ccf35b3e74d70c",
+        "shapes": {
+          "tap23_out": [
+            1,
+            32,
+            1280
+          ],
+          "y": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "policy": "GPU",
+      "restoration_exact": true,
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-original/state-after.npz",
+        "sha256": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "arm": "original",
+      "chunk": 1,
+      "outputs": {
+        "dtypes": {
+          "tap23_out": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-original/outputs.npz",
+        "sha256": "d887c919fdf4558cf3ab6f1e6c71b8745b03dcccb11df6a0c2ab6612b875246e",
+        "shapes": {
+          "tap23_out": [
+            1,
+            12,
+            1280
+          ],
+          "y": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "policy": "GPU",
+      "restoration_exact": true,
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-original/state-after.npz",
+        "sha256": "7344a081b63e42bc2ee9f925d8803b797d6252d274d8c1d77b488818d9a49e0a",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "arm": "tapped",
+      "chunk": 0,
+      "outputs": {
+        "dtypes": {
+          "denom_21": "float32",
+          "k_49": "float32",
+          "k_51": "float32",
+          "step_149": "float32",
+          "step_161": "float32",
+          "tap23_out": "float32",
+          "value_41": "float32",
+          "var_14324": "float32",
+          "var_14339": "float32",
+          "var_14340": "float32",
+          "var_14415": "float32",
+          "var_14438": "float32",
+          "var_14453": "float32",
+          "var_14454": "float32",
+          "x_197": "float32",
+          "x_207": "float32",
+          "x_215": "float32",
+          "x_217": "float32",
+          "x_219": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-tapped/outputs.npz",
+        "sha256": "8affe3823c4d50e619411717a1ce37a9b618a6afa783b1a675b84461b0c4380f",
+        "shapes": {
+          "denom_21": [
+            1,
+            32,
+            2,
+            1
+          ],
+          "k_49": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "k_51": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "step_149": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "step_161": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "tap23_out": [
+            1,
+            32,
+            1280
+          ],
+          "value_41": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14324": [
+            1,
+            32,
+            2,
+            1
+          ],
+          "var_14339": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14340": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14415": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14438": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14453": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "var_14454": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "x_197": [
+            1,
+            32,
+            256
+          ],
+          "x_207": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "x_215": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "x_217": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "x_219": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "y": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "policy": "GPU",
+      "restoration_exact": true,
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-tapped/state-after.npz",
+        "sha256": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "arm": "tapped",
+      "chunk": 1,
+      "outputs": {
+        "dtypes": {
+          "denom_21": "float32",
+          "k_49": "float32",
+          "k_51": "float32",
+          "step_149": "float32",
+          "step_161": "float32",
+          "tap23_out": "float32",
+          "value_41": "float32",
+          "var_14324": "float32",
+          "var_14339": "float32",
+          "var_14340": "float32",
+          "var_14415": "float32",
+          "var_14438": "float32",
+          "var_14453": "float32",
+          "var_14454": "float32",
+          "x_197": "float32",
+          "x_207": "float32",
+          "x_215": "float32",
+          "x_217": "float32",
+          "x_219": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-tapped/outputs.npz",
+        "sha256": "d19afcadc4d4573c78d3befe6954d1628f701ace53893d7abb4f8b487dea3c4a",
+        "shapes": {
+          "denom_21": [
+            1,
+            12,
+            2,
+            1
+          ],
+          "k_49": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "k_51": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "step_149": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "step_161": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "tap23_out": [
+            1,
+            12,
+            1280
+          ],
+          "value_41": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14324": [
+            1,
+            12,
+            2,
+            1
+          ],
+          "var_14339": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14340": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14415": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14438": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14453": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "var_14454": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "x_197": [
+            1,
+            12,
+            256
+          ],
+          "x_207": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "x_215": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "x_217": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "x_219": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "y": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "policy": "GPU",
+      "restoration_exact": true,
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-tapped/state-after.npz",
+        "sha256": "7344a081b63e42bc2ee9f925d8803b797d6252d274d8c1d77b488818d9a49e0a",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    }
+  ],
+  "controls": [
+    {
+      "chunk": 0,
+      "original_outputs_vs_saved": {
+        "tap23_out": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 40960,
+            "expected": 40960,
+            "total": 40960
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "y": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 40960,
+            "expected": 40960,
+            "total": 40960
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "original_states_vs_saved": {
+        "inner_k_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999998,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999998,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "passed": true,
+      "policy": "CPU",
+      "tapped_endpoints_vs_original": {
+        "tap23_out": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 40960,
+            "expected": 40960,
+            "total": 40960
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "y": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 40960,
+            "expected": 40960,
+            "total": 40960
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "tapped_states_vs_original": {
+        "inner_k_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999998,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999998,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      }
+    },
+    {
+      "chunk": 1,
+      "original_outputs_vs_saved": {
+        "tap23_out": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 15360,
+            "expected": 15360,
+            "total": 15360
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "y": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 15360,
+            "expected": 15360,
+            "total": 15360
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "original_states_vs_saved": {
+        "inner_k_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999998,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "passed": true,
+      "policy": "CPU",
+      "tapped_endpoints_vs_original": {
+        "tap23_out": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 15360,
+            "expected": 15360,
+            "total": 15360
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "y": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 15360,
+            "expected": 15360,
+            "total": 15360
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "tapped_states_vs_original": {
+        "inner_k_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999998,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      }
+    },
+    {
+      "chunk": 0,
+      "original_outputs_vs_saved": {
+        "tap23_out": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 40960,
+            "expected": 40960,
+            "total": 40960
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "y": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 40960,
+            "expected": 40960,
+            "total": 40960
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "original_states_vs_saved": {
+        "inner_k_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "passed": true,
+      "policy": "GPU",
+      "tapped_endpoints_vs_original": {
+        "tap23_out": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 40960,
+            "expected": 40960,
+            "total": 40960
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "y": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 40960,
+            "expected": 40960,
+            "total": 40960
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "tapped_states_vs_original": {
+        "inner_k_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      }
+    },
+    {
+      "chunk": 1,
+      "original_outputs_vs_saved": {
+        "tap23_out": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 15360,
+            "expected": 15360,
+            "total": 15360
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "y": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 15360,
+            "expected": 15360,
+            "total": 15360
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "original_states_vs_saved": {
+        "inner_k_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999998,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "passed": true,
+      "policy": "GPU",
+      "tapped_endpoints_vs_original": {
+        "tap23_out": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 15360,
+            "expected": 15360,
+            "total": 15360
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "y": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            1280
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            1280
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 15360,
+            "expected": 15360,
+            "total": 15360
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      },
+      "tapped_states_vs_original": {
+        "inner_k_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_k_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_0": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_1": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999998,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_2": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "inner_v_cache_3": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 524288,
+            "expected": 524288,
+            "total": 524288
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        }
+      }
+    }
+  ],
+  "files": {
+    "chunk0/CPU-original/outputs": {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-original/outputs.npz",
+      "sha256": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+      "shapes": {
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk0/CPU-original/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-original/state-after.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk0/CPU-tapped/outputs": {
+      "dtypes": {
+        "denom_21": "float32",
+        "k_49": "float32",
+        "k_51": "float32",
+        "step_149": "float32",
+        "step_161": "float32",
+        "tap23_out": "float32",
+        "value_41": "float32",
+        "var_14324": "float32",
+        "var_14339": "float32",
+        "var_14340": "float32",
+        "var_14415": "float32",
+        "var_14438": "float32",
+        "var_14453": "float32",
+        "var_14454": "float32",
+        "x_197": "float32",
+        "x_207": "float32",
+        "x_215": "float32",
+        "x_217": "float32",
+        "x_219": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-tapped/outputs.npz",
+      "sha256": "03d83a5b8b3659c2a832aecbd7be1d076b386ec6c14cac240577ed63572c551f",
+      "shapes": {
+        "denom_21": [
+          1,
+          32,
+          2,
+          1
+        ],
+        "k_49": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "k_51": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "step_149": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "step_161": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "value_41": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14324": [
+          1,
+          32,
+          2,
+          1
+        ],
+        "var_14339": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14340": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14415": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14438": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14453": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14454": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x_197": [
+          1,
+          32,
+          256
+        ],
+        "x_207": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x_215": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x_217": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x_219": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk0/CPU-tapped/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-tapped/state-after.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk0/GPU-original/outputs": {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-original/outputs.npz",
+      "sha256": "5758cef1a9c264af56c9e3f59e5148a6753bf7848ac7572b00ccf35b3e74d70c",
+      "shapes": {
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk0/GPU-original/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-original/state-after.npz",
+      "sha256": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk0/GPU-tapped/outputs": {
+      "dtypes": {
+        "denom_21": "float32",
+        "k_49": "float32",
+        "k_51": "float32",
+        "step_149": "float32",
+        "step_161": "float32",
+        "tap23_out": "float32",
+        "value_41": "float32",
+        "var_14324": "float32",
+        "var_14339": "float32",
+        "var_14340": "float32",
+        "var_14415": "float32",
+        "var_14438": "float32",
+        "var_14453": "float32",
+        "var_14454": "float32",
+        "x_197": "float32",
+        "x_207": "float32",
+        "x_215": "float32",
+        "x_217": "float32",
+        "x_219": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-tapped/outputs.npz",
+      "sha256": "8affe3823c4d50e619411717a1ce37a9b618a6afa783b1a675b84461b0c4380f",
+      "shapes": {
+        "denom_21": [
+          1,
+          32,
+          2,
+          1
+        ],
+        "k_49": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "k_51": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "step_149": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "step_161": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "value_41": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14324": [
+          1,
+          32,
+          2,
+          1
+        ],
+        "var_14339": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14340": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14415": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14438": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14453": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "var_14454": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x_197": [
+          1,
+          32,
+          256
+        ],
+        "x_207": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x_215": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x_217": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x_219": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk0/GPU-tapped/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-tapped/state-after.npz",
+      "sha256": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk1/CPU-original/outputs": {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-original/outputs.npz",
+      "sha256": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+      "shapes": {
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    "chunk1/CPU-original/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-original/state-after.npz",
+      "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk1/CPU-tapped/outputs": {
+      "dtypes": {
+        "denom_21": "float32",
+        "k_49": "float32",
+        "k_51": "float32",
+        "step_149": "float32",
+        "step_161": "float32",
+        "tap23_out": "float32",
+        "value_41": "float32",
+        "var_14324": "float32",
+        "var_14339": "float32",
+        "var_14340": "float32",
+        "var_14415": "float32",
+        "var_14438": "float32",
+        "var_14453": "float32",
+        "var_14454": "float32",
+        "x_197": "float32",
+        "x_207": "float32",
+        "x_215": "float32",
+        "x_217": "float32",
+        "x_219": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-tapped/outputs.npz",
+      "sha256": "f010d5e4772d915a30764d3dc66f348cc2646789504717a5fd973966af365800",
+      "shapes": {
+        "denom_21": [
+          1,
+          12,
+          2,
+          1
+        ],
+        "k_49": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "k_51": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "step_149": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "step_161": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "value_41": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14324": [
+          1,
+          12,
+          2,
+          1
+        ],
+        "var_14339": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14340": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14415": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14438": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14453": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14454": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x_197": [
+          1,
+          12,
+          256
+        ],
+        "x_207": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x_215": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x_217": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x_219": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    "chunk1/CPU-tapped/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-tapped/state-after.npz",
+      "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk1/GPU-original/outputs": {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-original/outputs.npz",
+      "sha256": "d887c919fdf4558cf3ab6f1e6c71b8745b03dcccb11df6a0c2ab6612b875246e",
+      "shapes": {
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    "chunk1/GPU-original/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-original/state-after.npz",
+      "sha256": "7344a081b63e42bc2ee9f925d8803b797d6252d274d8c1d77b488818d9a49e0a",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk1/GPU-tapped/outputs": {
+      "dtypes": {
+        "denom_21": "float32",
+        "k_49": "float32",
+        "k_51": "float32",
+        "step_149": "float32",
+        "step_161": "float32",
+        "tap23_out": "float32",
+        "value_41": "float32",
+        "var_14324": "float32",
+        "var_14339": "float32",
+        "var_14340": "float32",
+        "var_14415": "float32",
+        "var_14438": "float32",
+        "var_14453": "float32",
+        "var_14454": "float32",
+        "x_197": "float32",
+        "x_207": "float32",
+        "x_215": "float32",
+        "x_217": "float32",
+        "x_219": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-tapped/outputs.npz",
+      "sha256": "d19afcadc4d4573c78d3befe6954d1628f701ace53893d7abb4f8b487dea3c4a",
+      "shapes": {
+        "denom_21": [
+          1,
+          12,
+          2,
+          1
+        ],
+        "k_49": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "k_51": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "step_149": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "step_161": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "value_41": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14324": [
+          1,
+          12,
+          2,
+          1
+        ],
+        "var_14339": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14340": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14415": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14438": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14453": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "var_14454": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x_197": [
+          1,
+          12,
+          256
+        ],
+        "x_207": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x_215": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x_217": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x_219": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    "chunk1/GPU-tapped/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-tapped/state-after.npz",
+      "sha256": "7344a081b63e42bc2ee9f925d8803b797d6252d274d8c1d77b488818d9a49e0a",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    }
+  },
+  "instrumentation_valid": true,
+  "passed": true,
+  "pins": {
+    "evidence/06d-gpu-rounding/group0-replay-1/results.json": "76e6030af0fd108d412ba89652bb4ed6d55f1760936da8f805f8fc358077e693",
+    "evidence/06f-gpu-reciprocal/group-replay-1/results.json": "584efa67f2c875cae0075adde513e452f5e7ae3794359c79c22cc21e02284bc0",
+    "evidence/06f-gpu-reciprocal/group0-1/results.json": "48af7de89cde44bcaf7c7dda12457aec5eb9c2e99cfa1ae4c5294090529441d6",
+    "evidence/06g-gpu-residual/key-design.md": "692e354f98c4c9272964ef4a8cd56d693f13fe3d59557f9b8e9cdce2e7ffbfcb",
+    "evidence/06g-gpu-residual/key-replay-design.md": "081d6e5c11c2d47417fb0a05ffa006d6d8ba45f8941ec60d9aad21caa7924403",
+    "evidence/06g-gpu-residual/key-taps-1/results.json": "21999d43760669dae89a634adab6e3457d2bb577d5f20c2e8bafe3400c549e5b",
+    "scripts/probe_gpu_group0.py": "bd608693337d5dc092b544ff7828bd63fc4c62557e6cee1a3dc156768c585682",
+    "scripts/probe_residual_key_taps.py": "a86e12ef854544588cddc2b6bf822879c67036866f88426ae8f60436eac5f080",
+    "scripts/runtime_provenance.py": "cde93c59843cf828e3bd6d5b2e316d4974cd206e05afcbf097bbbc0dd64ae84e"
+  },
+  "prediction_guard": {
+    "gil_releases": 8,
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 8
+  },
+  "protocol_path": "evidence/06g-gpu-residual/key-replay-1-protocol.json",
+  "protocol_sha256": "8099e9a8fed403231c16c48511bfc5fe5c32fb075f2c1cd239ac25a84565670a",
+  "runtime_provenance": {
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf"
+  },
+  "scope": "Same saved inputs/cache; diagnostic only, no full-model qualification.",
+  "status": "completed",
+  "tap_comparisons": [
+    {
+      "chunk": 0,
+      "comparisons": {
+        "denom_21": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            1
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999854403845,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            1
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 64,
+            "expected": 64,
+            "total": 64
+          },
+          "first_difference": {
+            "actual": 31.038007736206055,
+            "expected": 31.03769874572754,
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.02602386474609375,
+          "relative_rmse": 0.00017140271543017362,
+          "rmse": 0.006882274719414774,
+          "shape_match": true
+        },
+        "k_49": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999988522991312,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 0.19921875,
+            "expected": 0.201171875,
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.015625,
+          "relative_rmse": 0.0015151129233480507,
+          "rmse": 0.0015150445563884786,
+          "shape_match": true
+        },
+        "k_51": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999986628948329,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 0.34375,
+            "expected": 0.345703125,
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.015625,
+          "relative_rmse": 0.001635516957461813,
+          "rmse": 0.0016351827698495832,
+          "shape_match": true
+        },
+        "step_149": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999513942821743,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 0.0009765625,
+            "expected": 0.00048828125,
+            "index": [
+              0,
+              19,
+              0,
+              35
+            ]
+          },
+          "max_abs": 0.00390625,
+          "relative_rmse": 0.009859540912213216,
+          "rmse": 5.6442723918865756e-05,
+          "shape_match": true
+        },
+        "step_161": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999698707792802,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 6.103515625e-05,
+            "expected": 0.0001220703125,
+            "index": [
+              0,
+              19,
+              0,
+              22
+            ]
+          },
+          "max_abs": 0.001953125,
+          "relative_rmse": 0.007762828721592386,
+          "rmse": 4.4453699167246176e-05,
+          "shape_match": true
+        },
+        "value_41": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.999999156933848,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 6.1875,
+            "expected": 6.25,
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.5,
+          "relative_rmse": 0.0012986218683423028,
+          "rmse": 0.05214312061044433,
+          "shape_match": true
+        },
+        "var_14324": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            1
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999821299173,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            1
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 64,
+            "expected": 64,
+            "total": 64
+          },
+          "first_difference": {
+            "actual": 0.027927538380026817,
+            "expected": 0.027927540242671967,
+            "index": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          "max_abs": 2.204999327659607e-05,
+          "relative_rmse": 0.00019063188780526794,
+          "rmse": 4.98756153482016e-06,
+          "shape_match": true
+        },
+        "var_14339": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9989443773196625,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 191.24778747558594,
+            "expected": 191.247802734375,
+            "index": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          "max_abs": 396.3693542480469,
+          "relative_rmse": 0.045967690440951094,
+          "rmse": 8.68874048241574,
+          "shape_match": true
+        },
+        "var_14340": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9989444703821541,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 204.0,
+            "expected": 206.0,
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 396.0,
+          "relative_rmse": 0.04596606590410626,
+          "rmse": 8.688188484409451,
+          "shape_match": true
+        },
+        "var_14415": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999988077071092,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 0.197265625,
+            "expected": 0.19921875,
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.015625,
+          "relative_rmse": 0.0015442631265447048,
+          "rmse": 0.0014168905388918815,
+          "shape_match": true
+        },
+        "var_14438": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999987581456734,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": -0.02978515625,
+            "expected": -0.030029296875,
+            "index": [
+              0,
+              19,
+              0,
+              1
+            ]
+          },
+          "max_abs": 0.015625,
+          "relative_rmse": 0.0015760421916064876,
+          "rmse": 0.0006260735202778249,
+          "shape_match": true
+        },
+        "var_14453": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9989119147287114,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 176.0,
+            "expected": 177.0,
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 396.0,
+          "relative_rmse": 0.046648779794047614,
+          "rmse": 8.794729919439748,
+          "shape_match": true
+        },
+        "var_14454": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9989114876148147,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 176.0,
+            "expected": 177.0,
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 396.0,
+          "relative_rmse": 0.046657945327649615,
+          "rmse": 8.796312981602718,
+          "shape_match": true
+        },
+        "x_197": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            256
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999996545100255,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            256
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 6.186760902404785,
+            "expected": 6.244436264038086,
+            "index": [
+              0,
+              19,
+              0
+            ]
+          },
+          "max_abs": 0.3356609344482422,
+          "relative_rmse": 0.0008312593280260132,
+          "rmse": 0.0333793071950284,
+          "shape_match": true
+        },
+        "x_207": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999990930460395,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 2.9882466793060303,
+            "expected": 2.9882469177246094,
+            "index": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.016130685806274414,
+          "relative_rmse": 0.0013468139953292052,
+          "rmse": 0.0013468139906583842,
+          "shape_match": true
+        },
+        "x_215": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999988509852753,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 0.1968841552734375,
+            "expected": 0.19881439208984375,
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.015625,
+          "relative_rmse": 0.001515955617403299,
+          "rmse": 0.001391197618851486,
+          "shape_match": true
+        },
+        "x_217": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999988601993786,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": -0.029766082763671875,
+            "expected": -0.030057907104492188,
+            "index": [
+              0,
+              19,
+              0,
+              1
+            ]
+          },
+          "max_abs": 0.013916015625,
+          "relative_rmse": 0.0015101264824285872,
+          "rmse": 0.000599956256152968,
+          "shape_match": true
+        },
+        "x_219": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999987955024112,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 8192,
+            "expected": 8192,
+            "total": 8192
+          },
+          "first_difference": {
+            "actual": 0.34375,
+            "expected": 0.345703125,
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.017578125,
+          "relative_rmse": 0.0015521525514551983,
+          "rmse": 0.0015518752058900354,
+          "shape_match": true
+        }
+      }
+    },
+    {
+      "chunk": 1,
+      "comparisons": {
+        "denom_21": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            1
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            1
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 24,
+            "expected": 24,
+            "total": 24
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "k_49": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999993791595,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": {
+            "actual": -0.330078125,
+            "expected": -0.33203125,
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 0.001953125,
+          "relative_rmse": 3.523811584260603e-05,
+          "rmse": 3.523866389096837e-05,
+          "shape_match": true
+        },
+        "k_51": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999993788213,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": {
+            "actual": -0.330078125,
+            "expected": -0.33203125,
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 0.001953125,
+          "relative_rmse": 3.5247711633038965e-05,
+          "rmse": 3.523866389096837e-05,
+          "shape_match": true
+        },
+        "step_149": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "step_161": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0000000000000002,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "value_41": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "var_14324": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            1
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999999999991,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            1
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 24,
+            "expected": 24,
+            "total": 24
+          },
+          "first_difference": {
+            "actual": 0.021358365193009377,
+            "expected": 0.021358367055654526,
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "max_abs": 1.862645149230957e-09,
+          "relative_rmse": 4.5148599961101694e-08,
+          "rmse": 1.1406325468715177e-09,
+          "shape_match": true
+        },
+        "var_14339": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999999999989,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": {
+            "actual": 226.91127014160156,
+            "expected": 226.91128540039062,
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "max_abs": 3.0517578125e-05,
+          "relative_rmse": 5.158003416445333e-08,
+          "rmse": 9.780006448691788e-06,
+          "shape_match": true
+        },
+        "var_14340": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999954738737,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": {
+            "actual": -169.0,
+            "expected": -170.0,
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 1.0,
+          "relative_rmse": 9.515563125413054e-05,
+          "rmse": 0.018042195912175804,
+          "shape_match": true
+        },
+        "var_14415": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999991601786,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": {
+            "actual": -0.330078125,
+            "expected": -0.33203125,
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 0.001953125,
+          "relative_rmse": 4.098443127646232e-05,
+          "rmse": 3.523866389096837e-05,
+          "shape_match": true
+        },
+        "var_14438": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "var_14453": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999954573275,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": {
+            "actual": -169.0,
+            "expected": -170.0,
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 1.0,
+          "relative_rmse": 9.532944661452083e-05,
+          "rmse": 0.018042195912175804,
+          "shape_match": true
+        },
+        "var_14454": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999954572534,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": {
+            "actual": -169.0,
+            "expected": -170.0,
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 1.0,
+          "relative_rmse": 9.533022659521699e-05,
+          "rmse": 0.018042195912175804,
+          "shape_match": true
+        },
+        "x_197": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            256
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 0.9999999999999999,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            256
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "x_207": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999999999988,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": {
+            "actual": 3.5454885959625244,
+            "expected": 3.5454888343811035,
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "max_abs": 4.76837158203125e-07,
+          "relative_rmse": 5.250820265225784e-08,
+          "rmse": 5.250820344947377e-08,
+          "shape_match": true
+        },
+        "x_215": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999991606515,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": {
+            "actual": -0.330078125,
+            "expected": -0.33203125,
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 0.001953125,
+          "relative_rmse": 4.097288468804209e-05,
+          "rmse": 3.523866389096837e-05,
+          "shape_match": true
+        },
+        "x_217": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": true,
+          "cosine_similarity": 1.0,
+          "exact": true,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": null,
+          "max_abs": 0.0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape_match": true
+        },
+        "x_219": {
+          "actual_dtype": "float32",
+          "actual_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "bitwise_exact": false,
+          "cosine_similarity": 0.9999999993788317,
+          "exact": false,
+          "expected_dtype": "float32",
+          "expected_shape": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "finite": true,
+          "finite_counts": {
+            "actual": 3072,
+            "expected": 3072,
+            "total": 3072
+          },
+          "first_difference": {
+            "actual": -0.330078125,
+            "expected": -0.33203125,
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 0.001953125,
+          "relative_rmse": 3.5247422374840706e-05,
+          "rmse": 3.523866389096837e-05,
+          "shape_match": true
+        }
+      }
+    }
+  ],
+  "taps": [
+    "x_197",
+    "value_41",
+    "denom_21",
+    "var_14324",
+    "x_207",
+    "step_149",
+    "var_14339",
+    "var_14340",
+    "k_49",
+    "x_215",
+    "var_14415",
+    "x_217",
+    "var_14438",
+    "x_219",
+    "step_161",
+    "var_14453",
+    "var_14454",
+    "k_51"
+  ]
+}

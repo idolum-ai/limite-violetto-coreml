@@ -1,0 +1,1140 @@
+{
+  "actual_device_placement": "unverified; external own-PID execution trace required",
+  "archives": [
+    {
+      "dtypes": {
+        "norm_divisor": "float32",
+        "positions": "int32",
+        "tap0": "float32",
+        "tap12": "float32",
+        "tap23": "float32",
+        "ve": "float32",
+        "x": "float32"
+      },
+      "label": "chunk0/group0/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/own-CPU/inputs.npz",
+      "sha256": "69ecfe41ff5a4643a329aad8b0f30bf71c7119a73f9cb703394e94c2d276c85e",
+      "shapes": {
+        "norm_divisor": [
+          1
+        ],
+        "positions": [
+          32
+        ],
+        "tap0": [
+          1,
+          32,
+          1280
+        ],
+        "tap12": [
+          1,
+          32,
+          1280
+        ],
+        "tap23": [
+          1,
+          32,
+          1280
+        ],
+        "ve": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "label": "chunk0/group0/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/own-CPU/state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "label": "chunk0/group0/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "c4f7ef5c921b64eb91a587b1d63fbdc309d1509637bee764d8ca2f18b74b60d9",
+      "shapes": {
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "label": "chunk0/group0/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk0/group0/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    {
+      "dtypes": {
+        "norm_divisor": "float32",
+        "positions": "int32",
+        "tap0": "float32",
+        "tap12": "float32",
+        "tap23": "float32",
+        "ve": "float32",
+        "x": "float32"
+      },
+      "label": "chunk1/group0/own-CPU/inputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/own-CPU/inputs.npz",
+      "sha256": "9eb45ae6546f129807c180157e0b72160c43a57e0585509e19acd89f0873c36d",
+      "shapes": {
+        "norm_divisor": [
+          1
+        ],
+        "positions": [
+          12
+        ],
+        "tap0": [
+          1,
+          12,
+          1280
+        ],
+        "tap12": [
+          1,
+          12,
+          1280
+        ],
+        "tap23": [
+          1,
+          12,
+          1280
+        ],
+        "ve": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "label": "chunk1/group0/own-CPU/state-before",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/own-CPU/state-before.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "label": "chunk1/group0/replay-ICPU-SCPU-PGPU/outputs",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-ICPU-SCPU-PGPU/outputs.npz",
+      "sha256": "0d8ed9267430c38912ee848329a19064f7ed074234f6048dba4f8f697a9da8e5",
+      "shapes": {
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "label": "chunk1/group0/replay-ICPU-SCPU-PGPU/state-after",
+      "path": "evidence/06c-gpu-localization/prompt0-1/chunk1/group0/replay-ICPU-SCPU-PGPU/state-after.npz",
+      "sha256": "55c200e0bde28606311272044e525547a72d623ae1adf0f6be6334e32eb98ade",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    }
+  ],
+  "calls": [
+    {
+      "chunk": 0,
+      "expected_replay": "ICPU-SCPU-PGPU",
+      "inputs_unchanged": {
+        "arrays": {
+          "norm_divisor": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "positions": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "tap0": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "tap12": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "tap23": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "ve": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "x": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          }
+        },
+        "bitwise_exact": true,
+        "exact": true,
+        "names_exact": true
+      },
+      "outputs": {
+        "arrays": {
+          "tap23_out": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "y": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          }
+        },
+        "bitwise_exact": true,
+        "exact": true,
+        "names_exact": true
+      },
+      "passed": true,
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "predict_seconds": 0.680549833,
+      "prediction_begin": {
+        "call_ordinal": 1,
+        "chunk": 0,
+        "event": "prediction_begin",
+        "monotonic_ns": 6099481482253208,
+        "perf_counter_ns": 6099481482253250,
+        "pid": 12316,
+        "policy": "GPU",
+        "wall_time_ns": 1790196444148189000
+      },
+      "prediction_end": {
+        "call_ordinal": 1,
+        "chunk": 0,
+        "event": "prediction_end",
+        "monotonic_ns": 6099482162906875,
+        "perf_counter_ns": 6099482162906916,
+        "pid": 12316,
+        "policy": "GPU",
+        "wall_time_ns": 1790196444828859000
+      },
+      "release_time": {
+        "monotonic_ns": 6099482347254541,
+        "perf_counter_ns": 6099482347254708,
+        "wall_time_ns": 1790196445013211000
+      },
+      "restoration": {
+        "arrays": {
+          "inner_k_cache_0": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_1": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_2": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_3": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_0": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_1": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_2": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_3": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          }
+        },
+        "bitwise_exact": true,
+        "exact": true,
+        "names_exact": true
+      },
+      "state_after": {
+        "arrays": {
+          "inner_k_cache_0": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_1": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_2": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_3": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_0": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_1": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_2": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_3": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          }
+        },
+        "bitwise_exact": true,
+        "exact": true,
+        "names_exact": true
+      },
+      "state_reference_released": true
+    },
+    {
+      "chunk": 1,
+      "expected_replay": "ICPU-SCPU-PGPU",
+      "inputs_unchanged": {
+        "arrays": {
+          "norm_divisor": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "positions": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "tap0": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "tap12": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "tap23": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "ve": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "x": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          }
+        },
+        "bitwise_exact": true,
+        "exact": true,
+        "names_exact": true
+      },
+      "outputs": {
+        "arrays": {
+          "tap23_out": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "y": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          }
+        },
+        "bitwise_exact": true,
+        "exact": true,
+        "names_exact": true
+      },
+      "passed": true,
+      "positions": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "predict_seconds": 0.249619666,
+      "prediction_begin": {
+        "call_ordinal": 2,
+        "chunk": 1,
+        "event": "prediction_begin",
+        "monotonic_ns": 6099482362442708,
+        "perf_counter_ns": 6099482362443000,
+        "pid": 12316,
+        "policy": "GPU",
+        "wall_time_ns": 1790196445028399000
+      },
+      "prediction_end": {
+        "call_ordinal": 2,
+        "chunk": 1,
+        "event": "prediction_end",
+        "monotonic_ns": 6099482612194500,
+        "perf_counter_ns": 6099482612194583,
+        "pid": 12316,
+        "policy": "GPU",
+        "wall_time_ns": 1790196445278157000
+      },
+      "release_time": {
+        "monotonic_ns": 6099482752996708,
+        "perf_counter_ns": 6099482752996833,
+        "wall_time_ns": 1790196445418962000
+      },
+      "restoration": {
+        "arrays": {
+          "inner_k_cache_0": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_1": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_2": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_3": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_0": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_1": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_2": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_3": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          }
+        },
+        "bitwise_exact": true,
+        "exact": true,
+        "names_exact": true
+      },
+      "state_after": {
+        "arrays": {
+          "inner_k_cache_0": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_1": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_2": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_k_cache_3": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_0": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_1": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_2": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          },
+          "inner_v_cache_3": {
+            "bitwise_exact": true,
+            "dtype_exact": true,
+            "exact": true,
+            "shape_exact": true
+          }
+        },
+        "bitwise_exact": true,
+        "exact": true,
+        "names_exact": true
+      },
+      "state_reference_released": true
+    }
+  ],
+  "cleanup_guard_after": {
+    "background_calls": 0,
+    "calls": 30,
+    "shutdown_skips": 0
+  },
+  "cleanup_guard_before": {
+    "background_calls": 0,
+    "calls": 0,
+    "shutdown_skips": 0
+  },
+  "compiled_identity": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+  "compiled_manifest_sha256": "6d823571b146339d557aab33d7d284eee8cf701eb7e20e0a8fbf5ccb8be01b29",
+  "compiled_root": "<PROJECT_ROOT>/artifacts/05c-compiled/full-cache-1",
+  "compute": "CPU_AND_GPU",
+  "files": {
+    "chunk0-outputs.npz": {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "sha256": "c4f7ef5c921b64eb91a587b1d63fbdc309d1509637bee764d8ca2f18b74b60d9",
+      "shapes": {
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk0-state-after.npz": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "sha256": "ab860065c96f0a7aa0090e07bb6f67c272575129d67bfab97d049c3b80da8362",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk1-outputs.npz": {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "sha256": "0d8ed9267430c38912ee848329a19064f7ed074234f6048dba4f8f697a9da8e5",
+      "shapes": {
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    "chunk1-state-after.npz": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "sha256": "2598e2dc4e7701ca70955b8203c0c92f944db8f9e41003f524c2f7d6574af58b",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    }
+  },
+  "finish": {
+    "monotonic_ns": 6099488976511083,
+    "perf_counter_ns": 6099488976511291,
+    "wall_time_ns": 1790196451642620000
+  },
+  "fixture_preserved": true,
+  "group": "0",
+  "guard_before": {
+    "gil_releases": 0,
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 0
+  },
+  "load_seconds": 1.3809599168598652,
+  "owned_state_references_released": true,
+  "passed": true,
+  "pid": 12316,
+  "policy": "GPU",
+  "prediction_guard": {
+    "gil_releases": 2,
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 2
+  },
+  "qualified_sources": {
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+    "coreml_port/bf16_gelu.py": "69761c7b2ebd7fe158109092abe058d204fd965958cc74652e7747ac4bb82624",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "coreml_port/compiled_generate.py": "6fb70e2e3e4a59abb284984f9a447e699eaa3d56d40bf7c1090a687f2c568395",
+    "coreml_port/compiled_identity.py": "10eb6ef0a793453109f0378275e2a3259631d68c5e85e9f92873ba1f85373c53",
+    "coreml_port/compiled_runtime.py": "37d16dfd0ab096b9ec5b26f8d44f3e64874b94c60181af80748cab9c302eedb5",
+    "coreml_port/dynamic_queries.py": "aa87c78fdfc84172860cb9ad765924a994430a22e7e36a77ede6314b30299cda",
+    "coreml_port/generate.py": "d8659b17181f2dded9c769f6d695bb8fa0e0a06ae90089a6adfc20ff6f7ff5c9",
+    "coreml_port/graphs.py": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+    "coreml_port/loader_selection.py": "4d8b5380934b6712b7c3abc35f2f0bfb68943624252b32c3315d3e148f196099",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227",
+    "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+    "coreml_port/paired_product.py": "9145720c24d706940ddc7039521a3cd76b8706419e964070730bd0f81dbe59e3",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+    "coreml_port/tiny_native_scores.py": "c1fd3339ce3ac7b23cf0117dfb466b25c2c43c036a87616eb8656787fa5858ff",
+    "coreml_port/tiny_prefix_runtime.py": "03f50bffc68b5264ef8f0f663c869d237e103f1a8863b0e34569325f26cddb2f",
+    "evidence/01-reference/local-input-validation.json": "54ce299bdc107b3db80a2a389283ea787f7801a4f51a1ae2feed0a6dfaee7490",
+    "evidence/03-portable/ACCEPTANCE.json": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+    "evidence/03-portable/calibration-cpu.json": "6c33c8976abdc5e2ef603519cdaa3f5193c443515de876dbea920b9840ab9d95",
+    "evidence/04-coreml/generation-comparison.json": "1ee6553885123a57b8fb40b89c292eea201e148e6f3bd4d9b4cba1c057f9f3eb",
+    "evidence/04-coreml/generation-cpu.json": "1c243d32bb9a3916f74e9939187d043f805ce14bde4a811a8490c032ab75cd67",
+    "portable/generate.py": "35db80e5d932f772d54df6be71f3b22b612b955e1aa929257fa5cdfb155e2f0e",
+    "portable/model.py": "6e204b9b4d08247a4441d2422800ca7b253f3cc8f9e4a855473830daa5042797",
+    "scripts/audit_coreml_generation.py": "efb43aecd709045b19ea3c2801ce9c8c906a8861755d95a41401cf93ad0c0aac",
+    "scripts/audit_coreml_partitions.py": "d5c0b2658206fe4051c19b06f4f72d93eed63973dd01b1139012cd84b72c6557",
+    "scripts/build_compiled_cache.py": "c560097015307ea51ab379e452cc36c934c2876f721afe6f216e333a48ebb7e7",
+    "scripts/build_cpu_candidate.py": "d058d7840b7d3bf93089fa4f1af0ca5c8de5bfbafff36d09782605200fb6ad84",
+    "scripts/convert_coreml.py": "0afd570572d6e265d1d103ae8f97ef90b1bdb84982d67c4bf7e0db6b5576c62a",
+    "scripts/probe_compiled_pipeline.py": "01af072f39fecf32108d9d6d941339c1eb12b1a98f199abc491ff9b2e5075168",
+    "scripts/validate_coreml.py": "464941d52468e22ccc3f072b4a194dae1da45780f9c842be649cb1ad44a1f0f0",
+    "scripts/validate_coreml_boundaries.py": "2141348aef3aac041f43d7fd36c927a476408baf5da54af73fd92bb6d8ede4af"
+  },
+  "runtime_provenance": {
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf"
+  },
+  "scope": "Two independent original group-0 predictions, CPU-trajectory inputs/cache, chunks32 and12",
+  "script_sha256": "f1db086cdbeb3b8bd3a4a0220551eb7479e42ecac18da185129cf1e8f145ef8c",
+  "source_and_compiled_preserved": true,
+  "source_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "source_manifest_sha256": "eaf5695cdbe1fe79185ad10942cc67567e3e760e0a8dc23e716b2bfd554b3d37",
+  "source_result": "evidence/06c-gpu-localization/prompt0-1/results.json",
+  "source_result_sha256": "ed27ff2a0b99bef14822450d044c2ec9e02206c647c934188c3f61c4c9886bb8",
+  "source_root": "<PROJECT_ROOT>/artifacts/04d-cpu/full-candidate-6",
+  "start": {
+    "monotonic_ns": 6099471610779125,
+    "perf_counter_ns": 6099471610779333,
+    "wall_time_ns": 1790196434276487000
+  },
+  "status": "completed",
+  "thresholds_changed": false
+}

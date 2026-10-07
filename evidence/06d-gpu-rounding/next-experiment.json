@@ -1,0 +1,119 @@
+{
+  "status": "planned_not_executed",
+  "objective": "Localize warm equal-input normalization divergence before returning to cold attention-finish drift.",
+  "source_build": "evidence/06d-gpu-rounding/group0-1/results.json",
+  "source_build_sha256": "4e6ac1baa2f70c10bf812523f7e341d9dabf34b30299e4819631f2db31cf150f",
+  "fixture": "evidence/06d-gpu-rounding/group0-replay-1/results.json",
+  "warm_anchor": {
+    "input": "value_17 byte-exact across policies",
+    "first_sampled_output_difference": "x_69 at [0,8,23], CPU -0.87890625 vs CPU_AND_GPU -0.8828125",
+    "query_row": 8,
+    "absolute_token_position": 40
+  },
+  "checkpoint_candidates": [
+    {
+      "name": "value_17",
+      "candidate_operation_index": 9098,
+      "stage": "exact warm input"
+    },
+    {
+      "name": "x_65",
+      "candidate_operation_index": 9099,
+      "stage": "square"
+    },
+    {
+      "name": "var_5669",
+      "candidate_operation_index": 9536,
+      "stage": "ordered sum"
+    },
+    {
+      "name": "mean_7",
+      "candidate_operation_index": 9537,
+      "stage": "divide by external norm_divisor"
+    },
+    {
+      "name": "var_5672",
+      "candidate_operation_index": 9539,
+      "stage": "add epsilon 2^-23"
+    },
+    {
+      "name": "denom_7",
+      "candidate_operation_index": 9540,
+      "stage": "square root"
+    },
+    {
+      "name": "var_5675",
+      "candidate_operation_index": 9543,
+      "stage": "reciprocal"
+    },
+    {
+      "name": "x_67",
+      "candidate_operation_index": 9544,
+      "stage": "multiply input by reciprocal"
+    },
+    {
+      "name": "step_47",
+      "candidate_operation_index": 9567,
+      "stage": "quantization step"
+    },
+    {
+      "name": "var_5690",
+      "candidate_operation_index": 9568,
+      "stage": "quotient before rounding"
+    },
+    {
+      "name": "var_5691",
+      "candidate_operation_index": 9596,
+      "stage": "replacement round result"
+    },
+    {
+      "name": "x_69",
+      "candidate_operation_index": 9597,
+      "stage": "normalized quantized output"
+    }
+  ],
+  "gates": [
+    {
+      "id": "N1",
+      "requirement": "Freeze separate output-only normalization tap clone with all existing operations, weights, original endpoints and state interfaces preserved. Use fresh attempts; preserve prior load failures.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "N2",
+      "requirement": "Replay original and tapped candidate for both policies and both chunks from the same saved CPU inputs/cache. Require byte-exact original-vs-saved and tapped-vs-original endpoints and all eight states in every cell before interpreting taps.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "N3",
+      "requirement": "Find the first differing operation with byte-identical direct inputs. Check step/quotient and rounding separately; do not infer a kernel cause from unequal upstream inputs. Independently recompute array metrics, hashes, and controls.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "N4",
+      "requirement": "Only after N3, freeze a minimal arithmetic experiment; require directed finite/tie/zero cases and original CPU byte preservation before a separate group candidate. Full-model thresholds remain unchanged.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "N5",
+      "requirement": "Return to cold attention-finish interval; GPU rejected dynamic score/AV exports. Any reshape/specialization instrumentation must have separate structural and same-policy endpoint/state controls.",
+      "status": "pending",
+      "evidence_links": []
+    },
+    {
+      "id": "N6",
+      "requirement": "Reverify original and promoted CPU cohorts; update report/decision trail and seal all evidence. No full-model GPU adoption from local tests.",
+      "status": "pending",
+      "evidence_links": []
+    }
+  ],
+  "constraints": [
+    "Qualified CPU selection, runtime, model weights and acceptance gates remain frozen.",
+    "The warm and cold boundaries may have different causes.",
+    "Actual execution device and speed remain separately unverified."
+  ],
+  "evidence_directory": "evidence/06e-gpu-normalization"
+}

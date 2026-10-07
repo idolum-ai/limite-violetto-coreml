@@ -1,0 +1,298 @@
+{
+  "candidate_milestone_sha256": "342cd7dfb3d12672adcb713b739d54ee3d9407aa024410b3927597864383b96e",
+  "compiled_identities": {
+    "A": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+    "B": "149d74d2e339fabdafeec8cf5ad6766fdd2e2754c15f5256c7dc69d91b932557"
+  },
+  "counts": {
+    "disposed_requests": 32,
+    "guard_gil_releases_per_worker": 458,
+    "guard_plain_calls_per_worker": 50,
+    "guard_state_calls_per_worker": 408,
+    "requests": 32,
+    "score_sites": 96,
+    "score_sites_equal_to_sealed_pilot": 96,
+    "score_sites_raw_byte_equal_to_first_baseline": 96,
+    "score_sites_raw_byte_equal_to_sealed_pilot": 96,
+    "timed_forwards": 96,
+    "workers": 8
+  },
+  "host": {
+    "load_average_1m_range": [
+      4.36474609375,
+      5.9365234375
+    ],
+    "parent_after_power": "Now drawing from 'Battery Power'",
+    "parent_after_utc": "2026-09-23T18:55:46Z",
+    "parent_before_power": "Now drawing from 'AC Power'",
+    "parent_before_utc": "2026-09-23T18:28:04Z",
+    "thermal_warning_samples": 0,
+    "worker_power_counts": {
+      "AC": 4,
+      "Battery": 12
+    }
+  },
+  "limitations": "Two ABBA rounds; power source changed during run and one prefix has >10 percentage-point round spread. Timings are local observations, not controlled-cache estimates.",
+  "max_round_reduction_spread": 0.12064225435928633,
+  "passed": true,
+  "performance_gate_passed": true,
+  "pooled_decode_ratio": 0.8216650749642256,
+  "pooled_decode_reduction": 0.17833492503577442,
+  "prefixes": [
+    {
+      "decode": {
+        "A_median_seconds": 2.354047813,
+        "B_median_seconds": 1.9472388755,
+        "ratio": 0.8271874788381793,
+        "reduction": 0.17281252116182066
+      },
+      "prefill": {
+        "A_median_seconds": 7.2220756455,
+        "B_median_seconds": 7.285250771,
+        "ratio": 1.008747502601882,
+        "reduction": -0.008747502601881951
+      },
+      "prefix": 32
+    },
+    {
+      "decode": {
+        "A_median_seconds": 2.3420495624999997,
+        "B_median_seconds": 1.933079104,
+        "ratio": 0.825379246857847,
+        "reduction": 0.17462075314215297
+      },
+      "prefill": {
+        "A_median_seconds": 28.425536146,
+        "B_median_seconds": 28.6357291875,
+        "ratio": 1.0073945145808474,
+        "reduction": -0.007394514580847389
+      },
+      "prefix": 128
+    },
+    {
+      "decode": {
+        "A_median_seconds": 2.3535168545,
+        "B_median_seconds": 1.927427646,
+        "ratio": 0.8189563810918524,
+        "reduction": 0.18104361890814757
+      },
+      "prefill": {
+        "A_median_seconds": 112.952507375,
+        "B_median_seconds": 106.440934771,
+        "ratio": 0.9423512345557615,
+        "reduction": 0.05764876544423847
+      },
+      "prefix": 512
+    }
+  ],
+  "protocol_sha256": "29191d62acfe096568c979c44426fd6e4ae11f1a607036dacb03d4a934a92d1b",
+  "round_prefix_decode": [
+    {
+      "prefix": 32,
+      "ratio": 0.919412342467093,
+      "reduction": 0.08058765753290698,
+      "round": 0
+    },
+    {
+      "prefix": 32,
+      "ratio": 0.7987700881078067,
+      "reduction": 0.2012299118921933,
+      "round": 1
+    },
+    {
+      "prefix": 128,
+      "ratio": 0.8818729362358086,
+      "reduction": 0.11812706376419135,
+      "round": 0
+    },
+    {
+      "prefix": 128,
+      "ratio": 0.7936013588043753,
+      "reduction": 0.20639864119562468,
+      "round": 1
+    },
+    {
+      "prefix": 512,
+      "ratio": 0.8251094145667874,
+      "reduction": 0.17489058543321256,
+      "round": 0
+    },
+    {
+      "prefix": 512,
+      "ratio": 0.8140541218309078,
+      "reduction": 0.18594587816909225,
+      "round": 1
+    }
+  ],
+  "round_spread_flag": true,
+  "run": "evidence/05g-integration/pipeline-abba-1",
+  "scope": "read-only independent audit of completed benchmark",
+  "script_sha256": "8e1e1288205dfaeef2420dc02841139c09478902700b599608b9fe1d95db0485",
+  "source_identities": {
+    "A": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+    "B": "c7cc54a308bb7c379f6d55c777a62666e86921f27245115dc185597efc65a46b"
+  },
+  "status": "completed",
+  "workers": [
+    {
+      "arm": "A",
+      "guard_counts": {
+        "gil_releases": 458,
+        "installed": true,
+        "plain_calls": 50,
+        "state_calls": 408
+      },
+      "host_after_utc": "2026-09-23T18:31:58Z",
+      "host_before_utc": "2026-09-23T18:28:38Z",
+      "load_average_1m_after": 5.4384765625,
+      "load_average_1m_before": 4.3740234375,
+      "power_after": "AC",
+      "power_before": "AC",
+      "requests_disposed": 4,
+      "result_sha256": "0c5511c53b66dfce3355a705e62075adb684442b4251d6e53620ee72d716704e",
+      "round": 0,
+      "scores_sha256": "b0ad796bd12e6f99c9a488fb05485ce4e7669e807d31175b575a0999f705ff45",
+      "slot": 0
+    },
+    {
+      "arm": "B",
+      "guard_counts": {
+        "gil_releases": 458,
+        "installed": true,
+        "plain_calls": 50,
+        "state_calls": 408
+      },
+      "host_after_utc": "2026-09-23T18:35:39Z",
+      "host_before_utc": "2026-09-23T18:32:32Z",
+      "load_average_1m_after": 5.45361328125,
+      "load_average_1m_before": 4.70263671875,
+      "power_after": "AC",
+      "power_before": "AC",
+      "requests_disposed": 4,
+      "result_sha256": "d39d10d0c692d6eef60fbb225acc7d26f1121298d39d14bd170e6d88df35782e",
+      "round": 0,
+      "scores_sha256": "b0ad796bd12e6f99c9a488fb05485ce4e7669e807d31175b575a0999f705ff45",
+      "slot": 1
+    },
+    {
+      "arm": "B",
+      "guard_counts": {
+        "gil_releases": 458,
+        "installed": true,
+        "plain_calls": 50,
+        "state_calls": 408
+      },
+      "host_after_utc": "2026-09-23T18:39:12Z",
+      "host_before_utc": "2026-09-23T18:36:19Z",
+      "load_average_1m_after": 5.9365234375,
+      "load_average_1m_before": 5.068359375,
+      "power_after": "Battery",
+      "power_before": "Battery",
+      "requests_disposed": 4,
+      "result_sha256": "b1373165a801b192aa1f0c2d60f284b5a565648f54bc3c60ded02a68f603bc79",
+      "round": 0,
+      "scores_sha256": "b0ad796bd12e6f99c9a488fb05485ce4e7669e807d31175b575a0999f705ff45",
+      "slot": 2
+    },
+    {
+      "arm": "A",
+      "guard_counts": {
+        "gil_releases": 458,
+        "installed": true,
+        "plain_calls": 50,
+        "state_calls": 408
+      },
+      "host_after_utc": "2026-09-23T18:42:43Z",
+      "host_before_utc": "2026-09-23T18:39:51Z",
+      "load_average_1m_after": 5.7626953125,
+      "load_average_1m_before": 5.85302734375,
+      "power_after": "Battery",
+      "power_before": "Battery",
+      "requests_disposed": 4,
+      "result_sha256": "ff77e51ef8bbf5baa07ff4568fe65b523d30a8ee821c64e04aa4d836810655f4",
+      "round": 0,
+      "scores_sha256": "b0ad796bd12e6f99c9a488fb05485ce4e7669e807d31175b575a0999f705ff45",
+      "slot": 3
+    },
+    {
+      "arm": "A",
+      "guard_counts": {
+        "gil_releases": 458,
+        "installed": true,
+        "plain_calls": 50,
+        "state_calls": 408
+      },
+      "host_after_utc": "2026-09-23T18:46:13Z",
+      "host_before_utc": "2026-09-23T18:43:22Z",
+      "load_average_1m_after": 4.59912109375,
+      "load_average_1m_before": 4.71630859375,
+      "power_after": "Battery",
+      "power_before": "Battery",
+      "requests_disposed": 4,
+      "result_sha256": "accc7b57109cd07184e3d12a07381903fcd5086e154e10f8eb4c2e109462016c",
+      "round": 1,
+      "scores_sha256": "cd4ccbac0405b4137f55785bd4bb04b7440d6324a7c6f61ae36551d9bd3f9542",
+      "slot": 0
+    },
+    {
+      "arm": "B",
+      "guard_counts": {
+        "gil_releases": 458,
+        "installed": true,
+        "plain_calls": 50,
+        "state_calls": 408
+      },
+      "host_after_utc": "2026-09-23T18:49:14Z",
+      "host_before_utc": "2026-09-23T18:46:46Z",
+      "load_average_1m_after": 5.11279296875,
+      "load_average_1m_before": 4.3974609375,
+      "power_after": "Battery",
+      "power_before": "Battery",
+      "requests_disposed": 4,
+      "result_sha256": "ee3e8821b48e446b2e48fcf2c444aa0eaa9eb4272a72d6d90986994e90b602a4",
+      "round": 1,
+      "scores_sha256": "cd4ccbac0405b4137f55785bd4bb04b7440d6324a7c6f61ae36551d9bd3f9542",
+      "slot": 1
+    },
+    {
+      "arm": "B",
+      "guard_counts": {
+        "gil_releases": 458,
+        "installed": true,
+        "plain_calls": 50,
+        "state_calls": 408
+      },
+      "host_after_utc": "2026-09-23T18:52:20Z",
+      "host_before_utc": "2026-09-23T18:49:48Z",
+      "load_average_1m_after": 5.1806640625,
+      "load_average_1m_before": 4.36474609375,
+      "power_after": "Battery",
+      "power_before": "Battery",
+      "requests_disposed": 4,
+      "result_sha256": "7216f4145703ae8d051115e7cdece86c108906a763b00882d7c44d70d385812c",
+      "round": 1,
+      "scores_sha256": "cd4ccbac0405b4137f55785bd4bb04b7440d6324a7c6f61ae36551d9bd3f9542",
+      "slot": 2
+    },
+    {
+      "arm": "A",
+      "guard_counts": {
+        "gil_releases": 458,
+        "installed": true,
+        "plain_calls": 50,
+        "state_calls": 408
+      },
+      "host_after_utc": "2026-09-23T18:55:46Z",
+      "host_before_utc": "2026-09-23T18:52:56Z",
+      "load_average_1m_after": 5.53759765625,
+      "load_average_1m_before": 4.5107421875,
+      "power_after": "Battery",
+      "power_before": "Battery",
+      "requests_disposed": 4,
+      "result_sha256": "9530b44e6d4cd4a0ddaeae1754cf9ba7b3395ed1e44aa3b192422aca43b8f0b7",
+      "round": 1,
+      "scores_sha256": "cd4ccbac0405b4137f55785bd4bb04b7440d6324a7c6f61ae36551d9bd3f9542",
+      "slot": 3
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "source_sha256": "db694e9155f761e0cf54b4c6b8289a9f01caf3b6da22dfba7cbbfbee04ebad36",
+  "torch_checks": [
+    {
+      "name": "capture",
+      "sum_differences": 0,
+      "mean_differences": 0,
+      "rounded_norm_differences": 0
+    },
+    {
+      "name": "random128",
+      "sum_differences": 0,
+      "mean_differences": 0,
+      "rounded_norm_differences": 0
+    },
+    {
+      "name": "random1280",
+      "sum_differences": 0,
+      "mean_differences": 0,
+      "rounded_norm_differences": 0
+    },
+    {
+      "name": "scaled1280",
+      "sum_differences": 0,
+      "mean_differences": 0,
+      "rounded_norm_differences": 0
+    }
+  ],
+  "coreml": {
+    "CPU_ONLY": {
+      "sum": {
+        "different_elements": 0,
+        "max_abs": 0.0
+      },
+      "mean": {
+        "different_elements": 0,
+        "max_abs": 0.0
+      },
+      "inv": {
+        "different_elements": 0,
+        "max_abs": 0.0
+      },
+      "raw": {
+        "different_elements": 0,
+        "max_abs": 0.0
+      },
+      "rounded": {
+        "different_elements": 0,
+        "max_abs": 0.0
+      }
+    },
+    "CPU_AND_GPU": {
+      "sum": {
+        "different_elements": 0,
+        "max_abs": 0.0
+      },
+      "mean": {
+        "different_elements": 0,
+        "max_abs": 0.0
+      },
+      "inv": {
+        "different_elements": 0,
+        "max_abs": 0.0
+      },
+      "raw": {
+        "different_elements": 0,
+        "max_abs": 0.0
+      },
+      "rounded": {
+        "different_elements": 0,
+        "max_abs": 0.0
+      }
+    }
+  }
+}

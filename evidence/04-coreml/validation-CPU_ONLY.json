@@ -1,0 +1,592 @@
+{
+  "compute_units": "CPU_ONLY",
+  "actual_device_placement": "not profiled",
+  "load_seconds": {
+    "embedding": 1.4125455003231764,
+    "0": 1.3155479170382023,
+    "1": 1.309969374909997,
+    "2": 1.340313708409667,
+    "3": 1.3678897079080343,
+    "4": 1.3293577088043094,
+    "5": 1.346193291246891,
+    "6": 1.4437228748574853,
+    "7": 1.3138889158144593,
+    "8": 1.3368799574673176,
+    "9": 1.3063202081248164,
+    "10": 1.3028097916394472,
+    "11": 1.4156760005280375,
+    "head": 1.6148012913763523
+  },
+  "comparisons": [
+    {
+      "max_abs": 0.335080623626709,
+      "rmse": 0.017251051634464314,
+      "relative_rmse": 0.059451338181018214,
+      "cosine": 0.9997962067906337,
+      "name": "prompt0/scores",
+      "pass": false,
+      "top1_candidate": 151665,
+      "top1_reference": 151665,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt0/embedding_norm",
+      "pass": true
+    },
+    {
+      "max_abs": 1024.0,
+      "rmse": 22.22166138053008,
+      "relative_rmse": 0.00037751914993637835,
+      "cosine": 0.9999999287529027,
+      "name": "prompt0/layer_3",
+      "pass": true
+    },
+    {
+      "max_abs": 512.0,
+      "rmse": 20.77564665527971,
+      "relative_rmse": 0.0009235114647109275,
+      "cosine": 0.9999995735685562,
+      "name": "prompt0/layer_7",
+      "pass": true
+    },
+    {
+      "max_abs": 64.0,
+      "rmse": 1.9241223654819568,
+      "relative_rmse": 0.0022851572376625454,
+      "cosine": 0.9999973903516496,
+      "name": "prompt0/layer_11",
+      "pass": true
+    },
+    {
+      "max_abs": 320.0,
+      "rmse": 13.056806761953728,
+      "relative_rmse": 0.005251672839381898,
+      "cosine": 0.9999862432710603,
+      "name": "prompt0/layer_15",
+      "pass": true
+    },
+    {
+      "max_abs": 192.0,
+      "rmse": 12.389391247865653,
+      "relative_rmse": 0.00849007975688753,
+      "cosine": 0.9999639586825388,
+      "name": "prompt0/layer_19",
+      "pass": true
+    },
+    {
+      "max_abs": 4.0,
+      "rmse": 0.5173172715620421,
+      "relative_rmse": 0.013191061426476707,
+      "cosine": 0.9999130173852364,
+      "name": "prompt0/layer_23",
+      "pass": false
+    },
+    {
+      "max_abs": 2048.0,
+      "rmse": 85.45118558714489,
+      "relative_rmse": 0.004731986557473747,
+      "cosine": 0.9999888077952012,
+      "name": "prompt0/layer_27",
+      "pass": true
+    },
+    {
+      "max_abs": 2048.0,
+      "rmse": 75.831392775184,
+      "relative_rmse": 0.005984752115382443,
+      "cosine": 0.9999820916885278,
+      "name": "prompt0/layer_31",
+      "pass": true
+    },
+    {
+      "max_abs": 1280.0,
+      "rmse": 43.584210065771295,
+      "relative_rmse": 0.007577895218716079,
+      "cosine": 0.9999712921534962,
+      "name": "prompt0/layer_35",
+      "pass": true
+    },
+    {
+      "max_abs": 448.0,
+      "rmse": 22.620629631423338,
+      "relative_rmse": 0.008873028052759215,
+      "cosine": 0.9999606345027344,
+      "name": "prompt0/layer_39",
+      "pass": true
+    },
+    {
+      "max_abs": 192.0,
+      "rmse": 15.230681937403883,
+      "relative_rmse": 0.010851080190060836,
+      "cosine": 0.9999411354211432,
+      "name": "prompt0/layer_43",
+      "pass": false
+    },
+    {
+      "max_abs": 0.375,
+      "rmse": 0.02267303379177971,
+      "relative_rmse": 0.022673887577898063,
+      "cosine": 0.9997429383890353,
+      "name": "prompt0/final_hidden",
+      "pass": false
+    },
+    {
+      "max_abs": 0.11313772201538086,
+      "rmse": 0.0035391057045009657,
+      "relative_rmse": 0.01519079994469232,
+      "cosine": 0.9999183095762657,
+      "name": "prompt0/teacher0",
+      "pass": false,
+      "top1_candidate": 1654,
+      "top1_reference": 1654,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.1358482837677002,
+      "rmse": 0.003835600868752504,
+      "relative_rmse": 0.01369973711649094,
+      "cosine": 0.9999381274100814,
+      "name": "prompt0/teacher1",
+      "pass": false,
+      "top1_candidate": 1184,
+      "top1_reference": 1184,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.2459888458251953,
+      "rmse": 0.008333439476190214,
+      "relative_rmse": 0.022616019927237798,
+      "cosine": 0.9999252943748199,
+      "name": "prompt0/teacher2",
+      "pass": false,
+      "top1_candidate": 311,
+      "top1_reference": 311,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.22763347625732422,
+      "rmse": 0.01263981378528371,
+      "relative_rmse": 0.027800867671235453,
+      "cosine": 0.999905657838818,
+      "name": "prompt0/teacher3",
+      "pass": false,
+      "top1_candidate": 12564,
+      "top1_reference": 12564,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.2602066993713379,
+      "rmse": 0.004792549096727794,
+      "relative_rmse": 0.016711795789602194,
+      "cosine": 0.9998716849850513,
+      "name": "prompt1/scores",
+      "pass": false,
+      "top1_candidate": 151665,
+      "top1_reference": 151665,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "name": "prompt1/embedding_norm",
+      "pass": true
+    },
+    {
+      "max_abs": 512.0,
+      "rmse": 14.33652030960872,
+      "relative_rmse": 0.0002795742606085934,
+      "cosine": 0.9999999609191234,
+      "name": "prompt1/layer_3",
+      "pass": true
+    },
+    {
+      "max_abs": 512.0,
+      "rmse": 18.449625491690433,
+      "relative_rmse": 0.0009406658845945118,
+      "cosine": 0.9999995575738818,
+      "name": "prompt1/layer_7",
+      "pass": true
+    },
+    {
+      "max_abs": 64.0,
+      "rmse": 1.7127648153746557,
+      "relative_rmse": 0.0023249056854362333,
+      "cosine": 0.9999972978816772,
+      "name": "prompt1/layer_11",
+      "pass": true
+    },
+    {
+      "max_abs": 320.0,
+      "rmse": 12.55446966931115,
+      "relative_rmse": 0.0056257126434457235,
+      "cosine": 0.999984197220438,
+      "name": "prompt1/layer_15",
+      "pass": true
+    },
+    {
+      "max_abs": 192.0,
+      "rmse": 12.521807635369665,
+      "relative_rmse": 0.008944299376980044,
+      "cosine": 0.9999600051691433,
+      "name": "prompt1/layer_19",
+      "pass": true
+    },
+    {
+      "max_abs": 4.0,
+      "rmse": 0.4904139174575105,
+      "relative_rmse": 0.013235727721864352,
+      "cosine": 0.9999124116445093,
+      "name": "prompt1/layer_23",
+      "pass": false
+    },
+    {
+      "max_abs": 2048.0,
+      "rmse": 75.24150155158958,
+      "relative_rmse": 0.004765069586731171,
+      "cosine": 0.999988646991867,
+      "name": "prompt1/layer_27",
+      "pass": true
+    },
+    {
+      "max_abs": 2048.0,
+      "rmse": 66.93752282448473,
+      "relative_rmse": 0.006015134755245991,
+      "cosine": 0.999981909019764,
+      "name": "prompt1/layer_31",
+      "pass": true
+    },
+    {
+      "max_abs": 1280.0,
+      "rmse": 39.677043552567355,
+      "relative_rmse": 0.007693526202510317,
+      "cosine": 0.9999704061396734,
+      "name": "prompt1/layer_35",
+      "pass": true
+    },
+    {
+      "max_abs": 448.0,
+      "rmse": 21.054745394661477,
+      "relative_rmse": 0.008899332704144025,
+      "cosine": 0.9999604010956763,
+      "name": "prompt1/layer_39",
+      "pass": true
+    },
+    {
+      "max_abs": 192.0,
+      "rmse": 14.376887223526499,
+      "relative_rmse": 0.010717678891301012,
+      "cosine": 0.9999425640719837,
+      "name": "prompt1/layer_43",
+      "pass": false
+    },
+    {
+      "max_abs": 0.328125,
+      "rmse": 0.02199996410350994,
+      "relative_rmse": 0.02200075079334824,
+      "cosine": 0.999757975295713,
+      "name": "prompt1/final_hidden",
+      "pass": false
+    },
+    {
+      "max_abs": 0.10245108604431152,
+      "rmse": 0.002697089512805352,
+      "relative_rmse": 0.011967203798203496,
+      "cosine": 0.999940848203976,
+      "name": "prompt1/teacher0",
+      "pass": false,
+      "top1_candidate": 1654,
+      "top1_reference": 1654,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.22522687911987305,
+      "rmse": 0.007183431377078565,
+      "relative_rmse": 0.028852471356329203,
+      "cosine": 0.9998895378428385,
+      "name": "prompt1/teacher1",
+      "pass": false,
+      "top1_candidate": 1184,
+      "top1_reference": 1184,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.1463470458984375,
+      "rmse": 0.004525932519502068,
+      "relative_rmse": 0.014193515381015364,
+      "cosine": 0.9999266671352421,
+      "name": "prompt1/teacher2",
+      "pass": false,
+      "top1_candidate": 311,
+      "top1_reference": 311,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.11313772201538086,
+      "rmse": 0.0039706654582495554,
+      "relative_rmse": 0.00996977530816331,
+      "cosine": 0.9999604632331047,
+      "name": "prompt1/teacher3",
+      "pass": false,
+      "top1_candidate": 11625,
+      "top1_reference": 11625,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.14244842529296875,
+      "rmse": 0.006554295959977977,
+      "relative_rmse": 0.022412050635867785,
+      "cosine": 0.9999095106710784,
+      "name": "prompt2/scores",
+      "pass": false,
+      "top1_candidate": 151665,
+      "top1_reference": 151665,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt2/embedding_norm",
+      "pass": true
+    },
+    {
+      "max_abs": 512.0,
+      "rmse": 15.011846960868407,
+      "relative_rmse": 0.0002663704141580567,
+      "cosine": 0.9999999645234011,
+      "name": "prompt2/layer_3",
+      "pass": true
+    },
+    {
+      "max_abs": 512.0,
+      "rmse": 19.29440498770514,
+      "relative_rmse": 0.000895595976969592,
+      "cosine": 0.9999995989559836,
+      "name": "prompt2/layer_7",
+      "pass": true
+    },
+    {
+      "max_abs": 64.0,
+      "rmse": 1.8309125115700755,
+      "relative_rmse": 0.0022685090599747523,
+      "cosine": 0.9999974270553234,
+      "name": "prompt2/layer_11",
+      "pass": true
+    },
+    {
+      "max_abs": 320.0,
+      "rmse": 12.854627458779852,
+      "relative_rmse": 0.005331666226840967,
+      "cosine": 0.9999858007498864,
+      "name": "prompt2/layer_15",
+      "pass": true
+    },
+    {
+      "max_abs": 192.0,
+      "rmse": 12.486786277397282,
+      "relative_rmse": 0.008543505933501143,
+      "cosine": 0.9999635343429185,
+      "name": "prompt2/layer_19",
+      "pass": true
+    },
+    {
+      "max_abs": 4.0,
+      "rmse": 0.4990034019645886,
+      "relative_rmse": 0.012859188205898792,
+      "cosine": 0.9999173272773343,
+      "name": "prompt2/layer_23",
+      "pass": false
+    },
+    {
+      "max_abs": 2048.0,
+      "rmse": 81.05733995310972,
+      "relative_rmse": 0.004677673372903895,
+      "cosine": 0.9999890596369893,
+      "name": "prompt2/layer_27",
+      "pass": true
+    },
+    {
+      "max_abs": 2048.0,
+      "rmse": 70.53120989031447,
+      "relative_rmse": 0.005790203980216866,
+      "cosine": 0.9999832432214805,
+      "name": "prompt2/layer_31",
+      "pass": true
+    },
+    {
+      "max_abs": 1280.0,
+      "rmse": 41.467727132273595,
+      "relative_rmse": 0.007440250281682994,
+      "cosine": 0.999972321859566,
+      "name": "prompt2/layer_35",
+      "pass": true
+    },
+    {
+      "max_abs": 448.0,
+      "rmse": 21.879674326459487,
+      "relative_rmse": 0.008743386795415375,
+      "cosine": 0.9999617762587556,
+      "name": "prompt2/layer_39",
+      "pass": true
+    },
+    {
+      "max_abs": 192.0,
+      "rmse": 14.729227112408195,
+      "relative_rmse": 0.010654613425173471,
+      "cosine": 0.9999432482929629,
+      "name": "prompt2/layer_43",
+      "pass": false
+    },
+    {
+      "max_abs": 0.5625,
+      "rmse": 0.022763231945070378,
+      "relative_rmse": 0.022764302001867055,
+      "cosine": 0.9997408785037627,
+      "name": "prompt2/final_hidden",
+      "pass": false
+    },
+    {
+      "max_abs": 0.1814289093017578,
+      "rmse": 0.007381044462169377,
+      "relative_rmse": 0.032005811441049956,
+      "cosine": 0.9998820802947352,
+      "name": "prompt2/teacher0",
+      "pass": false,
+      "top1_candidate": 1654,
+      "top1_reference": 1654,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.2225942611694336,
+      "rmse": 0.0090444103622696,
+      "relative_rmse": 0.03383249740035776,
+      "cosine": 0.9998494851228108,
+      "name": "prompt2/teacher1",
+      "pass": false,
+      "top1_candidate": 1184,
+      "top1_reference": 1184,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.13442420959472656,
+      "rmse": 0.004398505513291695,
+      "relative_rmse": 0.01180103168576925,
+      "cosine": 0.9999453475369899,
+      "name": "prompt2/teacher2",
+      "pass": false,
+      "top1_candidate": 311,
+      "top1_reference": 311,
+      "top1_match": true
+    },
+    {
+      "max_abs": 0.14839792251586914,
+      "rmse": 0.0038814172754009614,
+      "relative_rmse": 0.008956494804553603,
+      "cosine": 0.9999601165762546,
+      "name": "prompt2/teacher3",
+      "pass": false,
+      "top1_candidate": 11625,
+      "top1_reference": 11625,
+      "top1_match": true
+    }
+  ],
+  "checks": {
+    "request0_disposed": true,
+    "request0_repeat_exact": true,
+    "request1_disposed": true,
+    "request1_repeat_exact": true,
+    "request2_disposed": true,
+    "request2_repeat_exact": true,
+    "padded_id_rejected": true,
+    "empty_rejected": true,
+    "foreign_owner_rejected": true,
+    "overflow_rejected": true,
+    "interrupt_invalidates": true,
+    "invalid_request_rejected": true,
+    "closed_request_rejected": true,
+    "explicit_stop": true,
+    "stream_callback": true,
+    "generation_cancellation_disposes": true,
+    "generation_budget_rejected": true
+  },
+  "thresholds_changed": false,
+  "stop_test": {
+    "backend": "Core ML",
+    "compute_units": "CPU_ONLY",
+    "fidelity": "UNQUALIFIED",
+    "prompt_ids": [
+      151643,
+      151644,
+      8948,
+      198,
+      2610,
+      525,
+      264,
+      10950,
+      17847,
+      624,
+      5501,
+      2874,
+      3019,
+      553,
+      3019,
+      11,
+      323,
+      2182,
+      697,
+      1590,
+      4226,
+      2878,
+      1124,
+      79075,
+      46391,
+      151645,
+      198,
+      151644,
+      872,
+      198,
+      46254,
+      220,
+      16,
+      22,
+      353,
+      220,
+      17,
+      18,
+      13,
+      151645,
+      198,
+      151644,
+      77091,
+      198
+    ],
+    "generated_ids": [
+      151665
+    ],
+    "generated_tokens": 1,
+    "finish_reason": "stop_token",
+    "complete": true,
+    "stop_token_ids": [
+      151645,
+      151665
+    ],
+    "completion_policy": "published_eos_plus_explicit_stops",
+    "greedy": true,
+    "seed": 0,
+    "temperature": null,
+    "top_p": null,
+    "step_seconds": [
+      0.8925074161961675
+    ],
+    "elapsed_seconds": 0.8925429582595825
+  },
+  "elapsed_seconds": 45.84766983985901,
+  "numerical_pass": false,
+  "lifecycle_pass": true
+}

@@ -1,0 +1,121 @@
+{
+  "script_sha256": "aa5f9ed20f9cbfa10fbae6dabcca274e3018e90aeb8e19ab6689db4c77156f38",
+  "current": "artifacts/04d-cpu/full-candidate-2/0.mlpackage",
+  "previous": "artifacts/04d-gpu/xsa/shard0.mlpackage",
+  "prompts": [
+    [
+      {
+        "start": 0,
+        "end": 32,
+        "y": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        },
+        "tap23_out": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        }
+      },
+      {
+        "start": 32,
+        "end": 44,
+        "y": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        },
+        "tap23_out": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        }
+      },
+      {
+        "start": 44,
+        "end": 45,
+        "y": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        },
+        "tap23_out": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        }
+      }
+    ],
+    [
+      {
+        "start": 0,
+        "end": 32,
+        "y": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        },
+        "tap23_out": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        }
+      },
+      {
+        "start": 32,
+        "end": 58,
+        "y": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        },
+        "tap23_out": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        }
+      },
+      {
+        "start": 58,
+        "end": 59,
+        "y": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        },
+        "tap23_out": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        }
+      }
+    ],
+    [
+      {
+        "start": 0,
+        "end": 32,
+        "y": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        },
+        "tap23_out": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        }
+      },
+      {
+        "start": 32,
+        "end": 48,
+        "y": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        },
+        "tap23_out": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        }
+      },
+      {
+        "start": 48,
+        "end": 49,
+        "y": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        },
+        "tap23_out": {
+          "different_elements": 0,
+          "max_abs": 0.0
+        }
+      }
+    ]
+  ]
+}

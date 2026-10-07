@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "passed": true,
+  "expectation": "GIL-held synthetic child times out; released child completes",
+  "script_sha256": "881a9c33db325840430f420efd834a44d477547553db3611f8f1cce8c304ee5d",
+  "guard_source_sha256": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+  "guard_binary_sha256": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+  "rows": [
+    {
+      "mode": "holding",
+      "timed_out": true,
+      "exit_code": null,
+      "stdout": null,
+      "stderr": null,
+      "seconds": 3.003738750703633
+    },
+    {
+      "mode": "released",
+      "timed_out": false,
+      "exit_code": 0,
+      "stdout": "{\"mode\": \"released\", \"return_code\": 0, \"workers\": 1}\n",
+      "stderr": "",
+      "seconds": 0.05292545910924673
+    }
+  ]
+}

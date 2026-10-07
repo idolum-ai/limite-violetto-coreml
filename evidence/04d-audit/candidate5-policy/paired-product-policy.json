@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "scope": "paired-product-only aggregator policy checks; no Core ML inference",
+  "policy": "paired-product",
+  "policy_constraints": {
+    "paired_product_flag_required": true,
+    "paired_product_helper_identity_required": true,
+    "all_12_group_commands_require_product_paired": true,
+    "tiny_sequential_flag_forbidden": true,
+    "tiny_sequential_command_forbidden": true
+  },
+  "py_compile_pass": true,
+  "unit_tests": {
+    "suite": "scripts.test_summarize_cpu_milestone",
+    "passed": 10,
+    "failed": 0
+  },
+  "source_sha256": {
+    "scripts/summarize_cpu_milestone.py": "42969e531fdff053f47a2a1c9448a403f92351f9295d7210a28e1bbab8eea17a",
+    "scripts/test_summarize_cpu_milestone.py": "54bcd8d54829aec41ef28fe2785c266d49f81ef82caedc426de8c436cc1ea08f",
+    "coreml_port/paired_product.py": "9145720c24d706940ddc7039521a3cd76b8706419e964070730bd0f81dbe59e3",
+    "coreml_port/tiny_scores.py": "f5af4d2e7efa16348483fff087d98c4fdaae3cc2adae870066e2a726c2f4a180"
+  },
+  "candidate4_rejection": {
+    "provenance_pass": false,
+    "rejects_missing_paired_flag": true,
+    "rejects_missing_helper": true,
+    "rejects_group_commands_without_paired_switch": true
+  },
+  "qualification_note": "This validates policy enforcement only. Candidate5 paired-product arithmetic remains under full numerical qualification."
+}

@@ -1,0 +1,229 @@
+{
+  "corrections": 31147,
+  "cpu_reference_preservation": true,
+  "decision": "Host finite-domain qualification only; native externally supplied-seed component gate required next",
+  "exact_identity_checks": 249176,
+  "implementation_qualified": "Torch host helper only; MIL expression/native backend remain unqualified",
+  "inputs": {
+    "denominator_bytes_sha256": "600699eb74b8781eb49171eb260cd1378fcea3151ddd723e9100b15195b52347",
+    "path": "evidence/06f-gpu-reciprocal/host-1/inputs.npz",
+    "prior_cases": [
+      {
+        "archive": {
+          "path": "evidence/06e-gpu-normalization/reciprocal-host-1/warm-common.npz",
+          "sha256": "79e45875961e10538ceb20d65099a2e81fb45fa653691b66916bf71772736436"
+        },
+        "name": "warm-common",
+        "shape": [
+          1,
+          12,
+          1
+        ]
+      },
+      {
+        "archive": {
+          "path": "evidence/06e-gpu-normalization/reciprocal-host-1/cold-cpu.npz",
+          "sha256": "1f7e244fe5f2ae0333c1c5231711923e496de1145e378dbbcc13952bfcf93cce"
+        },
+        "name": "cold-cpu",
+        "shape": [
+          1,
+          32,
+          1
+        ]
+      },
+      {
+        "archive": {
+          "path": "evidence/06e-gpu-normalization/reciprocal-host-1/cold-gpu.npz",
+          "sha256": "7ce7c029908fd83032440ad993ac63c055dfb144c5ca996e41f0c1b7e7612b9b"
+        },
+        "name": "cold-gpu",
+        "shape": [
+          1,
+          32,
+          1
+        ]
+      },
+      {
+        "archive": {
+          "path": "evidence/06e-gpu-normalization/reciprocal-host-1/directed32.npz",
+          "sha256": "f7d0ecc587086368e4163f69ab60e13e6ecb976bb07785882143eccd542da09e"
+        },
+        "name": "directed32",
+        "shape": [
+          1,
+          32,
+          1
+        ]
+      }
+    ],
+    "sha256": "20c4806961085a19fb714d66a1beb824f6cf63bd5ae6796f5dbbb7e70de505b3"
+  },
+  "native_building": false,
+  "native_calls": 0,
+  "passed": true,
+  "pins": {
+    "evidence/06e-gpu-normalization/reciprocal-host-1/host-preflight.json": "ea705cefe8bb118632088c63afa3c4f8b850a15b4180995c34079c47be64dd5b",
+    "evidence/06f-gpu-reciprocal/candidate-design.md": "cc0b6fc5be43126478de88f267f938408f1bbc162db3bde4e276545220f3070e",
+    "scripts/boundary_reciprocal.py": "4edabf62871e35c834185e586e2f7253f6feeb48a1db9f8daae4596d9471e263",
+    "scripts/preflight_boundary_reciprocal.py": "c40a23ea6c3944a56d73f331630200010d0ca99e29d6dc1c00c3b217fb17105b",
+    "scripts/probe_reciprocal_refinement.py": "8eff2de8fd978fd850c8ab71ec1939b0c6c10b25800dd6c3b254052b11ddcaa3"
+  },
+  "runs": [
+    {
+      "archive": {
+        "path": "evidence/06f-gpu-reciprocal/host-1/run-0.npz",
+        "sha256": "7e1a06e7d6d91a448a14ee5cc2b7135aeff8667eff578559d6521b9d56e9ef50"
+      },
+      "comparison": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "elements": 10353,
+      "expansion_identities_exact": true,
+      "midpoint_comparisons_exact": true,
+      "name": "nearest",
+      "neighbor_spacing_and_parity_exact": true,
+      "supplied_seed_max_ulp_from_nearest": 0
+    },
+    {
+      "archive": {
+        "path": "evidence/06f-gpu-reciprocal/host-1/run-1.npz",
+        "sha256": "ab434e31ae7e5600d31cb1811a97bb1151d9e42b2178fe7d76b9057fae9de60c"
+      },
+      "comparison": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "elements": 10353,
+      "expansion_identities_exact": true,
+      "midpoint_comparisons_exact": true,
+      "name": "previous",
+      "neighbor_spacing_and_parity_exact": true,
+      "supplied_seed_max_ulp_from_nearest": 1
+    },
+    {
+      "archive": {
+        "path": "evidence/06f-gpu-reciprocal/host-1/run-2.npz",
+        "sha256": "48eb35afc0a3c92a554379be6d7616404eabf2514f2e97602bafa0afaf810e50"
+      },
+      "comparison": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "elements": 10353,
+      "expansion_identities_exact": true,
+      "midpoint_comparisons_exact": true,
+      "name": "following",
+      "neighbor_spacing_and_parity_exact": true,
+      "supplied_seed_max_ulp_from_nearest": 1
+    },
+    {
+      "archive": {
+        "path": "evidence/06f-gpu-reciprocal/host-1/run-3.npz",
+        "sha256": "499c6c67d7e3ef850fd7aa908aa9460e98d7196c07130d6bf72d1ecfaf4cc96b"
+      },
+      "comparison": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "elements": 12,
+      "expansion_identities_exact": true,
+      "midpoint_comparisons_exact": true,
+      "name": "warm-common/saved_CPU",
+      "neighbor_spacing_and_parity_exact": true,
+      "supplied_seed_max_ulp_from_nearest": 0
+    },
+    {
+      "archive": {
+        "path": "evidence/06f-gpu-reciprocal/host-1/run-4.npz",
+        "sha256": "07ea71909e1a6113368320fc37ac81414067bfce8f49646860e580626f106c8e"
+      },
+      "comparison": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "elements": 12,
+      "expansion_identities_exact": true,
+      "midpoint_comparisons_exact": true,
+      "name": "warm-common/saved_GPU",
+      "neighbor_spacing_and_parity_exact": true,
+      "supplied_seed_max_ulp_from_nearest": 1
+    },
+    {
+      "archive": {
+        "path": "evidence/06f-gpu-reciprocal/host-1/run-5.npz",
+        "sha256": "a6b68f0433a8f1dba44f898d9d072cbf3626a5266e8af76065cf0b8c7da6eb50"
+      },
+      "comparison": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "elements": 32,
+      "expansion_identities_exact": true,
+      "midpoint_comparisons_exact": true,
+      "name": "cold-cpu/saved_CPU",
+      "neighbor_spacing_and_parity_exact": true,
+      "supplied_seed_max_ulp_from_nearest": 0
+    },
+    {
+      "archive": {
+        "path": "evidence/06f-gpu-reciprocal/host-1/run-6.npz",
+        "sha256": "cfb852cd18f7554419fd39b61cd698302e6375dc699ec091cc5795b3772e093d"
+      },
+      "comparison": {
+        "bitwise_exact": true,
+        "different_elements": 0,
+        "examples": [],
+        "finite": true,
+        "max_abs": 0.0
+      },
+      "elements": 32,
+      "expansion_identities_exact": true,
+      "midpoint_comparisons_exact": true,
+      "name": "cold-gpu/saved_GPU",
+      "neighbor_spacing_and_parity_exact": true,
+      "supplied_seed_max_ulp_from_nearest": 1
+    }
+  ],
+  "runtime_fp64": false,
+  "seconds": 2.208946750499308,
+  "status": "completed",
+  "test_plan": {
+    "boundary_centers": [
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "boundary_inputs": 2053,
+    "boundary_window_radius_ulp": 256,
+    "denominator_entries": 10353,
+    "neighbor_seed_runs": 31059,
+    "prior_inputs": 108,
+    "random_distribution": "uniform positive FP32 bit patterns in inclusive[0.5,8]",
+    "random_inputs": 8192,
+    "random_seed": 20260924,
+    "saved_native_seed_runs": 88,
+    "total_corrections": 31147
+  }
+}

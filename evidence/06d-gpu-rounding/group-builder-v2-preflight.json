@@ -1,0 +1,60 @@
+{
+  "status": "completed",
+  "passed": true,
+  "builder_source": "scripts/build_signed_even_group_v2.py",
+  "helper_source": "scripts/signed_even_round_v2.py",
+  "builder_sha256": "04a1b046f6fc7c485b05134077def896555a5cb03984c1a6877c4c5e3769c2f9",
+  "helper_sha256": "298afbcd964531c0cb39a47e3b939da5306e9af585eec0e761a54d78252cd490",
+  "native_compile_load_predict": false,
+  "package_artifact_created": false,
+  "unknown_site_rejected": true,
+  "template_operations": {
+    "abs": 1,
+    "floor": 2,
+    "sub": 2,
+    "const": 7,
+    "real_div": 2,
+    "mul": 2,
+    "equal": 2,
+    "greater": 1,
+    "cast": 1,
+    "select": 2,
+    "add": 1
+  },
+  "cases": [
+    {
+      "selected_sites": "all",
+      "passed": true,
+      "original_round_count": 131,
+      "replaced_round_count": 131,
+      "remaining_round_count": 0,
+      "unchanged_operation_count": 42367,
+      "all_other_operations_byte_identical": true,
+      "all_non_operation_metadata_identical": true,
+      "original_output_names_and_types_preserved": true,
+      "weights_state_interfaces_and_state_operations_unchanged": true,
+      "only_allowlisted_pure_operations_inserted": true,
+      "topological_references_valid": true,
+      "numerical_qualification": "not performed by structural builder",
+      "domain": "Finite FP32 quotient inputs; full Q exponent/step computation unchanged; numerical/domain gates separate"
+    },
+    {
+      "selected_sites": [
+        "var_1623"
+      ],
+      "passed": true,
+      "original_round_count": 131,
+      "replaced_round_count": 1,
+      "remaining_round_count": 130,
+      "unchanged_operation_count": 42497,
+      "all_other_operations_byte_identical": true,
+      "all_non_operation_metadata_identical": true,
+      "original_output_names_and_types_preserved": true,
+      "weights_state_interfaces_and_state_operations_unchanged": true,
+      "only_allowlisted_pure_operations_inserted": true,
+      "topological_references_valid": true,
+      "numerical_qualification": "not performed by structural builder",
+      "domain": "Finite FP32 quotient inputs; full Q exponent/step computation unchanged; numerical/domain gates separate"
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "script_sha256": "f9bcfb1be5fc77d0df6981e1d4ecc3db626b6be488e5afcc62d7907df7381fda",
+  "source_sha256": {
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227"
+  },
+  "compute_units": "CPU_ONLY",
+  "capacity": 2048,
+  "prompts": [
+    {
+      "index": 0,
+      "prompt_tokens": 44,
+      "steps": [
+        {
+          "kind": "prefill",
+          "start": 0,
+          "end": 32,
+          "y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "tap23_out": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "prefill",
+          "start": 32,
+          "end": 44,
+          "y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "different_elements": 0
+          },
+          "tap23_out": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "decode",
+          "start": 44,
+          "end": 45,
+          "y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "tap23_out": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          }
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "prompt_tokens": 58,
+      "steps": [
+        {
+          "kind": "prefill",
+          "start": 0,
+          "end": 32,
+          "y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "different_elements": 0
+          },
+          "tap23_out": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "prefill",
+          "start": 32,
+          "end": 58,
+          "y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "different_elements": 0
+          },
+          "tap23_out": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "decode",
+          "start": 58,
+          "end": 59,
+          "y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "tap23_out": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "prompt_tokens": 48,
+      "steps": [
+        {
+          "kind": "prefill",
+          "start": 0,
+          "end": 32,
+          "y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "different_elements": 0
+          },
+          "tap23_out": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "prefill",
+          "start": 32,
+          "end": 48,
+          "y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "tap23_out": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "decode",
+          "start": 48,
+          "end": 49,
+          "y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "tap23_out": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          }
+        }
+      ]
+    }
+  ],
+  "torch_comparison": [
+    {
+      "prompt": 0,
+      "kind": "prefill",
+      "start": 0,
+      "end": 32,
+      "y": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0,
+        "different_elements": 0
+      },
+      "tap23_out": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000000002,
+        "different_elements": 0
+      }
+    },
+    {
+      "prompt": 0,
+      "kind": "prefill",
+      "start": 32,
+      "end": 44,
+      "y": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000000002,
+        "different_elements": 0
+      },
+      "tap23_out": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0,
+        "different_elements": 0
+      }
+    },
+    {
+      "prompt": 0,
+      "kind": "decode",
+      "start": 44,
+      "end": 45,
+      "y": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0,
+        "different_elements": 0
+      },
+      "tap23_out": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0,
+        "different_elements": 0
+      }
+    },
+    {
+      "prompt": 1,
+      "kind": "prefill",
+      "start": 0,
+      "end": 32,
+      "y": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000000002,
+        "different_elements": 0
+      },
+      "tap23_out": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0,
+        "different_elements": 0
+      }
+    },
+    {
+      "prompt": 1,
+      "kind": "prefill",
+      "start": 32,
+      "end": 58,
+      "y": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999999,
+        "different_elements": 0
+      },
+      "tap23_out": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999999,
+        "different_elements": 0
+      }
+    },
+    {
+      "prompt": 1,
+      "kind": "decode",
+      "start": 58,
+      "end": 59,
+      "y": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0,
+        "different_elements": 0
+      },
+      "tap23_out": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0,
+        "different_elements": 0
+      }
+    },
+    {
+      "prompt": 2,
+      "kind": "prefill",
+      "start": 0,
+      "end": 32,
+      "y": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999999,
+        "different_elements": 0
+      },
+      "tap23_out": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999999,
+        "different_elements": 0
+      }
+    },
+    {
+      "prompt": 2,
+      "kind": "prefill",
+      "start": 32,
+      "end": 48,
+      "y": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0,
+        "different_elements": 0
+      },
+      "tap23_out": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999998,
+        "different_elements": 0
+      }
+    },
+    {
+      "prompt": 2,
+      "kind": "decode",
+      "start": 48,
+      "end": 49,
+      "y": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0,
+        "different_elements": 0
+      },
+      "tap23_out": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0,
+        "different_elements": 0
+      }
+    }
+  ],
+  "decode_token": 16,
+  "conversion_seconds": 52.9173858165741,
+  "package_files_sha256": {
+    "Data/com.apple.CoreML/model.mlmodel": "4ae1d0fe5f73af42c6e9649d1e2c8d65d34ddd7d5bcfa85016071d8f09166321",
+    "Data/com.apple.CoreML/weights/weight.bin": "e921219af290d07b281decd75878c0872e6dca367043c61d4e7f00f2b36fc0e9",
+    "Manifest.json": "0e04e87f379e98bd84abc783b65c263c3fa6035125fb00ed8f128c34d2313261"
+  },
+  "torch_all_exact": true,
+  "coreml_all_exact": true
+}

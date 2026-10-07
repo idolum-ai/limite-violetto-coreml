@@ -1,0 +1,30 @@
+{
+  "status": "planned_not_executed",
+  "reason": "All15 full-model GPU-policy score checks exceed the unchanged0.04 limit; first observed hidden-limit crossing is layer19 in all3 prompts.",
+  "scope": "One frozen prompt, original sealed candidate6; localize introduced versus inherited compute-policy drift before attempting GPU integration.",
+  "fixture": {
+    "path": "evidence/01-reference/local-input-validation.json",
+    "sha256": "54ce299bdc107b3db80a2a389283ea787f7801a4f51a1ae2feed0a6dfaee7490",
+    "case_index": 0,
+    "input_length": 44
+  },
+  "gates": [
+    {
+      "id": "G1",
+      "requirement": "Capture identical group inputs, all8 starting states and outputs for the exact original prompt; preserve source/cache/runtime identity."
+    },
+    {
+      "id": "G2",
+      "requirement": "Replay shared inputs/states under CPU_ONLY and CPU_AND_GPU through group4; separate local policy differences from accumulated upstream/state differences. Retain output and active-cache arrays, not only summary metrics."
+    },
+    {
+      "id": "G3",
+      "requirement": "Localize the first difference before instrumenting individual operations. Any instrumented clone must first reproduce the uninstrumented endpoint under each policy; otherwise localization is inconclusive."
+    },
+    {
+      "id": "G4",
+      "requirement": "Record actual device placement if obtainable; permitted compute units alone are insufficient. A candidate fix must rerun the original full-model short gate unchanged before broader GPU qualification."
+    }
+  ],
+  "non_adoption": "No GPU/ANE adoption, tolerance change or claim that layer19 caused the error."
+}

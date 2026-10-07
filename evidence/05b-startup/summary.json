@@ -1,0 +1,91 @@
+{
+  "status": "completed",
+  "passed": true,
+  "scope": "Pinned-host single stateful group0; cache-conditioned fresh-process measurements; not full-pipeline qualification.",
+  "attempt": "group0-1/results.json",
+  "candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "source_unchanged": true,
+  "compiled_artifact_unchanged": true,
+  "explicit_compile_seconds": 1.8626511674374342,
+  "compiled_bytes": 278311875,
+  "package_constructor_seconds": [
+    18.667903042398393,
+    18.838154791854322,
+    18.76377245783806
+  ],
+  "first_compiled_constructor_seconds": 16.63850949984044,
+  "subsequent_compiled_constructor_seconds": [
+    0.35143341682851315,
+    0.36194133292883635
+  ],
+  "subsequent_constructor_speedup_median_ratio": 52.605653520034046,
+  "package_entry_to_loaded_seconds": [
+    20.345297625288367,
+    20.47813175059855,
+    20.405963708646595
+  ],
+  "subsequent_compiled_entry_to_loaded_seconds": [
+    2.0081338323652744,
+    2.004928625188768
+  ],
+  "cross_loader_exact": {
+    "outputs.npz": true,
+    "state-after.npz": true
+  },
+  "replays": {
+    "replay-package": {
+      "passed": true,
+      "native_y_exact": true,
+      "max_native_y_error": 0.0,
+      "independent_state_repeat_exact": true,
+      "independent_cache_repeat_exact": true,
+      "guard_initial": {
+        "installed": true,
+        "plain_calls": 0,
+        "state_calls": 0,
+        "gil_releases": 0
+      },
+      "guard_final": {
+        "installed": true,
+        "plain_calls": 0,
+        "state_calls": 2,
+        "gil_releases": 2
+      },
+      "prediction_seconds": [
+        0.5569317089393735,
+        0.5099739162251353
+      ],
+      "python_references_released": true
+    },
+    "replay-compiled": {
+      "passed": true,
+      "native_y_exact": true,
+      "max_native_y_error": 0.0,
+      "independent_state_repeat_exact": true,
+      "independent_cache_repeat_exact": true,
+      "guard_initial": {
+        "installed": true,
+        "plain_calls": 0,
+        "state_calls": 0,
+        "gil_releases": 0
+      },
+      "guard_final": {
+        "installed": true,
+        "plain_calls": 0,
+        "state_calls": 2,
+        "gil_releases": 2
+      },
+      "prediction_seconds": [
+        0.5627856673672795,
+        0.5490409582853317
+      ],
+      "python_references_released": true
+    }
+  },
+  "gates": {
+    "C1": "PASS explicit compile, source/compiled identity preserved",
+    "C2": "PASS bounded fresh-process load and state-construction observations",
+    "C3": "PASS native y, independent repeats, cross-loader outputs and all updated KV state exact",
+    "C4": "PASS supports expanding to an isolated full-pipeline compiled loader and requalification; no steady-state speedup established"
+  }
+}

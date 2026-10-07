@@ -1,0 +1,198 @@
+{
+  "ids": [
+    87555,
+    130664,
+    114854
+  ],
+  "compute_units": "CPU_ONLY",
+  "query_row_policy": "front-pad score rows min(32,last_absolute_position+1); weighted product actual query rows",
+  "key_capacity": 2048,
+  "source_sha256": {
+    "scripts/gpu_tiny3_productrows_group8.py": "a0947e40b8fbcfe8e4c6f076e4d844c3e10dc7fccceb66722bd911c79db5aa10",
+    "scripts/gpu_dynamic_productrows_attention.py": "e1abf47c3f1f31f7e5ff4981de698c45d5cb0de1bc25fd6a710d2d43349d99da",
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227",
+    "coreml_port/bf16_gelu.py": "69761c7b2ebd7fe158109092abe058d204fd965958cc74652e7747ac4bb82624"
+  },
+  "status": "complete",
+  "prefix_group7_vs_reference_layer31": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "torch_candidate_y_vs_reference_layer35": {
+    "different_elements": 789,
+    "max_abs": 80.0,
+    "first_differences": [
+      {
+        "index": [
+          0,
+          2,
+          3
+        ],
+        "actual": 173.0,
+        "expected": 161.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          7
+        ],
+        "actual": 5120.0,
+        "expected": 5088.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          8
+        ],
+        "actual": -496.0,
+        "expected": -488.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          9
+        ],
+        "actual": 1264.0,
+        "expected": 1272.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          10
+        ],
+        "actual": -4.0,
+        "expected": 4.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          11
+        ],
+        "actual": 6304.0,
+        "expected": 6368.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          12
+        ],
+        "actual": 1528.0,
+        "expected": 1520.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          13
+        ],
+        "actual": -276.0,
+        "expected": -282.0
+      }
+    ]
+  },
+  "package_files_sha256": {
+    "Data/com.apple.CoreML/model.mlmodel": "b5fe320fd4b7398cf25654c300e84a55baeb69cf6b5f9a89cf0e3d13fc6c2fef",
+    "Data/com.apple.CoreML/weights/weight.bin": "84ce7be4b7dddc570abe48dc5b87b809f7f7ffec0d132c649fb52d3beb884ac2",
+    "Manifest.json": "9d34ea35f6d72b070f963bfb6576d5f88808b1d43943cabce71c741425a37c50"
+  },
+  "coreml_y_vs_reference_layer35": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_tap23_vs_reference": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "baseline_candidate3_y_vs_reference_layer35": {
+    "different_elements": 789,
+    "max_abs": 80.0,
+    "first_differences": [
+      {
+        "index": [
+          0,
+          2,
+          3
+        ],
+        "actual": 173.0,
+        "expected": 161.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          7
+        ],
+        "actual": 5120.0,
+        "expected": 5088.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          8
+        ],
+        "actual": -496.0,
+        "expected": -488.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          9
+        ],
+        "actual": 1264.0,
+        "expected": 1272.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          10
+        ],
+        "actual": -4.0,
+        "expected": 4.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          11
+        ],
+        "actual": 6304.0,
+        "expected": 6368.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          12
+        ],
+        "actual": 1528.0,
+        "expected": 1520.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          13
+        ],
+        "actual": -276.0,
+        "expected": -282.0
+      }
+    ]
+  }
+}

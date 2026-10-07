@@ -1,0 +1,5 @@
+{
+  "pass": true,
+  "error": "Model root must be a real directory: <TEMP_ROOT>/tmpvkypb3z5/link",
+  "scope": "runtime rejects symbolic candidate root before MLModel load"
+}

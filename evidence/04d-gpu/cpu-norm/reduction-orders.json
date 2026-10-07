@@ -1,0 +1,63 @@
+{
+  "input_sha256": "1a10b0e0b08c5519e1916f91da7241c659e79737d961c08a50f5718843f5333d",
+  "torch_sum_times_factor": {
+    "different_rows": 5,
+    "max_abs": 0.00390625,
+    "row9": 36014.96484375,
+    "row9_want": 36014.9609375
+  },
+  "torch_sum_divisor": {
+    "different_rows": 0,
+    "max_abs": 0.0,
+    "row9": 36014.9609375,
+    "row9_want": 36014.9609375
+  },
+  "vec4-balanced-linear": {
+    "different_rows": 15,
+    "max_abs": 256.0,
+    "row9": 36014.9609375,
+    "row9_want": 36014.9609375
+  },
+  "vec4-balanced-balanced": {
+    "different_rows": 18,
+    "max_abs": 256.0,
+    "row9": 36014.96484375,
+    "row9_want": 36014.9609375
+  },
+  "vec4-linear-linear": {
+    "different_rows": 17,
+    "max_abs": 256.0,
+    "row9": 36014.96484375,
+    "row9_want": 36014.9609375
+  },
+  "vec4-linear-balanced": {
+    "different_rows": 16,
+    "max_abs": 256.0,
+    "row9": 36014.96484375,
+    "row9_want": 36014.9609375
+  },
+  "vec8-balanced-linear": {
+    "different_rows": 14,
+    "max_abs": 128.0,
+    "row9": 36014.96484375,
+    "row9_want": 36014.9609375
+  },
+  "vec8-balanced-balanced": {
+    "different_rows": 13,
+    "max_abs": 128.0,
+    "row9": 36014.96484375,
+    "row9_want": 36014.9609375
+  },
+  "vec8-linear-linear": {
+    "different_rows": 16,
+    "max_abs": 128.0,
+    "row9": 36014.96484375,
+    "row9_want": 36014.9609375
+  },
+  "vec8-linear-balanced": {
+    "different_rows": 12,
+    "max_abs": 128.0,
+    "row9": 36014.96484375,
+    "row9_want": 36014.9609375
+  }
+}

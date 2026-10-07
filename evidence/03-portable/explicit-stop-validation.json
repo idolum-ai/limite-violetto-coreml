@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "complete_under_explicit_policy": true,
+    "both_stop_ids_recorded": true,
+    "same_sampled_prefix": true,
+    "ends_at_first_tokenizer_eos": true,
+    "correct_boxed_answer_after_think": true
+  },
+  "passed": true,
+  "generated_tokens": 500,
+  "scope": "Local policy and arithmetic smoke; original CUDA/model fidelity not established"
+}

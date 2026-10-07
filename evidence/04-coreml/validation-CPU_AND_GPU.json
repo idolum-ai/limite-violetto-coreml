@@ -1,0 +1,637 @@
+{
+  "compute_units": "CPU_AND_GPU",
+  "actual_device_placement": "not profiled",
+  "load_seconds": {
+    "embedding": 3.778483333066106,
+    "0": 1.5182604165747762,
+    "1": 1.54692358430475,
+    "2": 1.4968062499538064,
+    "3": 1.5396097088232636,
+    "4": 1.6434733755886555,
+    "5": 1.5749232089146972,
+    "6": 1.679801458492875,
+    "7": 1.568740083836019,
+    "8": 1.472368124872446,
+    "9": 1.5584617080166936,
+    "10": 1.5818969579413533,
+    "11": 1.750776625238359,
+    "head": 1.713785583153367
+  },
+  "comparisons": [
+    {
+      "max_abs": 0.31061744689941406,
+      "rmse": 0.013601169176136001,
+      "relative_rmse": 0.046285420869013535,
+      "cosine": 0.9998380752785774,
+      "name": "prompt0/scores",
+      "pass": false,
+      "top1_candidate": 151665,
+      "top1_reference": 151665,
+      "top1_match": true,
+      "reference_margin": 15.04189395904541,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt0/embedding_norm",
+      "pass": true
+    },
+    {
+      "max_abs": 8192.0,
+      "rmse": 84.88123970809217,
+      "relative_rmse": 0.0014416931991402741,
+      "cosine": 0.9999989865679267,
+      "name": "prompt0/layer_3",
+      "pass": true
+    },
+    {
+      "max_abs": 4096.0,
+      "rmse": 46.0585856104216,
+      "relative_rmse": 0.0020464825279222112,
+      "cosine": 0.999997999797841,
+      "name": "prompt0/layer_7",
+      "pass": true
+    },
+    {
+      "max_abs": 256.0,
+      "rmse": 4.389115991949773,
+      "relative_rmse": 0.005200171019685216,
+      "cosine": 0.9999892139425771,
+      "name": "prompt0/layer_11",
+      "pass": true
+    },
+    {
+      "max_abs": 1024.0,
+      "rmse": 20.433796344112796,
+      "relative_rmse": 0.008186990570622318,
+      "cosine": 0.9999729756353538,
+      "name": "prompt0/layer_15",
+      "pass": true
+    },
+    {
+      "max_abs": 384.0,
+      "rmse": 15.525434868346903,
+      "relative_rmse": 0.010594792462416383,
+      "cosine": 0.9999524591084816,
+      "name": "prompt0/layer_19",
+      "pass": false
+    },
+    {
+      "max_abs": 4.0,
+      "rmse": 0.5677307596293206,
+      "relative_rmse": 0.014437461603669294,
+      "cosine": 0.9998988277625807,
+      "name": "prompt0/layer_23",
+      "pass": false
+    },
+    {
+      "max_abs": 5120.0,
+      "rmse": 123.63092151426065,
+      "relative_rmse": 0.006827169979641434,
+      "cosine": 0.9999803181323352,
+      "name": "prompt0/layer_27",
+      "pass": true
+    },
+    {
+      "max_abs": 4096.0,
+      "rmse": 105.96107345244745,
+      "relative_rmse": 0.008335212417285059,
+      "cosine": 0.9999705023982944,
+      "name": "prompt0/layer_31",
+      "pass": true
+    },
+    {
+      "max_abs": 3072.0,
+      "rmse": 60.5205508543197,
+      "relative_rmse": 0.010472994625269924,
+      "cosine": 0.9999557328617671,
+      "name": "prompt0/layer_35",
+      "pass": false
+    },
+    {
+      "max_abs": 1536.0,
+      "rmse": 29.911912596487277,
+      "relative_rmse": 0.011672390167679111,
+      "cosine": 0.9999453425574747,
+      "name": "prompt0/layer_39",
+      "pass": false
+    },
+    {
+      "max_abs": 384.0,
+      "rmse": 18.909076790743402,
+      "relative_rmse": 0.013399938131677466,
+      "cosine": 0.9999250997696287,
+      "name": "prompt0/layer_43",
+      "pass": false
+    },
+    {
+      "max_abs": 0.59375,
+      "rmse": 0.025667118061552224,
+      "relative_rmse": 0.025668989261333396,
+      "cosine": 0.9996705506270904,
+      "name": "prompt0/final_hidden",
+      "pass": false
+    },
+    {
+      "max_abs": 0.25917863845825195,
+      "rmse": 0.008204018366160047,
+      "relative_rmse": 0.036022828875788754,
+      "cosine": 0.9998454427007679,
+      "name": "prompt0/teacher0",
+      "pass": false,
+      "top1_candidate": 1654,
+      "top1_reference": 1654,
+      "top1_match": true,
+      "reference_margin": 2.049285888671875,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.17826461791992188,
+      "rmse": 0.004107161537866346,
+      "relative_rmse": 0.014645628379704423,
+      "cosine": 0.9999130307790541,
+      "name": "prompt0/teacher1",
+      "pass": false,
+      "top1_candidate": 1184,
+      "top1_reference": 1184,
+      "top1_match": true,
+      "reference_margin": 2.147642135620117,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.3590517044067383,
+      "rmse": 0.006770939820903421,
+      "relative_rmse": 0.018597958270742596,
+      "cosine": 0.9998521391142127,
+      "name": "prompt0/teacher2",
+      "pass": false,
+      "top1_candidate": 311,
+      "top1_reference": 311,
+      "top1_match": true,
+      "reference_margin": 7.910809516906738,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.23496723175048828,
+      "rmse": 0.010000327341277182,
+      "relative_rmse": 0.02186960153456114,
+      "cosine": 0.9999281370479084,
+      "name": "prompt0/teacher3",
+      "pass": false,
+      "top1_candidate": 12564,
+      "top1_reference": 12564,
+      "top1_match": true,
+      "reference_margin": 1.4177570343017578,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.15629291534423828,
+      "rmse": 0.0037769479680287593,
+      "relative_rmse": 0.013156612579956638,
+      "cosine": 0.9999201626848317,
+      "name": "prompt1/scores",
+      "pass": false,
+      "top1_candidate": 151665,
+      "top1_reference": 151665,
+      "top1_match": true,
+      "reference_margin": 15.293951034545898,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "name": "prompt1/embedding_norm",
+      "pass": true
+    },
+    {
+      "max_abs": 8192.0,
+      "rmse": 77.24897308280055,
+      "relative_rmse": 0.0015060329491063558,
+      "cosine": 0.9999988986780683,
+      "name": "prompt1/layer_3",
+      "pass": true
+    },
+    {
+      "max_abs": 4096.0,
+      "rmse": 41.928929968616636,
+      "relative_rmse": 0.0021367879872555887,
+      "cosine": 0.9999978226895679,
+      "name": "prompt1/layer_7",
+      "pass": true
+    },
+    {
+      "max_abs": 256.0,
+      "rmse": 3.9008787013689687,
+      "relative_rmse": 0.005282262609799794,
+      "cosine": 0.9999888706344361,
+      "name": "prompt1/layer_11",
+      "pass": true
+    },
+    {
+      "max_abs": 1024.0,
+      "rmse": 19.01385001894819,
+      "relative_rmse": 0.008486545007491762,
+      "cosine": 0.9999709381860993,
+      "name": "prompt1/layer_15",
+      "pass": true
+    },
+    {
+      "max_abs": 384.0,
+      "rmse": 15.371589297704128,
+      "relative_rmse": 0.010931722999179393,
+      "cosine": 0.9999493433684314,
+      "name": "prompt1/layer_19",
+      "pass": false
+    },
+    {
+      "max_abs": 4.5,
+      "rmse": 0.5497570649735716,
+      "relative_rmse": 0.014791147289943862,
+      "cosine": 0.9998950196716294,
+      "name": "prompt1/layer_23",
+      "pass": false
+    },
+    {
+      "max_abs": 5120.0,
+      "rmse": 110.17532069078968,
+      "relative_rmse": 0.006958035768851305,
+      "cosine": 0.999979637023094,
+      "name": "prompt1/layer_27",
+      "pass": true
+    },
+    {
+      "max_abs": 4096.0,
+      "rmse": 95.16148736062704,
+      "relative_rmse": 0.008524336971676462,
+      "cosine": 0.9999685851882061,
+      "name": "prompt1/layer_31",
+      "pass": true
+    },
+    {
+      "max_abs": 3072.0,
+      "rmse": 54.97910315408462,
+      "relative_rmse": 0.010611546832897542,
+      "cosine": 0.9999539604228371,
+      "name": "prompt1/layer_35",
+      "pass": false
+    },
+    {
+      "max_abs": 1536.0,
+      "rmse": 27.74409986827017,
+      "relative_rmse": 0.011666668769821297,
+      "cosine": 0.9999447720758241,
+      "name": "prompt1/layer_39",
+      "pass": false
+    },
+    {
+      "max_abs": 384.0,
+      "rmse": 17.980770511188727,
+      "relative_rmse": 0.01333026275164493,
+      "cosine": 0.9999263627488355,
+      "name": "prompt1/layer_43",
+      "pass": false
+    },
+    {
+      "max_abs": 0.59375,
+      "rmse": 0.02442364279751583,
+      "relative_rmse": 0.02442312624764508,
+      "cosine": 0.9997017319361232,
+      "name": "prompt1/final_hidden",
+      "pass": false
+    },
+    {
+      "max_abs": 0.11434650421142578,
+      "rmse": 0.002564569274935304,
+      "relative_rmse": 0.011339276783576433,
+      "cosine": 0.9999367883039338,
+      "name": "prompt1/teacher0",
+      "pass": false,
+      "top1_candidate": 1654,
+      "top1_reference": 1654,
+      "top1_match": true,
+      "reference_margin": 3.1231155395507812,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.12694454193115234,
+      "rmse": 0.0026371101590306474,
+      "relative_rmse": 0.010867878379896691,
+      "cosine": 0.9999411317357121,
+      "name": "prompt1/teacher1",
+      "pass": false,
+      "top1_candidate": 1184,
+      "top1_reference": 1184,
+      "top1_match": true,
+      "reference_margin": 2.8599586486816406,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.11677265167236328,
+      "rmse": 0.004271472204887789,
+      "relative_rmse": 0.013405481292134959,
+      "cosine": 0.9999323876044789,
+      "name": "prompt1/teacher2",
+      "pass": false,
+      "top1_candidate": 311,
+      "top1_reference": 311,
+      "top1_match": true,
+      "reference_margin": 5.248144149780273,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.3610410690307617,
+      "rmse": 0.009852777934926683,
+      "relative_rmse": 0.02514841404486198,
+      "cosine": 0.9999082195046826,
+      "name": "prompt1/teacher3",
+      "pass": false,
+      "top1_candidate": 11625,
+      "top1_reference": 11625,
+      "top1_match": true,
+      "reference_margin": 2.1188392639160156,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.11073136329650879,
+      "rmse": 0.003806100604144292,
+      "relative_rmse": 0.013289011927101765,
+      "cosine": 0.9999155115064529,
+      "name": "prompt2/scores",
+      "pass": false,
+      "top1_candidate": 151665,
+      "top1_reference": 151665,
+      "top1_match": true,
+      "reference_margin": 16.142044067382812,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "name": "prompt2/embedding_norm",
+      "pass": true
+    },
+    {
+      "max_abs": 8192.0,
+      "rmse": 82.47619706152676,
+      "relative_rmse": 0.0014631019677591932,
+      "cosine": 0.9999989591310494,
+      "name": "prompt2/layer_3",
+      "pass": true
+    },
+    {
+      "max_abs": 4096.0,
+      "rmse": 45.10195849111708,
+      "relative_rmse": 0.0020925721877140197,
+      "cosine": 0.9999979122180314,
+      "name": "prompt2/layer_7",
+      "pass": true
+    },
+    {
+      "max_abs": 256.0,
+      "rmse": 4.232253966545776,
+      "relative_rmse": 0.00523127732136481,
+      "cosine": 0.9999891029913708,
+      "name": "prompt2/layer_11",
+      "pass": true
+    },
+    {
+      "max_abs": 1024.0,
+      "rmse": 20.065930648671603,
+      "relative_rmse": 0.008290558943897035,
+      "cosine": 0.9999723939764653,
+      "name": "prompt2/layer_15",
+      "pass": true
+    },
+    {
+      "max_abs": 384.0,
+      "rmse": 15.762532672333045,
+      "relative_rmse": 0.010740207917951057,
+      "cosine": 0.9999518642336742,
+      "name": "prompt2/layer_19",
+      "pass": false
+    },
+    {
+      "max_abs": 4.0,
+      "rmse": 0.5538912478764825,
+      "relative_rmse": 0.014235100549442561,
+      "cosine": 0.999901908388851,
+      "name": "prompt2/layer_23",
+      "pass": false
+    },
+    {
+      "max_abs": 5120.0,
+      "rmse": 119.54826531084355,
+      "relative_rmse": 0.006879822374147118,
+      "cosine": 0.9999801258786473,
+      "name": "prompt2/layer_27",
+      "pass": true
+    },
+    {
+      "max_abs": 4096.0,
+      "rmse": 101.65741661521096,
+      "relative_rmse": 0.008319130097453605,
+      "cosine": 0.9999707090963375,
+      "name": "prompt2/layer_31",
+      "pass": true
+    },
+    {
+      "max_abs": 3072.0,
+      "rmse": 58.695462115489036,
+      "relative_rmse": 0.010482437465163254,
+      "cosine": 0.9999559405202498,
+      "name": "prompt2/layer_35",
+      "pass": false
+    },
+    {
+      "max_abs": 1536.0,
+      "rmse": 29.150953446655116,
+      "relative_rmse": 0.011588049312440755,
+      "cosine": 0.9999466472687512,
+      "name": "prompt2/layer_39",
+      "pass": false
+    },
+    {
+      "max_abs": 384.0,
+      "rmse": 18.40767608036494,
+      "relative_rmse": 0.013242983145914933,
+      "cosine": 0.9999278285883327,
+      "name": "prompt2/layer_43",
+      "pass": false
+    },
+    {
+      "max_abs": 0.59375,
+      "rmse": 0.025054694521245893,
+      "relative_rmse": 0.02505495643990226,
+      "cosine": 0.9996860978112339,
+      "name": "prompt2/final_hidden",
+      "pass": false
+    },
+    {
+      "max_abs": 0.17746925354003906,
+      "rmse": 0.006182718185006046,
+      "relative_rmse": 0.026670242914139074,
+      "cosine": 0.9999023768443094,
+      "name": "prompt2/teacher0",
+      "pass": false,
+      "top1_candidate": 1654,
+      "top1_reference": 1654,
+      "top1_match": true,
+      "reference_margin": 3.591249465942383,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.16705036163330078,
+      "rmse": 0.0054364654254842075,
+      "relative_rmse": 0.021305402453784195,
+      "cosine": 0.9999201002325923,
+      "name": "prompt2/teacher1",
+      "pass": false,
+      "top1_candidate": 1184,
+      "top1_reference": 1184,
+      "top1_match": true,
+      "reference_margin": 3.086580276489258,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.3067026138305664,
+      "rmse": 0.006432015642172844,
+      "relative_rmse": 0.017322232898041915,
+      "cosine": 0.9998935263897692,
+      "name": "prompt2/teacher2",
+      "pass": false,
+      "top1_candidate": 311,
+      "top1_reference": 311,
+      "top1_match": true,
+      "reference_margin": 6.393516540527344,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    },
+    {
+      "max_abs": 0.2685537338256836,
+      "rmse": 0.011010686788192123,
+      "relative_rmse": 0.024888259199931092,
+      "cosine": 0.9999117831497009,
+      "name": "prompt2/teacher3",
+      "pass": false,
+      "top1_candidate": 11625,
+      "top1_reference": 11625,
+      "top1_match": true,
+      "reference_margin": 0.5505714416503906,
+      "top5_overlap": 5,
+      "ranking_pass": true
+    }
+  ],
+  "checks": {
+    "request0_disposed": true,
+    "request0_repeat_exact": true,
+    "request1_disposed": true,
+    "request1_repeat_exact": true,
+    "request2_disposed": true,
+    "request2_repeat_exact": true,
+    "padded_id_rejected": true,
+    "empty_rejected": true,
+    "foreign_owner_rejected": true,
+    "overflow_rejected": true,
+    "interrupt_invalidates": true,
+    "invalid_request_rejected": true,
+    "closed_request_rejected": true,
+    "explicit_stop": true,
+    "stream_callback": true,
+    "generation_cancellation_disposes": true,
+    "generation_budget_rejected": true
+  },
+  "thresholds_changed": false,
+  "stop_test": {
+    "backend": "Core ML",
+    "compute_units": "CPU_AND_GPU",
+    "fidelity": "UNQUALIFIED",
+    "prompt_ids": [
+      151643,
+      151644,
+      8948,
+      198,
+      2610,
+      525,
+      264,
+      10950,
+      17847,
+      624,
+      5501,
+      2874,
+      3019,
+      553,
+      3019,
+      11,
+      323,
+      2182,
+      697,
+      1590,
+      4226,
+      2878,
+      1124,
+      79075,
+      46391,
+      151645,
+      198,
+      151644,
+      872,
+      198,
+      46254,
+      220,
+      16,
+      22,
+      353,
+      220,
+      17,
+      18,
+      13,
+      151645,
+      198,
+      151644,
+      77091,
+      198
+    ],
+    "generated_ids": [
+      151665
+    ],
+    "generated_tokens": 1,
+    "finish_reason": "stop_token",
+    "complete": true,
+    "stop_token_ids": [
+      151645,
+      151665
+    ],
+    "completion_policy": "published_eos_plus_explicit_stops",
+    "greedy": true,
+    "seed": 0,
+    "temperature": null,
+    "top_p": null,
+    "step_seconds": [
+      0.9671045001596212
+    ],
+    "elapsed_seconds": 0.9671309581026435
+  },
+  "elapsed_seconds": 64.68692398071289,
+  "numerical_pass": false,
+  "lifecycle_pass": true
+}

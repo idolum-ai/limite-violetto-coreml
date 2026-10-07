@@ -1,0 +1,4517 @@
+{
+  "actual_device_placement": "unverified; compute policy only",
+  "analysis_helper": {
+    "path": "scripts/summarize_boundary_reciprocal_group.py",
+    "sha256": "053d1a4bfd23e83f2d34775e2b9b593e3bef38b6d4bb1667ef036536e956721e"
+  },
+  "archive_sha256": {
+    "evidence/06d-gpu-rounding/group0-replay-1/chunk0/before.npz": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+    "evidence/06d-gpu-rounding/group0-replay-1/chunk0/inputs.npz": "69ecfe41ff5a4643a329aad8b0f30bf71c7119a73f9cb703394e94c2d276c85e",
+    "evidence/06d-gpu-rounding/group0-replay-1/chunk1/before.npz": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+    "evidence/06d-gpu-rounding/group0-replay-1/chunk1/inputs.npz": "9eb45ae6546f129807c180157e0b72160c43a57e0585509e19acd89f0873c36d",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk0/CPU-candidate/outputs.npz": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk0/CPU-candidate/state-after.npz": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk0/GPU-candidate/outputs.npz": "5758cef1a9c264af56c9e3f59e5148a6753bf7848ac7572b00ccf35b3e74d70c",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk0/GPU-candidate/state-after.npz": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk1/CPU-candidate/outputs.npz": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk1/CPU-candidate/state-after.npz": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk1/GPU-candidate/outputs.npz": "d887c919fdf4558cf3ab6f1e6c71b8745b03dcccb11df6a0c2ab6612b875246e",
+    "evidence/06f-gpu-reciprocal/group-replay-1/chunk1/GPU-candidate/state-after.npz": "7344a081b63e42bc2ee9f925d8803b797d6252d274d8c1d77b488818d9a49e0a",
+    "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-original/outputs.npz": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+    "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-original/state-after.npz": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+    "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-tapped/outputs.npz": "03d83a5b8b3659c2a832aecbd7be1d076b386ec6c14cac240577ed63572c551f",
+    "evidence/06g-gpu-residual/key-replay-1/chunk0/CPU-tapped/state-after.npz": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+    "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-original/outputs.npz": "5758cef1a9c264af56c9e3f59e5148a6753bf7848ac7572b00ccf35b3e74d70c",
+    "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-original/state-after.npz": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97",
+    "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-tapped/outputs.npz": "8affe3823c4d50e619411717a1ce37a9b618a6afa783b1a675b84461b0c4380f",
+    "evidence/06g-gpu-residual/key-replay-1/chunk0/GPU-tapped/state-after.npz": "2628179ed4a90d762d5215e8c7ef767704716ccdea66acda335d49ed57658c97",
+    "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-original/outputs.npz": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+    "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-original/state-after.npz": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+    "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-tapped/outputs.npz": "f010d5e4772d915a30764d3dc66f348cc2646789504717a5fd973966af365800",
+    "evidence/06g-gpu-residual/key-replay-1/chunk1/CPU-tapped/state-after.npz": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+    "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-original/outputs.npz": "d887c919fdf4558cf3ab6f1e6c71b8745b03dcccb11df6a0c2ab6612b875246e",
+    "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-original/state-after.npz": "7344a081b63e42bc2ee9f925d8803b797d6252d274d8c1d77b488818d9a49e0a",
+    "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-tapped/outputs.npz": "d19afcadc4d4573c78d3befe6954d1628f701ace53893d7abb4f8b487dea3c4a",
+    "evidence/06g-gpu-residual/key-replay-1/chunk1/GPU-tapped/state-after.npz": "7344a081b63e42bc2ee9f925d8803b797d6252d274d8c1d77b488818d9a49e0a"
+  },
+  "chunks": [
+    {
+      "cache_comparisons": {
+        "inner_k_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "bitwise_error_count": 107,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -1.1484375,
+            "actual_bits": "0xbf930000",
+            "expected": -1.15625,
+            "expected_bits": "0xbf940000",
+            "index": [
+              0,
+              19,
+              0,
+              3
+            ]
+          },
+          "max_abs": 0.015625,
+          "numeric_error_count": 107,
+          "relative_rmse": 0.0005157598625013833,
+          "rmse": 6.445919251661182e-05,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "bitwise_error_count": 1141,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.34375,
+            "actual_bits": "0x3eb00000",
+            "expected": 0.345703125,
+            "expected_bits": "0x3eb10000",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.015625,
+          "numeric_error_count": 1141,
+          "relative_rmse": 0.001635516957461813,
+          "rmse": 0.0002043978462311979,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "bitwise_error_count": 1658,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.62890625,
+            "actual_bits": "0xbf210000",
+            "expected": -0.625,
+            "expected_bits": "0xbf200000",
+            "index": [
+              0,
+              19,
+              0,
+              2
+            ]
+          },
+          "max_abs": 0.03125,
+          "numeric_error_count": 1658,
+          "relative_rmse": 0.0023346609686298423,
+          "rmse": 0.0002918441238708406,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "bitwise_error_count": 67,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -13.1875,
+            "actual_bits": "0xc1530000",
+            "expected": -13.25,
+            "expected_bits": "0xc1540000",
+            "index": [
+              0,
+              19,
+              0,
+              1
+            ]
+          },
+          "max_abs": 0.0625,
+          "numeric_error_count": 67,
+          "relative_rmse": 0.0003422349056161186,
+          "rmse": 0.0003128749490470974,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "bitwise_error_count": 1350,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 14.75,
+            "actual_bits": "0x416c0000",
+            "expected": 14.8125,
+            "expected_bits": "0x416d0000",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.5,
+          "numeric_error_count": 1350,
+          "relative_rmse": 0.0016969528344061614,
+          "rmse": 0.006479632952628765,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "bitwise_error_count": 1707,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 24.375,
+            "actual_bits": "0x41c30000",
+            "expected": 24.125,
+            "expected_bits": "0x41c10000",
+            "index": [
+              0,
+              19,
+              0,
+              2
+            ]
+          },
+          "max_abs": 1.0,
+          "numeric_error_count": 1707,
+          "relative_rmse": 0.002123783018816408,
+          "rmse": 0.018128082895062996,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "cache_summary": {
+        "changed_arrays": [
+          "inner_k_cache_1",
+          "inner_v_cache_1",
+          "inner_k_cache_2",
+          "inner_v_cache_2",
+          "inner_k_cache_3",
+          "inner_v_cache_3"
+        ],
+        "different_arrays": 6,
+        "different_elements": 6030,
+        "first_changed": {
+          "actual": -1.1484375,
+          "actual_bits": "0xbf930000",
+          "expected": -1.15625,
+          "expected_bits": "0xbf940000",
+          "index": [
+            0,
+            19,
+            0,
+            3
+          ],
+          "name": "inner_k_cache_1"
+        }
+      },
+      "changed_operation_direct_inputs": [
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "x_197",
+          "observed_inputs": {},
+          "stage": "key_linear_raw",
+          "unobserved_inputs": [
+            "var_13936",
+            "var_13939"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "value_41",
+          "observed_inputs": {},
+          "stage": "key_projection_quantized",
+          "unobserved_inputs": [
+            "var_13956",
+            "var_13957"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "denom_21",
+          "observed_inputs": {},
+          "stage": "key_norm_denominator",
+          "unobserved_inputs": [
+            "var_14321"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14324",
+          "observed_inputs": {
+            "denom_21": false
+          },
+          "stage": "key_norm_reciprocal_seed",
+          "unobserved_inputs": [
+            "fill_like_12"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "x_207",
+          "observed_inputs": {
+            "value_41": false,
+            "var_14324": false
+          },
+          "stage": "key_norm_raw",
+          "unobserved_inputs": []
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "step_149",
+          "observed_inputs": {},
+          "stage": "key_norm_quantization_step",
+          "unobserved_inputs": [
+            "powers_1",
+            "select_88",
+            "step_149_axis_1",
+            "step_149_batch_dims_0",
+            "step_149_validate_indices_0"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14339",
+          "observed_inputs": {
+            "step_149": false,
+            "x_207": false
+          },
+          "stage": "key_norm_quotient",
+          "unobserved_inputs": []
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14340",
+          "observed_inputs": {
+            "var_14339": false
+          },
+          "stage": "key_norm_signed_even_round",
+          "unobserved_inputs": [
+            "signed_even_site_23018_equal_1",
+            "signed_even_site_23018_real_div_1"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "k_49",
+          "observed_inputs": {
+            "step_149": false,
+            "var_14340": false
+          },
+          "stage": "key_norm_quantized_rope_input",
+          "unobserved_inputs": []
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "x_215",
+          "observed_inputs": {
+            "k_49": false
+          },
+          "stage": "rope_cosine_product_raw",
+          "unobserved_inputs": [
+            "cos_1"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14415",
+          "observed_inputs": {},
+          "stage": "rope_cosine_product_quantized",
+          "unobserved_inputs": [
+            "step_157",
+            "var_14414"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "x_217",
+          "observed_inputs": {},
+          "stage": "rope_sine_product_raw",
+          "unobserved_inputs": [
+            "sin_1",
+            "var_14421"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14438",
+          "observed_inputs": {},
+          "stage": "rope_sine_product_quantized",
+          "unobserved_inputs": [
+            "step_159",
+            "var_14437"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "x_219",
+          "observed_inputs": {
+            "var_14415": false,
+            "var_14438": false
+          },
+          "stage": "rope_sum_raw",
+          "unobserved_inputs": []
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "step_161",
+          "observed_inputs": {},
+          "stage": "final_key_quantization_step",
+          "unobserved_inputs": [
+            "powers_1",
+            "select_94",
+            "step_161_axis_1",
+            "step_161_batch_dims_0",
+            "step_161_validate_indices_0"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14453",
+          "observed_inputs": {
+            "step_161": false,
+            "x_219": false
+          },
+          "stage": "final_key_quotient",
+          "unobserved_inputs": []
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14454",
+          "observed_inputs": {
+            "var_14453": false
+          },
+          "stage": "final_key_signed_even_round",
+          "unobserved_inputs": [
+            "signed_even_site_23192_equal_1",
+            "signed_even_site_23192_real_div_1"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "k_51",
+          "observed_inputs": {
+            "step_161": false,
+            "var_14454": false
+          },
+          "stage": "final_key_before_cache",
+          "unobserved_inputs": []
+        }
+      ],
+      "chunk": 0,
+      "endpoint_comparisons": {
+        "tap23_out": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "y": {
+          "bitwise_error_count": 8202,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 3264.0,
+            "actual_bits": "0x454c0000",
+            "expected": 3280.0,
+            "expected_bits": "0x454d0000",
+            "index": [
+              0,
+              19,
+              0
+            ]
+          },
+          "max_abs": 256.0,
+          "numeric_error_count": 8202,
+          "relative_rmse": 0.00015365118060518403,
+          "rmse": 10.570169316778989,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "first_changed_operation_with_all_direct_inputs_exposed_and_equal": null,
+      "first_difference_observed_direct_inputs": {},
+      "first_difference_unobserved_direct_inputs": [
+        "var_13936",
+        "var_13939"
+      ],
+      "first_differing_rounded_output": "value_41",
+      "first_differing_stage": {
+        "direct_inputs": {
+          "x": [
+            "var_13936"
+          ],
+          "y": [
+            "var_13939"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          256
+        ],
+        "name": "x_197",
+        "operation_index": 24691,
+        "operation_sha256": "f493be9ffbde445d8b7e03f1f9d8ae981a3f6f19acc8542398610af15878da40",
+        "operation_type": "add",
+        "original_operation_index": 24541,
+        "stage": "key_linear_raw"
+      },
+      "last_exact_tap_before_first_difference": null,
+      "preceding_exact_taps": [],
+      "quantization_boundaries": [
+        {
+          "examples": [
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                0
+              ],
+              "output_cpu": 0.201171875,
+              "output_gpu": 0.19921875,
+              "quotient_cpu": 206.20086669921875,
+              "quotient_gpu": 204.13682556152344,
+              "rounded_cpu": 206.0,
+              "rounded_gpu": 204.0,
+              "step_cpu": 0.0009765625,
+              "step_gpu": 0.0009765625
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                3
+              ],
+              "output_cpu": -0.4375,
+              "output_gpu": -0.43359375,
+              "quotient_cpu": -223.72793579101562,
+              "quotient_gpu": -221.66372680664062,
+              "rounded_cpu": -224.0,
+              "rounded_gpu": -222.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                4
+              ],
+              "output_cpu": 0.201171875,
+              "output_gpu": 0.2001953125,
+              "quotient_cpu": 206.20086669921875,
+              "quotient_gpu": 205.16781616210938,
+              "rounded_cpu": 206.0,
+              "rounded_gpu": 205.0,
+              "step_cpu": 0.0009765625,
+              "step_gpu": 0.0009765625
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                6
+              ],
+              "output_cpu": 0.326171875,
+              "output_gpu": 0.328125,
+              "quotient_cpu": 167.022705078125,
+              "quotient_gpu": 168.05203247070312,
+              "rounded_cpu": 167.0,
+              "rounded_gpu": 168.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                10
+              ],
+              "output_cpu": -0.1572265625,
+              "output_gpu": -0.154296875,
+              "quotient_cpu": -160.836669921875,
+              "quotient_gpu": -157.74209594726562,
+              "rounded_cpu": -161.0,
+              "rounded_gpu": -158.0,
+              "step_cpu": 0.0009765625,
+              "step_gpu": 0.0009765625
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                13
+              ],
+              "output_cpu": 0.416015625,
+              "output_gpu": 0.412109375,
+              "quotient_cpu": 213.4178924560547,
+              "quotient_gpu": 211.35377502441406,
+              "rounded_cpu": 213.0,
+              "rounded_gpu": 211.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                14
+              ],
+              "output_cpu": 0.373046875,
+              "output_gpu": 0.37890625,
+              "quotient_cpu": 190.7357940673828,
+              "quotient_gpu": 193.82688903808594,
+              "rounded_cpu": 191.0,
+              "rounded_gpu": 194.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                15
+              ],
+              "output_cpu": 1.5,
+              "output_gpu": 1.4921875,
+              "quotient_cpu": 191.7667999267578,
+              "quotient_gpu": 190.73390197753906,
+              "rounded_cpu": 192.0,
+              "rounded_gpu": 191.0,
+              "step_cpu": 0.0078125,
+              "step_gpu": 0.0078125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                16
+              ],
+              "output_cpu": 0.333984375,
+              "output_gpu": 0.326171875,
+              "quotient_cpu": 171.14671325683594,
+              "quotient_gpu": 167.0210418701172,
+              "rounded_cpu": 171.0,
+              "rounded_gpu": 167.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                17
+              ],
+              "output_cpu": 0.8359375,
+              "output_gpu": 0.83203125,
+              "quotient_cpu": 214.4488983154297,
+              "quotient_gpu": 213.415771484375,
+              "rounded_cpu": 214.0,
+              "rounded_gpu": 213.0,
+              "step_cpu": 0.00390625,
+              "step_gpu": 0.00390625
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                18
+              ],
+              "output_cpu": 1.3828125,
+              "output_gpu": 1.390625,
+              "quotient_cpu": 177.33274841308594,
+              "quotient_gpu": 178.36196899414062,
+              "rounded_cpu": 177.0,
+              "rounded_gpu": 178.0,
+              "step_cpu": 0.0078125,
+              "step_gpu": 0.0078125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                19
+              ],
+              "output_cpu": -0.75390625,
+              "output_gpu": -0.75,
+              "quotient_cpu": -192.7978057861328,
+              "quotient_gpu": -191.764892578125,
+              "rounded_cpu": -193.0,
+              "rounded_gpu": -192.0,
+              "step_cpu": 0.00390625,
+              "step_gpu": 0.00390625
+            }
+          ],
+          "output": "k_49",
+          "quotient": "var_14339",
+          "quotient_differences": 4652,
+          "round_vs_exact_integer_ties_even": {
+            "CPU": {
+              "bitwise_error_count": 0,
+              "bitwise_exact": true,
+              "dtype": "float32",
+              "first_difference": null,
+              "max_abs": 0.0,
+              "numeric_error_count": 0,
+              "relative_rmse": 0.0,
+              "rmse": 0.0,
+              "shape": [
+                1,
+                32,
+                2,
+                128
+              ]
+            },
+            "GPU": {
+              "bitwise_error_count": 0,
+              "bitwise_exact": true,
+              "dtype": "float32",
+              "first_difference": null,
+              "max_abs": 0.0,
+              "numeric_error_count": 0,
+              "relative_rmse": 0.0,
+              "rmse": 0.0,
+              "shape": [
+                1,
+                32,
+                2,
+                128
+              ]
+            }
+          },
+          "rounded": "var_14340",
+          "rounded_differences": 1176,
+          "rounded_differences_spanning_or_touching_half": 1176,
+          "rounded_differences_with_equal_quotient": 0,
+          "step": "step_149",
+          "step_differences": 23
+        },
+        {
+          "examples": [
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                0
+              ],
+              "output_cpu": 0.345703125,
+              "output_gpu": 0.34375,
+              "quotient_cpu": 177.0,
+              "quotient_gpu": 176.0,
+              "rounded_cpu": 177.0,
+              "rounded_gpu": 176.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                3
+              ],
+              "output_cpu": 0.8203125,
+              "output_gpu": 0.8125,
+              "quotient_cpu": 209.5,
+              "quotient_gpu": 208.5,
+              "rounded_cpu": 210.0,
+              "rounded_gpu": 208.0,
+              "step_cpu": 0.00390625,
+              "step_gpu": 0.00390625
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                6
+              ],
+              "output_cpu": 0.07421875,
+              "output_gpu": 0.072265625,
+              "quotient_cpu": 152.0,
+              "quotient_gpu": 148.0,
+              "rounded_cpu": 152.0,
+              "rounded_gpu": 148.0,
+              "step_cpu": 0.00048828125,
+              "step_gpu": 0.00048828125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                10
+              ],
+              "output_cpu": -0.259765625,
+              "output_gpu": -0.255859375,
+              "quotient_cpu": -132.75,
+              "quotient_gpu": -131.25,
+              "rounded_cpu": -133.0,
+              "rounded_gpu": -131.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                12
+              ],
+              "output_cpu": -0.49609375,
+              "output_gpu": -0.4921875,
+              "quotient_cpu": -253.5,
+              "quotient_gpu": -251.5,
+              "rounded_cpu": -254.0,
+              "rounded_gpu": -252.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                13
+              ],
+              "output_cpu": -0.251953125,
+              "output_gpu": -0.25390625,
+              "quotient_cpu": -129.25,
+              "quotient_gpu": -129.75,
+              "rounded_cpu": -129.0,
+              "rounded_gpu": -130.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                15
+              ],
+              "output_cpu": -0.7421875,
+              "output_gpu": -0.7265625,
+              "quotient_cpu": -189.5,
+              "quotient_gpu": -186.5,
+              "rounded_cpu": -190.0,
+              "rounded_gpu": -186.0,
+              "step_cpu": 0.00390625,
+              "step_gpu": 0.00390625
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                16
+              ],
+              "output_cpu": -0.36328125,
+              "output_gpu": -0.35546875,
+              "quotient_cpu": -185.8125,
+              "quotient_gpu": -181.75,
+              "rounded_cpu": -186.0,
+              "rounded_gpu": -182.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                17
+              ],
+              "output_cpu": -0.82421875,
+              "output_gpu": -0.8203125,
+              "quotient_cpu": -211.03125,
+              "quotient_gpu": -210.109375,
+              "rounded_cpu": -211.0,
+              "rounded_gpu": -210.0,
+              "step_cpu": 0.00390625,
+              "step_gpu": 0.00390625
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                18
+              ],
+              "output_cpu": -1.5703125,
+              "output_gpu": -1.578125,
+              "quotient_cpu": -200.75,
+              "quotient_gpu": -201.5,
+              "rounded_cpu": -201.0,
+              "rounded_gpu": -202.0,
+              "step_cpu": 0.0078125,
+              "step_gpu": 0.0078125
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                19
+              ],
+              "output_cpu": -0.1640625,
+              "output_gpu": -0.171875,
+              "quotient_cpu": -168.0,
+              "quotient_gpu": -176.0,
+              "rounded_cpu": -168.0,
+              "rounded_gpu": -176.0,
+              "step_cpu": 0.0009765625,
+              "step_gpu": 0.0009765625
+            },
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                19,
+                0,
+                20
+              ],
+              "output_cpu": -0.94921875,
+              "output_gpu": -0.94140625,
+              "quotient_cpu": -243.0,
+              "quotient_gpu": -241.0,
+              "rounded_cpu": -243.0,
+              "rounded_gpu": -241.0,
+              "step_cpu": 0.00390625,
+              "step_gpu": 0.00390625
+            }
+          ],
+          "output": "k_51",
+          "quotient": "var_14453",
+          "quotient_differences": 1444,
+          "round_vs_exact_integer_ties_even": {
+            "CPU": {
+              "bitwise_error_count": 0,
+              "bitwise_exact": true,
+              "dtype": "float32",
+              "first_difference": null,
+              "max_abs": 0.0,
+              "numeric_error_count": 0,
+              "relative_rmse": 0.0,
+              "rmse": 0.0,
+              "shape": [
+                1,
+                32,
+                2,
+                128
+              ]
+            },
+            "GPU": {
+              "bitwise_error_count": 0,
+              "bitwise_exact": true,
+              "dtype": "float32",
+              "first_difference": null,
+              "max_abs": 0.0,
+              "numeric_error_count": 0,
+              "relative_rmse": 0.0,
+              "rmse": 0.0,
+              "shape": [
+                1,
+                32,
+                2,
+                128
+              ]
+            }
+          },
+          "rounded": "var_14454",
+          "rounded_differences": 1142,
+          "rounded_differences_spanning_or_touching_half": 1142,
+          "rounded_differences_with_equal_quotient": 0,
+          "step": "step_161",
+          "step_differences": 23
+        }
+      ],
+      "query_length": 32,
+      "reciprocal_reference": {
+        "both_policies_within_correction_contract": false,
+        "cpu_reciprocal_exact": true,
+        "denominator": "denom_21",
+        "different_denominator_count": 26,
+        "equal_denominator_count": 38,
+        "policies": {
+          "CPU": {
+            "denominator_domain_0_5_to_8": false,
+            "denominator_max": 58.44605255126953,
+            "denominator_min": 30.10474967956543,
+            "seed_vs_exact_rational_reciprocal": {
+              "bitwise_error_count": 0,
+              "bitwise_exact": true,
+              "dtype": "float32",
+              "first_difference": null,
+              "max_abs": 0.0,
+              "numeric_error_count": 0,
+              "relative_rmse": 0.0,
+              "rmse": 0.0,
+              "shape": [
+                1,
+                32,
+                2,
+                1
+              ]
+            },
+            "seed_within_one_neighbor": true,
+            "ulp_error_distribution": {
+              "0": 64
+            }
+          },
+          "GPU": {
+            "denominator_domain_0_5_to_8": false,
+            "denominator_max": 58.443843841552734,
+            "denominator_min": 30.10474967956543,
+            "seed_vs_exact_rational_reciprocal": {
+              "bitwise_error_count": 25,
+              "bitwise_exact": false,
+              "dtype": "float32",
+              "first_difference": {
+                "actual": 0.027927538380026817,
+                "actual_bits": "0x3ce4c84b",
+                "expected": 0.027927540242671967,
+                "expected_bits": "0x3ce4c84c",
+                "index": [
+                  0,
+                  1,
+                  0,
+                  0
+                ]
+              },
+              "max_abs": 3.725290298461914e-09,
+              "numeric_error_count": 25,
+              "relative_rmse": 4.709091046097411e-08,
+              "rmse": 1.2320239614064762e-09,
+              "shape": [
+                1,
+                32,
+                2,
+                1
+              ]
+            },
+            "seed_within_one_neighbor": true,
+            "ulp_error_distribution": {
+              "-1": 11,
+              "0": 39,
+              "1": 14
+            }
+          }
+        },
+        "reciprocal": "var_14324",
+        "reciprocal_differences_with_equal_denominator": 13,
+        "reference_scope": "Exact rational 1/d, rounded to nearest FP32 ties-to-even independently for each saved policy denominator. No correctness claim about preceding square root or reduction."
+      },
+      "rounding_transitions": [
+        {
+          "raw": "x_197",
+          "raw_differences": 3328,
+          "raw_differences_masked_at_corresponding_output": 2130,
+          "raw_differences_surviving_at_corresponding_output": 1198,
+          "raw_different_but_all_rounded_equal": false,
+          "rounded": "value_41",
+          "rounded_differences": 1198,
+          "rounded_differences_with_equal_raw_bits": 0
+        },
+        {
+          "raw": "x_207",
+          "raw_differences": 4652,
+          "raw_differences_masked_at_corresponding_output": 3476,
+          "raw_differences_surviving_at_corresponding_output": 1176,
+          "raw_different_but_all_rounded_equal": false,
+          "rounded": "k_49",
+          "rounded_differences": 1176,
+          "rounded_differences_with_equal_raw_bits": 0
+        },
+        {
+          "raw": "x_215",
+          "raw_differences": 1176,
+          "raw_differences_masked_at_corresponding_output": 11,
+          "raw_differences_surviving_at_corresponding_output": 1165,
+          "raw_different_but_all_rounded_equal": false,
+          "rounded": "var_14415",
+          "rounded_differences": 1165,
+          "rounded_differences_with_equal_raw_bits": 0
+        },
+        {
+          "raw": "x_217",
+          "raw_differences": 454,
+          "raw_differences_masked_at_corresponding_output": 35,
+          "raw_differences_surviving_at_corresponding_output": 419,
+          "raw_different_but_all_rounded_equal": false,
+          "rounded": "var_14438",
+          "rounded_differences": 2522,
+          "rounded_differences_with_equal_raw_bits": 2103
+        },
+        {
+          "raw": "x_219",
+          "raw_differences": 1444,
+          "raw_differences_masked_at_corresponding_output": 303,
+          "raw_differences_surviving_at_corresponding_output": 1141,
+          "raw_different_but_all_rounded_equal": false,
+          "rounded": "k_51",
+          "rounded_differences": 1141,
+          "rounded_differences_with_equal_raw_bits": 0
+        }
+      ],
+      "stages": {
+        "denom_21": {
+          "bitwise_error_count": 26,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 31.038007736206055,
+            "actual_bits": "0x41f84dd7",
+            "expected": 31.03769874572754,
+            "expected_bits": "0x41f84d35",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.02602386474609375,
+          "numeric_error_count": 26,
+          "relative_rmse": 0.00017140271543017362,
+          "rmse": 0.006882274719414774,
+          "shape": [
+            1,
+            32,
+            2,
+            1
+          ]
+        },
+        "k_49": {
+          "bitwise_error_count": 1176,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.19921875,
+            "actual_bits": "0x3e4c0000",
+            "expected": 0.201171875,
+            "expected_bits": "0x3e4e0000",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.015625,
+          "numeric_error_count": 1176,
+          "relative_rmse": 0.0015151129233480507,
+          "rmse": 0.0015150445563884786,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "k_51": {
+          "bitwise_error_count": 1141,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.34375,
+            "actual_bits": "0x3eb00000",
+            "expected": 0.345703125,
+            "expected_bits": "0x3eb10000",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.015625,
+          "numeric_error_count": 1141,
+          "relative_rmse": 0.001635516957461813,
+          "rmse": 0.0016351827698495832,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "step_149": {
+          "bitwise_error_count": 23,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.0009765625,
+            "actual_bits": "0x3a800000",
+            "expected": 0.00048828125,
+            "expected_bits": "0x3a000000",
+            "index": [
+              0,
+              19,
+              0,
+              35
+            ]
+          },
+          "max_abs": 0.00390625,
+          "numeric_error_count": 23,
+          "relative_rmse": 0.009859540912213216,
+          "rmse": 5.6442723918865756e-05,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "step_161": {
+          "bitwise_error_count": 23,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 6.103515625e-05,
+            "actual_bits": "0x38800000",
+            "expected": 0.0001220703125,
+            "expected_bits": "0x39000000",
+            "index": [
+              0,
+              19,
+              0,
+              22
+            ]
+          },
+          "max_abs": 0.001953125,
+          "numeric_error_count": 23,
+          "relative_rmse": 0.007762828721592386,
+          "rmse": 4.4453699167246176e-05,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "value_41": {
+          "bitwise_error_count": 1198,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 6.1875,
+            "actual_bits": "0x40c60000",
+            "expected": 6.25,
+            "expected_bits": "0x40c80000",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.5,
+          "numeric_error_count": 1198,
+          "relative_rmse": 0.0012986218683423028,
+          "rmse": 0.05214312061044433,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "var_14324": {
+          "bitwise_error_count": 39,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.027927538380026817,
+            "actual_bits": "0x3ce4c84b",
+            "expected": 0.027927540242671967,
+            "expected_bits": "0x3ce4c84c",
+            "index": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          "max_abs": 2.204999327659607e-05,
+          "numeric_error_count": 39,
+          "relative_rmse": 0.00019063188780526794,
+          "rmse": 4.98756153482016e-06,
+          "shape": [
+            1,
+            32,
+            2,
+            1
+          ]
+        },
+        "var_14339": {
+          "bitwise_error_count": 4652,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 191.24778747558594,
+            "actual_bits": "0x433f3f6f",
+            "expected": 191.247802734375,
+            "expected_bits": "0x433f3f70",
+            "index": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          "max_abs": 396.3693542480469,
+          "numeric_error_count": 4652,
+          "relative_rmse": 0.045967690440951094,
+          "rmse": 8.68874048241574,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "var_14340": {
+          "bitwise_error_count": 1176,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 204.0,
+            "actual_bits": "0x434c0000",
+            "expected": 206.0,
+            "expected_bits": "0x434e0000",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 396.0,
+          "numeric_error_count": 1176,
+          "relative_rmse": 0.04596606590410626,
+          "rmse": 8.688188484409451,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "var_14415": {
+          "bitwise_error_count": 1165,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.197265625,
+            "actual_bits": "0x3e4a0000",
+            "expected": 0.19921875,
+            "expected_bits": "0x3e4c0000",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.015625,
+          "numeric_error_count": 1165,
+          "relative_rmse": 0.0015442631265447048,
+          "rmse": 0.0014168905388918815,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "var_14438": {
+          "bitwise_error_count": 2522,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.0,
+            "actual_bits": "0x80000000",
+            "expected": 0.0,
+            "expected_bits": "0x00000000",
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.015625,
+          "numeric_error_count": 419,
+          "relative_rmse": 0.0015760421916064876,
+          "rmse": 0.0006260735202778249,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "var_14453": {
+          "bitwise_error_count": 1444,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 176.0,
+            "actual_bits": "0x43300000",
+            "expected": 177.0,
+            "expected_bits": "0x43310000",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 396.0,
+          "numeric_error_count": 1444,
+          "relative_rmse": 0.046648779794047614,
+          "rmse": 8.794729919439748,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "var_14454": {
+          "bitwise_error_count": 1142,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 176.0,
+            "actual_bits": "0x43300000",
+            "expected": 177.0,
+            "expected_bits": "0x43310000",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 396.0,
+          "numeric_error_count": 1142,
+          "relative_rmse": 0.046657945327649615,
+          "rmse": 8.796312981602718,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "x_197": {
+          "bitwise_error_count": 3328,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 6.186760902404785,
+            "actual_bits": "0x40c5f9f2",
+            "expected": 6.244436264038086,
+            "expected_bits": "0x40c7d26c",
+            "index": [
+              0,
+              19,
+              0
+            ]
+          },
+          "max_abs": 0.3356609344482422,
+          "numeric_error_count": 3328,
+          "relative_rmse": 0.0008312593280260132,
+          "rmse": 0.0333793071950284,
+          "shape": [
+            1,
+            32,
+            256
+          ]
+        },
+        "x_207": {
+          "bitwise_error_count": 4652,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 2.9882466793060303,
+            "actual_bits": "0x403f3f6f",
+            "expected": 2.9882469177246094,
+            "expected_bits": "0x403f3f70",
+            "index": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.016130685806274414,
+          "numeric_error_count": 4652,
+          "relative_rmse": 0.0013468139953292052,
+          "rmse": 0.0013468139906583842,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "x_215": {
+          "bitwise_error_count": 1176,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.1968841552734375,
+            "actual_bits": "0x3e499c00",
+            "expected": 0.19881439208984375,
+            "expected_bits": "0x3e4b9600",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.015625,
+          "numeric_error_count": 1176,
+          "relative_rmse": 0.001515955617403299,
+          "rmse": 0.001391197618851486,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "x_217": {
+          "bitwise_error_count": 454,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.029766082763671875,
+            "actual_bits": "0xbcf3d800",
+            "expected": -0.030057907104492188,
+            "expected_bits": "0xbcf63c00",
+            "index": [
+              0,
+              19,
+              0,
+              1
+            ]
+          },
+          "max_abs": 0.013916015625,
+          "numeric_error_count": 452,
+          "relative_rmse": 0.0015101264824285872,
+          "rmse": 0.000599956256152968,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "x_219": {
+          "bitwise_error_count": 1444,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.34375,
+            "actual_bits": "0x3eb00000",
+            "expected": 0.345703125,
+            "expected_bits": "0x3eb10000",
+            "index": [
+              0,
+              19,
+              0,
+              0
+            ]
+          },
+          "max_abs": 0.017578125,
+          "numeric_error_count": 1444,
+          "relative_rmse": 0.0015521525514551983,
+          "rmse": 0.0015518752058900354,
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "cache_comparisons": {
+        "inner_k_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.330078125,
+            "actual_bits": "0xbea90000",
+            "expected": -0.33203125,
+            "expected_bits": "0xbeaa0000",
+            "index": [
+              0,
+              32,
+              0,
+              73
+            ]
+          },
+          "max_abs": 0.001953125,
+          "numeric_error_count": 1,
+          "relative_rmse": 1.8406815957383806e-05,
+          "rmse": 2.6973983046972182e-06,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "bitwise_error_count": 207,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.9140625,
+            "actual_bits": "0x3f6a0000",
+            "expected": 0.91796875,
+            "expected_bits": "0x3f6b0000",
+            "index": [
+              0,
+              32,
+              0,
+              5
+            ]
+          },
+          "max_abs": 0.015625,
+          "numeric_error_count": 207,
+          "relative_rmse": 0.000476903710297957,
+          "rmse": 6.990237575696227e-05,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "bitwise_error_count": 171,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 4.78125,
+            "actual_bits": "0x40990000",
+            "expected": 4.75,
+            "expected_bits": "0x40980000",
+            "index": [
+              0,
+              32,
+              0,
+              1
+            ]
+          },
+          "max_abs": 1.0,
+          "numeric_error_count": 171,
+          "relative_rmse": 0.00035648029186525435,
+          "rmse": 0.003588484510657602,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "cache_summary": {
+        "changed_arrays": [
+          "inner_k_cache_2",
+          "inner_k_cache_3",
+          "inner_v_cache_3"
+        ],
+        "different_arrays": 3,
+        "different_elements": 379,
+        "first_changed": {
+          "actual": -0.330078125,
+          "actual_bits": "0xbea90000",
+          "expected": -0.33203125,
+          "expected_bits": "0xbeaa0000",
+          "index": [
+            0,
+            32,
+            0,
+            73
+          ],
+          "name": "inner_k_cache_2"
+        }
+      },
+      "changed_operation_direct_inputs": [
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14324",
+          "observed_inputs": {
+            "denom_21": true
+          },
+          "stage": "key_norm_reciprocal_seed",
+          "unobserved_inputs": [
+            "fill_like_12"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "x_207",
+          "observed_inputs": {
+            "value_41": true,
+            "var_14324": false
+          },
+          "stage": "key_norm_raw",
+          "unobserved_inputs": []
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14339",
+          "observed_inputs": {
+            "step_149": true,
+            "x_207": false
+          },
+          "stage": "key_norm_quotient",
+          "unobserved_inputs": []
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14340",
+          "observed_inputs": {
+            "var_14339": false
+          },
+          "stage": "key_norm_signed_even_round",
+          "unobserved_inputs": [
+            "signed_even_site_23018_equal_1",
+            "signed_even_site_23018_real_div_1"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "k_49",
+          "observed_inputs": {
+            "step_149": true,
+            "var_14340": false
+          },
+          "stage": "key_norm_quantized_rope_input",
+          "unobserved_inputs": []
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "x_215",
+          "observed_inputs": {
+            "k_49": false
+          },
+          "stage": "rope_cosine_product_raw",
+          "unobserved_inputs": [
+            "cos_1"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14415",
+          "observed_inputs": {},
+          "stage": "rope_cosine_product_quantized",
+          "unobserved_inputs": [
+            "step_157",
+            "var_14414"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14438",
+          "observed_inputs": {},
+          "stage": "rope_sine_product_quantized",
+          "unobserved_inputs": [
+            "step_159",
+            "var_14437"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "x_219",
+          "observed_inputs": {
+            "var_14415": false,
+            "var_14438": false
+          },
+          "stage": "rope_sum_raw",
+          "unobserved_inputs": []
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14453",
+          "observed_inputs": {
+            "step_161": true,
+            "x_219": false
+          },
+          "stage": "final_key_quotient",
+          "unobserved_inputs": []
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "var_14454",
+          "observed_inputs": {
+            "var_14453": false
+          },
+          "stage": "final_key_signed_even_round",
+          "unobserved_inputs": [
+            "signed_even_site_23192_equal_1",
+            "signed_even_site_23192_real_div_1"
+          ]
+        },
+        {
+          "all_direct_inputs_exposed_and_equal": false,
+          "name": "k_51",
+          "observed_inputs": {
+            "step_161": true,
+            "var_14454": false
+          },
+          "stage": "final_key_before_cache",
+          "unobserved_inputs": []
+        }
+      ],
+      "chunk": 1,
+      "endpoint_comparisons": {
+        "tap23_out": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "y": {
+          "bitwise_error_count": 2980,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 956.0,
+            "actual_bits": "0x446f0000",
+            "expected": 964.0,
+            "expected_bits": "0x44710000",
+            "index": [
+              0,
+              0,
+              0
+            ]
+          },
+          "max_abs": 128.0,
+          "numeric_error_count": 2980,
+          "relative_rmse": 0.0007305098606180829,
+          "rmse": 6.705696045630178,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "first_changed_operation_with_all_direct_inputs_exposed_and_equal": null,
+      "first_difference_observed_direct_inputs": {
+        "denom_21": true
+      },
+      "first_difference_unobserved_direct_inputs": [
+        "fill_like_12"
+      ],
+      "first_differing_rounded_output": "k_49",
+      "first_differing_stage": {
+        "direct_inputs": {
+          "x": [
+            "fill_like_12"
+          ],
+          "y": [
+            "denom_21"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          2,
+          1
+        ],
+        "name": "var_14324",
+        "operation_index": 25194,
+        "operation_sha256": "abcc31d077a77b2aa3406a19bd800c1e6601e29e145ff0d24ad484a1ab6fd938",
+        "operation_type": "real_div",
+        "original_operation_index": 25044,
+        "stage": "key_norm_reciprocal_seed"
+      },
+      "last_exact_tap_before_first_difference": {
+        "direct_inputs": {
+          "x": [
+            "var_14321"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          2,
+          1
+        ],
+        "name": "denom_21",
+        "operation_index": 25191,
+        "operation_sha256": "a4f884b920ef23e674a35c0f345b0bd72d85cd6d03f8b399d4623085f96b8bc7",
+        "operation_type": "sqrt",
+        "original_operation_index": 25041,
+        "stage": "key_norm_denominator"
+      },
+      "preceding_exact_taps": [
+        "x_197",
+        "value_41",
+        "denom_21"
+      ],
+      "quantization_boundaries": [
+        {
+          "examples": [
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                0,
+                0,
+                73
+              ],
+              "output_cpu": -0.33203125,
+              "output_gpu": -0.330078125,
+              "quotient_cpu": -169.5,
+              "quotient_gpu": -169.49998474121094,
+              "rounded_cpu": -170.0,
+              "rounded_gpu": -169.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            }
+          ],
+          "output": "k_49",
+          "quotient": "var_14339",
+          "quotient_differences": 962,
+          "round_vs_exact_integer_ties_even": {
+            "CPU": {
+              "bitwise_error_count": 0,
+              "bitwise_exact": true,
+              "dtype": "float32",
+              "first_difference": null,
+              "max_abs": 0.0,
+              "numeric_error_count": 0,
+              "relative_rmse": 0.0,
+              "rmse": 0.0,
+              "shape": [
+                1,
+                12,
+                2,
+                128
+              ]
+            },
+            "GPU": {
+              "bitwise_error_count": 0,
+              "bitwise_exact": true,
+              "dtype": "float32",
+              "first_difference": null,
+              "max_abs": 0.0,
+              "numeric_error_count": 0,
+              "relative_rmse": 0.0,
+              "rmse": 0.0,
+              "shape": [
+                1,
+                12,
+                2,
+                128
+              ]
+            }
+          },
+          "rounded": "var_14340",
+          "rounded_differences": 1,
+          "rounded_differences_spanning_or_touching_half": 1,
+          "rounded_differences_with_equal_quotient": 0,
+          "step": "step_149",
+          "step_differences": 0
+        },
+        {
+          "examples": [
+            {
+              "half_boundary_spanned_or_touched": true,
+              "index": [
+                0,
+                0,
+                0,
+                73
+              ],
+              "output_cpu": -0.33203125,
+              "output_gpu": -0.330078125,
+              "quotient_cpu": -170.0,
+              "quotient_gpu": -169.0,
+              "rounded_cpu": -170.0,
+              "rounded_gpu": -169.0,
+              "step_cpu": 0.001953125,
+              "step_gpu": 0.001953125
+            }
+          ],
+          "output": "k_51",
+          "quotient": "var_14453",
+          "quotient_differences": 1,
+          "round_vs_exact_integer_ties_even": {
+            "CPU": {
+              "bitwise_error_count": 0,
+              "bitwise_exact": true,
+              "dtype": "float32",
+              "first_difference": null,
+              "max_abs": 0.0,
+              "numeric_error_count": 0,
+              "relative_rmse": 0.0,
+              "rmse": 0.0,
+              "shape": [
+                1,
+                12,
+                2,
+                128
+              ]
+            },
+            "GPU": {
+              "bitwise_error_count": 0,
+              "bitwise_exact": true,
+              "dtype": "float32",
+              "first_difference": null,
+              "max_abs": 0.0,
+              "numeric_error_count": 0,
+              "relative_rmse": 0.0,
+              "rmse": 0.0,
+              "shape": [
+                1,
+                12,
+                2,
+                128
+              ]
+            }
+          },
+          "rounded": "var_14454",
+          "rounded_differences": 1,
+          "rounded_differences_spanning_or_touching_half": 1,
+          "rounded_differences_with_equal_quotient": 0,
+          "step": "step_161",
+          "step_differences": 0
+        }
+      ],
+      "query_length": 12,
+      "reciprocal_reference": {
+        "both_policies_within_correction_contract": false,
+        "cpu_reciprocal_exact": true,
+        "denominator": "denom_21",
+        "different_denominator_count": 0,
+        "equal_denominator_count": 24,
+        "policies": {
+          "CPU": {
+            "denominator_domain_0_5_to_8": false,
+            "denominator_max": 58.722999572753906,
+            "denominator_min": 24.060638427734375,
+            "seed_vs_exact_rational_reciprocal": {
+              "bitwise_error_count": 0,
+              "bitwise_exact": true,
+              "dtype": "float32",
+              "first_difference": null,
+              "max_abs": 0.0,
+              "numeric_error_count": 0,
+              "relative_rmse": 0.0,
+              "rmse": 0.0,
+              "shape": [
+                1,
+                12,
+                2,
+                1
+              ]
+            },
+            "seed_within_one_neighbor": true,
+            "ulp_error_distribution": {
+              "0": 24
+            }
+          },
+          "GPU": {
+            "denominator_domain_0_5_to_8": false,
+            "denominator_max": 58.722999572753906,
+            "denominator_min": 24.060638427734375,
+            "seed_vs_exact_rational_reciprocal": {
+              "bitwise_error_count": 9,
+              "bitwise_exact": false,
+              "dtype": "float32",
+              "first_difference": {
+                "actual": 0.021358365193009377,
+                "actual_bits": "0x3caef7bd",
+                "expected": 0.021358367055654526,
+                "expected_bits": "0x3caef7be",
+                "index": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "max_abs": 1.862645149230957e-09,
+              "numeric_error_count": 9,
+              "relative_rmse": 4.5148599961101694e-08,
+              "rmse": 1.1406325468715177e-09,
+              "shape": [
+                1,
+                12,
+                2,
+                1
+              ]
+            },
+            "seed_within_one_neighbor": true,
+            "ulp_error_distribution": {
+              "-1": 7,
+              "0": 15,
+              "1": 2
+            }
+          }
+        },
+        "reciprocal": "var_14324",
+        "reciprocal_differences_with_equal_denominator": 9,
+        "reference_scope": "Exact rational 1/d, rounded to nearest FP32 ties-to-even independently for each saved policy denominator. No correctness claim about preceding square root or reduction."
+      },
+      "rounding_transitions": [
+        {
+          "raw": "x_197",
+          "raw_differences": 0,
+          "raw_differences_masked_at_corresponding_output": 0,
+          "raw_differences_surviving_at_corresponding_output": 0,
+          "raw_different_but_all_rounded_equal": false,
+          "rounded": "value_41",
+          "rounded_differences": 0,
+          "rounded_differences_with_equal_raw_bits": 0
+        },
+        {
+          "raw": "x_207",
+          "raw_differences": 962,
+          "raw_differences_masked_at_corresponding_output": 961,
+          "raw_differences_surviving_at_corresponding_output": 1,
+          "raw_different_but_all_rounded_equal": false,
+          "rounded": "k_49",
+          "rounded_differences": 1,
+          "rounded_differences_with_equal_raw_bits": 0
+        },
+        {
+          "raw": "x_215",
+          "raw_differences": 1,
+          "raw_differences_masked_at_corresponding_output": 0,
+          "raw_differences_surviving_at_corresponding_output": 1,
+          "raw_different_but_all_rounded_equal": false,
+          "rounded": "var_14415",
+          "rounded_differences": 1,
+          "rounded_differences_with_equal_raw_bits": 0
+        },
+        {
+          "raw": "x_217",
+          "raw_differences": 0,
+          "raw_differences_masked_at_corresponding_output": 0,
+          "raw_differences_surviving_at_corresponding_output": 0,
+          "raw_different_but_all_rounded_equal": false,
+          "rounded": "var_14438",
+          "rounded_differences": 775,
+          "rounded_differences_with_equal_raw_bits": 775
+        },
+        {
+          "raw": "x_219",
+          "raw_differences": 1,
+          "raw_differences_masked_at_corresponding_output": 0,
+          "raw_differences_surviving_at_corresponding_output": 1,
+          "raw_different_but_all_rounded_equal": false,
+          "rounded": "k_51",
+          "rounded_differences": 1,
+          "rounded_differences_with_equal_raw_bits": 0
+        }
+      ],
+      "stages": {
+        "denom_21": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            2,
+            1
+          ]
+        },
+        "k_49": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.330078125,
+            "actual_bits": "0xbea90000",
+            "expected": -0.33203125,
+            "expected_bits": "0xbeaa0000",
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 0.001953125,
+          "numeric_error_count": 1,
+          "relative_rmse": 3.523811584260603e-05,
+          "rmse": 3.523866389096837e-05,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "k_51": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.330078125,
+            "actual_bits": "0xbea90000",
+            "expected": -0.33203125,
+            "expected_bits": "0xbeaa0000",
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 0.001953125,
+          "numeric_error_count": 1,
+          "relative_rmse": 3.5247711633038965e-05,
+          "rmse": 3.523866389096837e-05,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "step_149": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "step_161": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "value_41": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "var_14324": {
+          "bitwise_error_count": 9,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 0.021358365193009377,
+            "actual_bits": "0x3caef7bd",
+            "expected": 0.021358367055654526,
+            "expected_bits": "0x3caef7be",
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "max_abs": 1.862645149230957e-09,
+          "numeric_error_count": 9,
+          "relative_rmse": 4.5148599961101694e-08,
+          "rmse": 1.1406325468715177e-09,
+          "shape": [
+            1,
+            12,
+            2,
+            1
+          ]
+        },
+        "var_14339": {
+          "bitwise_error_count": 962,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 226.91127014160156,
+            "actual_bits": "0x4362e949",
+            "expected": 226.91128540039062,
+            "expected_bits": "0x4362e94a",
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "max_abs": 3.0517578125e-05,
+          "numeric_error_count": 962,
+          "relative_rmse": 5.158003416445333e-08,
+          "rmse": 9.780006448691788e-06,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "var_14340": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -169.0,
+            "actual_bits": "0xc3290000",
+            "expected": -170.0,
+            "expected_bits": "0xc32a0000",
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 1.0,
+          "numeric_error_count": 1,
+          "relative_rmse": 9.515563125413054e-05,
+          "rmse": 0.018042195912175804,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "var_14415": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.330078125,
+            "actual_bits": "0xbea90000",
+            "expected": -0.33203125,
+            "expected_bits": "0xbeaa0000",
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 0.001953125,
+          "numeric_error_count": 1,
+          "relative_rmse": 4.098443127646232e-05,
+          "rmse": 3.523866389096837e-05,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "var_14438": {
+          "bitwise_error_count": 775,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.0,
+            "actual_bits": "0x80000000",
+            "expected": 0.0,
+            "expected_bits": "0x00000000",
+            "index": [
+              0,
+              0,
+              0,
+              65
+            ]
+          },
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "var_14453": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -169.0,
+            "actual_bits": "0xc3290000",
+            "expected": -170.0,
+            "expected_bits": "0xc32a0000",
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 1.0,
+          "numeric_error_count": 1,
+          "relative_rmse": 9.532944661452083e-05,
+          "rmse": 0.018042195912175804,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "var_14454": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -169.0,
+            "actual_bits": "0xc3290000",
+            "expected": -170.0,
+            "expected_bits": "0xc32a0000",
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 1.0,
+          "numeric_error_count": 1,
+          "relative_rmse": 9.533022659521699e-05,
+          "rmse": 0.018042195912175804,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "x_197": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            256
+          ]
+        },
+        "x_207": {
+          "bitwise_error_count": 962,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": 3.5454885959625244,
+            "actual_bits": "0x4062e949",
+            "expected": 3.5454888343811035,
+            "expected_bits": "0x4062e94a",
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "max_abs": 4.76837158203125e-07,
+          "numeric_error_count": 962,
+          "relative_rmse": 5.250820265225784e-08,
+          "rmse": 5.250820344947377e-08,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "x_215": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.330078125,
+            "actual_bits": "0xbea90000",
+            "expected": -0.33203125,
+            "expected_bits": "0xbeaa0000",
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 0.001953125,
+          "numeric_error_count": 1,
+          "relative_rmse": 4.097288468804209e-05,
+          "rmse": 3.523866389096837e-05,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "x_217": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "x_219": {
+          "bitwise_error_count": 1,
+          "bitwise_exact": false,
+          "dtype": "float32",
+          "first_difference": {
+            "actual": -0.330078125,
+            "actual_bits": "0xbea90000",
+            "expected": -0.33203125,
+            "expected_bits": "0xbeaa0000",
+            "index": [
+              0,
+              0,
+              0,
+              73
+            ]
+          },
+          "max_abs": 0.001953125,
+          "numeric_error_count": 1,
+          "relative_rmse": 3.5247422374840706e-05,
+          "rmse": 3.523866389096837e-05,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        }
+      }
+    }
+  ],
+  "controls": [
+    {
+      "chunk": 0,
+      "original_outputs_vs_saved": {
+        "tap23_out": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "y": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "original_states_vs_saved": {
+        "inner_k_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "passed": true,
+      "policy": "CPU",
+      "tapped_endpoints_vs_original": {
+        "tap23_out": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "y": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "tapped_states_vs_original": {
+        "inner_k_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "chunk": 1,
+      "original_outputs_vs_saved": {
+        "tap23_out": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "y": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "original_states_vs_saved": {
+        "inner_k_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "passed": true,
+      "policy": "CPU",
+      "tapped_endpoints_vs_original": {
+        "tap23_out": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "y": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "tapped_states_vs_original": {
+        "inner_k_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "chunk": 0,
+      "original_outputs_vs_saved": {
+        "tap23_out": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "y": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "original_states_vs_saved": {
+        "inner_k_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "passed": true,
+      "policy": "GPU",
+      "tapped_endpoints_vs_original": {
+        "tap23_out": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "y": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "tapped_states_vs_original": {
+        "inner_k_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "chunk": 1,
+      "original_outputs_vs_saved": {
+        "tap23_out": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "y": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "original_states_vs_saved": {
+        "inner_k_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "passed": true,
+      "policy": "GPU",
+      "tapped_endpoints_vs_original": {
+        "tap23_out": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "y": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "tapped_states_vs_original": {
+        "inner_k_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "bitwise_error_count": 0,
+          "bitwise_exact": true,
+          "dtype": "float32",
+          "first_difference": null,
+          "max_abs": 0.0,
+          "numeric_error_count": 0,
+          "relative_rmse": 0.0,
+          "rmse": 0.0,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    }
+  ],
+  "controls_passed": true,
+  "cpu_endpoint_state_preservation_passed": true,
+  "evidence_verified": true,
+  "interpretation_available": true,
+  "pins_verified": {
+    "evidence/06d-gpu-rounding/group0-replay-1/results.json": "76e6030af0fd108d412ba89652bb4ed6d55f1760936da8f805f8fc358077e693",
+    "evidence/06f-gpu-reciprocal/group-replay-1/results.json": "584efa67f2c875cae0075adde513e452f5e7ae3794359c79c22cc21e02284bc0",
+    "evidence/06f-gpu-reciprocal/group0-1/results.json": "48af7de89cde44bcaf7c7dda12457aec5eb9c2e99cfa1ae4c5294090529441d6",
+    "evidence/06g-gpu-residual/key-design.md": "692e354f98c4c9272964ef4a8cd56d693f13fe3d59557f9b8e9cdce2e7ffbfcb",
+    "evidence/06g-gpu-residual/key-replay-design.md": "081d6e5c11c2d47417fb0a05ffa006d6d8ba45f8941ec60d9aad21caa7924403",
+    "evidence/06g-gpu-residual/key-taps-1/results.json": "21999d43760669dae89a634adab6e3457d2bb577d5f20c2e8bafe3400c549e5b",
+    "scripts/probe_gpu_group0.py": "bd608693337d5dc092b544ff7828bd63fc4c62557e6cee1a3dc156768c585682",
+    "scripts/probe_residual_key_taps.py": "a86e12ef854544588cddc2b6bf822879c67036866f88426ae8f60436eac5f080",
+    "scripts/runtime_provenance.py": "cde93c59843cf828e3bd6d5b2e316d4974cd206e05afcbf097bbbc0dd64ae84e"
+  },
+  "prediction_guard": {
+    "gil_releases": 8,
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 8
+  },
+  "protocol": {
+    "path": "evidence/06g-gpu-residual/key-replay-1-protocol.json",
+    "sha256": "8099e9a8fed403231c16c48511bfc5fe5c32fb075f2c1cd239ac25a84565670a"
+  },
+  "reciprocal_helper": {
+    "path": "scripts/analyze_residual_norm.py",
+    "sha256": "467e8eaa1919fbc3e18018c8659cd6594149f91a3e7c3c4d1d77a347e28c772d"
+  },
+  "replay": {
+    "path": "evidence/06g-gpu-residual/key-replay-1/results.json",
+    "sha256": "48e5dadf50cfc54c17bb3a3cb50b29e22c2bae3ab9f13234b081756db191cba5"
+  },
+  "runtime_pins_verified": {
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf"
+  },
+  "scope": "Saved eight-call output-only group diagnostic. First differing exposed stage is observational and may omit intermediate operations. Rounded transition counts compare corresponding elements and do not imply independent causal effects. Boundary ordering does not prove a direct dependency between adjacent taps; neither upstream correctness nor downstream causality is inferred. The reciprocal oracle applies only to each saved denom_21; it does not establish correctness of preceding operations or causality for later differences. Artifact inventories are bound by build pins, not payload-rehashed here. No model changes, native execution, full-model qualification or performance claim.",
+  "script_sha256": "ca4af800e09792c3e592c90d4f4ee5e79f6d1e20ddf5996ce062daa91c3283eb",
+  "status": "completed",
+  "tap_records": [
+    {
+      "direct_inputs": {
+        "x": [
+          "var_13936"
+        ],
+        "y": [
+          "var_13939"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        256
+      ],
+      "name": "x_197",
+      "operation_index": 24691,
+      "operation_sha256": "f493be9ffbde445d8b7e03f1f9d8ae981a3f6f19acc8542398610af15878da40",
+      "operation_type": "add",
+      "original_operation_index": 24541,
+      "stage": "key_linear_raw"
+    },
+    {
+      "direct_inputs": {
+        "shape": [
+          "var_13957"
+        ],
+        "x": [
+          "var_13956"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "value_41",
+      "operation_index": 24746,
+      "operation_sha256": "e4431c735ea83fb3078115c18cc63c4acbc82c28ddca5e720c879dba537517e4",
+      "operation_type": "reshape",
+      "original_operation_index": 24596,
+      "stage": "key_projection_quantized"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "var_14321"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        1
+      ],
+      "name": "denom_21",
+      "operation_index": 25191,
+      "operation_sha256": "a4f884b920ef23e674a35c0f345b0bd72d85cd6d03f8b399d4623085f96b8bc7",
+      "operation_type": "sqrt",
+      "original_operation_index": 25041,
+      "stage": "key_norm_denominator"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "fill_like_12"
+        ],
+        "y": [
+          "denom_21"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        1
+      ],
+      "name": "var_14324",
+      "operation_index": 25194,
+      "operation_sha256": "abcc31d077a77b2aa3406a19bd800c1e6601e29e145ff0d24ad484a1ab6fd938",
+      "operation_type": "real_div",
+      "original_operation_index": 25044,
+      "stage": "key_norm_reciprocal_seed"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "value_41"
+        ],
+        "y": [
+          "var_14324"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "x_207",
+      "operation_index": 25195,
+      "operation_sha256": "3cb86271cac417e4140f63da50ea13d045012b81b3229e27083f41c6572f3533",
+      "operation_type": "mul",
+      "original_operation_index": 25045,
+      "stage": "key_norm_raw"
+    },
+    {
+      "direct_inputs": {
+        "axis": [
+          "step_149_axis_1"
+        ],
+        "batch_dims": [
+          "step_149_batch_dims_0"
+        ],
+        "indices": [
+          "select_88"
+        ],
+        "validate_indices": [
+          "step_149_validate_indices_0"
+        ],
+        "x": [
+          "powers_1"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "step_149",
+      "operation_index": 25218,
+      "operation_sha256": "16734ce9486f9c85988f312cac65f29b8bf9f38dd2e83847bc2e8333c846bbd6",
+      "operation_type": "gather",
+      "original_operation_index": 25068,
+      "stage": "key_norm_quantization_step"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "x_207"
+        ],
+        "y": [
+          "step_149"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "var_14339",
+      "operation_index": 25219,
+      "operation_sha256": "dc21eb961a0980c351b0617a581440855425f700b1d3627f135632e806f96c51",
+      "operation_type": "real_div",
+      "original_operation_index": 25069,
+      "stage": "key_norm_quotient"
+    },
+    {
+      "direct_inputs": {
+        "a": [
+          "var_14339"
+        ],
+        "b": [
+          "signed_even_site_23018_real_div_1"
+        ],
+        "cond": [
+          "signed_even_site_23018_equal_1"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "var_14340",
+      "operation_index": 25247,
+      "operation_sha256": "6149db56e72e97e31732aa71466a6d94475133d1c18784af30a9942d40c62e96",
+      "operation_type": "select",
+      "original_operation_index": 25097,
+      "stage": "key_norm_signed_even_round"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "var_14340"
+        ],
+        "y": [
+          "step_149"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "k_49",
+      "operation_index": 25248,
+      "operation_sha256": "017ab8da4cd9b19e6c387559d800d88d205c636427c63fae4eaa7a4776c18074",
+      "operation_type": "mul",
+      "original_operation_index": 25098,
+      "stage": "key_norm_quantized_rope_input"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "cos_1"
+        ],
+        "y": [
+          "k_49"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "x_215",
+      "operation_index": 25417,
+      "operation_sha256": "b44444096b5cfcef62aff602897966d097baaf9a35b819cb7c39506875743b56",
+      "operation_type": "mul",
+      "original_operation_index": 25267,
+      "stage": "rope_cosine_product_raw"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "var_14414"
+        ],
+        "y": [
+          "step_157"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "var_14415",
+      "operation_index": 25470,
+      "operation_sha256": "adb934dcb4b41d5f5a49600e96ea87a120d2b959b659cc25b7fbc215d7b0ab28",
+      "operation_type": "mul",
+      "original_operation_index": 25320,
+      "stage": "rope_cosine_product_quantized"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "sin_1"
+        ],
+        "y": [
+          "var_14421"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "x_217",
+      "operation_index": 25477,
+      "operation_sha256": "5f5338690e36cccfb7ae094fccc0cb26f97774be82af77eae9fdf79b18178932",
+      "operation_type": "mul",
+      "original_operation_index": 25327,
+      "stage": "rope_sine_product_raw"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "var_14437"
+        ],
+        "y": [
+          "step_159"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "var_14438",
+      "operation_index": 25530,
+      "operation_sha256": "204ca14d397f627cd51526e3d3b237b59f375f7944f7d66aa4d0a786608a4b49",
+      "operation_type": "mul",
+      "original_operation_index": 25380,
+      "stage": "rope_sine_product_quantized"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "var_14415"
+        ],
+        "y": [
+          "var_14438"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "x_219",
+      "operation_index": 25531,
+      "operation_sha256": "cbb7ab6337435716e4920140360bda9dac30771538a96a674d98278f7e81d28f",
+      "operation_type": "add",
+      "original_operation_index": 25381,
+      "stage": "rope_sum_raw"
+    },
+    {
+      "direct_inputs": {
+        "axis": [
+          "step_161_axis_1"
+        ],
+        "batch_dims": [
+          "step_161_batch_dims_0"
+        ],
+        "indices": [
+          "select_94"
+        ],
+        "validate_indices": [
+          "step_161_validate_indices_0"
+        ],
+        "x": [
+          "powers_1"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "step_161",
+      "operation_index": 25554,
+      "operation_sha256": "22876e186bc3f8998690cb3e967636d3ad65db2db6183fc1e723e87f6f3c3c10",
+      "operation_type": "gather",
+      "original_operation_index": 25404,
+      "stage": "final_key_quantization_step"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "x_219"
+        ],
+        "y": [
+          "step_161"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "var_14453",
+      "operation_index": 25555,
+      "operation_sha256": "7fe84c962696d39552227db6678d6f52a3fa65768dcc167d59c0d3a24a34dfdf",
+      "operation_type": "real_div",
+      "original_operation_index": 25405,
+      "stage": "final_key_quotient"
+    },
+    {
+      "direct_inputs": {
+        "a": [
+          "var_14453"
+        ],
+        "b": [
+          "signed_even_site_23192_real_div_1"
+        ],
+        "cond": [
+          "signed_even_site_23192_equal_1"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "var_14454",
+      "operation_index": 25583,
+      "operation_sha256": "b10ebda0d6989fb346de126f69a1973f81ba94fc738b3675f89fb91396ecdb45",
+      "operation_type": "select",
+      "original_operation_index": 25433,
+      "stage": "final_key_signed_even_round"
+    },
+    {
+      "direct_inputs": {
+        "x": [
+          "var_14454"
+        ],
+        "y": [
+          "step_161"
+        ]
+      },
+      "mil_shape": [
+        1,
+        null,
+        2,
+        128
+      ],
+      "name": "k_51",
+      "operation_index": 25584,
+      "operation_sha256": "b4baa3258c3a0093a46ab0b31628834b21813d8a1bf3ff73ed421c93b1ba7d17",
+      "operation_type": "mul",
+      "original_operation_index": 25434,
+      "stage": "final_key_before_cache"
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "changed_package_files": [
+    "Data/com.apple.CoreML/model.mlmodel"
+  ],
+  "compile_seconds": 2.025796708650887,
+  "compiled": "artifacts/06d-gpu-rounding/residual-taps-3/0.mlmodelc",
+  "compiled_files": {
+    "analytics/coremldata.bin": "daad4fb97ef8c56c5c84ba70b058a1f7bd3ee15605e15eda6d81f22a328fe6a0",
+    "coremldata.bin": "49f15011f6398310a3c1576e45cfe593f3dbd18631b4a9860d5825b3e3d40d70",
+    "model.mil": "f3c34fa509fefb4e34e57ece5098db4d06055e9a388336fc840e1647fd5f3d24",
+    "weights/weight.bin": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b"
+  },
+  "design_sha256": "6bff83e87ca921aa8b0b49a1aa5f150ec0f7e3226f266405a30b68a9a63386b3",
+  "graph_check": {
+    "added_taps": [
+      {
+        "mil_shape": [
+          1,
+          null,
+          10,
+          128
+        ],
+        "name": "q_3",
+        "operation_index": 1922,
+        "operation_sha256": "7b37770ebf9ebf168b6f31fde849aaebb1099126194a340baccd959fff367775",
+        "operation_type": "mul",
+        "original_operation_index": 1679,
+        "producer_byte_identical_to_original": true,
+        "stage": "layer0_rotary_query",
+        "value_type_sha256": "0a5466f5dc70faa052cccf67a034dad7145d63cab9d1a49aa0e6a4e2c1503bd1"
+      },
+      {
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "value_17",
+        "operation_index": 9098,
+        "operation_sha256": "fd4db044b1e1516cac343c0bc47367ffa5c37deece526517df741c47a500f23e",
+        "operation_type": "mul",
+        "original_operation_index": 8450,
+        "producer_byte_identical_to_original": true,
+        "stage": "layer0_attention_residual_after_Q",
+        "value_type_sha256": "eaca2e08d1c0ca76b5ed3e8e61df25f1eced482aa32b12d3cafcff9c37ab549a"
+      },
+      {
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "x_69",
+        "operation_index": 9597,
+        "operation_sha256": "7e6b94a90f4ed42a19b7c1bf98d8e79f90f471ace31163ac5db1b99d56f3839b",
+        "operation_type": "mul",
+        "original_operation_index": 8922,
+        "producer_byte_identical_to_original": true,
+        "stage": "layer0_mlp_input_normalization",
+        "value_type_sha256": "eaca2e08d1c0ca76b5ed3e8e61df25f1eced482aa32b12d3cafcff9c37ab549a"
+      },
+      {
+        "mil_shape": [
+          1,
+          null,
+          3328
+        ],
+        "name": "x_79",
+        "operation_index": 10389,
+        "operation_sha256": "dc19bbe0a2b872618a53d83bea4bc7b8723b9b2dbda4d2a4ef07c6cbe6f24487",
+        "operation_type": "mul",
+        "original_operation_index": 9606,
+        "producer_byte_identical_to_original": true,
+        "stage": "layer0_gated_mlp_activation_after_Q",
+        "value_type_sha256": "c2d42073d570107034a636db480088df8e9551119268fd1bf0d4b77fd948c207"
+      },
+      {
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "mlp_1",
+        "operation_index": 11427,
+        "operation_sha256": "abc02b9062dedfa89c1e5f9612c036285111449d3e2aafbd4e166c6d84e1c9c2",
+        "operation_type": "mul",
+        "original_operation_index": 10617,
+        "producer_byte_identical_to_original": true,
+        "stage": "layer0_down_projection_after_Q",
+        "value_type_sha256": "eaca2e08d1c0ca76b5ed3e8e61df25f1eced482aa32b12d3cafcff9c37ab549a"
+      },
+      {
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "value_19",
+        "operation_index": 11589,
+        "operation_sha256": "a524255c5a1b1bb3a86a843e8a476403302d75adae533278e17c54ff39ec098a",
+        "operation_type": "mul",
+        "original_operation_index": 10698,
+        "producer_byte_identical_to_original": true,
+        "stage": "layer0_final_hidden",
+        "value_type_sha256": "eaca2e08d1c0ca76b5ed3e8e61df25f1eced482aa32b12d3cafcff9c37ab549a"
+      }
+    ],
+    "all_original_operations_byte_identical": true,
+    "default_query_length": 3,
+    "non_output_spec_sha256": "642607a34eadea6dbf98435ce4d3bba371248f856674d4e235bd407baee2d2f8",
+    "only_description_and_block_outputs_changed": true,
+    "original_operations": 46035,
+    "original_operations_sha256": "fb8b1d2cec86e5ddc7fefe7a548e73a56d69aba8d6646b9c22913c333934a2d5",
+    "original_outputs_preserved": [
+      "y",
+      "tap23_out"
+    ],
+    "output_schemas": [
+      {
+        "data_type": 65568,
+        "default_shape": [
+          1,
+          3,
+          10,
+          128
+        ],
+        "name": "q_3",
+        "shape_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            32
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            128,
+            128
+          ]
+        ]
+      },
+      {
+        "data_type": 65568,
+        "default_shape": [
+          1,
+          3,
+          1280
+        ],
+        "name": "value_17",
+        "shape_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            32
+          ],
+          [
+            1280,
+            1280
+          ]
+        ]
+      },
+      {
+        "data_type": 65568,
+        "default_shape": [
+          1,
+          3,
+          1280
+        ],
+        "name": "x_69",
+        "shape_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            32
+          ],
+          [
+            1280,
+            1280
+          ]
+        ]
+      },
+      {
+        "data_type": 65568,
+        "default_shape": [
+          1,
+          3,
+          3328
+        ],
+        "name": "x_79",
+        "shape_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            32
+          ],
+          [
+            3328,
+            3328
+          ]
+        ]
+      },
+      {
+        "data_type": 65568,
+        "default_shape": [
+          1,
+          3,
+          1280
+        ],
+        "name": "mlp_1",
+        "shape_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            32
+          ],
+          [
+            1280,
+            1280
+          ]
+        ]
+      },
+      {
+        "data_type": 65568,
+        "default_shape": [
+          1,
+          3,
+          1280
+        ],
+        "name": "value_19",
+        "shape_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            32
+          ],
+          [
+            1280,
+            1280
+          ]
+        ]
+      }
+    ],
+    "passed": true,
+    "query_length_range": [
+      1,
+      32
+    ],
+    "state_names_preserved": [
+      "inner_k_cache_0",
+      "inner_v_cache_0",
+      "inner_k_cache_1",
+      "inner_v_cache_1",
+      "inner_k_cache_2",
+      "inner_v_cache_2",
+      "inner_k_cache_3",
+      "inner_v_cache_3"
+    ],
+    "variant_operations_sha256": "fb8b1d2cec86e5ddc7fefe7a548e73a56d69aba8d6646b9c22913c333934a2d5"
+  },
+  "guard_after_compile": {
+    "gil_releases": 0,
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 0
+  },
+  "guard_before_compile": {
+    "gil_releases": 0,
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 0
+  },
+  "native_instrumentation_control": "pending: exact original endpoints and all8 states independently under both policies",
+  "package": "artifacts/06d-gpu-rounding/residual-taps-3/0.mlpackage",
+  "passed": true,
+  "scope": "Round-fixed group-0 six-tap layer-0 residual/MLP localization; outputs only; same-policy endpoint/all-state byte controls required",
+  "script_sha256": "11a86f5bbc775dfa0f86fbd5e9a7144a2ca10df2c42006cc0d77b2a6e9717116",
+  "source_arithmetic_policy": "explicit-signed-ties-even-v3-round-only",
+  "source_build_record": "evidence/06d-gpu-rounding/group0-1/results.json",
+  "source_build_sha256": "4e6ac1baa2f70c10bf812523f7e341d9dabf34b30299e4819631f2db31cf150f",
+  "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "source_files": {
+    "Data/com.apple.CoreML/model.mlmodel": "642607a34eadea6dbf98435ce4d3bba371248f856674d4e235bd407baee2d2f8",
+    "Data/com.apple.CoreML/weights/weight.bin": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b",
+    "Manifest.json": "a0b8ecc7aebf27908cbce79298bec4435dd80f63e12f9dc0b2d6dea823e912e8"
+  },
+  "source_package": "artifacts/06d-gpu-rounding/group0-1/0.mlpackage",
+  "source_package_files": {
+    "Data/com.apple.CoreML/model.mlmodel": "642607a34eadea6dbf98435ce4d3bba371248f856674d4e235bd407baee2d2f8",
+    "Data/com.apple.CoreML/weights/weight.bin": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b",
+    "Manifest.json": "a0b8ecc7aebf27908cbce79298bec4435dd80f63e12f9dc0b2d6dea823e912e8"
+  },
+  "status": "completed",
+  "variant_files": {
+    "Data/com.apple.CoreML/model.mlmodel": "73ff3db414f9c47770d616c1e8a7404fc9fba96e01aa6e7b5634dae2caa3f95d",
+    "Data/com.apple.CoreML/weights/weight.bin": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b",
+    "Manifest.json": "a0b8ecc7aebf27908cbce79298bec4435dd80f63e12f9dc0b2d6dea823e912e8"
+  }
+}

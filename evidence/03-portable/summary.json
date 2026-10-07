@@ -1,0 +1,185 @@
+{
+  "phase": "Step 3 implemented; validation partial",
+  "updated_at": "2026-09-22T19:04:12.376874+00:00",
+  "gates": {
+    "G3.1": "PASS",
+    "G3.2": "BLOCKED for independent original runtime; local source comparison PASS",
+    "G3.3": "FAIL on CPU and Metal under unchanged criteria",
+    "G3.4": "PARTIAL: input/reset/stop mechanics pass; published versus emitted EOS discrepancy unresolved; explicit extra-stop option verified"
+  },
+  "checkpoint_sha256": "9dc7e89e30acf473629f98ac3ade535fb05cc044fe7e399b78d0bc957283a5f5",
+  "tensor_count": 743,
+  "parameter_count": 1035254176,
+  "tensor_dtype_counts": {
+    "torch.bfloat16": 338,
+    "torch.float32": 405
+  },
+  "acceptance_sha256": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+  "cpu": {
+    "path": "run3/results.json",
+    "device": "cpu",
+    "checks": 35,
+    "checks_passed": 30,
+    "full_prefix_comparisons": 220,
+    "full_prefix_passed": 220,
+    "full_prefix_max_abs": 0.0,
+    "cache_comparisons": 247,
+    "cache_passed": 185,
+    "cache_max_score_abs": 0.4138154983520508,
+    "cache_max_hidden_relative_rmse": 0.021283497976450263,
+    "cache_min_hidden_cosine": 0.9997781596986648,
+    "cache_top1_agreement": 19,
+    "cache_score_comparisons": 19,
+    "peak_process_rss_gib": 3.5439300537109375,
+    "all_local_checks_passed": false
+  },
+  "mps": {
+    "path": "run2/results.json",
+    "device": "mps",
+    "checks": 34,
+    "checks_passed": 29,
+    "full_prefix_comparisons": 220,
+    "full_prefix_passed": 220,
+    "full_prefix_max_abs": 0.0,
+    "cache_comparisons": 247,
+    "cache_passed": 178,
+    "cache_max_score_abs": 0.286529541015625,
+    "cache_max_hidden_relative_rmse": 0.02529654821564674,
+    "cache_min_hidden_cosine": 0.999680784947637,
+    "cache_top1_agreement": 19,
+    "cache_score_comparisons": 19,
+    "peak_process_rss_gib": 3.345916748046875,
+    "all_local_checks_passed": false
+  },
+  "head_and_stop_checks": {
+    "head": {
+      "scope": "Original pinned compute_logits method run on CPU with real hidden state and tied actor weights; not original CUDA serving execution",
+      "max_abs": 0.0,
+      "exact_match": true
+    },
+    "loop_checks": {
+      "eos_stops_without_extra_forward": true,
+      "tokenizer_eos_does_not_stop_model": true,
+      "callback_interruption_disposes_state": true,
+      "explicit_extra_stop_is_recorded": true
+    },
+    "passed": true
+  },
+  "generation": [
+    {
+      "path": "run2/results.json",
+      "case_index": 0,
+      "prompt": "Compute 17 * 23.",
+      "generated_tokens": 192,
+      "finish_reason": "length",
+      "complete": false,
+      "greedy": true
+    },
+    {
+      "path": "run2/results.json",
+      "case_index": 1,
+      "prompt": "Solve x^2 - 5x + 6 = 0 and give the sum of its roots.",
+      "generated_tokens": 192,
+      "finish_reason": "length",
+      "complete": false,
+      "greedy": true
+    },
+    {
+      "path": "run2/results.json",
+      "case_index": 2,
+      "prompt": "Find all integer solutions of x^2 = 49.",
+      "generated_tokens": 192,
+      "finish_reason": "length",
+      "complete": false,
+      "greedy": true
+    },
+    {
+      "path": "run3/results.json",
+      "case_index": 0,
+      "prompt": "Compute 17 * 23.",
+      "generated_tokens": 512,
+      "finish_reason": "length",
+      "complete": false,
+      "greedy": true
+    },
+    {
+      "path": "run3/results.json",
+      "case_index": 1,
+      "prompt": "Solve x^2 - 5x + 6 = 0 and give the sum of its roots.",
+      "generated_tokens": 512,
+      "finish_reason": "length",
+      "complete": false,
+      "greedy": true
+    },
+    {
+      "path": "run3/results.json",
+      "case_index": 2,
+      "prompt": "Find all integer solutions of x^2 = 49.",
+      "generated_tokens": 512,
+      "finish_reason": "length",
+      "complete": false,
+      "greedy": true
+    },
+    {
+      "path": "cli-math.json",
+      "prompt": "Compute 17 * 23.",
+      "generated_tokens": 1024,
+      "finish_reason": "length",
+      "complete": false,
+      "greedy": true,
+      "seed": 0,
+      "boxed_391_after_think": false,
+      "completion_policy": "published_eos_only",
+      "stop_token_ids": [
+        151645
+      ]
+    },
+    {
+      "path": "cli-math-sampled.json",
+      "prompt": "Compute 17 * 23.",
+      "generated_tokens": 1024,
+      "finish_reason": "length",
+      "complete": false,
+      "greedy": false,
+      "seed": 0,
+      "boxed_391_after_think": false,
+      "completion_policy": "published_eos_only",
+      "stop_token_ids": [
+        151645
+      ]
+    },
+    {
+      "path": "cli-math-full-budget.json",
+      "prompt": "Compute 17 * 23.",
+      "generated_tokens": 2004,
+      "finish_reason": "length",
+      "complete": false,
+      "greedy": false,
+      "seed": 0,
+      "boxed_391_after_think": true,
+      "completion_policy": "published_eos_only",
+      "stop_token_ids": [
+        151645
+      ]
+    },
+    {
+      "path": "cli-math-explicit-stop.json",
+      "prompt": "Compute 17 * 23.",
+      "generated_tokens": 500,
+      "finish_reason": "stop_token",
+      "complete": true,
+      "greedy": false,
+      "seed": 0,
+      "boxed_391_after_think": true,
+      "completion_policy": "published_eos_plus_explicit_stops",
+      "stop_token_ids": [
+        151643,
+        151645
+      ]
+    }
+  ],
+  "eos_observation": "eos-observation.json",
+  "complete_coreml_conversion_executed": false,
+  "original_cuda_runtime_executed": false,
+  "next_step": "Investigate and qualify cached numerical variation before full-model conversion; original CUDA output captures remain needed for fidelity."
+}

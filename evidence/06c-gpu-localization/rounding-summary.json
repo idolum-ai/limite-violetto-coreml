@@ -1,0 +1,220 @@
+{
+  "script_sha256": "3a02b1a22e6717dd732eba34937400b0e89621e1938e018a753d6c57b6db5f77",
+  "raw_result_sha256": "0b88f645ca09706da7a8b0e012265ca3d3d5e3b01fbdddfed8f5a21aa113eb71",
+  "scope": "Observed finite raw-stage arrays only; no actual-device or full-model-fix claim",
+  "archive_hashes": {
+    "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/CPU-tapped/outputs.npz": "4ec05d8ebc643edbded4be06f955ba69adc8843e1822f69db5d7146623b43a01",
+    "evidence/06c-gpu-localization/raw-key-replay-1/chunk0/GPU-tapped/outputs.npz": "ca0fdbd45b2e6446f3717c00141c7e0c1de196fe8c884d5cc0d1400b1a12aad0",
+    "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/CPU-tapped/outputs.npz": "d6856af0be3e7617ae0a98ce75b6487b967f8549d255d4bc328bf63d80a434c3",
+    "evidence/06c-gpu-localization/raw-key-replay-1/chunk1/GPU-tapped/outputs.npz": "2e0ac2d238c8cb2db0392c2600d8e9ffba1f5e6081ac83e031fa049b911be520"
+  },
+  "stages": [
+    {
+      "chunk": 0,
+      "policy": "CPU",
+      "raw": "x_9",
+      "rounded": "value_5",
+      "elements": 8192,
+      "ties_even_mismatches": 0,
+      "ties_away_mismatches": 2
+    },
+    {
+      "chunk": 0,
+      "policy": "CPU",
+      "raw": "x_27",
+      "rounded": "var_2083",
+      "elements": 8192,
+      "ties_even_mismatches": 0,
+      "ties_away_mismatches": 16
+    },
+    {
+      "chunk": 0,
+      "policy": "CPU",
+      "raw": "x_29",
+      "rounded": "var_2106",
+      "elements": 8192,
+      "ties_even_mismatches": 0,
+      "ties_away_mismatches": 39
+    },
+    {
+      "chunk": 0,
+      "policy": "CPU",
+      "raw": "x_31",
+      "rounded": "k_9",
+      "elements": 8192,
+      "ties_even_mismatches": 0,
+      "ties_away_mismatches": 321
+    },
+    {
+      "chunk": 0,
+      "policy": "GPU",
+      "raw": "x_9",
+      "rounded": "value_5",
+      "elements": 8192,
+      "ties_even_mismatches": 2,
+      "ties_away_mismatches": 0
+    },
+    {
+      "chunk": 0,
+      "policy": "GPU",
+      "raw": "x_27",
+      "rounded": "var_2083",
+      "elements": 8192,
+      "ties_even_mismatches": 16,
+      "ties_away_mismatches": 0
+    },
+    {
+      "chunk": 0,
+      "policy": "GPU",
+      "raw": "x_29",
+      "rounded": "var_2106",
+      "elements": 8192,
+      "ties_even_mismatches": 39,
+      "ties_away_mismatches": 0
+    },
+    {
+      "chunk": 0,
+      "policy": "GPU",
+      "raw": "x_31",
+      "rounded": "k_9",
+      "elements": 8192,
+      "ties_even_mismatches": 324,
+      "ties_away_mismatches": 0
+    },
+    {
+      "chunk": 1,
+      "policy": "CPU",
+      "raw": "x_9",
+      "rounded": "value_5",
+      "elements": 3072,
+      "ties_even_mismatches": 0,
+      "ties_away_mismatches": 0
+    },
+    {
+      "chunk": 1,
+      "policy": "CPU",
+      "raw": "x_27",
+      "rounded": "var_2083",
+      "elements": 3072,
+      "ties_even_mismatches": 0,
+      "ties_away_mismatches": 5
+    },
+    {
+      "chunk": 1,
+      "policy": "CPU",
+      "raw": "x_29",
+      "rounded": "var_2106",
+      "elements": 3072,
+      "ties_even_mismatches": 0,
+      "ties_away_mismatches": 23
+    },
+    {
+      "chunk": 1,
+      "policy": "CPU",
+      "raw": "x_31",
+      "rounded": "k_9",
+      "elements": 3072,
+      "ties_even_mismatches": 0,
+      "ties_away_mismatches": 138
+    },
+    {
+      "chunk": 1,
+      "policy": "GPU",
+      "raw": "x_9",
+      "rounded": "value_5",
+      "elements": 3072,
+      "ties_even_mismatches": 0,
+      "ties_away_mismatches": 0
+    },
+    {
+      "chunk": 1,
+      "policy": "GPU",
+      "raw": "x_27",
+      "rounded": "var_2083",
+      "elements": 3072,
+      "ties_even_mismatches": 5,
+      "ties_away_mismatches": 0
+    },
+    {
+      "chunk": 1,
+      "policy": "GPU",
+      "raw": "x_29",
+      "rounded": "var_2106",
+      "elements": 3072,
+      "ties_even_mismatches": 23,
+      "ties_away_mismatches": 0
+    },
+    {
+      "chunk": 1,
+      "policy": "GPU",
+      "raw": "x_31",
+      "rounded": "k_9",
+      "elements": 3072,
+      "ties_even_mismatches": 135,
+      "ties_away_mismatches": 0
+    }
+  ],
+  "equal_quotient_disagreements": [
+    {
+      "chunk": 0,
+      "equal_quotients": 8131,
+      "different_rounds": 320,
+      "all_exact_half_ties": true
+    },
+    {
+      "chunk": 1,
+      "equal_quotients": 3044,
+      "different_rounds": 134,
+      "all_exact_half_ties": true
+    }
+  ],
+  "step_differences": [
+    {
+      "chunk": 0,
+      "index": [
+        0,
+        8,
+        0,
+        35
+      ],
+      "CPU": {
+        "x_31": -0.49609375,
+        "step_23": 0.001953125,
+        "var_2121": -254.0,
+        "var_2122": -254.0,
+        "k_9": -0.49609375
+      },
+      "GPU": {
+        "x_31": -0.5,
+        "step_23": 0.00390625,
+        "var_2121": -128.0,
+        "var_2122": -128.0,
+        "k_9": -0.5
+      }
+    },
+    {
+      "chunk": 0,
+      "index": [
+        0,
+        22,
+        0,
+        47
+      ],
+      "CPU": {
+        "x_31": -0.125,
+        "step_23": 0.0009765625,
+        "var_2121": -128.0,
+        "var_2122": -128.0,
+        "k_9": -0.125
+      },
+      "GPU": {
+        "x_31": -0.124755859375,
+        "step_23": 0.00048828125,
+        "var_2121": -255.5,
+        "var_2122": -256.0,
+        "k_9": -0.125
+      }
+    }
+  ],
+  "all_observed_stages_match_policy_rounding_law": true
+}

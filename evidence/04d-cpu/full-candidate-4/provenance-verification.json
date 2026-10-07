@@ -1,0 +1,92 @@
+{
+  "sources_unchanged_during_build": true,
+  "before": {
+    "coreml_port/graphs.py": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+    "scripts/convert_coreml.py": "f774aaf45fb41d28ac1c3f705ce2c81d6e03dac733d8a86d3172b85e2e49f97c",
+    "scripts/build_cpu_candidate.py": "1da2a73f397de607498a1f39f47766e4530466a42091a66227501c71bcbeea0c",
+    "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227",
+    "coreml_port/bf16_gelu.py": "69761c7b2ebd7fe158109092abe058d204fd965958cc74652e7747ac4bb82624",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+    "coreml_port/dynamic_queries.py": "fca3f2dd4b4c040939830f9a51d96ba30b58c8c55e1cfe3836190434653a5e5d"
+  },
+  "after": {
+    "coreml_port/graphs.py": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+    "scripts/convert_coreml.py": "f774aaf45fb41d28ac1c3f705ce2c81d6e03dac733d8a86d3172b85e2e49f97c",
+    "scripts/build_cpu_candidate.py": "1da2a73f397de607498a1f39f47766e4530466a42091a66227501c71bcbeea0c",
+    "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227",
+    "coreml_port/bf16_gelu.py": "69761c7b2ebd7fe158109092abe058d204fd965958cc74652e7747ac4bb82624",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+    "coreml_port/dynamic_queries.py": "fca3f2dd4b4c040939830f9a51d96ba30b58c8c55e1cfe3836190434653a5e5d"
+  },
+  "copied_lineage": [
+    {
+      "component": "head",
+      "source_package": "artifacts/04d-cpu/full-candidate-2/head.mlpackage",
+      "files": [
+        {
+          "source": "artifacts/04d-cpu/full-candidate-2/head.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size_matches": true,
+          "sha256": "a726313b2c173b04a462388655969eba18f8250716aa5246ce1528b2ac3db0d1",
+          "expected": "a726313b2c173b04a462388655969eba18f8250716aa5246ce1528b2ac3db0d1"
+        },
+        {
+          "source": "artifacts/04d-cpu/full-candidate-2/head.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size_matches": true,
+          "sha256": "6d89c2ba45c4997054987cd79d17e087c92a406e8a4273f4f15118679cdfcc44",
+          "expected": "6d89c2ba45c4997054987cd79d17e087c92a406e8a4273f4f15118679cdfcc44"
+        },
+        {
+          "source": "artifacts/04d-cpu/full-candidate-2/head.mlpackage/Manifest.json",
+          "size_matches": true,
+          "sha256": "19dc03942c5a3b60718cffbb8a75cf52c3cbbca0dab9046123279d3c440f1443",
+          "expected": "19dc03942c5a3b60718cffbb8a75cf52c3cbbca0dab9046123279d3c440f1443"
+        }
+      ],
+      "same_file_set": true,
+      "pass": true
+    },
+    {
+      "component": "embedding",
+      "source_package": "artifacts/04d-cpu/full-candidate-2/embedding.mlpackage",
+      "files": [
+        {
+          "source": "artifacts/04d-cpu/full-candidate-2/embedding.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size_matches": true,
+          "sha256": "b316213a2ed802a17ea101f055bbcb91f3a63551d29b0228fa2e347307dbbe62",
+          "expected": "b316213a2ed802a17ea101f055bbcb91f3a63551d29b0228fa2e347307dbbe62"
+        },
+        {
+          "source": "artifacts/04d-cpu/full-candidate-2/embedding.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size_matches": true,
+          "sha256": "f4b84c85e7e2fa64952bba1e3af8e9a076ff6895168ae4b41f215a0a9b18edde",
+          "expected": "f4b84c85e7e2fa64952bba1e3af8e9a076ff6895168ae4b41f215a0a9b18edde"
+        },
+        {
+          "source": "artifacts/04d-cpu/full-candidate-2/embedding.mlpackage/Manifest.json",
+          "size_matches": true,
+          "sha256": "8700f3e470a237dbdc30a5bdfdda7653ecafc2786fe21cc1f36c0608ca7761f6",
+          "expected": "8700f3e470a237dbdc30a5bdfdda7653ecafc2786fe21cc1f36c0608ca7761f6"
+        }
+      ],
+      "same_file_set": true,
+      "pass": true
+    }
+  ],
+  "package_identity": "9aaea5e518689705ec236710803e53107a224620e8847004be335e47b7969398",
+  "handoff_script_hashes": {
+    "scripts/build_cpu_candidate.py": "1da2a73f397de607498a1f39f47766e4530466a42091a66227501c71bcbeea0c",
+    "scripts/seal_cpu_candidate.py": "5ec0bca36bf1539c91c154a89ce6da2051c68a338ecde3bb8a5081714b299bc1",
+    "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+    "coreml_port/runtime.py": "f3702176b345241560144f21a800b2fdbc4e7869fdb92ec2b132ce9e4c2b9181",
+    "scripts/validate_coreml.py": "78cbc11bf850488ec2d9fbf67aa917c8c88381afb1eaa1c7edea138bccc9b800"
+  },
+  "pass": true
+}

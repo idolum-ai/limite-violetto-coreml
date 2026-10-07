@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "group": "6",
+  "script_sha256": "4637ddfda2c9003a9dd6aa7bf28b4ecfeb46c7565e52e2614f7ae05e8b0e546c",
+  "scope": "Single stateful group; lazy Q<16 tiny-score branch, ordinary score branch otherwise; all original input shapes",
+  "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "passed": false,
+  "error": {
+    "type": "StopIteration",
+    "message": ""
+  }
+}

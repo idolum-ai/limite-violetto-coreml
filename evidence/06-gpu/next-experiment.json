@@ -1,0 +1,24 @@
+{
+  "status": "planned_not_executed",
+  "scope": "Original candidate6 full-model CPU_AND_GPU short numerical screen, with original limits and explicit source identity; no Neural Engine conversion",
+  "rationale": "Group0 compute-policy exactness fails, but all five group outputs remain within the existing hidden relative-error/cosine diagnostic screen. Need full-model scores and accumulated GPU-produced state before global fidelity conclusions.",
+  "gates": [
+    {
+      "id": "N1",
+      "requirement": "Measure eligible compute plans separately from runtime placement; pin original source/compiled identity and guards; preserve qualified CPU path."
+    },
+    {
+      "id": "N2",
+      "requirement": "Run existing short numerical/lifecycle suite with GPU permitted, retaining frozen hidden .01 relative-RMSE/.995 cosine and score .04 acceptance limits, prompt/stop semantics and GPU-produced multi-step cache state. No threshold changes."
+    },
+    {
+      "id": "N3",
+      "requirement": "If score/hidden limits fail, retain earliest divergent checkpoints and localize current-candidate first key-cache/rounding behavior. Exact CPU agreement is useful diagnostic evidence, not a newly imposed replacement for the original global tolerance gates."
+    },
+    {
+      "id": "N4",
+      "requirement": "Only after numerical success, proceed to paired performance measurements and full partition/boundary/completed-generation qualification; do not infer ANE use or GPU execution from policy alone."
+    }
+  ],
+  "parallel_future_cpu_option": "05f warm-score integration requires explicit state ownership/routing design and full CPU requalification before adoption."
+}

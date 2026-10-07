@@ -1,0 +1,33 @@
+{
+  "status": "short_and_boundaries_pass_partitions_fail",
+  "scope": "Same-runtime short and boundary gates pass; full partition audit fails41/97; generation notrun",
+  "numerical_pass": true,
+  "lifecycle_pass": true,
+  "comparisons": 54,
+  "passed": 54,
+  "score_comparisons": 15,
+  "score_max_abs": 1.9073486328125e-06,
+  "hidden_comparisons": 39,
+  "hidden_exact": 39,
+  "top1_matches": 15,
+  "lifecycle_checks": 17,
+  "runtime_adapter": "tiny_prefix_replay",
+  "package_identity": "aced450babb69e87bae9f0cca764d7ea16b883b6f001536c3078ca2ae82af7e2",
+  "thresholds_changed": false,
+  "default_changed": false,
+  "boundaries": {
+    "file": "../full-candidate-5-boundaries/results.json",
+    "comparisons": 6,
+    "passed": 6,
+    "score_max_abs": 1.9073486328125e-06,
+    "lifecycle_checks": 4,
+    "checks_pass": true,
+    "same_runtime_and_package_identity": true
+  },
+  "partitions": {
+    "first_attempt": "../../04d-audit/candidate5-partitions/results.json",
+    "status": "rerun completed13cases97steps:56pass41fail;13disposals and exactpartitionrepeat",
+    "rerun": "../../04d-audit/candidate5-partitions-rerun1/results.json"
+  },
+  "milestone": "../candidate5-milestone.json"
+}

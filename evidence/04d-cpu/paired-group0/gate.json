@@ -1,0 +1,167 @@
+{
+  "status": "complete",
+  "compute_units": "CPU_ONLY",
+  "package": "artifacts/04d-cpu/paired-group0/0.mlpackage",
+  "package_files_sha256": {
+    "Manifest.json": "b5d15b599f2725509c2e49021f22c08f6011c79661a4e2cab1328ff0488631e0",
+    "Data/com.apple.CoreML/model.mlmodel": "84dbd078e046c2496ad13c30a085afa4a8ca8d87412306726323363d35020303",
+    "Data/com.apple.CoreML/weights/weight.bin": "3ccc82720ddffbbf0529b1a471d19548a44bd99265ab8fd59b4a5eac61f8d43f"
+  },
+  "script_sha256": "96479e9bb0e5d575edaa98ba185f55c10372594101cc3d6310a66bbf95b0b7ce",
+  "prompts": [
+    {
+      "index": 0,
+      "prompt_length": 44,
+      "steps": [
+        {
+          "kind": "prefill",
+          "start": 0,
+          "length": 32,
+          "y": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          },
+          "tap23_out": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          }
+        },
+        {
+          "kind": "prefill",
+          "start": 32,
+          "length": 12,
+          "y": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          },
+          "tap23_out": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          }
+        },
+        {
+          "kind": "decode1",
+          "start": 44,
+          "length": 1,
+          "y": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          },
+          "tap23_out": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          }
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "prompt_length": 58,
+      "steps": [
+        {
+          "kind": "prefill",
+          "start": 0,
+          "length": 32,
+          "y": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          },
+          "tap23_out": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          }
+        },
+        {
+          "kind": "prefill",
+          "start": 32,
+          "length": 26,
+          "y": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          },
+          "tap23_out": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          }
+        },
+        {
+          "kind": "decode1",
+          "start": 58,
+          "length": 1,
+          "y": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          },
+          "tap23_out": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "prompt_length": 48,
+      "steps": [
+        {
+          "kind": "prefill",
+          "start": 0,
+          "length": 32,
+          "y": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          },
+          "tap23_out": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          }
+        },
+        {
+          "kind": "prefill",
+          "start": 32,
+          "length": 16,
+          "y": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          },
+          "tap23_out": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          }
+        },
+        {
+          "kind": "decode1",
+          "start": 48,
+          "length": 1,
+          "y": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          },
+          "tap23_out": {
+            "different_elements": 0,
+            "max_abs": 0.0,
+            "first_differences": []
+          }
+        }
+      ]
+    }
+  ],
+  "all_exact": true
+}

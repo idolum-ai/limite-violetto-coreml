@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "stored_ids_are_owned_copy": true,
+    "refreshed_output_matches_prefix": true,
+    "captures_only_new_tokens": true,
+    "refresh_failure_invalidates_original_cache": true,
+    "invalid_cache_rejected": true,
+    "reset_discards_buffer_and_states": true,
+    "crossing_threshold_discards_buffer": true,
+    "crossing_threshold_output_exact": true
+  },
+  "passed": true,
+  "warmup_limit": 16,
+  "minimum_query_rows": 16
+}

@@ -1,0 +1,21 @@
+{
+  "pytorch_tag": "v2.11.0",
+  "download_method": "gh api contents with Accept application/vnd.github.raw+json",
+  "files": [
+    {
+      "path": "torch-2.11-layer_norm.cpp",
+      "url": "https://github.com/pytorch/pytorch/blob/v2.11.0/aten/src/ATen/native/layer_norm.cpp",
+      "sha256": "a36a8d8520a279913fc2eb78250e60d0d1012a367e3b1f90e1a43ce79c31f08b"
+    },
+    {
+      "path": "torch-2.11-cuda-layer_norm_kernel.cu",
+      "url": "https://github.com/pytorch/pytorch/blob/v2.11.0/aten/src/ATen/native/cuda/layer_norm_kernel.cu",
+      "sha256": "6bc37b0cbeb94b534668c6c34b91067acf085ec7e4276a2776dec9351466e066"
+    },
+    {
+      "path": "torch-2.11-cpu-layer_norm_kernel.cpp",
+      "url": "https://github.com/pytorch/pytorch/blob/v2.11.0/aten/src/ATen/native/cpu/layer_norm_kernel.cpp",
+      "sha256": "14c765e7e931ea313bf0ef42b0c9099d7e762c8f3d33ee408e96807435756711"
+    }
+  ]
+}

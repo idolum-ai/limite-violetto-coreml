@@ -1,0 +1,16 @@
+{
+  "torch_commit": "134179474539648ba7dee1317959529fbd0e7f89",
+  "files": [
+    {
+      "path": "sources/torch-2.7-linear/LinearAlgebra.cpp",
+      "sha256": "e197cd299b67c7eef75a21d26fc5b3ac35d35c0b4d457aa448ab81d3e211f009",
+      "origin": "https://raw.githubusercontent.com/pytorch/pytorch/134179474539648ba7dee1317959529fbd0e7f89/aten/src/ATen/native/LinearAlgebra.cpp"
+    },
+    {
+      "path": "sources/torch-2.7-linear/CPUBlas.cpp",
+      "sha256": "03a6cb1a2e8778fd29bb331571d1d6a426dff78f3b26e39314c7905bff167a8b",
+      "origin": "https://raw.githubusercontent.com/pytorch/pytorch/134179474539648ba7dee1317959529fbd0e7f89/aten/src/ATen/native/CPUBlas.cpp"
+    }
+  ],
+  "dispatch_interpretation": "Installed BLAS_INFO=accelerate, USE_MKL=OFF. Source bmm for 3x128 by128x3 exceeds naive threshold400; per-batch addmm selects sgemm when dimensions/strides admitted. Native operand layout affects observed accumulation."
+}

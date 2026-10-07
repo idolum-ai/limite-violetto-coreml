@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "comparisons": 63,
+  "passed": 63,
+  "hidden_exact": 63,
+  "scores_exact": 63,
+  "max_score_error": 0.0,
+  "scope": "pure Torch composed recovered score geometry, not Core ML qualification",
+  "seconds": 157.37638807296753,
+  "thresholds_changed": false,
+  "source": "results.json"
+}

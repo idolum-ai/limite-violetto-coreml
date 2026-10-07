@@ -1,0 +1,11 @@
+{
+  "checked_files": 337,
+  "failed": [],
+  "passed": true,
+  "includes_real_checkpoint": true,
+  "excludes": [
+    "environment and caches",
+    "checksum lists and historical checksum lists",
+    "checksum verification record to avoid self-reference"
+  ]
+}

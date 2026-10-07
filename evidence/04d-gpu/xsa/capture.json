@@ -1,0 +1,107 @@
+{
+  "sources": {
+    "scripts/gpu_xsa_capture.py": "8796ba99bd3d959911265ac7ef6222f16c93fb638cd9df24b4eb1ee9fc6335dd",
+    "coreml_port/graphs.py": "9ae902e9794e8311b60af091ea59027f8169cc9750f9d48ff914e65226f5f414",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "3abc03e63175f431ff00d17f68eb0c976c1b92417ab29fa411c1b57317ae8b44",
+    "coreml_port/ordered_norm.py": "db694e9155f761e0cf54b4c6b8289a9f01caf3b6da22dfba7cbbfbee04ebad36"
+  },
+  "input_hashes": {
+    "y": "a68c38741d2c86794b92bf88ab932689e2cd9d3c1a5ac23b33d8eda829b7f14b",
+    "v": "d0703e1758026c870b52fd1747eb65f6980040434188df9b34dd41c8eb48d043",
+    "alpha": "babe286e562591b9f9a2e70335f8f446544e4477733458975f06fe1ccdbb05cf",
+    "vn": "b28a735ae3fa3c22bcbaa0f74c79459a1cbae3c3c1454061323aecc8834f3db5",
+    "product": "28a738cf5be1de724bbbf0c7643530982cdba12d334baf99cfb4a6c4b66ea082",
+    "dot": "af88c00342feaed3150962fbd1efd29b24d19f0fe6ba74238ca346e86d5316ab",
+    "correction": "d302aba92e2d5d47b6ab8e147aeda318de457d4d6dee95865ac1c4876cc31ab9",
+    "rounded": "c9dbd867a00b2099560d5c0cbdbe202d9816d58a259c7da630516b556c147cb1"
+  },
+  "shapes": {
+    "y": [
+      1,
+      32,
+      10,
+      128
+    ],
+    "v": [
+      1,
+      32,
+      2,
+      128
+    ],
+    "alpha": [
+      1,
+      1,
+      10,
+      1
+    ],
+    "vn": [
+      1,
+      32,
+      10,
+      128
+    ],
+    "product": [
+      1,
+      32,
+      10,
+      128
+    ],
+    "dot": [
+      1,
+      32,
+      10,
+      1
+    ],
+    "correction": [
+      1,
+      32,
+      10,
+      128
+    ],
+    "rounded": [
+      1,
+      32,
+      10,
+      128
+    ]
+  },
+  "torch_ordered_vn_vs_native": {
+    "different_elements": 14090,
+    "max_abs": 2.9802322387695312e-08
+  },
+  "torch_ordered_dot_vs_native": {
+    "different_elements": 0,
+    "max_abs": 0.0
+  },
+  "torch_ordered_dot_round_vs_native": {
+    "different_elements": 0,
+    "max_abs": 0.0
+  },
+  "torch_ordered_both_round_vs_native": {
+    "different_elements": 2,
+    "max_abs": 0.125
+  },
+  "round82_reference_values": [
+    {
+      "index": [
+        0,
+        3,
+        1,
+        8
+      ],
+      "value": 21.25,
+      "raw": 21.1875
+    },
+    {
+      "index": [
+        0,
+        3,
+        1,
+        81
+      ],
+      "value": 21.25,
+      "raw": 21.1875
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "width": 128,
+    "source_dtype": "torch.float32",
+    "different": 0,
+    "max_abs": 0.0
+  },
+  {
+    "width": 128,
+    "source_dtype": "torch.bfloat16",
+    "different": 0,
+    "max_abs": 0.0
+  },
+  {
+    "width": 1280,
+    "source_dtype": "torch.float32",
+    "different": 0,
+    "max_abs": 0.0
+  },
+  {
+    "width": 1280,
+    "source_dtype": "torch.bfloat16",
+    "different": 0,
+    "max_abs": 0.0
+  }
+]

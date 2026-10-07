@@ -1,0 +1,224 @@
+{
+  "ids": [
+    87555,
+    130664,
+    114854
+  ],
+  "compute_units": "CPU_ONLY",
+  "row_policy": "front-pad; min(32,last_absolute_position+1)",
+  "key_capacity": 2048,
+  "source_sha256": {
+    "scripts/gpu_tiny3_dynamic_layer32.py": "bc4b51041460236db1d58012b96dd657ad84e5e470ff232c17d301e47c7eb3e2",
+    "scripts/gpu_dynamic_raw_attention.py": "b004cfb48ff6cb316b8d3447b71811ae31683b3657dd36ebd6104aa914fe501a",
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227"
+  },
+  "status": "complete",
+  "torch_y": {
+    "different_elements": 36,
+    "max_abs": 32.0,
+    "first_differences": [
+      {
+        "index": [
+          0,
+          2,
+          23
+        ],
+        "actual": 3952.0,
+        "expected": 3968.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          30
+        ],
+        "actual": 1184.0,
+        "expected": 1192.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          66
+        ],
+        "actual": 364.0,
+        "expected": 362.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          84
+        ],
+        "actual": -77.0,
+        "expected": -78.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          133
+        ],
+        "actual": 70.0,
+        "expected": 69.5
+      },
+      {
+        "index": [
+          0,
+          2,
+          229
+        ],
+        "actual": 408.0,
+        "expected": 412.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          251
+        ],
+        "actual": -3808.0,
+        "expected": -3792.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          261
+        ],
+        "actual": -956.0,
+        "expected": -960.0
+      }
+    ]
+  },
+  "torch_weighted": {
+    "different_elements": 1,
+    "max_abs": 0.125,
+    "first_differences": [
+      {
+        "index": [
+          0,
+          2,
+          6,
+          80
+        ],
+        "actual": 19.375,
+        "expected": 19.5
+      }
+    ]
+  },
+  "package_files_sha256": {
+    "Data/com.apple.CoreML/model.mlmodel": "28c03d106c6038b831e19bd29842dd9368227d5097ac969a271e533a0f8ea57e",
+    "Data/com.apple.CoreML/weights/weight.bin": "7d5c2a19c4c936c1ecf7825ac8f266ced5d0bba17863cde0adbac8151ee4d09b",
+    "Manifest.json": "e1586b8600c6f80d83bb71041a408131b2dbbaefeae96aa6005af549adc3926c"
+  },
+  "coreml_y": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_weighted": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_vs_torch_y": {
+    "different_elements": 36,
+    "max_abs": 32.0,
+    "first_differences": [
+      {
+        "index": [
+          0,
+          2,
+          23
+        ],
+        "actual": 3968.0,
+        "expected": 3952.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          30
+        ],
+        "actual": 1192.0,
+        "expected": 1184.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          66
+        ],
+        "actual": 362.0,
+        "expected": 364.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          84
+        ],
+        "actual": -78.0,
+        "expected": -77.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          133
+        ],
+        "actual": 69.5,
+        "expected": 70.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          229
+        ],
+        "actual": 412.0,
+        "expected": 408.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          251
+        ],
+        "actual": -3792.0,
+        "expected": -3808.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          261
+        ],
+        "actual": -960.0,
+        "expected": -956.0
+      }
+    ]
+  },
+  "coreml_vs_torch_weighted": {
+    "different_elements": 1,
+    "max_abs": 0.125,
+    "first_differences": [
+      {
+        "index": [
+          0,
+          2,
+          6,
+          80
+        ],
+        "actual": 19.5,
+        "expected": 19.375
+      }
+    ]
+  }
+}

@@ -1,0 +1,1310 @@
+{
+  "status": "first group/partition/chunk difference captured",
+  "script_sha256": "fd1c68ed0ff24bdfafc27f8dc5602e3d6e07e0c232f2bbfc57df86d07222ca8b",
+  "model_dir": "<PROJECT_ROOT>/artifacts/04d-cpu/full-candidate-4",
+  "identity_manifest": "<PROJECT_ROOT>/evidence/04d-cpu/full-candidate-4/package-identity.json",
+  "package_identity": {
+    "schema_version": 1,
+    "packages": [
+      {
+        "name": "embedding",
+        "files": [
+          {
+            "path": "embedding.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 63736,
+            "sha256": "b316213a2ed802a17ea101f055bbcb91f3a63551d29b0228fa2e347307dbbe62"
+          },
+          {
+            "path": "embedding.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 931923200,
+            "sha256": "f4b84c85e7e2fa64952bba1e3af8e9a076ff6895168ae4b41f215a0a9b18edde"
+          },
+          {
+            "path": "embedding.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "8700f3e470a237dbdc30a5bdfdda7653ecafc2786fe21cc1f36c0608ca7761f6"
+          }
+        ],
+        "sha256": "5d986b468943ba8cf3edd0bc338567c77d516fcf2e65bae2ee745d3364852554"
+      },
+      {
+        "name": "0",
+        "files": [
+          {
+            "path": "0.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4259696,
+            "sha256": "2caa589c3bfc54dd76000bec631e8e05469a005e91f856b21f17cda244249474"
+          },
+          {
+            "path": "0.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269764416,
+            "sha256": "e921219af290d07b281decd75878c0872e6dca367043c61d4e7f00f2b36fc0e9"
+          },
+          {
+            "path": "0.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "f8def9aadb9da75ea535c9ada29a3be29c4cb1c5a157d3c4152e57f7165c8bc7"
+          }
+        ],
+        "sha256": "45ecc311f7e53f4be83d384c70d7cbd30d13bbcc450630d00d1d312616d5ac82"
+      },
+      {
+        "name": "1",
+        "files": [
+          {
+            "path": "1.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4286049,
+            "sha256": "6d17c120db8b97ee07c3499f005094470eadbfbc4ac3940faf7637839ecec235"
+          },
+          {
+            "path": "1.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269764416,
+            "sha256": "503545760f1ea4ac85b37b7d6ceb77f3397c3798e8b726fe4fc6616c572b1b00"
+          },
+          {
+            "path": "1.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "34d67ad2d71f119eaf3333c0e0cc9f6262dcc22480da71f99f989e366e07b20d"
+          }
+        ],
+        "sha256": "0fbdf91eb7a8f78d546068fa21481e1be82dae6399390369085b3c936030f1f1"
+      },
+      {
+        "name": "2",
+        "files": [
+          {
+            "path": "2.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4259434,
+            "sha256": "8463c91b94c90a228ec98d2b3bec70f7818251484a6e90c0356ec0eef986e29d"
+          },
+          {
+            "path": "2.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269764416,
+            "sha256": "729a71bcb88077be2d2de191239a25703f11a8461725579c500a6aca591d755e"
+          },
+          {
+            "path": "2.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "2cd4e5c4fa96cf32f1c8d8507a96608fc54c1fb84e5653b1d8509261462284bb"
+          }
+        ],
+        "sha256": "fb84e822c220692dc8ee389441bea0da34ab92d8e0199fdcf5dbd361591612c8"
+      },
+      {
+        "name": "3",
+        "files": [
+          {
+            "path": "3.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4259696,
+            "sha256": "82055edb8f3a6fda8cad8a73a6903f5b30431af027d57f8c2c219a98255c52a0"
+          },
+          {
+            "path": "3.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269764416,
+            "sha256": "873040b14e79a4d94030eccfa78508c657396f9eae0f225796cd23fd88b915eb"
+          },
+          {
+            "path": "3.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "ed645217b54ef3011c37681643e3d184e3c14560e9b60856219ba728af8447c8"
+          }
+        ],
+        "sha256": "36a902240dd9d9355ff670a84dbb7861ba24ab61a38766b1d636513d1a5ee141"
+      },
+      {
+        "name": "4",
+        "files": [
+          {
+            "path": "4.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4286049,
+            "sha256": "95e804d5d041ba5c869dfcec3bfbffd183c3a7c14664f12f28a56088557b113d"
+          },
+          {
+            "path": "4.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269764416,
+            "sha256": "a96ece6fccc5b06d7772f83004dae6cf1906d31218e39b2392259f9212aa69fa"
+          },
+          {
+            "path": "4.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "197454aa1ed41b8bc4ef8446e60aead1d5c3900f91b24f6c6ca80ab08514c86f"
+          }
+        ],
+        "sha256": "c23b96e388f4e7042cd5e9e4a9d244ad70f89e14ad33d63d71528c8273ed02dc"
+      },
+      {
+        "name": "5",
+        "files": [
+          {
+            "path": "5.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4259536,
+            "sha256": "d056da35e0680bfae98a47d2977d2e385aa5bd1ee53e28ce0c5c52c9c0af9561"
+          },
+          {
+            "path": "5.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269764416,
+            "sha256": "954bb488bff522a402f5535cd69a0cb243fa22cbdf2c51a638ea3b47168477b0"
+          },
+          {
+            "path": "5.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "664262bb7b7e1f90f45c6f799431141269db3500761b3808210dcb3061756c7b"
+          }
+        ],
+        "sha256": "8667b41bc25b2dabe11ef078d7fddbfa041e4549a70948e46e12b5201aae0536"
+      },
+      {
+        "name": "6",
+        "files": [
+          {
+            "path": "6.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4459553,
+            "sha256": "6bc49d8126e49c01b0c765dc8b1bb25cfc49f4cd78a644c77fc3a9ba003d504e"
+          },
+          {
+            "path": "6.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269973056,
+            "sha256": "dc493296635f34671e874874ff6735dfc9d4592d280cc0304cc4bbff2ca3d7da"
+          },
+          {
+            "path": "6.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "c40217ace2f122ca8d7bb3bbb9a8f1edccee9e23ef9bdf5aa479f3ff4acc7978"
+          }
+        ],
+        "sha256": "e97b48f61a0ea50bf78de1233303efb1ae494e9eb475f7fe470e4170c4574bf1"
+      },
+      {
+        "name": "7",
+        "files": [
+          {
+            "path": "7.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4286049,
+            "sha256": "26b1924c79a782f032fbca5b23a44ad6e61909d03aaaf005d00a2e02d909061a"
+          },
+          {
+            "path": "7.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269764416,
+            "sha256": "88a25dd3037959486ce7f7286094716c1a79f5bbd131b11ac1b86e973b71a2c0"
+          },
+          {
+            "path": "7.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "e39225cedaf99580c300b6c7681622840c3716ea1f0db08c1287acd085c051f6"
+          }
+        ],
+        "sha256": "98baa4435c4de1e46d596006059e60d5fbc064c1e2a753028680860947335d0b"
+      },
+      {
+        "name": "8",
+        "files": [
+          {
+            "path": "8.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4259434,
+            "sha256": "5f6bc0e24777b76a56de046a5ab67e237034e9337a8da2007e1f3b0146b73752"
+          },
+          {
+            "path": "8.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269764416,
+            "sha256": "84ce7be4b7dddc570abe48dc5b87b809f7f7ffec0d132c649fb52d3beb884ac2"
+          },
+          {
+            "path": "8.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "fc516126f18a8cdcfc2fdc4a2d3ad776b9e388d181d76f3212e484ea04daeca3"
+          }
+        ],
+        "sha256": "9ec3d9d6f6d1b42e6ac1b964f166bf538133e850d9579db928633f7c4814df23"
+      },
+      {
+        "name": "9",
+        "files": [
+          {
+            "path": "9.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4259696,
+            "sha256": "5db79b773986c58009cd464d8927cd262d86b3309ff075dc68672a14dfd781fd"
+          },
+          {
+            "path": "9.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269764416,
+            "sha256": "84ad8c0132c4d94662995047f65e2333c281dd19338b7b05f2cdff77828da355"
+          },
+          {
+            "path": "9.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "4e432efd1d813328a16fda5f3934d764d6570255003f99167ffc7483c226c65e"
+          }
+        ],
+        "sha256": "7fb19cbcb04fbad9e03b68356eba092b740907729d8d12faf1a1b96bc590332a"
+      },
+      {
+        "name": "10",
+        "files": [
+          {
+            "path": "10.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4285793,
+            "sha256": "6b3d04fef93d23c0e83291eb8d4884d4eed45df448ff39157711bc8ae5ac7f54"
+          },
+          {
+            "path": "10.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269764416,
+            "sha256": "2ef9f23a5c64349cedf7c70340b1fbfd728b27860faa105246f030f77fb40d0d"
+          },
+          {
+            "path": "10.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "2d6987bf84d237b3ed0c2d1fa7644f72c72e92500f5f1074975f73211e662491"
+          }
+        ],
+        "sha256": "7aaa1fbcbab91bc4dc883e45721a6ecbdfe4d7cf6c8a0a830fc27d6f87fbb104"
+      },
+      {
+        "name": "11",
+        "files": [
+          {
+            "path": "11.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4520424,
+            "sha256": "299ec7149c1db4d9e5a7755917a2412a3f21a420ceb8d76608616a7fb766a1a6"
+          },
+          {
+            "path": "11.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 269973056,
+            "sha256": "96932ee8c4cff3477f02ea04021b234f7768973fa93de53db796332f9b8e62e6"
+          },
+          {
+            "path": "11.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "0d224dc9ffd3fc0a37a9bef9be1c77de09bf5e1b6ee983a00b98f5057b1d507a"
+          }
+        ],
+        "sha256": "4a170518c4707e4d4f746f55f2da9ada074c0d1e1c8156e099e07ea4154d37bd"
+      },
+      {
+        "name": "head",
+        "files": [
+          {
+            "path": "head.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 58102,
+            "sha256": "a726313b2c173b04a462388655969eba18f8250716aa5246ce1528b2ac3db0d1"
+          },
+          {
+            "path": "head.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 776605312,
+            "sha256": "6d89c2ba45c4997054987cd79d17e087c92a406e8a4273f4f15118679cdfcc44"
+          },
+          {
+            "path": "head.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "19dc03942c5a3b60718cffbb8a75cf52c3cbbca0dab9046123279d3c440f1443"
+          }
+        ],
+        "sha256": "ec0f2ccc9e773334b267ad441148cd6e9d02d4ac0849f92a0eb18c8524bd305a"
+      }
+    ],
+    "aggregate_sha256": "9aaea5e518689705ec236710803e53107a224620e8847004be335e47b7969398"
+  },
+  "input_ids_path": "<PROJECT_ROOT>/evidence/04d-cpu/full-candidate-4-boundaries/input-ids.json",
+  "input_ids_sha256": "58f30c2f9a73f09c0ce20675eb569a82862c91c4bfccc61d8ccee84de8903b74",
+  "input_length": 2048,
+  "endpoints": [
+    1023,
+    1024,
+    1025,
+    1026,
+    2048
+  ],
+  "chunk_size": 32,
+  "runtime_adapter": "group_by_group_native_activation_inputs",
+  "prediction_guard": {
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 0,
+    "gil_releases": 0
+  },
+  "source_sha256": {
+    "scripts/locate_capacity_coreml_group.py": "fd1c68ed0ff24bdfafc27f8dc5602e3d6e07e0c232f2bbfc57df86d07222ca8b",
+    "scripts/audit_torch_candidate.py": "20b03d88e461b015dd00076b9685cd0fa0d53436f289c9bf6dd7aa9dcd33f906",
+    "portable/model.py": "6e204b9b4d08247a4441d2422800ca7b253f3cc8f9e4a855473830daa5042797",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "coreml_port/native/cleanup_guard.c": "973bc7d1852eb4c80f17f59412d57cc41a3058a78ce78c66a1081e308c9b464d",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e"
+  },
+  "groups": [
+    {
+      "group": 0,
+      "package": "<PROJECT_ROOT>/artifacts/04d-cpu/full-candidate-4/0.mlpackage",
+      "input_reference": "embedding_norm",
+      "output_reference": "layer_3",
+      "steps": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 0,
+          "end": 32,
+          "chunk_index": 0,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 32,
+          "end": 64,
+          "chunk_index": 1,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 0.9999999999999998
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 64,
+          "end": 96,
+          "chunk_index": 2,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 96,
+          "end": 128,
+          "chunk_index": 3,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 128,
+          "end": 160,
+          "chunk_index": 4,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 160,
+          "end": 192,
+          "chunk_index": 5,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0000000000000004
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 192,
+          "end": 224,
+          "chunk_index": 6,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 224,
+          "end": 256,
+          "chunk_index": 7,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 256,
+          "end": 288,
+          "chunk_index": 8,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 0.9999999999999998
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 288,
+          "end": 320,
+          "chunk_index": 9,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 320,
+          "end": 352,
+          "chunk_index": 10,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 352,
+          "end": 384,
+          "chunk_index": 11,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0000000000000002
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 384,
+          "end": 416,
+          "chunk_index": 12,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 416,
+          "end": 448,
+          "chunk_index": 13,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 448,
+          "end": 480,
+          "chunk_index": 14,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0000000000000002
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 480,
+          "end": 512,
+          "chunk_index": 15,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 512,
+          "end": 544,
+          "chunk_index": 16,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 544,
+          "end": 576,
+          "chunk_index": 17,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 576,
+          "end": 608,
+          "chunk_index": 18,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 608,
+          "end": 640,
+          "chunk_index": 19,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 640,
+          "end": 672,
+          "chunk_index": 20,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0000000000000002
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 672,
+          "end": 704,
+          "chunk_index": 21,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 704,
+          "end": 736,
+          "chunk_index": 22,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 736,
+          "end": 768,
+          "chunk_index": 23,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 0.9999999999999999
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 768,
+          "end": 800,
+          "chunk_index": 24,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0000000000000002
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 800,
+          "end": 832,
+          "chunk_index": 25,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 832,
+          "end": 864,
+          "chunk_index": 26,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0000000000000002
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 864,
+          "end": 896,
+          "chunk_index": 27,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0000000000000002
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 896,
+          "end": 928,
+          "chunk_index": 28,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 928,
+          "end": 960,
+          "chunk_index": 29,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0000000000000002
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 960,
+          "end": 992,
+          "chunk_index": 30,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0000000000000002
+        },
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end": 1023,
+          "start": 992,
+          "end": 1023,
+          "chunk_index": 31,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0
+        },
+        {
+          "partition_index": 1,
+          "partition_start": 1023,
+          "partition_end": 1024,
+          "start": 1023,
+          "end": 1024,
+          "chunk_index": 32,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 1.0000000000000002
+        },
+        {
+          "partition_index": 2,
+          "partition_start": 1024,
+          "partition_end": 1025,
+          "start": 1024,
+          "end": 1025,
+          "chunk_index": 33,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 0.9999999999999998
+        },
+        {
+          "partition_index": 3,
+          "partition_start": 1025,
+          "partition_end": 1026,
+          "start": 1025,
+          "end": 1026,
+          "chunk_index": 34,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 0.9999999999999998
+        },
+        {
+          "partition_index": 4,
+          "partition_start": 1026,
+          "partition_end": 2048,
+          "start": 1026,
+          "end": 1058,
+          "chunk_index": 35,
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "relative_rmse": 0.0,
+          "cosine": 0.9999999999999999
+        },
+        {
+          "partition_index": 4,
+          "partition_start": 1026,
+          "partition_end": 2048,
+          "start": 1058,
+          "end": 1090,
+          "chunk_index": 36,
+          "different_elements": 22114,
+          "max_abs": 96.0,
+          "rmse": 12.845532788734658,
+          "relative_rmse": 0.006732081545204089,
+          "cosine": 0.9999773393170422
+        }
+      ]
+    }
+  ],
+  "reference_head_input_dtype": "torch.bfloat16",
+  "reference_head_input_native_bf16": true,
+  "reference_score_output_dtype": "torch.float32",
+  "reference_scores_max_abs": 18.058055877685547,
+  "chunk_plan": [
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 0,
+      "end": 32
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 32,
+      "end": 64
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 64,
+      "end": 96
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 96,
+      "end": 128
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 128,
+      "end": 160
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 160,
+      "end": 192
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 192,
+      "end": 224
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 224,
+      "end": 256
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 256,
+      "end": 288
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 288,
+      "end": 320
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 320,
+      "end": 352
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 352,
+      "end": 384
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 384,
+      "end": 416
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 416,
+      "end": 448
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 448,
+      "end": 480
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 480,
+      "end": 512
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 512,
+      "end": 544
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 544,
+      "end": 576
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 576,
+      "end": 608
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 608,
+      "end": 640
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 640,
+      "end": 672
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 672,
+      "end": 704
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 704,
+      "end": 736
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 736,
+      "end": 768
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 768,
+      "end": 800
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 800,
+      "end": 832
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 832,
+      "end": 864
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 864,
+      "end": 896
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 896,
+      "end": 928
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 928,
+      "end": 960
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 960,
+      "end": 992
+    },
+    {
+      "partition_index": 0,
+      "partition_start": 0,
+      "partition_end": 1023,
+      "start": 992,
+      "end": 1023
+    },
+    {
+      "partition_index": 1,
+      "partition_start": 1023,
+      "partition_end": 1024,
+      "start": 1023,
+      "end": 1024
+    },
+    {
+      "partition_index": 2,
+      "partition_start": 1024,
+      "partition_end": 1025,
+      "start": 1024,
+      "end": 1025
+    },
+    {
+      "partition_index": 3,
+      "partition_start": 1025,
+      "partition_end": 1026,
+      "start": 1025,
+      "end": 1026
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1026,
+      "end": 1058
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1058,
+      "end": 1090
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1090,
+      "end": 1122
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1122,
+      "end": 1154
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1154,
+      "end": 1186
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1186,
+      "end": 1218
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1218,
+      "end": 1250
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1250,
+      "end": 1282
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1282,
+      "end": 1314
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1314,
+      "end": 1346
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1346,
+      "end": 1378
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1378,
+      "end": 1410
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1410,
+      "end": 1442
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1442,
+      "end": 1474
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1474,
+      "end": 1506
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1506,
+      "end": 1538
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1538,
+      "end": 1570
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1570,
+      "end": 1602
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1602,
+      "end": 1634
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1634,
+      "end": 1666
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1666,
+      "end": 1698
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1698,
+      "end": 1730
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1730,
+      "end": 1762
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1762,
+      "end": 1794
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1794,
+      "end": 1826
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1826,
+      "end": 1858
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1858,
+      "end": 1890
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1890,
+      "end": 1922
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1922,
+      "end": 1954
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1954,
+      "end": 1986
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 1986,
+      "end": 2018
+    },
+    {
+      "partition_index": 4,
+      "partition_start": 1026,
+      "partition_end": 2048,
+      "start": 2018,
+      "end": 2048
+    }
+  ],
+  "first_failure": {
+    "group": 0,
+    "partition_index": 4,
+    "partition_start": 1026,
+    "partition_end": 2048,
+    "start": 1058,
+    "end": 1090,
+    "chunk_index": 36
+  }
+}

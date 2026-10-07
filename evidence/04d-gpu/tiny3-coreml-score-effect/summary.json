@@ -1,0 +1,55 @@
+{
+  "ids": [
+    87555,
+    130664,
+    114854
+  ],
+  "compute_units": "CPU_ONLY",
+  "script_sha256": "c8a01ad2d40f087d880b06edcd597c619e4c9f49189c5688d8ea0d00c0da69cd",
+  "package_files_sha256": {
+    "Data/com.apple.CoreML/model.mlmodel": "0178f841444165ed742fd879cb26c0e59b1f364126969f70063fef3a00d50038",
+    "Manifest.json": "d67f74d7681971273cd317f7186872bb8ad76ecc2226d01c7050f0a34c875737"
+  },
+  "scores": {
+    "different_elements": 21,
+    "max_abs": 2.384185791015625e-06
+  },
+  "weights": {
+    "different_elements": 28,
+    "max_abs": 5.960464477539062e-07
+  },
+  "raw": {
+    "different_elements": 1042,
+    "max_abs": 6.866455078125e-05
+  },
+  "rounded": {
+    "different_elements": 1,
+    "max_abs": 0.125
+  },
+  "problem_element": {
+    "native_score": [
+      5.5580973625183105,
+      4.585060119628906,
+      5.777220726013184
+    ],
+    "coreml_score": [
+      5.558095932006836,
+      4.585060119628906,
+      5.777220726013184
+    ],
+    "native_weight": [
+      0.38125476241111755,
+      0.14408890902996063,
+      0.4746563732624054
+    ],
+    "coreml_weight": [
+      0.3812543749809265,
+      0.1440889835357666,
+      0.4746566116809845
+    ],
+    "native_raw": 19.437524795532227,
+    "coreml_raw": 19.437496185302734,
+    "native_rounded": 19.5,
+    "coreml_rounded": 19.375
+  }
+}

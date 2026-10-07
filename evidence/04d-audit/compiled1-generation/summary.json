@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "passed": true,
+  "audit_count": 7,
+  "max_audited_score_error": 3.814697265625e-06,
+  "generated_tokens": 674,
+  "finish_reason": "stop_token",
+  "think_marker_present": true,
+  "boxed_391_after_think": true,
+  "request_disposed": true,
+  "errors": []
+}

@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "package_identity": "9aaea5e518689705ec236710803e53107a224620e8847004be335e47b7969398",
+  "positions": [
+    0,
+    1,
+    2
+  ],
+  "sha256": {
+    "scripts/gpu_tiny3_group9_sequential.py": "cfba6f5bab9523842d41c648b53e5ac025daa552b0380e2560e1a4348e76b692",
+    "evidence/04d-gpu/candidate4-tiny3-firstgroup/first-failure-inputs.npz": "237baec31c43828c37d1e44cdc50b7941fcbcd59023d5026f6373d1a7736f2a6",
+    "evidence/04d-gpu/candidate4-tiny3-firstgroup/first-failure-state-before.npz": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+    "coreml_port/graphs.py": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+    "coreml_port/dynamic_queries.py": "aa87c78fdfc84172860cb9ad765924a994430a22e7e36a77ede6314b30299cda"
+  },
+  "torch_sequential_vs_native": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_sequential_vs_native": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_sequential_vs_torch_sequential": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  }
+}

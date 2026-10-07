@@ -1,0 +1,9 @@
+{
+  "script_sha256": "de440a01fd4cb8cb254995c217df62a8b9ede1b6f5d3904d3352789da65283f8",
+  "build": "evidence/06d-gpu-rounding/group0-1/results.json",
+  "build_sha256": "4e6ac1baa2f70c10bf812523f7e341d9dabf34b30299e4819631f2db31cf150f",
+  "attempt": "group0-replay-1",
+  "gate": "CPU output+all8cache bytes preserved. GPU output+all8cache byte parity as local exact gate; record residuals without relaxing thresholds.",
+  "calls": 6,
+  "operator_gate": "round-replacement-1 bounded_replacement_gate_passed=true; strict full-Q Torch remains false as preexistingbaseline."
+}

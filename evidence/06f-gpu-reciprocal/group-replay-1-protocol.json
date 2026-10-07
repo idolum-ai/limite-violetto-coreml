@@ -1,0 +1,17 @@
+{
+  "attempt": "group-replay-1",
+  "build": "evidence/06f-gpu-reciprocal/group0-1/results.json",
+  "expected_predictions": 12,
+  "pins": {
+    "scripts/probe_boundary_reciprocal_group.py": "12da61a3a2ead44d4d939af24cd2fe44f98c8bcb1cc363b149c3eef4bbe89bc8",
+    "evidence/06f-gpu-reciprocal/group0-1/results.json": "48af7de89cde44bcaf7c7dda12457aec5eb9c2e99cfa1ae4c5294090529441d6",
+    "scripts/build_boundary_reciprocal_group.py": "aaf27d63e653bff2b1ca8d2e561e245d2ad3a907d0d7dcafa2a599a40ef3ea8b",
+    "scripts/boundary_reciprocal.py": "4edabf62871e35c834185e586e2f7253f6feeb48a1db9f8daae4596d9471e263",
+    "evidence/06f-gpu-reciprocal/group-replay-design.md": "cfeae1dd2ea0f82bb88e098d97f3d50a544c14bc876e6d861f05e050bffff81c",
+    "evidence/06d-gpu-rounding/group0-1/results.json": "4e6ac1baa2f70c10bf812523f7e341d9dabf34b30299e4819631f2db31cf150f",
+    "evidence/06d-gpu-rounding/group0-replay-1/results.json": "76e6030af0fd108d412ba89652bb4ed6d55f1760936da8f805f8fc358077e693",
+    "evidence/06e-gpu-normalization/replay-1/results.json": "d72fc475a76e5c3751499465253fad154ea396753ff68630aa4f8dec6a8a7c09",
+    "evidence/06f-gpu-reciprocal/native-1/results.json": "ebc588038c8b3bf6273e6b1596ac5fbb619174826a0651e10d2141d49d93b026"
+  },
+  "scope": "Original/candidate/tapped x2policies x2chunks; exactCPUandtapcontrols before site interpretation; no full-model qualification."
+}

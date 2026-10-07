@@ -1,0 +1,96 @@
+{
+  "block_count": 9,
+  "blocks": [
+    {
+      "baseline_median_seconds": 0.189694833,
+      "block": 0,
+      "go": false,
+      "median_reduction": 0.07916805251095071,
+      "prefix": 32,
+      "variant_median_seconds": 0.17467706249999998
+    },
+    {
+      "baseline_median_seconds": 0.228423458,
+      "block": 0,
+      "go": false,
+      "median_reduction": 0.06052847908466563,
+      "prefix": 128,
+      "variant_median_seconds": 0.2145973335
+    },
+    {
+      "baseline_median_seconds": 0.212082771,
+      "block": 0,
+      "go": false,
+      "median_reduction": 0.07893822501970238,
+      "prefix": 512,
+      "variant_median_seconds": 0.1953413335
+    },
+    {
+      "baseline_median_seconds": 0.20932625,
+      "block": 1,
+      "go": false,
+      "median_reduction": 0.09356158389117453,
+      "prefix": 32,
+      "variant_median_seconds": 0.18974135450000001
+    },
+    {
+      "baseline_median_seconds": 0.2204352705,
+      "block": 1,
+      "go": true,
+      "median_reduction": 0.10056050898624236,
+      "prefix": 128,
+      "variant_median_seconds": 0.1982681875
+    },
+    {
+      "baseline_median_seconds": 0.2151544585,
+      "block": 1,
+      "go": false,
+      "median_reduction": 0.07216337094868985,
+      "prefix": 512,
+      "variant_median_seconds": 0.1996281875
+    },
+    {
+      "baseline_median_seconds": 0.2217174375,
+      "block": 2,
+      "go": false,
+      "median_reduction": 0.0738184316242605,
+      "prefix": 32,
+      "variant_median_seconds": 0.205350604
+    },
+    {
+      "baseline_median_seconds": 0.22358606250000002,
+      "block": 2,
+      "go": false,
+      "median_reduction": 0.06420849689591002,
+      "prefix": 128,
+      "variant_median_seconds": 0.20922993750000002
+    },
+    {
+      "baseline_median_seconds": 0.225923771,
+      "block": 2,
+      "go": false,
+      "median_reduction": 0.04815525587168068,
+      "prefix": 512,
+      "variant_median_seconds": 0.215044354
+    }
+  ],
+  "build_errors": [],
+  "build_path": "<PROJECT_ROOT>/evidence/05e-product/repeat-first-2/results.json",
+  "build_sha256": "7ba8265416bea061c426ed30bc12f1fbd9a6a468ab8d2f7304a9363ef8e44c1c",
+  "correctness_call_count": 12,
+  "decision": "no-go at predeclared threshold; do not integrate",
+  "errors": [],
+  "experiment_completed": true,
+  "experiment_valid": true,
+  "performance_gate_passed": false,
+  "protocol_path": "<PROJECT_ROOT>/evidence/05e-product/protocol.json",
+  "protocol_sha256": "9d9e0656b224975d27551ca489f3448c69d62bc7401c4cef48d232f7b50a6606",
+  "results_path": "<PROJECT_ROOT>/evidence/05e-product/benchmark-1/results.json",
+  "results_sha256": "5e0816ccc849b77d793ed027820910c9eb222877c1bd54927077c192dff54586",
+  "schema_version": 1,
+  "status": "completed",
+  "summarizer_sha256": "0d210d8b8b6013974f527e2d4eb9e244a9720b84f170dc339f7be9361458681e",
+  "threshold": 0.1,
+  "timed_call_count": 144,
+  "warmup_call_count": 24
+}

@@ -1,0 +1,11 @@
+{
+  "source": "sources/value-model/README.md",
+  "revision": "ce83740e0e853a7d4e5b80fca29a65fd5b8db7fb",
+  "sha256": "6be057ca001a7e977157904b01beb9a320454a22b0f1824e76b76f0a252ea5f3",
+  "line": 187,
+  "scope": "Value-model completed-rollout format; corroboration for observed actor emissions, not execution of actor serving runtime",
+  "exact_excerpt": "A completed rollout ends with `<|endoftext|>` (ID 151643).",
+  "actor_config_eos": 151645,
+  "local_emitted_terminal_token": 151643,
+  "decision": "Preserve published default; explicit tokenizer-EOS option remains the recorded local policy."
+}

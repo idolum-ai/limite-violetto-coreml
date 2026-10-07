@@ -1,0 +1,139 @@
+{
+  "script_sha256": "c6d2779e752079ec2ac4d5a88be46457d2a599927b392c75b0c980447b3cf33f",
+  "reference_sha256": "a7f5b92225e76455418f47b7ee1f42e2f569b65e6f7260aa0ed094ed64ac3b0c",
+  "target_reference": 8.8125,
+  "rows": [
+    {
+      "name": "rows2",
+      "shape_w": [
+        1,
+        10,
+        2,
+        2048
+      ],
+      "shape_v": [
+        1,
+        10,
+        2048,
+        128
+      ],
+      "torch_vs_full_reference": 0,
+      "coreml_vs_full_reference": 0,
+      "coreml_vs_local_torch": 0,
+      "target_coreml_raw": 8.843749046325684,
+      "target_coreml_q": 8.8125,
+      "target_torch_raw": 8.843749046325684,
+      "target_torch_q": 8.8125
+    },
+    {
+      "name": "keys1026",
+      "shape_w": [
+        1,
+        10,
+        32,
+        1026
+      ],
+      "shape_v": [
+        1,
+        10,
+        1026,
+        128
+      ],
+      "torch_vs_full_reference": 0,
+      "coreml_vs_full_reference": 0,
+      "coreml_vs_local_torch": 0,
+      "target_coreml_raw": 8.84374713897705,
+      "target_coreml_q": 8.8125,
+      "target_torch_raw": 8.843749046325684,
+      "target_torch_q": 8.8125
+    },
+    {
+      "name": "einsum",
+      "shape_w": [
+        1,
+        10,
+        32,
+        2048
+      ],
+      "shape_v": [
+        1,
+        10,
+        2048,
+        128
+      ],
+      "torch_vs_full_reference": 0,
+      "coreml_vs_full_reference": 1,
+      "coreml_vs_local_torch": 1,
+      "target_coreml_raw": 8.84375,
+      "target_coreml_q": 8.875,
+      "target_torch_raw": 8.843749046325684,
+      "target_torch_q": 8.8125
+    },
+    {
+      "name": "per_head",
+      "shape_w": [
+        1,
+        10,
+        32,
+        2048
+      ],
+      "shape_v": [
+        1,
+        10,
+        2048,
+        128
+      ],
+      "torch_vs_full_reference": 0,
+      "coreml_vs_full_reference": 1,
+      "coreml_vs_local_torch": 1,
+      "target_coreml_raw": 8.84375,
+      "target_coreml_q": 8.875,
+      "target_torch_raw": 8.843749046325684,
+      "target_torch_q": 8.8125
+    },
+    {
+      "name": "split1024",
+      "shape_w": [
+        1,
+        10,
+        32,
+        2048
+      ],
+      "shape_v": [
+        1,
+        10,
+        2048,
+        128
+      ],
+      "torch_vs_full_reference": 1,
+      "coreml_vs_full_reference": 0,
+      "coreml_vs_local_torch": 1,
+      "target_coreml_raw": 8.84374713897705,
+      "target_coreml_q": 8.8125,
+      "target_torch_raw": 8.84375,
+      "target_torch_q": 8.875
+    },
+    {
+      "name": "split256",
+      "shape_w": [
+        1,
+        10,
+        32,
+        2048
+      ],
+      "shape_v": [
+        1,
+        10,
+        2048,
+        128
+      ],
+      "torch_vs_full_reference": 0,
+      "coreml_vs_full_reference": 0,
+      "coreml_vs_local_torch": 0,
+      "target_coreml_raw": 8.843745231628418,
+      "target_coreml_q": 8.8125,
+      "target_torch_raw": 8.843745231628418,
+      "target_torch_q": 8.8125
+    }
+  ]
+}

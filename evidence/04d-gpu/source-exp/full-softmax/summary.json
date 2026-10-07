@@ -1,0 +1,43 @@
+{
+  "script_sha256": "a647af9e34c03a72206bba80d38925546f409b49c5710d628ef3315e68019ba4",
+  "source_sha256": {
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_attention.py": "036e1f9717b6d0fac3f00856054f3c319ac392ebfa24fd74926e81f1cf7e3bb5",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227",
+    "coreml_port/source_exp.py": "69c4228cbc5dd493c1430a877940327d6084843ba12680d94ae4a1ddd830e53b"
+  },
+  "compute_units": "CPU_ONLY",
+  "prompt_index": 2,
+  "layer": 2,
+  "score_shape": [
+    1,
+    10,
+    32,
+    2048
+  ],
+  "source_torch_weights": {
+    "different_elements": 0,
+    "max_abs": 0.0
+  },
+  "weights": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "problem_row_max_abs": 0.0,
+    "problem_row_different_elements": 0,
+    "first_differences": []
+  },
+  "product_using_coreml_weights_in_torch": {
+    "raw_different_elements": 0,
+    "raw_max_abs": 0.0,
+    "rounded_different_elements": 0,
+    "rounded_max_abs": 0.0,
+    "problem_element": {
+      "actual_raw": 2.5546884536743164,
+      "expected_raw": 2.5546884536743164,
+      "actual_rounded": 2.5625,
+      "expected_rounded": 2.5625
+    }
+  }
+}

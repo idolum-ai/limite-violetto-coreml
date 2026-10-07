@@ -1,0 +1,62 @@
+{
+  "sources_unchanged_during_build": true,
+  "before": {
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "3abc03e63175f431ff00d17f68eb0c976c1b92417ab29fa411c1b57317ae8b44",
+    "scripts/convert_coreml.py": "ba193b0832661e03a1be8dd9401a201079f7842c8d1e3da8b59a9e8405992d93",
+    "scripts/build_cpu_candidate.py": "5d2dc7c1670ebff38d20b6650b2fb290edc7f57c6543afa638764ecd30db2d40",
+    "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227",
+    "coreml_port/bf16_gelu.py": "69761c7b2ebd7fe158109092abe058d204fd965958cc74652e7747ac4bb82624"
+  },
+  "after": {
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "3abc03e63175f431ff00d17f68eb0c976c1b92417ab29fa411c1b57317ae8b44",
+    "scripts/convert_coreml.py": "ba193b0832661e03a1be8dd9401a201079f7842c8d1e3da8b59a9e8405992d93",
+    "scripts/build_cpu_candidate.py": "5d2dc7c1670ebff38d20b6650b2fb290edc7f57c6543afa638764ecd30db2d40",
+    "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227",
+    "coreml_port/bf16_gelu.py": "69761c7b2ebd7fe158109092abe058d204fd965958cc74652e7747ac4bb82624"
+  },
+  "copied_lineage": [
+    {
+      "component": "head",
+      "source_package": "artifacts/04d-cpu/full-candidate-1/head.mlpackage",
+      "files": [
+        {
+          "source": "artifacts/04d-cpu/full-candidate-1/head.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "size_matches": true,
+          "sha256": "a726313b2c173b04a462388655969eba18f8250716aa5246ce1528b2ac3db0d1",
+          "expected": "a726313b2c173b04a462388655969eba18f8250716aa5246ce1528b2ac3db0d1"
+        },
+        {
+          "source": "artifacts/04d-cpu/full-candidate-1/head.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "size_matches": true,
+          "sha256": "6d89c2ba45c4997054987cd79d17e087c92a406e8a4273f4f15118679cdfcc44",
+          "expected": "6d89c2ba45c4997054987cd79d17e087c92a406e8a4273f4f15118679cdfcc44"
+        },
+        {
+          "source": "artifacts/04d-cpu/full-candidate-1/head.mlpackage/Manifest.json",
+          "size_matches": true,
+          "sha256": "19dc03942c5a3b60718cffbb8a75cf52c3cbbca0dab9046123279d3c440f1443",
+          "expected": "19dc03942c5a3b60718cffbb8a75cf52c3cbbca0dab9046123279d3c440f1443"
+        }
+      ],
+      "same_file_set": true,
+      "pass": true
+    }
+  ],
+  "package_identity": "9221318ea33c0223c4e7fc491b5483b2eb6b3cc4e099af700fa18f9712b4cb81",
+  "handoff_script_hashes": {
+    "scripts/build_cpu_candidate.py": "5d2dc7c1670ebff38d20b6650b2fb290edc7f57c6543afa638764ecd30db2d40",
+    "scripts/seal_cpu_candidate.py": "5ec0bca36bf1539c91c154a89ce6da2051c68a338ecde3bb8a5081714b299bc1",
+    "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+    "coreml_port/runtime.py": "f3702176b345241560144f21a800b2fdbc4e7869fdb92ec2b132ce9e4c2b9181",
+    "scripts/validate_coreml.py": "906d1833faae9b69f30d69528c2e13dc06d1f19874601cf3b06cf7d38512493e"
+  },
+  "pass": true
+}

@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "parser_cases": 10,
+  "task_count": 3,
+  "command": ".venv/bin/python scripts/evaluate_practical_tasks.py --self-check",
+  "script_sha256": "e21a9fe04745314649db4b046b64360a0b3f7bb250c81e565167f89f7bed7b62",
+  "note": "Recorded from successful parser-only execution before inference."
+}

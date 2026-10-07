@@ -1,0 +1,14 @@
+{
+  "inputs": 10247,
+  "torch_differences": 0,
+  "coreml": {
+    "CPU_ONLY": {
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    "CPU_AND_GPU": {
+      "different_elements": 0,
+      "max_abs": 0.0
+    }
+  }
+}

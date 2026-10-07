@@ -1,0 +1,16 @@
+{
+  "name": "attention-small-local-attempt2",
+  "python": "3.12.9",
+  "torch": "2.7.0",
+  "coremltools": "9.0",
+  "acceptance_sha256": "6552c53e6dc09bfa1c50bda8db9a350392ff96466e9fb602bca13916c1b5c806",
+  "sources_sha256": {
+    "run_components.py": "d1a6655aae929600848024559a8ad631d42dd48fc9bb014dbd11a0f86d356147",
+    "components.py": "952b4c7f4cf55831b03a3f7091a93189108834d39bb3072689aa80a4a4c3fcd7"
+  },
+  "artifact_path": "artifacts/02-components/attention-small-local-attempt2",
+  "status": "ERROR",
+  "traceback": "Traceback (most recent call last):\n  File \"<PROJECT_ROOT>/experiments/run_components.py\", line 221, in main\n    result.update(attention(args,directory) if args.kind==\"attention\" else mixer(args,directory))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>/experiments/run_components.py\", line 81, in attention\n    model, timing = convert(module, (x[:, :3], ve[:, :3], torch.arange(3, dtype=torch.int32)),\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>/experiments/run_components.py\", line 50, in convert\n    converted = ct.convert(traced, inputs=inputs, outputs=outputs, states=states,\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/converters/_converters_entry.py\", line 646, in convert\n    mlmodel = mil_convert(\n              ^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/converters/mil/converter.py\", line 186, in mil_convert\n    return _mil_convert(\n           ^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/converters/mil/converter.py\", line 218, in _mil_convert\n    proto, mil_program = mil_convert_to_proto(\n                         ^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/converters/mil/converter.py\", line 294, in mil_convert_to_proto\n    prog = frontend_converter(model, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/converters/mil/converter.py\", line 106, in __call__\n    return load(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/converters/mil/frontend/torch/load.py\", line 77, in load\n    converter = TorchConverter(\n                ^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/converters/mil/frontend/torch/converter.py\", line 617, in __init__\n    p(self.graph)\n  File \"<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/converters/mil/frontend/torch/torchir_passes.py\", line 153, in generate_tensor_assignment_ops\n    raise ValueError(\"No matching select or slice.\")\nValueError: No matching select or slice.\n",
+  "elapsed_seconds": 0.05361570790410042,
+  "process_peak_rss_gib": 0.3047943115234375
+}

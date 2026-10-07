@@ -1,0 +1,7 @@
+# Import identities are byte-sensitive; do not normalize line endings.
+* -text
+
+# Preserve formatting in upstream snapshots and historical evidence exports.
+# Their bytes are checked by scripts/verify_repository.py.
+sources/** -whitespace
+evidence/** -whitespace

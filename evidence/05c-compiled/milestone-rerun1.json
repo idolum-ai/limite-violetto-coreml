@@ -1,0 +1,890 @@
+{
+  "acceptance_sha256": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+  "aggregator_sha256": "14b7acf35f9df7b6e6a4ef47200328f76ae61a9ad70bc673b31c9aecb7d2eb56",
+  "compiled_identity": {
+    "compiled_dir": "<PROJECT_ROOT>/artifacts/05c-compiled/full-cache-1",
+    "compiled_manifest": "<PROJECT_ROOT>/evidence/05c-compiled/full-cache-1/compiled-identity.json",
+    "loader_provenance": {
+      "compiled_aggregate_sha256": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+      "compiled_dir": "<PROJECT_ROOT>/artifacts/05c-compiled/full-cache-1",
+      "compiled_manifest": "<PROJECT_ROOT>/evidence/05c-compiled/full-cache-1/compiled-identity.json",
+      "compiled_manifest_sha256": "6d823571b146339d557aab33d7d284eee8cf701eb7e20e0a8fbf5ccb8be01b29",
+      "mode": "persistent_compiled",
+      "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+      "sources": {
+        "coreml_port/compiled_identity.py": "10eb6ef0a793453109f0378275e2a3259631d68c5e85e9f92873ba1f85373c53",
+        "coreml_port/compiled_runtime.py": "37d16dfd0ab096b9ec5b26f8d44f3e64874b94c60181af80748cab9c302eedb5",
+        "coreml_port/loader_selection.py": "4d8b5380934b6712b7c3abc35f2f0bfb68943624252b32c3315d3e148f196099",
+        "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81"
+      }
+    },
+    "passed": true,
+    "status": "pass",
+    "verified_identity": {
+      "aggregate_sha256": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+      "host": {
+        "machine": "arm64",
+        "macos_version": "26.5.2",
+        "python_implementation": "CPython",
+        "python_version": "3.12.9",
+        "system": "Darwin"
+      },
+      "kind": "coreml_compiled_cache",
+      "packages": {
+        "0": {
+          "directories": [
+            "0.mlmodelc/analytics",
+            "0.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "0.mlmodelc/analytics/coremldata.bin",
+              "sha256": "c045b39488ccab30e6375ac449dac6038b73c50a686216d1fbc834fc5b62d63b",
+              "size": 243
+            },
+            {
+              "path": "0.mlmodelc/coremldata.bin",
+              "sha256": "7ada5a60b182a1faea78093317fd0bba6a0298a353d8a423c051e6225f0a4982",
+              "size": 944
+            },
+            {
+              "path": "0.mlmodelc/model.mil",
+              "sha256": "df5e84991d925adc8b5121324e98ebdafff69e1e8e70b007ae29a9e8ea659709",
+              "size": 5973856
+            },
+            {
+              "path": "0.mlmodelc/weights/weight.bin",
+              "sha256": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b",
+              "size": 272336832
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "6b54aa397d651115e8328d84d7cf3487faf39489b9fc68816498ed2ab6807c0e",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "d5a316f7c6ded387a264780539c758ee9f1877d50cd6877552f6704ac2fe860b",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "1": {
+          "directories": [
+            "1.mlmodelc/analytics",
+            "1.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "1.mlmodelc/analytics/coremldata.bin",
+              "sha256": "02c4ae4829e4bf4af52b491f024cfb1563e2632d8fef2cfe550eef6be54155c4",
+              "size": 243
+            },
+            {
+              "path": "1.mlmodelc/coremldata.bin",
+              "sha256": "744631eaf2ec0d8113bbcabbf179084b11c69dfe7dc1dc74aa8bd0601850d17e",
+              "size": 944
+            },
+            {
+              "path": "1.mlmodelc/model.mil",
+              "sha256": "be704318fce7e61d9bf3f376e460fc0b1a334e7e506ca14f9cb9cea55f7bd228",
+              "size": 6000228
+            },
+            {
+              "path": "1.mlmodelc/weights/weight.bin",
+              "sha256": "54548f864c3249ce5cec1373cca5a46cc238bf58c45124ff6c6f572bb5f8f755",
+              "size": 272336832
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "e979a5e35f76e8f5f2f79bdb3116dfd7a9e92340d8e0114a0d43112bb3bce87c",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "c4da11997369eb6ea23577558e23f20920a4d5f5e6f3b4e98d9f7fd03235be88",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "10": {
+          "directories": [
+            "10.mlmodelc/analytics",
+            "10.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "10.mlmodelc/analytics/coremldata.bin",
+              "sha256": "efb89f6ca5226337ee074ec88a97fc41863846216497ab409a7919b85e7c9aca",
+              "size": 243
+            },
+            {
+              "path": "10.mlmodelc/coremldata.bin",
+              "sha256": "5024249ec7f159a86725fd6dcc6a0444f5cae1a3af325fb98dc45f0fbedcbc70",
+              "size": 944
+            },
+            {
+              "path": "10.mlmodelc/model.mil",
+              "sha256": "66f2d0ca4de6ccd83f76b1adf9af81e1f519fc8dbf4024cd7e48c71b359c9601",
+              "size": 5999959
+            },
+            {
+              "path": "10.mlmodelc/weights/weight.bin",
+              "sha256": "ffb00256b99964abab281d7da111b970e79759d44fab0455d66d8b5c5aa76654",
+              "size": 272336832
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "5df2eed3f84d77f1fc9a16122b738203d760465c18a3f7cf49fb8593f8fd1186",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "5b36a608a14d05d4aa83e2657b99368cc2d199213df0332a6ceb0c1c54a48786",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "11": {
+          "directories": [
+            "11.mlmodelc/analytics",
+            "11.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "11.mlmodelc/analytics/coremldata.bin",
+              "sha256": "72a03783073a917697d56d924d03a3484f4189009cba486c67d326ca2d64a8e5",
+              "size": 243
+            },
+            {
+              "path": "11.mlmodelc/coremldata.bin",
+              "sha256": "b02819476232241d2497b2f91706552ba78b8ea0c47c57afaa0bfef679a1ed6f",
+              "size": 944
+            },
+            {
+              "path": "11.mlmodelc/model.mil",
+              "sha256": "0a934e62ca0a228152c21db0e86e176b39e14f6f984576472f3d1d697ee40b89",
+              "size": 6242919
+            },
+            {
+              "path": "11.mlmodelc/weights/weight.bin",
+              "sha256": "3b7a8a0d4299419075f0067a9d5c2a167e5b6b9c13a56420a4a9ccf5063ad243",
+              "size": 272545472
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "be7a16be7deba4f03cbc62c065b06514ab74a47f6e2ca94853f79183d0304da5",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "cc77c799b8534dd9aa402f0ef9fcfd36381521306dedb7a57e0d308dd82d8ac9",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "2": {
+          "directories": [
+            "2.mlmodelc/analytics",
+            "2.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "2.mlmodelc/analytics/coremldata.bin",
+              "sha256": "1b0e1516b800a8966e1024898c0a9bb15f4eaaf552c7c3ab7a84050ce16cf2e4",
+              "size": 243
+            },
+            {
+              "path": "2.mlmodelc/coremldata.bin",
+              "sha256": "7ada5a60b182a1faea78093317fd0bba6a0298a353d8a423c051e6225f0a4982",
+              "size": 944
+            },
+            {
+              "path": "2.mlmodelc/model.mil",
+              "sha256": "60440028a5b594baed3c59264dad004cf83ea668facf9b33597f4fec2c5b5a50",
+              "size": 5973312
+            },
+            {
+              "path": "2.mlmodelc/weights/weight.bin",
+              "sha256": "ec983c8fd8e98d3cbb3ed795c1d92e99ec3504f956fc05376499a238f15c5eaf",
+              "size": 272336832
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "2aa7898742d28b976a3996190a5a0ea622a05d7b2191536331bcc57ee71a4e60",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "38596538d6456f5dcfa5c077b4ffa841eb331c0fff674353b5b8dbd3b75ceb5e",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "3": {
+          "directories": [
+            "3.mlmodelc/analytics",
+            "3.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "3.mlmodelc/analytics/coremldata.bin",
+              "sha256": "b4cfaa4ada8d7826c2abda3015f4d1cb15a49509b5abe9059620f907539ee691",
+              "size": 243
+            },
+            {
+              "path": "3.mlmodelc/coremldata.bin",
+              "sha256": "74a8555ee7f431d5e4a4d66e080c105e67c98ec8007399aebfe9c9dfee8a6f04",
+              "size": 944
+            },
+            {
+              "path": "3.mlmodelc/model.mil",
+              "sha256": "8fa22c20a0578aff532a7832c8db3cf4723f183724c1a914d618da0d958d01a9",
+              "size": 5973858
+            },
+            {
+              "path": "3.mlmodelc/weights/weight.bin",
+              "sha256": "84b86ac803cb5a683a0b38ca035f51e4b975f0946980deeec0822238fc697492",
+              "size": 272336832
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "4e19892b4719b14d320e249ac1aff0ddf255465ade0bafcde4f7ae6f35e15a9e",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "addcde8ddab15e368bd46e57aece97d04fb7073d6b65f52f8b1fe8a1222e1dde",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "4": {
+          "directories": [
+            "4.mlmodelc/analytics",
+            "4.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "4.mlmodelc/analytics/coremldata.bin",
+              "sha256": "b4d9cf3dc77a0b22e92c1734daa772b2373b42926b837a2697445e7a19a0c457",
+              "size": 243
+            },
+            {
+              "path": "4.mlmodelc/coremldata.bin",
+              "sha256": "b4522288e0f1c4ba3b4b43be68f4b5124d2d47d1a61a3af4009749331ed589c3",
+              "size": 944
+            },
+            {
+              "path": "4.mlmodelc/model.mil",
+              "sha256": "9e7497485eed8cf292e0ecdba1a28d4d65deb019d9e1799dbe4e82e829425362",
+              "size": 6000223
+            },
+            {
+              "path": "4.mlmodelc/weights/weight.bin",
+              "sha256": "7a09920047292f0084f289a87e347f974a7aacd6db7ea7c67e1719a8b6aebf57",
+              "size": 272336832
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "479acf037498ef8e972c6d157d74861100832bd2cd071907b457bcb6ef9abb14",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "ae437105eaa69a7b0023310523b361ae1ba230dd6b5faced7ceaedcba0296f51",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "5": {
+          "directories": [
+            "5.mlmodelc/analytics",
+            "5.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "5.mlmodelc/analytics/coremldata.bin",
+              "sha256": "edce358f258627feccf4aa6105610891ac4751828e255800740ab6d9a82e609d",
+              "size": 243
+            },
+            {
+              "path": "5.mlmodelc/coremldata.bin",
+              "sha256": "43d55d482dd191f48b80dc424d01f6e23d9bf75c6acf2cfa0fd270bb4901c292",
+              "size": 944
+            },
+            {
+              "path": "5.mlmodelc/model.mil",
+              "sha256": "1de643b54bdd0072b68de5b9cead32833c56441a67ef4ef4e536e8bcf11fa157",
+              "size": 5973415
+            },
+            {
+              "path": "5.mlmodelc/weights/weight.bin",
+              "sha256": "c43d90db869ade82615b3d849922f3de3f22367e6e5fdaeccd0e94ca75f3a284",
+              "size": 272336832
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "339c9020878de7c0bd4a20cde783fa2d7c48a89e1329adcbc7b931444be3f886",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "8bf369b8843303099b3d44cb8757eb636e20fdcc37440666b7f879c52da0fb18",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "6": {
+          "directories": [
+            "6.mlmodelc/analytics",
+            "6.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "6.mlmodelc/analytics/coremldata.bin",
+              "sha256": "bdb2bbfa4983aed67d3cdc0898cb0ea3063067a788272f9397e91e3d598ab6b9",
+              "size": 243
+            },
+            {
+              "path": "6.mlmodelc/coremldata.bin",
+              "sha256": "c626e73a9bf6aaaf2a7de789777b537a82f397a1432fdcb3cd23f90161ab1858",
+              "size": 944
+            },
+            {
+              "path": "6.mlmodelc/model.mil",
+              "sha256": "7137e0e80e5db7161ddcec3f526f50342a75c604a4cb425138e6c2ca76479529",
+              "size": 6179509
+            },
+            {
+              "path": "6.mlmodelc/weights/weight.bin",
+              "sha256": "993c492d35e1dea10a676037105a7cceac9d0ba979dced22f405e0cdb6ab8786",
+              "size": 272545472
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "1dada007f30b796babcb1645a9bd7ec00bf7ade02ad99e02d63e7dc5edf36979",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "62213251b7079fdd07cdd2c8ee41bab6b0887846bf90db140ac021a9edfd4843",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "7": {
+          "directories": [
+            "7.mlmodelc/analytics",
+            "7.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "7.mlmodelc/analytics/coremldata.bin",
+              "sha256": "af7041eacec6e76459b42ec93c16f824e5d9e2dc37b0dc5bff3ae24d184669fc",
+              "size": 243
+            },
+            {
+              "path": "7.mlmodelc/coremldata.bin",
+              "sha256": "53aeabc7a2951fb6cefae6f6f35718c4a25824dcbe96a55ad5cdf2c824850dce",
+              "size": 944
+            },
+            {
+              "path": "7.mlmodelc/model.mil",
+              "sha256": "3491fdfb43165ccecc4e180f187476b50822a00e404bf8ed47c38baa3029841a",
+              "size": 6000230
+            },
+            {
+              "path": "7.mlmodelc/weights/weight.bin",
+              "sha256": "ac7fe384775035e155b3f84949047d3de44d3313bfbbd8aee49147de221d064b",
+              "size": 272336832
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "8bd44fd5672592e3071dbca7b5b9a4cfdbe3246c733827713743166a48a5f7fe",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "03006ae9a5e26e9696c034665081d2b7193d04037a69c6fd8711ff92d0ee7c7e",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "8": {
+          "directories": [
+            "8.mlmodelc/analytics",
+            "8.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "8.mlmodelc/analytics/coremldata.bin",
+              "sha256": "921c9496bff443c00295886714708b14cd2e85a8bc68b6e3d61e5c849d5f79ca",
+              "size": 243
+            },
+            {
+              "path": "8.mlmodelc/coremldata.bin",
+              "sha256": "33f5c39503ad8246e7d3f7c96031f933f16ca978446bb59ea072d7df29012765",
+              "size": 944
+            },
+            {
+              "path": "8.mlmodelc/model.mil",
+              "sha256": "1a3ef711fd123f898debdaad618d66078492fafc94f52bdbade26058a6847ef8",
+              "size": 5973308
+            },
+            {
+              "path": "8.mlmodelc/weights/weight.bin",
+              "sha256": "9b1cd8219b7d11b7c56415f60cc8c1afcca4f31b784ef312d9854ad507e4e9fd",
+              "size": 272336832
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "7fdd4fffd73058c86f639ff125718e68a34a099e8c555b4d9857caf40da7caa8",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "51612ba20d3c582fa8d47c37270cadf260f82001323ce1b1116e83baf4b73742",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "9": {
+          "directories": [
+            "9.mlmodelc/analytics",
+            "9.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "9.mlmodelc/analytics/coremldata.bin",
+              "sha256": "ad5eb33eb372552b36c1475577bf906315453b2dc5b6841c669847ad451cbc7a",
+              "size": 243
+            },
+            {
+              "path": "9.mlmodelc/coremldata.bin",
+              "sha256": "43d55d482dd191f48b80dc424d01f6e23d9bf75c6acf2cfa0fd270bb4901c292",
+              "size": 944
+            },
+            {
+              "path": "9.mlmodelc/model.mil",
+              "sha256": "6fb3e82cfadfcd2da9a4572c6ec946407360f3c77190d88526b0fb5c7d190389",
+              "size": 5973851
+            },
+            {
+              "path": "9.mlmodelc/weights/weight.bin",
+              "sha256": "6a8988bad04a5e6ddb4be04ce1714dd1d70ef0c64209fcec8cf3f697d2862cb2",
+              "size": 272336832
+            }
+          ],
+          "input_names": [
+            "x",
+            "ve",
+            "positions",
+            "tap0",
+            "tap12",
+            "tap23",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "y",
+            "tap23_out"
+          ],
+          "sha256": "9426f59d21e07f6379568c776edfa23a7569c148af84ddb3c8357d37e7021a21",
+          "source_description_sha256": "df4f8a40acdcfe3d608aaf8c6326a6f4000157f7c0a18127620b29b5fb5aae1d",
+          "source_package_sha256": "3b8adbb90f6620f511dc4b3bcadcddce68bf329e304aa0551cb9d6b92dac45a4",
+          "state_names": [
+            "inner_k_cache_0",
+            "inner_v_cache_0",
+            "inner_k_cache_1",
+            "inner_v_cache_1",
+            "inner_k_cache_2",
+            "inner_v_cache_2",
+            "inner_k_cache_3",
+            "inner_v_cache_3"
+          ]
+        },
+        "embedding": {
+          "directories": [
+            "embedding.mlmodelc/analytics",
+            "embedding.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "embedding.mlmodelc/analytics/coremldata.bin",
+              "sha256": "cd64f47820236800096178ce272ce06f601cf51fe9e310fc5ac82ddb94332f60",
+              "size": 243
+            },
+            {
+              "path": "embedding.mlmodelc/coremldata.bin",
+              "sha256": "5d3074fc4711f6a33505b35a67345abcc7598448f700be163f79466fa46c0af8",
+              "size": 413
+            },
+            {
+              "path": "embedding.mlmodelc/model.mil",
+              "sha256": "c0526411b737534032323c2d6c4039914c138b3cb16b97bf41a05686f3ec4bd4",
+              "size": 66420
+            },
+            {
+              "path": "embedding.mlmodelc/weights/weight.bin",
+              "sha256": "f4b84c85e7e2fa64952bba1e3af8e9a076ff6895168ae4b41f215a0a9b18edde",
+              "size": 931923200
+            }
+          ],
+          "input_names": [
+            "ids",
+            "norm_divisor"
+          ],
+          "output_names": [
+            "x",
+            "ve"
+          ],
+          "sha256": "165b726a57048094649e259b77dfcb42770fa87fe48af4c6a8f8c878aa087d5c",
+          "source_description_sha256": "bfb34e33f7028677fe680124f626f4aa5af38594e792cb5af29ef31b89581beb",
+          "source_package_sha256": "5d986b468943ba8cf3edd0bc338567c77d516fcf2e65bae2ee745d3364852554",
+          "state_names": []
+        },
+        "head": {
+          "directories": [
+            "head.mlmodelc/analytics",
+            "head.mlmodelc/weights"
+          ],
+          "files": [
+            {
+              "path": "head.mlmodelc/analytics/coremldata.bin",
+              "sha256": "0b6294d247108902a9358bd94354b22fd1d8684bd271a8e4853bf66157b9a9dd",
+              "size": 243
+            },
+            {
+              "path": "head.mlmodelc/coremldata.bin",
+              "sha256": "ca80a6a1223f1c0845b9f52e7a3c9305d610346eab2bce46b8241bf3111b2e56",
+              "size": 369
+            },
+            {
+              "path": "head.mlmodelc/model.mil",
+              "sha256": "e267714432bf4e48a0a2dcf96764050d812c87fe5da534338c36fe0ec59d710f",
+              "size": 61174
+            },
+            {
+              "path": "head.mlmodelc/weights/weight.bin",
+              "sha256": "6d89c2ba45c4997054987cd79d17e087c92a406e8a4273f4f15118679cdfcc44",
+              "size": 776605312
+            }
+          ],
+          "input_names": [
+            "x"
+          ],
+          "output_names": [
+            "scores"
+          ],
+          "sha256": "139cb9f704e835198d0c3d0922931bb7a90db6e8d36077d1f12faeab104f712c",
+          "source_description_sha256": "eb43cfcce992d30ca39534fb0d00ec7d72adab4d95a624e95396a929162bfd17",
+          "source_package_sha256": "ec0f2ccc9e773334b267ad441148cd6e9d02d4ac0849f92a0eb18c8524bd305a",
+          "state_names": []
+        }
+      },
+      "schema_version": 1,
+      "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+      "toolchain": {
+        "coremltools_version": "9.0",
+        "installed_files": {
+          "coremltools_init": {
+            "path": "<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/__init__.py",
+            "sha256": "ebbb958d3bc70c16c3c1d991f46fd3d25da5f08f1c12083f0634a7293a0cca81",
+            "size": 5720
+          },
+          "libcoremlpython": {
+            "path": "<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/libcoremlpython.so",
+            "sha256": "915f478a3f2a392077012f8dacd9ae433579cbb299019ef2df23217ce536ee67",
+            "size": 1479824
+          },
+          "models_model": {
+            "path": "<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/models/model.py",
+            "sha256": "3395b8a3ae2bd8cf288fc4ced668a0cc1e78d5e8eb2edeadb75e89024f2b3721",
+            "size": 43380
+          },
+          "models_utils": {
+            "path": "<PROJECT_ROOT>/.venv/lib/python3.12/site-packages/coremltools/models/utils.py",
+            "sha256": "bbcd76f44ca39a579d93fb41b3b8fb53c20e7bc276c905be4fb3851de736bfea",
+            "size": 88864
+          }
+        }
+      }
+    }
+  },
+  "current_runtime_provenance": {
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf"
+  },
+  "current_tiny_prefix_runtime_sha256": "03f50bffc68b5264ef8f0f663c869d237e103f1a8863b0e34569325f26cddb2f",
+  "failed_gates": [],
+  "gates": {
+    "boundaries": {
+      "check_count": 4,
+      "comparison_count": 6,
+      "errors": [],
+      "labels": [
+        "fresh1026",
+        "prefix1023",
+        "prefix1024",
+        "prefix1025",
+        "prefix1026",
+        "prefix2048"
+      ],
+      "max_hidden_relative_rmse": 0.0,
+      "max_score_abs": 1.9073486328125e-06,
+      "passed": true,
+      "path": "<PROJECT_ROOT>/evidence/05c-compiled/boundaries/results.json",
+      "status": "pass"
+    },
+    "generation": {
+      "audit_count": 7,
+      "boxed_391_after_think": true,
+      "errors": [],
+      "finish_reason": "stop_token",
+      "generated_tokens": 674,
+      "max_audited_score_error": 3.814697265625e-06,
+      "passed": true,
+      "path": "<PROJECT_ROOT>/evidence/04d-audit/compiled1-generation/results.json",
+      "request_disposed": true,
+      "status": "pass",
+      "think_marker_present": true
+    },
+    "partitions": {
+      "case_count": 13,
+      "disposed_request_count": 13,
+      "errors": [],
+      "expected_matched_prefix_count": 97,
+      "matched_prefix_count": 97,
+      "max_hidden_relative_rmse": 0.0,
+      "max_score_abs": 3.814697265625e-06,
+      "partition_repeat_pass": true,
+      "passed": true,
+      "passed_prefix_count": 97,
+      "path": "<PROJECT_ROOT>/evidence/04d-audit/compiled1-partitions/results.json",
+      "status": "pass"
+    },
+    "short": {
+      "attempt_path": "<PROJECT_ROOT>/evidence/05c-compiled/short/validation-CPU_ONLY-attempt.json",
+      "attempt_status": "completed",
+      "check_count": 17,
+      "comparison_count": 54,
+      "errors": [],
+      "expected_checks": 17,
+      "expected_comparisons": 54,
+      "lifecycle_pass": true,
+      "max_hidden_relative_rmse": 0.0,
+      "max_score_abs": 1.9073486328125e-06,
+      "numerical_pass": true,
+      "passed": true,
+      "result_path": "<PROJECT_ROOT>/evidence/05c-compiled/short/validation-CPU_ONLY.json",
+      "status": "pass"
+    }
+  },
+  "milestone_pass": true,
+  "missing_gates": [],
+  "schema_version": 1,
+  "selected_arithmetic_policy": "paired-native-tiny",
+  "selected_runtime_adapter": "compiled_tiny_prefix_replay",
+  "source_provenance": {
+    "candidate_evidence_dir": "<PROJECT_ROOT>/evidence/04d-cpu/full-candidate-6",
+    "candidate_root": "<PROJECT_ROOT>/artifacts/04d-cpu/full-candidate-6",
+    "errors": [],
+    "passed": true,
+    "seal": {
+      "after_matches_before": true,
+      "before_matches_source_identity": true,
+      "copied_components": [
+        "embedding",
+        "head"
+      ],
+      "package_identity_matches": true,
+      "path": "<PROJECT_ROOT>/evidence/04d-cpu/full-candidate-6/provenance-verification.json",
+      "snapshot_count": 13,
+      "sources_unchanged_during_build": true
+    },
+    "source_package_aggregate_sha256": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+    "status": "pass"
+  },
+  "status": "completed",
+  "thresholds_changed": false
+}

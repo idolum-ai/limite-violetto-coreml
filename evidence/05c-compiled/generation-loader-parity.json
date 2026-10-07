@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "all_674_tokens_equal_cpu_reference": true,
+    "all_tokens_equal_qualified_package_loader": true,
+    "correct_boxed_391": true,
+    "completed": true,
+    "request_disposed": true,
+    "all_seven_audits_pass": true
+  },
+  "generation_sha256": "1f4a8c3e0b456302619b9230e7a269454117f9e86b5831dd368da228ad30f274",
+  "qualified_package_generation_sha256": "1b53873c970a091f934d33c1ee5f0322959715bc59940d3a71d49422a989e142"
+}

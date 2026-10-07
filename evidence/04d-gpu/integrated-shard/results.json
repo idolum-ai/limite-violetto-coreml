@@ -1,0 +1,499 @@
+{
+  "created_at": "2026-09-22T21:42:50.663097+00:00",
+  "candidate_root": "artifacts/04d-cpu/full-candidate-2",
+  "compute_units": "CPU_ONLY",
+  "source_identity_sha256": "434c10db94d5f49f87ac374e7f7fa9aa991e17322a8fe2b5818903a84bbecfba",
+  "source_identity": {
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "3abc03e63175f431ff00d17f68eb0c976c1b92417ab29fa411c1b57317ae8b44",
+    "scripts/convert_coreml.py": "ba193b0832661e03a1be8dd9401a201079f7842c8d1e3da8b59a9e8405992d93",
+    "scripts/build_cpu_candidate.py": "5d2dc7c1670ebff38d20b6650b2fb290edc7f57c6543afa638764ecd30db2d40",
+    "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227",
+    "coreml_port/bf16_gelu.py": "69761c7b2ebd7fe158109092abe058d204fd965958cc74652e7747ac4bb82624"
+  },
+  "sources": {
+    "scripts/gpu_integrated_shard.py": "048dc2aa226646c0243cf4a49628df785986e562d0b81e1d4623f723919911c5",
+    "coreml_port/graphs.py": "554fdcc2d2c3b34c8c93463c3706276df9d93c30411797c2b36f47f80f911bf8",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "3abc03e63175f431ff00d17f68eb0c976c1b92417ab29fa411c1b57317ae8b44",
+    "coreml_port/ordered_norm.py": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+    "coreml_port/ordered_xsa.py": "4ad665510ec065a25bfa8914e47e8a9768c66f1d2e552542cf12e894947de227"
+  },
+  "packages": {
+    "embedding": {
+      "interface": {
+        "inputs": [
+          {
+            "name": "ids",
+            "shape": [
+              1,
+              3
+            ],
+            "dtype_enum": 131104
+          },
+          {
+            "name": "norm_divisor",
+            "shape": [
+              1
+            ],
+            "dtype_enum": 65568
+          }
+        ],
+        "outputs": [
+          {
+            "name": "x",
+            "shape": [],
+            "dtype_enum": 65568
+          },
+          {
+            "name": "ve",
+            "shape": [],
+            "dtype_enum": 65568
+          }
+        ],
+        "states": []
+      },
+      "manifest_sha256": "8700f3e470a237dbdc30a5bdfdda7653ecafc2786fe21cc1f36c0608ca7761f6",
+      "model_sha256": "b316213a2ed802a17ea101f055bbcb91f3a63551d29b0228fa2e347307dbbe62",
+      "weights_sha256": "f4b84c85e7e2fa64952bba1e3af8e9a076ff6895168ae4b41f215a0a9b18edde"
+    },
+    "0": {
+      "interface": {
+        "inputs": [
+          {
+            "name": "x",
+            "shape": [
+              1,
+              3,
+              1280
+            ],
+            "dtype_enum": 65568
+          },
+          {
+            "name": "ve",
+            "shape": [
+              1,
+              3,
+              2,
+              128
+            ],
+            "dtype_enum": 65568
+          },
+          {
+            "name": "positions",
+            "shape": [
+              3
+            ],
+            "dtype_enum": 131104
+          },
+          {
+            "name": "tap0",
+            "shape": [
+              1,
+              3,
+              1280
+            ],
+            "dtype_enum": 65568
+          },
+          {
+            "name": "tap12",
+            "shape": [
+              1,
+              3,
+              1280
+            ],
+            "dtype_enum": 65568
+          },
+          {
+            "name": "tap23",
+            "shape": [
+              1,
+              3,
+              1280
+            ],
+            "dtype_enum": 65568
+          },
+          {
+            "name": "norm_divisor",
+            "shape": [
+              1
+            ],
+            "dtype_enum": 65568
+          }
+        ],
+        "outputs": [
+          {
+            "name": "y",
+            "shape": [],
+            "dtype_enum": 65568
+          },
+          {
+            "name": "tap23_out",
+            "shape": [],
+            "dtype_enum": 65568
+          }
+        ],
+        "states": [
+          {
+            "name": "inner_k_cache_0",
+            "type": "stateType"
+          },
+          {
+            "name": "inner_v_cache_0",
+            "type": "stateType"
+          },
+          {
+            "name": "inner_k_cache_1",
+            "type": "stateType"
+          },
+          {
+            "name": "inner_v_cache_1",
+            "type": "stateType"
+          },
+          {
+            "name": "inner_k_cache_2",
+            "type": "stateType"
+          },
+          {
+            "name": "inner_v_cache_2",
+            "type": "stateType"
+          },
+          {
+            "name": "inner_k_cache_3",
+            "type": "stateType"
+          },
+          {
+            "name": "inner_v_cache_3",
+            "type": "stateType"
+          }
+        ]
+      },
+      "manifest_sha256": "87fb1124ea75653b03e0239dd5f0e1a0af053a85fad1ed4b953eb9b7490b93c4",
+      "model_sha256": "fb535482f42d4a1c4e7062564b38c0244c36d1a7872f03f29f57767398740cdb",
+      "weights_sha256": "2dd284164281453bbb4631b75982d6e3218e3908d9f8bafcd26832b48cb74f13"
+    }
+  },
+  "prompts": [
+    {
+      "index": 0,
+      "prompt_tokens": 44,
+      "steps": [
+        {
+          "kind": "prefill",
+          "start": 0,
+          "end": 32,
+          "embedding_x": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "different_elements": 0
+          },
+          "embedding_ve": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "different_elements": 0
+          },
+          "shard_y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "shard_tap23": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "prefill",
+          "start": 32,
+          "end": 44,
+          "embedding_x": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "embedding_ve": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "shard_y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "different_elements": 0
+          },
+          "shard_tap23": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "decode",
+          "start": 44,
+          "end": 45,
+          "embedding_x": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "embedding_ve": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "shard_y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "shard_tap23": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          }
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "prompt_tokens": 58,
+      "steps": [
+        {
+          "kind": "prefill",
+          "start": 0,
+          "end": 32,
+          "embedding_x": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "embedding_ve": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "different_elements": 0
+          },
+          "shard_y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "different_elements": 0
+          },
+          "shard_tap23": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "prefill",
+          "start": 32,
+          "end": 58,
+          "embedding_x": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "different_elements": 0
+          },
+          "embedding_ve": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "shard_y": {
+            "max_abs": 256.0,
+            "rmse": 4.8786818104824885,
+            "relative_rmse": 0.0007569815878067214,
+            "cosine": 0.9999997135375542,
+            "different_elements": 649
+          },
+          "shard_tap23": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "decode",
+          "start": 58,
+          "end": 59,
+          "embedding_x": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "embedding_ve": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "shard_y": {
+            "max_abs": 32.0,
+            "rmse": 3.3695557941663465,
+            "relative_rmse": 0.0013879547421150286,
+            "cosine": 0.9999990371844325,
+            "different_elements": 155
+          },
+          "shard_tap23": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "prompt_tokens": 48,
+      "steps": [
+        {
+          "kind": "prefill",
+          "start": 0,
+          "end": 32,
+          "embedding_x": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "different_elements": 0
+          },
+          "embedding_ve": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000004,
+            "different_elements": 0
+          },
+          "shard_y": {
+            "max_abs": 64.0,
+            "rmse": 1.1543725519820416,
+            "relative_rmse": 1.6780259327867498e-05,
+            "cosine": 0.9999999998592114,
+            "different_elements": 305
+          },
+          "shard_tap23": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "prefill",
+          "start": 32,
+          "end": 48,
+          "embedding_x": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998,
+            "different_elements": 0
+          },
+          "embedding_ve": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "different_elements": 0
+          },
+          "shard_y": {
+            "max_abs": 32.0,
+            "rmse": 1.2595384969669632,
+            "relative_rmse": 0.00015836241790370638,
+            "cosine": 0.9999999874612674,
+            "different_elements": 435
+          },
+          "shard_tap23": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998,
+            "different_elements": 0
+          }
+        },
+        {
+          "kind": "decode",
+          "start": 48,
+          "end": 49,
+          "embedding_x": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "embedding_ve": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "shard_y": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          },
+          "shard_tap23": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "different_elements": 0
+          }
+        }
+      ]
+    }
+  ],
+  "interface_verified": true,
+  "decode_token": 16,
+  "all_exact": false
+}

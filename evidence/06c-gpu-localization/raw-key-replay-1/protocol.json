@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "scope": "Eight controlled stateful group-0 calls; saved CPU effective inputs and CPU cache, original versus raw-key tap clone under two compute policies",
+  "script_sha256": "05c69e607a66ed23d1049541c3baf78f69ea5c91ed7d4e476372d4f414b31ad7",
+  "source_result": "evidence/06c-gpu-localization/prompt0-1/results.json",
+  "source_result_sha256": "ed27ff2a0b99bef14822450d044c2ec9e02206c647c934188c3f61c4c9886bb8",
+  "localizer_script_sha256": "f4e7aff94b9fae6374ef9d7307c1bb55211940db88464e01daa2e08155539761",
+  "builder_result": "evidence/06c-gpu-localization/raw-key-taps-1/results.json",
+  "builder_result_sha256": "fd2810e3760dc1235a4acfa8316103001c2195f92db56267126818e07d859558",
+  "builder_script_sha256": "c8ae508f874936272866a6686259bac0b0b377c01aa50f28abf6794296864c9b",
+  "previous_tap_result": "evidence/06c-gpu-localization/key-taps-replay-1/results.json",
+  "previous_tap_result_sha256": "3954650bcbf1eef71440901e1291db578353987091793cc4da58068db019c7c0",
+  "chunks": [0, 1],
+  "compute_policies": ["CPU", "GPU"],
+  "taps": ["x_5", "x_9", "value_5", "k_7", "x_27", "var_2083", "x_29", "var_2106", "x_31", "step_23", "var_2121", "var_2122", "k_9"],
+  "call_count": 8,
+  "original_endpoints": ["y", "tap23_out"],
+  "state_count": 8,
+  "within_policy_control": "Original versus raw-tapped y/tap23_out and all eight post-call states must be raw-byte exact for both policies and both chunks; original replay must equal pinned CPU-input/CPU-cache factorial outputs and states.",
+  "previous_tap_control": "Also compare the four shared taps against the prior four-tap run under the same policy and chunk; record this separately from the endpoint/state gate.",
+  "interpretation": "Only after all same-policy controls pass, compare raw intermediate values across compute policies; CPU_AND_GPU does not establish actual GPU placement."
+}

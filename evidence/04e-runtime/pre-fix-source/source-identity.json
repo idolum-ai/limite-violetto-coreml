@@ -1,0 +1,11 @@
+{
+  "coreml_port/runtime.py": "f3702176b345241560144f21a800b2fdbc4e7869fdb92ec2b132ce9e4c2b9181",
+  "coreml_port/tiny_prefix_runtime.py": "03f50bffc68b5264ef8f0f663c869d237e103f1a8863b0e34569325f26cddb2f",
+  "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+  "coreml_port/native/cleanup_guard.c": "973bc7d1852eb4c80f17f59412d57cc41a3058a78ce78c66a1081e308c9b464d",
+  "scripts/validate_coreml.py": "78cbc11bf850488ec2d9fbf67aa917c8c88381afb1eaa1c7edea138bccc9b800",
+  "scripts/validate_coreml_boundaries.py": "3ff0794b3d8bc2b893a89667880883b93ec73cf1695be95152579126caea1e45",
+  "scripts/audit_coreml_partitions.py": "6883b113276274ed8e1e8d8fcc2adc5305a30cbeed86f317994e30f9110b3ba5",
+  "scripts/audit_coreml_generation.py": "eec200ccb13781ef7b6990eda6a9e3b6551e756b1665f90a0e73877e3bc0248e",
+  "scripts/summarize_cpu_milestone.py": "824cc379d34b93211709c49be67713eb4a1aff86b9b4f6a46786fb4e1972844e"
+}

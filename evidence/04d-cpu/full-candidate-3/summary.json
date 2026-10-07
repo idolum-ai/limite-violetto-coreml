@@ -1,0 +1,18 @@
+{
+  "status": "PASS short gate; FAIL extended tiny/window/capacity gates; not promoted",
+  "aggregate_sha256": "93ba0bc3e64ccc4b04f0faa5c3e1953d062743ffe4c862af872c1030b95d0966",
+  "comparisons": 54,
+  "numerical_comparisons_passed": 54,
+  "score_comparisons": 15,
+  "score_comparisons_passed": 15,
+  "maximum_score_error": 1.9073486328125e-06,
+  "maximum_hidden_error": 0.0,
+  "limit": 0.04,
+  "top1_matches": 15,
+  "lifecycle_checks": 17,
+  "lifecycle_pass": true,
+  "thresholds_changed": false,
+  "selected_default_changed": false,
+  "extended_boundaries": "../full-candidate-3-boundaries/results.json",
+  "extended_partitions": "../../04d-audit/candidate3-partitions-native-ref/results.json"
+}

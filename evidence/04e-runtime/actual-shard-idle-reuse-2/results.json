@@ -1,0 +1,115 @@
+{
+  "status": "complete",
+  "compute": "CPU_ONLY",
+  "cycles": [
+    {
+      "cycle": 0,
+      "fixture": "tiny3",
+      "exact": true,
+      "max_abs": 0.0
+    },
+    {
+      "cycle": 1,
+      "fixture": "long1026",
+      "exact": true,
+      "max_abs": 0.0
+    },
+    {
+      "cycle": 2,
+      "fixture": "tiny3",
+      "exact": true,
+      "max_abs": 0.0
+    },
+    {
+      "cycle": 3,
+      "fixture": "long1026",
+      "exact": true,
+      "max_abs": 0.0
+    },
+    {
+      "cycle": 4,
+      "fixture": "tiny3",
+      "exact": true,
+      "max_abs": 0.0
+    },
+    {
+      "cycle": 5,
+      "fixture": "long1026",
+      "exact": true,
+      "max_abs": 0.0
+    },
+    {
+      "cycle": 6,
+      "fixture": "tiny3",
+      "exact": true,
+      "max_abs": 0.0
+    },
+    {
+      "cycle": 7,
+      "fixture": "long1026",
+      "exact": true,
+      "max_abs": 0.0
+    },
+    {
+      "cycle": 8,
+      "fixture": "tiny3",
+      "exact": true,
+      "max_abs": 0.0
+    },
+    {
+      "cycle": 9,
+      "fixture": "long1026",
+      "exact": true,
+      "max_abs": 0.0
+    },
+    {
+      "cycle": 10,
+      "fixture": "tiny3",
+      "exact": true,
+      "max_abs": 0.0
+    },
+    {
+      "cycle": 11,
+      "fixture": "long1026",
+      "exact": true,
+      "max_abs": 0.0
+    }
+  ],
+  "source_sha256": {
+    "scripts/validate_prediction_guard.py": "72e4127c1cfced2cd60c6431d10b8189657fa82f1bba9a228a05a7b1a8238830",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e"
+  },
+  "installed": {
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 0,
+    "gil_releases": 0
+  },
+  "package_files": {
+    "Data/com.apple.CoreML/model.mlmodel": "5f6bc0e24777b76a56de046a5ab67e237034e9337a8da2007e1f3b0146b73752",
+    "Data/com.apple.CoreML/weights/weight.bin": "84ce7be4b7dddc570abe48dc5b87b809f7f7ffec0d132c649fb52d3beb884ac2",
+    "Manifest.json": "fc516126f18a8cdcfc2fdc4a2d3ad776b9e388d181d76f3212e484ea04daeca3"
+  },
+  "invalid_shape_rejected": true,
+  "invalid_shape_error": {
+    "type": "RuntimeError",
+    "message": "{\n    NSLocalizedDescription = \"Size (33) of dimension (1) is not in allowed range (1..32)\";\n}"
+  },
+  "error_reached_native_wrapper": true,
+  "stateless_repeat_after_error_exact": true,
+  "prediction_guard": {
+    "installed": true,
+    "plain_calls": 3,
+    "state_calls": 12,
+    "gil_releases": 15
+  },
+  "cleanup_guard": {
+    "calls": 138,
+    "background_calls": 57,
+    "shutdown_skips": 0
+  },
+  "pass": true
+}

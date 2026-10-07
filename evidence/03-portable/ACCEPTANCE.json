@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "scope": "Local real-checkpoint consistency, not original NVIDIA-runtime fidelity",
+  "written_before": "Any cached real-model execution or calibration outputs",
+  "weight_mapping": "Exact SHA256, key set, shapes and original dtypes; every element finite; strict load",
+  "full_prefix": {"hidden_max_abs": 0.00001, "score_max_abs": 0.00001, "all_48_layer_outputs": true},
+  "calibration": {
+    "method": "Only pinned upstream full-prefix calls: repeat a short prefix, compare its last position to that position with one future token appended; repeat shape comparison at positions 1024/1025. Candidate cached outputs are excluded.",
+    "score_max_abs_limit": "max(0.04, 4 * observed reference score max_abs), capped at 0.30",
+    "hidden_relative_rmse_limit": "max(0.01, 4 * observed reference hidden relative_rmse), capped at 0.10",
+    "invalid_calibration": "If the uncapped rule exceeds either ceiling, do not approve the cache gate. Preserve all evidence."
+  },
+  "cache": {
+    "minimum_hidden_cosine": 0.995,
+    "scores": "All valid vocabulary rows must satisfy frozen calibrated max_abs; report RMSE, top1, top5 overlap and reference margin",
+    "ranking": "Require top1 agreement when the reference top1/top2 margin exceeds twice the frozen score tolerance; other ties/divergence are reported",
+    "cases": "Three canonical prompts, common teacher-forced continuation, 1026-token sequence with chunked prefill and single-token positions 1024 and 1025; repeat after reset",
+    "boundary": "At q=1024 key0 included, at q=1025 key0 excluded for local layers; global layers retain key0"
+  },
+  "behavior": "Exact pinned prompt token IDs; generation EOS151645; padded IDs rejected; context overflow rejected before cache mutation; wrong-owner and interrupted caches rejected; reset/fresh request equivalence; EOS and length stop paths; real greedy math smoke with explicit completion status",
+  "independent_runtime_gate": "BLOCKED until original Violetto CUDA/vLLM captures are available"
+}

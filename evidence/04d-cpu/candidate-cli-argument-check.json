@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "coreml_port.generate",
+    "test",
+    "--model-dir",
+    "artifacts/04d-cpu/full-candidate-3"
+  ],
+  "exit_code": 2,
+  "stderr": "usage: generate.py [-h] [--max-new-tokens MAX_NEW_TOKENS]\n                   [--compute {CPU_ONLY,CPU_AND_GPU}] [--model-dir MODEL_DIR]\n                   [--identity-manifest IDENTITY_MANIFEST] [--sample]\n                   [--seed SEED] [--stop-at-tokenizer-eos] [--stream]\n                   prompt\ngenerate.py: error: --model-dir and --identity-manifest must be supplied together\n",
+  "pass": true
+}

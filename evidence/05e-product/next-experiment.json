@@ -1,0 +1,26 @@
+{
+  "status": "planned_not_executed",
+  "scope": "Isolated warm single-query group0 score-selector ablation, starting from qualified baseline; no runtime adoption",
+  "baseline": "artifacts/04d-cpu/full-candidate-6/0.mlpackage",
+  "change": "Remove the semantically unused short-prefix score branch when the prepared query has32rows, retaining the original ordinary score expression, all original value products, weights and state behavior. Do not combine with05e value-product variant.",
+  "hypothesis": "The unused short-score arithmetic may contribute to warm decode cost; operator cost is unmeasured and the native compiler may already optimize it.",
+  "gates": [
+    {
+      "id": "S1",
+      "requirement": "Identify the four exact MIL score selectors and def-use closure; prove removed branch operations are unused at one-query positions32..2047, preserve all unrelated operations/state/weights; compile separate artifact. Constant-false selection without branch-removal evidence is insufficient."
+    },
+    {
+      "id": "S2",
+      "requirement": "Harness rejects out-of-domain calls before state creation; fresh restored-state exact y, tap23_out and all8KV states at positions32/128/512 for both baseline and variant."
+    },
+    {
+      "id": "S3",
+      "requirement": "Freeze protocol before timing; exclude warmups; ABBA with fresh states and checks outside timer; require at least10% median group-call reduction in every block/prefix cell."
+    },
+    {
+      "id": "S4",
+      "requirement": "No runtime adoption without separate routing/state-ownership design and full numerical/lifecycle/partition/boundary/generation qualification."
+    }
+  ],
+  "review": "evidence/05e-product/decision-review.md"
+}

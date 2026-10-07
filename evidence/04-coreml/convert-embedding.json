@@ -1,0 +1,7 @@
+{
+  "component": "embedding",
+  "seconds": 4.9441797733306885,
+  "package": "artifacts/04-coreml/model/embedding.mlpackage",
+  "state_names": [],
+  "status": "converted; runtime validation pending"
+}

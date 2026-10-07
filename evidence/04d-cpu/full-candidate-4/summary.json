@@ -1,0 +1,36 @@
+{
+  "scope": "Historical short gate plus explicitly separated earlier-boundary and runtime2 rerun summaries; full milestone incomplete",
+  "status": "short_pass_extended_numerical_fail",
+  "numerical_pass": true,
+  "lifecycle_pass": true,
+  "comparisons": 54,
+  "passed": 54,
+  "score_comparisons": 15,
+  "score_max_abs": 1.9073486328125e-06,
+  "hidden_comparisons": 39,
+  "hidden_exact": 39,
+  "top1_matches": 15,
+  "lifecycle_checks": 17,
+  "runtime_adapter": "tiny_prefix_replay",
+  "package_identity": "9aaea5e518689705ec236710803e53107a224620e8847004be335e47b7969398",
+  "thresholds_changed": false,
+  "default_changed": false,
+  "extended_boundary": {
+    "file": "../full-candidate-4-boundaries/results.json",
+    "passed_endpoints": [
+      1023,
+      1024,
+      1025,
+      1026
+    ],
+    "fresh1026_pass": true,
+    "capacity2048_pass": false,
+    "capacity2048_score_max_abs": 0.6660594940185547,
+    "lifecycle_checks_pass": true
+  },
+  "partition_status": "runtime2 completed without deadlock:56/97 pass,41 fail; all13 disposed and partition repeat exact",
+  "runtime_followup": "../../04e-runtime/REPORT.md",
+  "runtime2_short": "../candidate4-runtime2-short/summary.json",
+  "runtime2_partitions": "../../04d-audit/candidate4-runtime2-partitions/results.json",
+  "runtime2_milestone": "../candidate4-runtime2-milestone.json"
+}

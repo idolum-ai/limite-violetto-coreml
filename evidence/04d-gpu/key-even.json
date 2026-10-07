@@ -1,0 +1,51 @@
+{
+  "input_sha256": "6f7c995b48a07c765dbc2387f42b367d59cfcc3d914b94cbeb0324cf85539261",
+  "script_sha256": "720569528885d0cdedd28019a304382770b06fe801d8c8c874e925feb52ee58f",
+  "torch_even_equals_original": true,
+  "runs": {
+    "CPU_ONLY": {
+      "q": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "kraw": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "k": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "v": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      }
+    },
+    "CPU_AND_GPU": {
+      "q": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "kraw": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "k": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "v": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      }
+    }
+  }
+}

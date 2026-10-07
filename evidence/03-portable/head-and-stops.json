@@ -1,0 +1,14 @@
+{
+  "head": {
+    "scope": "Original pinned compute_logits method run on CPU with real hidden state and tied actor weights; not original CUDA serving execution",
+    "max_abs": 0.0,
+    "exact_match": true
+  },
+  "loop_checks": {
+    "eos_stops_without_extra_forward": true,
+    "tokenizer_eos_does_not_stop_model": true,
+    "callback_interruption_disposes_state": true,
+    "explicit_extra_stop_is_recorded": true
+  },
+  "passed": true
+}

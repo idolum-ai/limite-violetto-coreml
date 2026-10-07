@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "scripts/evaluate_practical_tasks.py": true,
+    "portable/model.py": true,
+    "portable/generate.py": true,
+    "sources/model/config.json": true,
+    "sources/model/tokenizer.json": true,
+    "sources/model/tokenizer_config.json": true,
+    "sources/model/chat_template.jinja": true,
+    "sources/model/generation_config.json": true,
+    "manifest.json": true,
+    "evidence/05-practical/task-design.md": true
+  }
+}

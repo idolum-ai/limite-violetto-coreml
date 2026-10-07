@@ -1,0 +1,22 @@
+{
+  "compute": "CPU_ONLY",
+  "completed": [
+    {
+      "length": 1024,
+      "finite": true
+    },
+    {
+      "length": 1025,
+      "finite": true
+    },
+    {
+      "length": 1026,
+      "finite": true
+    },
+    {
+      "length": 2048,
+      "finite": true
+    }
+  ],
+  "elapsed_seconds": 34.40666604042053
+}

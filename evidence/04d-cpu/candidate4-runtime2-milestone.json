@@ -1,0 +1,116 @@
+{
+  "acceptance_sha256": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+  "aggregator_sha256": "af3c5646892ac068aeb3ec0be7ef300ed83a5b9611537f4b71603282340ef446",
+  "current_runtime_provenance": {
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf"
+  },
+  "current_tiny_prefix_runtime_sha256": "03f50bffc68b5264ef8f0f663c869d237e103f1a8863b0e34569325f26cddb2f",
+  "failed_gates": [
+    "partitions",
+    "boundaries",
+    "generation"
+  ],
+  "gates": {
+    "boundaries": {
+      "errors": [
+        "gate evidence path not supplied"
+      ],
+      "passed": false,
+      "status": "missing"
+    },
+    "generation": {
+      "errors": [
+        "gate evidence path not supplied"
+      ],
+      "passed": false,
+      "status": "missing"
+    },
+    "partitions": {
+      "case_count": 13,
+      "disposed_request_count": 13,
+      "errors": [
+        "single_prefill_3: case or matched-prefix checks failed",
+        "single_token_partitions_3: case or matched-prefix checks failed",
+        "single_token_partitions_15: case or matched-prefix checks failed",
+        "single_token_partitions_31: case or matched-prefix checks failed",
+        "single_token_partitions_33: case or matched-prefix checks failed",
+        "irregular_127: case or matched-prefix checks failed",
+        "partition numerical summary does not pass"
+      ],
+      "expected_matched_prefix_count": 97,
+      "matched_prefix_count": 97,
+      "max_hidden_relative_rmse": 0.06448590686486123,
+      "max_score_abs": 0.5823030471801758,
+      "partition_repeat_pass": true,
+      "passed": false,
+      "passed_prefix_count": 56,
+      "path": "<PROJECT_ROOT>/evidence/04d-audit/candidate4-runtime2-partitions/results.json",
+      "status": "fail"
+    },
+    "short": {
+      "attempt_path": "<PROJECT_ROOT>/evidence/04d-cpu/candidate4-runtime2-short/validation-CPU_ONLY-attempt.json",
+      "attempt_status": "completed",
+      "check_count": 17,
+      "comparison_count": 54,
+      "errors": [],
+      "expected_checks": 17,
+      "expected_comparisons": 54,
+      "lifecycle_pass": true,
+      "max_hidden_relative_rmse": 0.0,
+      "max_score_abs": 1.9073486328125e-06,
+      "numerical_pass": true,
+      "passed": true,
+      "result_path": "<PROJECT_ROOT>/evidence/04d-cpu/candidate4-runtime2-short/validation-CPU_ONLY.json",
+      "status": "pass"
+    }
+  },
+  "milestone_pass": false,
+  "missing_gates": [
+    "boundaries",
+    "generation"
+  ],
+  "provenance": {
+    "build_status": "converted; runtime validation pending",
+    "candidate_evidence_dir": "<PROJECT_ROOT>/evidence/04d-cpu/full-candidate-4",
+    "candidate_root": "<PROJECT_ROOT>/artifacts/04d-cpu/full-candidate-4",
+    "errors": [],
+    "manifest_path": "<PROJECT_ROOT>/evidence/04d-cpu/full-candidate-4/package-identity.json",
+    "package_aggregate_sha256": "9aaea5e518689705ec236710803e53107a224620e8847004be335e47b7969398",
+    "passed": true,
+    "seal": {
+      "after_matches_before": true,
+      "before_matches_source_identity": true,
+      "copied_components": [
+        "embedding",
+        "head"
+      ],
+      "package_identity_matches": true,
+      "path": "<PROJECT_ROOT>/evidence/04d-cpu/full-candidate-4/provenance-verification.json",
+      "snapshot_count": 11,
+      "sources_unchanged_during_build": true
+    },
+    "source_files": [
+      "coreml_port/bf16_gelu.py",
+      "coreml_port/dynamic_queries.py",
+      "coreml_port/graphs.py",
+      "coreml_port/ordered_attention.py",
+      "coreml_port/ordered_linear.py",
+      "coreml_port/ordered_norm.py",
+      "coreml_port/ordered_xsa.py",
+      "coreml_port/package_identity.py",
+      "coreml_port/source_exp.py",
+      "scripts/build_cpu_candidate.py",
+      "scripts/convert_coreml.py"
+    ],
+    "status": "pass"
+  },
+  "schema_version": 1,
+  "selected_runtime_adapter": "tiny_prefix_replay",
+  "status": "incomplete",
+  "thresholds_changed": false
+}

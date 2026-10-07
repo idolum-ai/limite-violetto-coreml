@@ -1,0 +1,173 @@
+{
+  "status": "completed",
+  "passed": true,
+  "script_sha256": "b521838fcc85315d64c4f7bed2f0e8457461a986779477831560fc3dd32014f2",
+  "source_build_sha256": "4e6ac1baa2f70c10bf812523f7e341d9dabf34b30299e4819631f2db31cf150f",
+  "native_compile_load_predict": false,
+  "package_artifact_created": false,
+  "only_output_lists_change": true,
+  "original_operations_byte_identical": 46035,
+  "taps": [
+    {
+      "name": "q_3",
+      "stage": "layer0_rotary_query",
+      "operation_index": 1922,
+      "original_operation_index": 1679,
+      "operation_type": "mul",
+      "mil_shape": [
+        1,
+        null,
+        10,
+        128
+      ],
+      "operation_sha256": "7b37770ebf9ebf168b6f31fde849aaebb1099126194a340baccd959fff367775",
+      "value_type_sha256": "0a5466f5dc70faa052cccf67a034dad7145d63cab9d1a49aa0e6a4e2c1503bd1",
+      "producer_byte_identical_to_original": true
+    },
+    {
+      "name": "value_19",
+      "stage": "layer0_final_hidden",
+      "operation_index": 11589,
+      "original_operation_index": 10698,
+      "operation_type": "mul",
+      "mil_shape": [
+        1,
+        null,
+        1280
+      ],
+      "operation_sha256": "a524255c5a1b1bb3a86a843e8a476403302d75adae533278e17c54ff39ec098a",
+      "value_type_sha256": "eaca2e08d1c0ca76b5ed3e8e61df25f1eced482aa32b12d3cafcff9c37ab549a",
+      "producer_byte_identical_to_original": true
+    },
+    {
+      "name": "x_93",
+      "stage": "layer1_normalized_projection_input",
+      "operation_index": 12088,
+      "original_operation_index": 11170,
+      "operation_type": "mul",
+      "mil_shape": [
+        1,
+        null,
+        1280
+      ],
+      "operation_sha256": "a1187e5ad6ed4df54e8a23a2489612c7164c58f7bedb259b4c6c44041348aee8",
+      "value_type_sha256": "eaca2e08d1c0ca76b5ed3e8e61df25f1eced482aa32b12d3cafcff9c37ab549a",
+      "producer_byte_identical_to_original": true
+    },
+    {
+      "name": "x_97",
+      "stage": "layer1_raw_key_projection",
+      "operation_index": 12721,
+      "original_operation_index": 11776,
+      "operation_type": "add",
+      "mil_shape": [
+        1,
+        null,
+        256
+      ],
+      "operation_sha256": "bad9f18069756120dc521e1b2cfbede6d2dcc501d31c6587697c2c04b6d9d443",
+      "value_type_sha256": "79e0263b9ec3e9ccbe19b88a8749cd8f2243a933b4b6e09026e938cbf1353a10",
+      "producer_byte_identical_to_original": true
+    }
+  ],
+  "schemas": [
+    {
+      "name": "q_3",
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "bounds": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          128,
+          128
+        ]
+      ]
+    },
+    {
+      "name": "value_19",
+      "shape": [
+        1,
+        3,
+        1280
+      ],
+      "bounds": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1280,
+          1280
+        ]
+      ]
+    },
+    {
+      "name": "x_93",
+      "shape": [
+        1,
+        3,
+        1280
+      ],
+      "bounds": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1280,
+          1280
+        ]
+      ]
+    },
+    {
+      "name": "x_97",
+      "shape": [
+        1,
+        3,
+        256
+      ],
+      "bounds": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          256,
+          256
+        ]
+      ]
+    }
+  ],
+  "excluded_outputs": [
+    "scores_1",
+    "weights_1",
+    "x_37"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "xcrun",
+    "clang",
+    "-shared",
+    "-fPIC",
+    "-std=c11",
+    "-O2",
+    "-I/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12",
+    "<PROJECT_ROOT>/coreml_port/native/cleanup_guard.c",
+    "-lobjc",
+    "-undefined",
+    "dynamic_lookup",
+    "-o",
+    "<PROJECT_ROOT>/artifacts/04b-reliability/cleanup_guard.dylib"
+  ],
+  "source_sha256": "973bc7d1852eb4c80f17f59412d57cc41a3058a78ce78c66a1081e308c9b464d",
+  "binary_sha256": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa"
+}

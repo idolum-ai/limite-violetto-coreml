@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "attempt": "operator-2",
+  "script_sha256": "a0046d396e236fe658eb07d1d218140b13be2804766da4738c40ea91856e9e71",
+  "helper_sha256": "298afbcd964531c0cb39a47e3b939da5306e9af585eec0e761a54d78252cd490",
+  "reference_source_sha256": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+  "source_result_sha256": "0b88f645ca09706da7a8b0e012265ca3d3d5e3b01fbdddfed8f5a21aa113eb71",
+  "prior_result_sha256": "c19667215c7fe78e0eacc3f1d2c1006e4a4e8dd9d8fb59e52fef140ac8625c9e",
+  "query_lengths": [1, 3, 12, 32],
+  "width": 256,
+  "capture_names": ["x_9", "x_27", "x_29", "x_31"],
+  "compute_policies": ["CPU_ONLY", "CPU_AND_GPU"],
+  "expected_cases": 20,
+  "expected_native_predictions": 40,
+  "qualification_scope": "Same 20 inputs as operator-1, pinned by per-case input hash. The new sign-factor quantizer must match sealed Q byte-for-byte under both compute policies; CPU_AND_GPU does not prove GPU device placement or composed-graph fidelity."
+}

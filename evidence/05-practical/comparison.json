@@ -1,0 +1,507 @@
+{
+  "status": "completed",
+  "scope": "One fresh process per backend; three within-process trials; first shape trial separate, repeats1-2 used for warm summaries. Descriptive pilot, not a cold-start distribution or universal usefulness gate.",
+  "inputs": {
+    "evidence/05-practical/coreml-pilot-1/results.json": "afff9529de181adf72be924ba09017eb3b7bf558362b153d0fad2c6f9b27d2e8",
+    "evidence/05-practical/torch-pilot-1/results.json": "cfc476d1543e1c0ca2e9941edfb700f84139193232722b000407a413d1f806ab"
+  },
+  "script_sha256": "bb3a43dbaacfb4e857e453edd9bafec87356af66956de667c1cdeb8e76bbb072",
+  "matching_protocol": true,
+  "numeric_comparisons": [
+    {
+      "key": "p128_s0",
+      "max_abs": 9.5367431640625e-07,
+      "top1_match": true,
+      "reference_margin": 8.231144905090332,
+      "passed": true
+    },
+    {
+      "key": "p128_s1",
+      "max_abs": 4.76837158203125e-07,
+      "top1_match": true,
+      "reference_margin": 8.293158531188965,
+      "passed": true
+    },
+    {
+      "key": "p128_s2",
+      "max_abs": 1.9073486328125e-06,
+      "top1_match": true,
+      "reference_margin": 1.3205604553222656,
+      "passed": true
+    },
+    {
+      "key": "p128_s3",
+      "max_abs": 7.152557373046875e-07,
+      "top1_match": true,
+      "reference_margin": 16.293678283691406,
+      "passed": true
+    },
+    {
+      "key": "p128_s4",
+      "max_abs": 9.5367431640625e-07,
+      "top1_match": true,
+      "reference_margin": 3.095743179321289,
+      "passed": true
+    },
+    {
+      "key": "p128_s5",
+      "max_abs": 1.9073486328125e-06,
+      "top1_match": true,
+      "reference_margin": 7.623716354370117,
+      "passed": true
+    },
+    {
+      "key": "p128_s6",
+      "max_abs": 7.152557373046875e-07,
+      "top1_match": true,
+      "reference_margin": 2.403087615966797,
+      "passed": true
+    },
+    {
+      "key": "p128_s7",
+      "max_abs": 7.152557373046875e-07,
+      "top1_match": true,
+      "reference_margin": 12.404956817626953,
+      "passed": true
+    },
+    {
+      "key": "p128_s8",
+      "max_abs": 9.5367431640625e-07,
+      "top1_match": true,
+      "reference_margin": 8.299408912658691,
+      "passed": true
+    },
+    {
+      "key": "p32_s0",
+      "max_abs": 1.9073486328125e-06,
+      "top1_match": true,
+      "reference_margin": 4.046346664428711,
+      "passed": true
+    },
+    {
+      "key": "p32_s1",
+      "max_abs": 1.9073486328125e-06,
+      "top1_match": true,
+      "reference_margin": 0.25125694274902344,
+      "passed": true
+    },
+    {
+      "key": "p32_s2",
+      "max_abs": 3.814697265625e-06,
+      "top1_match": true,
+      "reference_margin": 0.533416748046875,
+      "passed": true
+    },
+    {
+      "key": "p32_s3",
+      "max_abs": 1.9073486328125e-06,
+      "top1_match": true,
+      "reference_margin": 0.9595470428466797,
+      "passed": true
+    },
+    {
+      "key": "p32_s4",
+      "max_abs": 1.9073486328125e-06,
+      "top1_match": true,
+      "reference_margin": 2.9187164306640625,
+      "passed": true
+    },
+    {
+      "key": "p32_s5",
+      "max_abs": 1.9073486328125e-06,
+      "top1_match": true,
+      "reference_margin": 0.6080760955810547,
+      "passed": true
+    },
+    {
+      "key": "p32_s6",
+      "max_abs": 1.9073486328125e-06,
+      "top1_match": true,
+      "reference_margin": 1.2066879272460938,
+      "passed": true
+    },
+    {
+      "key": "p32_s7",
+      "max_abs": 1.9073486328125e-06,
+      "top1_match": true,
+      "reference_margin": 1.705474853515625,
+      "passed": true
+    },
+    {
+      "key": "p32_s8",
+      "max_abs": 9.5367431640625e-07,
+      "top1_match": true,
+      "reference_margin": 0.12297916412353516,
+      "passed": true
+    },
+    {
+      "key": "p512_s0",
+      "max_abs": 9.5367431640625e-07,
+      "top1_match": true,
+      "reference_margin": 15.238775253295898,
+      "passed": true
+    },
+    {
+      "key": "p512_s1",
+      "max_abs": 9.5367431640625e-07,
+      "top1_match": true,
+      "reference_margin": 13.649742126464844,
+      "passed": true
+    },
+    {
+      "key": "p512_s2",
+      "max_abs": 7.152557373046875e-07,
+      "top1_match": true,
+      "reference_margin": 17.559926986694336,
+      "passed": true
+    },
+    {
+      "key": "p512_s3",
+      "max_abs": 7.152557373046875e-07,
+      "top1_match": true,
+      "reference_margin": 18.48759651184082,
+      "passed": true
+    },
+    {
+      "key": "p512_s4",
+      "max_abs": 7.152557373046875e-07,
+      "top1_match": true,
+      "reference_margin": 6.466443061828613,
+      "passed": true
+    },
+    {
+      "key": "p512_s5",
+      "max_abs": 7.152557373046875e-07,
+      "top1_match": true,
+      "reference_margin": 19.42955780029297,
+      "passed": true
+    },
+    {
+      "key": "p512_s6",
+      "max_abs": 9.5367431640625e-07,
+      "top1_match": true,
+      "reference_margin": 14.59614086151123,
+      "passed": true
+    },
+    {
+      "key": "p512_s7",
+      "max_abs": 7.152557373046875e-07,
+      "top1_match": true,
+      "reference_margin": 1.7538414001464844,
+      "passed": true
+    },
+    {
+      "key": "p512_s8",
+      "max_abs": 9.5367431640625e-07,
+      "top1_match": true,
+      "reference_margin": 11.916434288024902,
+      "passed": true
+    }
+  ],
+  "numerics_pass": true,
+  "performance_pass_threshold": null,
+  "performance_threshold_note": "No user SLA was specified; report relative costs without inventing a pass threshold.",
+  "startup": {
+    "coreml": {
+      "entry_to_imports_seconds": 0.9475311664864421,
+      "model_load_seconds": 237.2901953747496,
+      "entry_to_ready_seconds": 238.23814245779067
+    },
+    "torch": {
+      "entry_to_imports_seconds": 0.6697375401854515,
+      "model_load_seconds": 3.2492848755791783,
+      "entry_to_ready_seconds": 3.919474957510829
+    }
+  },
+  "memory": {
+    "coreml": {
+      "process_peak_rss_bytes": 7318634496,
+      "process_peak_rss_gib": 6.816009521484375
+    },
+    "torch": {
+      "process_peak_rss_bytes": 3769057280,
+      "process_peak_rss_gib": 3.5102081298828125
+    }
+  },
+  "first_request": {
+    "coreml": {
+      "prefill_seconds": 6.767503666691482,
+      "request_create_seconds": 0.09728204179555178,
+      "decode_seconds": [
+        2.3266256246715784,
+        2.313004500232637
+      ]
+    },
+    "torch": {
+      "prefill_seconds": 0.6003937078639865,
+      "request_create_seconds": 5.249865353107452e-06,
+      "decode_seconds": [
+        0.06738362461328506,
+        0.0594908744096756
+      ]
+    }
+  },
+  "rows": [
+    {
+      "prefix_length": 32,
+      "coreml": {
+        "first_shape_trial_prefill_seconds": 6.560526583343744,
+        "first_shape_trial_decode_seconds": [
+          2.3167705424129963,
+          2.3147312086075544,
+          2.292904583737254,
+          2.3132745418697596,
+          2.326075999997556,
+          2.351730916649103,
+          2.29887199960649,
+          2.316295209340751
+        ],
+        "prefill_seconds": {
+          "n": 2,
+          "median": 6.691016958095133,
+          "min": 6.669827749952674,
+          "max": 6.712206166237593
+        },
+        "prefill_tokens_per_second": 4.782531594286989,
+        "request_create_plus_prefill_seconds": {
+          "n": 2,
+          "median": 6.693712020758539,
+          "min": 6.672666708007455,
+          "max": 6.714757333509624
+        },
+        "decode_seconds": {
+          "n": 16,
+          "median": 2.3077881461940706,
+          "min": 2.2724919579923153,
+          "max": 2.3693716255947948
+        },
+        "decode_tokens_per_second": 0.43246102693026695,
+        "per_trial_decode_totals_seconds": [
+          18.50054946169257,
+          18.49700408335775
+        ],
+        "per_trial_inference_plus_state_lifecycle_seconds": [
+          25.173249502666295,
+          25.211795582436025
+        ]
+      },
+      "torch": {
+        "first_shape_trial_prefill_seconds": 0.45240754168480635,
+        "first_shape_trial_decode_seconds": [
+          0.06321729067713022,
+          0.06381308287382126,
+          0.063744249753654,
+          0.06384250055998564,
+          0.062320541590452194,
+          0.0681771244853735,
+          0.06823941692709923,
+          0.06621737498790026
+        ],
+        "prefill_seconds": {
+          "n": 2,
+          "median": 0.5965938330627978,
+          "min": 0.5516240410506725,
+          "max": 0.641563625074923
+        },
+        "prefill_tokens_per_second": 53.6378323519004,
+        "request_create_plus_prefill_seconds": {
+          "n": 2,
+          "median": 0.5965986042283475,
+          "min": 0.5516298329457641,
+          "max": 0.641567375510931
+        },
+        "decode_seconds": {
+          "n": 16,
+          "median": 0.06735068745911121,
+          "min": 0.06567004136741161,
+          "max": 0.06994020845741034
+        },
+        "decode_tokens_per_second": 14.79204803749873,
+        "per_trial_decode_totals_seconds": [
+          0.5361932506784797,
+          0.5454690018668771
+        ],
+        "per_trial_inference_plus_state_lifecycle_seconds": [
+          1.087854417040944,
+          1.1870652101933956
+        ]
+      },
+      "coreml_over_torch_prefill_latency": 11.215363933188417,
+      "coreml_over_torch_decode_latency": 34.265250040619634
+    },
+    {
+      "prefix_length": 128,
+      "coreml": {
+        "first_shape_trial_prefill_seconds": 26.019246417097747,
+        "first_shape_trial_decode_seconds": [
+          2.296744041144848,
+          2.3207501247525215,
+          2.2994846254587173,
+          2.275783167220652,
+          2.2698584999889135,
+          2.286412333138287,
+          2.311282458715141,
+          2.284108125604689
+        ],
+        "prefill_seconds": {
+          "n": 2,
+          "median": 27.19001835444942,
+          "min": 26.887480875477195,
+          "max": 27.492555833421648
+        },
+        "prefill_tokens_per_second": 4.707609915204557,
+        "request_create_plus_prefill_seconds": {
+          "n": 2,
+          "median": 27.192761855199933,
+          "min": 26.890045917592943,
+          "max": 27.495477792806923
+        },
+        "decode_seconds": {
+          "n": 16,
+          "median": 2.3178199995309114,
+          "min": 2.270955542102456,
+          "max": 4.302068249322474
+        },
+        "decode_tokens_per_second": 0.4072305048815015,
+        "per_trial_decode_totals_seconds": [
+          18.473844207823277,
+          20.815943291410804
+        ],
+        "per_trial_inference_plus_state_lifecycle_seconds": [
+          45.36392416711897,
+          48.311454500071704
+        ]
+      },
+      "torch": {
+        "first_shape_trial_prefill_seconds": 2.004199707880616,
+        "first_shape_trial_decode_seconds": [
+          0.06702495831996202,
+          0.06845220923423767,
+          0.06901683285832405,
+          0.06871845852583647,
+          0.06890558451414108,
+          0.06905712559819221,
+          0.0703810416162014,
+          0.06852333433926105
+        ],
+        "prefill_seconds": {
+          "n": 2,
+          "median": 2.187172021716833,
+          "min": 2.1651449594646692,
+          "max": 2.209199083968997
+        },
+        "prefill_tokens_per_second": 58.523060248148965,
+        "request_create_plus_prefill_seconds": {
+          "n": 2,
+          "median": 2.1871768129058182,
+          "min": 2.1651497092097998,
+          "max": 2.2092039166018367
+        },
+        "decode_seconds": {
+          "n": 16,
+          "median": 0.07012445759028196,
+          "min": 0.05978858284652233,
+          "max": 0.07448387518525124
+        },
+        "decode_tokens_per_second": 14.580489741909142,
+        "per_trial_decode_totals_seconds": [
+          0.56549574714154,
+          0.5318610826507211
+        ],
+        "per_trial_inference_plus_state_lifecycle_seconds": [
+          2.730677413754165,
+          2.7410929575562477
+        ]
+      },
+      "coreml_over_torch_prefill_latency": 12.431586580513434,
+      "coreml_over_torch_decode_latency": 33.052947276587865
+    },
+    {
+      "prefix_length": 512,
+      "coreml": {
+        "first_shape_trial_prefill_seconds": 105.71260050032288,
+        "first_shape_trial_decode_seconds": [
+          2.313893041573465,
+          2.231023042462766,
+          2.3008224591612816,
+          2.318341875448823,
+          2.282657374627888,
+          2.2880285419523716,
+          2.298697750084102,
+          2.3069902500137687
+        ],
+        "prefill_seconds": {
+          "n": 2,
+          "median": 114.4055892713368,
+          "min": 109.14984412491322,
+          "max": 119.66133441776037
+        },
+        "prefill_tokens_per_second": 4.4753058243132235,
+        "request_create_plus_prefill_seconds": {
+          "n": 2,
+          "median": 114.40831006271765,
+          "min": 109.15242462512106,
+          "max": 119.66419550031424
+        },
+        "decode_seconds": {
+          "n": 16,
+          "median": 2.312165291979909,
+          "min": 2.2689030840992928,
+          "max": 2.4027445828542113
+        },
+        "decode_tokens_per_second": 0.43281121926554894,
+        "per_trial_decode_totals_seconds": [
+          18.466987248510122,
+          18.500631167553365
+        ],
+        "per_trial_inference_plus_state_lifecycle_seconds": [
+          127.61944237351418,
+          138.16486016847193
+        ]
+      },
+      "torch": {
+        "first_shape_trial_prefill_seconds": 8.067007542587817,
+        "first_shape_trial_decode_seconds": [
+          0.08105266653001308,
+          0.07949574943631887,
+          0.08185150008648634,
+          0.08644820842891932,
+          0.09551170747727156,
+          0.10179366637021303,
+          0.0983373336493969,
+          0.08526220824569464
+        ],
+        "prefill_seconds": {
+          "n": 2,
+          "median": 8.447235249914229,
+          "min": 8.34267779160291,
+          "max": 8.551792708225548
+        },
+        "prefill_tokens_per_second": 60.61154742969882,
+        "request_create_plus_prefill_seconds": {
+          "n": 2,
+          "median": 8.447239354718477,
+          "min": 8.342681958340108,
+          "max": 8.551796751096845
+        },
+        "decode_seconds": {
+          "n": 16,
+          "median": 0.08111022925004363,
+          "min": 0.07611283287405968,
+          "max": 0.08639170881360769
+        },
+        "decode_tokens_per_second": 12.324842422407684,
+        "per_trial_decode_totals_seconds": [
+          0.6420559147372842,
+          0.6561351250857115
+        ],
+        "per_trial_inference_plus_state_lifecycle_seconds": [
+          8.984768414869905,
+          9.207964750938118
+        ]
+      },
+      "coreml_over_torch_prefill_latency": 13.5435542975435,
+      "coreml_over_torch_decode_latency": 28.50645736497737
+    }
+  ]
+}

@@ -1,0 +1,1965 @@
+{
+  "status": "completed",
+  "backend": "coreml",
+  "host_before": {
+    "utc": "2026-09-23T11:08:25Z",
+    "system": "macOS-26.5.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.12.9",
+    "logical_cpus": 10,
+    "load_average": [
+      3.6962890625,
+      3.00634765625,
+      2.6396484375
+    ],
+    "hardware": {
+      "exit_code": 0,
+      "stdout": "hw.model: Mac16,12\nhw.memsize: 34359738368\nhw.ncpu: 10",
+      "stderr": ""
+    },
+    "thermal": {
+      "exit_code": 0,
+      "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+      "stderr": ""
+    },
+    "power": {
+      "exit_code": 0,
+      "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=<REDACTED_HOST_ID>)\t80%; AC attached; not charging present: true",
+      "stderr": ""
+    }
+  },
+  "protocol": {
+    "lengths": [
+      32,
+      128,
+      512
+    ],
+    "repeats": 3,
+    "decode_tokens": 8,
+    "order": "repeat outer, ascending prefix inner",
+    "warmup": "32-token prefill plus 2 teacher-forced decode calls",
+    "torch_threads": 4,
+    "compute": "CPU_ONLY",
+    "sampling": "none; fixed teacher-forced continuation",
+    "prefill_includes": "runtime input preparation, backbone and final score head; excludes request creation",
+    "decode_includes": "runtime input preparation, backbone and score head; excludes sampling/logging/metrics",
+    "startup_cache_state": "uncontrolled; fresh process, no forced filesystem/compiler-cache eviction",
+    "memory_scope": "process ru_maxrss high-water mark, not system-wide or accelerator memory",
+    "device_placement": "CPU_ONLY permitted; no placement profiler"
+  },
+  "candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "milestone_sha256": "3150f62f4f193c630fd417d6edba584749258b06fddfadcec463a28fa5e346e2",
+  "fixture_sha256": "1ee6553885123a57b8fb40b89c292eea201e148e6f3bd4d9b4cba1c057f9f3eb",
+  "script_sha256": "125a21c543a4bee146ce72904503f9f880968e7b28ae7a48417d6933855c801c",
+  "stream_ids": [
+    151643,
+    151644,
+    8948,
+    198,
+    2610,
+    525,
+    264,
+    10950,
+    17847,
+    624,
+    5501,
+    2874,
+    3019,
+    553,
+    3019,
+    11,
+    323,
+    2182,
+    697,
+    1590,
+    4226,
+    2878,
+    1124,
+    79075,
+    46391,
+    151645,
+    198,
+    151644,
+    872,
+    198,
+    3838,
+    374,
+    220,
+    16,
+    22,
+    353,
+    220,
+    17,
+    18,
+    30,
+    151645,
+    198,
+    151644,
+    77091,
+    198,
+    151665,
+    1654,
+    1184,
+    311,
+    4226,
+    279,
+    1196,
+    594,
+    3405,
+    25,
+    330,
+    3838,
+    374,
+    220,
+    16,
+    22,
+    353,
+    220,
+    17,
+    18,
+    30,
+    5209,
+    2874,
+    3019,
+    553,
+    3019,
+    11,
+    323,
+    2182,
+    697,
+    1590,
+    4226,
+    2878,
+    1124,
+    79075,
+    6257,
+    2217,
+    1654,
+    1184,
+    311,
+    3410,
+    264,
+    3019,
+    14319,
+    29208,
+    32711,
+    369,
+    46444,
+    220,
+    16,
+    22,
+    353,
+    220,
+    17,
+    18,
+    11,
+    323,
+    1590,
+    4226,
+    304,
+    264,
+    97913,
+    73664,
+    3561,
+    25,
+    1124,
+    79075,
+    90,
+    1112,
+    7810,
+    576,
+    4226,
+    374,
+    220,
+    18,
+    24,
+    16,
+    30,
+    6771,
+    594,
+    12564,
+    25,
+    220,
+    16,
+    22,
+    9,
+    17,
+    18,
+    284,
+    220,
+    16,
+    22,
+    9,
+    17,
+    15,
+    488,
+    220,
+    16,
+    22,
+    9,
+    18,
+    284,
+    220,
+    18,
+    19,
+    15,
+    488,
+    220,
+    20,
+    16,
+    284,
+    220,
+    18,
+    24,
+    16,
+    13,
+    7414,
+    382,
+    1654,
+    1184,
+    311,
+    8193,
+    264,
+    2033,
+    448,
+    3019,
+    14319,
+    29208,
+    32711,
+    323,
+    1590,
+    4226,
+    304,
+    1124,
+    79075,
+    46391,
+    12260,
+    387,
+    30339,
+    13,
+    29279,
+    582,
+    1795,
+    11221,
+    25,
+    1590,
+    4226,
+    2878,
+    1124,
+    79075,
+    46391,
+    16503,
+    2924,
+    32711,
+    1573,
+    279,
+    3745,
+    13,
+    2308,
+    4960,
+    16982,
+    13,
+    39565,
+    264,
+    2797,
+    16148,
+    382,
+    1654,
+    1265,
+    5978,
+    279,
+    1590,
+    4226,
+    374,
+    1101,
+    279,
+    73664,
+    1372,
+    30,
+    576,
+    7600,
+    25,
+    330,
+    5501,
+    2874,
+    3019,
+    553,
+    3019,
+    11,
+    323,
+    2182,
+    697,
+    1590,
+    4226,
+    2878,
+    1124,
+    79075,
+    6257,
+    1189,
+    2055,
+    582,
+    646,
+    2968,
+    32711,
+    11,
+    1221,
+    1590,
+    4226,
+    304,
+    1124,
+    79075,
+    46391,
+    2938,
+    594,
+    6915,
+    382,
+    44500,
+    4226,
+    25,
+    220,
+    16,
+    22,
+    9,
+    17,
+    18,
+    284,
+    320,
+    16,
+    15,
+    10,
+    22,
+    17729,
+    17,
+    15,
+    10,
+    18,
+    8,
+    284,
+    220,
+    16,
+    15,
+    9,
+    17,
+    15,
+    488,
+    220,
+    16,
+    15,
+    9,
+    18,
+    488,
+    220,
+    22,
+    9,
+    17,
+    15,
+    488,
+    220,
+    22,
+    9,
+    18,
+    284,
+    220,
+    17,
+    15,
+    15,
+    488,
+    220,
+    18,
+    15,
+    488,
+    220,
+    16,
+    19,
+    15,
+    488,
+    220,
+    17,
+    16,
+    284,
+    220,
+    18,
+    24,
+    16,
+    13,
+    2521,
+    1667,
+    220,
+    16,
+    22,
+    9,
+    17,
+    15,
+    28,
+    18,
+    19,
+    15,
+    11,
+    220,
+    16,
+    22,
+    9,
+    18,
+    28,
+    20,
+    16,
+    11,
+    2629,
+    28,
+    18,
+    24,
+    16,
+    13,
+    5005,
+    1590,
+    25,
+    1124,
+    79075,
+    90,
+    18,
+    24,
+    16,
+    92,
+    382,
+    1654,
+    1184,
+    311,
+    5978,
+    582,
+    990,
+    97913,
+    369,
+    279,
+    3745,
+    25,
+    1124,
+    79075,
+    90,
+    18,
+    24,
+    16,
+    7810,
+    7684,
+    382,
+    1654,
+    1265,
+    537,
+    912,
+    4960,
+    1467,
+    1283,
+    279,
+    3745,
+    30,
+    576,
+    7600,
+    2727,
+    2182,
+    1590,
+    4226,
+    2878,
+    1124,
+    79075,
+    46391,
+    1084,
+    3171,
+    944,
+    73631,
+    1008,
+    1467,
+    1573,
+    432,
+    11,
+    714,
+    1590,
+    4226,
+    1265,
+    387,
+    4766,
+    279,
+    3745,
+    13,
+    1205,
+    3278,
+    2924,
+    32711,
+    323,
+    1221,
+    279,
+    3745,
+    13,
+    2938,
+    1265,
+    26553,
+    382,
+    44500,
+    1590,
+    4226,
+    25,
+    1124,
+    79075,
+    90,
+    18,
+    24,
+    16,
+    7810,
+    151666,
+    1249,
+    12564,
+    17767,
+    16,
+    22,
+    1124,
+    15136,
+    220,
+    17,
+    18,
+    59,
+    701,
+    582,
+    646,
+    1438,
+    1495,
+    825,
+    315,
+    279,
+    9363,
+    1119,
+    9155,
+    5109,
+    323,
+    30270,
+    27079,
+    382,
+    16,
+    13,
+    9645,
+    17767,
+    17,
+    18,
+    57758,
+    438,
+    17767,
+    17,
+    15,
+    488,
+    220,
+    18,
+    59,
+    982,
+    256,
+    1124,
+    9640,
+    256,
+    220,
+    16,
+    22,
+    1124,
+    15136,
+    220,
+    17,
+    18,
+    284,
+    220,
+    16,
+    22,
+    1124,
+    15136,
+    320,
+    17,
+    15,
+    488,
+    220,
+    18,
+    4292,
+    256,
+    1124,
+    2533,
+    17,
+    13,
+    5443,
+    279,
+    2846,
+    6704,
+    3343,
+    510,
+    256,
+    1124,
+    9640,
+    256,
+    220,
+    16,
+    22,
+    1124,
+    15136,
+    320,
+    17,
+    15,
+    488,
+    220,
+    18,
+    8,
+    284,
+    220,
+    16,
+    22,
+    1124,
+    15136,
+    220,
+    17,
+    15,
+    488,
+    220,
+    16,
+    22,
+    1124,
+    15136,
+    220,
+    18,
+    624,
+    256,
+    1124,
+    2533,
+    18,
+    13,
+    20517,
+    1817,
+    1985,
+    510,
+    256,
+    481,
+    17767,
+    16,
+    22,
+    1124,
+    15136,
+    220,
+    17,
+    15,
+    284,
+    220,
+    18,
+    19,
+    15,
+    57758,
+    320,
+    11284,
+    17767,
+    16,
+    22,
+    1124,
+    15136,
+    220,
+    17,
+    284,
+    220,
+    18,
+    19,
+    59,
+    701,
+    1221,
+    912,
+    264,
+    7168,
+    4292,
+    256,
+    481,
+    17767,
+    16,
+    22,
+    1124,
+    15136,
+    220,
+    18,
+    284,
+    220,
+    20,
+    16,
+    57758,
+    320,
+    27653,
+    17767,
+    16,
+    15,
+    1124,
+    15136,
+    220,
+    18,
+    284,
+    220,
+    18,
+    15,
+    59,
+    701,
+    17767,
+    22,
+    1124,
+    15136,
+    220,
+    18,
+    284,
+    220,
+    17,
+    16,
+    59,
+    701,
+    323,
+    17767,
+    18,
+    15,
+    488,
+    220,
+    17,
+    16,
+    284,
+    220,
+    20,
+    16,
+    59,
+    593,
+    382,
+    19,
+    13,
+    2691,
+    279,
+    3059,
+    510,
+    256,
+    1124,
+    9640,
+    256,
+    220,
+    18,
+    19,
+    15,
+    488,
+    220,
+    20,
+    16,
+    284,
+    220,
+    18,
+    24,
+    16,
+    624,
+    256,
+    1124,
+    2533,
+    44500,
+    11,
+    279,
+    1985,
+    315,
+    220,
+    16,
+    22,
+    323,
+    220,
+    17,
+    18,
+    374,
+    271,
+    59,
+    9640,
+    59,
+    79075,
+    90,
+    18,
+    24,
+    16,
+    532,
+    59,
+    60,
+    151643
+  ],
+  "usage_before_imports": {
+    "peak_rss_bytes": 23166976,
+    "user_cpu_seconds": 0.081428,
+    "system_cpu_seconds": 0.030091
+  },
+  "trials": [
+    {
+      "prefix_length": 32,
+      "repeat": -1,
+      "warmup": true,
+      "request_create_seconds": 0.09728204179555178,
+      "steps": [
+        {
+          "step": 0,
+          "prefix_length": 32,
+          "seconds": 6.767503666691482,
+          "top1": 279,
+          "scores_sha256": "9513f0ed69bda88c8b99916d5242e6bd956c45f873ead1a04ab1ae6d581e5fa6"
+        },
+        {
+          "step": 1,
+          "prefix_length": 33,
+          "seconds": 2.3266256246715784,
+          "top1": 16,
+          "scores_sha256": "2f68d5a7b3a55524c667aa8a201d038fc2ea35374b9b44453cee3983c88d7fd7"
+        },
+        {
+          "step": 2,
+          "prefix_length": 34,
+          "seconds": 2.313004500232637,
+          "top1": 15,
+          "scores_sha256": "074e2421e0ab000e2282a8dedd5139b331a1beaff8f9cec3996670da38e03ee9"
+        }
+      ],
+      "dispose_seconds": 4.179216921329498e-05,
+      "disposed": true,
+      "usage_after": {
+        "peak_rss_bytes": 7311474688,
+        "user_cpu_seconds": 233.823584,
+        "system_cpu_seconds": 12.152133
+      }
+    },
+    {
+      "prefix_length": 32,
+      "repeat": 0,
+      "warmup": false,
+      "request_create_seconds": 0.002933916635811329,
+      "steps": [
+        {
+          "step": 0,
+          "prefix_length": 32,
+          "seconds": 6.560526583343744,
+          "top1": 279,
+          "scores_sha256": "9513f0ed69bda88c8b99916d5242e6bd956c45f873ead1a04ab1ae6d581e5fa6"
+        },
+        {
+          "step": 1,
+          "prefix_length": 33,
+          "seconds": 2.3167705424129963,
+          "top1": 16,
+          "scores_sha256": "2f68d5a7b3a55524c667aa8a201d038fc2ea35374b9b44453cee3983c88d7fd7"
+        },
+        {
+          "step": 2,
+          "prefix_length": 34,
+          "seconds": 2.3147312086075544,
+          "top1": 15,
+          "scores_sha256": "074e2421e0ab000e2282a8dedd5139b331a1beaff8f9cec3996670da38e03ee9"
+        },
+        {
+          "step": 3,
+          "prefix_length": 35,
+          "seconds": 2.292904583737254,
+          "top1": 22,
+          "scores_sha256": "1053da2be5994ec2a492174de1239c79f9c0a7d016fe35bf9422ee5538c899d8"
+        },
+        {
+          "step": 4,
+          "prefix_length": 36,
+          "seconds": 2.3132745418697596,
+          "top1": 220,
+          "scores_sha256": "a8f2c9fabfddfd90b23ae60fa322673e1df7f129a9ac510aece8f13069cd8459"
+        },
+        {
+          "step": 5,
+          "prefix_length": 37,
+          "seconds": 2.326075999997556,
+          "top1": 16,
+          "scores_sha256": "1152be76e7b5dbc605b41593a304b0bf8f5ed0fcf3025bf7578184b44a52f258"
+        },
+        {
+          "step": 6,
+          "prefix_length": 38,
+          "seconds": 2.351730916649103,
+          "top1": 15,
+          "scores_sha256": "e8c235daea1e27242495fd5c65aeda1dd1d9ec8b6a20b5bee146dedd20c34a56"
+        },
+        {
+          "step": 7,
+          "prefix_length": 39,
+          "seconds": 2.29887199960649,
+          "top1": 353,
+          "scores_sha256": "3064583e15a397c9bf14ee7cce3853f7d8b2331a8dc932d8bf301c3bea7c263b"
+        },
+        {
+          "step": 8,
+          "prefix_length": 40,
+          "seconds": 2.316295209340751,
+          "top1": 22603,
+          "scores_sha256": "d2f8c3af18a3f430b6e21d7ab6b6b800dee7c8bc95a85ae52692330bfbb8fb56"
+        }
+      ],
+      "dispose_seconds": 4.404224455356598e-05,
+      "disposed": true,
+      "usage_after": {
+        "peak_rss_bytes": 7318634496,
+        "user_cpu_seconds": 265.284373,
+        "system_cpu_seconds": 13.767458
+      }
+    },
+    {
+      "prefix_length": 128,
+      "repeat": 0,
+      "warmup": false,
+      "request_create_seconds": 0.003544582985341549,
+      "steps": [
+        {
+          "step": 0,
+          "prefix_length": 128,
+          "seconds": 26.019246417097747,
+          "top1": 16,
+          "scores_sha256": "df89e7cef0abf89049d970d8b6fa4e870035606e2585057cd310be6f90daac28"
+        },
+        {
+          "step": 1,
+          "prefix_length": 129,
+          "seconds": 2.296744041144848,
+          "top1": 22,
+          "scores_sha256": "8b7b228eb416487801c820e7f39ef2ae8dd9195210294109c99d175f3e02d3df"
+        },
+        {
+          "step": 2,
+          "prefix_length": 130,
+          "seconds": 2.3207501247525215,
+          "top1": 9,
+          "scores_sha256": "6b590cff16db54c0c687dd54ab006c417563d8da29b95d0fb2502db09b734f51"
+        },
+        {
+          "step": 3,
+          "prefix_length": 131,
+          "seconds": 2.2994846254587173,
+          "top1": 17,
+          "scores_sha256": "47ed6279d6818c3226f6565f9e036661bcd984b4a39ab65510fa094cf517898b"
+        },
+        {
+          "step": 4,
+          "prefix_length": 132,
+          "seconds": 2.275783167220652,
+          "top1": 18,
+          "scores_sha256": "ca610edc318a7b2784f56fba10a655397d6d1c438f13a1ed597c0ed9c8c6cfea"
+        },
+        {
+          "step": 5,
+          "prefix_length": 133,
+          "seconds": 2.2698584999889135,
+          "top1": 284,
+          "scores_sha256": "f8761aea9e5229f720eaefbf300d1f1172de1fcac262ab87f63a4649f9bb456d"
+        },
+        {
+          "step": 6,
+          "prefix_length": 134,
+          "seconds": 2.286412333138287,
+          "top1": 220,
+          "scores_sha256": "90fa3ff062e1a172bc9704f5cff6acb22ce60532ec23b233a38a07f89f699342"
+        },
+        {
+          "step": 7,
+          "prefix_length": 135,
+          "seconds": 2.311282458715141,
+          "top1": 16,
+          "scores_sha256": "19df5eaf7a3edc3f5d995cc21abad84796505759f85ad145384494bca7123718"
+        },
+        {
+          "step": 8,
+          "prefix_length": 136,
+          "seconds": 2.284108125604689,
+          "top1": 22,
+          "scores_sha256": "4450fdbd996bcab5713ccf254550887610acf4702f8e1e3c964b232d19f43dae"
+        }
+      ],
+      "dispose_seconds": 3.0875205993652344e-05,
+      "disposed": true,
+      "usage_after": {
+        "peak_rss_bytes": 7318634496,
+        "user_cpu_seconds": 332.366873,
+        "system_cpu_seconds": 17.449336
+      }
+    },
+    {
+      "prefix_length": 512,
+      "repeat": 0,
+      "warmup": false,
+      "request_create_seconds": 0.002793334424495697,
+      "steps": [
+        {
+          "step": 0,
+          "prefix_length": 512,
+          "seconds": 105.71260050032288,
+          "top1": 15136,
+          "scores_sha256": "facb06abaada95fc3a8bfa747ca427456c1c68627a0de53dce2fb61d21f9bd1a"
+        },
+        {
+          "step": 1,
+          "prefix_length": 513,
+          "seconds": 2.313893041573465,
+          "top1": 320,
+          "scores_sha256": "f1d4df36634b996f5d0d8be12e5dbbba1bba6b3b6c31df275968a003dfdcaa29"
+        },
+        {
+          "step": 2,
+          "prefix_length": 514,
+          "seconds": 2.231023042462766,
+          "top1": 17,
+          "scores_sha256": "ca173f2c4adc6a71f941f46efa2c67ccda21d80cdda5339db392d33d03f26899"
+        },
+        {
+          "step": 3,
+          "prefix_length": 515,
+          "seconds": 2.3008224591612816,
+          "top1": 15,
+          "scores_sha256": "ce2af4be71a89a73ccb0eadfcd1dddfab932b7079e310677ce949d9b30d5d847"
+        },
+        {
+          "step": 4,
+          "prefix_length": 516,
+          "seconds": 2.318341875448823,
+          "top1": 488,
+          "scores_sha256": "4c187b40f3af1fe913cf1e6b61f3488b6444186267d8e6f615a43f84c704cfd1"
+        },
+        {
+          "step": 5,
+          "prefix_length": 517,
+          "seconds": 2.282657374627888,
+          "top1": 220,
+          "scores_sha256": "49f2202ebc8066b436abe9bfc43c217067f0073533617a60b370bc26d0d1cd68"
+        },
+        {
+          "step": 6,
+          "prefix_length": 518,
+          "seconds": 2.2880285419523716,
+          "top1": 18,
+          "scores_sha256": "a41a002d08b559c66b1683031eacaf5c9b9f7fc69da79cd7474a41e2dc8de644"
+        },
+        {
+          "step": 7,
+          "prefix_length": 519,
+          "seconds": 2.298697750084102,
+          "top1": 4292,
+          "scores_sha256": "4dc013c335700d58140a748f129b5e7c9029e4504318041431180003964e2586"
+        },
+        {
+          "step": 8,
+          "prefix_length": 520,
+          "seconds": 2.3069902500137687,
+          "top1": 256,
+          "scores_sha256": "c9cb7fbd55f5d681665d555ec1ce20f1debd9530901dca1133d9ff0c954d2f04"
+        }
+      ],
+      "dispose_seconds": 3.5624951124191284e-05,
+      "disposed": true,
+      "usage_after": {
+        "peak_rss_bytes": 7318634496,
+        "user_cpu_seconds": 542.235816,
+        "system_cpu_seconds": 30.241798
+      }
+    },
+    {
+      "prefix_length": 32,
+      "repeat": 1,
+      "warmup": false,
+      "request_create_seconds": 0.00283895805478096,
+      "steps": [
+        {
+          "step": 0,
+          "prefix_length": 32,
+          "seconds": 6.669827749952674,
+          "top1": 279,
+          "scores_sha256": "9513f0ed69bda88c8b99916d5242e6bd956c45f873ead1a04ab1ae6d581e5fa6"
+        },
+        {
+          "step": 1,
+          "prefix_length": 33,
+          "seconds": 2.3544364171102643,
+          "top1": 16,
+          "scores_sha256": "2f68d5a7b3a55524c667aa8a201d038fc2ea35374b9b44453cee3983c88d7fd7"
+        },
+        {
+          "step": 2,
+          "prefix_length": 34,
+          "seconds": 2.3438433334231377,
+          "top1": 15,
+          "scores_sha256": "074e2421e0ab000e2282a8dedd5139b331a1beaff8f9cec3996670da38e03ee9"
+        },
+        {
+          "step": 3,
+          "prefix_length": 35,
+          "seconds": 2.3110083751380444,
+          "top1": 22,
+          "scores_sha256": "1053da2be5994ec2a492174de1239c79f9c0a7d016fe35bf9422ee5538c899d8"
+        },
+        {
+          "step": 4,
+          "prefix_length": 36,
+          "seconds": 2.2854277919977903,
+          "top1": 220,
+          "scores_sha256": "a8f2c9fabfddfd90b23ae60fa322673e1df7f129a9ac510aece8f13069cd8459"
+        },
+        {
+          "step": 5,
+          "prefix_length": 37,
+          "seconds": 2.298821000382304,
+          "top1": 16,
+          "scores_sha256": "1152be76e7b5dbc605b41593a304b0bf8f5ed0fcf3025bf7578184b44a52f258"
+        },
+        {
+          "step": 6,
+          "prefix_length": 38,
+          "seconds": 2.310633959248662,
+          "top1": 15,
+          "scores_sha256": "e8c235daea1e27242495fd5c65aeda1dd1d9ec8b6a20b5bee146dedd20c34a56"
+        },
+        {
+          "step": 7,
+          "prefix_length": 39,
+          "seconds": 2.295824167318642,
+          "top1": 353,
+          "scores_sha256": "3064583e15a397c9bf14ee7cce3853f7d8b2331a8dc932d8bf301c3bea7c263b"
+        },
+        {
+          "step": 8,
+          "prefix_length": 40,
+          "seconds": 2.3005544170737267,
+          "top1": 22603,
+          "scores_sha256": "d2f8c3af18a3f430b6e21d7ab6b6b800dee7c8bc95a85ae52692330bfbb8fb56"
+        }
+      ],
+      "dispose_seconds": 3.333296626806259e-05,
+      "disposed": true,
+      "usage_after": {
+        "peak_rss_bytes": 7318634496,
+        "user_cpu_seconds": 574.174761,
+        "system_cpu_seconds": 31.601835
+      }
+    },
+    {
+      "prefix_length": 128,
+      "repeat": 1,
+      "warmup": false,
+      "request_create_seconds": 0.0025650421157479286,
+      "steps": [
+        {
+          "step": 0,
+          "prefix_length": 128,
+          "seconds": 26.887480875477195,
+          "top1": 16,
+          "scores_sha256": "df89e7cef0abf89049d970d8b6fa4e870035606e2585057cd310be6f90daac28"
+        },
+        {
+          "step": 1,
+          "prefix_length": 129,
+          "seconds": 2.3727738335728645,
+          "top1": 22,
+          "scores_sha256": "8b7b228eb416487801c820e7f39ef2ae8dd9195210294109c99d175f3e02d3df"
+        },
+        {
+          "step": 2,
+          "prefix_length": 130,
+          "seconds": 2.2807647082954645,
+          "top1": 9,
+          "scores_sha256": "6b590cff16db54c0c687dd54ab006c417563d8da29b95d0fb2502db09b734f51"
+        },
+        {
+          "step": 3,
+          "prefix_length": 131,
+          "seconds": 2.295991917140782,
+          "top1": 17,
+          "scores_sha256": "47ed6279d6818c3226f6565f9e036661bcd984b4a39ab65510fa094cf517898b"
+        },
+        {
+          "step": 4,
+          "prefix_length": 132,
+          "seconds": 2.3184614991769195,
+          "top1": 18,
+          "scores_sha256": "ca610edc318a7b2784f56fba10a655397d6d1c438f13a1ed597c0ed9c8c6cfea"
+        },
+        {
+          "step": 5,
+          "prefix_length": 133,
+          "seconds": 2.3384479582309723,
+          "top1": 284,
+          "scores_sha256": "f8761aea9e5229f720eaefbf300d1f1172de1fcac262ab87f63a4649f9bb456d"
+        },
+        {
+          "step": 6,
+          "prefix_length": 134,
+          "seconds": 2.2821467919275165,
+          "top1": 220,
+          "scores_sha256": "90fa3ff062e1a172bc9704f5cff6acb22ce60532ec23b233a38a07f89f699342"
+        },
+        {
+          "step": 7,
+          "prefix_length": 135,
+          "seconds": 2.3143019573763013,
+          "top1": 16,
+          "scores_sha256": "19df5eaf7a3edc3f5d995cc21abad84796505759f85ad145384494bca7123718"
+        },
+        {
+          "step": 8,
+          "prefix_length": 136,
+          "seconds": 2.270955542102456,
+          "top1": 22,
+          "scores_sha256": "4450fdbd996bcab5713ccf254550887610acf4702f8e1e3c964b232d19f43dae"
+        }
+      ],
+      "dispose_seconds": 3.404170274734497e-05,
+      "disposed": true,
+      "usage_after": {
+        "peak_rss_bytes": 7318634496,
+        "user_cpu_seconds": 642.135599,
+        "system_cpu_seconds": 35.151681
+      }
+    },
+    {
+      "prefix_length": 512,
+      "repeat": 1,
+      "warmup": false,
+      "request_create_seconds": 0.0025805002078413963,
+      "steps": [
+        {
+          "step": 0,
+          "prefix_length": 512,
+          "seconds": 109.14984412491322,
+          "top1": 15136,
+          "scores_sha256": "facb06abaada95fc3a8bfa747ca427456c1c68627a0de53dce2fb61d21f9bd1a"
+        },
+        {
+          "step": 1,
+          "prefix_length": 513,
+          "seconds": 2.3200530419126153,
+          "top1": 320,
+          "scores_sha256": "f1d4df36634b996f5d0d8be12e5dbbba1bba6b3b6c31df275968a003dfdcaa29"
+        },
+        {
+          "step": 2,
+          "prefix_length": 514,
+          "seconds": 2.2872655829414725,
+          "top1": 17,
+          "scores_sha256": "ca173f2c4adc6a71f941f46efa2c67ccda21d80cdda5339db392d33d03f26899"
+        },
+        {
+          "step": 3,
+          "prefix_length": 515,
+          "seconds": 2.3159169163554907,
+          "top1": 15,
+          "scores_sha256": "ce2af4be71a89a73ccb0eadfcd1dddfab932b7079e310677ce949d9b30d5d847"
+        },
+        {
+          "step": 4,
+          "prefix_length": 516,
+          "seconds": 2.323017416521907,
+          "top1": 488,
+          "scores_sha256": "4c187b40f3af1fe913cf1e6b61f3488b6444186267d8e6f615a43f84c704cfd1"
+        },
+        {
+          "step": 5,
+          "prefix_length": 517,
+          "seconds": 2.321116750128567,
+          "top1": 220,
+          "scores_sha256": "49f2202ebc8066b436abe9bfc43c217067f0073533617a60b370bc26d0d1cd68"
+        },
+        {
+          "step": 6,
+          "prefix_length": 518,
+          "seconds": 2.323395874351263,
+          "top1": 18,
+          "scores_sha256": "a41a002d08b559c66b1683031eacaf5c9b9f7fc69da79cd7474a41e2dc8de644"
+        },
+        {
+          "step": 7,
+          "prefix_length": 519,
+          "seconds": 2.2818284165114164,
+          "top1": 4292,
+          "scores_sha256": "4dc013c335700d58140a748f129b5e7c9029e4504318041431180003964e2586"
+        },
+        {
+          "step": 8,
+          "prefix_length": 520,
+          "seconds": 2.2943932497873902,
+          "top1": 256,
+          "scores_sha256": "c9cb7fbd55f5d681665d555ec1ce20f1debd9530901dca1133d9ff0c954d2f04"
+        }
+      ],
+      "dispose_seconds": 3.0499882996082306e-05,
+      "disposed": true,
+      "usage_after": {
+        "peak_rss_bytes": 7318634496,
+        "user_cpu_seconds": 857.405596,
+        "system_cpu_seconds": 47.92451
+      }
+    },
+    {
+      "prefix_length": 32,
+      "repeat": 2,
+      "warmup": false,
+      "request_create_seconds": 0.0025511672720313072,
+      "steps": [
+        {
+          "step": 0,
+          "prefix_length": 32,
+          "seconds": 6.712206166237593,
+          "top1": 279,
+          "scores_sha256": "9513f0ed69bda88c8b99916d5242e6bd956c45f873ead1a04ab1ae6d581e5fa6"
+        },
+        {
+          "step": 1,
+          "prefix_length": 33,
+          "seconds": 2.3693716255947948,
+          "top1": 16,
+          "scores_sha256": "2f68d5a7b3a55524c667aa8a201d038fc2ea35374b9b44453cee3983c88d7fd7"
+        },
+        {
+          "step": 2,
+          "prefix_length": 34,
+          "seconds": 2.3037372920662165,
+          "top1": 15,
+          "scores_sha256": "074e2421e0ab000e2282a8dedd5139b331a1beaff8f9cec3996670da38e03ee9"
+        },
+        {
+          "step": 3,
+          "prefix_length": 35,
+          "seconds": 2.2724919579923153,
+          "top1": 22,
+          "scores_sha256": "1053da2be5994ec2a492174de1239c79f9c0a7d016fe35bf9422ee5538c899d8"
+        },
+        {
+          "step": 4,
+          "prefix_length": 36,
+          "seconds": 2.2930826665833592,
+          "top1": 220,
+          "scores_sha256": "a8f2c9fabfddfd90b23ae60fa322673e1df7f129a9ac510aece8f13069cd8459"
+        },
+        {
+          "step": 5,
+          "prefix_length": 37,
+          "seconds": 2.31393716763705,
+          "top1": 16,
+          "scores_sha256": "1152be76e7b5dbc605b41593a304b0bf8f5ed0fcf3025bf7578184b44a52f258"
+        },
+        {
+          "step": 6,
+          "prefix_length": 38,
+          "seconds": 2.3239314574748278,
+          "top1": 15,
+          "scores_sha256": "e8c235daea1e27242495fd5c65aeda1dd1d9ec8b6a20b5bee146dedd20c34a56"
+        },
+        {
+          "step": 7,
+          "prefix_length": 39,
+          "seconds": 2.3155095828697085,
+          "top1": 353,
+          "scores_sha256": "3064583e15a397c9bf14ee7cce3853f7d8b2331a8dc932d8bf301c3bea7c263b"
+        },
+        {
+          "step": 8,
+          "prefix_length": 40,
+          "seconds": 2.304942333139479,
+          "top1": 22603,
+          "scores_sha256": "d2f8c3af18a3f430b6e21d7ab6b6b800dee7c8bc95a85ae52692330bfbb8fb56"
+        }
+      ],
+      "dispose_seconds": 3.416556864976883e-05,
+      "disposed": true,
+      "usage_after": {
+        "peak_rss_bytes": 7318634496,
+        "user_cpu_seconds": 889.100479,
+        "system_cpu_seconds": 49.505877
+      }
+    },
+    {
+      "prefix_length": 128,
+      "repeat": 2,
+      "warmup": false,
+      "request_create_seconds": 0.0029219593852758408,
+      "steps": [
+        {
+          "step": 0,
+          "prefix_length": 128,
+          "seconds": 27.492555833421648,
+          "top1": 16,
+          "scores_sha256": "df89e7cef0abf89049d970d8b6fa4e870035606e2585057cd310be6f90daac28"
+        },
+        {
+          "step": 1,
+          "prefix_length": 129,
+          "seconds": 2.3349486673250794,
+          "top1": 22,
+          "scores_sha256": "8b7b228eb416487801c820e7f39ef2ae8dd9195210294109c99d175f3e02d3df"
+        },
+        {
+          "step": 2,
+          "prefix_length": 130,
+          "seconds": 2.2920132922008634,
+          "top1": 9,
+          "scores_sha256": "6b590cff16db54c0c687dd54ab006c417563d8da29b95d0fb2502db09b734f51"
+        },
+        {
+          "step": 3,
+          "prefix_length": 131,
+          "seconds": 2.2965734163299203,
+          "top1": 17,
+          "scores_sha256": "47ed6279d6818c3226f6565f9e036661bcd984b4a39ab65510fa094cf517898b"
+        },
+        {
+          "step": 4,
+          "prefix_length": 132,
+          "seconds": 4.302068249322474,
+          "top1": 18,
+          "scores_sha256": "ca610edc318a7b2784f56fba10a655397d6d1c438f13a1ed597c0ed9c8c6cfea"
+        },
+        {
+          "step": 5,
+          "prefix_length": 133,
+          "seconds": 2.3171784998849034,
+          "top1": 284,
+          "scores_sha256": "f8761aea9e5229f720eaefbf300d1f1172de1fcac262ab87f63a4649f9bb456d"
+        },
+        {
+          "step": 6,
+          "prefix_length": 134,
+          "seconds": 2.3194726668298244,
+          "top1": 220,
+          "scores_sha256": "90fa3ff062e1a172bc9704f5cff6acb22ce60532ec23b233a38a07f89f699342"
+        },
+        {
+          "step": 7,
+          "prefix_length": 135,
+          "seconds": 2.5777368750423193,
+          "top1": 16,
+          "scores_sha256": "19df5eaf7a3edc3f5d995cc21abad84796505759f85ad145384494bca7123718"
+        },
+        {
+          "step": 8,
+          "prefix_length": 136,
+          "seconds": 2.3759516244754195,
+          "top1": 22,
+          "scores_sha256": "4450fdbd996bcab5713ccf254550887610acf4702f8e1e3c964b232d19f43dae"
+        }
+      ],
+      "dispose_seconds": 3.341585397720337e-05,
+      "disposed": true,
+      "usage_after": {
+        "peak_rss_bytes": 7318634496,
+        "user_cpu_seconds": 959.143273,
+        "system_cpu_seconds": 53.454496
+      }
+    },
+    {
+      "prefix_length": 512,
+      "repeat": 2,
+      "warmup": false,
+      "request_create_seconds": 0.0028610825538635254,
+      "steps": [
+        {
+          "step": 0,
+          "prefix_length": 512,
+          "seconds": 119.66133441776037,
+          "top1": 15136,
+          "scores_sha256": "facb06abaada95fc3a8bfa747ca427456c1c68627a0de53dce2fb61d21f9bd1a"
+        },
+        {
+          "step": 1,
+          "prefix_length": 513,
+          "seconds": 2.4027445828542113,
+          "top1": 320,
+          "scores_sha256": "f1d4df36634b996f5d0d8be12e5dbbba1bba6b3b6c31df275968a003dfdcaa29"
+        },
+        {
+          "step": 2,
+          "prefix_length": 514,
+          "seconds": 2.2968127923086286,
+          "top1": 17,
+          "scores_sha256": "ca173f2c4adc6a71f941f46efa2c67ccda21d80cdda5339db392d33d03f26899"
+        },
+        {
+          "step": 3,
+          "prefix_length": 515,
+          "seconds": 2.308413667604327,
+          "top1": 15,
+          "scores_sha256": "ce2af4be71a89a73ccb0eadfcd1dddfab932b7079e310677ce949d9b30d5d847"
+        },
+        {
+          "step": 4,
+          "prefix_length": 516,
+          "seconds": 2.2689030840992928,
+          "top1": 488,
+          "scores_sha256": "4c187b40f3af1fe913cf1e6b61f3488b6444186267d8e6f615a43f84c704cfd1"
+        },
+        {
+          "step": 5,
+          "prefix_length": 517,
+          "seconds": 2.3067342499271035,
+          "top1": 220,
+          "scores_sha256": "49f2202ebc8066b436abe9bfc43c217067f0073533617a60b370bc26d0d1cd68"
+        },
+        {
+          "step": 6,
+          "prefix_length": 518,
+          "seconds": 2.317529666237533,
+          "top1": 18,
+          "scores_sha256": "a41a002d08b559c66b1683031eacaf5c9b9f7fc69da79cd7474a41e2dc8de644"
+        },
+        {
+          "step": 7,
+          "prefix_length": 519,
+          "seconds": 2.281955082900822,
+          "top1": 4292,
+          "scores_sha256": "4dc013c335700d58140a748f129b5e7c9029e4504318041431180003964e2586"
+        },
+        {
+          "step": 8,
+          "prefix_length": 520,
+          "seconds": 2.3175380416214466,
+          "top1": 256,
+          "scores_sha256": "c9cb7fbd55f5d681665d555ec1ce20f1debd9530901dca1133d9ff0c954d2f04"
+        }
+      ],
+      "dispose_seconds": 3.350060433149338e-05,
+      "disposed": true,
+      "usage_after": {
+        "peak_rss_bytes": 7318634496,
+        "user_cpu_seconds": 1186.761455,
+        "system_cpu_seconds": 67.302617
+      }
+    }
+  ],
+  "runtime_provenance": {
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e"
+  },
+  "source_sha256": {
+    "portable/model.py": "6e204b9b4d08247a4441d2422800ca7b253f3cc8f9e4a855473830daa5042797",
+    "coreml_port/tiny_prefix_runtime.py": "03f50bffc68b5264ef8f0f663c869d237e103f1a8863b0e34569325f26cddb2f",
+    "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+    "sources/model/config.json": "52a6a80ffd369638f4cc522ad728735d29bcda7cce1ecb5096947e10c1ee8bc0",
+    "sources/value-model/modeling_backbone.py": "291c97efd64a24d25cd37ae3a5e8882ace0a2f04f69ceaf58c1f970dd00a56cf"
+  },
+  "versions": {
+    "torch": "2.7.0",
+    "numpy": "2.2.6"
+  },
+  "entry_to_imports_seconds": 0.9475311664864421,
+  "component_load_seconds": {
+    "embedding": 2.016290665604174,
+    "0": 18.61100637447089,
+    "1": 18.973426084034145,
+    "2": 18.758077166974545,
+    "3": 18.904356207698584,
+    "4": 18.98464616574347,
+    "5": 18.84706758428365,
+    "6": 20.298073917627335,
+    "7": 18.909468583762646,
+    "8": 18.691999667324126,
+    "9": 18.853007457219064,
+    "10": 19.046975041739643,
+    "11": 20.221103999763727,
+    "head": 1.6609505005180836
+  },
+  "package_identity": {
+    "schema_version": 1,
+    "packages": [
+      {
+        "name": "embedding",
+        "files": [
+          {
+            "path": "embedding.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 63736,
+            "sha256": "b316213a2ed802a17ea101f055bbcb91f3a63551d29b0228fa2e347307dbbe62"
+          },
+          {
+            "path": "embedding.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 931923200,
+            "sha256": "f4b84c85e7e2fa64952bba1e3af8e9a076ff6895168ae4b41f215a0a9b18edde"
+          },
+          {
+            "path": "embedding.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "8700f3e470a237dbdc30a5bdfdda7653ecafc2786fe21cc1f36c0608ca7761f6"
+          }
+        ],
+        "sha256": "5d986b468943ba8cf3edd0bc338567c77d516fcf2e65bae2ee745d3364852554"
+      },
+      {
+        "name": "0",
+        "files": [
+          {
+            "path": "0.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719950,
+            "sha256": "6cdf80c050b8076357009efe870618afc1210fa0ddd07d06df6749caefcf6950"
+          },
+          {
+            "path": "0.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b"
+          },
+          {
+            "path": "0.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "a0b8ecc7aebf27908cbce79298bec4435dd80f63e12f9dc0b2d6dea823e912e8"
+          }
+        ],
+        "sha256": "d5a316f7c6ded387a264780539c758ee9f1877d50cd6877552f6704ac2fe860b"
+      },
+      {
+        "name": "1",
+        "files": [
+          {
+            "path": "1.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5746315,
+            "sha256": "f30ee44ca1bfdd239cc46b822595819b4b6a758c389756f5b031dc43d4945458"
+          },
+          {
+            "path": "1.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "54548f864c3249ce5cec1373cca5a46cc238bf58c45124ff6c6f572bb5f8f755"
+          },
+          {
+            "path": "1.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "c46e1750646ccd7929901f0aacde8f7ae4b0e6bccc76e3f2139d5a5d15055227"
+          }
+        ],
+        "sha256": "c4da11997369eb6ea23577558e23f20920a4d5f5e6f3b4e98d9f7fd03235be88"
+      },
+      {
+        "name": "2",
+        "files": [
+          {
+            "path": "2.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719410,
+            "sha256": "0a4c4538f31bb3016473866224e41d8a0c169954d892a47f05ce69d0b152f1f2"
+          },
+          {
+            "path": "2.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "ec983c8fd8e98d3cbb3ed795c1d92e99ec3504f956fc05376499a238f15c5eaf"
+          },
+          {
+            "path": "2.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "7bed7b97236834b5540640cf26a361428e35ae48097b41c08a0094f421d17b9f"
+          }
+        ],
+        "sha256": "38596538d6456f5dcfa5c077b4ffa841eb331c0fff674353b5b8dbd3b75ceb5e"
+      },
+      {
+        "name": "3",
+        "files": [
+          {
+            "path": "3.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719950,
+            "sha256": "794644824a27cdd3871819b55b1d99296c82a3210532e3acc12d71d6cba22adb"
+          },
+          {
+            "path": "3.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "84b86ac803cb5a683a0b38ca035f51e4b975f0946980deeec0822238fc697492"
+          },
+          {
+            "path": "3.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "9399416bae20437a854ac1b67c1dc747bafd99b86d74c41e499346248ae8f854"
+          }
+        ],
+        "sha256": "addcde8ddab15e368bd46e57aece97d04fb7073d6b65f52f8b1fe8a1222e1dde"
+      },
+      {
+        "name": "4",
+        "files": [
+          {
+            "path": "4.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5746315,
+            "sha256": "d39953c363be15d860c926f472281d2c0c7d49df47964aadcba9a8ca8228b920"
+          },
+          {
+            "path": "4.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "7a09920047292f0084f289a87e347f974a7aacd6db7ea7c67e1719a8b6aebf57"
+          },
+          {
+            "path": "4.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "bc85b535a5e867e0c35594b47056cfb36f6d945fb372fd2be3c84763bc32fcc8"
+          }
+        ],
+        "sha256": "ae437105eaa69a7b0023310523b361ae1ba230dd6b5faced7ceaedcba0296f51"
+      },
+      {
+        "name": "5",
+        "files": [
+          {
+            "path": "5.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719512,
+            "sha256": "5221d52f25946d3bdc50ef26d5b3154c74fd15e2388688f43edb95d23541ff7f"
+          },
+          {
+            "path": "5.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "c43d90db869ade82615b3d849922f3de3f22367e6e5fdaeccd0e94ca75f3a284"
+          },
+          {
+            "path": "5.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "0252740328fc406b94381a9adb854aa4139fe39a9de16120de4d922ec592c74b"
+          }
+        ],
+        "sha256": "8bf369b8843303099b3d44cb8757eb636e20fdcc37440666b7f879c52da0fb18"
+      },
+      {
+        "name": "6",
+        "files": [
+          {
+            "path": "6.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5919791,
+            "sha256": "944b96689fea923c6f97dd9604d57edca69f352178543febed31c59e8f15cb59"
+          },
+          {
+            "path": "6.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272545472,
+            "sha256": "993c492d35e1dea10a676037105a7cceac9d0ba979dced22f405e0cdb6ab8786"
+          },
+          {
+            "path": "6.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "630d7f8e9627c70a7910b79c3143fd4baeed3b7fb9ebc467623b58b268a27a77"
+          }
+        ],
+        "sha256": "62213251b7079fdd07cdd2c8ee41bab6b0887846bf90db140ac021a9edfd4843"
+      },
+      {
+        "name": "7",
+        "files": [
+          {
+            "path": "7.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5746315,
+            "sha256": "b9465ce722ae4b0a85d70ff6a2152f2985fc7fb4402c953335cee3f0ac4757d9"
+          },
+          {
+            "path": "7.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "ac7fe384775035e155b3f84949047d3de44d3313bfbbd8aee49147de221d064b"
+          },
+          {
+            "path": "7.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "9621ef205844cdf4ee001011aa4064a9d157d4c8dc9d84e67a9b0d61e4101bcd"
+          }
+        ],
+        "sha256": "03006ae9a5e26e9696c034665081d2b7193d04037a69c6fd8711ff92d0ee7c7e"
+      },
+      {
+        "name": "8",
+        "files": [
+          {
+            "path": "8.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719410,
+            "sha256": "4373ca0f6b7ccd815e158480cbf1b2d6861da13a3fd316a03ae318b38740611b"
+          },
+          {
+            "path": "8.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "9b1cd8219b7d11b7c56415f60cc8c1afcca4f31b784ef312d9854ad507e4e9fd"
+          },
+          {
+            "path": "8.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "cb4c5015928669d5be85685d0bda10af6e7a7baca491ef7995eefd0442344f5e"
+          }
+        ],
+        "sha256": "51612ba20d3c582fa8d47c37270cadf260f82001323ce1b1116e83baf4b73742"
+      },
+      {
+        "name": "9",
+        "files": [
+          {
+            "path": "9.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5719950,
+            "sha256": "16c54af292abe72397c176658315b1abd6fffa62da35f2f6970877563eecd226"
+          },
+          {
+            "path": "9.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "6a8988bad04a5e6ddb4be04ce1714dd1d70ef0c64209fcec8cf3f697d2862cb2"
+          },
+          {
+            "path": "9.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "bcb8714dd56b905f6a8fcdc432afeefcd589ca17fc8cf1ecd1fb1b4d381030f3"
+          }
+        ],
+        "sha256": "3b8adbb90f6620f511dc4b3bcadcddce68bf329e304aa0551cb9d6b92dac45a4"
+      },
+      {
+        "name": "10",
+        "files": [
+          {
+            "path": "10.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5746059,
+            "sha256": "41dc591ee663178bbb9cbfe8314b5f03f11380ef302081856a5aa4fe9d88c184"
+          },
+          {
+            "path": "10.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272336832,
+            "sha256": "ffb00256b99964abab281d7da111b970e79759d44fab0455d66d8b5c5aa76654"
+          },
+          {
+            "path": "10.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "9470d3f4f2e66435ceb7687fb204f0da0997373a92acbf957a93a05f1f201bcd"
+          }
+        ],
+        "sha256": "5b36a608a14d05d4aa83e2657b99368cc2d199213df0332a6ceb0c1c54a48786"
+      },
+      {
+        "name": "11",
+        "files": [
+          {
+            "path": "11.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 5980495,
+            "sha256": "02b307579fef16e7dc6bc9bb64a06ae79c7168429273b9aee264b877877a69cf"
+          },
+          {
+            "path": "11.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272545472,
+            "sha256": "3b7a8a0d4299419075f0067a9d5c2a167e5b6b9c13a56420a4a9ccf5063ad243"
+          },
+          {
+            "path": "11.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "eb2ec55d38470202cd862e9f5134a04056fefa134c63ee327f81ec43f7332f7a"
+          }
+        ],
+        "sha256": "cc77c799b8534dd9aa402f0ef9fcfd36381521306dedb7a57e0d308dd82d8ac9"
+      },
+      {
+        "name": "head",
+        "files": [
+          {
+            "path": "head.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 58102,
+            "sha256": "a726313b2c173b04a462388655969eba18f8250716aa5246ce1528b2ac3db0d1"
+          },
+          {
+            "path": "head.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 776605312,
+            "sha256": "6d89c2ba45c4997054987cd79d17e087c92a406e8a4273f4f15118679cdfcc44"
+          },
+          {
+            "path": "head.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "19dc03942c5a3b60718cffbb8a75cf52c3cbbca0dab9046123279d3c440f1443"
+          }
+        ],
+        "sha256": "ec0f2ccc9e773334b267ad441148cd6e9d02d4ac0849f92a0eb18c8524bd305a"
+      }
+    ],
+    "aggregate_sha256": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6"
+  },
+  "model_load_seconds": 237.2901953747496,
+  "entry_to_ready_seconds": 238.23814245779067,
+  "usage_after_load": {
+    "peak_rss_bytes": 3526819840,
+    "user_cpu_seconds": 216.646521,
+    "system_cpu_seconds": 10.603912
+  },
+  "scores_sha256": "c9fc6758a758afda2f749c6f5cda54458ffab2f7402a18dfec05120e2d766ce6",
+  "summary_by_prefix": {
+    "32": {
+      "prefill_seconds": {
+        "n": 3,
+        "median": 6.669827749952674,
+        "min": 6.560526583343744,
+        "max": 6.712206166237593
+      },
+      "prefill_tokens_per_second": 4.797725098706943,
+      "request_create_plus_prefill_seconds": {
+        "n": 3,
+        "median": 6.672666708007455,
+        "min": 6.563460499979556,
+        "max": 6.714757333509624
+      },
+      "decode_seconds": {
+        "n": 24,
+        "median": 2.312141458503902,
+        "min": 2.2724919579923153,
+        "max": 2.3693716255947948
+      },
+      "decode_tokens_per_second": 0.43221275506427564
+    },
+    "128": {
+      "prefill_seconds": {
+        "n": 3,
+        "median": 26.887480875477195,
+        "min": 26.019246417097747,
+        "max": 27.492555833421648
+      },
+      "prefill_tokens_per_second": 4.760579862159671,
+      "request_create_plus_prefill_seconds": {
+        "n": 3,
+        "median": 26.890045917592943,
+        "min": 26.02279100008309,
+        "max": 27.495477792806923
+      },
+      "decode_seconds": {
+        "n": 24,
+        "median": 2.305383542086929,
+        "min": 2.2698584999889135,
+        "max": 4.302068249322474
+      },
+      "decode_tokens_per_second": 0.4164193390613961
+    },
+    "512": {
+      "prefill_seconds": {
+        "n": 3,
+        "median": 109.14984412491322,
+        "min": 105.71260050032288,
+        "max": 119.66133441776037
+      },
+      "prefill_tokens_per_second": 4.690799186245811,
+      "request_create_plus_prefill_seconds": {
+        "n": 3,
+        "median": 109.15242462512106,
+        "min": 105.71539383474737,
+        "max": 119.66419550031424
+      },
+      "decode_seconds": {
+        "n": 24,
+        "median": 2.306862249970436,
+        "min": 2.231023042462766,
+        "max": 2.4027445828542113
+      },
+      "decode_tokens_per_second": 0.43393303736836
+    }
+  },
+  "host_after": {
+    "utc": "2026-09-23T11:22:38Z",
+    "system": "macOS-26.5.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.12.9",
+    "logical_cpus": 10,
+    "load_average": [
+      4.2138671875,
+      4.205078125,
+      3.58837890625
+    ],
+    "hardware": {
+      "exit_code": 0,
+      "stdout": "hw.model: Mac16,12\nhw.memsize: 34359738368\nhw.ncpu: 10",
+      "stderr": ""
+    },
+    "thermal": {
+      "exit_code": 0,
+      "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+      "stderr": ""
+    },
+    "power": {
+      "exit_code": 0,
+      "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=<REDACTED_HOST_ID>)\t80%; AC attached; not charging present: true",
+      "stderr": ""
+    }
+  },
+  "usage_final": {
+    "peak_rss_bytes": 7318634496,
+    "user_cpu_seconds": 1186.772334,
+    "system_cpu_seconds": 67.666779
+  },
+  "entry_to_finish_seconds": 853.6487277923152
+}

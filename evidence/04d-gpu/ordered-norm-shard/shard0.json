@@ -1,0 +1,377 @@
+{
+  "sources": {
+    "coreml_port/graphs.py": "9ae902e9794e8311b60af091ea59027f8169cc9750f9d48ff914e65226f5f414",
+    "coreml_port/ordered_linear.py": "699e1c9c5e7f57879ad009cd4a10498162dbab25f599aa46b21eef62ea2106f2",
+    "coreml_port/ordered_attention.py": "3abc03e63175f431ff00d17f68eb0c976c1b92417ab29fa411c1b57317ae8b44",
+    "coreml_port/ordered_norm.py": "db694e9155f761e0cf54b4c6b8289a9f01caf3b6da22dfba7cbbfbee04ebad36",
+    "scripts/gpu_ordered_norm_shard.py": "e007cee719d7e1f04ad137061617b3dfffde5655522518ef145100044c4e8a25"
+  },
+  "norm_sites_replaced": "all 16 calls in shard 0",
+  "torch_candidate_vs_original": [
+    {
+      "start": 0,
+      "end": 32,
+      "norm_calls": [
+        [
+          1,
+          32,
+          1280
+        ],
+        [
+          1,
+          32,
+          10,
+          128
+        ],
+        [
+          1,
+          32,
+          2,
+          128
+        ],
+        [
+          1,
+          32,
+          1280
+        ],
+        [
+          1,
+          32,
+          1280
+        ],
+        [
+          1,
+          32,
+          10,
+          128
+        ],
+        [
+          1,
+          32,
+          2,
+          128
+        ],
+        [
+          1,
+          32,
+          1280
+        ],
+        [
+          1,
+          32,
+          1280
+        ],
+        [
+          1,
+          32,
+          10,
+          128
+        ],
+        [
+          1,
+          32,
+          2,
+          128
+        ],
+        [
+          1,
+          32,
+          1280
+        ],
+        [
+          1,
+          32,
+          1280
+        ],
+        [
+          1,
+          32,
+          10,
+          128
+        ],
+        [
+          1,
+          32,
+          2,
+          128
+        ],
+        [
+          1,
+          32,
+          1280
+        ]
+      ],
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0
+    },
+    {
+      "start": 32,
+      "end": 33,
+      "norm_calls": [
+        [
+          1,
+          1,
+          1280
+        ],
+        [
+          1,
+          1,
+          10,
+          128
+        ],
+        [
+          1,
+          1,
+          2,
+          128
+        ],
+        [
+          1,
+          1,
+          1280
+        ],
+        [
+          1,
+          1,
+          1280
+        ],
+        [
+          1,
+          1,
+          10,
+          128
+        ],
+        [
+          1,
+          1,
+          2,
+          128
+        ],
+        [
+          1,
+          1,
+          1280
+        ],
+        [
+          1,
+          1,
+          1280
+        ],
+        [
+          1,
+          1,
+          10,
+          128
+        ],
+        [
+          1,
+          1,
+          2,
+          128
+        ],
+        [
+          1,
+          1,
+          1280
+        ],
+        [
+          1,
+          1,
+          1280
+        ],
+        [
+          1,
+          1,
+          10,
+          128
+        ],
+        [
+          1,
+          1,
+          2,
+          128
+        ],
+        [
+          1,
+          1,
+          1280
+        ]
+      ],
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002
+    },
+    {
+      "start": 33,
+      "end": 36,
+      "norm_calls": [
+        [
+          1,
+          3,
+          1280
+        ],
+        [
+          1,
+          3,
+          10,
+          128
+        ],
+        [
+          1,
+          3,
+          2,
+          128
+        ],
+        [
+          1,
+          3,
+          1280
+        ],
+        [
+          1,
+          3,
+          1280
+        ],
+        [
+          1,
+          3,
+          10,
+          128
+        ],
+        [
+          1,
+          3,
+          2,
+          128
+        ],
+        [
+          1,
+          3,
+          1280
+        ],
+        [
+          1,
+          3,
+          1280
+        ],
+        [
+          1,
+          3,
+          10,
+          128
+        ],
+        [
+          1,
+          3,
+          2,
+          128
+        ],
+        [
+          1,
+          3,
+          1280
+        ],
+        [
+          1,
+          3,
+          1280
+        ],
+        [
+          1,
+          3,
+          10,
+          128
+        ],
+        [
+          1,
+          3,
+          2,
+          128
+        ],
+        [
+          1,
+          3,
+          1280
+        ]
+      ],
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999
+    }
+  ],
+  "coreml_vs_original_torch": {
+    "CPU_ONLY": [
+      {
+        "start": 0,
+        "end": 32,
+        "seconds": 0.4403719902038574,
+        "max_abs": 32.0,
+        "rmse": 0.5978202644637564,
+        "relative_rmse": 8.690096325353874e-06,
+        "cosine": 0.999999999962241
+      },
+      {
+        "start": 32,
+        "end": 33,
+        "seconds": 0.08100509643554688,
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 1.0000000000000002
+      },
+      {
+        "start": 33,
+        "end": 36,
+        "seconds": 0.10735082626342773,
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "relative_rmse": 0.0,
+        "cosine": 0.9999999999999999
+      }
+    ],
+    "CPU_AND_GPU": [
+      {
+        "start": 0,
+        "end": 32,
+        "seconds": 1.041896104812622,
+        "max_abs": 8192.0,
+        "rmse": 95.99005502089534,
+        "relative_rmse": 0.0013950204459125101,
+        "cosine": 0.9999990530469484
+      },
+      {
+        "start": 32,
+        "end": 33,
+        "seconds": 0.847963809967041,
+        "max_abs": 96.0,
+        "rmse": 20.631197577372053,
+        "relative_rmse": 0.008523712215174659,
+        "cosine": 0.9999665617640215
+      },
+      {
+        "start": 33,
+        "end": 36,
+        "seconds": 0.18181490898132324,
+        "max_abs": 128.0,
+        "rmse": 22.95376185084852,
+        "relative_rmse": 0.008401641420035607,
+        "cosine": 0.9999698402579
+      }
+    ]
+  },
+  "conversion_seconds": 48.685527086257935,
+  "package_files_sha256": {
+    "Data/com.apple.CoreML/model.mlmodel": "84aa02b9b1aa03286ba3179d43290e69ca76abb8abcc2c412e6082b8113818cd",
+    "Data/com.apple.CoreML/weights/weight.bin": "2dd284164281453bbb4631b75982d6e3218e3908d9f8bafcd26832b48cb74f13",
+    "Manifest.json": "382a82a3dd273e3067a77237571a53b51ed1c43fdfaf6405232d784633d036f5"
+  },
+  "source_record_correction": {
+    "reason": "Runner source path was copied from prior probe in report generation; correction changes metadata path only after conversion.",
+    "runner_sha256_at_conversion": "e007cee719d7e1f04ad137061617b3dfffde5655522518ef145100044c4e8a25",
+    "runner_sha256_after_metadata_fix": "aa6d05647a6b0cdb790d60df3a5deeaba7ba655381eaa5b590b348728833f217"
+  }
+}

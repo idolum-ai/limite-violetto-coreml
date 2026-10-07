@@ -1,0 +1,281 @@
+{
+  "status": "first group difference captured",
+  "input_ids": [
+    87555,
+    130664,
+    114854
+  ],
+  "compute": "CPU_ONLY",
+  "reference_semantics": "native full-prefix Torch backbone with layer hooks",
+  "model_dir": "<PROJECT_ROOT>/artifacts/04d-cpu/full-candidate-4",
+  "identity_manifest": "<PROJECT_ROOT>/evidence/04d-cpu/full-candidate-4/package-identity.json",
+  "package_identity": "9aaea5e518689705ec236710803e53107a224620e8847004be335e47b7969398",
+  "script_sha256": "c7199c80d4517fa16c32dd9b63b79c5286a7ef80f43578ea2967f5a77f1d1ec3",
+  "reference_source_sha256": "6e204b9b4d08247a4441d2422800ca7b253f3cc8f9e4a855473830daa5042797",
+  "prediction_guard": {
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 0,
+    "gil_releases": 0
+  },
+  "groups": [
+    {
+      "group": 0,
+      "input_reference": "embedding_norm",
+      "output_reference": "layer_3",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 1,
+      "input_reference": "layer_3",
+      "output_reference": "layer_7",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 2,
+      "input_reference": "layer_7",
+      "output_reference": "layer_11",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 3,
+      "input_reference": "layer_11",
+      "output_reference": "layer_15",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 4,
+      "input_reference": "layer_15",
+      "output_reference": "layer_19",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 5,
+      "input_reference": "layer_19",
+      "output_reference": "layer_23",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "tap23_out": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 6,
+      "input_reference": "layer_23",
+      "output_reference": "layer_27",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 7,
+      "input_reference": "layer_27",
+      "output_reference": "layer_31",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 8,
+      "input_reference": "layer_31",
+      "output_reference": "layer_35",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 9,
+      "input_reference": "layer_35",
+      "output_reference": "layer_39",
+      "y": {
+        "different_elements": 449,
+        "max_abs": 32.0,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              2,
+              0
+            ],
+            "actual": 394.0,
+            "expected": 392.0
+          },
+          {
+            "index": [
+              0,
+              2,
+              8
+            ],
+            "actual": 1776.0,
+            "expected": 1784.0
+          },
+          {
+            "index": [
+              0,
+              2,
+              9
+            ],
+            "actual": 2832.0,
+            "expected": 2848.0
+          },
+          {
+            "index": [
+              0,
+              2,
+              10
+            ],
+            "actual": 1696.0,
+            "expected": 1704.0
+          },
+          {
+            "index": [
+              0,
+              2,
+              12
+            ],
+            "actual": 1104.0,
+            "expected": 1096.0
+          },
+          {
+            "index": [
+              0,
+              2,
+              16
+            ],
+            "actual": -552.0,
+            "expected": -544.0
+          }
+        ]
+      }
+    }
+  ],
+  "native_boundary_sha256": "e8c565d4dee0252596faa22f9449a0fd4b9eb0420621370b7bbea18e9ee0d7ee",
+  "native_shapes": {
+    "layer_3": [
+      1,
+      3,
+      1280
+    ],
+    "layer_7": [
+      1,
+      3,
+      1280
+    ],
+    "layer_11": [
+      1,
+      3,
+      1280
+    ],
+    "layer_15": [
+      1,
+      3,
+      1280
+    ],
+    "layer_19": [
+      1,
+      3,
+      1280
+    ],
+    "layer_22": [
+      1,
+      3,
+      1280
+    ],
+    "layer_23": [
+      1,
+      3,
+      1280
+    ],
+    "layer_27": [
+      1,
+      3,
+      1280
+    ],
+    "layer_31": [
+      1,
+      3,
+      1280
+    ],
+    "layer_35": [
+      1,
+      3,
+      1280
+    ],
+    "layer_39": [
+      1,
+      3,
+      1280
+    ],
+    "layer_43": [
+      1,
+      3,
+      1280
+    ],
+    "layer_47": [
+      1,
+      3,
+      1280
+    ],
+    "embedding_norm": [
+      1,
+      3,
+      1280
+    ],
+    "ve": [
+      1,
+      3,
+      2,
+      128
+    ],
+    "final_hidden": [
+      1,
+      3,
+      1280
+    ]
+  },
+  "first_failure": {
+    "group": 9,
+    "start": 0,
+    "end": 3,
+    "positions": [
+      0,
+      1,
+      2
+    ]
+  },
+  "capture_sha256": {
+    "first-failure-inputs.npz": "237baec31c43828c37d1e44cdc50b7941fcbcd59023d5026f6373d1a7736f2a6",
+    "first-failure-state-before.npz": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc"
+  }
+}

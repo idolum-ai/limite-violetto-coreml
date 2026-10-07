@@ -1,0 +1,7 @@
+{
+  "component": "head",
+  "seconds": 3.5137908458709717,
+  "package": "artifacts/04-coreml/model/head.mlpackage",
+  "state_names": [],
+  "status": "converted; runtime validation pending"
+}

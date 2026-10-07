@@ -1,0 +1,455 @@
+{
+  "comparisons": [
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        1,
+        1280
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        1,
+        1280
+      ],
+      "scale": 1.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        1,
+        1280
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        3,
+        1280
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        3,
+        1280
+      ],
+      "scale": 1.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        3,
+        1280
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "scale": 1.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        1,
+        1280
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        1,
+        1280
+      ],
+      "scale": 1.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        1,
+        1280
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        3,
+        1280
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        3,
+        1280
+      ],
+      "scale": 1.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        3,
+        1280
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "scale": 1.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 1280,
+      "shape": [
+        1,
+        32,
+        1280
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        1,
+        10,
+        128
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        1,
+        10,
+        128
+      ],
+      "scale": 1.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        1,
+        10,
+        128
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "scale": 1.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "scale": 1.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_ONLY",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        1,
+        10,
+        128
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        1,
+        10,
+        128
+      ],
+      "scale": 1.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        1,
+        10,
+        128
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "scale": 1.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        3,
+        10,
+        128
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "scale": 0.000244140625,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "scale": 1.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    },
+    {
+      "width": 128,
+      "shape": [
+        1,
+        32,
+        10,
+        128
+      ],
+      "scale": 4096.0,
+      "compute": "CPU_AND_GPU",
+      "different_elements": 0,
+      "max_abs": 0.0
+    }
+  ],
+  "all_exact": true
+}

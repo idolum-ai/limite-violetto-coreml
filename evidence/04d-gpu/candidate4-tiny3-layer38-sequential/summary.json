@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "reference_sha256": "ab764cefbc12844bfee830e48386ec7dd4c72c300dbf2a94f74fb98c403b3164",
+  "script_sha256": "e25af4fc733bc2130704bf4df20ef89ce69d80efed10ea3982ce6af9e1edf1f0",
+  "runs": {
+    "3": {
+      "torch_sequential_vs_torch_einsum_scores": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "coreml_sequential_vs_torch_einsum_scores": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "coreml_vs_torch_sequential_scores": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "torch_sequential_q_vs_saved": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "coreml_sequential_q_vs_saved": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "target": {
+        "coreml_score": [
+          6.463118076324463,
+          7.167275428771973,
+          7.702095031738281
+        ],
+        "torch_score": [
+          6.463118076324463,
+          7.167275428771973,
+          7.702095031738281
+        ],
+        "coreml_q": -0.1845703125,
+        "saved_q": -0.1845703125
+      }
+    },
+    "2048": {
+      "torch_sequential_vs_torch_einsum_scores": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "coreml_sequential_vs_torch_einsum_scores": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "coreml_vs_torch_sequential_scores": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "torch_sequential_q_vs_saved": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "coreml_sequential_q_vs_saved": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "target": {
+        "coreml_score": [
+          6.463118076324463,
+          7.167275428771973,
+          7.702095031738281
+        ],
+        "torch_score": [
+          6.463118076324463,
+          7.167275428771973,
+          7.702095031738281
+        ],
+        "coreml_q": -0.1845703125,
+        "saved_q": -0.1845703125
+      }
+    }
+  }
+}

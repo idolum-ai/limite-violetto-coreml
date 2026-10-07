@@ -1,0 +1,772 @@
+{
+  "all_replay_files_and_pins_verified": true,
+  "controls": [
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "outputs",
+      "name": "y",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "outputs",
+      "name": "tap23_out",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_k_cache_0",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_v_cache_0",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_k_cache_1",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_v_cache_1",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_k_cache_2",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_v_cache_2",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_k_cache_3",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_v_cache_3",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "outputs",
+      "name": "y",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "outputs",
+      "name": "tap23_out",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_k_cache_0",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_v_cache_0",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_k_cache_1",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_v_cache_1",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_k_cache_2",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_v_cache_2",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_k_cache_3",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 0,
+      "kind": "state_after",
+      "name": "inner_v_cache_3",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "outputs",
+      "name": "y",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "outputs",
+      "name": "tap23_out",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_k_cache_0",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_v_cache_0",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_k_cache_1",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_v_cache_1",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_k_cache_2",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_v_cache_2",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_k_cache_3",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_v_cache_3",
+      "policy": "CPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "outputs",
+      "name": "y",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "outputs",
+      "name": "tap23_out",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_k_cache_0",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_v_cache_0",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_k_cache_1",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_v_cache_1",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_k_cache_2",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_v_cache_2",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_k_cache_3",
+      "policy": "GPU"
+    },
+    {
+      "byte_exact": true,
+      "chunk": 1,
+      "kind": "state_after",
+      "name": "inner_v_cache_3",
+      "policy": "GPU"
+    }
+  ],
+  "diagonal_saved_stage_reconstruction": {
+    "0": {
+      "CPU": {
+        "k_49": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "var_14339": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "var_14340": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "x_207": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        }
+      },
+      "GPU": {
+        "k_49": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "var_14339": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "var_14340": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "x_207": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        }
+      }
+    },
+    "1": {
+      "CPU": {
+        "k_49": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "var_14339": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "var_14340": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "x_207": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        }
+      },
+      "GPU": {
+        "k_49": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "var_14339": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "var_14340": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "x_207": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        }
+      }
+    }
+  },
+  "independent_original_tapped_endpoint_state_controls": 40,
+  "interpretation": "On the saved warm tensors, substituting only the CPU reciprocal seed into the GPU FP32 key-normalization path reproduces CPU raw, quotient, rounded, and quantized key arrays byte-for-byte. This does not establish that a compiled replacement would preserve execution or fix the full model.",
+  "next_design": "For denominators near 24\u201359, a separate power-of-two scaling experiment could map d to d/8 within the existing helper range and scale the reciprocal back by 1/8. That is a hypothesis requiring host/native exponent, seed, endpoint, and state gates; the frozen helper is unchanged.",
+  "passed": true,
+  "protocol_sha256": "9ba092e0b07655eed15ec0e6a51c458b291d28fdf505c867b258921be0fee2b6",
+  "replay_sha256": "48e5dadf50cfc54c17bb3a3cb50b29e22c2bae3ab9f13234b081756db191cba5",
+  "scope": "Offline FP32 counterfactual at saved group-0 layer-2 key normalization only; no native correction or full-model claim",
+  "script_sha256": "db6a83f6a6a7b72b3758b5892b02383b6f5ca01ec49d308cf5d2090f24b428c4",
+  "status": "completed",
+  "substitution": {
+    "0": {
+      "counterfactual_vs_cpu": {
+        "k_49": {
+          "byte_exact": false,
+          "first_actual": 0.19921875,
+          "first_actual_bits": 1045168128,
+          "first_expected": 0.201171875,
+          "first_expected_bits": 1045299200,
+          "first_index": [
+            0,
+            19,
+            0,
+            0
+          ],
+          "mismatch_count": 1109
+        },
+        "var_14339": {
+          "byte_exact": false,
+          "first_actual": 204.13885498046875,
+          "first_actual_bits": 1129063308,
+          "first_expected": 206.20086669921875,
+          "first_expected_bits": 1129198444,
+          "first_index": [
+            0,
+            19,
+            0,
+            0
+          ],
+          "mismatch_count": 1198
+        },
+        "var_14340": {
+          "byte_exact": false,
+          "first_actual": 204.0,
+          "first_actual_bits": 1129054208,
+          "first_expected": 206.0,
+          "first_expected_bits": 1129185280,
+          "first_index": [
+            0,
+            19,
+            0,
+            0
+          ],
+          "mismatch_count": 1109
+        },
+        "x_207": {
+          "byte_exact": false,
+          "first_actual": 0.199354350566864,
+          "first_actual_bits": 1045177228,
+          "first_expected": 0.2013680338859558,
+          "first_expected_bits": 1045312364,
+          "first_index": [
+            0,
+            19,
+            0,
+            0
+          ],
+          "mismatch_count": 1198
+        }
+      },
+      "inputs_gpu_vs_cpu": {
+        "denom_21": {
+          "byte_exact": false,
+          "first_actual": 31.038007736206055,
+          "first_actual_bits": 1106791895,
+          "first_expected": 31.03769874572754,
+          "first_expected_bits": 1106791733,
+          "first_index": [
+            0,
+            19,
+            0,
+            0
+          ],
+          "mismatch_count": 26
+        },
+        "step_149": {
+          "byte_exact": false,
+          "first_actual": 0.0009765625,
+          "first_actual_bits": 981467136,
+          "first_expected": 0.00048828125,
+          "first_expected_bits": 973078528,
+          "first_index": [
+            0,
+            19,
+            0,
+            35
+          ],
+          "mismatch_count": 23
+        },
+        "value_41": {
+          "byte_exact": false,
+          "first_actual": 6.1875,
+          "first_actual_bits": 1086717952,
+          "first_expected": 6.25,
+          "first_expected_bits": 1086849024,
+          "first_index": [
+            0,
+            19,
+            0,
+            0
+          ],
+          "mismatch_count": 1198
+        },
+        "var_14324": {
+          "byte_exact": false,
+          "first_actual": 0.027927538380026817,
+          "first_actual_bits": 1021626443,
+          "first_expected": 0.027927540242671967,
+          "first_expected_bits": 1021626444,
+          "first_index": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "mismatch_count": 39
+        }
+      },
+      "observed_gpu_vs_cpu": {
+        "k_49": {
+          "byte_exact": false,
+          "first_actual": 0.19921875,
+          "first_actual_bits": 1045168128,
+          "first_expected": 0.201171875,
+          "first_expected_bits": 1045299200,
+          "first_index": [
+            0,
+            19,
+            0,
+            0
+          ],
+          "mismatch_count": 1176
+        },
+        "var_14339": {
+          "byte_exact": false,
+          "first_actual": 191.24778747558594,
+          "first_actual_bits": 1128218479,
+          "first_expected": 191.247802734375,
+          "first_expected_bits": 1128218480,
+          "first_index": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "mismatch_count": 4652
+        },
+        "var_14340": {
+          "byte_exact": false,
+          "first_actual": 204.0,
+          "first_actual_bits": 1129054208,
+          "first_expected": 206.0,
+          "first_expected_bits": 1129185280,
+          "first_index": [
+            0,
+            19,
+            0,
+            0
+          ],
+          "mismatch_count": 1176
+        },
+        "x_207": {
+          "byte_exact": false,
+          "first_actual": 2.9882466793060303,
+          "first_actual_bits": 1077886831,
+          "first_expected": 2.9882469177246094,
+          "first_expected_bits": 1077886832,
+          "first_index": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "mismatch_count": 4652
+        }
+      }
+    },
+    "1": {
+      "counterfactual_vs_cpu": {
+        "k_49": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "var_14339": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "var_14340": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "x_207": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        }
+      },
+      "inputs_gpu_vs_cpu": {
+        "denom_21": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "step_149": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "value_41": {
+          "byte_exact": true,
+          "first_actual": null,
+          "first_actual_bits": null,
+          "first_expected": null,
+          "first_expected_bits": null,
+          "first_index": null,
+          "mismatch_count": 0
+        },
+        "var_14324": {
+          "byte_exact": false,
+          "first_actual": 0.021358365193009377,
+          "first_actual_bits": 1018099645,
+          "first_expected": 0.021358367055654526,
+          "first_expected_bits": 1018099646,
+          "first_index": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mismatch_count": 9
+        }
+      },
+      "observed_gpu_vs_cpu": {
+        "k_49": {
+          "byte_exact": false,
+          "first_actual": -0.330078125,
+          "first_actual_bits": 3198746624,
+          "first_expected": -0.33203125,
+          "first_expected_bits": 3198812160,
+          "first_index": [
+            0,
+            0,
+            0,
+            73
+          ],
+          "mismatch_count": 1
+        },
+        "var_14339": {
+          "byte_exact": false,
+          "first_actual": 226.91127014160156,
+          "first_actual_bits": 1130555721,
+          "first_expected": 226.91128540039062,
+          "first_expected_bits": 1130555722,
+          "first_index": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mismatch_count": 962
+        },
+        "var_14340": {
+          "byte_exact": false,
+          "first_actual": -169.0,
+          "first_actual_bits": 3274244096,
+          "first_expected": -170.0,
+          "first_expected_bits": 3274309632,
+          "first_index": [
+            0,
+            0,
+            0,
+            73
+          ],
+          "mismatch_count": 1
+        },
+        "x_207": {
+          "byte_exact": false,
+          "first_actual": 3.5454885959625244,
+          "first_actual_bits": 1080224073,
+          "first_expected": 3.5454888343811035,
+          "first_expected_bits": 1080224074,
+          "first_index": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mismatch_count": 962
+        }
+      }
+    }
+  },
+  "warm_local_key_norm_counterfactual_passed": true
+}

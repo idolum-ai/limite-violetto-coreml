@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "attempt": "round-replacement-1",
+  "script_sha256": "39589f81eb512e1d4a01e3bab49b8d457979c02df9eb40c121dfeb20971a568f",
+  "helper_sha256": "d1e7af3cfbc0b493b1f481984bdbf0469cce693860c1bd0133d86b53a3a7bcb0",
+  "prior_result_sha256": "c19667215c7fe78e0eacc3f1d2c1006e4a4e8dd9d8fb59e52fef140ac8625c9e",
+  "baseline_result_sha256": "095f9ddb8dc27c5755d6af3b88982eaf4e62a0f9e47c7d30e2e86af1fd2bb6e0",
+  "reference_sha256": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+  "policies": ["CPU_ONLY", "CPU_AND_GPU"],
+  "outputs": ["original_round", "candidate_round", "candidate_q"],
+  "extra_lengths": [1, 3, 12, 32],
+  "expected_cases": 24,
+  "expected_native_predictions": 48,
+  "baseline_cpu_negative_zero_changes": 5687,
+  "scope": "Original native CPU round must match Torch. Direct replacement round must match Torch byte-for-byte under both compute policies. Full candidate Q must match the frozen original Core ML CPU output; the separate strict full-Q Torch byte gate remains failed if native zero-sign canonicalization persists."
+}

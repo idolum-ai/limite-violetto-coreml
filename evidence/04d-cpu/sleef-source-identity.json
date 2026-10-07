@@ -1,0 +1,21 @@
+{
+  "sleef_commit": "56e1f79cb140fb9326d612d0be06b5250565cade",
+  "files": [
+    {
+      "path": "sources/sleef-pinned/LICENSE.txt",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    {
+      "path": "sources/sleef-pinned/helperadvsimd.h",
+      "sha256": "8db49cb2881771dde2ac6b7fcf5031b3fecf302b92220ff4cf0ed04f169bb610"
+    },
+    {
+      "path": "sources/sleef-pinned/misc.h",
+      "sha256": "516ddeb5cc9501039b104967f1830b92e94cc6053c401fbb6773873dfb1b6178"
+    },
+    {
+      "path": "sources/sleef-pinned/sleefsimdsp.c",
+      "sha256": "726d962aaa9cfb0b1696122f4d26765495491c0cbc26c084c899704de46b2f5c"
+    }
+  ]
+}

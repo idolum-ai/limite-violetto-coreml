@@ -1,0 +1,30 @@
+{
+  "input_sha256": "b03c1310d54b3179c5a9a55ef11fb9fc02e8595c24d345b9c8537d38ee512708",
+  "script_sha256": "ea6ec8034eba9b4261ae03ee46f29ac07d8acab2d06db69433df7834004d73a6",
+  "results": {
+    "CPU_ONLY": {
+      "q": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "examples": []
+      },
+      "simple": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "examples": []
+      }
+    },
+    "CPU_AND_GPU": {
+      "q": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "examples": []
+      },
+      "simple": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "examples": []
+      }
+    }
+  }
+}

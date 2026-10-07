@@ -1,0 +1,4320 @@
+{
+  "status": "completed",
+  "compute": "CPU_ONLY",
+  "runtime_adapter": "tiny_prefix_replay",
+  "model_dir_argument": "artifacts/04d-cpu/full-candidate-5",
+  "identity_manifest_argument": "evidence/04d-cpu/full-candidate-5/package-identity.json",
+  "thresholds_changed": false,
+  "acceptance_sha256": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+  "calibration_sha256": "6c33c8976abdc5e2ef603519cdaa3f5193c443515de876dbea920b9840ab9d95",
+  "portable_partition_fixture_sha256": "182ccd8c86d108b35465aa5cea44140a547cd45f0b502c20da20f426910be4a3",
+  "validator_sha256": "7905440b40888695363ccf15000961a6b07fe7b1115ec33b8636005c3cd363b4",
+  "runtime_sha256": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+  "tiny_prefix_runtime_sha256": "03f50bffc68b5264ef8f0f663c869d237e103f1a8863b0e34569325f26cddb2f",
+  "package_identity_helper_sha256": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81",
+  "runtime_provenance": {
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e"
+  },
+  "limits": {
+    "score_max_abs": 0.04,
+    "hidden_relative_rmse": 0.01,
+    "hidden_min_cosine": 0.995,
+    "calibration_valid": true
+  },
+  "case_plan": [
+    {
+      "name": "single_prefill_1",
+      "input_ids": [
+        87555
+      ],
+      "partitions": [
+        1
+      ],
+      "fixture": "cpu-partitions-v3/tiny_33"
+    },
+    {
+      "name": "single_prefill_3",
+      "input_ids": [
+        87555,
+        130664,
+        114854
+      ],
+      "partitions": [
+        3
+      ],
+      "fixture": "cpu-partitions-v3/tiny_33"
+    },
+    {
+      "name": "single_prefill_15",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852
+      ],
+      "partitions": [
+        15
+      ],
+      "fixture": "cpu-partitions-v3/tiny_33"
+    },
+    {
+      "name": "single_prefill_16",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058
+      ],
+      "partitions": [
+        16
+      ],
+      "fixture": "cpu-partitions-v3/tiny_33"
+    },
+    {
+      "name": "single_prefill_31",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881
+      ],
+      "partitions": [
+        31
+      ],
+      "fixture": "cpu-partitions-v3/tiny_33"
+    },
+    {
+      "name": "single_prefill_32",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881,
+        117843
+      ],
+      "partitions": [
+        32
+      ],
+      "fixture": "cpu-partitions-v3/tiny_33"
+    },
+    {
+      "name": "single_prefill_33",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881,
+        117843,
+        91063
+      ],
+      "partitions": [
+        33
+      ],
+      "fixture": "cpu-partitions-v3/tiny_33"
+    },
+    {
+      "name": "single_token_partitions_1",
+      "input_ids": [
+        87555
+      ],
+      "partitions": [
+        1
+      ],
+      "fixture": "cpu-partitions-v3/tiny_1"
+    },
+    {
+      "name": "single_token_partitions_3",
+      "input_ids": [
+        87555,
+        130664,
+        114854
+      ],
+      "partitions": [
+        1,
+        1,
+        1
+      ],
+      "fixture": "cpu-partitions-v3/tiny_3"
+    },
+    {
+      "name": "single_token_partitions_15",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "fixture": "cpu-partitions-v3/tiny_15"
+    },
+    {
+      "name": "single_token_partitions_31",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "fixture": "cpu-partitions-v3/tiny_31"
+    },
+    {
+      "name": "single_token_partitions_33",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881,
+        117843,
+        91063
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "fixture": "cpu-partitions-v3/tiny_33"
+    },
+    {
+      "name": "irregular_127",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881,
+        117843,
+        91063,
+        147592,
+        63296,
+        61953,
+        7508,
+        120978,
+        38042,
+        149727,
+        65150,
+        92676,
+        88770,
+        117999,
+        102821,
+        19262,
+        136616,
+        86561,
+        74737,
+        107672,
+        23082,
+        150179,
+        119124,
+        145064,
+        135205,
+        22112,
+        70541,
+        98441,
+        32907,
+        96869,
+        930,
+        38102,
+        46498,
+        78452,
+        141035,
+        4224,
+        103540,
+        74377,
+        50810,
+        28750,
+        44631,
+        6223,
+        150661,
+        65326,
+        133255,
+        3866,
+        103526,
+        47056,
+        144561,
+        144338,
+        23489,
+        142057,
+        56647,
+        39668,
+        786,
+        101494,
+        6902,
+        59031,
+        91821,
+        37251,
+        109521,
+        22152,
+        77064,
+        37428,
+        9748,
+        3040,
+        47876,
+        92950,
+        89327,
+        104306,
+        99687,
+        36905,
+        31639,
+        53664,
+        36401,
+        56026,
+        86832,
+        70200,
+        125696,
+        118386,
+        60956,
+        81228,
+        74261,
+        7943,
+        78809,
+        115368,
+        126660,
+        82562,
+        118024,
+        1487,
+        21860,
+        135142,
+        37121,
+        41834,
+        44597,
+        72503,
+        98615
+      ],
+      "partitions": [
+        1,
+        2,
+        4,
+        7,
+        16,
+        32,
+        65
+      ],
+      "fixture": "cpu-partitions-v3/irregular_127"
+    }
+  ],
+  "cases": [
+    {
+      "name": "single_prefill_1",
+      "fixture": "cpu-partitions-v3/tiny_33",
+      "input_ids": [
+        87555
+      ],
+      "partitions": [
+        1
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 1,
+          "prefix_length": 1,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 3.305412755799059e-07,
+            "relative_rmse": 9.452653473947624e-08,
+            "cosine": 1.000000000000046,
+            "top1_match": true,
+            "reference_top1_margin": 0.14752578735351562,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 1,
+          "passed": true
+        }
+      ],
+      "request_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "single_prefill_3",
+      "fixture": "cpu-partitions-v3/tiny_33",
+      "input_ids": [
+        87555,
+        130664,
+        114854
+      ],
+      "partitions": [
+        3
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 3,
+          "prefix_length": 3,
+          "runtime_internal_chunks": [
+            3
+          ],
+          "hidden": {
+            "max_abs": 0.18359375,
+            "rmse": 0.01837024577300432,
+            "relative_rmse": 0.018367305808837865,
+            "cosine": 0.9998313192114996,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5823030471801758,
+            "rmse": 0.17930572620116147,
+            "relative_rmse": 0.030958195538722564,
+            "cosine": 0.9998999553250867,
+            "top1_match": true,
+            "reference_top1_margin": 0.018934249877929688,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 3,
+          "passed": false
+        }
+      ],
+      "request_disposed": true,
+      "passed": false
+    },
+    {
+      "name": "single_prefill_15",
+      "fixture": "cpu-partitions-v3/tiny_33",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852
+      ],
+      "partitions": [
+        15
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 15,
+          "prefix_length": 15,
+          "runtime_internal_chunks": [
+            15
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.7241657845611996e-07,
+            "relative_rmse": 4.3985291707459265e-08,
+            "cosine": 0.9999999999994829,
+            "top1_match": true,
+            "reference_top1_margin": 0.09207916259765625,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 15,
+          "passed": true
+        }
+      ],
+      "request_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "single_prefill_16",
+      "fixture": "cpu-partitions-v3/tiny_33",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058
+      ],
+      "partitions": [
+        16
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 16,
+          "prefix_length": 16,
+          "runtime_internal_chunks": [
+            16
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.6835112292365526e-07,
+            "relative_rmse": 6.566354469835574e-08,
+            "cosine": 1.0000000000001492,
+            "top1_match": true,
+            "reference_top1_margin": 0.0,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 16,
+          "passed": true
+        }
+      ],
+      "request_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "single_prefill_31",
+      "fixture": "cpu-partitions-v3/tiny_33",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881
+      ],
+      "partitions": [
+        31
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 31,
+          "prefix_length": 31,
+          "runtime_internal_chunks": [
+            31
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.1074595480247873e-07,
+            "relative_rmse": 7.102339298697864e-08,
+            "cosine": 1.0000000000003104,
+            "top1_match": true,
+            "reference_top1_margin": 0.6471595764160156,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 31,
+          "passed": true
+        }
+      ],
+      "request_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "single_prefill_32",
+      "fixture": "cpu-partitions-v3/tiny_33",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881,
+        117843
+      ],
+      "partitions": [
+        32
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 32,
+          "prefix_length": 32,
+          "runtime_internal_chunks": [
+            32
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.102874137459461e-07,
+            "relative_rmse": 4.992111100070783e-08,
+            "cosine": 0.999999999999754,
+            "top1_match": true,
+            "reference_top1_margin": 0.15896987915039062,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 32,
+          "passed": true
+        }
+      ],
+      "request_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "single_prefill_33",
+      "fixture": "cpu-partitions-v3/tiny_33",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881,
+        117843,
+        91063
+      ],
+      "partitions": [
+        33
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 33,
+          "prefix_length": 33,
+          "runtime_internal_chunks": [
+            32,
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.492423029689145e-07,
+            "relative_rmse": 4.0350617701901504e-08,
+            "cosine": 0.9999999999996582,
+            "top1_match": true,
+            "reference_top1_margin": 0.11082077026367188,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 33,
+          "passed": true
+        }
+      ],
+      "request_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "single_token_partitions_1",
+      "fixture": "cpu-partitions-v3/tiny_1",
+      "input_ids": [
+        87555
+      ],
+      "partitions": [
+        1
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 1,
+          "prefix_length": 1,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 3.305412755799059e-07,
+            "relative_rmse": 9.452653473947624e-08,
+            "cosine": 1.000000000000046,
+            "top1_match": true,
+            "reference_top1_margin": 0.14752578735351562,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 1,
+          "passed": true
+        }
+      ],
+      "request_disposed": true,
+      "passed": true
+    },
+    {
+      "name": "single_token_partitions_3",
+      "fixture": "cpu-partitions-v3/tiny_3",
+      "input_ids": [
+        87555,
+        130664,
+        114854
+      ],
+      "partitions": [
+        1,
+        1,
+        1
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 1,
+          "prefix_length": 1,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 3.305412755799059e-07,
+            "relative_rmse": 9.452653473947624e-08,
+            "cosine": 1.000000000000046,
+            "top1_match": true,
+            "reference_top1_margin": 0.14752578735351562,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 1,
+          "passed": true
+        },
+        {
+          "partition_index": 1,
+          "partition_start": 1,
+          "partition_end_exclusive": 2,
+          "prefix_length": 2,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.045868665481175e-07,
+            "relative_rmse": 9.16937482283739e-08,
+            "cosine": 1.0000000000005875,
+            "top1_match": true,
+            "reference_top1_margin": 1.7046394348144531,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 2,
+          "passed": true
+        },
+        {
+          "partition_index": 2,
+          "partition_start": 2,
+          "partition_end_exclusive": 3,
+          "prefix_length": 3,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.18359375,
+            "rmse": 0.03181819902637089,
+            "relative_rmse": 0.03181985247711325,
+            "cosine": 0.9994937320352042,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5823030471801758,
+            "rmse": 0.17930572620116147,
+            "relative_rmse": 0.030958195538722564,
+            "cosine": 0.9998999553250867,
+            "top1_match": true,
+            "reference_top1_margin": 0.018934249877929688,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 3,
+          "passed": false
+        }
+      ],
+      "request_disposed": true,
+      "passed": false
+    },
+    {
+      "name": "single_token_partitions_15",
+      "fixture": "cpu-partitions-v3/tiny_15",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 1,
+          "prefix_length": 1,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 3.305412755799059e-07,
+            "relative_rmse": 9.452653473947624e-08,
+            "cosine": 1.000000000000046,
+            "top1_match": true,
+            "reference_top1_margin": 0.14752578735351562,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 1,
+          "passed": true
+        },
+        {
+          "partition_index": 1,
+          "partition_start": 1,
+          "partition_end_exclusive": 2,
+          "prefix_length": 2,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.045868665481175e-07,
+            "relative_rmse": 9.16937482283739e-08,
+            "cosine": 1.0000000000005875,
+            "top1_match": true,
+            "reference_top1_margin": 1.7046394348144531,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 2,
+          "passed": true
+        },
+        {
+          "partition_index": 2,
+          "partition_start": 2,
+          "partition_end_exclusive": 3,
+          "prefix_length": 3,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.18359375,
+            "rmse": 0.03181819902637089,
+            "relative_rmse": 0.03181985247711325,
+            "cosine": 0.9994937320352042,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5823030471801758,
+            "rmse": 0.17930572620116147,
+            "relative_rmse": 0.030958195538722564,
+            "cosine": 0.9998999553250867,
+            "top1_match": true,
+            "reference_top1_margin": 0.018934249877929688,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 3,
+          "passed": false
+        },
+        {
+          "partition_index": 3,
+          "partition_start": 3,
+          "partition_end_exclusive": 4,
+          "prefix_length": 4,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.28125,
+            "rmse": 0.02544295211461603,
+            "relative_rmse": 0.025443909376938013,
+            "cosine": 0.9996763222491654,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.33898210525512695,
+            "rmse": 0.12825756199608596,
+            "relative_rmse": 0.020099564017962344,
+            "cosine": 0.9999577193542901,
+            "top1_match": true,
+            "reference_top1_margin": 0.46906089782714844,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 4,
+          "passed": false
+        },
+        {
+          "partition_index": 4,
+          "partition_start": 4,
+          "partition_end_exclusive": 5,
+          "prefix_length": 5,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.171875,
+            "rmse": 0.039462670619011375,
+            "relative_rmse": 0.03946032910283442,
+            "cosine": 0.9992213408926939,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5404157638549805,
+            "rmse": 0.16961285499805004,
+            "relative_rmse": 0.023113853271728418,
+            "cosine": 0.9999420119407403,
+            "top1_match": true,
+            "reference_top1_margin": 0.6494388580322266,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 5,
+          "passed": false
+        },
+        {
+          "partition_index": 5,
+          "partition_start": 5,
+          "partition_end_exclusive": 6,
+          "prefix_length": 6,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.4375,
+            "rmse": 0.02749278715953606,
+            "relative_rmse": 0.027489837392583823,
+            "cosine": 0.9996221818234269,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.2284679412841797,
+            "rmse": 0.026660603469243465,
+            "relative_rmse": 0.008470143203322806,
+            "cosine": 0.999967132417531,
+            "top1_match": true,
+            "reference_top1_margin": 0.7817096710205078,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 6,
+          "passed": false
+        },
+        {
+          "partition_index": 6,
+          "partition_start": 6,
+          "partition_end_exclusive": 7,
+          "prefix_length": 7,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.203125,
+            "rmse": 0.030294446534478298,
+            "relative_rmse": 0.030299797123503,
+            "cosine": 0.9995410305395318,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.2852954864501953,
+            "rmse": 0.03838068128993719,
+            "relative_rmse": 0.00693644853002569,
+            "cosine": 0.9999785426927322,
+            "top1_match": true,
+            "reference_top1_margin": 1.0536823272705078,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 7,
+          "passed": false
+        },
+        {
+          "partition_index": 7,
+          "partition_start": 7,
+          "partition_end_exclusive": 8,
+          "prefix_length": 8,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.15625,
+            "rmse": 0.03333583290188746,
+            "relative_rmse": 0.03333764711276588,
+            "cosine": 0.9994443676493886,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5378818511962891,
+            "rmse": 0.16317201134748854,
+            "relative_rmse": 0.024015184057363304,
+            "cosine": 0.9999392461892287,
+            "top1_match": true,
+            "reference_top1_margin": 0.07550239562988281,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 8,
+          "passed": false
+        },
+        {
+          "partition_index": 8,
+          "partition_start": 8,
+          "partition_end_exclusive": 9,
+          "prefix_length": 9,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.25,
+            "rmse": 0.03074866620317171,
+            "relative_rmse": 0.03074457178302519,
+            "cosine": 0.9995273598644566,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5664477348327637,
+            "rmse": 0.2747273907320332,
+            "relative_rmse": 0.039342341053313495,
+            "cosine": 0.9998472837553531,
+            "top1_match": true,
+            "reference_top1_margin": 0.6995353698730469,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 9,
+          "passed": false
+        },
+        {
+          "partition_index": 9,
+          "partition_start": 9,
+          "partition_end_exclusive": 10,
+          "prefix_length": 10,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.25,
+            "rmse": 0.03906397546881756,
+            "relative_rmse": 0.03906137950993338,
+            "cosine": 0.999237179626544,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.4987478256225586,
+            "rmse": 0.0432251871055519,
+            "relative_rmse": 0.009925372258484721,
+            "cosine": 0.9999528347944091,
+            "top1_match": true,
+            "reference_top1_margin": 0.11372947692871094,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 10,
+          "passed": false
+        },
+        {
+          "partition_index": 10,
+          "partition_start": 10,
+          "partition_end_exclusive": 11,
+          "prefix_length": 11,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.875,
+            "rmse": 0.06446929225620122,
+            "relative_rmse": 0.06448590686486123,
+            "cosine": 0.9979216397448024,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5259828567504883,
+            "rmse": 0.15959682582216783,
+            "relative_rmse": 0.025938101409622702,
+            "cosine": 0.9998903075776069,
+            "top1_match": true,
+            "reference_top1_margin": 0.12614059448242188,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 11,
+          "passed": false
+        },
+        {
+          "partition_index": 11,
+          "partition_start": 11,
+          "partition_end_exclusive": 12,
+          "prefix_length": 12,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.3291015625,
+            "rmse": 0.04271100045120461,
+            "relative_rmse": 0.04272542742874225,
+            "cosine": 0.9990876196453745,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5198860168457031,
+            "rmse": 0.07813114159701452,
+            "relative_rmse": 0.009913101999790347,
+            "cosine": 0.9999752906193276,
+            "top1_match": true,
+            "reference_top1_margin": 0.7470722198486328,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 12,
+          "passed": false
+        },
+        {
+          "partition_index": 12,
+          "partition_start": 12,
+          "partition_end_exclusive": 13,
+          "prefix_length": 13,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.75,
+            "rmse": 0.0589192095848638,
+            "relative_rmse": 0.058936704975855264,
+            "cosine": 0.9982639738668189,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5487308502197266,
+            "rmse": 0.14360445632072028,
+            "relative_rmse": 0.02197748827047655,
+            "cosine": 0.9999140617043848,
+            "top1_match": true,
+            "reference_top1_margin": 1.2535896301269531,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 13,
+          "passed": false
+        },
+        {
+          "partition_index": 13,
+          "partition_start": 13,
+          "partition_end_exclusive": 14,
+          "prefix_length": 14,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.4453125,
+            "rmse": 0.036309620870769756,
+            "relative_rmse": 0.03631094610946805,
+            "cosine": 0.9993406717971656,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.4787473678588867,
+            "rmse": 0.04488069628783979,
+            "relative_rmse": 0.007457200629088951,
+            "cosine": 0.9999722939057133,
+            "top1_match": true,
+            "reference_top1_margin": 1.2127094268798828,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 14,
+          "passed": false
+        },
+        {
+          "partition_index": 14,
+          "partition_start": 14,
+          "partition_end_exclusive": 15,
+          "prefix_length": 15,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.7241657845611996e-07,
+            "relative_rmse": 4.3985291707459265e-08,
+            "cosine": 0.9999999999994829,
+            "top1_match": true,
+            "reference_top1_margin": 0.09207916259765625,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 15,
+          "passed": true
+        }
+      ],
+      "request_disposed": true,
+      "passed": false
+    },
+    {
+      "name": "single_token_partitions_31",
+      "fixture": "cpu-partitions-v3/tiny_31",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 1,
+          "prefix_length": 1,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 3.305412755799059e-07,
+            "relative_rmse": 9.452653473947624e-08,
+            "cosine": 1.000000000000046,
+            "top1_match": true,
+            "reference_top1_margin": 0.14752578735351562,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 1,
+          "passed": true
+        },
+        {
+          "partition_index": 1,
+          "partition_start": 1,
+          "partition_end_exclusive": 2,
+          "prefix_length": 2,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.045868665481175e-07,
+            "relative_rmse": 9.16937482283739e-08,
+            "cosine": 1.0000000000005875,
+            "top1_match": true,
+            "reference_top1_margin": 1.7046394348144531,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 2,
+          "passed": true
+        },
+        {
+          "partition_index": 2,
+          "partition_start": 2,
+          "partition_end_exclusive": 3,
+          "prefix_length": 3,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.18359375,
+            "rmse": 0.03181819902637089,
+            "relative_rmse": 0.03181985247711325,
+            "cosine": 0.9994937320352042,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5823030471801758,
+            "rmse": 0.17930572620116147,
+            "relative_rmse": 0.030958195538722564,
+            "cosine": 0.9998999553250867,
+            "top1_match": true,
+            "reference_top1_margin": 0.018934249877929688,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 3,
+          "passed": false
+        },
+        {
+          "partition_index": 3,
+          "partition_start": 3,
+          "partition_end_exclusive": 4,
+          "prefix_length": 4,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.28125,
+            "rmse": 0.02544295211461603,
+            "relative_rmse": 0.025443909376938013,
+            "cosine": 0.9996763222491654,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.33898210525512695,
+            "rmse": 0.12825756199608596,
+            "relative_rmse": 0.020099564017962344,
+            "cosine": 0.9999577193542901,
+            "top1_match": true,
+            "reference_top1_margin": 0.46906089782714844,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 4,
+          "passed": false
+        },
+        {
+          "partition_index": 4,
+          "partition_start": 4,
+          "partition_end_exclusive": 5,
+          "prefix_length": 5,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.171875,
+            "rmse": 0.039462670619011375,
+            "relative_rmse": 0.03946032910283442,
+            "cosine": 0.9992213408926939,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5404157638549805,
+            "rmse": 0.16961285499805004,
+            "relative_rmse": 0.023113853271728418,
+            "cosine": 0.9999420119407403,
+            "top1_match": true,
+            "reference_top1_margin": 0.6494388580322266,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 5,
+          "passed": false
+        },
+        {
+          "partition_index": 5,
+          "partition_start": 5,
+          "partition_end_exclusive": 6,
+          "prefix_length": 6,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.4375,
+            "rmse": 0.02749278715953606,
+            "relative_rmse": 0.027489837392583823,
+            "cosine": 0.9996221818234269,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.2284679412841797,
+            "rmse": 0.026660603469243465,
+            "relative_rmse": 0.008470143203322806,
+            "cosine": 0.999967132417531,
+            "top1_match": true,
+            "reference_top1_margin": 0.7817096710205078,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 6,
+          "passed": false
+        },
+        {
+          "partition_index": 6,
+          "partition_start": 6,
+          "partition_end_exclusive": 7,
+          "prefix_length": 7,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.203125,
+            "rmse": 0.030294446534478298,
+            "relative_rmse": 0.030299797123503,
+            "cosine": 0.9995410305395318,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.2852954864501953,
+            "rmse": 0.03838068128993719,
+            "relative_rmse": 0.00693644853002569,
+            "cosine": 0.9999785426927322,
+            "top1_match": true,
+            "reference_top1_margin": 1.0536823272705078,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 7,
+          "passed": false
+        },
+        {
+          "partition_index": 7,
+          "partition_start": 7,
+          "partition_end_exclusive": 8,
+          "prefix_length": 8,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.15625,
+            "rmse": 0.03333583290188746,
+            "relative_rmse": 0.03333764711276588,
+            "cosine": 0.9994443676493886,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5378818511962891,
+            "rmse": 0.16317201134748854,
+            "relative_rmse": 0.024015184057363304,
+            "cosine": 0.9999392461892287,
+            "top1_match": true,
+            "reference_top1_margin": 0.07550239562988281,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 8,
+          "passed": false
+        },
+        {
+          "partition_index": 8,
+          "partition_start": 8,
+          "partition_end_exclusive": 9,
+          "prefix_length": 9,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.25,
+            "rmse": 0.03074866620317171,
+            "relative_rmse": 0.03074457178302519,
+            "cosine": 0.9995273598644566,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5664477348327637,
+            "rmse": 0.2747273907320332,
+            "relative_rmse": 0.039342341053313495,
+            "cosine": 0.9998472837553531,
+            "top1_match": true,
+            "reference_top1_margin": 0.6995353698730469,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 9,
+          "passed": false
+        },
+        {
+          "partition_index": 9,
+          "partition_start": 9,
+          "partition_end_exclusive": 10,
+          "prefix_length": 10,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.25,
+            "rmse": 0.03906397546881756,
+            "relative_rmse": 0.03906137950993338,
+            "cosine": 0.999237179626544,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.4987478256225586,
+            "rmse": 0.0432251871055519,
+            "relative_rmse": 0.009925372258484721,
+            "cosine": 0.9999528347944091,
+            "top1_match": true,
+            "reference_top1_margin": 0.11372947692871094,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 10,
+          "passed": false
+        },
+        {
+          "partition_index": 10,
+          "partition_start": 10,
+          "partition_end_exclusive": 11,
+          "prefix_length": 11,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.875,
+            "rmse": 0.06446929225620122,
+            "relative_rmse": 0.06448590686486123,
+            "cosine": 0.9979216397448024,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5259828567504883,
+            "rmse": 0.15959682582216783,
+            "relative_rmse": 0.025938101409622702,
+            "cosine": 0.9998903075776069,
+            "top1_match": true,
+            "reference_top1_margin": 0.12614059448242188,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 11,
+          "passed": false
+        },
+        {
+          "partition_index": 11,
+          "partition_start": 11,
+          "partition_end_exclusive": 12,
+          "prefix_length": 12,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.3291015625,
+            "rmse": 0.04271100045120461,
+            "relative_rmse": 0.04272542742874225,
+            "cosine": 0.9990876196453745,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5198860168457031,
+            "rmse": 0.07813114159701452,
+            "relative_rmse": 0.009913101999790347,
+            "cosine": 0.9999752906193276,
+            "top1_match": true,
+            "reference_top1_margin": 0.7470722198486328,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 12,
+          "passed": false
+        },
+        {
+          "partition_index": 12,
+          "partition_start": 12,
+          "partition_end_exclusive": 13,
+          "prefix_length": 13,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.75,
+            "rmse": 0.0589192095848638,
+            "relative_rmse": 0.058936704975855264,
+            "cosine": 0.9982639738668189,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5487308502197266,
+            "rmse": 0.14360445632072028,
+            "relative_rmse": 0.02197748827047655,
+            "cosine": 0.9999140617043848,
+            "top1_match": true,
+            "reference_top1_margin": 1.2535896301269531,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 13,
+          "passed": false
+        },
+        {
+          "partition_index": 13,
+          "partition_start": 13,
+          "partition_end_exclusive": 14,
+          "prefix_length": 14,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.4453125,
+            "rmse": 0.036309620870769756,
+            "relative_rmse": 0.03631094610946805,
+            "cosine": 0.9993406717971656,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.4787473678588867,
+            "rmse": 0.04488069628783979,
+            "relative_rmse": 0.007457200629088951,
+            "cosine": 0.9999722939057133,
+            "top1_match": true,
+            "reference_top1_margin": 1.2127094268798828,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 14,
+          "passed": false
+        },
+        {
+          "partition_index": 14,
+          "partition_start": 14,
+          "partition_end_exclusive": 15,
+          "prefix_length": 15,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.7241657845611996e-07,
+            "relative_rmse": 4.3985291707459265e-08,
+            "cosine": 0.9999999999994829,
+            "top1_match": true,
+            "reference_top1_margin": 0.09207916259765625,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 15,
+          "passed": true
+        },
+        {
+          "partition_index": 15,
+          "partition_start": 15,
+          "partition_end_exclusive": 16,
+          "prefix_length": 16,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.6835112292365526e-07,
+            "relative_rmse": 6.566354469835574e-08,
+            "cosine": 1.0000000000001492,
+            "top1_match": true,
+            "reference_top1_margin": 0.0,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 16,
+          "passed": true
+        },
+        {
+          "partition_index": 16,
+          "partition_start": 16,
+          "partition_end_exclusive": 17,
+          "prefix_length": 17,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.821521838252704e-07,
+            "relative_rmse": 4.9425214548055804e-08,
+            "cosine": 1.0000000000000946,
+            "top1_match": true,
+            "reference_top1_margin": 0.03660774230957031,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 17,
+          "passed": true
+        },
+        {
+          "partition_index": 17,
+          "partition_start": 17,
+          "partition_end_exclusive": 18,
+          "prefix_length": 18,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.2061321458397836e-07,
+            "relative_rmse": 5.326701619214015e-08,
+            "cosine": 1.0000000000002491,
+            "top1_match": true,
+            "reference_top1_margin": 0.02783203125,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 18,
+          "passed": true
+        },
+        {
+          "partition_index": 18,
+          "partition_start": 18,
+          "partition_end_exclusive": 19,
+          "prefix_length": 19,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.503194305001936e-07,
+            "relative_rmse": 3.928368176370436e-08,
+            "cosine": 1.000000000000067,
+            "top1_match": true,
+            "reference_top1_margin": 0.3320159912109375,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 19,
+          "passed": true
+        },
+        {
+          "partition_index": 19,
+          "partition_start": 19,
+          "partition_end_exclusive": 20,
+          "prefix_length": 20,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.141390807369838e-07,
+            "relative_rmse": 5.1728776551133966e-08,
+            "cosine": 1.000000000000128,
+            "top1_match": true,
+            "reference_top1_margin": 0.6424427032470703,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 20,
+          "passed": true
+        },
+        {
+          "partition_index": 20,
+          "partition_start": 20,
+          "partition_end_exclusive": 21,
+          "prefix_length": 21,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.440442958555385e-07,
+            "relative_rmse": 3.908699934709256e-08,
+            "cosine": 0.9999999999999436,
+            "top1_match": true,
+            "reference_top1_margin": 0.21828842163085938,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 21,
+          "passed": true
+        },
+        {
+          "partition_index": 21,
+          "partition_start": 21,
+          "partition_end_exclusive": 22,
+          "prefix_length": 22,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.902612151959144e-07,
+            "relative_rmse": 6.88318702080651e-08,
+            "cosine": 1.0000000000000222,
+            "top1_match": true,
+            "reference_top1_margin": 0.5187149047851562,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 22,
+          "passed": true
+        },
+        {
+          "partition_index": 22,
+          "partition_start": 22,
+          "partition_end_exclusive": 23,
+          "prefix_length": 23,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 3.7559523651048905e-07,
+            "relative_rmse": 5.950330266652787e-08,
+            "cosine": 1.0000000000001645,
+            "top1_match": true,
+            "reference_top1_margin": 0.019182205200195312,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 23,
+          "passed": true
+        },
+        {
+          "partition_index": 23,
+          "partition_start": 23,
+          "partition_end_exclusive": 24,
+          "prefix_length": 24,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.3384978558038295e-07,
+            "relative_rmse": 4.2414192947519345e-08,
+            "cosine": 0.9999999999997873,
+            "top1_match": true,
+            "reference_top1_margin": 0.19510459899902344,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 24,
+          "passed": true
+        },
+        {
+          "partition_index": 24,
+          "partition_start": 24,
+          "partition_end_exclusive": 25,
+          "prefix_length": 25,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.776678082487273e-07,
+            "relative_rmse": 4.468332570588262e-08,
+            "cosine": 0.9999999999994653,
+            "top1_match": true,
+            "reference_top1_margin": 1.8953132629394531,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 25,
+          "passed": true
+        },
+        {
+          "partition_index": 25,
+          "partition_start": 25,
+          "partition_end_exclusive": 26,
+          "prefix_length": 26,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.804794303372929e-07,
+            "relative_rmse": 4.498431631907061e-08,
+            "cosine": 0.9999999999995302,
+            "top1_match": true,
+            "reference_top1_margin": 0.33513641357421875,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 26,
+          "passed": true
+        },
+        {
+          "partition_index": 26,
+          "partition_start": 26,
+          "partition_end_exclusive": 27,
+          "prefix_length": 27,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.7240726936568655e-07,
+            "relative_rmse": 4.3737558087212844e-08,
+            "cosine": 0.9999999999994935,
+            "top1_match": true,
+            "reference_top1_margin": 0.18050003051757812,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 27,
+          "passed": true
+        },
+        {
+          "partition_index": 27,
+          "partition_start": 27,
+          "partition_end_exclusive": 28,
+          "prefix_length": 28,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 3.643232973661009e-07,
+            "relative_rmse": 4.792737509909464e-08,
+            "cosine": 1.0000000000000084,
+            "top1_match": true,
+            "reference_top1_margin": 0.10128974914550781,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 28,
+          "passed": true
+        },
+        {
+          "partition_index": 28,
+          "partition_start": 28,
+          "partition_end_exclusive": 29,
+          "prefix_length": 29,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.751902119237337e-07,
+            "relative_rmse": 6.741482766414922e-08,
+            "cosine": 0.9999999999999677,
+            "top1_match": true,
+            "reference_top1_margin": 0.7138328552246094,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 29,
+          "passed": true
+        },
+        {
+          "partition_index": 29,
+          "partition_start": 29,
+          "partition_end_exclusive": 30,
+          "prefix_length": 30,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.051755708898404e-07,
+            "relative_rmse": 6.150548812559666e-08,
+            "cosine": 1.0000000000003166,
+            "top1_match": true,
+            "reference_top1_margin": 0.6878414154052734,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 30,
+          "passed": true
+        },
+        {
+          "partition_index": 30,
+          "partition_start": 30,
+          "partition_end_exclusive": 31,
+          "prefix_length": 31,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.1074595480247873e-07,
+            "relative_rmse": 7.102339298697864e-08,
+            "cosine": 1.0000000000003104,
+            "top1_match": true,
+            "reference_top1_margin": 0.6471595764160156,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 31,
+          "passed": true
+        }
+      ],
+      "request_disposed": true,
+      "passed": false
+    },
+    {
+      "name": "single_token_partitions_33",
+      "fixture": "cpu-partitions-v3/tiny_33",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881,
+        117843,
+        91063
+      ],
+      "partitions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 1,
+          "prefix_length": 1,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 3.305412755799059e-07,
+            "relative_rmse": 9.452653473947624e-08,
+            "cosine": 1.000000000000046,
+            "top1_match": true,
+            "reference_top1_margin": 0.14752578735351562,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 1,
+          "passed": true
+        },
+        {
+          "partition_index": 1,
+          "partition_start": 1,
+          "partition_end_exclusive": 2,
+          "prefix_length": 2,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.045868665481175e-07,
+            "relative_rmse": 9.16937482283739e-08,
+            "cosine": 1.0000000000005875,
+            "top1_match": true,
+            "reference_top1_margin": 1.7046394348144531,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 2,
+          "passed": true
+        },
+        {
+          "partition_index": 2,
+          "partition_start": 2,
+          "partition_end_exclusive": 3,
+          "prefix_length": 3,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.18359375,
+            "rmse": 0.03181819902637089,
+            "relative_rmse": 0.03181985247711325,
+            "cosine": 0.9994937320352042,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5823030471801758,
+            "rmse": 0.17930572620116147,
+            "relative_rmse": 0.030958195538722564,
+            "cosine": 0.9998999553250867,
+            "top1_match": true,
+            "reference_top1_margin": 0.018934249877929688,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 3,
+          "passed": false
+        },
+        {
+          "partition_index": 3,
+          "partition_start": 3,
+          "partition_end_exclusive": 4,
+          "prefix_length": 4,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.28125,
+            "rmse": 0.02544295211461603,
+            "relative_rmse": 0.025443909376938013,
+            "cosine": 0.9996763222491654,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.33898210525512695,
+            "rmse": 0.12825756199608596,
+            "relative_rmse": 0.020099564017962344,
+            "cosine": 0.9999577193542901,
+            "top1_match": true,
+            "reference_top1_margin": 0.46906089782714844,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 4,
+          "passed": false
+        },
+        {
+          "partition_index": 4,
+          "partition_start": 4,
+          "partition_end_exclusive": 5,
+          "prefix_length": 5,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.171875,
+            "rmse": 0.039462670619011375,
+            "relative_rmse": 0.03946032910283442,
+            "cosine": 0.9992213408926939,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5404157638549805,
+            "rmse": 0.16961285499805004,
+            "relative_rmse": 0.023113853271728418,
+            "cosine": 0.9999420119407403,
+            "top1_match": true,
+            "reference_top1_margin": 0.6494388580322266,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 5,
+          "passed": false
+        },
+        {
+          "partition_index": 5,
+          "partition_start": 5,
+          "partition_end_exclusive": 6,
+          "prefix_length": 6,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.4375,
+            "rmse": 0.02749278715953606,
+            "relative_rmse": 0.027489837392583823,
+            "cosine": 0.9996221818234269,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.2284679412841797,
+            "rmse": 0.026660603469243465,
+            "relative_rmse": 0.008470143203322806,
+            "cosine": 0.999967132417531,
+            "top1_match": true,
+            "reference_top1_margin": 0.7817096710205078,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 6,
+          "passed": false
+        },
+        {
+          "partition_index": 6,
+          "partition_start": 6,
+          "partition_end_exclusive": 7,
+          "prefix_length": 7,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.203125,
+            "rmse": 0.030294446534478298,
+            "relative_rmse": 0.030299797123503,
+            "cosine": 0.9995410305395318,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.2852954864501953,
+            "rmse": 0.03838068128993719,
+            "relative_rmse": 0.00693644853002569,
+            "cosine": 0.9999785426927322,
+            "top1_match": true,
+            "reference_top1_margin": 1.0536823272705078,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 7,
+          "passed": false
+        },
+        {
+          "partition_index": 7,
+          "partition_start": 7,
+          "partition_end_exclusive": 8,
+          "prefix_length": 8,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.15625,
+            "rmse": 0.03333583290188746,
+            "relative_rmse": 0.03333764711276588,
+            "cosine": 0.9994443676493886,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5378818511962891,
+            "rmse": 0.16317201134748854,
+            "relative_rmse": 0.024015184057363304,
+            "cosine": 0.9999392461892287,
+            "top1_match": true,
+            "reference_top1_margin": 0.07550239562988281,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 8,
+          "passed": false
+        },
+        {
+          "partition_index": 8,
+          "partition_start": 8,
+          "partition_end_exclusive": 9,
+          "prefix_length": 9,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.25,
+            "rmse": 0.03074866620317171,
+            "relative_rmse": 0.03074457178302519,
+            "cosine": 0.9995273598644566,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5664477348327637,
+            "rmse": 0.2747273907320332,
+            "relative_rmse": 0.039342341053313495,
+            "cosine": 0.9998472837553531,
+            "top1_match": true,
+            "reference_top1_margin": 0.6995353698730469,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 9,
+          "passed": false
+        },
+        {
+          "partition_index": 9,
+          "partition_start": 9,
+          "partition_end_exclusive": 10,
+          "prefix_length": 10,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.25,
+            "rmse": 0.03906397546881756,
+            "relative_rmse": 0.03906137950993338,
+            "cosine": 0.999237179626544,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.4987478256225586,
+            "rmse": 0.0432251871055519,
+            "relative_rmse": 0.009925372258484721,
+            "cosine": 0.9999528347944091,
+            "top1_match": true,
+            "reference_top1_margin": 0.11372947692871094,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 10,
+          "passed": false
+        },
+        {
+          "partition_index": 10,
+          "partition_start": 10,
+          "partition_end_exclusive": 11,
+          "prefix_length": 11,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.875,
+            "rmse": 0.06446929225620122,
+            "relative_rmse": 0.06448590686486123,
+            "cosine": 0.9979216397448024,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5259828567504883,
+            "rmse": 0.15959682582216783,
+            "relative_rmse": 0.025938101409622702,
+            "cosine": 0.9998903075776069,
+            "top1_match": true,
+            "reference_top1_margin": 0.12614059448242188,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 11,
+          "passed": false
+        },
+        {
+          "partition_index": 11,
+          "partition_start": 11,
+          "partition_end_exclusive": 12,
+          "prefix_length": 12,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.3291015625,
+            "rmse": 0.04271100045120461,
+            "relative_rmse": 0.04272542742874225,
+            "cosine": 0.9990876196453745,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5198860168457031,
+            "rmse": 0.07813114159701452,
+            "relative_rmse": 0.009913101999790347,
+            "cosine": 0.9999752906193276,
+            "top1_match": true,
+            "reference_top1_margin": 0.7470722198486328,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 12,
+          "passed": false
+        },
+        {
+          "partition_index": 12,
+          "partition_start": 12,
+          "partition_end_exclusive": 13,
+          "prefix_length": 13,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.75,
+            "rmse": 0.0589192095848638,
+            "relative_rmse": 0.058936704975855264,
+            "cosine": 0.9982639738668189,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5487308502197266,
+            "rmse": 0.14360445632072028,
+            "relative_rmse": 0.02197748827047655,
+            "cosine": 0.9999140617043848,
+            "top1_match": true,
+            "reference_top1_margin": 1.2535896301269531,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 13,
+          "passed": false
+        },
+        {
+          "partition_index": 13,
+          "partition_start": 13,
+          "partition_end_exclusive": 14,
+          "prefix_length": 14,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.4453125,
+            "rmse": 0.036309620870769756,
+            "relative_rmse": 0.03631094610946805,
+            "cosine": 0.9993406717971656,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.4787473678588867,
+            "rmse": 0.04488069628783979,
+            "relative_rmse": 0.007457200629088951,
+            "cosine": 0.9999722939057133,
+            "top1_match": true,
+            "reference_top1_margin": 1.2127094268798828,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 14,
+          "passed": false
+        },
+        {
+          "partition_index": 14,
+          "partition_start": 14,
+          "partition_end_exclusive": 15,
+          "prefix_length": 15,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0000000000000002,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.7241657845611996e-07,
+            "relative_rmse": 4.3985291707459265e-08,
+            "cosine": 0.9999999999994829,
+            "top1_match": true,
+            "reference_top1_margin": 0.09207916259765625,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 15,
+          "passed": true
+        },
+        {
+          "partition_index": 15,
+          "partition_start": 15,
+          "partition_end_exclusive": 16,
+          "prefix_length": 16,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.6835112292365526e-07,
+            "relative_rmse": 6.566354469835574e-08,
+            "cosine": 1.0000000000001492,
+            "top1_match": true,
+            "reference_top1_margin": 0.0,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 16,
+          "passed": true
+        },
+        {
+          "partition_index": 16,
+          "partition_start": 16,
+          "partition_end_exclusive": 17,
+          "prefix_length": 17,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.821521838252704e-07,
+            "relative_rmse": 4.9425214548055804e-08,
+            "cosine": 1.0000000000000946,
+            "top1_match": true,
+            "reference_top1_margin": 0.03660774230957031,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 17,
+          "passed": true
+        },
+        {
+          "partition_index": 17,
+          "partition_start": 17,
+          "partition_end_exclusive": 18,
+          "prefix_length": 18,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.2061321458397836e-07,
+            "relative_rmse": 5.326701619214015e-08,
+            "cosine": 1.0000000000002491,
+            "top1_match": true,
+            "reference_top1_margin": 0.02783203125,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 18,
+          "passed": true
+        },
+        {
+          "partition_index": 18,
+          "partition_start": 18,
+          "partition_end_exclusive": 19,
+          "prefix_length": 19,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.503194305001936e-07,
+            "relative_rmse": 3.928368176370436e-08,
+            "cosine": 1.000000000000067,
+            "top1_match": true,
+            "reference_top1_margin": 0.3320159912109375,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 19,
+          "passed": true
+        },
+        {
+          "partition_index": 19,
+          "partition_start": 19,
+          "partition_end_exclusive": 20,
+          "prefix_length": 20,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.141390807369838e-07,
+            "relative_rmse": 5.1728776551133966e-08,
+            "cosine": 1.000000000000128,
+            "top1_match": true,
+            "reference_top1_margin": 0.6424427032470703,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 20,
+          "passed": true
+        },
+        {
+          "partition_index": 20,
+          "partition_start": 20,
+          "partition_end_exclusive": 21,
+          "prefix_length": 21,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.440442958555385e-07,
+            "relative_rmse": 3.908699934709256e-08,
+            "cosine": 0.9999999999999436,
+            "top1_match": true,
+            "reference_top1_margin": 0.21828842163085938,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 21,
+          "passed": true
+        },
+        {
+          "partition_index": 21,
+          "partition_start": 21,
+          "partition_end_exclusive": 22,
+          "prefix_length": 22,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.902612151959144e-07,
+            "relative_rmse": 6.88318702080651e-08,
+            "cosine": 1.0000000000000222,
+            "top1_match": true,
+            "reference_top1_margin": 0.5187149047851562,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 22,
+          "passed": true
+        },
+        {
+          "partition_index": 22,
+          "partition_start": 22,
+          "partition_end_exclusive": 23,
+          "prefix_length": 23,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 3.7559523651048905e-07,
+            "relative_rmse": 5.950330266652787e-08,
+            "cosine": 1.0000000000001645,
+            "top1_match": true,
+            "reference_top1_margin": 0.019182205200195312,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 23,
+          "passed": true
+        },
+        {
+          "partition_index": 23,
+          "partition_start": 23,
+          "partition_end_exclusive": 24,
+          "prefix_length": 24,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.3384978558038295e-07,
+            "relative_rmse": 4.2414192947519345e-08,
+            "cosine": 0.9999999999997873,
+            "top1_match": true,
+            "reference_top1_margin": 0.19510459899902344,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 24,
+          "passed": true
+        },
+        {
+          "partition_index": 24,
+          "partition_start": 24,
+          "partition_end_exclusive": 25,
+          "prefix_length": 25,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.776678082487273e-07,
+            "relative_rmse": 4.468332570588262e-08,
+            "cosine": 0.9999999999994653,
+            "top1_match": true,
+            "reference_top1_margin": 1.8953132629394531,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 25,
+          "passed": true
+        },
+        {
+          "partition_index": 25,
+          "partition_start": 25,
+          "partition_end_exclusive": 26,
+          "prefix_length": 26,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.804794303372929e-07,
+            "relative_rmse": 4.498431631907061e-08,
+            "cosine": 0.9999999999995302,
+            "top1_match": true,
+            "reference_top1_margin": 0.33513641357421875,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 26,
+          "passed": true
+        },
+        {
+          "partition_index": 26,
+          "partition_start": 26,
+          "partition_end_exclusive": 27,
+          "prefix_length": 27,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.7240726936568655e-07,
+            "relative_rmse": 4.3737558087212844e-08,
+            "cosine": 0.9999999999994935,
+            "top1_match": true,
+            "reference_top1_margin": 0.18050003051757812,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 27,
+          "passed": true
+        },
+        {
+          "partition_index": 27,
+          "partition_start": 27,
+          "partition_end_exclusive": 28,
+          "prefix_length": 28,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999998,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 3.643232973661009e-07,
+            "relative_rmse": 4.792737509909464e-08,
+            "cosine": 1.0000000000000084,
+            "top1_match": true,
+            "reference_top1_margin": 0.10128974914550781,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 28,
+          "passed": true
+        },
+        {
+          "partition_index": 28,
+          "partition_start": 28,
+          "partition_end_exclusive": 29,
+          "prefix_length": 29,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.751902119237337e-07,
+            "relative_rmse": 6.741482766414922e-08,
+            "cosine": 0.9999999999999677,
+            "top1_match": true,
+            "reference_top1_margin": 0.7138328552246094,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 29,
+          "passed": true
+        },
+        {
+          "partition_index": 29,
+          "partition_start": 29,
+          "partition_end_exclusive": 30,
+          "prefix_length": 30,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.051755708898404e-07,
+            "relative_rmse": 6.150548812559666e-08,
+            "cosine": 1.0000000000003166,
+            "top1_match": true,
+            "reference_top1_margin": 0.6878414154052734,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 30,
+          "passed": true
+        },
+        {
+          "partition_index": 30,
+          "partition_start": 30,
+          "partition_end_exclusive": 31,
+          "prefix_length": 31,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.1074595480247873e-07,
+            "relative_rmse": 7.102339298697864e-08,
+            "cosine": 1.0000000000003104,
+            "top1_match": true,
+            "reference_top1_margin": 0.6471595764160156,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 31,
+          "passed": true
+        },
+        {
+          "partition_index": 31,
+          "partition_start": 31,
+          "partition_end_exclusive": 32,
+          "prefix_length": 32,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.102874137459461e-07,
+            "relative_rmse": 4.992111100070783e-08,
+            "cosine": 0.999999999999754,
+            "top1_match": true,
+            "reference_top1_margin": 0.15896987915039062,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 32,
+          "passed": true
+        },
+        {
+          "partition_index": 32,
+          "partition_start": 32,
+          "partition_end_exclusive": 33,
+          "prefix_length": 33,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 0.9999999999999999,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 3.492423029689145e-07,
+            "relative_rmse": 4.0350617701901504e-08,
+            "cosine": 0.9999999999996582,
+            "top1_match": true,
+            "reference_top1_margin": 0.11082077026367188,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 33,
+          "passed": true
+        }
+      ],
+      "request_disposed": true,
+      "passed": false
+    },
+    {
+      "name": "irregular_127",
+      "fixture": "cpu-partitions-v3/irregular_127",
+      "input_ids": [
+        87555,
+        130664,
+        114854,
+        100469,
+        143356,
+        6761,
+        11215,
+        138112,
+        98678,
+        21650,
+        145612,
+        50488,
+        87005,
+        147667,
+        80852,
+        105058,
+        22928,
+        35926,
+        128124,
+        150006,
+        26666,
+        138757,
+        25584,
+        61659,
+        80339,
+        62875,
+        99378,
+        25793,
+        134611,
+        64207,
+        7881,
+        117843,
+        91063,
+        147592,
+        63296,
+        61953,
+        7508,
+        120978,
+        38042,
+        149727,
+        65150,
+        92676,
+        88770,
+        117999,
+        102821,
+        19262,
+        136616,
+        86561,
+        74737,
+        107672,
+        23082,
+        150179,
+        119124,
+        145064,
+        135205,
+        22112,
+        70541,
+        98441,
+        32907,
+        96869,
+        930,
+        38102,
+        46498,
+        78452,
+        141035,
+        4224,
+        103540,
+        74377,
+        50810,
+        28750,
+        44631,
+        6223,
+        150661,
+        65326,
+        133255,
+        3866,
+        103526,
+        47056,
+        144561,
+        144338,
+        23489,
+        142057,
+        56647,
+        39668,
+        786,
+        101494,
+        6902,
+        59031,
+        91821,
+        37251,
+        109521,
+        22152,
+        77064,
+        37428,
+        9748,
+        3040,
+        47876,
+        92950,
+        89327,
+        104306,
+        99687,
+        36905,
+        31639,
+        53664,
+        36401,
+        56026,
+        86832,
+        70200,
+        125696,
+        118386,
+        60956,
+        81228,
+        74261,
+        7943,
+        78809,
+        115368,
+        126660,
+        82562,
+        118024,
+        1487,
+        21860,
+        135142,
+        37121,
+        41834,
+        44597,
+        72503,
+        98615
+      ],
+      "partitions": [
+        1,
+        2,
+        4,
+        7,
+        16,
+        32,
+        65
+      ],
+      "matched_prefixes": [
+        {
+          "partition_index": 0,
+          "partition_start": 0,
+          "partition_end_exclusive": 1,
+          "prefix_length": 1,
+          "runtime_internal_chunks": [
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 3.305412755799059e-07,
+            "relative_rmse": 9.452653473947624e-08,
+            "cosine": 1.000000000000046,
+            "top1_match": true,
+            "reference_top1_margin": 0.14752578735351562,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 1,
+          "passed": true
+        },
+        {
+          "partition_index": 1,
+          "partition_start": 1,
+          "partition_end_exclusive": 3,
+          "prefix_length": 3,
+          "runtime_internal_chunks": [
+            2
+          ],
+          "hidden": {
+            "max_abs": 0.18359375,
+            "rmse": 0.02249886429669006,
+            "relative_rmse": 0.022490299342346653,
+            "cosine": 0.9997470891102235,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.5823030471801758,
+            "rmse": 0.17930572620116147,
+            "relative_rmse": 0.030958195538722564,
+            "cosine": 0.9998999553250867,
+            "top1_match": true,
+            "reference_top1_margin": 0.018934249877929688,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 3,
+          "passed": false
+        },
+        {
+          "partition_index": 2,
+          "partition_start": 3,
+          "partition_end_exclusive": 7,
+          "prefix_length": 7,
+          "runtime_internal_chunks": [
+            4
+          ],
+          "hidden": {
+            "max_abs": 0.4375,
+            "rmse": 0.024871770737665222,
+            "relative_rmse": 0.024872066372059225,
+            "cosine": 0.9996906992635124,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.2852954864501953,
+            "rmse": 0.03838068128993719,
+            "relative_rmse": 0.00693644853002569,
+            "cosine": 0.9999785426927322,
+            "top1_match": true,
+            "reference_top1_margin": 1.0536823272705078,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 7,
+          "passed": false
+        },
+        {
+          "partition_index": 3,
+          "partition_start": 7,
+          "partition_end_exclusive": 14,
+          "prefix_length": 14,
+          "runtime_internal_chunks": [
+            7
+          ],
+          "hidden": {
+            "max_abs": 0.75,
+            "rmse": 0.04266157593034701,
+            "relative_rmse": 0.0426663505608959,
+            "cosine": 0.9990898115010767,
+            "passed": false
+          },
+          "scores": {
+            "max_abs": 0.4787473678588867,
+            "rmse": 0.04488069628783979,
+            "relative_rmse": 0.007457200629088951,
+            "cosine": 0.9999722939057133,
+            "top1_match": true,
+            "reference_top1_margin": 1.2127094268798828,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": false
+          },
+          "request_length": 14,
+          "passed": false
+        },
+        {
+          "partition_index": 4,
+          "partition_start": 14,
+          "partition_end_exclusive": 30,
+          "prefix_length": 30,
+          "runtime_internal_chunks": [
+            16
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 1.9073486328125e-06,
+            "rmse": 4.051755708898404e-07,
+            "relative_rmse": 6.150548812559666e-08,
+            "cosine": 1.0000000000003166,
+            "top1_match": true,
+            "reference_top1_margin": 0.6878414154052734,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 30,
+          "passed": true
+        },
+        {
+          "partition_index": 5,
+          "partition_start": 30,
+          "partition_end_exclusive": 62,
+          "prefix_length": 62,
+          "runtime_internal_chunks": [
+            32
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.0305087001841686e-07,
+            "relative_rmse": 8.437715439835047e-08,
+            "cosine": 1.000000000000569,
+            "top1_match": true,
+            "reference_top1_margin": 0.6041107177734375,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 62,
+          "passed": true
+        },
+        {
+          "partition_index": 6,
+          "partition_start": 62,
+          "partition_end_exclusive": 127,
+          "prefix_length": 127,
+          "runtime_internal_chunks": [
+            32,
+            32,
+            1
+          ],
+          "hidden": {
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "relative_rmse": 0.0,
+            "cosine": 1.0,
+            "passed": true
+          },
+          "scores": {
+            "max_abs": 3.814697265625e-06,
+            "rmse": 4.301634488078981e-07,
+            "relative_rmse": 5.441142537873365e-08,
+            "cosine": 1.00000000000022,
+            "top1_match": true,
+            "reference_top1_margin": 1.1437664031982422,
+            "top5_overlap": 5,
+            "ranking_pass": true,
+            "passed": true
+          },
+          "request_length": 127,
+          "passed": true
+        }
+      ],
+      "request_disposed": true,
+      "passed": false
+    }
+  ],
+  "model_dir": "<PROJECT_ROOT>/artifacts/04d-cpu/full-candidate-5",
+  "package_identity": {
+    "schema_version": 1,
+    "packages": [
+      {
+        "name": "embedding",
+        "files": [
+          {
+            "path": "embedding.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 63736,
+            "sha256": "b316213a2ed802a17ea101f055bbcb91f3a63551d29b0228fa2e347307dbbe62"
+          },
+          {
+            "path": "embedding.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 931923200,
+            "sha256": "f4b84c85e7e2fa64952bba1e3af8e9a076ff6895168ae4b41f215a0a9b18edde"
+          },
+          {
+            "path": "embedding.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "8700f3e470a237dbdc30a5bdfdda7653ecafc2786fe21cc1f36c0608ca7761f6"
+          }
+        ],
+        "sha256": "5d986b468943ba8cf3edd0bc338567c77d516fcf2e65bae2ee745d3364852554"
+      },
+      {
+        "name": "0",
+        "files": [
+          {
+            "path": "0.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4328247,
+            "sha256": "be10cb833f797b2266698e96880b611ec3d0cdedf3da8982c0c242d1950b436d"
+          },
+          {
+            "path": "0.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272304000,
+            "sha256": "3ccc82720ddffbbf0529b1a471d19548a44bd99265ab8fd59b4a5eac61f8d43f"
+          },
+          {
+            "path": "0.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "e44eebc36fb7370339b1bb0207ac987aab674532ae263ab3c016a0618be4a0d1"
+          }
+        ],
+        "sha256": "39d61e7ad45b7aeed4ad0999de568c908abc50718a31fe1bb4ec9b308040aa46"
+      },
+      {
+        "name": "1",
+        "files": [
+          {
+            "path": "1.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4354612,
+            "sha256": "f9f6dce037579bb09a5a5756f2d6d0857158226d30c95eeabe24e3243b54eb2e"
+          },
+          {
+            "path": "1.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272304000,
+            "sha256": "5e5d443888781d4a556067dbe1ddd78cb2b7e0de67f87d6723a1386ce71f5e9c"
+          },
+          {
+            "path": "1.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "8bbb2a19b51b3e78004568f7e5a4ffb8b50d816e0346f07a3f7c5793bbd759ab"
+          }
+        ],
+        "sha256": "3f0629b2aa7182f282f44869e89f641f3dab394ab88b2cf105fd8b40896d6638"
+      },
+      {
+        "name": "2",
+        "files": [
+          {
+            "path": "2.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4327985,
+            "sha256": "d7908dc96bba327467f8b756d1ff747d875a52dfaf507b66c26e21c5152a1c98"
+          },
+          {
+            "path": "2.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272304000,
+            "sha256": "06d1b8a3e09c17766dfc787b87d800069f7ba38efa95de7fe9ab1e9b1d4118d5"
+          },
+          {
+            "path": "2.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "eb1d7d3afb7f7d6e20463bf451e873f682c38eef4e82aa2aa0d731bc04c99ec7"
+          }
+        ],
+        "sha256": "f14b95137a4f01ce0bae8ab2254e8df899815f9c0d78fecfcbe2a74d14d3afc0"
+      },
+      {
+        "name": "3",
+        "files": [
+          {
+            "path": "3.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4328247,
+            "sha256": "152cfd6a370c248f1c601e7198466ee9a33d7696712d9c2b4d60adc20e0d2b51"
+          },
+          {
+            "path": "3.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272304000,
+            "sha256": "155b124928af40d63455aab01d4ece42b5f77c38e106bfd39e44d82c5e614cd0"
+          },
+          {
+            "path": "3.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "e393ce447324dbf5662d1f6c20a2b54f484ccb98e0dc7cc7d53189c2e2c2a5f2"
+          }
+        ],
+        "sha256": "a2e65e15b9454e7cbc80816c001240aa46ed21ec6adf7f53ba2c5f62d1ddbdc0"
+      },
+      {
+        "name": "4",
+        "files": [
+          {
+            "path": "4.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4354612,
+            "sha256": "3ba30076f5c0d184c104b25b9d3aff418e75bed4456730cdfcdd31e4c036a727"
+          },
+          {
+            "path": "4.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272304000,
+            "sha256": "80976217ccf3f711ceae06aa9637bb827f6874527d03ec893739bfdcece2fc08"
+          },
+          {
+            "path": "4.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "bbc81f2b29f68175544d7046705760e45425325c1ddec68174f59965f0eb6118"
+          }
+        ],
+        "sha256": "acabacc1e66e57fcec50dc07c27c8958a519d7286601996271647092a97bd217"
+      },
+      {
+        "name": "5",
+        "files": [
+          {
+            "path": "5.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4328087,
+            "sha256": "598277e2ad6b29fc40b72bf85793e7c682e82b4b6d0aca92712a93784d4e99d6"
+          },
+          {
+            "path": "5.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272304000,
+            "sha256": "56b15a8fef66fdc02cae8aec7b36ddc11629f30b4115be328c20892a5ed63149"
+          },
+          {
+            "path": "5.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "981082f89bd71a1d487053896d7676a72dd293fb431aad4dc0f7e5c68890ee9a"
+          }
+        ],
+        "sha256": "52cd5c9e3836e85407d72951f3df7635a8e4155bab86ff15e097fcccb95dd6c6"
+      },
+      {
+        "name": "6",
+        "files": [
+          {
+            "path": "6.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4528020,
+            "sha256": "76680499d87a466cf7b2fab6247796ceda51bec3ce55e1b9f3c152e5f0fa38b4"
+          },
+          {
+            "path": "6.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272512640,
+            "sha256": "604b17de0653f33de2caa1e2c02d70cc605193dc9d8c901528d1ad240417136a"
+          },
+          {
+            "path": "6.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "d9ce6e0cd109fbe1813b2e056e09577d4eeb4db2fd73c6df397d21e484cf4c21"
+          }
+        ],
+        "sha256": "d93b82637bf1035f08885fee0908ca989dae942f20369413569996ceb86d0ca1"
+      },
+      {
+        "name": "7",
+        "files": [
+          {
+            "path": "7.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4354612,
+            "sha256": "cc69f8f51cc8636a0f1b2df882dc9c7ce7fc6b9184e3e161c50ca1790f8f75bf"
+          },
+          {
+            "path": "7.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272304000,
+            "sha256": "4f647177f03cc25a0a7c3cbf7c627d58c9ccd2cf15531e7ee5d0df12ef83429f"
+          },
+          {
+            "path": "7.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "e25a1079718001047594da6b4d5295605b1cc04f974fafd80249c64e09d363a0"
+          }
+        ],
+        "sha256": "4964280bd2de30c6d2d0728e234053256f6aa8c719eb9cb867ed88f797db3355"
+      },
+      {
+        "name": "8",
+        "files": [
+          {
+            "path": "8.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4327985,
+            "sha256": "74246e2c4f25a6d331ce4cdf90771a9b368036536e68676f0e6f968043649025"
+          },
+          {
+            "path": "8.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272304000,
+            "sha256": "6c0b8dfcff706d0724a46003280f4491f48bb8da9587bd9bc1f6a5252eb4da02"
+          },
+          {
+            "path": "8.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "0f58e9cdae3fa9b9a9367e1f91b5d001317a9c7e9b63b8b684ae9fe1893c2caf"
+          }
+        ],
+        "sha256": "3ae46184561776158f51dffe3bf035f5e7ac775144f156c9d688648ae603ef80"
+      },
+      {
+        "name": "9",
+        "files": [
+          {
+            "path": "9.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4328247,
+            "sha256": "0bf8d03c47af6a99e062d211254d30dff5fa3a44cc3a14c72017827c6f7f0ce3"
+          },
+          {
+            "path": "9.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272304000,
+            "sha256": "31c41354d4d81ef096dfc4d20d6d962876ca83e4652464cf8891d43c1fe309be"
+          },
+          {
+            "path": "9.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "1aceb3cd705eab04d126e942866076ea9c23c1a9cb4a82826775cfd4dc5b966c"
+          }
+        ],
+        "sha256": "95704007dda24dd54adc4634a5858290e91019fee5b4121608036a011eb3f607"
+      },
+      {
+        "name": "10",
+        "files": [
+          {
+            "path": "10.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4354356,
+            "sha256": "25bd29f78a89faec66a9d4eb264eb41de9840137e74ab909c6ad585471cbaa56"
+          },
+          {
+            "path": "10.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272304000,
+            "sha256": "b9ce7d55640c2562f5b5f74901d437aa50cd8999d77568a3f9ee9cb54badce85"
+          },
+          {
+            "path": "10.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "66e1257355b9601213de1c4460e9062f8f6ee058ccf0d32a00ca915ab465e0be"
+          }
+        ],
+        "sha256": "53796f6bdcfe768cdf73906612d59506ce2b7309bbbb3c7df97063105894d3a0"
+      },
+      {
+        "name": "11",
+        "files": [
+          {
+            "path": "11.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 4588970,
+            "sha256": "13e52b75228d916476d6d7cefa12b37a43b9520006ddf2966b57d4837401daf2"
+          },
+          {
+            "path": "11.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 272512640,
+            "sha256": "24b84a2c120e4d10e6c09c39c469c50929cadf48f35f4da448509722f0e9dd54"
+          },
+          {
+            "path": "11.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "13475b58311ab22118cfb7028f9e0e32ff71458fba90bb1b449f18096ad098eb"
+          }
+        ],
+        "sha256": "28c00f6fc43278f8f017a4763c6e0f6c00a86fc43f9033af44aab1a6a6c2587d"
+      },
+      {
+        "name": "head",
+        "files": [
+          {
+            "path": "head.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+            "size": 58102,
+            "sha256": "a726313b2c173b04a462388655969eba18f8250716aa5246ce1528b2ac3db0d1"
+          },
+          {
+            "path": "head.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+            "size": 776605312,
+            "sha256": "6d89c2ba45c4997054987cd79d17e087c92a406e8a4273f4f15118679cdfcc44"
+          },
+          {
+            "path": "head.mlpackage/Manifest.json",
+            "size": 617,
+            "sha256": "19dc03942c5a3b60718cffbb8a75cf52c3cbbca0dab9046123279d3c440f1443"
+          }
+        ],
+        "sha256": "ec0f2ccc9e773334b267ad441148cd6e9d02d4ac0849f92a0eb18c8524bd305a"
+      }
+    ],
+    "aggregate_sha256": "aced450babb69e87bae9f0cca764d7ea16b883b6f001536c3078ca2ae82af7e2"
+  },
+  "load_seconds": {
+    "embedding": 2.1374972919002175,
+    "0": 12.117954584769905,
+    "1": 12.225399333052337,
+    "2": 12.059739332646132,
+    "3": 12.020789916627109,
+    "4": 12.263392833061516,
+    "5": 12.15339354146272,
+    "6": 13.368250333704054,
+    "7": 12.46926954202354,
+    "8": 12.072595625184476,
+    "9": 12.132209875620902,
+    "10": 12.30720491707325,
+    "11": 13.338971291668713,
+    "head": 1.829005166888237
+  },
+  "reference_semantics": "native_endpoint_hidden_per_matched_prefix",
+  "partition_repeat": {
+    "input_length": 33,
+    "first_partitioning": [
+      33
+    ],
+    "second_partitioning": [
+      1,
+      32
+    ],
+    "scores_exact": true,
+    "hidden_exact": true,
+    "requests_disposed": true
+  },
+  "elapsed_seconds": 441.568500995636,
+  "numerical_pass": false,
+  "partition_repeat_pass": true,
+  "passed": false
+}

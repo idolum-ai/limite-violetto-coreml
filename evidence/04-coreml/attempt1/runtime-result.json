@@ -1,0 +1,9 @@
+{
+  "exit_code": 134,
+  "compute_units": "CPU_AND_GPU",
+  "scope": "four-layer shard with dynamic cache read",
+  "native_assertion": "MPSNDArray dimension length > INT_MAX",
+  "cpu_execution": "succeeded; comparisons in shard-runtime.log",
+  "change": "read fixed full cache capacity and causally mask future slots",
+  "fixed_candidate": "../shard-runtime.json"
+}

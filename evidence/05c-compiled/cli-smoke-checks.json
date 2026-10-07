@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": {
+    "prompt_exact": true,
+    "two_reference_tokens_exact": true,
+    "two_token_budget": true,
+    "length_limited_expected": true,
+    "compiled_adapter": true,
+    "cpu_only": true,
+    "explicit_eos": true,
+    "sampled_seed0": true,
+    "stream_text_emitted": true
+  },
+  "result_sha256": "1f57a4c85b812bb45e4f585db04979bed13859ffe969d79461fb16067a33cd6c",
+  "exit_code": 0
+}

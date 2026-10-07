@@ -1,0 +1,17 @@
+{
+  "note": "Observed tool process completions, recorded by supervising agent.",
+  "exits": {
+    "full-cache-1": 0,
+    "compiled-first": 0,
+    "package-control": 0,
+    "compiled-reopen1": 0,
+    "compiled-reopen2": 0,
+    "short": 0,
+    "partitions": 0,
+    "cli-smoke": 0,
+    "boundaries": 0,
+    "generation": 0,
+    "aggregator-first": 1,
+    "aggregator-rerun1": 0
+  }
+}

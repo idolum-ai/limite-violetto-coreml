@@ -1,0 +1,3159 @@
+{
+  "actual_device_placement": "unverified; compute policy only",
+  "builder_result_sha256": "a9c64b817e5046984e266c3824f2a274b0a169c7dec189307b4305b867fb51f7",
+  "calls": [
+    {
+      "chunk": 0,
+      "input_unchanged": true,
+      "model": "original",
+      "outputs": {
+        "dtypes": {
+          "tap23_out": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-original/outputs.npz",
+        "sha256": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+        "shapes": {
+          "tap23_out": [
+            1,
+            32,
+            1280
+          ],
+          "y": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "policy": "CPU",
+      "saved_factorial_outputs": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "saved_factorial_state_after": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-original/state-after.npz",
+        "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_restored_exact": true
+    },
+    {
+      "chunk": 1,
+      "input_unchanged": true,
+      "model": "original",
+      "outputs": {
+        "dtypes": {
+          "tap23_out": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-original/outputs.npz",
+        "sha256": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+        "shapes": {
+          "tap23_out": [
+            1,
+            12,
+            1280
+          ],
+          "y": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "policy": "CPU",
+      "saved_factorial_outputs": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "saved_factorial_state_after": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-original/state-after.npz",
+        "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_restored_exact": true
+    },
+    {
+      "chunk": 0,
+      "input_unchanged": true,
+      "model": "tapped",
+      "outputs": {
+        "dtypes": {
+          "k_7": "float32",
+          "k_9": "float32",
+          "tap23_out": "float32",
+          "value_5": "float32",
+          "x_5": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-tapped/outputs.npz",
+        "sha256": "8c51f640c70658298072d4c3d979c9260e8b0818d4ba96f4458f3379f3f85be8",
+        "shapes": {
+          "k_7": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "k_9": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "tap23_out": [
+            1,
+            32,
+            1280
+          ],
+          "value_5": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "x_5": [
+            1,
+            32,
+            1280
+          ],
+          "y": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "policy": "CPU",
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-tapped/state-after.npz",
+        "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_restored_exact": true
+    },
+    {
+      "chunk": 1,
+      "input_unchanged": true,
+      "model": "tapped",
+      "outputs": {
+        "dtypes": {
+          "k_7": "float32",
+          "k_9": "float32",
+          "tap23_out": "float32",
+          "value_5": "float32",
+          "x_5": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-tapped/outputs.npz",
+        "sha256": "84dd71fb5cf8ad1a65723140b2092fccb1e26120ad2e2525c999b53396c7c8be",
+        "shapes": {
+          "k_7": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "k_9": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "tap23_out": [
+            1,
+            12,
+            1280
+          ],
+          "value_5": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "x_5": [
+            1,
+            12,
+            1280
+          ],
+          "y": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "policy": "CPU",
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-tapped/state-after.npz",
+        "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_restored_exact": true
+    },
+    {
+      "chunk": 0,
+      "input_unchanged": true,
+      "model": "original",
+      "outputs": {
+        "dtypes": {
+          "tap23_out": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-original/outputs.npz",
+        "sha256": "c4f7ef5c921b64eb91a587b1d63fbdc309d1509637bee764d8ca2f18b74b60d9",
+        "shapes": {
+          "tap23_out": [
+            1,
+            32,
+            1280
+          ],
+          "y": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "policy": "GPU",
+      "saved_factorial_outputs": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "saved_factorial_state_after": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-original/state-after.npz",
+        "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_restored_exact": true
+    },
+    {
+      "chunk": 1,
+      "input_unchanged": true,
+      "model": "original",
+      "outputs": {
+        "dtypes": {
+          "tap23_out": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-original/outputs.npz",
+        "sha256": "0d8ed9267430c38912ee848329a19064f7ed074234f6048dba4f8f697a9da8e5",
+        "shapes": {
+          "tap23_out": [
+            1,
+            12,
+            1280
+          ],
+          "y": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "policy": "GPU",
+      "saved_factorial_outputs": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "saved_factorial_state_after": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-original/state-after.npz",
+        "sha256": "55c200e0bde28606311272044e525547a72d623ae1adf0f6be6334e32eb98ade",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_restored_exact": true
+    },
+    {
+      "chunk": 0,
+      "input_unchanged": true,
+      "model": "tapped",
+      "outputs": {
+        "dtypes": {
+          "k_7": "float32",
+          "k_9": "float32",
+          "tap23_out": "float32",
+          "value_5": "float32",
+          "x_5": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-tapped/outputs.npz",
+        "sha256": "6f6290f7ae375c31bc43561b9e33948897778f5f36212f178a31957332ba2814",
+        "shapes": {
+          "k_7": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "k_9": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "tap23_out": [
+            1,
+            32,
+            1280
+          ],
+          "value_5": [
+            1,
+            32,
+            2,
+            128
+          ],
+          "x_5": [
+            1,
+            32,
+            1280
+          ],
+          "y": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "policy": "GPU",
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-tapped/state-after.npz",
+        "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_restored_exact": true
+    },
+    {
+      "chunk": 1,
+      "input_unchanged": true,
+      "model": "tapped",
+      "outputs": {
+        "dtypes": {
+          "k_7": "float32",
+          "k_9": "float32",
+          "tap23_out": "float32",
+          "value_5": "float32",
+          "x_5": "float32",
+          "y": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-tapped/outputs.npz",
+        "sha256": "a055aba9de7ce181202e277c1f79f7c9ea546aa0ea2581e79063a4eee3691b6b",
+        "shapes": {
+          "k_7": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "k_9": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "tap23_out": [
+            1,
+            12,
+            1280
+          ],
+          "value_5": [
+            1,
+            12,
+            2,
+            128
+          ],
+          "x_5": [
+            1,
+            12,
+            1280
+          ],
+          "y": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "policy": "GPU",
+      "state_after": {
+        "dtypes": {
+          "inner_k_cache_0": "float32",
+          "inner_k_cache_1": "float32",
+          "inner_k_cache_2": "float32",
+          "inner_k_cache_3": "float32",
+          "inner_v_cache_0": "float32",
+          "inner_v_cache_1": "float32",
+          "inner_v_cache_2": "float32",
+          "inner_v_cache_3": "float32"
+        },
+        "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-tapped/state-after.npz",
+        "sha256": "55c200e0bde28606311272044e525547a72d623ae1adf0f6be6334e32eb98ade",
+        "shapes": {
+          "inner_k_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_k_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_0": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_1": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_2": [
+            1,
+            2048,
+            2,
+            128
+          ],
+          "inner_v_cache_3": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      },
+      "state_restored_exact": true
+    }
+  ],
+  "compiled_files": {
+    "analytics/coremldata.bin": {
+      "sha256": "4031d8d8991be0ec49e439060aec6a1a3abd80651842cfa18bec2bb8ab907f66",
+      "size": 243
+    },
+    "coremldata.bin": {
+      "sha256": "29ce92f2c111a9bc2fcc013d9443293b49dd8fffbf53d6cfc3edc3103893d691",
+      "size": 1145
+    },
+    "model.mil": {
+      "sha256": "9ce10fe69cf2ad87ba626b6011c822dab0b1b4b0cc35fcb30af47f7972965293",
+      "size": 5973880
+    },
+    "weights/weight.bin": {
+      "sha256": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b",
+      "size": 272336832
+    }
+  },
+  "diagnostic_completed": true,
+  "files": {
+    "chunk0/CPU-original/outputs": {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-original/outputs.npz",
+      "sha256": "48ee08e0b14b66a7166b0f2bb49c9d1a358071be0817c19691a55f010024b37e",
+      "shapes": {
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk0/CPU-original/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-original/state-after.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk0/CPU-tapped/outputs": {
+      "dtypes": {
+        "k_7": "float32",
+        "k_9": "float32",
+        "tap23_out": "float32",
+        "value_5": "float32",
+        "x_5": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-tapped/outputs.npz",
+      "sha256": "8c51f640c70658298072d4c3d979c9260e8b0818d4ba96f4458f3379f3f85be8",
+      "shapes": {
+        "k_7": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "k_9": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "value_5": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x_5": [
+          1,
+          32,
+          1280
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk0/CPU-tapped/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/CPU-tapped/state-after.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk0/GPU-original/outputs": {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-original/outputs.npz",
+      "sha256": "c4f7ef5c921b64eb91a587b1d63fbdc309d1509637bee764d8ca2f18b74b60d9",
+      "shapes": {
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk0/GPU-original/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-original/state-after.npz",
+      "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk0/GPU-tapped/outputs": {
+      "dtypes": {
+        "k_7": "float32",
+        "k_9": "float32",
+        "tap23_out": "float32",
+        "value_5": "float32",
+        "x_5": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-tapped/outputs.npz",
+      "sha256": "6f6290f7ae375c31bc43561b9e33948897778f5f36212f178a31957332ba2814",
+      "shapes": {
+        "k_7": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "k_9": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "tap23_out": [
+          1,
+          32,
+          1280
+        ],
+        "value_5": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x_5": [
+          1,
+          32,
+          1280
+        ],
+        "y": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk0/GPU-tapped/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/GPU-tapped/state-after.npz",
+      "sha256": "67c062dd7a1cece7cd6226acce6528c7a4926971cad4640fdecf9a5a4c18acbc",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk0/effective-inputs": {
+      "dtypes": {
+        "norm_divisor": "float32",
+        "positions": "int32",
+        "tap0": "float32",
+        "tap12": "float32",
+        "tap23": "float32",
+        "ve": "float32",
+        "x": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/effective-inputs.npz",
+      "sha256": "69ecfe41ff5a4643a329aad8b0f30bf71c7119a73f9cb703394e94c2d276c85e",
+      "shapes": {
+        "norm_divisor": [
+          1
+        ],
+        "positions": [
+          32
+        ],
+        "tap0": [
+          1,
+          32,
+          1280
+        ],
+        "tap12": [
+          1,
+          32,
+          1280
+        ],
+        "tap23": [
+          1,
+          32,
+          1280
+        ],
+        "ve": [
+          1,
+          32,
+          2,
+          128
+        ],
+        "x": [
+          1,
+          32,
+          1280
+        ]
+      }
+    },
+    "chunk0/effective-state-before": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk0/effective-state-before.npz",
+      "sha256": "53570d6de427489f796909ec841f05c4a7d6f5c2a4556daa3fd838de6d473dcc",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk1/CPU-original/outputs": {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-original/outputs.npz",
+      "sha256": "bd0f6c3a090835f4ade7275b9f0c05fca8d48118bedf6dd10c95ad8ae3a84bf4",
+      "shapes": {
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    "chunk1/CPU-original/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-original/state-after.npz",
+      "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk1/CPU-tapped/outputs": {
+      "dtypes": {
+        "k_7": "float32",
+        "k_9": "float32",
+        "tap23_out": "float32",
+        "value_5": "float32",
+        "x_5": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-tapped/outputs.npz",
+      "sha256": "84dd71fb5cf8ad1a65723140b2092fccb1e26120ad2e2525c999b53396c7c8be",
+      "shapes": {
+        "k_7": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "k_9": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "value_5": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x_5": [
+          1,
+          12,
+          1280
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    "chunk1/CPU-tapped/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/CPU-tapped/state-after.npz",
+      "sha256": "b67b0e45a91a614399d4352d99be50c2cac4e594350b61f7fcad8ac1a6d4b0e6",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk1/GPU-original/outputs": {
+      "dtypes": {
+        "tap23_out": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-original/outputs.npz",
+      "sha256": "0d8ed9267430c38912ee848329a19064f7ed074234f6048dba4f8f697a9da8e5",
+      "shapes": {
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    "chunk1/GPU-original/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-original/state-after.npz",
+      "sha256": "55c200e0bde28606311272044e525547a72d623ae1adf0f6be6334e32eb98ade",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk1/GPU-tapped/outputs": {
+      "dtypes": {
+        "k_7": "float32",
+        "k_9": "float32",
+        "tap23_out": "float32",
+        "value_5": "float32",
+        "x_5": "float32",
+        "y": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-tapped/outputs.npz",
+      "sha256": "a055aba9de7ce181202e277c1f79f7c9ea546aa0ea2581e79063a4eee3691b6b",
+      "shapes": {
+        "k_7": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "k_9": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "tap23_out": [
+          1,
+          12,
+          1280
+        ],
+        "value_5": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x_5": [
+          1,
+          12,
+          1280
+        ],
+        "y": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    "chunk1/GPU-tapped/state-after": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/GPU-tapped/state-after.npz",
+      "sha256": "55c200e0bde28606311272044e525547a72d623ae1adf0f6be6334e32eb98ade",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    },
+    "chunk1/effective-inputs": {
+      "dtypes": {
+        "norm_divisor": "float32",
+        "positions": "int32",
+        "tap0": "float32",
+        "tap12": "float32",
+        "tap23": "float32",
+        "ve": "float32",
+        "x": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/effective-inputs.npz",
+      "sha256": "9eb45ae6546f129807c180157e0b72160c43a57e0585509e19acd89f0873c36d",
+      "shapes": {
+        "norm_divisor": [
+          1
+        ],
+        "positions": [
+          12
+        ],
+        "tap0": [
+          1,
+          12,
+          1280
+        ],
+        "tap12": [
+          1,
+          12,
+          1280
+        ],
+        "tap23": [
+          1,
+          12,
+          1280
+        ],
+        "ve": [
+          1,
+          12,
+          2,
+          128
+        ],
+        "x": [
+          1,
+          12,
+          1280
+        ]
+      }
+    },
+    "chunk1/effective-state-before": {
+      "dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "path": "evidence/06c-gpu-localization/key-taps-replay-1/chunk1/effective-state-before.npz",
+      "sha256": "e38b2945153fa8921dfc02d2d7d7250c70c9b49da87e0aec08123b99f5693b8e",
+      "shapes": {
+        "inner_k_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_k_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_0": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_1": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_2": [
+          1,
+          2048,
+          2,
+          128
+        ],
+        "inner_v_cache_3": [
+          1,
+          2048,
+          2,
+          128
+        ]
+      }
+    }
+  },
+  "fresh_states": {
+    "python_references_deleted": 8,
+    "restored_exact": 8
+  },
+  "gpu_numerical_qualification": "not_qualified",
+  "graph_check": {
+    "added_taps": [
+      {
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "x_5",
+        "operation_index": 535,
+        "operation_sha256": "a814b5f34e725a5864712c638ff4543bbfcc42bbb7db75b5964c42eea6be550c",
+        "operation_type": "mul",
+        "value_type_sha256": "eaca2e08d1c0ca76b5ed3e8e61df25f1eced482aa32b12d3cafcff9c37ab549a"
+      },
+      {
+        "mil_shape": [
+          1,
+          null,
+          2,
+          128
+        ],
+        "name": "value_5",
+        "operation_index": 1169,
+        "operation_sha256": "bcae8079955ea4e57d7864fb68fd60ed4ee8bce8d11663d2293647d1a97c894c",
+        "operation_type": "reshape",
+        "value_type_sha256": "afa64f6190374710b2f43480cc2ba6992ba6cc9a0c856de303448e22e2506030"
+      },
+      {
+        "mil_shape": [
+          1,
+          null,
+          2,
+          128
+        ],
+        "name": "k_7",
+        "operation_index": 1592,
+        "operation_sha256": "7c439ed14b18def8971796ad5ed0d0effc7e47e3fd88222267e0fdb579a6d352",
+        "operation_type": "mul",
+        "value_type_sha256": "afa64f6190374710b2f43480cc2ba6992ba6cc9a0c856de303448e22e2506030"
+      },
+      {
+        "mil_shape": [
+          1,
+          null,
+          2,
+          128
+        ],
+        "name": "k_9",
+        "operation_index": 1766,
+        "operation_sha256": "5a1e0e19341f42f7b6806dd9bbeb3bb5da7d579bddaddde88d861b98435a5e65",
+        "operation_type": "mul",
+        "value_type_sha256": "afa64f6190374710b2f43480cc2ba6992ba6cc9a0c856de303448e22e2506030"
+      }
+    ],
+    "all_original_operations_byte_identical": true,
+    "default_query_length": 3,
+    "non_output_spec_sha256": "b23d4c1e9127b998c3e0e04cb2c2ffa4a9247a4cb646e4b38c275af906c531da",
+    "only_description_and_block_outputs_changed": true,
+    "original_operations": 42498,
+    "original_operations_sha256": "2e07c483906aa118327c2b97c3c58ed92039d19e7560a37d16ff81fda970951a",
+    "original_outputs_preserved": [
+      "y",
+      "tap23_out"
+    ],
+    "output_schemas": [
+      {
+        "data_type": 65568,
+        "default_shape": [
+          1,
+          3,
+          1280
+        ],
+        "name": "x_5",
+        "shape_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            32
+          ],
+          [
+            1280,
+            1280
+          ]
+        ]
+      },
+      {
+        "data_type": 65568,
+        "default_shape": [
+          1,
+          3,
+          2,
+          128
+        ],
+        "name": "value_5",
+        "shape_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            32
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            128,
+            128
+          ]
+        ]
+      },
+      {
+        "data_type": 65568,
+        "default_shape": [
+          1,
+          3,
+          2,
+          128
+        ],
+        "name": "k_7",
+        "shape_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            32
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            128,
+            128
+          ]
+        ]
+      },
+      {
+        "data_type": 65568,
+        "default_shape": [
+          1,
+          3,
+          2,
+          128
+        ],
+        "name": "k_9",
+        "shape_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            32
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            128,
+            128
+          ]
+        ]
+      }
+    ],
+    "passed": true,
+    "query_length_range": [
+      1,
+      32
+    ],
+    "state_names_preserved": [
+      "inner_k_cache_0",
+      "inner_v_cache_0",
+      "inner_k_cache_1",
+      "inner_v_cache_1",
+      "inner_k_cache_2",
+      "inner_v_cache_2",
+      "inner_k_cache_3",
+      "inner_v_cache_3"
+    ],
+    "variant_operations_sha256": "2e07c483906aa118327c2b97c3c58ed92039d19e7560a37d16ff81fda970951a"
+  },
+  "instrumentation_valid": true,
+  "interpretation_gate": "Original-vs-tapped endpoints and all eight states exact within each policy and chunk",
+  "load_seconds": {
+    "CPU-original": 0.5300045423209667,
+    "CPU-tapped": 17.767609249800444,
+    "GPU-original": 1.3299612505361438,
+    "GPU-tapped": 20.019447334110737
+  },
+  "original_compiled_identity": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+  "passed": true,
+  "prediction_guard": {
+    "gil_releases": 8,
+    "installed": true,
+    "plain_calls": 0,
+    "state_calls": 8
+  },
+  "protocol_sha256": "3fb816d58b32f6b3923a188e4446c81dabaf4afaf0ca2910f3f5132d4f7ef1ce",
+  "runtime_provenance": {
+    "artifacts/04b-reliability/cleanup_guard.dylib": "558eebcf646c8901cd09e5f7cd9f348b06237cbae0718fe3d312416e64bb4caa",
+    "artifacts/04e-runtime/prediction_guard.dylib": "88bf3b54317f35a7d2a998fa51aae688123e2a3caebce8bd8fff3d996722d16e",
+    "coreml_port/cleanup_guard.py": "8610d3e5d0f327691901fbee7d94cdeb0606f816287b0bd13d8b1eacf769a154",
+    "coreml_port/native/prediction_guard.mm": "eee001276d7390593b7834126e65eba09edbb5dc3852680971c87558010037c4",
+    "coreml_port/prediction_guard.py": "e0fedea98fa3db2fe15ca17aec055b6b8053ee8fba94e57b7579d35850e3767f",
+    "coreml_port/runtime.py": "4c403bfbb02c0c67ecd8a57fe61f0bd4baf20e94279d52ee7984243ed77105bf"
+  },
+  "same_policy_controls": [
+    {
+      "chunk": 0,
+      "endpoint": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "original_matches_saved_factorial": true,
+      "passed": true,
+      "policy": "CPU",
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "chunk": 0,
+      "endpoint": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      },
+      "original_matches_saved_factorial": true,
+      "passed": true,
+      "policy": "GPU",
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "chunk": 1,
+      "endpoint": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "original_matches_saved_factorial": true,
+      "passed": true,
+      "policy": "CPU",
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "chunk": 1,
+      "endpoint": {
+        "tap23_out": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        },
+        "y": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      },
+      "original_matches_saved_factorial": true,
+      "passed": true,
+      "policy": "GPU",
+      "states": {
+        "inner_k_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_k_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_0": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_1": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_2": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        },
+        "inner_v_cache_3": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            2048,
+            2,
+            128
+          ]
+        }
+      }
+    }
+  ],
+  "script_sha256": "95ad9a76e9a80d68b4da209b68dab5e6730426a54ab260111ee6d9e15778e17b",
+  "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "source_files": {
+    "Data/com.apple.CoreML/model.mlmodel": {
+      "sha256": "6cdf80c050b8076357009efe870618afc1210fa0ddd07d06df6749caefcf6950",
+      "size": 5719950
+    },
+    "Data/com.apple.CoreML/weights/weight.bin": {
+      "sha256": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b",
+      "size": 272336832
+    },
+    "Manifest.json": {
+      "sha256": "a0b8ecc7aebf27908cbce79298bec4435dd80f63e12f9dc0b2d6dea823e912e8",
+      "size": 617
+    }
+  },
+  "source_result_sha256": "ed27ff2a0b99bef14822450d044c2ec9e02206c647c934188c3f61c4c9886bb8",
+  "status": "completed",
+  "tap_policy_comparisons": [
+    {
+      "chunk": 0,
+      "comparisons": {
+        "k_7": {
+          "dtype": "float32",
+          "exact": false,
+          "first_difference": [
+            0,
+            12,
+            1,
+            40
+          ],
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "k_9": {
+          "dtype": "float32",
+          "exact": false,
+          "first_difference": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "value_5": {
+          "dtype": "float32",
+          "exact": false,
+          "first_difference": [
+            0,
+            12,
+            1,
+            71
+          ],
+          "shape": [
+            1,
+            32,
+            2,
+            128
+          ]
+        },
+        "x_5": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            32,
+            1280
+          ]
+        }
+      }
+    },
+    {
+      "chunk": 1,
+      "comparisons": {
+        "k_7": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "k_9": {
+          "dtype": "float32",
+          "exact": false,
+          "first_difference": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "value_5": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            2,
+            128
+          ]
+        },
+        "x_5": {
+          "dtype": "float32",
+          "exact": true,
+          "first_difference": null,
+          "shape": [
+            1,
+            12,
+            1280
+          ]
+        }
+      }
+    }
+  ],
+  "tapped_compiled": "artifacts/06c-gpu-localization/key-taps-1/0.mlmodelc",
+  "tapped_package": "artifacts/06c-gpu-localization/key-taps-1/0.mlpackage",
+  "variant_files": {
+    "Data/com.apple.CoreML/model.mlmodel": {
+      "sha256": "895f44965e835b73d5a3a699d5d559200be8a9228029db709dbafd411eb9c739",
+      "size": 5720175
+    },
+    "Data/com.apple.CoreML/weights/weight.bin": {
+      "sha256": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b",
+      "size": 272336832
+    },
+    "Manifest.json": {
+      "sha256": "a0b8ecc7aebf27908cbce79298bec4435dd80f63e12f9dc0b2d6dea823e912e8",
+      "size": 617
+    }
+  }
+}

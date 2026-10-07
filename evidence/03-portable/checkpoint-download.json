@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-09-22T18:37:40.220135+00:00",
+  "source": "https://huggingface.co/paradigma-inc/limite-1b-violetto/resolve/9402e422e87b220507963cd42c997459c1e87b43/model.safetensors",
+  "revision": "9402e422e87b220507963cd42c997459c1e87b43",
+  "path": "sources/model/model.safetensors",
+  "bytes": 2070811520,
+  "sha256": "9dc7e89e30acf473629f98ac3ade535fb05cc044fe7e399b78d0bc957283a5f5",
+  "size_verified": true,
+  "sha256_verified": true,
+  "elapsed_seconds": 186.34497908409685
+}

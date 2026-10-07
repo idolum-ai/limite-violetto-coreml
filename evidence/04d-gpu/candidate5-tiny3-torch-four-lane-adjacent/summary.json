@@ -1,0 +1,141 @@
+{
+  "status": "complete",
+  "positions": [
+    0,
+    1,
+    2
+  ],
+  "fold": "adjacent",
+  "source_sha256": "e8c565d4dee0252596faa22f9449a0fd4b9eb0420621370b7bbea18e9ee0d7ee",
+  "script_sha256": "f8876e8dbc32b572654814e546c3ad75bdfdc50bedcfdfd5af6796eab6bb9e7f",
+  "four_lane_scores_sha256": "0174cbe08c9d50eb515ab0ac27cc867ac3348c513d456a965386fce3d716da58",
+  "paired_product_sha256": "9145720c24d706940ddc7039521a3cd76b8706419e964070730bd0f81dbe59e3",
+  "groups": [
+    {
+      "group": 0,
+      "input_reference": "embedding_norm",
+      "output_reference": "layer_3",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 1,
+      "input_reference": "layer_3",
+      "output_reference": "layer_7",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 2,
+      "input_reference": "layer_7",
+      "output_reference": "layer_11",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 3,
+      "input_reference": "layer_11",
+      "output_reference": "layer_15",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 4,
+      "input_reference": "layer_15",
+      "output_reference": "layer_19",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 5,
+      "input_reference": "layer_19",
+      "output_reference": "layer_23",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "tap23_out": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 6,
+      "input_reference": "layer_23",
+      "output_reference": "layer_27",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 7,
+      "input_reference": "layer_27",
+      "output_reference": "layer_31",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 8,
+      "input_reference": "layer_31",
+      "output_reference": "layer_35",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 9,
+      "input_reference": "layer_35",
+      "output_reference": "layer_39",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 10,
+      "input_reference": "layer_39",
+      "output_reference": "layer_43",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "group": 11,
+      "input_reference": "layer_43",
+      "output_reference": "final_hidden",
+      "y": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      }
+    }
+  ],
+  "all_exact": true
+}

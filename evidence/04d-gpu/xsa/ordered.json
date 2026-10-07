@@ -1,0 +1,76 @@
+{
+  "script_sha256": "c176c1b9a3d57567df2e640504d433d7acecc9956fa172d39f7a9af2f7ae2453",
+  "ordered_norm_sha256": "974cb9dcdd4e1299e19535581a6ecbb1d37a51ec26f430e4509f563277e91b32",
+  "input_hashes": {
+    "y": "a68c38741d2c86794b92bf88ab932689e2cd9d3c1a5ac23b33d8eda829b7f14b",
+    "v": "d0703e1758026c870b52fd1747eb65f6980040434188df9b34dd41c8eb48d043",
+    "alpha": "babe286e562591b9f9a2e70335f8f446544e4477733458975f06fe1ccdbb05cf"
+  },
+  "torch_candidate_exact": true,
+  "results": {
+    "CPU_ONLY": {
+      "norm": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "vn": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "product": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "dot": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "correction": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "rounded": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      }
+    },
+    "CPU_AND_GPU": {
+      "norm": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "vn": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "product": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "dot": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "correction": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      },
+      "rounded": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "mismatches": []
+      }
+    }
+  }
+}

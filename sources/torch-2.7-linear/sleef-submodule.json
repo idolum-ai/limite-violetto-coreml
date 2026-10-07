@@ -1,0 +1,17 @@
+{
+  "name": "sleef",
+  "path": "third_party/sleef",
+  "sha": "56e1f79cb140fb9326d612d0be06b5250565cade",
+  "size": 0,
+  "url": "https://api.github.com/repos/pytorch/pytorch/contents/third_party/sleef?ref=134179474539648ba7dee1317959529fbd0e7f89",
+  "html_url": "https://github.com/shibatch/sleef/tree/56e1f79cb140fb9326d612d0be06b5250565cade",
+  "git_url": "https://api.github.com/repos/shibatch/sleef/git/trees/56e1f79cb140fb9326d612d0be06b5250565cade",
+  "download_url": null,
+  "type": "submodule",
+  "submodule_git_url": "https://github.com/shibatch/sleef",
+  "_links": {
+    "self": "https://api.github.com/repos/pytorch/pytorch/contents/third_party/sleef?ref=134179474539648ba7dee1317959529fbd0e7f89",
+    "git": "https://api.github.com/repos/shibatch/sleef/git/trees/56e1f79cb140fb9326d612d0be06b5250565cade",
+    "html": "https://github.com/shibatch/sleef/tree/56e1f79cb140fb9326d612d0be06b5250565cade"
+  }
+}

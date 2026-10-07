@@ -1,0 +1,4752 @@
+{
+  "device": "cpu",
+  "acceptance_sha256": "cb4d315266126df4a98194f73f8c10671310717c06ebfd191d3dac2334bf4233",
+  "limits": {
+    "score_max_abs": 0.04,
+    "hidden_relative_rmse": 0.01,
+    "hidden_min_cosine": 0.995,
+    "calibration_valid": true
+  },
+  "checks": [
+    {
+      "name": "exhaustive_weight_mapping",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reference_calibration_valid",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_0_exact_ids",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_1_exact_ids",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_2_exact_ids",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "published_eos_selected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_0_full_prefix_48_layers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_0_cached_layers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_0_cache_shape_dtype",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reset_matches_fresh",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "different_request_matches_fresh",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_1_full_prefix_48_layers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_1_cached_layers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_1_cache_shape_dtype",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_2_full_prefix_48_layers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_2_cached_layers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "prompt_2_cache_shape_dtype",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "window_full_prefix_48_layers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "window_cached_layers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "window_cache_shape_dtype",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "teacher_forced_continuation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reject_negative",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reject_padded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reject_out_of_range",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reject_overflow",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reject_wrong_owner",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "rejections_did_not_mutate_cache",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interrupted_cache_invalidated",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reject_interrupted_cache",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reset_after_interruption",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reject_generation_overflow",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "stop_semantics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "padded_generation_rows_excluded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "window_boundary_inclusive",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "actual_generation_length_stop",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "prompt_0/full/embedding_norm",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_0",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_1",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000013,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_2",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.000000000000004,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_3",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_4",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000027,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_5",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000018,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_6",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_7",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_8",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_9",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_10",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_11",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_12",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_13",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_14",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_15",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_16",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_17",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_18",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_19",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_20",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_21",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_22",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_23",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_24",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_24_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_24_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_25",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_26",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_27",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_28",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_29",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_30",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_31",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_32",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_33",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_34",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_35",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_36",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_37",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_38",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_39",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_40",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_41",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_42",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_43",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_44",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_45",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_46",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_47",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_47_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/layer_47_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/final_hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/full/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999996226,
+      "top1_reference": 151665,
+      "top1_candidate": 151665,
+      "top1_match": true,
+      "reference_top1_margin": 15.04189395904541,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/embedding_norm",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_0",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_1",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000013,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_2",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.000000000000004,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_3",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_4",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000027,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_5",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000018,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_6",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_7",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_8",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_9",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_10",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_11",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_12",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_13",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_14",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_15",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_16",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_17",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_18",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_19",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_20",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_21",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_22",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_23",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_24",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_24_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_24_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_25",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_26",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_27",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_28",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_29",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_30",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_31",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_32",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_33",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_34",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_35",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_36",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_37",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_38",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_39",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_40",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_41",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_42",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_43",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_44",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_45",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_46",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_47",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_47_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/layer_47_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/final_hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_0/cache/final_scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999996226,
+      "top1_reference": 151665,
+      "top1_candidate": 151665,
+      "top1_match": true,
+      "reference_top1_margin": 15.04189395904541,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/embedding_norm",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_0",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_1",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000027,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_2",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.000000000000005,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_3",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_4",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.000000000000003,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_5",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000024,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_6",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_7",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_8",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_9",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_10",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_11",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_12",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_13",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_14",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_15",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_16",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_17",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_18",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_19",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_20",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_21",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_22",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_23",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_24",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_24_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_24_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_25",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_26",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_27",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_28",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_29",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_30",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_31",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_32",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_33",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_34",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_35",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_36",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_37",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_38",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_39",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_40",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_41",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_42",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_43",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_44",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_45",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_46",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_47",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_47_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/layer_47_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/final_hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/full/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999993262,
+      "top1_reference": 151665,
+      "top1_candidate": 151665,
+      "top1_match": true,
+      "reference_top1_margin": 15.293951034545898,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/embedding_norm",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_0",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_1",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000027,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_2",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.000000000000005,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_3",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_4",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.000000000000003,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_5",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000024,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_6",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_7",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_8",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_9",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_10",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_11",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_12",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_13",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_14",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_15",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_16",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_17",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_18",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_19",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_20",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_21",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_22",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_23",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_24",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_24_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_24_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_25",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_26",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_27",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_28",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_29",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_30",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_31",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_32",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_33",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_34",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_35",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_36",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_37",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_38",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_39",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_40",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_41",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_42",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_43",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_44",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_45",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_46",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_47",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_47_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/layer_47_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/final_hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_1/cache/final_scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999993262,
+      "top1_reference": 151665,
+      "top1_candidate": 151665,
+      "top1_match": true,
+      "reference_top1_margin": 15.293951034545898,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/embedding_norm",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_0",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_1",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000022,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_2",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000049,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_3",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_4",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000022,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_5",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_6",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_7",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_8",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_9",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_10",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_11",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_12",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_13",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_14",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_15",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_16",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_17",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_18",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_19",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_20",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_21",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_22",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_23",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_24",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_24_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_24_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_25",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_26",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_27",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_28",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_29",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_30",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_31",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_32",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_33",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_34",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_35",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_36",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_37",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_38",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_39",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_40",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_41",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_42",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_43",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_44",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_45",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_46",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_47",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_47_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/layer_47_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/final_hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/full/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999993363,
+      "top1_reference": 151665,
+      "top1_candidate": 151665,
+      "top1_match": true,
+      "reference_top1_margin": 16.142044067382812,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/embedding_norm",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_0",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_1",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000022,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_2",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000049,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_3",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_4",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000022,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_5",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_6",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_7",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_8",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_9",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_10",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_11",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_12",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_13",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_14",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_15",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_16",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_17",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_18",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_19",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_20",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_21",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_22",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_23",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_24",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_24_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_24_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_25",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_26",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_27",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_28",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_29",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_30",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_31",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_32",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_33",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_34",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_35",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_36",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_37",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_38",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_39",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_40",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_41",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_42",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_43",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_44",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_45",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_46",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_47",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_47_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/layer_47_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/final_hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "prompt_2/cache/final_scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999993363,
+      "top1_reference": 151665,
+      "top1_candidate": 151665,
+      "top1_match": true,
+      "reference_top1_margin": 16.142044067382812,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "window/full/embedding_norm",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_0",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_1",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_2",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_3",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_4",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_5",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_6",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_7",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_8",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_9",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_10",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_11",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_12",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_13",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_14",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_15",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_16",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_17",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_18",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_19",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_20",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_21",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_22",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_23",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_24",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_24_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_24_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_25",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_26",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_27",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_28",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_29",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_30",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_31",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_32",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_33",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_34",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_35",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_36",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_37",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_38",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_39",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_40",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_41",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_42",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_43",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_44",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_45",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_46",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_47",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_47_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/full/layer_47_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/full/final_hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/full/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000006242,
+      "top1_reference": 3019,
+      "top1_candidate": 3019,
+      "top1_match": true,
+      "reference_top1_margin": 12.5471830368042,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "window/cache/position_1023_scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000002216,
+      "top1_reference": 3019,
+      "top1_candidate": 3019,
+      "top1_match": true,
+      "reference_top1_margin": 9.941112518310547,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "window/cache/position_1024_scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.000000000000665,
+      "top1_reference": 553,
+      "top1_candidate": 553,
+      "top1_match": true,
+      "reference_top1_margin": 3.7766380310058594,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "window/cache/position_1025_scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000006242,
+      "top1_reference": 3019,
+      "top1_candidate": 3019,
+      "top1_match": true,
+      "reference_top1_margin": 12.5471830368042,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "window/cache/embedding_norm",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_0",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_1",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_2",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_3",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_4",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_5",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_6",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_7",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_8",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_9",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_10",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_11",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_12",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_13",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_14",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_15",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_16",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_17",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_18",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_19",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999998,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_20",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_21",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_22",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_23",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_24",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_24_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_24_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_25",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_26",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_27",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_28",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_29",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_30",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_31",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_32",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_33",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_34",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_35",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_36",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_37",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_38",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_39",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_40",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_41",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_42",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_43",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_44",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_45",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_46",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_47",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_47_mixer_attention",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "window/cache/layer_47_mixer_residual",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "window/cache/final_hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "window/cache/final_scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000006242,
+      "top1_reference": 3019,
+      "top1_candidate": 3019,
+      "top1_match": true,
+      "reference_top1_margin": 12.5471830368042,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_0/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "teacher_0/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999997085,
+      "top1_reference": 22,
+      "top1_candidate": 22,
+      "top1_match": true,
+      "reference_top1_margin": 1.2966079711914062,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_1/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "teacher_1/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000004652,
+      "top1_reference": 9,
+      "top1_candidate": 9,
+      "top1_match": true,
+      "reference_top1_margin": 0.23096847534179688,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_2/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "teacher_2/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999987608,
+      "top1_reference": 220,
+      "top1_candidate": 220,
+      "top1_match": true,
+      "reference_top1_margin": 13.144765853881836,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_3/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "teacher_3/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999841,
+      "top1_reference": 17,
+      "top1_candidate": 17,
+      "top1_match": true,
+      "reference_top1_margin": 10.452692985534668,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_4/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "teacher_4/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000444,
+      "top1_reference": 18,
+      "top1_candidate": 18,
+      "top1_match": true,
+      "reference_top1_margin": 9.978321075439453,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_5/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "teacher_5/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000003821,
+      "top1_reference": 284,
+      "top1_candidate": 284,
+      "top1_match": true,
+      "reference_top1_margin": 2.0625247955322266,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_6/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "teacher_6/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000006266,
+      "top1_reference": 220,
+      "top1_candidate": 220,
+      "top1_match": true,
+      "reference_top1_margin": 0.3881855010986328,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_7/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "teacher_7/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999994001,
+      "top1_reference": 16,
+      "top1_candidate": 16,
+      "top1_match": true,
+      "reference_top1_margin": 0.22007369995117188,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_8/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999999999,
+      "passed": true
+    },
+    {
+      "name": "teacher_8/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0000000000000089,
+      "top1_reference": 24,
+      "top1_candidate": 24,
+      "top1_match": true,
+      "reference_top1_margin": 8.450033187866211,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_9/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "teacher_9/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999998066,
+      "top1_reference": 16,
+      "top1_candidate": 16,
+      "top1_match": true,
+      "reference_top1_margin": 9.866028785705566,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_10/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "teacher_10/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999991044,
+      "top1_reference": 30,
+      "top1_candidate": 30,
+      "top1_match": true,
+      "reference_top1_margin": 2.507669448852539,
+      "top5_overlap": 5,
+      "passed": true
+    },
+    {
+      "name": "teacher_11/hidden",
+      "kind": "hidden",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 1.0,
+      "passed": true
+    },
+    {
+      "name": "teacher_11/scores",
+      "kind": "scores",
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_rmse": 0.0,
+      "cosine": 0.9999999999997279,
+      "top1_reference": 14656,
+      "top1_candidate": 14656,
+      "top1_match": true,
+      "reference_top1_margin": 0.05717277526855469,
+      "top5_overlap": 5,
+      "passed": true
+    }
+  ],
+  "generation": [
+    {
+      "prompt_ids": [
+        151643,
+        151644,
+        8948,
+        198,
+        2610,
+        525,
+        264,
+        10950,
+        17847,
+        624,
+        5501,
+        2874,
+        3019,
+        553,
+        3019,
+        11,
+        323,
+        2182,
+        697,
+        1590,
+        4226,
+        2878,
+        1124,
+        79075,
+        46391,
+        151645,
+        198,
+        151644,
+        872,
+        198,
+        46254,
+        220,
+        16,
+        22,
+        353,
+        220,
+        17,
+        18,
+        13,
+        151645,
+        198,
+        151644,
+        77091,
+        198
+      ],
+      "generated_ids": [
+        151665
+      ],
+      "finish_reason": "length",
+      "complete": false,
+      "eos_token_id": 151645,
+      "stop_token_ids": [
+        151645
+      ],
+      "completion_policy": "published_eos_only",
+      "greedy": true,
+      "seed": 0,
+      "temperature": null,
+      "top_p": null,
+      "elapsed_seconds": 1.019675082527101,
+      "step_seconds": [
+        1.0196594167500734
+      ],
+      "prompt_tokens": 44,
+      "generated_tokens": 1,
+      "prompt": "Compute 17 * 23.",
+      "text": "<think>"
+    },
+    {
+      "prompt_ids": [
+        151643,
+        151644,
+        8948,
+        198,
+        2610,
+        525,
+        264,
+        10950,
+        17847,
+        624,
+        5501,
+        2874,
+        3019,
+        553,
+        3019,
+        11,
+        323,
+        2182,
+        697,
+        1590,
+        4226,
+        2878,
+        1124,
+        79075,
+        46391,
+        151645,
+        198,
+        151644,
+        872,
+        198,
+        50,
+        3948,
+        856,
+        61,
+        17,
+        481,
+        220,
+        20,
+        87,
+        488,
+        220,
+        21,
+        284,
+        220,
+        15,
+        323,
+        2968,
+        279,
+        2629,
+        315,
+        1181,
+        19703,
+        13,
+        151645,
+        198,
+        151644,
+        77091,
+        198
+      ],
+      "generated_ids": [
+        151665
+      ],
+      "finish_reason": "length",
+      "complete": false,
+      "eos_token_id": 151645,
+      "stop_token_ids": [
+        151645
+      ],
+      "completion_policy": "published_eos_only",
+      "greedy": true,
+      "seed": 0,
+      "temperature": null,
+      "top_p": null,
+      "elapsed_seconds": 1.511000458151102,
+      "step_seconds": [
+        1.5109897078946233
+      ],
+      "prompt_tokens": 58,
+      "generated_tokens": 1,
+      "prompt": "Solve x^2 - 5x + 6 = 0 and give the sum of its roots.",
+      "text": "<think>"
+    },
+    {
+      "prompt_ids": [
+        151643,
+        151644,
+        8948,
+        198,
+        2610,
+        525,
+        264,
+        10950,
+        17847,
+        624,
+        5501,
+        2874,
+        3019,
+        553,
+        3019,
+        11,
+        323,
+        2182,
+        697,
+        1590,
+        4226,
+        2878,
+        1124,
+        79075,
+        46391,
+        151645,
+        198,
+        151644,
+        872,
+        198,
+        9885,
+        678,
+        7546,
+        9904,
+        315,
+        856,
+        61,
+        17,
+        284,
+        220,
+        19,
+        24,
+        13,
+        151645,
+        198,
+        151644,
+        77091,
+        198
+      ],
+      "generated_ids": [
+        151665
+      ],
+      "finish_reason": "length",
+      "complete": false,
+      "eos_token_id": 151645,
+      "stop_token_ids": [
+        151645
+      ],
+      "completion_policy": "published_eos_only",
+      "greedy": true,
+      "seed": 0,
+      "temperature": null,
+      "top_p": null,
+      "elapsed_seconds": 1.3030235841870308,
+      "step_seconds": [
+        1.3030092492699623
+      ],
+      "prompt_tokens": 48,
+      "generated_tokens": 1,
+      "prompt": "Find all integer solutions of x^2 = 49.",
+      "text": "<think>"
+    }
+  ],
+  "independent_cuda_fidelity": "UNVERIFIED",
+  "source_sha256": {
+    "portable/model.py": "6e204b9b4d08247a4441d2422800ca7b253f3cc8f9e4a855473830daa5042797",
+    "portable/generate.py": "35db80e5d932f772d54df6be71f3b22b612b955e1aa929257fa5cdfb155e2f0e",
+    "scripts/validate_portable.py": "c605ce97eb00a9fe681e19c23007db5f53bc7ba0a7b408084ba25757e0965d66",
+    "scripts/probe_full_model.py": "404241c79c0f3bd7f8ea816638904cffb6b13de5b00ce079a405b0b6cf196876"
+  },
+  "peak_process_rss_gib": 3.5830535888671875,
+  "sequence_seconds": {
+    "prompt_0": 15.29118016641587,
+    "prompt_1": 14.067004792392254,
+    "prompt_2": 11.958302750252187,
+    "window": 68.48772358335555
+  },
+  "all_local_checks_passed": true
+}

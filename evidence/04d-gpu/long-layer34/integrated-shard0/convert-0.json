@@ -1,0 +1,23 @@
+{
+  "component": "0",
+  "arithmetic": "ordered",
+  "softmax": "ordered",
+  "exp": "source",
+  "norm": "ordered",
+  "xsa": "ordered",
+  "gelu": "lookup",
+  "queries": "dynamic-product",
+  "seconds": 72.51052212715149,
+  "package": "artifacts/04d-gpu/long-layer34/integrated-shard0/0.mlpackage",
+  "state_names": [
+    "inner_k_cache_0",
+    "inner_v_cache_0",
+    "inner_k_cache_1",
+    "inner_v_cache_1",
+    "inner_k_cache_2",
+    "inner_v_cache_2",
+    "inner_k_cache_3",
+    "inner_v_cache_3"
+  ],
+  "status": "converted; runtime validation pending"
+}

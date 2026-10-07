@@ -1,0 +1,76 @@
+{
+  "status": "completed_bounded_localization",
+  "native_state_calls": 24,
+  "control_cells_passed": 12,
+  "all_native_processes_exit_zero": true,
+  "graph_operations_unchanged_per_clone": 46185,
+  "qualified_cpu_cohorts_preserved": true,
+  "additional_correction_applied": false,
+  "warm_localized_target": "layer2 key normalization var_14324 = 1 / denom_21",
+  "warm_projection_and_denominator_exact": true,
+  "warm_reciprocal_errors": {
+    "elements": 9,
+    "total": 24,
+    "ulp_errors": {
+      "-1": 7,
+      "+1": 2
+    },
+    "cpu_oracle_exact": true
+  },
+  "warm_key_denominator_range": [
+    24.060638427734375,
+    58.722999572753906
+  ],
+  "outside_existing_helper_domain": true,
+  "boundary_example": {
+    "key_index": [
+      0,
+      0,
+      0,
+      73
+    ],
+    "cache_index": [
+      0,
+      32,
+      0,
+      73
+    ],
+    "cpu_quotient": -169.5,
+    "gpu_policy_quotient": -169.49998474121094,
+    "cpu_round": -170,
+    "gpu_policy_round": -169,
+    "both_rounds_correct_ties_even": true,
+    "cpu_key": -0.33203125,
+    "gpu_policy_key": -0.330078125
+  },
+  "controlled_host_substitution": {
+    "diagonal_reconstruction_all_four_policy_chunk_cells_exact": true,
+    "warm_raw_and_quotient_differences_before": 962,
+    "warm_rounded_key_differences_before": 1,
+    "warm_all_four_stage_differences_after": 0,
+    "scope": "Saved key-normalization tensors only; no compiled repair/cache or full-model claim"
+  },
+  "earlier_prenorm_sites_not_corrected": [
+    "var_7154",
+    "var_13395"
+  ],
+  "cold_attention_discrepancy": "unresolved; earlier incoming differences persist",
+  "full_model_gpu_qualified": false,
+  "thresholds_changed": false,
+  "actual_device_placement": "unverified",
+  "decision": "Validate bounded factor8 scaled helper, then rank4 native arithmetic and one-additional-site group candidate before any full-model expansion.",
+  "evidence": {
+    "replay-1/results.json": "47ee331d8fbe0f348f9339c32c31a4645b56e499f0d89212f7fb6d0ee1550a0f",
+    "analysis.json": "1eef6196b1a579b3fd714f96eeaeeb6a1f3f86e1e120004bbb32e86b7f830725",
+    "interval-replay-1/results.json": "8df775eec7fdc59295bb8c2272dca24522c029bd1489b559b675a8f1ae1ce04c",
+    "interval-analysis.json": "86ad036edb565fba5f5cb184fb103801dfe387b4e499189a34a858483f615390",
+    "key-replay-1/results.json": "48e5dadf50cfc54c17bb3a3cb50b29e22c2bae3ab9f13234b081756db191cba5",
+    "key-analysis.json": "5e321585b55fa266e405706d042b1789b34cadf53681cdc6fd00eecfd3a2b58e",
+    "key-counterfactual.json": "8f3131520475011cc89187855098b044d66965d64dcca70ff7c1ae8ae6f797e0",
+    "key-counterfactual-protocol.json": "9ba092e0b07655eed15ec0e6a51c458b291d28fdf505c867b258921be0fee2b6",
+    "review.md": "42eb99b459315d189a88122aa8567fc1cee642c22e9c33a5682ff0855680f41e",
+    "cpu-preservation-final.json": "cfec08717f17fe93d21a8ee83628b815baaf9f9fc2bb53ee48fb8fd001b849bc",
+    "next-experiment.json": "3b74e6b8e85d118eae62c88734b023ef8339ab52d4587c467d0cb2971b911941"
+  },
+  "final_seal": "checksum-verification.json"
+}

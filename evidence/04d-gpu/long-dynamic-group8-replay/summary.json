@@ -1,0 +1,245 @@
+{
+  "compute_units": "CPU_ONLY",
+  "positions": [
+    1024,
+    1025
+  ],
+  "capture_sha256": {
+    "evidence/04d-cpu/long-group-locator/first-failure-inputs.npz": "c9b8010b00f7e295f2672117d51b453beabcab1b7e1d4b7ceaa8a107ff266b70",
+    "evidence/04d-cpu/long-group-locator/first-failure-state-before.npz": "17cef34b6621bb8fb70e94f4407ab57d0cee2ab751b424c4a6820a97bed31bce"
+  },
+  "script_sha256": "9b5f79b04ee8e6a38547ee1ff11dd0085170e93f1a6d5ad845a905037a44acbc",
+  "state_names": [
+    "inner_k_cache_0",
+    "inner_k_cache_1",
+    "inner_k_cache_2",
+    "inner_k_cache_3",
+    "inner_v_cache_0",
+    "inner_v_cache_1",
+    "inner_v_cache_2",
+    "inner_v_cache_3"
+  ],
+  "state_roundtrip_all_fp16_exact": true,
+  "experiments": [
+    {
+      "name": "candidate3",
+      "package": "artifacts/04d-cpu/full-candidate-3/8.mlpackage",
+      "package_files_sha256": {
+        "Data/com.apple.CoreML/model.mlmodel": "1229a86700d2cfc35f0bb42e496148b91d04e63f1bd1b78dc88c470e9119eaa2",
+        "Data/com.apple.CoreML/weights/weight.bin": "84ce7be4b7dddc570abe48dc5b87b809f7f7ffec0d132c649fb52d3beb884ac2",
+        "Manifest.json": "ae63f48b5f59ac3a9233602b23a5c73d2a27da1934cd6a1ed7aa07875afef553"
+      },
+      "state_write_dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "y_vs_native": {
+        "different_elements": 543,
+        "max_abs": 32.0,
+        "rmse": 4.340154902774569,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              1,
+              6
+            ],
+            "actual": 1824.0,
+            "expected": 1832.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              7
+            ],
+            "actual": 1344.0,
+            "expected": 1352.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              12
+            ],
+            "actual": -2.0,
+            "expected": -4.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              13
+            ],
+            "actual": 636.0,
+            "expected": 632.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              14
+            ],
+            "actual": 1632.0,
+            "expected": 1624.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              16
+            ],
+            "actual": -1504.0,
+            "expected": -1512.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              17
+            ],
+            "actual": -560.0,
+            "expected": -552.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              20
+            ],
+            "actual": 406.0,
+            "expected": 408.0
+          }
+        ]
+      },
+      "y_vs_recorded_candidate3": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "first_differences": []
+      },
+      "tap23_vs_input": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "first_differences": []
+      }
+    },
+    {
+      "name": "dynamic_raw",
+      "package": "artifacts/04d-gpu/tiny3-dynamic-group8/8.mlpackage",
+      "package_files_sha256": {
+        "Data/com.apple.CoreML/model.mlmodel": "adb3e4556c34c13b00e8f47f742b6c858b700dcd48e381924dc3d6c8e79db9b3",
+        "Data/com.apple.CoreML/weights/weight.bin": "84ce7be4b7dddc570abe48dc5b87b809f7f7ffec0d132c649fb52d3beb884ac2",
+        "Manifest.json": "12e50f6a987ccafc6e4bfafb653dca9efa63a5eaac78b002c892ac1b7228b686"
+      },
+      "state_write_dtypes": {
+        "inner_k_cache_0": "float32",
+        "inner_v_cache_0": "float32",
+        "inner_k_cache_1": "float32",
+        "inner_v_cache_1": "float32",
+        "inner_k_cache_2": "float32",
+        "inner_v_cache_2": "float32",
+        "inner_k_cache_3": "float32",
+        "inner_v_cache_3": "float32"
+      },
+      "y_vs_native": {
+        "different_elements": 543,
+        "max_abs": 32.0,
+        "rmse": 4.340154902774569,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              1,
+              6
+            ],
+            "actual": 1824.0,
+            "expected": 1832.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              7
+            ],
+            "actual": 1344.0,
+            "expected": 1352.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              12
+            ],
+            "actual": -2.0,
+            "expected": -4.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              13
+            ],
+            "actual": 636.0,
+            "expected": 632.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              14
+            ],
+            "actual": 1632.0,
+            "expected": 1624.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              16
+            ],
+            "actual": -1504.0,
+            "expected": -1512.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              17
+            ],
+            "actual": -560.0,
+            "expected": -552.0
+          },
+          {
+            "index": [
+              0,
+              1,
+              20
+            ],
+            "actual": 406.0,
+            "expected": 408.0
+          }
+        ]
+      },
+      "y_vs_recorded_candidate3": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "first_differences": []
+      },
+      "tap23_vs_input": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "first_differences": []
+      }
+    }
+  ]
+}

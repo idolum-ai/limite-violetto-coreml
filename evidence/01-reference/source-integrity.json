@@ -1,0 +1,240 @@
+{
+  "runtime": [
+    {
+      "path": ".gitignore",
+      "expected_git_blob_sha1": "cbedf0ed01d6f2bc4b62deeb17c18c1cec8b5d4a",
+      "actual_git_blob_sha1": "cbedf0ed01d6f2bc4b62deeb17c18c1cec8b5d4a",
+      "matches": true
+    },
+    {
+      "path": ".ruff.toml",
+      "expected_git_blob_sha1": "71b61368bf924aa772e50377ce5360bbaee47be4",
+      "actual_git_blob_sha1": "71b61368bf924aa772e50377ce5360bbaee47be4",
+      "matches": true
+    },
+    {
+      "path": "LICENSE",
+      "expected_git_blob_sha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "actual_git_blob_sha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "expected_git_blob_sha1": "d7a3dfd45092e943a1186c6c8ba3f999bfdbb4dc",
+      "actual_git_blob_sha1": "d7a3dfd45092e943a1186c6c8ba3f999bfdbb4dc",
+      "matches": true
+    },
+    {
+      "path": "assets/aime26-flops.png",
+      "expected_git_blob_sha1": "e60ae5040218dfa2543b36ddda3e00a7bcf414f2",
+      "actual_git_blob_sha1": "e60ae5040218dfa2543b36ddda3e00a7bcf414f2",
+      "matches": true
+    },
+    {
+      "path": "assets/paradigma-logo-black.svg",
+      "expected_git_blob_sha1": "c0198257495cada8cd622260ac8277e17aea0e84",
+      "actual_git_blob_sha1": "c0198257495cada8cd622260ac8277e17aea0e84",
+      "matches": true
+    },
+    {
+      "path": "assets/paradigma-logo-white.svg",
+      "expected_git_blob_sha1": "3be2147df6b01b5a3583626e6b68422d1dea4dd2",
+      "actual_git_blob_sha1": "3be2147df6b01b5a3583626e6b68422d1dea4dd2",
+      "matches": true
+    },
+    {
+      "path": "pyproject.toml",
+      "expected_git_blob_sha1": "4f96ff990f5ebb49a5efa034d81561ee2750fecb",
+      "actual_git_blob_sha1": "4f96ff990f5ebb49a5efa034d81561ee2750fecb",
+      "matches": true
+    },
+    {
+      "path": "src/limite_vllm/__init__.py",
+      "expected_git_blob_sha1": "32983b82f66a505d0a107faab6a0abee2f6e6ebb",
+      "actual_git_blob_sha1": "32983b82f66a505d0a107faab6a0abee2f6e6ebb",
+      "matches": true
+    },
+    {
+      "path": "src/limite_vllm/_components.py",
+      "expected_git_blob_sha1": "8bc998964477a0fa4501e6258f6d4130f0ac268e",
+      "actual_git_blob_sha1": "8bc998964477a0fa4501e6258f6d4130f0ac268e",
+      "matches": true
+    },
+    {
+      "path": "src/limite_vllm/configuration.py",
+      "expected_git_blob_sha1": "76781fca62995b0e176a43cb7f9e0abf4145300e",
+      "actual_git_blob_sha1": "76781fca62995b0e176a43cb7f9e0abf4145300e",
+      "matches": true
+    },
+    {
+      "path": "src/limite_vllm/contract.py",
+      "expected_git_blob_sha1": "f8f12de1e6a9a5334010ed077822821e7ae7de09",
+      "actual_git_blob_sha1": "f8f12de1e6a9a5334010ed077822821e7ae7de09",
+      "matches": true
+    },
+    {
+      "path": "src/limite_vllm/modeling.py",
+      "expected_git_blob_sha1": "be035ac2fdc184e88443d120d868a4840ccfd3c6",
+      "actual_git_blob_sha1": "be035ac2fdc184e88443d120d868a4840ccfd3c6",
+      "matches": true
+    },
+    {
+      "path": "src/limite_vllm/register.py",
+      "expected_git_blob_sha1": "5e46148253ae16032fc5bd6ecea468a234842eff",
+      "actual_git_blob_sha1": "5e46148253ae16032fc5bd6ecea468a234842eff",
+      "matches": true
+    },
+    {
+      "path": "src/limite_vllm/validation.py",
+      "expected_git_blob_sha1": "ea8cf06f69edc171862a66968c9072d64b0d08d6",
+      "actual_git_blob_sha1": "ea8cf06f69edc171862a66968c9072d64b0d08d6",
+      "matches": true
+    },
+    {
+      "path": "tests/test_package_contract.py",
+      "expected_git_blob_sha1": "d717a02e4e5d7c820b77e3a657e3c335eefb63ee",
+      "actual_git_blob_sha1": "d717a02e4e5d7c820b77e3a657e3c335eefb63ee",
+      "matches": true
+    },
+    {
+      "path": "uv.lock",
+      "expected_git_blob_sha1": "2dc92374d7c6a939542a99ba25e0a79500669ac3",
+      "actual_git_blob_sha1": "2dc92374d7c6a939542a99ba25e0a79500669ac3",
+      "matches": true
+    }
+  ],
+  "model_assets": [
+    {
+      "path": ".gitattributes",
+      "algorithm": "git_blob_sha1",
+      "expected": "460abd1265788d7587a694e061b1fc1d52619c57",
+      "actual": "460abd1265788d7587a694e061b1fc1d52619c57",
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "algorithm": "git_blob_sha1",
+      "expected": "d26f07ccb251454f847cfbadf889ec96f7763c4d",
+      "actual": "d26f07ccb251454f847cfbadf889ec96f7763c4d",
+      "matches": true
+    },
+    {
+      "path": "assets/evaluations.png",
+      "algorithm": "sha256",
+      "expected": "a11ad8cdea8ea471f82aad7061405582bede0c8a8ee7b13e5273be6dd04ad802",
+      "actual": "a11ad8cdea8ea471f82aad7061405582bede0c8a8ee7b13e5273be6dd04ad802",
+      "matches": true
+    },
+    {
+      "path": "chat_template.jinja",
+      "algorithm": "git_blob_sha1",
+      "expected": "00a64f0a17dbac6bca68d7ef315714b6d7e263c8",
+      "actual": "00a64f0a17dbac6bca68d7ef315714b6d7e263c8",
+      "matches": true
+    },
+    {
+      "path": "config.json",
+      "algorithm": "git_blob_sha1",
+      "expected": "1657232442c3ce9354111e4352c9362b82b8700c",
+      "actual": "1657232442c3ce9354111e4352c9362b82b8700c",
+      "matches": true
+    },
+    {
+      "path": "generation_config.json",
+      "algorithm": "git_blob_sha1",
+      "expected": "35eb017439afc25086c3b56ff0e80820944e82e1",
+      "actual": "35eb017439afc25086c3b56ff0e80820944e82e1",
+      "matches": true
+    },
+    {
+      "path": "special_tokens_map.json",
+      "algorithm": "git_blob_sha1",
+      "expected": "17305b3603dfb19ccc0f658ec2cd2cd3adff4a58",
+      "actual": "17305b3603dfb19ccc0f658ec2cd2cd3adff4a58",
+      "matches": true
+    },
+    {
+      "path": "tokenizer.json",
+      "algorithm": "sha256",
+      "expected": "296e081e2f5ecf9d87814aa9b0f4b12d670ed2b2e2be6c84e01a9466c953afb7",
+      "actual": "296e081e2f5ecf9d87814aa9b0f4b12d670ed2b2e2be6c84e01a9466c953afb7",
+      "matches": true
+    },
+    {
+      "path": "tokenizer_config.json",
+      "algorithm": "git_blob_sha1",
+      "expected": "505c5586c15ac79d3e9f7594207da8ff8ff74f44",
+      "actual": "505c5586c15ac79d3e9f7594207da8ff8ff74f44",
+      "matches": true
+    }
+  ],
+  "additional_sources": [
+    {
+      "path": "sources/value-model/MODEL_DETAILS.md",
+      "expected": "2745681c762f10f719402bf9debe47b74d9ac038",
+      "actual": "2745681c762f10f719402bf9debe47b74d9ac038",
+      "matches": true
+    },
+    {
+      "path": "sources/value-model/README.md",
+      "expected": "42fc074069e36a8444c31a632309adfd1359c5ca",
+      "actual": "42fc074069e36a8444c31a632309adfd1359c5ca",
+      "matches": true
+    },
+    {
+      "path": "sources/value-model/backbone_config.json",
+      "expected": "fc2fedef3125dc1126f1f8d0775ce4c1baa943dd",
+      "actual": "fc2fedef3125dc1126f1f8d0775ce4c1baa943dd",
+      "matches": true
+    },
+    {
+      "path": "sources/value-model/configuration_gmpt.py",
+      "expected": "4eb98e758650e0e22de1666651f51fb7d1e097e7",
+      "actual": "4eb98e758650e0e22de1666651f51fb7d1e097e7",
+      "matches": true
+    },
+    {
+      "path": "sources/value-model/modeling_backbone.py",
+      "expected": "d9ca76d65c9f000c181cb8ac1f69cd543dfd1966",
+      "actual": "d9ca76d65c9f000c181cb8ac1f69cd543dfd1966",
+      "matches": true
+    },
+    {
+      "path": "sources/value-model/requirements.txt",
+      "expected": "d73ab3af52f32a6658453ba9529735a93dd51c6f",
+      "actual": "d73ab3af52f32a6658453ba9529735a93dd51c6f",
+      "matches": true
+    },
+    {
+      "path": "sources/value-model/score.py",
+      "expected": "f5123407ccc174f3fda6290926e2894ff5dcb3e5",
+      "actual": "f5123407ccc174f3fda6290926e2894ff5dcb3e5",
+      "matches": true
+    },
+    {
+      "path": "sources/value-model/value_model.py",
+      "expected": "ad112a64bbc35788fe613a1f5ec5bf08780a71c6",
+      "actual": "ad112a64bbc35788fe613a1f5ec5bf08780a71c6",
+      "matches": true
+    },
+    {
+      "path": "sources/autoresearch/README.md",
+      "expected": "2bc305168116f7e6a6822941baee5a6eb99343b9",
+      "actual": "2bc305168116f7e6a6822941baee5a6eb99343b9",
+      "matches": true
+    },
+    {
+      "path": "sources/autoresearch/train.py",
+      "expected": "898a9df331651c73cd19ff53671cfaa2d80b63de",
+      "actual": "898a9df331651c73cd19ff53671cfaa2d80b63de",
+      "matches": true
+    },
+    {
+      "path": "sources/xi-log-concavity-lean/README.md",
+      "expected": "c8df0caa996542e69e85f6b88f9c9fc559974568",
+      "actual": "c8df0caa996542e69e85f6b88f9c9fc559974568",
+      "matches": true
+    }
+  ],
+  "passed": true
+}

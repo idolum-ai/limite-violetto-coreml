@@ -1,0 +1,2477 @@
+{
+  "actual_device_placement": "unverified; compute policy only",
+  "cases": [
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/directed-q1.npz",
+      "case_archive_sha256": "51a2878320d515d96ccf2416dfe0290e6ab7f3ee6e03b69c5eee6d2a3dadf86a",
+      "count": 1,
+      "input_finite": true,
+      "input_negative_zero_count": 1,
+      "input_sha256": "19b93141bbe59fd02a72f1a1eb8799314d330a30c379ae1faeadc4f2aba4c304",
+      "name": "directed-q1",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              1,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/directed-q1.npz",
+          "output_sha256": "04a994c0ead9d76df50a151ba4c4d5309c9ea91618d27e37bf0c4bab0cdfed4d"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              1,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/directed-q1.npz",
+          "output_sha256": "04a994c0ead9d76df50a151ba4c4d5309c9ea91618d27e37bf0c4bab0cdfed4d"
+        }
+      },
+      "origin": "directed finite ties, neighbors, boundaries, signed zeros and fixed-seed model range",
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          1,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/directed-q3.npz",
+      "case_archive_sha256": "42e80c31b337c4baa30adabbdb681fce4b52ee01cb8a0203b6b98a462029b7b3",
+      "count": 3,
+      "input_finite": true,
+      "input_negative_zero_count": 3,
+      "input_sha256": "7bc1d68ab3ef570b180fe849c017c3935851c588fc978e949d7a9a1859439362",
+      "name": "directed-q3",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 15,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  3
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  9
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  14
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  15
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  17
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  20
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  26
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              3,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/directed-q3.npz",
+          "output_sha256": "50b2e19bea844e553022be0a19b3c8cec5a894f1850d84f201e8c467fb2e01f1"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 15,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  3
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  9
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  14
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  15
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  17
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  20
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  26
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              3,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/directed-q3.npz",
+          "output_sha256": "50b2e19bea844e553022be0a19b3c8cec5a894f1850d84f201e8c467fb2e01f1"
+        }
+      },
+      "origin": "directed finite ties, neighbors, boundaries, signed zeros and fixed-seed model range",
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          3,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/directed-q12.npz",
+      "case_archive_sha256": "056926e69546ebc4ea5e43d45f71303c79d913b2542459a3096bc93944a10e8e",
+      "count": 12,
+      "input_finite": true,
+      "input_negative_zero_count": 12,
+      "input_sha256": "988856d1fb18754ce818381ad4a23ee796066db29b32c51ce764eb26476c47b0",
+      "name": "directed-q12",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 60,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  3
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  9
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  14
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  15
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  17
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  20
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  26
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/directed-q12.npz",
+          "output_sha256": "1313b7a6eec73904204cabaff7b9aeafd436d8d517ab17c319179c50fd0a242c"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 60,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  3
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  9
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  14
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  15
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  17
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  20
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  26
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/directed-q12.npz",
+          "output_sha256": "1313b7a6eec73904204cabaff7b9aeafd436d8d517ab17c319179c50fd0a242c"
+        }
+      },
+      "origin": "directed finite ties, neighbors, boundaries, signed zeros and fixed-seed model range",
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          12,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/directed-q32.npz",
+      "case_archive_sha256": "135ea4031dd9f144e5dd8ebcd9c0fe0842b0d462e0ba7253bf43a22c9fc354c6",
+      "count": 32,
+      "input_finite": true,
+      "input_negative_zero_count": 32,
+      "input_sha256": "372e5759432b93aaadc78d05db8bc0fbfa93a93dac80204253e9b5a71d6f9901",
+      "name": "directed-q32",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 160,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  3
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  9
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  14
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  15
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  17
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  20
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  26
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/directed-q32.npz",
+          "output_sha256": "c30ec97d1bd6bbb2c53754b8e29e5076c0753249a4e68d825fb1120a441e3e23"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 160,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  3
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  9
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  14
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  15
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  17
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  20
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  1,
+                  26
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/directed-q32.npz",
+          "output_sha256": "c30ec97d1bd6bbb2c53754b8e29e5076c0753249a4e68d825fb1120a441e3e23"
+        }
+      },
+      "origin": "directed finite ties, neighbors, boundaries, signed zeros and fixed-seed model range",
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          32,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c0-cpu-x_9.npz",
+      "case_archive_sha256": "5604130d56d6a23ec23b42c3ca368120b53e5b4d4ac618b78f4aed70ecfef6a0",
+      "count": 32,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "c2c664ea0cd1ef109e251732c1a77163e15f2cfcd26cf54fbefe9d1d8f8a5ad8",
+      "name": "captured-c0-cpu-x_9",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c0-cpu-x_9.npz",
+          "output_sha256": "b527f8ec3b2179624f17bbc27bf478c0d284606d3a7ba75085926dd510ca1fbb"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c0-cpu-x_9.npz",
+          "output_sha256": "b527f8ec3b2179624f17bbc27bf478c0d284606d3a7ba75085926dd510ca1fbb"
+        }
+      },
+      "origin": {
+        "archive": "chunk0/CPU-tapped/outputs",
+        "archive_sha256": "4ec05d8ebc643edbded4be06f955ba69adc8843e1822f69db5d7146623b43a01",
+        "value_name": "x_9"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          32,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c0-cpu-x_27.npz",
+      "case_archive_sha256": "b2572286cdadb66f6ba08d03de41a03919e3c2f53e4ec016badacb0dc906b856",
+      "count": 32,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "64aae32ce6ca3d8c78297535093f04d0e34d658c087b48a299e1bfc9a1730276",
+      "name": "captured-c0-cpu-x_27",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c0-cpu-x_27.npz",
+          "output_sha256": "aebce924a2a3bda15920ef5e74328999a3e3720e0f66db0a2bcb43cca2ac1540"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c0-cpu-x_27.npz",
+          "output_sha256": "aebce924a2a3bda15920ef5e74328999a3e3720e0f66db0a2bcb43cca2ac1540"
+        }
+      },
+      "origin": {
+        "archive": "chunk0/CPU-tapped/outputs",
+        "archive_sha256": "4ec05d8ebc643edbded4be06f955ba69adc8843e1822f69db5d7146623b43a01",
+        "value_name": "x_27"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          32,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c0-cpu-x_29.npz",
+      "case_archive_sha256": "7dd593126c69217577e8a26f7a72f6902bee5e50e37d253ae57617dae116567f",
+      "count": 32,
+      "input_finite": true,
+      "input_negative_zero_count": 1965,
+      "input_sha256": "310dd45a0458d6010c8e673088a3e7a664ce73b1d59bfe441e5a3999e845785d",
+      "name": "captured-c0-cpu-x_29",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 1965,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  1
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  2
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  3
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  5
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  9
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  12
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  14
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c0-cpu-x_29.npz",
+          "output_sha256": "bc447fd72629bd7dded9779fe0dec6c4d9df1a1cd27182638ca10ded22b8e1ce"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 1965,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  1
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  2
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  3
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  5
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  9
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  12
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  14
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c0-cpu-x_29.npz",
+          "output_sha256": "bc447fd72629bd7dded9779fe0dec6c4d9df1a1cd27182638ca10ded22b8e1ce"
+        }
+      },
+      "origin": {
+        "archive": "chunk0/CPU-tapped/outputs",
+        "archive_sha256": "4ec05d8ebc643edbded4be06f955ba69adc8843e1822f69db5d7146623b43a01",
+        "value_name": "x_29"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          32,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c0-cpu-x_31.npz",
+      "case_archive_sha256": "3bc999c894237705ccd5d1b1144805a05652918b9425b31bc84a79c83b0410d0",
+      "count": 32,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "7e5988b961bf495869ea3bce458b43f9786f099b6812e8c77b42c7b768088cff",
+      "name": "captured-c0-cpu-x_31",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c0-cpu-x_31.npz",
+          "output_sha256": "101c59b5a57b974bccf7830833997619777eb2625baac407431d863bc763cde1"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c0-cpu-x_31.npz",
+          "output_sha256": "101c59b5a57b974bccf7830833997619777eb2625baac407431d863bc763cde1"
+        }
+      },
+      "origin": {
+        "archive": "chunk0/CPU-tapped/outputs",
+        "archive_sha256": "4ec05d8ebc643edbded4be06f955ba69adc8843e1822f69db5d7146623b43a01",
+        "value_name": "x_31"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          32,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c0-gpu-x_9.npz",
+      "case_archive_sha256": "5604130d56d6a23ec23b42c3ca368120b53e5b4d4ac618b78f4aed70ecfef6a0",
+      "count": 32,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "c2c664ea0cd1ef109e251732c1a77163e15f2cfcd26cf54fbefe9d1d8f8a5ad8",
+      "name": "captured-c0-gpu-x_9",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c0-gpu-x_9.npz",
+          "output_sha256": "b527f8ec3b2179624f17bbc27bf478c0d284606d3a7ba75085926dd510ca1fbb"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c0-gpu-x_9.npz",
+          "output_sha256": "b527f8ec3b2179624f17bbc27bf478c0d284606d3a7ba75085926dd510ca1fbb"
+        }
+      },
+      "origin": {
+        "archive": "chunk0/GPU-tapped/outputs",
+        "archive_sha256": "ca0fdbd45b2e6446f3717c00141c7e0c1de196fe8c884d5cc0d1400b1a12aad0",
+        "value_name": "x_9"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          32,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c0-gpu-x_27.npz",
+      "case_archive_sha256": "9832ee50fa8fe7919e033d1beab4740df8c168b5ff5bea6d1e7d287f4c002e6e",
+      "count": 32,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "68be9e7cc2f5591270dc51e5a08da6615668f73ed37310afeb3046388193201d",
+      "name": "captured-c0-gpu-x_27",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c0-gpu-x_27.npz",
+          "output_sha256": "774752498e1c9561c2404f356b16b509903f0a6d76e97008d7e1e89d093f2858"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c0-gpu-x_27.npz",
+          "output_sha256": "774752498e1c9561c2404f356b16b509903f0a6d76e97008d7e1e89d093f2858"
+        }
+      },
+      "origin": {
+        "archive": "chunk0/GPU-tapped/outputs",
+        "archive_sha256": "ca0fdbd45b2e6446f3717c00141c7e0c1de196fe8c884d5cc0d1400b1a12aad0",
+        "value_name": "x_27"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          32,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c0-gpu-x_29.npz",
+      "case_archive_sha256": "d0ae1c073ddec93233182dcf77ba9253981f31d17c8a1f286434f7d3d6a011b7",
+      "count": 32,
+      "input_finite": true,
+      "input_negative_zero_count": 1965,
+      "input_sha256": "d43d94b064e79c67df707391f087ed68d82c57837abd7dfe255bfe1dfbd7eee1",
+      "name": "captured-c0-gpu-x_29",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 1965,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  1
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  2
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  3
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  5
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  9
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  12
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  14
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c0-gpu-x_29.npz",
+          "output_sha256": "7d035c5e7d5faa4ec1aa4ae264a5e8ed000c1785e2b3762b655633eab55fc44d"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 1965,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  1
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  2
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  3
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  5
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  9
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  12
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  14
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c0-gpu-x_29.npz",
+          "output_sha256": "7d035c5e7d5faa4ec1aa4ae264a5e8ed000c1785e2b3762b655633eab55fc44d"
+        }
+      },
+      "origin": {
+        "archive": "chunk0/GPU-tapped/outputs",
+        "archive_sha256": "ca0fdbd45b2e6446f3717c00141c7e0c1de196fe8c884d5cc0d1400b1a12aad0",
+        "value_name": "x_29"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          32,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c0-gpu-x_31.npz",
+      "case_archive_sha256": "b67d28f8832d54d14098a2c4c657c3ec6e7f7f9149f7207de57294302bed5744",
+      "count": 32,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "08aa28d1fe16ca2cf017160640b4a50b768975ccd44c7e69ab241adc919cd911",
+      "name": "captured-c0-gpu-x_31",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c0-gpu-x_31.npz",
+          "output_sha256": "1605b91f7e2d8a47255515b022a1e19a2a8874117fbd5d13049e9ce742a310cf"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              32,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c0-gpu-x_31.npz",
+          "output_sha256": "1605b91f7e2d8a47255515b022a1e19a2a8874117fbd5d13049e9ce742a310cf"
+        }
+      },
+      "origin": {
+        "archive": "chunk0/GPU-tapped/outputs",
+        "archive_sha256": "ca0fdbd45b2e6446f3717c00141c7e0c1de196fe8c884d5cc0d1400b1a12aad0",
+        "value_name": "x_31"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          32,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c1-cpu-x_9.npz",
+      "case_archive_sha256": "735d93c73f5bb1806408b5f1f48e63101a0665db345a6a553e46dbf338b0f074",
+      "count": 12,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "1519503164304aebd768b0e882836f8d1e504629bfaeed03a5d99fdf94aaa80b",
+      "name": "captured-c1-cpu-x_9",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c1-cpu-x_9.npz",
+          "output_sha256": "40a596e4fb006fee5279d9a88c23ee41a4d4dc4184fc834455daab82dcd3aa31"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c1-cpu-x_9.npz",
+          "output_sha256": "40a596e4fb006fee5279d9a88c23ee41a4d4dc4184fc834455daab82dcd3aa31"
+        }
+      },
+      "origin": {
+        "archive": "chunk1/CPU-tapped/outputs",
+        "archive_sha256": "d6856af0be3e7617ae0a98ce75b6487b967f8549d255d4bc328bf63d80a434c3",
+        "value_name": "x_9"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          12,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c1-cpu-x_27.npz",
+      "case_archive_sha256": "90e12cd3c9284b9ce26bb99beb1f9a4a534cc5d75fa20830d0387e436d706a11",
+      "count": 12,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "289b3794bcd6887c47512100de619192e19e8bd29237a7f17897139f9a5350b2",
+      "name": "captured-c1-cpu-x_27",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c1-cpu-x_27.npz",
+          "output_sha256": "c0d81518a869862e21db54a7b9885830b0e0d5a4bd1faf3c8aff236588953c87"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c1-cpu-x_27.npz",
+          "output_sha256": "c0d81518a869862e21db54a7b9885830b0e0d5a4bd1faf3c8aff236588953c87"
+        }
+      },
+      "origin": {
+        "archive": "chunk1/CPU-tapped/outputs",
+        "archive_sha256": "d6856af0be3e7617ae0a98ce75b6487b967f8549d255d4bc328bf63d80a434c3",
+        "value_name": "x_27"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          12,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c1-cpu-x_29.npz",
+      "case_archive_sha256": "7155f1afc452ed32133ba7376f82c728a9657839926269de75ac87b34fa160c3",
+      "count": 12,
+      "input_finite": true,
+      "input_negative_zero_count": 761,
+      "input_sha256": "08cf57ef95426c9d78129e0074d88a9474bb972e10c4ed2b17891b7996ac8b17",
+      "name": "captured-c1-cpu-x_29",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 761,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  64
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  66
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  67
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  68
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  69
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  71
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  72
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  75
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c1-cpu-x_29.npz",
+          "output_sha256": "cc6b392e30d13356aef3951f5f33cb796550b91f485483793fca95bfa20c4368"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 761,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  64
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  66
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  67
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  68
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  69
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  71
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  72
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  75
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c1-cpu-x_29.npz",
+          "output_sha256": "cc6b392e30d13356aef3951f5f33cb796550b91f485483793fca95bfa20c4368"
+        }
+      },
+      "origin": {
+        "archive": "chunk1/CPU-tapped/outputs",
+        "archive_sha256": "d6856af0be3e7617ae0a98ce75b6487b967f8549d255d4bc328bf63d80a434c3",
+        "value_name": "x_29"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          12,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c1-cpu-x_31.npz",
+      "case_archive_sha256": "8a897b07e7c8a6bd4114f46b9765642bb453459422978aab27dc15dd9d72c86d",
+      "count": 12,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "19879ab405d7613d8a8eddbc320d25820725bf9bc37e41b9451ae906bdeaf8b6",
+      "name": "captured-c1-cpu-x_31",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c1-cpu-x_31.npz",
+          "output_sha256": "e42d67b856e94735e5d2210bf9ee9d94d7b79c1a31739beacd1a4b76d3ca7c38"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c1-cpu-x_31.npz",
+          "output_sha256": "e42d67b856e94735e5d2210bf9ee9d94d7b79c1a31739beacd1a4b76d3ca7c38"
+        }
+      },
+      "origin": {
+        "archive": "chunk1/CPU-tapped/outputs",
+        "archive_sha256": "d6856af0be3e7617ae0a98ce75b6487b967f8549d255d4bc328bf63d80a434c3",
+        "value_name": "x_31"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          12,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c1-gpu-x_9.npz",
+      "case_archive_sha256": "735d93c73f5bb1806408b5f1f48e63101a0665db345a6a553e46dbf338b0f074",
+      "count": 12,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "1519503164304aebd768b0e882836f8d1e504629bfaeed03a5d99fdf94aaa80b",
+      "name": "captured-c1-gpu-x_9",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c1-gpu-x_9.npz",
+          "output_sha256": "40a596e4fb006fee5279d9a88c23ee41a4d4dc4184fc834455daab82dcd3aa31"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c1-gpu-x_9.npz",
+          "output_sha256": "40a596e4fb006fee5279d9a88c23ee41a4d4dc4184fc834455daab82dcd3aa31"
+        }
+      },
+      "origin": {
+        "archive": "chunk1/GPU-tapped/outputs",
+        "archive_sha256": "2e0ac2d238c8cb2db0392c2600d8e9ffba1f5e6081ac83e031fa049b911be520",
+        "value_name": "x_9"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          12,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c1-gpu-x_27.npz",
+      "case_archive_sha256": "90e12cd3c9284b9ce26bb99beb1f9a4a534cc5d75fa20830d0387e436d706a11",
+      "count": 12,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "289b3794bcd6887c47512100de619192e19e8bd29237a7f17897139f9a5350b2",
+      "name": "captured-c1-gpu-x_27",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c1-gpu-x_27.npz",
+          "output_sha256": "c0d81518a869862e21db54a7b9885830b0e0d5a4bd1faf3c8aff236588953c87"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c1-gpu-x_27.npz",
+          "output_sha256": "c0d81518a869862e21db54a7b9885830b0e0d5a4bd1faf3c8aff236588953c87"
+        }
+      },
+      "origin": {
+        "archive": "chunk1/GPU-tapped/outputs",
+        "archive_sha256": "2e0ac2d238c8cb2db0392c2600d8e9ffba1f5e6081ac83e031fa049b911be520",
+        "value_name": "x_27"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          12,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c1-gpu-x_29.npz",
+      "case_archive_sha256": "7155f1afc452ed32133ba7376f82c728a9657839926269de75ac87b34fa160c3",
+      "count": 12,
+      "input_finite": true,
+      "input_negative_zero_count": 761,
+      "input_sha256": "08cf57ef95426c9d78129e0074d88a9474bb972e10c4ed2b17891b7996ac8b17",
+      "name": "captured-c1-gpu-x_29",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 761,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  64
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  66
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  67
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  68
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  69
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  71
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  72
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  75
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c1-gpu-x_29.npz",
+          "output_sha256": "cc6b392e30d13356aef3951f5f33cb796550b91f485483793fca95bfa20c4368"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 761,
+            "dtype": "float32",
+            "exact": false,
+            "examples": [
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  64
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  66
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  67
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  68
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  69
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  71
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  72
+                ]
+              },
+              {
+                "actual": 0.0,
+                "actual_bits": "0x00000000",
+                "expected": -0.0,
+                "expected_bits": "0x80000000",
+                "index": [
+                  0,
+                  0,
+                  75
+                ]
+              }
+            ],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c1-gpu-x_29.npz",
+          "output_sha256": "cc6b392e30d13356aef3951f5f33cb796550b91f485483793fca95bfa20c4368"
+        }
+      },
+      "origin": {
+        "archive": "chunk1/GPU-tapped/outputs",
+        "archive_sha256": "2e0ac2d238c8cb2db0392c2600d8e9ffba1f5e6081ac83e031fa049b911be520",
+        "value_name": "x_29"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          12,
+          256
+        ]
+      }
+    },
+    {
+      "case_archive": "evidence/06d-gpu-rounding/operator-2/cases/captured-c1-gpu-x_31.npz",
+      "case_archive_sha256": "ba94eb242f43bfd34030fbff557cb741cd6dcb087413ce5405e7bd1bc64ba481",
+      "count": 12,
+      "input_finite": true,
+      "input_negative_zero_count": 0,
+      "input_sha256": "6af69be3a9bc381b60a07709cedc197a0e87ddb206557b2d2603493ba64fa17e",
+      "name": "captured-c1-gpu-x_31",
+      "native": {
+        "CPU_AND_GPU": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_AND_GPU/captured-c1-gpu-x_31.npz",
+          "output_sha256": "41e297d16ff19087d42f79b2934db8350898d9d7db12c1db9b5012432843c05a"
+        },
+        "CPU_ONLY": {
+          "comparison": {
+            "different_values": 0,
+            "dtype": "float32",
+            "exact": true,
+            "examples": [],
+            "shape": [
+              1,
+              12,
+              256
+            ]
+          },
+          "finite": true,
+          "output_archive": "evidence/06d-gpu-rounding/operator-2/native/CPU_ONLY/captured-c1-gpu-x_31.npz",
+          "output_sha256": "41e297d16ff19087d42f79b2934db8350898d9d7db12c1db9b5012432843c05a"
+        }
+      },
+      "origin": {
+        "archive": "chunk1/GPU-tapped/outputs",
+        "archive_sha256": "2e0ac2d238c8cb2db0392c2600d8e9ffba1f5e6081ac83e031fa049b911be520",
+        "value_name": "x_31"
+      },
+      "torch_vs_reference": {
+        "different_values": 0,
+        "dtype": "float32",
+        "exact": true,
+        "examples": [],
+        "shape": [
+          1,
+          12,
+          256
+        ]
+      }
+    }
+  ],
+  "cleanup_guard": {
+    "background_calls": 38,
+    "calls": 40,
+    "shutdown_skips": 0
+  },
+  "compile_seconds": 0.040560999885201454,
+  "compiled": "artifacts/06d-gpu-rounding/operator-2/signed-even-v2.mlmodelc",
+  "compiled_files": {
+    "analytics/coremldata.bin": {
+      "sha256": "dc58a3f3b144a9f740ab3595ad162f72a6d3157c4c033e405707d04bdb24f833",
+      "size": 243
+    },
+    "coremldata.bin": {
+      "sha256": "a8d874a73df710113620d67499335dfff770edfecf2c6ad7a15663a031903161",
+      "size": 380
+    },
+    "model.mil": {
+      "sha256": "9a40314dc4afeae1cb6493b1ad47d66939c45e77620fe23316442baae84f8b58",
+      "size": 6008
+    },
+    "weights/weight.bin": {
+      "sha256": "cded568d2662b196dd21217527bb5a76b1abd2e75dfaadd03a6d02244bf17a0c",
+      "size": 1152
+    }
+  },
+  "conversion_seconds": 0.11943195760250092,
+  "finite_input_contract": "All exercised arrays are finite FP32; NaN and infinities excluded because the indexed-step baseline is not defined for them.",
+  "helper_sha256": "298afbcd964531c0cb39a47e3b939da5306e9af585eec0e761a54d78252cd490",
+  "native_case_failures": 14,
+  "native_predictions": 40,
+  "operator_gate_passed": false,
+  "package": "artifacts/06d-gpu-rounding/operator-2/signed-even-v2.mlpackage",
+  "package_files": {
+    "Data/com.apple.CoreML/model.mlmodel": {
+      "sha256": "ad1c2fa4c7a4c23ac465bf9730d6a38b653cc00bb032563b3214fa95b347921c",
+      "size": 6154
+    },
+    "Data/com.apple.CoreML/weights/weight.bin": {
+      "sha256": "cded568d2662b196dd21217527bb5a76b1abd2e75dfaadd03a6d02244bf17a0c",
+      "size": 1152
+    },
+    "Manifest.json": {
+      "sha256": "e17001aa7a1cfafa581df93d68c777cd8ec30161a96236e4d88ca1695ab77d92",
+      "size": 617
+    }
+  },
+  "passed": false,
+  "prediction_guard": {
+    "gil_releases": 40,
+    "installed": true,
+    "plain_calls": 40,
+    "state_calls": 0
+  },
+  "prior_result_sha256": "c19667215c7fe78e0eacc3f1d2c1006e4a4e8dd9d8fb59e52fef140ac8625c9e",
+  "protocol_sha256": "cda3d0ec67a140aff383207ea56ebf4e5c3a175a01616174a621ff09aa736f02",
+  "reference_source_sha256": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+  "scope": "Isolated finite FP32 quantizer; CPU_AND_GPU policy does not prove GPU execution or composed-graph fidelity",
+  "script_sha256": "a0046d396e236fe658eb07d1d218140b13be2804766da4738c40ea91856e9e71",
+  "source_result_sha256": "0b88f645ca09706da7a8b0e012265ca3d3d5e3b01fbdddfed8f5a21aa113eb71",
+  "status": "completed",
+  "torch_case_failures": 0,
+  "torch_gate_passed": true
+}

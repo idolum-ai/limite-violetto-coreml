@@ -1,0 +1,571 @@
+{
+  "status": "pass",
+  "passed": true,
+  "exact_score_comparisons": 84,
+  "disposed_requests": 10,
+  "matched_pairs": 24,
+  "profiled_component_calls": 336,
+  "by_prefix": {
+    "32": {
+      "control_seconds": {
+        "n": 8,
+        "median": 2.571194354444742,
+        "min": 2.417663374915719,
+        "max": 2.699602708220482,
+        "sum": 20.47430991847068
+      },
+      "profiled_seconds": {
+        "n": 8,
+        "median": 2.5491934581659734,
+        "min": 2.3890111660584807,
+        "max": 2.754633500240743,
+        "sum": 20.540780707262456
+      },
+      "paired_ratio": {
+        "n": 8,
+        "median": 1.0182887945506087,
+        "min": 0.9062255357034628,
+        "max": 1.0685250700942521,
+        "sum": 8.03784330425857
+      },
+      "paired_difference_seconds": {
+        "n": 8,
+        "median": 0.043983124662190676,
+        "min": -0.24721025116741657,
+        "max": 0.17665608320385218,
+        "sum": 0.0664707887917757
+      },
+      "control_tokens_per_second": 0.3907335598540923,
+      "component_shares": {
+        "embedding": 0.00013597345937423319,
+        "backbone_groups": 0.9789275763354139,
+        "head": 0.020872486327817043,
+        "outside_predict": 6.396387739474403e-05
+      }
+    },
+    "128": {
+      "control_seconds": {
+        "n": 8,
+        "median": 2.4309827918186784,
+        "min": 2.3650617506355047,
+        "max": 2.741790750063956,
+        "sum": 19.800173917785287
+      },
+      "profiled_seconds": {
+        "n": 8,
+        "median": 2.516727958340198,
+        "min": 2.413344291970134,
+        "max": 2.7192840427160263,
+        "sum": 20.276948669925332
+      },
+      "paired_ratio": {
+        "n": 8,
+        "median": 1.0265012761054884,
+        "min": 0.9230240157838873,
+        "max": 1.1497729570846682,
+        "sum": 8.21041887954431
+      },
+      "paired_difference_seconds": {
+        "n": 8,
+        "median": 0.06392366625368595,
+        "min": -0.2110520415008068,
+        "max": 0.3542222920805216,
+        "sum": 0.47677475214004517
+      },
+      "control_tokens_per_second": 0.404036855091161,
+      "component_shares": {
+        "embedding": 0.0001439216464213573,
+        "backbone_groups": 0.9799855489162069,
+        "head": 0.01980652003558748,
+        "outside_predict": 6.400940178421087e-05
+      }
+    },
+    "512": {
+      "control_seconds": {
+        "n": 8,
+        "median": 2.6298648957163095,
+        "min": 2.4309853333979845,
+        "max": 3.1828804165124893,
+        "sum": 21.805813083425164
+      },
+      "profiled_seconds": {
+        "n": 8,
+        "median": 2.524030812550336,
+        "min": 2.3840652080252767,
+        "max": 3.334312832914293,
+        "sum": 21.392817875370383
+      },
+      "paired_ratio": {
+        "n": 8,
+        "median": 0.9824661040698579,
+        "min": 0.7807061965282627,
+        "max": 1.2915093516851777,
+        "sum": 7.9210600148137145
+      },
+      "paired_difference_seconds": {
+        "n": 8,
+        "median": -0.044675146229565144,
+        "min": -0.6816599583253264,
+        "max": 0.7525949161499739,
+        "sum": -0.41299520805478096
+      },
+      "control_tokens_per_second": 0.36687464803047803,
+      "component_shares": {
+        "embedding": 0.00015085272953048757,
+        "backbone_groups": 0.9801866290779394,
+        "head": 0.01959660208222969,
+        "outside_predict": 6.591611030038979e-05
+      }
+    }
+  },
+  "components": {
+    "embedding": {
+      "n": 24,
+      "median": 0.0003323964774608612,
+      "min": 0.00028679147362709045,
+      "max": 0.0007172077894210815,
+      "sum": 0.008938457816839218,
+      "share_of_profiled_forward_time": 0.00014368074565477572
+    },
+    "0": {
+      "n": 24,
+      "median": 0.2126925210468471,
+      "min": 0.2011333340778947,
+      "max": 0.3295544581487775,
+      "sum": 5.386769128963351,
+      "share_of_profiled_forward_time": 0.08658932233941795
+    },
+    "1": {
+      "n": 24,
+      "median": 0.21279695816338062,
+      "min": 0.18927116692066193,
+      "max": 0.28140920773148537,
+      "sum": 5.265340333804488,
+      "share_of_profiled_forward_time": 0.08463742188970973
+    },
+    "2": {
+      "n": 24,
+      "median": 0.20707260351628065,
+      "min": 0.1820307495072484,
+      "max": 0.3049600003287196,
+      "sum": 5.105946708470583,
+      "share_of_profiled_forward_time": 0.08207525787776478
+    },
+    "3": {
+      "n": 24,
+      "median": 0.20671304175630212,
+      "min": 0.17980512510985136,
+      "max": 0.2921806676313281,
+      "sum": 5.017815877683461,
+      "share_of_profiled_forward_time": 0.08065860371413341
+    },
+    "4": {
+      "n": 24,
+      "median": 0.20538768777623773,
+      "min": 0.18089691642671824,
+      "max": 0.269896624609828,
+      "sum": 4.986381416209042,
+      "share_of_profiled_forward_time": 0.08015331220228088
+    },
+    "5": {
+      "n": 24,
+      "median": 0.2044707708992064,
+      "min": 0.19255141727626324,
+      "max": 0.2594304168596864,
+      "sum": 5.014398668892682,
+      "share_of_profiled_forward_time": 0.0806036739804838
+    },
+    "6": {
+      "n": 24,
+      "median": 0.20080672996118665,
+      "min": 0.19038750045001507,
+      "max": 0.2858272083103657,
+      "sum": 5.011562914587557,
+      "share_of_profiled_forward_time": 0.08055809080479477
+    },
+    "7": {
+      "n": 24,
+      "median": 0.20733747957274318,
+      "min": 0.19586379174143076,
+      "max": 0.280519625172019,
+      "sum": 5.135183462873101,
+      "share_of_profiled_forward_time": 0.08254522246887865
+    },
+    "8": {
+      "n": 24,
+      "median": 0.19846893707290292,
+      "min": 0.18499433435499668,
+      "max": 0.3477243324741721,
+      "sum": 4.9896803721785545,
+      "share_of_profiled_forward_time": 0.0802063410874974
+    },
+    "9": {
+      "n": 24,
+      "median": 0.2011320204474032,
+      "min": 0.18191808369010687,
+      "max": 0.29521791730076075,
+      "sum": 4.956162374466658,
+      "share_of_profiled_forward_time": 0.07966755788766758
+    },
+    "10": {
+      "n": 24,
+      "median": 0.20244387490674853,
+      "min": 0.17477512545883656,
+      "max": 0.2751807076856494,
+      "sum": 4.9300879603251815,
+      "share_of_profiled_forward_time": 0.07924842616012272
+    },
+    "11": {
+      "n": 24,
+      "median": 0.20885354140773416,
+      "min": 0.18273629155009985,
+      "max": 0.28011591639369726,
+      "sum": 5.148678167723119,
+      "share_of_profiled_forward_time": 0.08276214235539295
+    },
+    "head": {
+      "n": 24,
+      "median": 0.05118595855310559,
+      "min": 0.04589666612446308,
+      "max": 0.06869683414697647,
+      "sum": 1.2495794938877225,
+      "share_of_profiled_forward_time": 0.020086296441257208
+    }
+  },
+  "grouped_cost": {
+    "embedding": {
+      "seconds": 0.008938457816839218,
+      "share": 0.00014368074565477572
+    },
+    "backbone_groups": {
+      "seconds": 60.94800738617778,
+      "share": 0.9797053727681446
+    },
+    "head": {
+      "seconds": 1.2495794938877225,
+      "share": 0.020086296441257208
+    },
+    "outside_predict": {
+      "seconds": 0.004021914675831795,
+      "share": 6.465004494340642e-05
+    }
+  },
+  "profiled_forward_seconds": {
+    "n": 24,
+    "median": 2.53025535447523,
+    "min": 2.3840652080252767,
+    "max": 3.334312832914293,
+    "sum": 62.21054725255817
+  },
+  "paired_difference_seconds": {
+    "n": 24,
+    "median": 0.04673972865566611,
+    "min": -0.6816599583253264,
+    "max": 0.7525949161499739,
+    "sum": 0.1302503328770399
+  },
+  "paired_profile_over_control_ratio": {
+    "n": 24,
+    "median": 1.018906051628543,
+    "min": 0.7807061965282627,
+    "max": 1.2915093516851777,
+    "sum": 24.169322198616594
+  },
+  "pairs": [
+    {
+      "prefix": 32,
+      "step": 1,
+      "control_seconds": 2.5644112918525934,
+      "profiled_seconds": 2.4981779167428613,
+      "difference_seconds": -0.06623337510973215,
+      "ratio": 0.9741720934858762
+    },
+    {
+      "prefix": 32,
+      "step": 2,
+      "control_seconds": 2.577977417036891,
+      "profiled_seconds": 2.754633500240743,
+      "difference_seconds": 0.17665608320385218,
+      "ratio": 1.0685250700942521
+    },
+    {
+      "prefix": 32,
+      "step": 3,
+      "control_seconds": 2.699602708220482,
+      "profiled_seconds": 2.6814249586313963,
+      "difference_seconds": -0.01817774958908558,
+      "ratio": 0.993266509352012
+    },
+    {
+      "prefix": 32,
+      "step": 4,
+      "control_seconds": 2.479400834068656,
+      "profiled_seconds": 2.6484208749607205,
+      "difference_seconds": 0.16902004089206457,
+      "ratio": 1.0681697120407536
+    },
+    {
+      "prefix": 32,
+      "step": 5,
+      "control_seconds": 2.6362214172258973,
+      "profiled_seconds": 2.3890111660584807,
+      "difference_seconds": -0.24721025116741657,
+      "ratio": 0.9062255357034628
+    },
+    {
+      "prefix": 32,
+      "step": 6,
+      "control_seconds": 2.4507354591041803,
+      "profiled_seconds": 2.5568794580176473,
+      "difference_seconds": 0.10614399891346693,
+      "ratio": 1.0433110797492056
+    },
+    {
+      "prefix": 32,
+      "step": 7,
+      "control_seconds": 2.417663374915719,
+      "profiled_seconds": 2.5415074583142996,
+      "difference_seconds": 0.12384408339858055,
+      "ratio": 1.051224700958585
+    },
+    {
+      "prefix": 32,
+      "step": 8,
+      "control_seconds": 2.648297416046262,
+      "profiled_seconds": 2.4707253742963076,
+      "difference_seconds": -0.17757204174995422,
+      "ratio": 0.9329486028744242
+    },
+    {
+      "prefix": 128,
+      "step": 1,
+      "control_seconds": 2.5783958742395043,
+      "profiled_seconds": 2.6121051674708724,
+      "difference_seconds": 0.033709293231368065,
+      "ratio": 1.0130737461877575
+    },
+    {
+      "prefix": 128,
+      "step": 2,
+      "control_seconds": 2.4041696675121784,
+      "profiled_seconds": 2.495066834613681,
+      "difference_seconds": 0.09089716710150242,
+      "ratio": 1.0378081332319455
+    },
+    {
+      "prefix": 128,
+      "step": 3,
+      "control_seconds": 2.460614750161767,
+      "profiled_seconds": 2.5036839162930846,
+      "difference_seconds": 0.043069166131317616,
+      "ratio": 1.0175034170336847
+    },
+    {
+      "prefix": 128,
+      "step": 4,
+      "control_seconds": 2.38817554153502,
+      "profiled_seconds": 2.472953707911074,
+      "difference_seconds": 0.08477816637605429,
+      "ratio": 1.035499135177292
+    },
+    {
+      "prefix": 128,
+      "step": 5,
+      "control_seconds": 2.4454018753021955,
+      "profiled_seconds": 2.413344291970134,
+      "difference_seconds": -0.03205758333206177,
+      "ratio": 0.9868906687052817
+    },
+    {
+      "prefix": 128,
+      "step": 6,
+      "control_seconds": 2.416563708335161,
+      "profiled_seconds": 2.529772000387311,
+      "difference_seconds": 0.11320829205214977,
+      "ratio": 1.046846806339793
+    },
+    {
+      "prefix": 128,
+      "step": 7,
+      "control_seconds": 2.741790750063956,
+      "profiled_seconds": 2.530738708563149,
+      "difference_seconds": -0.2110520415008068,
+      "ratio": 0.9230240157838873
+    },
+    {
+      "prefix": 128,
+      "step": 8,
+      "control_seconds": 2.3650617506355047,
+      "profiled_seconds": 2.7192840427160263,
+      "difference_seconds": 0.3542222920805216,
+      "ratio": 1.1497729570846682
+    },
+    {
+      "prefix": 512,
+      "step": 1,
+      "control_seconds": 2.8177559170871973,
+      "profiled_seconds": 3.09364362526685,
+      "difference_seconds": 0.2758877081796527,
+      "ratio": 1.0979104352178404
+    },
+    {
+      "prefix": 512,
+      "step": 2,
+      "control_seconds": 2.4822034584358335,
+      "profiled_seconds": 2.532613749615848,
+      "difference_seconds": 0.05041029118001461,
+      "ratio": 1.0203086862234012
+    },
+    {
+      "prefix": 512,
+      "step": 3,
+      "control_seconds": 2.5238257916644216,
+      "profiled_seconds": 2.3840652080252767,
+      "difference_seconds": -0.1397605836391449,
+      "ratio": 0.9446235219163146
+    },
+    {
+      "prefix": 512,
+      "step": 4,
+      "control_seconds": 2.4309853333979845,
+      "profiled_seconds": 2.49559691734612,
+      "difference_seconds": 0.06461158394813538,
+      "ratio": 1.026578352020669
+    },
+    {
+      "prefix": 512,
+      "step": 5,
+      "control_seconds": 2.6780118746683,
+      "profiled_seconds": 2.515447875484824,
+      "difference_seconds": -0.16256399918347597,
+      "ratio": 0.9392967593903552
+    },
+    {
+      "prefix": 512,
+      "step": 6,
+      "control_seconds": 3.1828804165124893,
+      "profiled_seconds": 2.610365250147879,
+      "difference_seconds": -0.5725151663646102,
+      "ratio": 0.8201267118316936
+    },
+    {
+      "prefix": 512,
+      "step": 7,
+      "control_seconds": 2.581717916764319,
+      "profiled_seconds": 3.334312832914293,
+      "difference_seconds": 0.7525949161499739,
+      "ratio": 1.2915093516851777
+    },
+    {
+      "prefix": 512,
+      "step": 8,
+      "control_seconds": 3.108432374894619,
+      "profiled_seconds": 2.4267724165692925,
+      "difference_seconds": -0.6816599583253264,
+      "ratio": 0.7807061965282627
+    }
+  ],
+  "limits": [
+    "Small single-process descriptive sample, with uncontrolled host/caches.",
+    "Condition is confounded with repeat/order for a given position; paired timing difference is not an isolated causal estimate of timer overhead.",
+    "Component timing includes Python preparation, bridge, native prediction and returned-array conversion; it does not isolate an internal operator.",
+    "Outside-predict time includes profiler wrapper and list-append overhead.",
+    "First-shape repeat0, initial warmup and all prefill calls are excluded from warm decode summaries."
+  ],
+  "profile_sha256": "f21cb6420e8eb59aad8642bebc674ef75b6b64cd82001dac9b72ee3c70af8ad1",
+  "aggregator_sha256": "80efdf45c450c2799761730e683355c48a26981ac2cadacb9f49fb44202a7853",
+  "protocol": {
+    "prefix_lengths": [
+      32,
+      128,
+      512
+    ],
+    "repeats": 3,
+    "decode_steps": 8,
+    "warmup": "32-token prefill and two forced decode calls; excluded",
+    "repeat0": "Uninstrumented first-shape trial; excluded from warm comparison",
+    "measured_repeats": [
+      1,
+      2
+    ],
+    "profile_condition": "(step + repeat) % 2 == 0 for decode only",
+    "pairing": "Each prefix/step has one control and one profiled observation across repeats1/2",
+    "order": "repeat outer, ascending prefix inner; fresh request per trial",
+    "compute": "CPU_ONLY",
+    "torch_threads": 4,
+    "sampling": "none; teacher-forced frozen stream",
+    "timed_boundary": "Entire forward; profiled calls additionally time each Pipeline.predict",
+    "exclusions": "Request creation, score checks, hashing, JSON and logging outside forward timer",
+    "call_order_scope": "14 expected calls checked only on profiled decode forwards",
+    "residual_scope": "Everything outside component timers, including wrapper/list-append overhead",
+    "limits": "Single process; uncontrolled host/OS caches; condition confounded with repeat/order for each pair; descriptive sample; no operation-level attribution"
+  },
+  "loader_provenance": {
+    "mode": "persistent_compiled",
+    "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+    "compiled_aggregate_sha256": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+    "compiled_manifest_sha256": "6d823571b146339d557aab33d7d284eee8cf701eb7e20e0a8fbf5ccb8be01b29",
+    "compiled_dir": "<PROJECT_ROOT>/artifacts/05c-compiled/full-cache-1",
+    "compiled_manifest": "<PROJECT_ROOT>/evidence/05c-compiled/full-cache-1/compiled-identity.json",
+    "sources": {
+      "coreml_port/compiled_runtime.py": "37d16dfd0ab096b9ec5b26f8d44f3e64874b94c60181af80748cab9c302eedb5",
+      "coreml_port/compiled_identity.py": "10eb6ef0a793453109f0378275e2a3259631d68c5e85e9f92873ba1f85373c53",
+      "coreml_port/loader_selection.py": "4d8b5380934b6712b7c3abc35f2f0bfb68943624252b32c3315d3e148f196099",
+      "coreml_port/package_identity.py": "ace0140e87818a72b5bda103374fb42565e021f241fbc2d22b9678bca3181a81"
+    }
+  },
+  "host_before": {
+    "utc": "2026-09-23T14:10:31Z",
+    "system": "macOS-26.5.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.12.9",
+    "logical_cpus": 10,
+    "load_average": [
+      3.599609375,
+      3.3828125,
+      3.0498046875
+    ],
+    "hardware": {
+      "exit_code": 0,
+      "stdout": "hw.model: Mac16,12\nhw.memsize: 34359738368\nhw.ncpu: 10",
+      "stderr": ""
+    },
+    "thermal": {
+      "exit_code": 0,
+      "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+      "stderr": ""
+    },
+    "power": {
+      "exit_code": 0,
+      "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=<REDACTED_HOST_ID>)\t80%; AC attached; not charging present: true",
+      "stderr": ""
+    }
+  },
+  "host_after": {
+    "utc": "2026-09-23T14:23:01Z",
+    "system": "macOS-26.5.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.12.9",
+    "logical_cpus": 10,
+    "load_average": [
+      5.75537109375,
+      5.01806640625,
+      4.2001953125
+    ],
+    "hardware": {
+      "exit_code": 0,
+      "stdout": "hw.model: Mac16,12\nhw.memsize: 34359738368\nhw.ncpu: 10",
+      "stderr": ""
+    },
+    "thermal": {
+      "exit_code": 0,
+      "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+      "stderr": ""
+    },
+    "power": {
+      "exit_code": 0,
+      "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=<REDACTED_HOST_ID>)\t80%; AC attached; not charging present: true",
+      "stderr": ""
+    }
+  }
+}

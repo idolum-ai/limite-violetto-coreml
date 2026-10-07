@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "source_sha256": {
+    "scripts/gpu_tiny_scores_dynamic_operator.py": "60daf821266975b758bc61010e8801d2b2d8c0955805ba69f9385674a599fb29",
+    "coreml_port/tiny_scores.py": "f5af4d2e7efa16348483fff087d98c4fdaae3cc2adae870066e2a726c2f4a180",
+    "evidence/04d-gpu/candidate4-tiny3-layer38-isolate/reference.npz": "ab764cefbc12844bfee830e48386ec7dd4c72c300dbf2a94f74fb98c403b3164",
+    "evidence/04d-gpu/long-layer34/reference.npz": "a7f5b92225e76455418f47b7ee1f42e2f569b65e6f7260aa0ed094ed64ac3b0c"
+  },
+  "shapes": {
+    "q3": [
+      1,
+      3,
+      10,
+      128
+    ],
+    "q32": [
+      1,
+      32,
+      10,
+      128
+    ],
+    "key": [
+      1,
+      2048,
+      10,
+      128
+    ]
+  },
+  "torch_q3_active_vs_native": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "torch_q32_vs_ordinary": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_q3_active_vs_native": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_q3_vs_torch_branch": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_q32_vs_ordinary": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_q32_vs_torch_branch": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  }
+}

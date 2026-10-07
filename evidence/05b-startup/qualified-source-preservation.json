@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": {
+    "coreml_port/graphs.py": true,
+    "coreml_port/ordered_linear.py": true,
+    "coreml_port/ordered_attention.py": true,
+    "scripts/convert_coreml.py": true,
+    "scripts/build_cpu_candidate.py": true,
+    "coreml_port/package_identity.py": true,
+    "coreml_port/ordered_norm.py": true,
+    "coreml_port/ordered_xsa.py": true,
+    "coreml_port/bf16_gelu.py": true,
+    "coreml_port/source_exp.py": true,
+    "coreml_port/dynamic_queries.py": true,
+    "coreml_port/paired_product.py": true,
+    "coreml_port/tiny_native_scores.py": true,
+    "artifacts/04b-reliability/cleanup_guard.dylib": true,
+    "artifacts/04e-runtime/prediction_guard.dylib": true,
+    "coreml_port/cleanup_guard.py": true,
+    "coreml_port/native/prediction_guard.mm": true,
+    "coreml_port/prediction_guard.py": true,
+    "coreml_port/runtime.py": true,
+    "coreml_port/tiny_prefix_runtime.py": true
+  }
+}

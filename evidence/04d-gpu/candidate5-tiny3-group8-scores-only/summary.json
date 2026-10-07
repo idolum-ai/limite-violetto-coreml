@@ -1,0 +1,182 @@
+{
+  "status": "complete",
+  "package_identity": "9aaea5e518689705ec236710803e53107a224620e8847004be335e47b7969398",
+  "positions": [
+    0,
+    1,
+    2
+  ],
+  "sha256": {
+    "scripts/gpu_tiny3_group8_tiny_scores_only.py": "6912903333dac923adac677a132cf074cd2cc724c5ad7e80c348abaf4fc25696",
+    "evidence/04d-gpu/candidate4-tiny3-firstgroup/native-boundaries.npz": "e8c565d4dee0252596faa22f9449a0fd4b9eb0420621370b7bbea18e9ee0d7ee",
+    "coreml_port/graphs.py": "b7b693cf9a33e2b1f65e1b227da3e872b0fcce4e42010cd0d7703fe1a110ffdb",
+    "coreml_port/dynamic_queries.py": "aa87c78fdfc84172860cb9ad765924a994430a22e7e36a77ede6314b30299cda",
+    "coreml_port/tiny_scores.py": "f5af4d2e7efa16348483fff087d98c4fdaae3cc2adae870066e2a726c2f4a180"
+  },
+  "torch_tiny_scores_vs_native": {
+    "different_elements": 789,
+    "max_abs": 80.0,
+    "first_differences": [
+      {
+        "index": [
+          0,
+          2,
+          3
+        ],
+        "actual": 173.0,
+        "expected": 161.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          7
+        ],
+        "actual": 5120.0,
+        "expected": 5088.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          8
+        ],
+        "actual": -496.0,
+        "expected": -488.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          9
+        ],
+        "actual": 1264.0,
+        "expected": 1272.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          10
+        ],
+        "actual": -4.0,
+        "expected": 4.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          11
+        ],
+        "actual": 6304.0,
+        "expected": 6368.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          12
+        ],
+        "actual": 1528.0,
+        "expected": 1520.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          13
+        ],
+        "actual": -276.0,
+        "expected": -282.0
+      }
+    ]
+  },
+  "candidate4_coreml_vs_native": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  },
+  "coreml_tiny_scores_vs_native": {
+    "different_elements": 789,
+    "max_abs": 80.0,
+    "first_differences": [
+      {
+        "index": [
+          0,
+          2,
+          3
+        ],
+        "actual": 173.0,
+        "expected": 161.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          7
+        ],
+        "actual": 5120.0,
+        "expected": 5088.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          8
+        ],
+        "actual": -496.0,
+        "expected": -488.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          9
+        ],
+        "actual": 1264.0,
+        "expected": 1272.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          10
+        ],
+        "actual": -4.0,
+        "expected": 4.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          11
+        ],
+        "actual": 6304.0,
+        "expected": 6368.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          12
+        ],
+        "actual": 1528.0,
+        "expected": 1520.0
+      },
+      {
+        "index": [
+          0,
+          2,
+          13
+        ],
+        "actual": -276.0,
+        "expected": -282.0
+      }
+    ]
+  },
+  "coreml_tiny_scores_vs_torch_tiny_scores": {
+    "different_elements": 0,
+    "max_abs": 0.0,
+    "first_differences": []
+  }
+}

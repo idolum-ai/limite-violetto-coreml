@@ -1,0 +1,12 @@
+{
+  "component": "embedding",
+  "arithmetic": "ordered",
+  "softmax": "ordered",
+  "norm": "ordered",
+  "xsa": "ordered",
+  "gelu": "lookup",
+  "seconds": 4.932262897491455,
+  "package": "artifacts/04d-cpu/full-candidate-2/embedding.mlpackage",
+  "state_names": [],
+  "status": "converted; runtime validation pending"
+}

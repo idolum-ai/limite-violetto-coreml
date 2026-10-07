@@ -1,0 +1,824 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-22T16:38:42.394829+00:00",
+  "phase": "Qualified CPU preserved; remaining warm layer2 key reciprocal drift localized with controlled host substitution; scaled native correction pending",
+  "runtime": {
+    "repository": "https://github.com/paradigma-inc/limite-violetto",
+    "revision": "cd68d27f100ebb7c84f05603d5af0e8f934b28b5",
+    "source_path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27",
+    "git_tree_evidence": "evidence/01-reference/runtime-tree.json",
+    "license": "Apache-2.0"
+  },
+  "model": {
+    "repository": "https://huggingface.co/paradigma-inc/limite-1b-violetto",
+    "revision": "9402e422e87b220507963cd42c997459c1e87b43",
+    "assets_path": "sources/model",
+    "license": "Apache-2.0 declared by pinned model card; no separate model LICENSE file",
+    "checkpoint": {
+      "path": "model.safetensors",
+      "downloaded": true,
+      "expected_size": 2070811520,
+      "upstream_lfs_sha256": "9dc7e89e30acf473629f98ac3ade535fb05cc044fe7e399b78d0bc957283a5f5",
+      "locally_verified": true,
+      "download_evidence": "evidence/03-portable/checkpoint-download.json"
+    }
+  },
+  "machine": {
+    "recorded_at": "2026-09-22T16:28:46.595730+00:00",
+    "architecture": "arm64",
+    "inspection_python": "3.14.3",
+    "commands": [
+      {
+        "command": [
+          "sw_vers"
+        ],
+        "exit_code": 0,
+        "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.5.2\nBuildVersion:\t\t25F84",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "sysctl",
+          "-n",
+          "machdep.cpu.brand_string"
+        ],
+        "exit_code": 0,
+        "stdout": "Apple M4",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "sysctl",
+          "-n",
+          "hw.memsize"
+        ],
+        "exit_code": 0,
+        "stdout": "34359738368",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "sysctl",
+          "-n",
+          "hw.physicalcpu"
+        ],
+        "exit_code": 0,
+        "stdout": "10",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "sysctl",
+          "-n",
+          "hw.logicalcpu"
+        ],
+        "exit_code": 0,
+        "stdout": "10",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "uv",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "uv 0.9.26 (Homebrew 2026-01-15)",
+        "stderr": ""
+      }
+    ]
+  },
+  "local_environment": {
+    "python": "3.12.9",
+    "packages": {
+      "torch": "2.7.0",
+      "coremltools": "9.0",
+      "transformers": "5.6.2",
+      "numpy": "2.2.6",
+      "pytest": "9.1.1",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.8.0"
+    },
+    "root": ".venv",
+    "input_requirements": "requirements-investigation.in",
+    "hash_lock": "requirements-investigation.lock",
+    "hash_lock_sha256": "1d9b3fa3461c5e80774c9de1bdb4b880637860d2da6463f8f7e20e96889b7094",
+    "resolution_evidence": "evidence/01-reference/pip-resolution.json",
+    "installation_evidence": "evidence/01-reference/pip-installation.json",
+    "package_check": "PASS",
+    "torch_mps_available_outside_sandbox": true,
+    "conversion_executed": true
+  },
+  "supported_upstream_environment": {
+    "python": "~=3.12.0",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.6.2",
+    "vllm": "0.26.0",
+    "platform": "Linux x86-64 with NVIDIA GPU and CUDA 13.0-compatible driver",
+    "executed": false
+  },
+  "validation": {
+    "source_integrity": "PASS: 17 runtime files, 9 model assets, 11 additional reference files",
+    "upstream_contract_tests": "12 passed in 5.45s in local environment; attention stubbed",
+    "input_validation": "PASS: config, template, and three prompt roundtrips/direct-tokenizer comparisons",
+    "independent_model_outputs": "UNAVAILABLE",
+    "model_inference_executed": true,
+    "model_fidelity": "UNVERIFIED",
+    "numerical_tolerances": "evidence/03-portable/ACCEPTANCE.json: frozen local comparison limits; original-runtime tolerances remain unqualified",
+    "gate_status": {
+      "G1.1": "PASS scoped to Step 1 assets",
+      "G1.2": "PASS",
+      "G1.3": "BLOCKED",
+      "G1.4": "PASS scoped to installation/imports/contracts",
+      "G1.5": "PASS",
+      "G3.1": "PASS",
+      "G3.2": "BLOCKED for independent original runtime; local source comparison PASS",
+      "G3.3": "PASS on qualified CPU path; FAIL on original and padded Metal paths",
+      "G3.4": "PARTIAL: input/reset/stop mechanics pass; published versus emitted EOS discrepancy unresolved; explicit extra-stop option verified",
+      "G4.1": "PASS CPU complete-model compilation and completed generation; full GPU-permitted pipeline also executed",
+      "G4.2": "FAIL unchanged numerical limits; original NVIDIA-runtime fidelity remains unverified",
+      "G4.3": "PASS for recorded guarded lifecycle and capacity checks; not a general production reliability guarantee",
+      "G4.4": "PASS for recorded local invocation, pinned inputs and checksummed packages; clean-machine installation not tested"
+    },
+    "synthetic_coreml_inference_executed": true,
+    "rms_epsilon_correction": "Default BF16/FP16 RMSNorm uses FP32 opmath epsilon, verified locally on CPU and in pinned Torch 2.11 source; Step 1 dtype-epsilon interpretation corrected."
+  },
+  "source_files": [
+    {
+      "path": "sources/autoresearch/README.md",
+      "size": 7897,
+      "sha256": "c566fa92203d54a46d7b842240d09f942265d9f0b737744e7f87b7b45d369210"
+    },
+    {
+      "path": "sources/autoresearch/train.py",
+      "size": 26230,
+      "sha256": "266df489548fec77a77526427d691abd0b6ddc5ac0f4f9ff625ad86a13297719"
+    },
+    {
+      "path": "sources/model/.gitattributes",
+      "size": 1629,
+      "sha256": "bc5fdfa4102926c315daa7c78fb0bb09e65cf61e2af405e49dce29c412647ff3"
+    },
+    {
+      "path": "sources/model/README.md",
+      "size": 5332,
+      "sha256": "1c77287dc59c150ad0cee40173dea45e4250c176b7be19fc82e50612bdd73875"
+    },
+    {
+      "path": "sources/model/assets/evaluations.png",
+      "size": 514250,
+      "sha256": "a11ad8cdea8ea471f82aad7061405582bede0c8a8ee7b13e5273be6dd04ad802"
+    },
+    {
+      "path": "sources/model/chat_template.jinja",
+      "size": 1504,
+      "sha256": "0c4e2c299b0bd80a20f53ec55f9b7f8db418e037c378289ce707a038cd34e2de"
+    },
+    {
+      "path": "sources/model/config.json",
+      "size": 2938,
+      "sha256": "52a6a80ffd369638f4cc522ad728735d29bcda7cce1ecb5096947e10c1ee8bc0"
+    },
+    {
+      "path": "sources/model/generation_config.json",
+      "size": 290,
+      "sha256": "f760bbfcfec910437e242b36b2014f8a8fba47b7102915a05094d4b4aa1181a6"
+    },
+    {
+      "path": "sources/model/special_tokens_map.json",
+      "size": 616,
+      "sha256": "6676f091c8bc4d1b50146427cfde92073402866b87b6e39223227931b70083e9"
+    },
+    {
+      "path": "sources/model/tokenizer.json",
+      "size": 11422267,
+      "sha256": "296e081e2f5ecf9d87814aa9b0f4b12d670ed2b2e2be6c84e01a9466c953afb7"
+    },
+    {
+      "path": "sources/model/tokenizer_config.json",
+      "size": 5067,
+      "sha256": "d36abf9716797c95779c0b81eb8978e5b5356b067546d94d58bb4975d01139b0"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/.gitignore",
+      "size": 116,
+      "sha256": "5ea83dc267c335a574f2952f07e1ff8f9db5f48558be4c553edfe3e6ac90fa56"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/.ruff.toml",
+      "size": 40,
+      "sha256": "9e4bbda689c57f626f6e52041d84ef9e020e9d5e01137f595f81837d260e7efc"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/LICENSE",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/README.md",
+      "size": 6871,
+      "sha256": "a0155b75e308e00f76033b8164c267e5de0bdfbb7e4d6a6a67b8d5b92057724b"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/assets/aime26-flops.png",
+      "size": 211060,
+      "sha256": "6daf743d98361b5cfd5cc62d5b398906d9ac4ba521c51b026a52beb462c23a27"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/assets/paradigma-logo-black.svg",
+      "size": 11431,
+      "sha256": "09e4bd4c36638399eba6d77fe60c51027d1eacfeeb79aef4f8e7a318aca52bc2"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/assets/paradigma-logo-white.svg",
+      "size": 11617,
+      "sha256": "45da809b9ebf6de149f4cda6a1a97e5572275ebe326cb300cce25654b5c7c2cb"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/pyproject.toml",
+      "size": 870,
+      "sha256": "657c385a827814fa2d1fa54198c108fcac5d83ab92db46dcf9d04a00e69b8855"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/src/limite_vllm/__init__.py",
+      "size": 139,
+      "sha256": "dc0ee833edd04285cbccdc5ffbb3101447f00090143aaf59b1049b246712684c"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/src/limite_vllm/_components.py",
+      "size": 19650,
+      "sha256": "abcf16ed565f738d8220c97892fc16655d02355774eb5b97d4cc47ded31caa77"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/src/limite_vllm/configuration.py",
+      "size": 21731,
+      "sha256": "d960436fb6be77c0536c7b888261a761d038576ca66142211fd1a734c1a7102e"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/src/limite_vllm/contract.py",
+      "size": 314,
+      "sha256": "3d7cc16bbfec4208aace23a48dc6eef01fbf00035a89ea6cf6331348af0065c0"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/src/limite_vllm/modeling.py",
+      "size": 17117,
+      "sha256": "838b0ca6332739cc14a94bc3c1452818b64c2e9bcbde9d939dc8ef28fc80c78f"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/src/limite_vllm/register.py",
+      "size": 1824,
+      "sha256": "2a7700076b1c47f033f2168f06f38f22d3f3f09f826ddaf76a97216d54c9c7ae"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/src/limite_vllm/validation.py",
+      "size": 675,
+      "sha256": "2de23c4ab7713273838b3f63aa1ba27d896cf1c537f9a0c8782148505884d201"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/tests/test_package_contract.py",
+      "size": 16375,
+      "sha256": "2fe986609545025cb4908f3ee9d86d8cd18ace0a0b3dc10279452326fc9419da"
+    },
+    {
+      "path": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/uv.lock",
+      "size": 359492,
+      "sha256": "e56045bb4dd2d7ca2ffd266d704a7ba0587efaa831bbf1cb710d0c8504ee53c4"
+    },
+    {
+      "path": "sources/runtime-cd68d27.tar.gz",
+      "size": 321865,
+      "sha256": "298cc30207eeecebe1ae63e1399d8955f1155012a2589c28d23e1e4aac93b387"
+    },
+    {
+      "path": "sources/value-model/MODEL_DETAILS.md",
+      "size": 2847,
+      "sha256": "0311a7d18aa67cae2c595832c3a33d52f77d9cd42271736622c16c5bb1ebb47e"
+    },
+    {
+      "path": "sources/value-model/README.md",
+      "size": 12462,
+      "sha256": "6be057ca001a7e977157904b01beb9a320454a22b0f1824e76b76f0a252ea5f3"
+    },
+    {
+      "path": "sources/value-model/backbone_config.json",
+      "size": 2619,
+      "sha256": "104393a5eb37cf06116aed546d005173820051f093d0a5c481a293aea0680db7"
+    },
+    {
+      "path": "sources/value-model/configuration_gmpt.py",
+      "size": 17131,
+      "sha256": "e9c85bbc35a9107fa69743d42c28f65b8555821b081fdf82762f5a4864ab29f7"
+    },
+    {
+      "path": "sources/value-model/modeling_backbone.py",
+      "size": 21077,
+      "sha256": "291c97efd64a24d25cd37ae3a5e8882ace0a2f04f69ceaf58c1f970dd00a56cf"
+    },
+    {
+      "path": "sources/value-model/requirements.txt",
+      "size": 96,
+      "sha256": "e69a999176b26c731e603eceb090e007701ec5beb486ad244099dab896e91cfa"
+    },
+    {
+      "path": "sources/value-model/score.py",
+      "size": 1662,
+      "sha256": "2d52485941998f4f23fe780533b7f3d3dff051a5a168a1389064fab1d7c6e5cb"
+    },
+    {
+      "path": "sources/value-model/value_model.py",
+      "size": 6181,
+      "sha256": "3e53a4c4be998f795f464213ad1d6e021ae6cd378e37d5412dec2a4b59aa21f4"
+    },
+    {
+      "path": "sources/xi-log-concavity-lean/README.md",
+      "size": 2978,
+      "sha256": "7d251ea7f6d9066cfd089b1449fc5da7b21bce812af93720d83aced6eccfa10f"
+    },
+    {
+      "path": "sources/model/model.safetensors",
+      "size": 2070811520,
+      "sha256": "9dc7e89e30acf473629f98ac3ade535fb05cc044fe7e399b78d0bc957283a5f5"
+    }
+  ],
+  "updated_at": "2026-09-23T20:57:50.336688+00:00",
+  "additional_reference": {
+    "repository": "https://huggingface.co/paradigma-inc/limite-1b-value-model",
+    "revision": "ce83740e0e853a7d4e5b80fca29a65fd5b8db7fb",
+    "source_path": "sources/value-model",
+    "weights_downloaded": false,
+    "schema_comparison": "743 parameter entries match after explicit mapping; 288 scalar reshapes; 59 equal config fields",
+    "numerical_fidelity": "UNVERIFIED",
+    "evidence": "evidence/01-reference/EXPANDED-REFERENCE-SEARCH.md"
+  },
+  "component_experiment": {
+    "summary": "evidence/02-components/summary.json",
+    "acceptance_sha256": "1455bec54846574c00ab7579d296c869d394cec70db18bd603355062a98958c3",
+    "scripts": {
+      "components.py": "e678df3f7707412332a3570e7dd5aeb7f7b1cab798a4525e90d945171a12bac6",
+      "qualify_upstream.py": "c38e3b11b746100eea5b8fa1a8c9466642447ced9f0665d21d4c60daead9edbb",
+      "rms_epsilon_probe.py": "40f663f54644fb7c9af39de02e5b87543311dfdc12fbd329cf6de2850ad04ed8",
+      "run_components.py": "9a30705dbef0fe82bc26270867e1d7c2536ffd2a0e07e471d9479a57ea85b581",
+      "run_suite.py": "9cabaee84d82c43c5d24359f6b2b6314da7b2fe3d2c7fb9c200e270c60f81a33"
+    },
+    "gates": {
+      "G2.1": "PASS",
+      "G2.2": "PASS",
+      "G2.3": "PASS for tested component arithmetic; BF16 and original-model fidelity unresolved",
+      "G2.4": "PASS bounded process/resource screen"
+    },
+    "real_weights_used": false,
+    "original_model_fidelity": "UNVERIFIED"
+  },
+  "portable_model": {
+    "summary": "evidence/03b-cache/summary.json",
+    "report": "evidence/03b-cache/REPORT.md",
+    "tensor_count": 743,
+    "parameter_count": 1035254176,
+    "real_weights_used": true,
+    "full_prefix_local_comparison": "PASS CPU and MPS",
+    "cached_numerical_comparison": "PASS CPU sixteen-row path; FAIL MPS",
+    "complete_coreml_conversion_executed": true,
+    "original_model_fidelity": "UNVERIFIED",
+    "attention_minimum_query_rows_cpu": 16,
+    "cache_warmup_below_tokens_cpu": 16
+  },
+  "cache_followup": {
+    "summary": "evidence/03b-cache/summary.json",
+    "original_failures": "evidence/03-portable/summary.json",
+    "thresholds_changed": false,
+    "cpu_passed": true,
+    "mps_passed": false
+  },
+  "coreml_model": {
+    "summary": "evidence/04-coreml/summary.json",
+    "report": "evidence/04-coreml/REPORT.md",
+    "packages": "artifacts/04-coreml/model",
+    "capacity": 2048,
+    "prefill_chunk": 32,
+    "package_count": 14,
+    "numerical_fidelity": "FAIL",
+    "original_model_fidelity": "UNVERIFIED",
+    "gates": {
+      "G4.1": "PASS CPU complete-model compilation and completed generation; full GPU-permitted pipeline also executed",
+      "G4.2": "FAIL unchanged numerical limits; original NVIDIA-runtime fidelity remains unverified",
+      "G4.3": "PASS for recorded guarded lifecycle and capacity checks; not a general production reliability guarantee",
+      "G4.4": "PASS for recorded local invocation, pinned inputs and checksummed packages; clean-machine installation not tested"
+    }
+  },
+  "reliability_followup": {
+    "summary": "evidence/04b-reliability/summary.json",
+    "report": "evidence/04b-reliability/REPORT.md",
+    "guard": "coreml_port/cleanup_guard.py",
+    "status": "Original cleanup failure diagnosed; specific mechanism mitigated and bounded regressions pass"
+  },
+  "precision_followup": {
+    "summary": "evidence/04c-precision/summary.json",
+    "report": "evidence/04c-precision/REPORT.md",
+    "status": "Numerical correction in progress; experimental ordered shard not promoted",
+    "thresholds_changed": false
+  },
+  "cpu_precision_milestone": {
+    "report": "evidence/04d-cpu/REPORT.md",
+    "audit": "evidence/04d-audit/REPORT.md",
+    "status": "PASS: candidate6 sealed provenance, short54/54, partitions97/97, boundaries6/6, lifecycle and repeats, completed674-token reference-identical response and7score audits.",
+    "thresholds_changed": false,
+    "selected_full_model_changed": false,
+    "latest_complete_trial": "evidence/04d-cpu/full-candidate-6/summary.json",
+    "current_build": "evidence/04d-cpu/full-candidate-6/build.json",
+    "runtime_followup": "evidence/04e-runtime/REPORT.md",
+    "aggregate_evidence": "evidence/04d-cpu/candidate6-milestone.json",
+    "tiny_operator_followup": "evidence/04f-tiny/REPORT.md",
+    "milestone_pass": true,
+    "qualified_candidate": "artifacts/04d-cpu/full-candidate-6",
+    "candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6"
+  },
+  "practical_evaluation": {
+    "status": "completed_bounded_pilot",
+    "summary": "evidence/05-practical/summary.json",
+    "report": "evidence/05-practical/REPORT.md",
+    "comparison": "evidence/05-practical/comparison.json",
+    "candidate_changed": false,
+    "runtime_changed": false,
+    "thresholds_changed": false,
+    "new_portable_tasks_correct": 3,
+    "new_task_coreml_equivalence": "not measured",
+    "performance_recommendation": "Use portable CPU for practical inference; preserve candidate6 baseline and investigate compiled startup in isolation."
+  },
+  "compiled_startup_followup": {
+    "status": "one_group_feasibility_pass",
+    "report": "evidence/05b-startup/REPORT.md",
+    "summary": "evidence/05b-startup/summary.json",
+    "artifact": "artifacts/05b-startup/group0-1/0.mlmodelc",
+    "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+    "qualified_candidate_or_runtime_changed": false,
+    "full_pipeline_startup": "Subsequently measured and qualified in full_compiled_cache_followup.",
+    "steady_state_decode_improvement": "not established"
+  },
+  "full_compiled_cache_followup": {
+    "status": "qualified_pinned_local_cpu",
+    "report": "evidence/05c-compiled/REPORT.md",
+    "startup_summary": "evidence/05c-compiled/startup-summary.json",
+    "compiled_root": "artifacts/05c-compiled/full-cache-1",
+    "compiled_identity": "evidence/05c-compiled/full-cache-1/compiled-identity.json",
+    "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+    "runtime_adapter": "compiled_tiny_prefix_replay",
+    "default_changed": false,
+    "thresholds_changed": false,
+    "steady_state_decode_improvement": "not established",
+    "aggregate_evidence": "evidence/05c-compiled/milestone-rerun1.json",
+    "summary": "evidence/05c-compiled/summary.json",
+    "milestone_pass": true,
+    "reference_identical_generated_tokens": 674,
+    "next_milestone": "Completed in decode_cost_profile; isolated single-query value-product ablation planned next."
+  },
+  "decode_cost_profile": {
+    "status": "completed_bounded_profile",
+    "report": "evidence/05d-decode/REPORT.md",
+    "summary": "evidence/05d-decode/summary.json",
+    "exact_score_comparisons": 84,
+    "matched_decode_pairs": 24,
+    "disposed_requests": 10,
+    "backbone_fraction_of_profiled_forward_time": 0.979705372768,
+    "qualified_candidate_or_runtime_changed": false,
+    "thresholds_changed": false,
+    "default_changed": false,
+    "preservation": "evidence/05d-decode/baseline-preservation.json",
+    "next_experiment": "evidence/05d-decode/next-experiment.json",
+    "next_experiment_status": "completed_performance_no_go; see decode_product_ablation"
+  },
+  "decode_product_ablation": {
+    "status": "completed_performance_no_go",
+    "report": "evidence/05e-product/REPORT.md",
+    "summary": "evidence/05e-product/summary.json",
+    "variant": "artifacts/05e-product/repeat-first-2",
+    "exact_fresh_state_calls": 180,
+    "timed_calls": 144,
+    "passing_performance_cells": 1,
+    "performance_cells": 9,
+    "minimum_median_reduction_required": 0.1,
+    "observed_median_reduction_range": [
+      0.04815525587168068,
+      0.10056050898624236
+    ],
+    "qualified_runtime_changed": false,
+    "variant_adopted": false,
+    "thresholds_changed": false,
+    "next_experiment": "evidence/05e-product/next-experiment.json",
+    "next_experiment_status": "completed_local_performance_go; see warm_score_ablation"
+  },
+  "warm_score_ablation": {
+    "status": "completed_local_performance_go",
+    "report": "evidence/05f-scores/REPORT.md",
+    "summary": "evidence/05f-scores/summary.json",
+    "variant": "artifacts/05f-scores/warm-only-1",
+    "exact_fresh_state_calls": 180,
+    "timed_calls": 144,
+    "passing_performance_cells": 9,
+    "performance_cells": 9,
+    "observed_median_reduction_range": [
+      0.1776,
+      0.2259
+    ],
+    "variant_adopted": false,
+    "qualified_runtime_changed": false,
+    "whole_model_speedup": "not measured"
+  },
+  "gpu_group0_policy_probe": {
+    "status": "completed_diagnostic",
+    "report": "evidence/06-gpu/REPORT.md",
+    "summary": "evidence/06-gpu/summary.json",
+    "raw": "evidence/06-gpu/gpu-group0-1/results.json",
+    "original_qualified_graph_used": true,
+    "cpu_group_calls": 8,
+    "gpu_policy_group_calls": 10,
+    "strict_compute_policy_exactness_passed": false,
+    "all_five_group_y_relative_rmse_below_0_01": true,
+    "anticipated_gpu_operations": 19429,
+    "actual_execution_device_verified": false,
+    "performance_claim": null,
+    "full_model_gpu_qualified": false,
+    "thresholds_changed": false,
+    "next_experiment": "evidence/06-gpu/next-experiment.json"
+  },
+  "cpu_conditional_integration": {
+    "status": "promoted",
+    "utc": "2026-09-23T19:11:16.455436+00:00",
+    "scope": "Recommended explicit Core ML CPU compiled selection on the pinned local environment",
+    "selection": {
+      "model_dir": "artifacts/05g-integration/full-1/source",
+      "identity_manifest": "evidence/05g-integration/full-1/package-identity.json",
+      "compiled_dir": "artifacts/05g-integration/full-1/compiled",
+      "compiled_manifest": "evidence/05g-integration/full-1/compiled-identity.json"
+    },
+    "fallback": {
+      "model_dir": "artifacts/04d-cpu/full-candidate-6",
+      "identity_manifest": "evidence/04d-cpu/full-candidate-6/package-identity.json",
+      "compiled_dir": "artifacts/05c-compiled/full-cache-1",
+      "compiled_manifest": "evidence/05c-compiled/full-cache-1/compiled-identity.json"
+    },
+    "source_identity": "c7cc54a308bb7c379f6d55c777a62666e86921f27245115dc185597efc65a46b",
+    "compiled_identity": "149d74d2e339fabdafeec8cf5ad6766fdd2e2754c15f5256c7dc69d91b932557",
+    "compute": "CPU_ONLY",
+    "qualification_passed": true,
+    "full_benchmark_passed": true,
+    "prefix32_confirmation_passed": true,
+    "preservation_passed": true,
+    "qualified_runtime_sources_changed": false,
+    "frozen_acceptance_changed": false,
+    "evidence": {
+      "qualification": {
+        "path": "evidence/05g-integration/full-1/milestone.json",
+        "sha256": "342cd7dfb3d12672adcb713b739d54ee3d9407aa024410b3927597864383b96e"
+      },
+      "full_benchmark": {
+        "path": "evidence/05g-integration/pipeline-abba-1/results.json",
+        "sha256": "d6263cce6280058f955abc1e2365b08bdd1e977f6a0de1c401a6300fec979b78"
+      },
+      "prefix32_confirmation": {
+        "path": "evidence/05g-integration/prefix32-confirmation-1/results.json",
+        "sha256": "6b9bd1c2bf8a975b5a754c89095ddbab5cd934fcf18b554333ec3c5d47b54efc"
+      },
+      "preservation": {
+        "path": "evidence/05g-integration/final-preservation.json",
+        "sha256": "cfec08717f17fe93d21a8ee83628b815baaf9f9fc2bb53ee48fb8fd001b849bc"
+      },
+      "independent_benchmark_audit": {
+        "path": "evidence/05g-integration/pipeline-independent-audit.json",
+        "sha256": "3ca2c8bdbfa6ca72cfd0d5a70d651fdbed5f5752a2ba105281d0407508383fde"
+      },
+      "independent_confirmation_audit": {
+        "path": "evidence/05g-integration/prefix32-confirmation-independent-audit.json",
+        "sha256": "855529b0cdef7504cc1df6657fbbe1b79e8298db3f69ba01563b121260518d72"
+      }
+    },
+    "reason": "All original CPU gates pass, including 674 identical generated tokens. The full benchmark passes every prefix and pooled criterion. A separately frozen one-shot P32 confirmation passes performance, exactness and all eight recorded power/thermal boundaries. Both sealed cohorts and qualified sources remain intact. Independent audits agree.",
+    "performance_scope": "Local bounded measurements; original benchmark has power-source/round variation. Confirmation samples all report Battery. No universal latency, GPU, ANE or clean-machine claim.",
+    "practical_inference_recommendation": "portable CPU remains faster in retained baseline measurements",
+    "report": "evidence/05g-integration/REPORT.md",
+    "decision": "evidence/05g-integration/decision.json",
+    "group0_parity": "evidence/05g-integration/group0-parity-3/results.json",
+    "group0_exact_comparisons": 50,
+    "hidden_exact_comparisons": 142,
+    "generated_tokens_reference_identical": 674,
+    "full_pipeline_decode_reduction_by_prefix": {
+      "32": 0.17281252116182066,
+      "128": 0.17462075314215297,
+      "512": 0.18104361890814757
+    },
+    "pooled_decode_reduction": 0.17833492503577442,
+    "prefix32_confirmation_decode_reduction": 0.22180606174613937,
+    "adopted": true,
+    "independent_audits_passed": true
+  },
+  "full_gpu_numerical_screen": {
+    "status": "completed_numerical_no_go",
+    "report": "evidence/06b-full-gpu/REPORT.md",
+    "raw": "evidence/06b-full-gpu/short-1/results.json",
+    "independent_summary": "evidence/06b-full-gpu/independent-summary.json",
+    "numerical_passes": 21,
+    "numerical_total": 54,
+    "score_failures": 15,
+    "lifecycle_passes": 17,
+    "worst_score_max_abs": 0.3155984878540039,
+    "actual_device_placement": "unverified",
+    "adopted": false,
+    "next_experiment": "evidence/06b-full-gpu/next-experiment.json",
+    "first_hidden_threshold_crossing": "layer_19; not established as causal origin"
+  },
+  "gpu_numerical_localization": {
+    "status": "completed_diagnostic",
+    "report": "evidence/06c-gpu-localization/REPORT.md",
+    "raw_replay": "evidence/06c-gpu-localization/prompt0-1/results.json",
+    "prior_hidden_checkpoints_reproduced": 6,
+    "restored_state_replays": 60,
+    "first_observed_cache_divergence": "layer0 key cache; layer0 value cache exact",
+    "instrumentation_build": "evidence/06c-gpu-localization/key-taps-1/results.json",
+    "instrumentation_controls": "both four-tap and 13-tap clones preserve original endpoints and all eight cache states under both policies",
+    "actual_execution_device_verified": false,
+    "qualified_cpu_preserved": true,
+    "thresholds_changed": false,
+    "raw_instrumented": "evidence/06c-gpu-localization/raw-key-replay-1/results.json",
+    "independent_audit": "evidence/06c-gpu-localization/independent-raw-key-audit.json",
+    "rounding_summary": "evidence/06c-gpu-localization/rounding-summary.json",
+    "observed_rounding": {
+      "CPU": "ties-to-even",
+      "CPU_AND_GPU": "ties-away-from-zero",
+      "equal_quotient_half_tie_differences": [
+        320,
+        134
+      ]
+    },
+    "placement_report": "evidence/06c-gpu-localization/placement-summary.md",
+    "cpu_preservation": "evidence/06c-gpu-localization/cpu-preservation-final.json",
+    "next_experiment": "evidence/06c-gpu-localization/next-experiment.json",
+    "gpu_qualified": false,
+    "fix_integrated": false
+  },
+  "gpu_rounding_correction": {
+    "status": "completed_bounded_correction_and_localization",
+    "report": "evidence/06d-gpu-rounding/REPORT.md",
+    "operator_gate": "evidence/06d-gpu-rounding/round-replacement-1/results.json",
+    "bounded_operator_gate_passed": true,
+    "strict_full_q_torch_passed": false,
+    "native_cpu_full_q_preserved": true,
+    "candidate_build": "evidence/06d-gpu-rounding/group0-1/results.json",
+    "rounds_replaced": 131,
+    "other_operations_unchanged": 42367,
+    "group_replay": "evidence/06d-gpu-rounding/group0-replay-1/results.json",
+    "independent_summary": "evidence/06d-gpu-rounding/group-summary.json",
+    "cpu_group_byte_preserved": true,
+    "first_query_key_value_byte_exact": true,
+    "group_y_rmse_reduction_percent": [
+      88.98826621728881,
+      49.19479694603357
+    ],
+    "measurement_scope": "Group0 only, two saved CPU input/cache chunks (32+12 tokens); not whole-model accuracy or speed",
+    "local_gpu_exact_gate_passed": false,
+    "gpu_qualified": false,
+    "fix_integrated": false,
+    "thresholds_changed": false,
+    "actual_device_placement": "unverified",
+    "cpu_preservation": "evidence/06d-gpu-rounding/cpu-preservation.json",
+    "residual_replays": [
+      "evidence/06d-gpu-rounding/residual-replay-2/results.json",
+      "evidence/06d-gpu-rounding/residual-replay-3/results.json"
+    ],
+    "residual_boundaries": {
+      "cold": "after exact Q/K/V and by attention residual value_17",
+      "warm": "exact attention residual value_17 to differing normalized output x_69"
+    },
+    "next_experiment": "evidence/06d-gpu-rounding/next-experiment.json"
+  },
+  "gpu_normalization_localization": {
+    "status": "completed_localization_candidate_rejected",
+    "report": "evidence/06e-gpu-normalization/REPORT.md",
+    "build": "evidence/06e-gpu-normalization/taps-1/results.json",
+    "replay": "evidence/06e-gpu-normalization/replay-1/results.json",
+    "independent_summary": "evidence/06e-gpu-normalization/residual-summary-1.json",
+    "analysis": "evidence/06e-gpu-normalization/normalization-analysis.json",
+    "control_cells_passed": 4,
+    "native_state_calls": 8,
+    "warm_first_differing_operation": "var_5675 reciprocal 1 / denom_7",
+    "warm_denominator_byte_exact": true,
+    "warm_reciprocal_ulp_difference": 1,
+    "warm_changed_reciprocal_rows": [
+      1,
+      2,
+      8
+    ],
+    "warm_changed_normalized_values": 19,
+    "cold_attention_residual_unresolved": true,
+    "qualified_cpu_preserved": true,
+    "cpu_preservation": "evidence/06e-gpu-normalization/cpu-preservation.json",
+    "gpu_qualified": false,
+    "fix_integrated": false,
+    "thresholds_changed": false,
+    "actual_device_placement": "unverified",
+    "offline_counterfactual": "evidence/06e-gpu-normalization/normalization-counterfactual.json",
+    "candidate_host_preflight": "evidence/06e-gpu-normalization/reciprocal-host-1/host-preflight.json",
+    "candidate_native_predictions": 0,
+    "candidate_rejection": "Changes correct CPU reciprocals at three directed denominators immediately below 1, 2 and 4",
+    "next_experiment": "evidence/06e-gpu-normalization/next-experiment.json"
+  },
+  "gpu_reciprocal_correction": {
+    "status": "completed_bounded_single_site_milestone",
+    "decision": "Retain separately validated group0 correction; continue local residual diagnosis. No full-model GPU adoption.",
+    "host_corrections_passed": 31147,
+    "native_component_calls": 36,
+    "native_supplied_seed_correction_calls_passed": 28,
+    "standalone_seed_reproduction_passed": false,
+    "group_state_calls": 12,
+    "group_controls_passed": true,
+    "in_model_original_seed_reproduced": true,
+    "corrected_site_oracle_exact": true,
+    "warm_normalization_differences_before": 19,
+    "warm_normalization_differences_after": 0,
+    "cpu_group_outputs_and_states_byte_preserved": true,
+    "qualified_cpu_cohorts_preserved": true,
+    "warm_group_y_rmse": {
+      "before": 19.2935148844,
+      "after": 6.70569604563,
+      "reduction_percent": 65.2438,
+      "comparison": "Prior round-only group0 candidate against original CPU on the same saved warm12 fixture"
+    },
+    "warm_cache_element_differences": {
+      "before": 2217,
+      "after": 379
+    },
+    "cold_output_and_cache_errors_unchanged": true,
+    "full_model_gpu_qualified": false,
+    "integrated_into_qualified_runtime": false,
+    "thresholds_changed": false,
+    "actual_device_placement": "unverified",
+    "domain": "positive finite FP32 denominator [0.5,8], seed within one adjacent float of exact nearest-even reciprocal; out-of-domain model values retain original seed",
+    "final_seal": "evidence/06f-gpu-reciprocal/checksum-verification.json",
+    "report": "evidence/06f-gpu-reciprocal/REPORT.md",
+    "outcome": "evidence/06f-gpu-reciprocal/outcome.json",
+    "next_experiment": "evidence/06f-gpu-reciprocal/next-experiment.json"
+  },
+  "gpu_residual_key_localization": {
+    "status": "completed_bounded_localization",
+    "native_state_calls": 24,
+    "control_cells_passed": 12,
+    "all_native_processes_exit_zero": true,
+    "graph_operations_unchanged_per_clone": 46185,
+    "qualified_cpu_cohorts_preserved": true,
+    "additional_correction_applied": false,
+    "warm_localized_target": "layer2 key normalization var_14324 = 1 / denom_21",
+    "warm_projection_and_denominator_exact": true,
+    "warm_reciprocal_errors": {
+      "elements": 9,
+      "total": 24,
+      "ulp_errors": {
+        "-1": 7,
+        "+1": 2
+      },
+      "cpu_oracle_exact": true
+    },
+    "warm_key_denominator_range": [
+      24.060638427734375,
+      58.722999572753906
+    ],
+    "outside_existing_helper_domain": true,
+    "boundary_example": {
+      "key_index": [
+        0,
+        0,
+        0,
+        73
+      ],
+      "cache_index": [
+        0,
+        32,
+        0,
+        73
+      ],
+      "cpu_quotient": -169.5,
+      "gpu_policy_quotient": -169.49998474121094,
+      "cpu_round": -170,
+      "gpu_policy_round": -169,
+      "both_rounds_correct_ties_even": true,
+      "cpu_key": -0.33203125,
+      "gpu_policy_key": -0.330078125
+    },
+    "controlled_host_substitution": {
+      "diagonal_reconstruction_all_four_policy_chunk_cells_exact": true,
+      "warm_raw_and_quotient_differences_before": 962,
+      "warm_rounded_key_differences_before": 1,
+      "warm_all_four_stage_differences_after": 0,
+      "scope": "Saved key-normalization tensors only; no compiled repair/cache or full-model claim"
+    },
+    "earlier_prenorm_sites_not_corrected": [
+      "var_7154",
+      "var_13395"
+    ],
+    "cold_attention_discrepancy": "unresolved; earlier incoming differences persist",
+    "full_model_gpu_qualified": false,
+    "thresholds_changed": false,
+    "actual_device_placement": "unverified",
+    "decision": "Validate bounded factor8 scaled helper, then rank4 native arithmetic and one-additional-site group candidate before any full-model expansion.",
+    "final_seal": "evidence/06g-gpu-residual/checksum-verification.json",
+    "report": "evidence/06g-gpu-residual/REPORT.md",
+    "outcome": "evidence/06g-gpu-residual/outcome.json",
+    "next_experiment": "evidence/06g-gpu-residual/next-experiment.json"
+  }
+}

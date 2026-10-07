@@ -1,0 +1,296 @@
+{
+  "status": "complete",
+  "reference_sha256": "ab764cefbc12844bfee830e48386ec7dd4c72c300dbf2a94f74fb98c403b3164",
+  "script_sha256": "7b92ea5d3760739fdc75fabf2d195817b7adfd964b42f3374b89b3b9108fa048",
+  "positions": [
+    0,
+    1,
+    2
+  ],
+  "runs": {
+    "3": {
+      "scores": {
+        "different_elements": 44,
+        "max_abs": 2.384185791015625e-06,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "actual": 4.436775207519531,
+            "expected": 4.4367756843566895
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "actual": 5.769047260284424,
+            "expected": 5.769046783447266
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              2
+            ],
+            "actual": 4.635492324829102,
+            "expected": 4.63549280166626
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              2
+            ],
+            "actual": 3.7715137004852295,
+            "expected": 3.7715141773223877
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "actual": 5.1287407875061035,
+            "expected": 5.128740310668945
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              2
+            ],
+            "actual": 4.6730499267578125,
+            "expected": 4.673049449920654
+          },
+          {
+            "index": [
+              0,
+              2,
+              0,
+              1
+            ],
+            "actual": 5.464846611022949,
+            "expected": 5.464846134185791
+          },
+          {
+            "index": [
+              0,
+              2,
+              1,
+              0
+            ],
+            "actual": 5.960919380187988,
+            "expected": 5.96091890335083
+          }
+        ]
+      },
+      "rounded_given_coreml_scores": {
+        "different_elements": 1,
+        "max_abs": 0.0009765625,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              2,
+              8,
+              38
+            ],
+            "actual": -0.185546875,
+            "expected": -0.1845703125
+          }
+        ]
+      },
+      "torch_rounded_vs_saved_corrected": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "coreml_score_rounded_vs_saved_corrected": {
+        "different_elements": 1,
+        "max_abs": 0.0009765625,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              2,
+              8,
+              38
+            ],
+            "actual": -0.185546875,
+            "expected": -0.1845703125
+          }
+        ]
+      },
+      "target_scores": {
+        "actual": [
+          6.463119029998779,
+          7.167274475097656,
+          7.702094554901123
+        ],
+        "torch": [
+          6.463118076324463,
+          7.167275428771973,
+          7.702094554901123
+        ]
+      },
+      "target_q": {
+        "actual": -0.185546875,
+        "torch": -0.1845703125,
+        "saved_corrected": -0.1845703125
+      }
+    },
+    "2048": {
+      "scores": {
+        "different_elements": 53,
+        "max_abs": 2.384185791015625e-06,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "actual": 4.436775207519531,
+            "expected": 4.4367756843566895
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "actual": 5.769047260284424,
+            "expected": 5.769046783447266
+          },
+          {
+            "index": [
+              0,
+              0,
+              1,
+              2
+            ],
+            "actual": 4.635492324829102,
+            "expected": 4.63549280166626
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              0
+            ],
+            "actual": 4.0799713134765625,
+            "expected": 4.079972267150879
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              1
+            ],
+            "actual": 5.210511207580566,
+            "expected": 5.210511684417725
+          },
+          {
+            "index": [
+              0,
+              0,
+              2,
+              2
+            ],
+            "actual": 5.898653030395508,
+            "expected": 5.898653507232666
+          },
+          {
+            "index": [
+              0,
+              1,
+              0,
+              2
+            ],
+            "actual": 3.7715137004852295,
+            "expected": 3.7715141773223877
+          },
+          {
+            "index": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "actual": 5.1287407875061035,
+            "expected": 5.128740310668945
+          }
+        ]
+      },
+      "rounded_given_coreml_scores": {
+        "different_elements": 1,
+        "max_abs": 0.0009765625,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              2,
+              8,
+              38
+            ],
+            "actual": -0.185546875,
+            "expected": -0.1845703125
+          }
+        ]
+      },
+      "torch_rounded_vs_saved_corrected": {
+        "different_elements": 0,
+        "max_abs": 0.0,
+        "first_differences": []
+      },
+      "coreml_score_rounded_vs_saved_corrected": {
+        "different_elements": 1,
+        "max_abs": 0.0009765625,
+        "first_differences": [
+          {
+            "index": [
+              0,
+              2,
+              8,
+              38
+            ],
+            "actual": -0.185546875,
+            "expected": -0.1845703125
+          }
+        ]
+      },
+      "target_scores": {
+        "actual": [
+          6.463119029998779,
+          7.167274475097656,
+          7.702094554901123
+        ],
+        "torch": [
+          6.463118076324463,
+          7.167275428771973,
+          7.702095031738281
+        ]
+      },
+      "target_q": {
+        "actual": -0.185546875,
+        "torch": -0.1845703125,
+        "saved_corrected": -0.1845703125
+      }
+    }
+  }
+}

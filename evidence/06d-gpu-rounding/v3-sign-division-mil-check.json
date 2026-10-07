@@ -1,0 +1,57 @@
+{
+  "status": "completed",
+  "passed": true,
+  "helper_source": "<PROJECT_ROOT>/scripts/signed_even_round_v3.py",
+  "helper_sha256": "d1e7af3cfbc0b493b1f481984bdbf0469cce693860c1bd0133d86b53a3a7bcb0",
+  "scope": "symbolic conversion only; native compiler lowering unverified",
+  "native_compile_load_predict": false,
+  "prelaunch_revision": "Tensor fill_like branches; initial scalar-denominator draft superseded before native execution",
+  "cases": [
+    {
+      "pipeline": "EMPTY",
+      "counts": {
+        "abs": 1,
+        "floor": 2,
+        "sub": 2,
+        "const": 9,
+        "real_div": 2,
+        "mul": 1,
+        "equal": 2,
+        "greater": 1,
+        "cast": 1,
+        "select": 3,
+        "add": 1,
+        "fill_like": 2,
+        "less": 1
+      },
+      "variable_sign_division_preserved": true,
+      "tensor_sign_denominator_preserved": true,
+      "final_zero_select_preserved": true,
+      "all_nonconst_outputs_rank1": true,
+      "program_operations_sha256": "f8bfcdb420a407779e4b651da9bda1c8f2e4e6f71dbf91388c1bf6c3d9184829"
+    },
+    {
+      "pipeline": "DEFAULT",
+      "counts": {
+        "abs": 1,
+        "floor": 2,
+        "sub": 2,
+        "const": 9,
+        "mul": 2,
+        "equal": 2,
+        "greater": 1,
+        "cast": 1,
+        "select": 3,
+        "add": 1,
+        "fill_like": 2,
+        "less": 1,
+        "real_div": 1
+      },
+      "variable_sign_division_preserved": true,
+      "tensor_sign_denominator_preserved": true,
+      "final_zero_select_preserved": true,
+      "all_nonconst_outputs_rank1": true,
+      "program_operations_sha256": "f4af823232361d96cd43e4207dfc3c3c8c9ef3d553c9af4dd618e7da192252a3"
+    }
+  ]
+}

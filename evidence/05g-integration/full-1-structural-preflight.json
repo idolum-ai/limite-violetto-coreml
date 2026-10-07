@@ -1,0 +1,119 @@
+{
+  "scope": "Read-only recorded manifest/inventory/structural/source-snapshot checks; no native predictions or complete artifact byte rehash",
+  "source_identity": "c7cc54a308bb7c379f6d55c777a62666e86921f27245115dc185597efc65a46b",
+  "compiled_identity": "149d74d2e339fabdafeec8cf5ad6766fdd2e2754c15f5256c7dc69d91b932557",
+  "aggregator_sha256": "aa74f766dc51b3ed123ba1dd4783c8cd4ad897dfa2719850acfb7fddd66ded3b",
+  "groups": [
+    {
+      "group": "0",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group0-3/results.json",
+      "record_sha256": "b56e7b4ce8072ff58b160cb96b0f8d739d43123c832a2348031cc3262789421d",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    },
+    {
+      "group": "1",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group1-2/results.json",
+      "record_sha256": "c75afa34c6884c33a72c0b516d8ff22e146de4e2dd9ae7787e89081b6d9087d4",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    },
+    {
+      "group": "2",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group2-2/results.json",
+      "record_sha256": "5d03001773e8f773dafe08ca3763cf3140235d6e6c403c597752ee3a277d9c6a",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    },
+    {
+      "group": "3",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group3-2/results.json",
+      "record_sha256": "8dd6b725da18261db154edbce36ae98e4887158e6785835969cbf05a436930b8",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    },
+    {
+      "group": "4",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group4-2/results.json",
+      "record_sha256": "d78a9ba0713e31820dcb0bcc1f1c3878f34de53a1ca33a3f1e40972ac9cc6c32",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    },
+    {
+      "group": "5",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group5-2/results.json",
+      "record_sha256": "cb96228cdda07c0aaff413394873882557cdf64352af2891270da5d8c5619f6f",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    },
+    {
+      "group": "6",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group6-2/results.json",
+      "record_sha256": "0742dc330f61e3caa48a55f8d10a599fde2442b98aba90ba730ed61b126031f3",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    },
+    {
+      "group": "7",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group7-2/results.json",
+      "record_sha256": "0e94b62fcd1b43928fc8fa9c1385624d48828b9f288233a48ba34d1ae01cf2e5",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    },
+    {
+      "group": "8",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group8-2/results.json",
+      "record_sha256": "948d71f6f5936ff4f7330fa5500194aecac8018c3939ff960216964e3948ccb1",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    },
+    {
+      "group": "9",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group9-2/results.json",
+      "record_sha256": "b5c7c7e2aedb0b2a02c2af247718df5070a6cbb250e6d134411707fb4045bfb6",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    },
+    {
+      "group": "10",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group10-2/results.json",
+      "record_sha256": "e482241df5d506e018ed2e000f1971f3e5b618da265fc918f38f3abff3559273",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    },
+    {
+      "group": "11",
+      "record": "<PROJECT_ROOT>/evidence/05g-integration/conditional-group11-2/results.json",
+      "record_sha256": "515ef586af742021132dfa2b699eb2e4753dd020537aca0ef5b0461053cb0df2",
+      "selectors": 4,
+      "moved_short_ops": 10004,
+      "passed": true
+    }
+  ],
+  "seal": {
+    "path": "<PROJECT_ROOT>/evidence/05g-integration/full-1/provenance-verification.json",
+    "sources_unchanged_during_build": true,
+    "before_matches_source_identity": true,
+    "after_matches_before": true,
+    "package_identity_matches": true,
+    "copied_components": [
+      "embedding",
+      "head"
+    ],
+    "snapshot_count": 37
+  },
+  "qualified_source_count": 38,
+  "errors": [],
+  "passed": true
+}

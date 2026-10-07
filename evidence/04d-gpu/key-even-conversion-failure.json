@@ -1,0 +1,7 @@
+{
+  "attempt": "explicit-even-v1",
+  "script_sha256": "3ca76cff3a3e58d1a3a2e792c37634eb37ff069572d1333c35fc6133dd14d5c3",
+  "command": ".venv/bin/python scripts/gpu_key_round_fix.py",
+  "failure": "Core ML Tools 9.0 Torch converter: NotImplementedError: PyTorch convert function for op __or__ not implemented",
+  "package_created": false
+}

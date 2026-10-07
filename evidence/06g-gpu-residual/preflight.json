@@ -1,0 +1,305 @@
+{
+  "graph_check": {
+    "added_taps": [
+      {
+        "direct_inputs": {
+          "x": [
+            "var_6973"
+          ],
+          "y": [
+            "step_63"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "value_19",
+        "operation_index": 11739,
+        "operation_sha256": "a524255c5a1b1bb3a86a843e8a476403302d75adae533278e17c54ff39ec098a",
+        "operation_type": "mul",
+        "original_operation_index": 11589,
+        "stage": "normalization_input"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "value_19"
+          ],
+          "y": [
+            "value_19"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "x_89",
+        "operation_index": 11740,
+        "operation_sha256": "8350b83a42856344ccff151b2f84cc6161d8bbbc11db1d7e49090cbecf7e01aa",
+        "operation_type": "mul",
+        "original_operation_index": 11590,
+        "stage": "square"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_7146"
+          ],
+          "y": [
+            "var_7147"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1
+        ],
+        "name": "var_7148",
+        "operation_index": 12177,
+        "operation_sha256": "d548b75904f3433145d9073b9ac29d766a5176a0cdc7a4e556213f72b6f4ae70",
+        "operation_type": "add",
+        "original_operation_index": 12027,
+        "stage": "ordered_sum"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_7148"
+          ],
+          "y": [
+            "norm_divisor"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1
+        ],
+        "name": "mean_9",
+        "operation_index": 12178,
+        "operation_sha256": "0a8261b8a3bcea757f4203658195ad933216806940d1d2cd44b7eb14e214caa8",
+        "operation_type": "real_div",
+        "original_operation_index": 12028,
+        "stage": "divide_by_norm_divisor"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "mean_9"
+          ],
+          "y": [
+            "var_7150"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1
+        ],
+        "name": "var_7151",
+        "operation_index": 12180,
+        "operation_sha256": "abc0d2e85f4f4cb51f1dc054e17078a8eee2694f4370c0439697ca66552885af",
+        "operation_type": "add",
+        "original_operation_index": 12030,
+        "stage": "add_epsilon"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_7151"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1
+        ],
+        "name": "denom_9",
+        "operation_index": 12181,
+        "operation_sha256": "385f334005e7c0fa9b9b8e1c06c4e0a6f5f69369b70746d2acd677baf3c830d8",
+        "operation_type": "sqrt",
+        "original_operation_index": 12031,
+        "stage": "square_root"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "fill_like_5"
+          ],
+          "y": [
+            "denom_9"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1
+        ],
+        "name": "var_7154",
+        "operation_index": 12184,
+        "operation_sha256": "b1a8fcade992bd6d442d5f5c1ba56e1969538113ce429719b735f03b243b6355",
+        "operation_type": "real_div",
+        "original_operation_index": 12034,
+        "stage": "original_reciprocal_seed"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "value_19"
+          ],
+          "y": [
+            "var_7154"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "x_91",
+        "operation_index": 12185,
+        "operation_sha256": "7073d52c2f9b6b7ec0396537c28ea453eec8e520113cc7a63c1eeff4bb2d11ee",
+        "operation_type": "mul",
+        "original_operation_index": 12035,
+        "stage": "raw_normalized_value"
+      },
+      {
+        "direct_inputs": {
+          "axis": [
+            "step_65_axis_1"
+          ],
+          "batch_dims": [
+            "step_65_batch_dims_0"
+          ],
+          "indices": [
+            "select_42"
+          ],
+          "validate_indices": [
+            "step_65_validate_indices_0"
+          ],
+          "x": [
+            "powers_1"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "step_65",
+        "operation_index": 12208,
+        "operation_sha256": "316bb53c75bbbad6e0fa54a2629c328c9a1eb3b46c30c6e39fd2d07de64e8dfa",
+        "operation_type": "gather",
+        "original_operation_index": 12058,
+        "stage": "quantization_step"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "x_91"
+          ],
+          "y": [
+            "step_65"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "var_7169",
+        "operation_index": 12209,
+        "operation_sha256": "97e1a1f72ac7e97d8d40b531dac84bd81d2ac703dce0457b9eb90392c80f30ae",
+        "operation_type": "real_div",
+        "original_operation_index": 12059,
+        "stage": "quantization_quotient"
+      },
+      {
+        "direct_inputs": {
+          "a": [
+            "var_7169"
+          ],
+          "b": [
+            "signed_even_site_11169_real_div_1"
+          ],
+          "cond": [
+            "signed_even_site_11169_equal_1"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "var_7170",
+        "operation_index": 12237,
+        "operation_sha256": "5c3f766e42edb2da2988fc348b00e37d66b97dfe64907f7696887c430fd75031",
+        "operation_type": "select",
+        "original_operation_index": 12087,
+        "stage": "signed_even_round_result"
+      },
+      {
+        "direct_inputs": {
+          "x": [
+            "var_7170"
+          ],
+          "y": [
+            "step_65"
+          ]
+        },
+        "mil_shape": [
+          1,
+          null,
+          1280
+        ],
+        "name": "x_93",
+        "operation_index": 12238,
+        "operation_sha256": "a1187e5ad6ed4df54e8a23a2489612c7164c58f7bedb259b4c6c44041348aee8",
+        "operation_type": "mul",
+        "original_operation_index": 12088,
+        "stage": "normalized_quantized_output"
+      }
+    ],
+    "all_operations_byte_identical": true,
+    "default_query_length": 3,
+    "non_output_spec_sha256": "dc0e08469999a5d2fc8b41d2a006861e886cf0d08ea28b31a4a3ba5fd2de2171",
+    "normalization_dependency_chain_valid": true,
+    "only_description_and_block_outputs_changed": true,
+    "operations_sha256": "cdd5e47a35b662e88f66bd55b1313b1bb99a0f7cb60b04f5173ac84e5cb411e5",
+    "original_endpoints_preserved": [
+      "y",
+      "tap23_out"
+    ],
+    "passed": true,
+    "query_length_range": [
+      1,
+      32
+    ],
+    "source_operation_count": 46185,
+    "state_names_preserved": [
+      "inner_k_cache_0",
+      "inner_v_cache_0",
+      "inner_k_cache_1",
+      "inner_v_cache_1",
+      "inner_k_cache_2",
+      "inner_v_cache_2",
+      "inner_k_cache_3",
+      "inner_v_cache_3"
+    ]
+  },
+  "passed": true,
+  "scope": "Static saved-spec output-only tap rewrite; no package build or native calls",
+  "script_sha256": "30d868180d5899a0782875d980d5e106ec15837a83bc1d0b985a5ebb551e41c8",
+  "source_build_sha256": "48af7de89cde44bcaf7c7dda12457aec5eb9c2e99cfa1ae4c5294090529441d6",
+  "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "source_files": {
+    "Data/com.apple.CoreML/model.mlmodel": "dc0e08469999a5d2fc8b41d2a006861e886cf0d08ea28b31a4a3ba5fd2de2171",
+    "Data/com.apple.CoreML/weights/weight.bin": "2124067e0177ba93c4e1d09ea499435203787b343f5f7eb1f4a4840b0e92db9b",
+    "Manifest.json": "a0b8ecc7aebf27908cbce79298bec4435dd80f63e12f9dc0b2d6dea823e912e8"
+  },
+  "source_package": "artifacts/06f-gpu-reciprocal/group0-1/plain/0.mlpackage",
+  "status": "completed"
+}

@@ -1,0 +1,79 @@
+{
+  "status": "completed",
+  "milestone_pass": true,
+  "scope": "persistent compiled loading on the pinned local CPU environment",
+  "aggregate_evidence": "evidence/05c-compiled/milestone-rerun1.json",
+  "startup_summary": "evidence/05c-compiled/startup-summary.json",
+  "source_candidate_identity": "5a3e4c7a571e4fc3532377d9b9bb0da023f499c10709216fee7e1001bf4ad2c6",
+  "compiled_aggregate_sha256": "a838dd36e8f87c6b9fc0dd7865d0912651c6ab3399fa299d10ff12d788bcb031",
+  "compiled_bytes": 5049395550,
+  "compile_call_seconds": 21.475021542049944,
+  "gates": {
+    "boundaries": {
+      "check_count": 4,
+      "comparison_count": 6,
+      "errors": [],
+      "labels": [
+        "fresh1026",
+        "prefix1023",
+        "prefix1024",
+        "prefix1025",
+        "prefix1026",
+        "prefix2048"
+      ],
+      "max_hidden_relative_rmse": 0.0,
+      "max_score_abs": 1.9073486328125e-06,
+      "passed": true,
+      "path": "<PROJECT_ROOT>/evidence/05c-compiled/boundaries/results.json",
+      "status": "pass"
+    },
+    "generation": {
+      "audit_count": 7,
+      "boxed_391_after_think": true,
+      "errors": [],
+      "finish_reason": "stop_token",
+      "generated_tokens": 674,
+      "max_audited_score_error": 3.814697265625e-06,
+      "passed": true,
+      "path": "<PROJECT_ROOT>/evidence/04d-audit/compiled1-generation/results.json",
+      "request_disposed": true,
+      "status": "pass",
+      "think_marker_present": true
+    },
+    "partitions": {
+      "case_count": 13,
+      "disposed_request_count": 13,
+      "errors": [],
+      "expected_matched_prefix_count": 97,
+      "matched_prefix_count": 97,
+      "max_hidden_relative_rmse": 0.0,
+      "max_score_abs": 3.814697265625e-06,
+      "partition_repeat_pass": true,
+      "passed": true,
+      "passed_prefix_count": 97,
+      "path": "<PROJECT_ROOT>/evidence/04d-audit/compiled1-partitions/results.json",
+      "status": "pass"
+    },
+    "short": {
+      "attempt_path": "<PROJECT_ROOT>/evidence/05c-compiled/short/validation-CPU_ONLY-attempt.json",
+      "attempt_status": "completed",
+      "check_count": 17,
+      "comparison_count": 54,
+      "errors": [],
+      "expected_checks": 17,
+      "expected_comparisons": 54,
+      "lifecycle_pass": true,
+      "max_hidden_relative_rmse": 0.0,
+      "max_score_abs": 1.9073486328125e-06,
+      "numerical_pass": true,
+      "passed": true,
+      "result_path": "<PROJECT_ROOT>/evidence/05c-compiled/short/validation-CPU_ONLY.json",
+      "status": "pass"
+    }
+  },
+  "thresholds_changed": false,
+  "default_loader_changed": false,
+  "all_generated_tokens_equal_qualified_cpu_and_package_loader": true,
+  "decode_speedup_established": false,
+  "next_milestone": "Profile warm per-token Core ML costs with fixed token streams; keep the qualified loader and model frozen."
+}

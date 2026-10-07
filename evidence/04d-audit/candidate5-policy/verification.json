@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "scope": "aggregator arithmetic-policy provenance tests; no Core ML inference",
+  "py_compile_pass": true,
+  "unit_tests": {
+    "suite": "scripts.test_summarize_cpu_milestone",
+    "passed": 9,
+    "failed": 0
+  },
+  "source_sha256": {
+    "scripts/summarize_cpu_milestone.py": "bd2e32bbf5ddf4a3cc2b084b9b5f5c73b8f3a146611ad00a24b40a5971d30646",
+    "scripts/test_summarize_cpu_milestone.py": "bb32938618f7a6671647b9b664e0a6caf6babdba0643b19edd311bd901fee2c0",
+    "coreml_port/paired_product.py": "9145720c24d706940ddc7039521a3cd76b8706419e964070730bd0f81dbe59e3",
+    "coreml_port/tiny_scores.py": "f5af4d2e7efa16348483fff087d98c4fdaae3cc2adae870066e2a726c2f4a180"
+  },
+  "legacy_candidate4": {
+    "arithmetic_policy": "legacy-dynamic-product",
+    "provenance_pass": true,
+    "milestone_status": "incomplete",
+    "missing_gates": [
+      "boundaries",
+      "generation"
+    ]
+  },
+  "paired_tiny_policy_candidate4_rejection": {
+    "arithmetic_policy": "paired-tiny",
+    "provenance_pass": false,
+    "required_rejection_categories": [
+      "both build flags false/missing",
+      "both helper source identities missing",
+      "all 12 converted group commands missing required switches"
+    ],
+    "observed_categories": {
+      "paired_product_flag": true,
+      "tiny_sequential_flag": true,
+      "paired_product_source": true,
+      "tiny_scores_source": true,
+      "group_commands": true
+    },
+    "provenance_errors": [
+      "paired-tiny policy requires build paired_product=true",
+      "paired-tiny policy requires build tiny_sequential=true",
+      "paired-tiny source identity is missing or malformed: coreml_port/paired_product.py",
+      "paired-tiny source identity is missing or malformed: coreml_port/tiny_scores.py",
+      "group 0: conversion command lacks --product paired",
+      "group 0: conversion command lacks --score-dot tiny-sequential",
+      "group 1: conversion command lacks --product paired",
+      "group 1: conversion command lacks --score-dot tiny-sequential",
+      "group 2: conversion command lacks --product paired",
+      "group 2: conversion command lacks --score-dot tiny-sequential",
+      "group 3: conversion command lacks --product paired",
+      "group 3: conversion command lacks --score-dot tiny-sequential",
+      "group 5: conversion command lacks --product paired",
+      "group 5: conversion command lacks --score-dot tiny-sequential",
+      "group 4: conversion command lacks --product paired",
+      "group 4: conversion command lacks --score-dot tiny-sequential",
+      "group 7: conversion command lacks --product paired",
+      "group 7: conversion command lacks --score-dot tiny-sequential",
+      "group 6: conversion command lacks --product paired",
+      "group 6: conversion command lacks --score-dot tiny-sequential",
+      "group 8: conversion command lacks --product paired",
+      "group 8: conversion command lacks --score-dot tiny-sequential",
+      "group 9: conversion command lacks --product paired",
+      "group 9: conversion command lacks --score-dot tiny-sequential",
+      "group 10: conversion command lacks --product paired",
+      "group 10: conversion command lacks --score-dot tiny-sequential",
+      "group 11: conversion command lacks --product paired",
+      "group 11: conversion command lacks --score-dot tiny-sequential"
+    ]
+  },
+  "qualification_note": "paired-tiny policy is an experimental candidate build identity, not a statement that candidate5 arithmetic has passed model gates."
+}

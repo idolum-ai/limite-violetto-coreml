@@ -1,0 +1,84 @@
+{
+  "tree_truncated": false,
+  "files": [
+    ".gitignore",
+    ".ruff.toml",
+    "LICENSE",
+    "README.md",
+    "assets/aime26-flops.png",
+    "assets/paradigma-logo-black.svg",
+    "assets/paradigma-logo-white.svg",
+    "pyproject.toml",
+    "src/limite_vllm/__init__.py",
+    "src/limite_vllm/_components.py",
+    "src/limite_vllm/configuration.py",
+    "src/limite_vllm/contract.py",
+    "src/limite_vllm/modeling.py",
+    "src/limite_vllm/register.py",
+    "src/limite_vllm/validation.py",
+    "tests/test_package_contract.py",
+    "uv.lock"
+  ],
+  "test_functions": [
+    {
+      "file": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/tests/test_package_contract.py",
+      "line": 192,
+      "name": "test_canonical_runtime_inventory"
+    },
+    {
+      "file": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/tests/test_package_contract.py",
+      "line": 204,
+      "name": "test_public_identity_and_entry_point"
+    },
+    {
+      "file": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/tests/test_package_contract.py",
+      "line": 228,
+      "name": "test_default_lock_installs_the_cuda_runtime"
+    },
+    {
+      "file": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/tests/test_package_contract.py",
+      "line": 242,
+      "name": "test_plugin_registration_is_idempotent"
+    },
+    {
+      "file": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/tests/test_package_contract.py",
+      "line": 271,
+      "name": "test_vllm_version_guard_accepts_build_suffixes_and_rejects_other_releases"
+    },
+    {
+      "file": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/tests/test_package_contract.py",
+      "line": 284,
+      "name": "test_configuration_is_self_contained_and_uses_limite_identity"
+    },
+    {
+      "file": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/tests/test_package_contract.py",
+      "line": 298,
+      "name": "test_supported_configurations_are_admitted"
+    },
+    {
+      "file": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/tests/test_package_contract.py",
+      "line": 306,
+      "name": "test_lint_configuration_checks_the_complete_runtime"
+    },
+    {
+      "file": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/tests/test_package_contract.py",
+      "line": 312,
+      "name": "test_repository_contains_no_legacy_or_cross_package_imports"
+    },
+    {
+      "file": "sources/runtime/paradigma-inc-limite-violetto-cd68d27/tests/test_package_contract.py",
+      "line": 416,
+      "name": "test_full_reload_restores_raw_before_folding_once"
+    }
+  ],
+  "missing_referenced_files": [
+    "limite_model.py",
+    "spec.py",
+    "tests/test_limite_vllm_model.py"
+  ],
+  "reference_tensor_files": [],
+  "releases": [],
+  "scope": "Pinned runtime tree, published releases, pinned Hugging Face model assets. This is not a claim that no reference exists elsewhere.",
+  "runtime_tree_sha": "cd68d27f100ebb7c84f05603d5af0e8f934b28b5",
+  "runtime_commit": "cd68d27f100ebb7c84f05603d5af0e8f934b28b5"
+}

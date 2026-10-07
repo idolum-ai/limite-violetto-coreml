@@ -1,0 +1,10 @@
+{
+  "qualification_jobs_exited": true,
+  "other_observed_model_or_benchmark_jobs": false,
+  "thermal_warning_recorded": false,
+  "performance_warning_recorded": false,
+  "background_os_activity": {
+    "cloudd_percent_cpu_observed": 82.5
+  },
+  "interpretation": "Model qualification jobs have exited; host is not idle. Ordinary OS background work remains uncontrolled; inspect per-round spread and recorded per-worker host telemetry."
+}

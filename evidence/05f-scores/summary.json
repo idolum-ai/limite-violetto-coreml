@@ -1,0 +1,96 @@
+{
+  "block_count": 9,
+  "blocks": [
+    {
+      "baseline_median_seconds": 0.192948187,
+      "block": 0,
+      "go": true,
+      "median_reduction": 0.2204673216234989,
+      "prefix": 32,
+      "variant_median_seconds": 0.150409417
+    },
+    {
+      "baseline_median_seconds": 0.1939508125,
+      "block": 0,
+      "go": true,
+      "median_reduction": 0.2259262693215065,
+      "prefix": 128,
+      "variant_median_seconds": 0.150132229
+    },
+    {
+      "baseline_median_seconds": 0.19464872900000002,
+      "block": 0,
+      "go": true,
+      "median_reduction": 0.2241839709110045,
+      "prefix": 512,
+      "variant_median_seconds": 0.15101160400000002
+    },
+    {
+      "baseline_median_seconds": 0.194060604,
+      "block": 1,
+      "go": true,
+      "median_reduction": 0.22129405770580812,
+      "prefix": 32,
+      "variant_median_seconds": 0.15111614550000002
+    },
+    {
+      "baseline_median_seconds": 0.196721062,
+      "block": 1,
+      "go": true,
+      "median_reduction": 0.21859303250406414,
+      "prefix": 128,
+      "variant_median_seconds": 0.15371920849999998
+    },
+    {
+      "baseline_median_seconds": 0.19337547900000002,
+      "block": 1,
+      "go": true,
+      "median_reduction": 0.2132132171732074,
+      "prefix": 512,
+      "variant_median_seconds": 0.152145271
+    },
+    {
+      "baseline_median_seconds": 0.199351667,
+      "block": 2,
+      "go": true,
+      "median_reduction": 0.20269080819875962,
+      "prefix": 32,
+      "variant_median_seconds": 0.1589449165
+    },
+    {
+      "baseline_median_seconds": 0.201870125,
+      "block": 2,
+      "go": true,
+      "median_reduction": 0.17758560856887573,
+      "prefix": 128,
+      "variant_median_seconds": 0.166020896
+    },
+    {
+      "baseline_median_seconds": 0.207950417,
+      "block": 2,
+      "go": true,
+      "median_reduction": 0.22209210813941294,
+      "prefix": 512,
+      "variant_median_seconds": 0.16176627049999998
+    }
+  ],
+  "build_errors": [],
+  "build_path": "<PROJECT_ROOT>/evidence/05f-scores/warm-only-1/results.json",
+  "build_sha256": "8f29295fad1ed4a86d6ad42c5ee3bb9c5aab0a974ee58f7a90806bd01ee37b41",
+  "correctness_call_count": 12,
+  "decision": "local performance go; full integration still unqualified",
+  "errors": [],
+  "experiment_completed": true,
+  "experiment_valid": true,
+  "performance_gate_passed": true,
+  "protocol_path": "<PROJECT_ROOT>/evidence/05f-scores/protocol.json",
+  "protocol_sha256": "3b8dcbe422339d2c5c8c23deb72724f1edd4513186ef6b33acdf441ae1f6af20",
+  "results_path": "<PROJECT_ROOT>/evidence/05f-scores/benchmark-1/results.json",
+  "results_sha256": "eba850adcc67673a9f88ccd08f127ab2c76a2cdd1a1048b03aeb0e2d8481d844",
+  "schema_version": 1,
+  "status": "completed",
+  "summarizer_sha256": "fc0086451176f5873c79da1470d7b2eff0cc8bdca6e9b57602f8f439cc4d4dc9",
+  "threshold": 0.1,
+  "timed_call_count": 144,
+  "warmup_call_count": 24
+}
